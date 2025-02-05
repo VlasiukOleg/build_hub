@@ -2,19 +2,34 @@
 
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
+import { Breadcrumbs, BreadcrumbItem } from '@heroui/react';
 
 import { useAppSelector } from '@/redux/hooks';
 
 import ButtonLink from '@/components/ui/ButtonLink';
+
 import OrderForm from '../OrderForm';
 
 import DeliveryIcon from '@/../public/icons/delivery-truck.svg';
 import MovingIcon from '@/../public/icons/moving.svg';
 
+import { Pages } from '@/@types';
+
+const BREADCRUMBS_LABEL = {
+  [Pages.CATALOG]: 'Каталог',
+  [Pages.SHTUKATURKA]: 'Штукатурка',
+  [Pages.GIPSOKARTON]: 'Гіпсокартон',
+  [Pages.ORDER]: 'Корзина',
+};
+
 interface IOrderListProps {}
 
 const OrderList: React.FC<IOrderListProps> = ({}) => {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const from = searchParams.get('from');
+
   const allCategories = useAppSelector(state => state.categories);
 
   const allSubCategories = allCategories.flatMap(
@@ -61,6 +76,15 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     <>
       {totalQuantity > 0 ? (
         <div className="xl:flex xl:justify-between">
+          <Breadcrumbs className="mb-4">
+            <BreadcrumbItem href={`${Pages.CATALOG}`}>Каталог</BreadcrumbItem>
+            {from && (
+              <BreadcrumbItem href={`${Pages.CATALOG}/${from}`}>
+                {BREADCRUMBS_LABEL[from as keyof typeof BREADCRUMBS_LABEL]}
+              </BreadcrumbItem>
+            )}
+            <BreadcrumbItem>Корзина</BreadcrumbItem>
+          </Breadcrumbs>
           <div className="xl:w-[48%]">
             <div className=" bg-bgWhite border-[1px] border-grey rounded-xl py-2 mb-2 md:py-3">
               <ul className="divide-y divide-grey">

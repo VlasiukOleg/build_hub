@@ -1,19 +1,27 @@
 'use client';
 import dynamic from 'next/dynamic';
 import { useState } from 'react';
+import clsx from 'clsx';
 import BurgerMenu from '../BurgerMenu';
 
 const Modal = dynamic(() => import('@/components/ui/Modal'));
 
-interface IOpenBurgerMenuBtnProps {}
+interface IOpenBurgerMenuBtnProps {
+  totalQuantity?: number;
+}
 
-const OpenBurgerMenuBtn: React.FC<IOpenBurgerMenuBtnProps> = () => {
+const OpenBurgerMenuBtn: React.FC<IOpenBurgerMenuBtnProps> = ({
+  totalQuantity = 0,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="px-2 py-3 bg-bgWhite border-[1px] border-accent inline-block text-xs font-semibold rounded-lg text-accent"
+        className={clsx(
+          'px-3 md:px-2 py-3 bg-bgwhite border-[2px] border-accent inline-block text-xs font-semibold rounded-lg text-accent',
+          totalQuantity > 0 && 'bg-white'
+        )}
       >
         MENU
       </button>

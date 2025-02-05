@@ -1,13 +1,6 @@
 'use client';
 
-import {
-  DisclosurePanel,
-  Radio,
-  RadioGroup,
-  Input,
-  Field,
-  Label,
-} from '@headlessui/react';
+import { Radio, RadioGroup, Input, Field, Label } from '@headlessui/react';
 import { Alert } from '@heroui/react';
 import clsx from 'clsx';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
@@ -396,9 +389,9 @@ const DisclosureMovingPanel: React.FunctionComponent<
         <Button
           onPress={onAddMovingToOrderBar}
           color={isMovingPriceAddToOrderBar ? 'danger' : 'success'}
-          size="lg"
-          className="mt-3"
+          className="mt-3 text-xs h-8 font-medium md:text-base md:h-10 xl:text-lg xl:h-12"
           variant="bordered"
+          radius="sm"
         >
           {isMovingPriceAddToOrderBar
             ? 'Прибрати з замовлення'

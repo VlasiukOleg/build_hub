@@ -1,13 +1,16 @@
 import Link from 'next/link';
-import Image, { StaticImageData } from 'next/image';
+import { StaticImageData } from 'next/image';
+import { Card, CardFooter, Image } from '@heroui/react';
 
 interface ICatalogCardProps {
+  id: number;
   img: StaticImageData;
   text: string;
   href: string;
 }
 
 const CataogCard: React.FunctionComponent<ICatalogCardProps> = ({
+  id,
   img,
   text,
   href,
@@ -15,12 +18,24 @@ const CataogCard: React.FunctionComponent<ICatalogCardProps> = ({
   return (
     <li>
       <Link href={`catalog/${href}`}>
-        <div className="rounded-lg border-2 border-accent overflow-hidden relative md:w-[340px]">
-          <Image src={img} alt={text} width={450} height={300} />
-          <div className="bg-black/70 absolute left-0 bottom-0 w-full  text-white text-center p-5 text-sm">
-            {text}
-          </div>
-        </div>
+        <Card
+          isFooterBlurred
+          key={id}
+          shadow="sm"
+          className="border-2 border-accent"
+        >
+          <Image
+            alt={text}
+            className="object-cover w-[300px]  h-[200px]"
+            radius="lg"
+            shadow="sm"
+            src={img.src}
+            width="100%"
+          />
+          <CardFooter className="absolute bg-black/50 bottom-0 border-t-1 border-zinc-100/50 z-10 text-white p-3 text-sm font-light justify-center">
+            <b>{text}</b>
+          </CardFooter>
+        </Card>
       </Link>
     </li>
   );

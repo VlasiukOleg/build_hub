@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation';
 
 import { DisclosurePanel } from '@headlessui/react';
+import { Button } from '@heroui/react';
 
 import { useEffect } from 'react';
 
@@ -65,9 +66,15 @@ const DisclosureDeliveryPanel: React.FC<IDisclosureDeliveryPanelProps> = ({
             </div>
           )}
           <div className="text-center">
-            <ButtonLink variant="main" onClick={() => router.push('/')}>
+            <Button
+              onPress={() => router.push('/')}
+              color="danger"
+              className="mt-3 text-xs h-8 font-medium md:text-base md:h-10 xl:text-lg xl:h-12"
+              variant="bordered"
+              radius="sm"
+            >
               Змінити склад aбо тип доставки
-            </ButtonLink>
+            </Button>
           </div>
         </>
       ) : (

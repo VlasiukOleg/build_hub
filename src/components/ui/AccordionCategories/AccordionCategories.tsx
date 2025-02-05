@@ -18,6 +18,7 @@ const BREADCRUMBS_LABEL = {
   [Pages.SHTUKATURKA]: 'Штукатурка',
   [Pages.GIPSOKARTON]: 'Гіпсокартон',
   [Pages.ORDER]: 'Корзина',
+  [Pages.STYAZHKA]: 'Cтяжка',
 };
 
 interface IAccordionCategoriesProps {
@@ -38,12 +39,14 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
   const { materials, totalPrice, totalWeight, totalQuantity, title } =
     useMaterials(slug);
 
+  const handleOrderClick = () => {
+    const url = `/order?from=${slug}`;
+    router.push(url);
+  };
+
   return (
     <section
-      className={clsx(
-        'pt-5 py-5 w-full',
-        totalQuantity > 0 && 'pt-[88px] xl:pt-[92px]'
-      )}
+      className={clsx('pt-5 py-5 w-full', totalQuantity > 0 && 'pt-[0px]')}
     >
       <div className="container">
         <OrderBar
@@ -55,25 +58,27 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
           movingPrice={movingPrice}
           isMovingAddToOrder={isMovingAddToOrder}
         />
-        <Breadcrumbs className="mb-4">
-          <BreadcrumbItem href={`/${Pages.CATALOG}`}>Каталог</BreadcrumbItem>
-          <BreadcrumbItem href="/catalog/slug">
-            {BREADCRUMBS_LABEL[slug]}
-          </BreadcrumbItem>
-        </Breadcrumbs>
-        <h1 className="font-unbounded xl:text-2xl font-bold text-center mb-5  md:text-lg">
-          {title}
-        </h1>
-        <AccordionSubCategoryList slug={slug} totalWeight={totalWeight} />
-        <div className="text-center">
-          <Button
-            size="lg"
-            className="bg-accent font-medium text-white"
-            radius="sm"
-            onPress={() => router.push(`/${Pages.ORDER}`)}
-          >
-            Оформити замовлення
-          </Button>
+        <div className={clsx(totalQuantity > 0 && 'pt-[95px]')}>
+          <Breadcrumbs className="mb-4">
+            <BreadcrumbItem href={`/${Pages.CATALOG}`}>Каталог</BreadcrumbItem>
+            <BreadcrumbItem href="/catalog/slug">
+              {BREADCRUMBS_LABEL[slug]}
+            </BreadcrumbItem>
+          </Breadcrumbs>
+          <h1 className="font-unbounded xl:text-2xl font-bold text-center mb-5  md:text-lg">
+            {title}
+          </h1>
+          <AccordionSubCategoryList slug={slug} totalWeight={totalWeight} />
+          <div className="text-center">
+            <Button
+              size="lg"
+              className="bg-accent font-medium text-white"
+              radius="sm"
+              onPress={handleOrderClick}
+            >
+              Оформити замовлення
+            </Button>
+          </div>
         </div>
       </div>
     </section>

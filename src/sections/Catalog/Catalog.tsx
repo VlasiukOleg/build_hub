@@ -1,9 +1,13 @@
 'use client';
 
 import CatalogCard from '@/components/ui/CatalogCard';
+import { Breadcrumbs, BreadcrumbItem } from '@heroui/react';
 
 import Shtukaturka from '@/../public/images/shtukaturka-450x300.webp';
 import Gipsokarton from '@/../public/images/gipsokarton-450х300.webp';
+import Styazhka from '@/../public/images/styazhka.jpg';
+
+import { Pages } from '@/@types';
 
 const catalog = [
   {
@@ -18,6 +22,12 @@ const catalog = [
     img: Gipsokarton,
     href: 'gipsokarton',
   },
+  {
+    id: 3,
+    text: 'Стяжка',
+    img: Styazhka,
+    href: 'styazhka',
+  },
 ];
 
 interface ICatalogProps {}
@@ -26,12 +36,17 @@ const Catalog: React.FC<ICatalogProps> = ({}) => {
   return (
     <section className="py-5 md:py-10">
       <div className="container">
+        <Breadcrumbs className="mb-4">
+          <BreadcrumbItem href="/">Головна</BreadcrumbItem>
+          <BreadcrumbItem href={`${Pages.CATALOG}`}>Каталог</BreadcrumbItem>
+        </Breadcrumbs>
         <h1 className="font-unbounded xl:text-2xl font-bold text-center mb-5  md:text-lg">
           Оберіть потрібну Вам категорію будівельних робіт
         </h1>
-        <ul className="flex flex-wrap gap-5 uppercase font-medium text-xl md:text-base">
+        <ul className="flex justify-center flex-wrap gap-5 uppercase font-medium text-xl md:text-base">
           {catalog.map(item => (
             <CatalogCard
+              id={item.id}
               key={item.id}
               img={item.img}
               text={item.text}

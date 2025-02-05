@@ -5,7 +5,6 @@ import { Accordion, AccordionItem } from '@heroui/accordion';
 import { Avatar } from '@heroui/react';
 
 import DisclosureMaterialsPanel from '../DisclosureMaterialsPanel';
-import DisclosureGipsokartonPanel from '../DisclosureGipsokartonPanel';
 import DisclosureMovingPanel from '../DisclosureMovingPanel';
 import DisclosureDeliveryPanel from '../DisclosureDeliveryPanel';
 import DisclosureAddMaterialsPanel from '../DisclosureAddMaterialsPanel';
@@ -31,6 +30,9 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
 }) => {
   const { subCategoriesBySlug, materials, totalPrice, totalQuantity, title } =
     useMaterials(slug);
+
+  console.log(slug);
+  console.log(subCategoriesBySlug);
 
   const dispatch = useAppDispatch();
 
@@ -114,11 +116,14 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
         variant="splitted"
         className="mb-4 max-w-full w-full h-full md:w-[760px] xl:w-[1200px]"
         itemClasses={{ content: 'pb-4' }}
+        defaultExpandedKeys={['1']}
+        selectionMode="multiple"
       >
         {subCategoriesBySlug.map((subCategory, catInd) => {
           return (
             <AccordionItem
               key={subCategory.id}
+              className="bg-slate-50"
               classNames={{ title: 'text-sm md:text-base' }}
               aria-label="Accordion 1"
               startContent={
@@ -131,24 +136,12 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
               }
               title={subCategory.categoryTitle}
             >
-              {subCategory.materials.map((material, matInd) => {
-                const { quantity, price } = material;
-                const totalMaterialPrice = quantity * price;
-                return slug !== 'gipsokarton' ? (
-                  <DisclosureMaterialsPanel
-                    key={matInd}
-                    material={material}
-                    totalMaterialPrice={totalMaterialPrice}
-                    catInd={catInd}
-                    matInd={matInd}
-                    handleButtonChangeQuantity={handleButtonChangeQuantity}
-                    handleInputChangeQuantity={handleInputChangeQuantity}
-                    handleFocus={handleFocus}
-                    handleBlur={handleBlur}
-                  />
-                ) : (
-                  <>
-                    <DisclosureGipsokartonPanel
+              <div className="gap-2 grid md:grid-cols-2 md:gap-4 xl:grid-cols-3 ">
+                {subCategory.materials.map((material, matInd) => {
+                  const { quantity, price } = material;
+                  const totalMaterialPrice = quantity * price;
+                  return (
+                    <DisclosureMaterialsPanel
                       key={matInd}
                       material={material}
                       totalMaterialPrice={totalMaterialPrice}
@@ -159,9 +152,9 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
                       handleFocus={handleFocus}
                       handleBlur={handleBlur}
                     />
-                  </>
-                );
-              })}
+                  );
+                })}
+              </div>
             </AccordionItem>
           );
         })}
@@ -177,6 +170,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
         <AccordionItem
           key="add"
           title="Додати матеріал"
+          className="bg-slate-50"
           startContent={
             <Avatar
               icon={<FaPlus />}
@@ -191,6 +185,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
         <AccordionItem
           key="moving"
           title="Розвантаження"
+          className="bg-slate-50"
           keepContentMounted
           startContent={
             <Avatar
@@ -206,6 +201,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
         <AccordionItem
           key="delivery"
           keepContentMounted
+          className="bg-slate-50"
           title="Доставка"
           startContent={
             <Avatar

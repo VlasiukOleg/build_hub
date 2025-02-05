@@ -1906,5 +1906,134 @@
         ]
       }
     ]
+  },
+  {
+    "id": "styazhka",
+    "title": "Замовлення матеріалів для стяжки підлоги",
+    "categories": [
+      {
+        "id": 36,
+        "categoryTitle": "Стяжка",
+        "isCategoryOpen": true,
+        "materials": [
+          {
+            "id": 36.1,
+            "image": "https://i.imgur.com/5icpjHb.jpeg",
+            "title": "SILTEK F-20/25кг",
+            "description": "Суміш для підлоги товщиною до 100 мм, забезпечує міцну основу для подальших покриттів.",
+            "weight": 25,
+            "price": 0,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight"
+          },
+          {
+            "id": 36.6,
+            "image": "https://i.imgur.com/ua2BBXe.jpeg",
+            "title": "CERESIT СТЯЖКА (10-100 мм)",
+            "description": "Універсальна стяжка для підлоги товщиною 10-100 мм, забезпечує високу міцність та довговічність.",
+            "weight": 25,
+            "price": 0,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight"
+          },
+
+          {
+            "id": 36.14,
+            "image": "https://i.imgur.com/njhuhM4.jpeg",
+            "title": "ПОЛІМІН СЦ-5",
+            "description": "Цементна армована стяжка товщиною від 10 до 80 мм, 25 кг. Використовується для вирівнювання основи перед укладанням фінішного покриття або як самостійний цементний підлогу.",
+            "weight": 25,
+            "price": 0,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight"
+          }
+        ]
+      },
+      {
+        "id": 37,
+        "categoryTitle": "Стяжка високоміцна",
+        "isCategoryOpen": true,
+        "materials": [
+          {
+            "id": 37.1,
+            "image": "https://i.imgur.com/5icpjHb.jpeg",
+            "title": "SILTEK F-20/25кг",
+            "description": "Суміш для підлоги товщиною до 100 мм, забезпечує міцну основу для подальших покриттів.",
+            "weight": 25,
+            "price": 0,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight"
+          },
+          {
+            "id": 37.2,
+            "image": "https://i.imgur.com/ua2BBXe.jpeg",
+            "title": "CERESIT СТЯЖКА (10-100 мм)",
+            "description": "Універсальна стяжка для підлоги товщиною 10-100 мм, забезпечує високу міцність та довговічність.",
+            "weight": 25,
+            "price": 0,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight"
+          },
+
+          {
+            "id": 37.3,
+            "image": "https://i.imgur.com/njhuhM4.jpeg",
+            "title": "ПОЛІМІН СЦ-5",
+            "description": "Цементна армована стяжка товщиною від 10 до 80 мм, 25 кг. Використовується для вирівнювання основи перед укладанням фінішного покриття або як самостійний цементний підлогу.",
+            "weight": 25,
+            "price": 0,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight"
+          }
+        ]
+      },
+      {
+        "id": 38,
+        "categoryTitle": "Самовирівнювальна суміш",
+        "isCategoryOpen": true,
+        "materials": [
+          {
+            "id": 38.1,
+            "image": "https://i.imgur.com/5icpjHb.jpeg",
+            "title": "SILTEK F-20/25кг",
+            "description": "Суміш для підлоги товщиною до 100 мм, забезпечує міцну основу для подальших покриттів.",
+            "weight": 25,
+            "price": 0,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight"
+          },
+          {
+            "id": 38.2,
+            "image": "https://i.imgur.com/ua2BBXe.jpeg",
+            "title": "CERESIT СТЯЖКА (10-100 мм)",
+            "description": "Універсальна стяжка для підлоги товщиною 10-100 мм, забезпечує високу міцність та довговічність.",
+            "weight": 25,
+            "price": 0,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight"
+          },
+
+          {
+            "id": 38.3,
+            "image": "https://i.imgur.com/njhuhM4.jpeg",
+            "title": "ПОЛІМІН СЦ-5",
+            "description": "Цементна армована стяжка товщиною від 10 до 80 мм, 25 кг. Використовується для вирівнювання основи перед укладанням фінішного покриття або як самостійний цементний підлогу.",
+            "weight": 25,
+            "price": 0,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight"
+          }
+        ]
+      }
+    ]
   }
 ]

@@ -1,4 +1,5 @@
 import StorageMap from '@/components/common/StorageMap';
+import InteractiveMap from '@/components/common/InteractiveMap';
 
 import Script from 'next/script';
 

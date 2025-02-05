@@ -3,4 +3,5 @@ export enum Pages {
   SHTUKATURKA = 'shtukaturka',
   GIPSOKARTON = 'gipsokarton',
   ORDER = 'order',
+  STYAZHKA = 'styazhka',
 }

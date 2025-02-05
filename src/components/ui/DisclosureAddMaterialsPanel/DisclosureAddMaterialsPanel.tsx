@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Button } from '@heroui/react';
 import clsx from 'clsx';
-import { DisclosurePanel, Field, Label, Input } from '@headlessui/react';
+import { Field, Label, Input } from '@headlessui/react';
 
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 import {

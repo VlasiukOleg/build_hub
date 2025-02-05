@@ -1,6 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 import catalog from '@/data/catalog.json';
 
+console.log(catalog);
+
 const materialsSlice = createSlice({
   name: 'categories',
   initialState: catalog,
@@ -8,17 +10,14 @@ const materialsSlice = createSlice({
     changeQuantity(state, action) {
       const { catInd, matInd, slug, value } = action.payload;
 
-      // Найти категорию по slug
       const category = state.find(item => item.id === slug);
 
       if (category) {
         const { categories } = category;
-        // Проверить существование категории и материала
         const categoryItem = categories[catInd];
         const material = categoryItem?.materials[matInd];
 
         if (categoryItem && material) {
-          // Обновить количество материала
           material.quantity += Number(value);
         }
       }
