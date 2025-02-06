@@ -29,6 +29,7 @@ const BREADCRUMBS_LABEL = {
   [Pages.SHTUKATURKA]: 'Штукатурка',
   [Pages.GIPSOKARTON]: 'Гіпсокартон',
   [Pages.ORDER]: 'Корзина',
+  [Pages.STYAZHKA]: 'Cтяжка',
 };
 
 interface IDisclosureCategoriesProps {
