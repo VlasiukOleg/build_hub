@@ -10,7 +10,7 @@ import { additionalMaterialReducer } from './additionalMaterialSlice';
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['delivery', 'categories', 'moving', 'additionalMaterial'],
+  whitelist: ['delivery', 'moving', 'additionalMaterial'],
 };
 
 const rootReducer = combineReducers({
