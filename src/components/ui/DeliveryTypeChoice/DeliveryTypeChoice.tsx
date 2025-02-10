@@ -1,5 +1,7 @@
-import DeliveryIcon from '/public/icons/delivery-truck.svg';
-import PickUpIcon from '/public/icons/pickup.svg';
+import { Button } from '@heroui/react';
+
+import { TbTruckDelivery } from 'react-icons/tb';
+import { LuWarehouse } from 'react-icons/lu';
 
 interface IDeliveryTypeChoiceProps {
   selectedStore: string;
@@ -11,32 +13,35 @@ const DeliveryTypeChoice: React.FC<IDeliveryTypeChoiceProps> = ({
   handleDeliveryType,
 }) => {
   return (
-    <div className="bg-white p-5 rounded-md">
-      <p className="text-black text-sm mb-3 md:text-base xl:text-xl md:mb-4 xl:mb-6">
-        {selectedStore}
-      </p>
-      <p className="text-gray-600 font-semibold mb-2 md:text-lg xl:text-2xl md:mb-3 xl:mb-5">
+    <div className="bg-white pb-2">
+      <p className="text-gray-600 font-semibold mb-2 md:text-md xl:text-xl md:mb-3 xl:mb-5">
         Виберіть тип доставки:
       </p>
-      <ul className="text-black flex flex-col gap-4 text-sm md:text-base xl:text-xl md:gap-5">
+      <ul className="text-black flex flex-col gap-2 text-sm md:text-base xl:text-xl md:gap-5">
         <li>
-          <button
-            type="button"
-            onClick={() => handleDeliveryType('delivery')}
-            className="flex items-center  gap-2"
+          <Button
+            startContent={
+              <TbTruckDelivery className="size-5  xl:size-7 text-grey" />
+            }
+            variant="bordered"
+            onPress={() => handleDeliveryType('delivery')}
+            className="w-full text-xs md:text-sm"
           >
-            <DeliveryIcon width={24} height={24} className="xl:size-8" />
             Доставка автотранспортом
-          </button>
+          </Button>
         </li>
-        <button
-          type="button"
-          onClick={() => handleDeliveryType('pickup')}
-          className="flex items-center gap-2"
-        >
-          <PickUpIcon width={22} height={22} className="xl:size-7" />
-          Самовивіз зі складу
-        </button>
+        <li>
+          <Button
+            startContent={
+              <LuWarehouse className="size-4  xl:size-6 text-grey " />
+            }
+            variant="bordered"
+            onPress={() => handleDeliveryType('pickup')}
+            className="w-full text-xs md:text-sm"
+          >
+            Самовивіз зі складу
+          </Button>
+        </li>
       </ul>
     </div>
   );

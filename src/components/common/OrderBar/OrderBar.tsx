@@ -4,8 +4,10 @@ import React from 'react';
 import { useRouter } from 'next/navigation';
 import clsx from 'clsx';
 import { Button } from '@heroui/react';
+import { useDisclosure } from '@heroui/react';
 
 import OpenBurgerMenuBtn from '../OpenBurgerMenuBtn';
+import ModalHeroUi from '@/components/ui/ModalHeroUi';
 
 import { useAppDispatch } from '@/redux/hooks';
 import { clearQuantity } from '@/redux/materialsSlice';
@@ -43,8 +45,9 @@ const OrderBar: React.FC<IOrderBarProps> = ({
 }) => {
   const router = useRouter();
   const dispatch = useAppDispatch();
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
-  const onClearOrder = () => {
+  const handleOrderClear = () => {
     dispatch(clearQuantity(0));
     dispatch(toggleMovingPriceToOrder());
     dispatch(toggleAdditionalPriceAddToOrder());
@@ -54,7 +57,7 @@ const OrderBar: React.FC<IOrderBarProps> = ({
   return (
     <div
       className={clsx(
-        'flex items-center justify-between gap-2 fixed  left-1/2 transform -translate-x-1/2 bg-lightAccent w-full max-w-[448px] rounded-xl p-3 transition-all  z-10 md:max-w-[700px] xl:max-w-[1216px]',
+        'flex items-center justify-between gap-2 fixed  left-1/2 transform -translate-x-1/2 bg-lightAccent w-full max-w-[448px] rounded-xl p-3 transition-all  z-20 md:max-w-[700px] xl:max-w-[1216px]',
         totalQuantity > 0 ? 'opacity-1 visible' : 'opacity-0 invisible'
       )}
     >
@@ -96,7 +99,7 @@ const OrderBar: React.FC<IOrderBarProps> = ({
           <Button
             isIconOnly
             aria-label="Clear Order"
-            onPress={onClearOrder}
+            onPress={onOpen}
             className="bg-white h-7 md:h-9 md:w-9 xl:size-11"
             radius="sm"
           >
@@ -106,6 +109,15 @@ const OrderBar: React.FC<IOrderBarProps> = ({
 
         <OpenBurgerMenuBtn totalQuantity={totalQuantity} />
       </div>
+      <ModalHeroUi
+        title="Увага"
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        onAction={handleOrderClear}
+        withActions
+      >
+        <p>Ви впевнені, що хочете очистити замовлення?</p>
+      </ModalHeroUi>
     </div>
   );
 };

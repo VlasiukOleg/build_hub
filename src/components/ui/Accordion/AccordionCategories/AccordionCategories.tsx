@@ -9,7 +9,7 @@ import OrderBar from '@/components/common/OrderBar';
 import AccordionSubCategoryList from '../AccordionSubCategoryList';
 
 import { useMaterials } from '@/hooks/useMaterials';
-import { useAppSelector, useAppDispatch } from '@/redux/hooks';
+import { useAppSelector } from '@/redux/hooks';
 
 import { Pages } from '@/@types';
 
@@ -27,7 +27,6 @@ interface IAccordionCategoriesProps {
 
 const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
   const router = useRouter();
-  const dispatch = useAppDispatch();
 
   const deliveryPrice = useAppSelector(state => state.delivery.deliveryPrice);
   const deliveryType = useAppSelector(state => state.delivery.deliveryType);
@@ -36,8 +35,7 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
     state => state.moving.isMovingPriceAddToOrder
   );
 
-  const { materials, totalPrice, totalWeight, totalQuantity, title } =
-    useMaterials(slug);
+  const { totalPrice, totalWeight, totalQuantity, title } = useMaterials(slug);
 
   const handleOrderClick = () => {
     const url = `/order?from=${slug}`;
@@ -71,10 +69,11 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
           <AccordionSubCategoryList slug={slug} totalWeight={totalWeight} />
           <div className="text-center">
             <Button
-              size="lg"
-              className="bg-accent font-medium text-white"
+              size="sm"
+              className="bg-accent text-white ml-2 mt-3 font-medium text-base h-10 xl:text-lg xl:h-12"
               radius="sm"
               onPress={handleOrderClick}
+              isDisabled={totalQuantity === 0}
             >
               Оформити замовлення
             </Button>

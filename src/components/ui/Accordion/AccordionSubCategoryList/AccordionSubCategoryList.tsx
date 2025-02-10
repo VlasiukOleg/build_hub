@@ -31,9 +31,6 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
   const { subCategoriesBySlug, materials, totalPrice, totalQuantity, title } =
     useMaterials(slug);
 
-  console.log(slug);
-  console.log(subCategoriesBySlug);
-
   const dispatch = useAppDispatch();
 
   const handleInputChangeQuantity = (
@@ -84,27 +81,6 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
       e.currentTarget.value = '0';
     }
   };
-
-  const data = [
-    {
-      id: 'add',
-      categoryTitle: 'Додати матеріал',
-      isCategoryOpen: true,
-      materials: [],
-    },
-    {
-      id: 'moving',
-      categoryTitle: 'Розвантаження',
-      isCategoryOpen: true,
-      materials: [],
-    },
-    {
-      id: 'delivery',
-      categoryTitle: 'Доставка',
-      isCategoryOpen: true,
-      materials: [],
-    },
-  ];
 
   if (!subCategoriesBySlug) {
     return null;
@@ -171,6 +147,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
           key="add"
           title="Додати матеріал"
           className="bg-slate-50"
+          classNames={{ title: 'text-sm md:text-base' }}
           startContent={
             <Avatar
               icon={<FaPlus />}
@@ -186,6 +163,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
           key="moving"
           title="Розвантаження"
           className="bg-slate-50"
+          classNames={{ title: 'text-sm md:text-base' }}
           keepContentMounted
           startContent={
             <Avatar
@@ -202,6 +180,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
           key="delivery"
           keepContentMounted
           className="bg-slate-50"
+          classNames={{ title: 'text-sm md:text-base' }}
           title="Доставка"
           startContent={
             <Avatar

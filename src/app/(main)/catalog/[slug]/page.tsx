@@ -1,7 +1,6 @@
 import Script from 'next/script';
 
-import DisclosureCategories from '@/components/ui/DisclosureCategories/';
-import AccordionCategories from '@/components/ui/AccordionCategories';
+import AccordionCategories from '@/components/ui/Accordion/AccordionCategories';
 
 import data from '@/data/common.json';
 

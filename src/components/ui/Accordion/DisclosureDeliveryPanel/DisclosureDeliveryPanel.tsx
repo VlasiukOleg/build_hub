@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 
 import ButtonLink from '@/components/ui/ButtonLink';
 
-import { useAppSelector, useAppDispatch } from '../../../redux/hooks';
+import { useAppSelector, useAppDispatch } from '../../../../redux/hooks';
 import { setDeliveryPrice } from '@/redux/deliverySlice';
 
 import { calculateDeliveryFee } from '@/utils/calculateDeliveryFee';
@@ -78,10 +78,16 @@ const DisclosureDeliveryPanel: React.FC<IDisclosureDeliveryPanelProps> = ({
           </div>
         </>
       ) : (
-        <div className="text-center py-2">
-          <ButtonLink variant="main" onClick={() => router.push('/')}>
-            Вибрати склад та тип доставки
-          </ButtonLink>
+        <div className="text-center">
+          <Button
+            onPress={() => router.push('/')}
+            color="success"
+            className="mt-3 text-xs h-8 font-medium md:text-base md:h-10 xl:text-lg xl:h-12"
+            variant="bordered"
+            radius="sm"
+          >
+            Вибрати склад aбо тип доставки
+          </Button>
         </div>
       )}
     </div>

@@ -9,7 +9,7 @@ import { Button } from '@heroui/react';
 
 import MovingCostTable from '@/components/common/MovingCostTable';
 
-import { useAppSelector, useAppDispatch } from '../../../redux/hooks';
+import { useAppSelector, useAppDispatch } from '../../../../redux/hooks';
 import { setMovingCost, toggleMovingPriceToOrder } from '@/redux/movingSlice';
 
 import { calculateMovingFee } from '@/utils/calculateMovingFee';
@@ -261,7 +261,8 @@ const DisclosureMovingPanel: React.FunctionComponent<
   return (
     <div className="mt-2 text-sm/5 text-grey md:text-lg xl:text-xl xl:mt-6">
       <div className="mb-3 font-medium">
-        Загальна вага: <span className="text-accent">{totalWeight} кг.</span>
+        Загальна вага:{' '}
+        <span className="text-accent">{totalWeight.toFixed(2)} кг.</span>
       </div>
       <RadioGroup
         value={elevator}

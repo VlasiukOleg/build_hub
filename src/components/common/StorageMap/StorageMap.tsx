@@ -3,14 +3,13 @@
 import React, { useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
-import { Button } from '@heroui/react';
-
+import { Button, useDisclosure } from '@heroui/react';
 import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet';
 import { LatLngTuple } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
-const Modal = dynamic(() => import('@/components/ui/Modal'));
+const ModalHeroUi = dynamic(() => import('@/components/ui/ModalHeroUi'));
 import ButtonLink from '@/components/ui/ButtonLink';
 import DeliveryTypeChoice from '@/components/ui/DeliveryTypeChoice/DeliveryTypeChoice';
 
@@ -71,8 +70,9 @@ const storages: Storage[] = [
 const position: LatLngTuple = [50.4501, 30.5234];
 
 const StorageMap: React.FC<IStorageMapProps> = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
   const [selectedStore, setSelectedStore] = useState('');
+  const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
 
   const router = useRouter();
   const dispatch = useAppDispatch();
@@ -85,7 +85,7 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
   const popupElRef = useRef<any>(null);
 
   const handleStorageClick = (location: string) => {
-    setIsOpen(true);
+    onOpen();
     setSelectedStore(location);
     if (popupElRef.current) {
       popupElRef.current._closeButton.click();
@@ -95,18 +95,23 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
   const handleDeliveryType = (deliveryType: string) => {
     dispatch(setDeliveryStorage(selectedStore));
     dispatch(setDeliveryType(deliveryType));
-    setIsOpen(false);
+    onClose();
   };
 
   return (
-    <section className="py-5 md:py-10 text-center">
-      <h1 className="font-unbounded xl:text-2xl font-bold text-center mb-5 md:mb-10 md:text-lg">
+    <section className="py-5 md:py-8 text-center">
+      <h1 className="font-unbounded xl:text-2xl font-bold text-center mb-5 md:mb-8 md:text-lg">
         Оберіть найближчий до Вас склад завантаження
       </h1>
       <MapContainer
         center={position}
         zoom={11}
-        style={{ height: '500px', width: '100%', marginBottom: '20px' }}
+        style={{
+          height: '500px',
+          width: '100%',
+          marginBottom: '20px',
+          zIndex: '40',
+        }}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -144,19 +149,34 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
         </ul>
       )}
 
-      <ButtonLink
-        variant="main"
-        onClick={() => router.push('/catalog/')}
-        disabled={deliveryType === ''}
+      <Button
+        onPress={() => router.push('/catalog')}
+        className="bg-accent text-white  font-medium text-base h-10 xl:text-lg xl:h-12"
+        radius="sm"
+        isDisabled={deliveryType === ''}
       >
         Продовжити
-      </ButtonLink>
-      <Modal isOpen={isOpen} close={() => setIsOpen(false)}>
+      </Button>
+      {!deliveryType && (
+        <Button
+          onPress={() => router.push('/catalog')}
+          className="bg-accent text-white ml-3   font-medium text-base h-10 xl:text-lg xl:h-12"
+          radius="sm"
+        >
+          Пропустити
+        </Button>
+      )}
+      <ModalHeroUi
+        title={selectedStore}
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        onAction={() => {}}
+      >
         <DeliveryTypeChoice
           selectedStore={selectedStore}
           handleDeliveryType={handleDeliveryType}
         />
-      </Modal>
+      </ModalHeroUi>
     </section>
   );
 };

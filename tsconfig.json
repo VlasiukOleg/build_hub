@@ -28,7 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/ui/AccordionSubCategoryList/AccordionSubCategoryList.ts"
+    "src/components/ui/Accordion/AccordionSubCategoryList/AccordionSubCategoryList.ts"
   ],
   "exclude": ["node_modules"]
 }

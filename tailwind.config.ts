@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss';
-import {heroui} from "@heroui/react";
+import { heroui } from '@heroui/react';
 
 const config: Config = {
   content: [
@@ -7,7 +7,7 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/sections/**/*.{js,ts,jsx,tsx,mdx}',
     './src/layout/**/*.{js,ts,jsx,tsx,mdx}',
-    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}"
+    './node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     screens: {
@@ -33,14 +33,14 @@ const config: Config = {
         black: '#000',
         grey: '#696969',
         white: '#EFEDE8',
-        darkAccent: '#2F4F50',
-        accent: '#5F9EA0',
-        lightAccent: '#80CBC4',
-        extraLightAccent: '#EFA082',
+        darkAccent: '#teal-800',
+        accent: '#26a69a',
+        lightAccent: '#80cbc4',
+        extraLightAccent: '##e0f2f1',
       },
     },
   },
-  darkMode: "class",
+  darkMode: 'class',
   plugins: [heroui()],
 };
 export default config;

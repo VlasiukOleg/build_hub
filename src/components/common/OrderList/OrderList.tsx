@@ -3,11 +3,9 @@
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useSearchParams } from 'next/navigation';
-import { Breadcrumbs, BreadcrumbItem } from '@heroui/react';
+import { Breadcrumbs, BreadcrumbItem, Button } from '@heroui/react';
 
 import { useAppSelector } from '@/redux/hooks';
-
-import ButtonLink from '@/components/ui/ButtonLink';
 
 import OrderForm from '../OrderForm';
 
@@ -60,6 +58,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     state => state.additionalMaterial.additionalMaterial
   );
 
+  console.log(isAdditionalMaterialAddToOrder);
   const totalPrice = materials.reduce((acc, value) => {
     return acc + value.price * value.quantity;
   }, 0);
@@ -94,14 +93,14 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                   {filteredMaterialsByQuantity.map(material => (
                     <li
                       key={material.id}
-                      className="p-2 font-semibold flex items-center text-grey md:p-4"
+                      className="p-1 font-semibold flex items-center text-grey md:p-2"
                     >
-                      <div className="mr-2 text-center inline-block md:size-[75px] md:mr-4">
+                      <div className="mr-2 text-center inline-block size-[50px] md:size-[75px] md:mr-4">
                         <Image
                           src={material.image}
                           alt={material.title}
-                          width={50}
-                          height={50}
+                          width={75}
+                          height={75}
                           className="md:size-[75px]"
                         />
                       </div>
@@ -125,11 +124,11 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                   ))}
                   {isMovingAddToOrder && (
                     <li className="p-2 font-semibold flex items-center text-grey md:p-4">
-                      <div className="mr-2 p-1 text-center inline-block md:size-[75px] md:mr-4">
+                      <div className="mr-2 p-1 text-center inline-block md:size-[60px] md:mr-4">
                         <MovingIcon
                           width={40}
                           height={40}
-                          className="md:size-[75px]"
+                          className="md:size-[60px]"
                         />
                       </div>
 
@@ -152,11 +151,11 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                   )}
                   {deliveryType === 'delivery' && (
                     <li className="p-2 font-semibold flex items-center text-grey md:p-4">
-                      <div className="mr-2 p-1 text-center inline-block md:size-[75px] md:mr-4">
+                      <div className="mr-2 p-1 text-center inline-block md:size-[60px] md:mr-4">
                         <DeliveryIcon
                           width={40}
                           height={40}
-                          className="md:size-[75px]"
+                          className="md:size-[65px]"
                         />
                       </div>
 
@@ -253,13 +252,14 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
       ) : (
         <div className="flex flex-col items-center gap-5 ">
           Не вибрано жодного товару{' '}
-          <ButtonLink
-            variant="main"
-            className="max-w-[200px] md:max-w-[280px] xl:max-w-[350px]"
-            onClick={() => router.push('/catalog/shtukaturka')}
+          <Button
+            size="sm"
+            className="bg-accent text-white font-medium text-base h-10 xl:text-lg xl:h-12"
+            radius="sm"
+            onPress={() => router.push('/catalog')}
           >
-            ПЕРЕЙТИ В КАТАЛОГ
-          </ButtonLink>
+            Перейти в каталог
+          </Button>
         </div>
       )}
     </>
