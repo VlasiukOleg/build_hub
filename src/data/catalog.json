@@ -14,10 +14,12 @@
             "title": "Knauf MP75",
             "description": "Knauf MP 75, штукатурка гіпсова машинного нанесення застосовується для штукатурення різних мінеральних поверхонь, як правило, машинним способом. У кінцевому результаті отримаємо міцний шар, який в подальшому може бути оброблений декоративною штукатуркою або цементної шпаклівкою.",
             "weight": 30,
+            "volume": 0.036,
             "price": 297.9,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -32,10 +34,12 @@
             "title": "Siltek PM-10 цементно-вапняна",
             "description": "Для вирівнювання недеформівних бетонних, цементно-вапняних, цементно-піщаних та гіпсових поверхонь (стін і стель) шаром до 50 мм всередині житлових приміщень, які не підпадають під систематичне зволоження, перед шпаклівкою.",
             "weight": 25,
+            "volume": 0,
             "price": 120.6,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 2.2,
@@ -43,10 +47,12 @@
             "title": "Baumit MPI 25",
             "description": "Цементно-вапняна суміш з мінеральними заповнювачами та полімерними добавками.  Призначена для механізованого штукатурення всіх видів щільних мінеральних основ всередині будівель. Придатна для нанесення",
             "weight": 25,
+            "volume": 0,
             "price": 120.74,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 2.3,
@@ -54,10 +60,12 @@
             "title": "Polimin (Полимин) ШВ-1 ",
             "description": "Застосовується для виконання високоякісних штукатурних робіт на різних мінеральних основах (бетон, цегла і т.д.) усередині приміщень. Рекомендована як для традиційного ручного, так і для механічного нанесення. Після затвердіння є міцною основою для гіпсових шпаклівок і внутрішніх декоративних штукатурок.",
             "weight": 25,
+            "volume": 0,
             "price": 125.96,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -72,10 +80,12 @@
             "title": "Маяк  штукатурний  6 мм (0,25) 3м ",
             "description": "При виробництві штукатурних робіт для полегшення вирівнювання поверхонь використовують металеві маяки з Т-образним профілем. Маяк штукатурний виготовляється з металевої стрічки холоднопрокатної методом.",
             "weight": 0.2,
+            "volume": 0,
             "price": 15.3,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 3.2,
@@ -83,10 +93,12 @@
             "title": "Маяк  штукатурний  6 мм (0,30) 3м ",
             "description": "При виробництві штукатурних робіт для полегшення вирівнювання поверхонь використовують металеві маяки з Т-образним профілем. Маяк штукатурний виготовляється з металевої стрічки холоднопрокатної методом.",
             "weight": 0.2,
+            "volume": 0,
             "price": 17.08,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 3.3,
@@ -94,10 +106,12 @@
             "title": "Маяк  штукатурний  6 мм (0,35) 3м ",
             "description": "При виробництві штукатурних робіт для полегшення вирівнювання поверхонь використовують металеві маяки з Т-образним профілем. Маяк штукатурний виготовляється з металевої стрічки холоднопрокатної методом.",
             "weight": 0.2,
+            "volume": 0,
             "price": 20.7,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 3.4,
@@ -105,10 +119,12 @@
             "title": "Маяк  штукатурний  10 мм (0,3) 3м ",
             "description": "При виробництві штукатурних робіт для полегшення вирівнювання поверхонь використовують металеві маяки з Т-образним профілем. Маяк штукатурний виготовляється з металевої стрічки холоднопрокатної методом.",
             "weight": 0.2,
+            "volume": 0,
             "price": 24.84,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 3.5,
@@ -116,10 +132,12 @@
             "title": "Маяк  штукатурний  10 мм (0,35) 3м ",
             "description": "При виробництві штукатурних робіт для полегшення вирівнювання поверхонь використовують металеві маяки з Т-образним профілем. Маяк штукатурний виготовляється з металевої стрічки холоднопрокатної методом.",
             "weight": 0.2,
+            "volume": 0,
             "price": 27.26,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -134,10 +152,12 @@
             "title": "KNAUF Грунт БЕТОКОНТАКТ, 5 кг ",
             "description": "Грунтовка Бетоконтакт призначена для попередньої обробки під гіпсову штукатурку щільних, гладких, слабо і не всмоктують вологу поверхонь: монолітного бетону, масивних бетонних стель використовується для внутрішніх робіт. Також можуть оброблятися обшивки з гіпсокартону і поверхні пінополістирольних плит.",
             "weight": 5,
+            "volume": 0,
             "price": 361.31,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 4.2,
@@ -145,10 +165,12 @@
             "title": "KNAUF Грунт БЕТОКОНТАКТ, 20 кг ",
             "description": "Грунтовка Бетоконтакт призначена для попередньої обробки під гіпсову штукатурку щільних, гладких, слабо і не всмоктують вологу поверхонь: монолітного бетону, масивних бетонних стель використовується для внутрішніх робіт. Також можуть оброблятися обшивки з гіпсокартону і поверхні пінополістирольних плит.",
             "weight": 20,
+            "volume": 0,
             "price": 1381.91,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -163,10 +185,12 @@
             "title": "KNAUF Грунт ГРУНДІРМІТЕЛЬ, 10 кг УКРАІНА ",
             "description": "Knauf Грундірміттель - грунтовка, що застосовується для обробки гідроскопічністю підстав для забезпечення рівномірного схоплювання гіпсового штукатурного розчину при подальшому оштукатурюванні. Використовується також для поліпшення зчеплення з поверхнею з газо- і пінобетону, силікатної та керамічної цегли.",
             "weight": 10,
+            "volume": 0,
             "price": 771.44,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 5.2,
@@ -174,10 +198,12 @@
             "title": "  SILTEK Е-100/10л Ґрунтівка Universal (універсальна)",
             "description": "Грунтовка Siltek Е-100 призначена для зміцнення та просочування поглинаючих основ перед нанесенням дисперсійних фарб для зменшення їх витрати, клейових розчинів, фінішних шпаклівок, приклеюванням керамічної плитки та шпалер, нанесенням основи для покриттів для підлоги.",
             "weight": 10,
+            "volume": 0,
             "price": 307.2,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 5.3,
@@ -185,10 +211,12 @@
             "title": "CERESIT Грунт СТ-17, 10 літрів ",
             "description": "Ґрунтівка глибокопроникна Ceresit СТ 17 призначена для підготовки (зниження та вирівнювання водопоглинання, знепилення, укріплення) зовнішніх та внутрішніх мінеральних поверхонь перед виконанням опоряджувальних робіт...",
             "weight": 10,
+            "volume": 0,
             "price": 385.97,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 5.4,
@@ -196,10 +224,12 @@
             "title": "Artisan №7 глибокопроникла 10 л ",
             "description": "Ґрунт ARTISAN №7 Universal застосовують для підготовки будь-яких мінеральних поверхонь з бетону, цегли, піно- і газобетону, гіпсокартону, цементної штукатурки, азбестоцементу, перед оштукатурюванням, шпаклюванням, фарбуванням, наклеюванням керамічної плитки, а також для ґрунтування підлог перед нанесенням самовирівнюючих сумішей, укладанням оздоблювальних підлогових матеріалів, зовні і всередині приміщень.",
             "weight": 10,
+            "volume": 0,
             "price": 232.78,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -214,10 +244,12 @@
             "title": "Кутник ПЛАСТИКОВИЙ ПЛЕТІНКА для мокрої штукатурки 3м ",
             "description": "Кутник ПВХ для мокрої штукатурки призначений для формування, вирівнювання і захисту від ушкоджень зовнішньої поверхні кута під час виконання штукатурення «мокрим способом» на внутрішніх чи зовнішніх стінах",
             "weight": 0.1,
+            "volume": 0,
             "price": 21.44,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 6.2,
@@ -225,10 +257,12 @@
             "title": "Профіль кутовий ПЕРФОРОВАНИЙ ПЛАСТИКОВИЙ малярний, 3м",
             "description": "Пластикові Перфоровані кути призначені для додання міцності і довговічності зовнішнім прямим і арочним кутах при внутрішній обробці приміщень матеріалами типу гіпсокартон, а так само при проведенні штукатурних робіт, обробці вікон, фарбування стін і т.д.",
             "weight": 0.1,
+            "volume": 0,
             "price": 10.47,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -243,10 +277,12 @@
             "title": "Профіль віконий примикаючий 2.4м 6/3мм ",
             "description": "Профіль віконний прилеглий ПВХ призначений для якісного формування віконних і дверних відкосів. Перевагою є стійкість до ультрафіолету й повний захист монтажного шва від погодних умов завдяки наявному ущільнювачу. Кут-профіль віконний використовується як у середині, так і назовні фасадів будівель для захисту вікон або дверей під час виконання оздоблювальних робіт.",
             "weight": 0.1,
+            "volume": 0,
             "price": 46.37,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 7.2,
@@ -254,10 +290,12 @@
             "title": "Профіль віконий примикаючий з СІТКОЮ 2.5м 6/3мм",
             "description": "Профіль віконний прилеглий ПВХ призначений для якісного формування віконних і дверних відкосів. Перевагою є стійкість до ультрафіолету й повний захист монтажного шва від погодних умов завдяки наявному ущільнювачу. Кут-профіль віконний використовується як у середині, так і назовні фасадів будівель для захисту вікон або дверей під час виконання оздоблювальних робіт.",
             "weight": 0.1,
+            "volume": 0,
             "price": 80.5,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -272,10 +310,12 @@
             "title": "Штукатурна сітка 145 г/м2 WORKS Синя, 5ммх5мм, рулон 1м*50м",
             "description": "Застосовується для армування поверхні, захисту поверхні від тріщин, гідроізоляції будівель, внутрішній обробки різних споруд. Висока опірність до розривів і розтягувань. Висока стійкість до впливу лужних розчинів. Запобігає утворенню тріщин в штукатурному шарі.",
             "weight": 0.5,
+            "volume": 0,
             "price": 482.49,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 8.2,
@@ -283,10 +323,12 @@
             "title": "  Штукатурна сітка 160 г/м2 WORKS PRO ПОМАРАНЧЕВА, 5ммх5мм, рулон 1м*50м ",
             "description": "Застосовується для армування поверхні, захисту поверхні від тріщин, гідроізоляції будівель, внутрішній обробки різних споруд. Висока опірність до розривів і розтягувань. Висока стійкість до впливу лужних розчинів. Запобігає утворенню тріщин в штукатурному шарі.",
             "weight": 0.5,
+            "volume": 0,
             "price": 535.8,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -301,10 +343,12 @@
             "title": "Плівка захисна малярська 4х5м, 20мкр",
             "description": "Плівка захисна призначена для захисту меблів, підлоги, стін від забруднення при виконанні ремонтних робіт. Захисна плівка призначена для застосування всередині приміщень",
             "weight": 0.5,
+            "volume": 0,
             "price": 40,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 9.2,
@@ -312,10 +356,12 @@
             "title": "Плівка п/ет  80мк, 1,5м*100м.п*2 рукав, 300м.кв",
             "description": "Застосовується для армування поверхні, захисту поверхні від тріщин, гідроізоляції будівель, внутрішній обробки різних споруд. Висока опірність до розривів і розтягувань. Висока стійкість до впливу лужних розчинів. Запобігає утворенню тріщин в штукатурному шарі.",
             "weight": 0.5,
+            "volume": 0,
             "price": 1089,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -330,10 +376,12 @@
             "title": "Стрічка  малярська 48 мм, рулон 20 м Eskaro",
             "description": "Клейка малярська стрічка використовується для збереження чистоти поверхонь, обмеження зон фарбування, захисту поверхонь від фарби у випадках неможливості демонтажу знімних елементів конструкції",
             "weight": 0.1,
+            "volume": 0,
             "price": 42.68,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 10.2,
@@ -341,10 +389,12 @@
             "title": "Стрічка  малярська 48 мм, рулон 40 м Eskaro",
             "description": "Клейка малярська стрічка використовується для збереження чистоти поверхонь, обмеження зон фарбування, захисту поверхонь від фарби у випадках неможливості демонтажу знімних елементів конструкції",
             "weight": 0.1,
+            "volume": 0,
             "price": 76.4,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -359,10 +409,12 @@
             "title": " Правило трапецевидне 300 см арт. 0730-523000 ХАРДЕКС",
             "description": "правило використовується при штукатурних роботах для швидкого та ефективного розподілу розчину по оброблюваної поверхні, а також для вирівнювання штукатурних шарів у вертикальному та горизонтальному положеннях",
             "weight": 2,
+            "volume": 0,
             "price": 1131.58,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 11.2,
@@ -370,10 +422,12 @@
             "title": "Мішки для сміття П/П 55смХ 90см",
             "description": "Універсальність і зручність. Формат поліпропіленового мішка  дозволяє підібрати оптимальний варіант для будь-яких потреб. Ви можете використовувати його для пакування піску, цементу, зерна, корму, насіння, соломи, будматеріалів і багатьох інших речей",
             "weight": 0.1,
+            "volume": 0,
             "price": 6.08,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 11.3,
@@ -381,10 +435,12 @@
             "title": "Рукавички  з покриттям ПВХ крапка",
             "description": "Спеціальний малюнок у вигляді ПВХ-покриття забезпечує надійність захоплення в процесі роботи і дозволяє зберігати максимальний контроль над інструментами і матеріалами, що оброблюються. Рукавички мають оптимальну жорсткість, яка дає можливість легко і точно виконувати роботи з невеликими деталями та інструментами.",
             "weight": 0.1,
+            "volume": 0,
             "price": 15.63,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 11.4,
@@ -392,10 +448,12 @@
             "title": "Відро Будівельне  20 л. (Польща)",
             "description": "Пластикові відра можуть використовуватися для змішування різних матеріалів, таких як цемент та пісок, для створення бетонної суміші. Це швидкий та ефективний спосіб змішування матеріалів без необхідності використання інших інструментів.",
             "weight": 0.2,
+            "volume": 0,
             "price": 78.75,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 11.5,
@@ -403,10 +461,12 @@
             "title": "Кастра кругла 65 л. (Польща)",
             "description": "Пластикові відра можуть використовуватися для змішування різних матеріалів, таких як цемент та пісок, для створення бетонної суміші. Це швидкий та ефективний спосіб змішування матеріалів без необхідності використання інших інструментів.",
             "weight": 0.2,
+            "volume": 0,
             "price": 207.5,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       }
@@ -427,10 +487,12 @@
             "title": "Knauf 2000х1200х12.5 мм",
             "description": "",
             "weight": 20,
+            "volume": 0,
             "price": 287.66,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "gipsSM"
+            "movingTypeCalculation": "gipsSM",
+            "officialLink": ""
           },
           {
             "id": 12.2,
@@ -438,10 +500,12 @@
             "title": "Knauf 2500х1200х12.5 мм",
             "description": "",
             "weight": 30,
+            "volume": 0,
             "price": 359.58,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "gipsMD"
+            "movingTypeCalculation": "gipsMD",
+            "officialLink": ""
           },
           {
             "id": 12.3,
@@ -449,10 +513,12 @@
             "title": "Knauf 3000х1200х12.5 мм",
             "description": "",
             "weight": 25,
+            "volume": 0,
             "price": 431.5,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "gipsLG"
+            "movingTypeCalculation": "gipsLG",
+            "officialLink": ""
           }
         ]
       },
@@ -467,10 +533,12 @@
             "title": "Knauf 2000х1200х12.5 мм",
             "description": "",
             "weight": 25,
+            "volume": 0,
             "price": 239.86,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "gipsSM"
+            "movingTypeCalculation": "gipsSM",
+            "officialLink": ""
           },
           {
             "id": 13.2,
@@ -478,10 +546,12 @@
             "title": "Knauf 2500х1200х12.5 мм",
             "description": "Цементно-вапняна суміш з мінеральними заповнювачами та полімерними добавками.  Призначена для механізованого штукатурення всіх видів щільних мінеральних основ всередині будівель. Придатна для нанесення",
             "weight": 25,
+            "volume": 0,
             "price": 299.82,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "gipsMD"
+            "movingTypeCalculation": "gipsMD",
+            "officialLink": ""
           },
           {
             "id": 13.3,
@@ -489,10 +559,12 @@
             "title": "Knauf 3000х1200х12.5 мм",
             "description": "Застосовується для виконання високоякісних штукатурних робіт на різних мінеральних основах (бетон, цегла і т.д.) усередині приміщень. Рекомендована як для традиційного ручного, так і для механічного нанесення. Після затвердіння є міцною основою для гіпсових шпаклівок і внутрішніх декоративних штукатурок.",
             "weight": 25,
+            "volume": 0,
             "price": 359.78,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "gipsLG"
+            "movingTypeCalculation": "gipsLG",
+            "officialLink": ""
           }
         ]
       },
@@ -507,10 +579,12 @@
             "title": "Knauf 2000х1200х9.5 мм",
             "description": "",
             "weight": 25,
+            "volume": 0,
             "price": 227.78,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "gipsSM"
+            "movingTypeCalculation": "gipsSM",
+            "officialLink": ""
           },
           {
             "id": 14.2,
@@ -518,10 +592,12 @@
             "title": "Knauf 2500х1200х9.5 мм",
             "description": "Цементно-вапняна суміш з мінеральними заповнювачами та полімерними добавками.  Призначена для механізованого штукатурення всіх видів щільних мінеральних основ всередині будівель. Придатна для нанесення",
             "weight": 25,
+            "volume": 0,
             "price": 284.73,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "gipsMD"
+            "movingTypeCalculation": "gipsMD",
+            "officialLink": ""
           }
         ]
       },
@@ -537,10 +613,12 @@
             "title": "Профіль CD-60 (0.55 мм) - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 81.9,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 15.2,
@@ -548,10 +626,12 @@
             "title": "Профіль CD-60 (0.55 мм) - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 109.2,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           },
           {
             "id": 15.3,
@@ -559,10 +639,12 @@
             "title": "Профіль CD-60 (0.6 мм) ГОСТ - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 105.03,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 15.4,
@@ -570,10 +652,12 @@
             "title": "Профіль CD-60 (0.6 мм) ГОСТ - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 140.04,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           },
           {
             "id": 15.5,
@@ -581,10 +665,12 @@
             "title": "Knauf Профіль CD-60 (0.6 мм) - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 148.23,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 15.6,
@@ -592,10 +678,12 @@
             "title": "Knauf Профіль CD-60 (0.6 мм) - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 206.2,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           }
         ]
       },
@@ -603,7 +691,6 @@
         "id": 16,
         "categoryTitle": "Профіль для гіпсокартону UD-27",
         "isCategoryOpen": false,
-
         "materials": [
           {
             "id": 16.1,
@@ -611,10 +698,12 @@
             "title": "Профіль UD-27 (0.55 мм) - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 50.13,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 16.2,
@@ -622,10 +711,12 @@
             "title": "Профіль UD-27 (0.55 мм) - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 66.84,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           },
           {
             "id": 16.3,
@@ -633,10 +724,12 @@
             "title": "Профіль UD-27 (0.6 мм) ГОСТ - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 65.82,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 16.4,
@@ -644,10 +737,12 @@
             "title": "Профіль UD-27 (0.6 мм) ГОСТ - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 87.76,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           },
           {
             "id": 16.5,
@@ -655,10 +750,12 @@
             "title": "Knauf Профіль UD-27 (0.6 мм) - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 106.47,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 16.6,
@@ -666,10 +763,12 @@
             "title": "Knauf Профіль UD-27 (0.6 мм) - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 141.96,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           }
         ]
       },
@@ -684,10 +783,12 @@
             "title": "Профіль CW-50 (0.55 мм) - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 107.91,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 17.2,
@@ -695,10 +796,12 @@
             "title": "Профіль CW-50 (0.55 мм) - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 143.88,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           },
           {
             "id": 17.3,
@@ -706,10 +809,12 @@
             "title": "Профіль CW-50 (0.6 мм) ГОСТ - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 133.68,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
 
           {
@@ -718,10 +823,12 @@
             "title": "Knauf Профіль CW-50 (0.6 мм) - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 165.96,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 17.6,
@@ -729,10 +836,12 @@
             "title": "Knauf Профіль CW-50 (0.6 мм) - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 221.28,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           }
         ]
       },
@@ -747,10 +856,12 @@
             "title": "Профіль CW-75 (0.55 мм) - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 126.93,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 18.2,
@@ -758,10 +869,12 @@
             "title": "Профіль CW-75 (0.55 мм) - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 169.24,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           },
           {
             "id": 18.3,
@@ -769,10 +882,12 @@
             "title": "Профіль CW-75 (0.6 мм) ГОСТ - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 159.06,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
 
           {
@@ -781,10 +896,12 @@
             "title": "Профіль CW-75 (0.6 мм) - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 212.08,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           },
           {
             "id": 18.5,
@@ -792,10 +909,12 @@
             "title": "Knauf Профіль CW-75 (0.6 мм) - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 189.24,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 18.6,
@@ -803,10 +922,12 @@
             "title": "Knauf Профіль CW-75 (0.6 мм) - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 252.32,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           }
         ]
       },
@@ -821,10 +942,12 @@
             "title": "Профіль CW-100 (0.55 мм) - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 145.59,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 19.2,
@@ -832,10 +955,12 @@
             "title": "Профіль CW-100 (0.55 мм) - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 194.12,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           },
           {
             "id": 19.3,
@@ -843,10 +968,12 @@
             "title": "Профіль CW-100 (0.6 мм) ГОСТ - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 181.95,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
 
           {
@@ -855,10 +982,12 @@
             "title": "Профіль CW-100 (0.6 мм) ГОСТ - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 242.6,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           },
           {
             "id": 19.5,
@@ -866,10 +995,12 @@
             "title": "Knauf Профіль CW-100 (0.6 мм) - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 223.26,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 19.6,
@@ -877,10 +1008,12 @@
             "title": "Knauf Профіль CW-100 (0.6 мм) - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 297.68,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           }
         ]
       },
@@ -895,10 +1028,12 @@
             "title": "Профіль UW-50 (0.55 мм) - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 85.86,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 20.2,
@@ -906,10 +1041,12 @@
             "title": "Профіль UW-50 (0.55 мм) - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 114.48,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           },
           {
             "id": 20.3,
@@ -917,10 +1054,12 @@
             "title": "Профіль UW-50 (0.6 мм) ГОСТ - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 109.08,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 20.5,
@@ -928,10 +1067,12 @@
             "title": "Knauf Профіль UW-50 (0.6 мм) - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 145.26,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 20.6,
@@ -939,10 +1080,12 @@
             "title": "Knauf Профіль UW-50 (0.6 мм) - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 193.68,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           }
         ]
       },
@@ -957,10 +1100,12 @@
             "title": "Профіль UW-75 (0.55 мм) - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 102.51,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 21.2,
@@ -968,10 +1113,12 @@
             "title": "Профіль UW-75 (0.55 мм) - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 136.68,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           },
           {
             "id": 21.3,
@@ -979,10 +1126,12 @@
             "title": "Профіль UW-75 (0.6 мм) ГОСТ - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 141.36,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
 
           {
@@ -991,10 +1140,12 @@
             "title": "Профіль UW-75 (0.6 мм) - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 188.48,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           },
           {
             "id": 21.5,
@@ -1002,10 +1153,12 @@
             "title": "Knauf Профіль UW-75 (0.6 мм) - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 169.17,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 21.6,
@@ -1013,10 +1166,12 @@
             "title": "Knauf Профіль UW-75 (0.6 мм) - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 225.56,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           }
         ]
       },
@@ -1031,10 +1186,12 @@
             "title": "Профіль UW-100 (0.55 мм) - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 120.48,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 22.2,
@@ -1042,10 +1199,12 @@
             "title": "Профіль UW-100 (0.55 мм) - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 160.64,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           },
           {
             "id": 22.3,
@@ -1053,10 +1212,12 @@
             "title": "Профіль UW-100 (0.6 мм) ГОСТ - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 157.68,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
 
           {
@@ -1065,10 +1226,12 @@
             "title": "Профіль UW-100 (0.6 мм) ГОСТ - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 210.24,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           },
           {
             "id": 22.5,
@@ -1076,10 +1239,12 @@
             "title": "Knauf Профіль UW-100 (0.6 мм) - 3м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 198.69,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profLG"
+            "movingTypeCalculation": "profLG",
+            "officialLink": ""
           },
           {
             "id": 22.6,
@@ -1087,10 +1252,12 @@
             "title": "Knauf Профіль UW-100 (0.6 мм) - 4м",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 264.92,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL"
+            "movingTypeCalculation": "profXL",
+            "officialLink": ""
           }
         ]
       },
@@ -1105,10 +1272,12 @@
             "title": "З'єднувач для нарощування для CD 60/90",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 3.88,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 23.2,
@@ -1116,10 +1285,12 @@
             "title": "З'єднувач хрестоподібний КРАБ 148х148 (0.65 мм)",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 9.12,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 23.3,
@@ -1127,10 +1298,12 @@
             "title": "З'єднувач хрестоподібний КРАБ 148х148 (0.8 мм)",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 11.29,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
 
           {
@@ -1139,10 +1312,12 @@
             "title": "З'єднувач хрестовий  дворівневий 60/60 (0.8 мм)",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 5.47,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 23.5,
@@ -1150,10 +1325,12 @@
             "title": "З'єднувач хрестовий  дворівневий 60/60 (0.9 мм)",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 5.69,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 23.6,
@@ -1161,10 +1338,12 @@
             "title": "Кутове з'єднання для CD-профілю (0,65 мм)",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 5.34,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 23.7,
@@ -1172,10 +1351,12 @@
             "title": "Кутове з'єднання для CD-профілю (0,9 мм)",
             "description": "",
             "weight": 2,
+            "volume": 0,
             "price": 7.88,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -1190,10 +1371,12 @@
             "title": "П-подібний кронштейн - підвіс 60х125 (0.80 мм)",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 5.88,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 24.2,
@@ -1201,10 +1384,12 @@
             "title": "П-подібний кронштейн - підвіс 60х125 (0.9 мм)",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 6.16,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 24.3,
@@ -1212,10 +1397,12 @@
             "title": "П-подібний кронштейн - підвіс 60х125 (1 мм)",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 6.71,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -1230,10 +1417,12 @@
             "title": "Стрижень 125 мм, гачок",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 1.57,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 25.2,
@@ -1241,10 +1430,12 @@
             "title": "Стрижень 250 мм, гачок",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 2.15,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 25.3,
@@ -1252,10 +1443,12 @@
             "title": "Стрижень 500 мм, гачок",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 4.73,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
 
           {
@@ -1264,10 +1457,12 @@
             "title": "Стрижень 1000 мм, гачок",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 9.17,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 25.5,
@@ -1275,10 +1470,12 @@
             "title": "Стрижень 1500 мм, гачок",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 14.33,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -1293,10 +1490,12 @@
             "title": "Стрижень 125 мм, кільце",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 1.57,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 26.2,
@@ -1304,10 +1503,12 @@
             "title": "Стрижень 250 мм, кільце",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 2.15,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 26.3,
@@ -1315,10 +1516,12 @@
             "title": "Стрижень 500 мм, кільце",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 4.73,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
 
           {
@@ -1327,10 +1530,12 @@
             "title": "Стрижень 1000 мм, кільце",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 9.17,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 26.5,
@@ -1338,10 +1543,12 @@
             "title": "Стрижень 1500 мм, кільце",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 14.33,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -1356,10 +1563,12 @@
             "title": "Швидкопідвіс для CD-профілю (поворотний) ",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 9.12,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 27.2,
@@ -1367,10 +1576,12 @@
             "title": "Швидкопідвіс пружинний метелик",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 7.52,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -1385,10 +1596,12 @@
             "title": "Профіль кутовий перфорований алюмінієвий (0.25) 18,5х18,5 2.5м",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 16.82,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 28.2,
@@ -1396,10 +1609,12 @@
             "title": "Профіль кутовий перфорований алюмінієвий (0.25) 18,5х18,5 3м",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 20.18,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 28.3,
@@ -1407,10 +1622,12 @@
             "title": "Профіль кутовий перфорований алюмінієвий (0.3) 20х20 2.5м",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 20.61,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
 
           {
@@ -1419,10 +1636,12 @@
             "title": "Профіль кутовий перфорований алюмінієвий (0.3) 20х20 3м",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 24.74,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 28.5,
@@ -1430,10 +1649,12 @@
             "title": "Профіль кутовий перфорований алюмінієвий (0.4) 30х30 3м",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 51.65,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 28.6,
@@ -1441,10 +1662,12 @@
             "title": "Профіль кутовий перфорований алюмінієвий з сіткою 7х7 3м",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 34.5,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -1459,10 +1682,12 @@
             "title": "Профіль кутовий перфорований пластиковий 2.5м",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 8.73,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 29.2,
@@ -1470,10 +1695,12 @@
             "title": "Профіль кутовий перфорований пластиковий 3м",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 10.47,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 29.3,
@@ -1481,10 +1708,12 @@
             "title": "Профіль кутовий перфорований пластиковий з сіткою 10х10 3м",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 33.17,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
 
           {
@@ -1493,10 +1722,12 @@
             "title": "Профіль кутовий перфорований пластиковий з сіткою 10х15 3м",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 37.9,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -1511,10 +1742,12 @@
             "title": "Стрічка  для швів  клейка  46 мм, рулон  45 м",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 50.52,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 30.2,
@@ -1522,10 +1755,12 @@
             "title": "Стрічка  для швів  клейка  46 мм, рулон  90 м",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 94.97,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 30.3,
@@ -1533,10 +1768,12 @@
             "title": "Стрічка  для швів  клейка  46 мм, рулон 150 м",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 160.4,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 30.4,
@@ -1544,10 +1781,12 @@
             "title": "KNAUF КУРТ Стрічка для швів паперова 25м НІМЕЧЧИНА",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 769.53,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 30.5,
@@ -1555,10 +1794,12 @@
             "title": "KNAUF КУРТ Стрічка для швів паперова 75м НІМЕЧЧИНА",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 1539.06,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 30.6,
@@ -1566,10 +1807,12 @@
             "title": "SEMIN BANDE JOINT Стрічка паперова 50 мм, 150 м.п.",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 259.45,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -1584,10 +1827,12 @@
             "title": "Стрічка звукоізоляційна клейка 30 мм, 30 м",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 107.46,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 31.2,
@@ -1595,10 +1840,12 @@
             "title": "Стрічка звукоізоляційна клейка 50 мм, 30 м",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 170.95,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 31.3,
@@ -1606,10 +1853,12 @@
             "title": "Стрічка звукоізоляційна клейка 70 мм, 30 м",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 226.86,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 31.4,
@@ -1617,10 +1866,12 @@
             "title": "Стрічка звукоізоляційна клейка 90 мм, 30 м",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 310.64,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 31.5,
@@ -1628,10 +1879,12 @@
             "title": "KNAUF Стрічка звукоізоляційна 30мм, 30м НІМЕЧЧИНА",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 354.82,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 31.6,
@@ -1639,10 +1892,12 @@
             "title": "KNAUF Стрічка звукоізоляційна 50мм, 30м НІМЕЧЧИНА",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 567.26,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 31.7,
@@ -1650,10 +1905,12 @@
             "title": "KNAUF Стрічка звукоізоляційна 70мм, 30м НІМЕЧЧИНА",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 797.78,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 31.8,
@@ -1661,10 +1918,12 @@
             "title": "KNAUF Стрічка звукоізоляційна 95мм, 30м НІМЕЧЧИНА",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 1059.94,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -1679,10 +1938,12 @@
             "title": "Саморіз 3,5Х25 по металу 200 шт",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 45.03,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 32.2,
@@ -1690,10 +1951,12 @@
             "title": "Саморіз 3,5Х25 по металу 1000 шт",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 113.76,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 32.3,
@@ -1701,10 +1964,12 @@
             "title": "KОЕЛЬНЕР Саморіз 3,5Х25 по металу 200шт ",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 56.61,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 32.4,
@@ -1712,10 +1977,12 @@
             "title": "KОЕЛЬНЕР Саморіз 3,5Х25 по металу 1000шт",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 264.84,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 32.5,
@@ -1723,10 +1990,12 @@
             "title": "KОЕЛЬНЕР Саморіз 3,5Х35 по металу 200шт",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 71.36,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 32.6,
@@ -1734,10 +2003,12 @@
             "title": "KОЕЛЬНЕР Саморіз 3,5Х 35 по металу 1000 шт",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 316.28,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 32.7,
@@ -1745,10 +2016,12 @@
             "title": "Саморіз 3,5Х 9,5 з буром  1000 шт",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 148.43,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 32.8,
@@ -1756,10 +2029,12 @@
             "title": "KОЕЛЬНЕР Саморіз 3,5Х9,5 з буром 200шт ",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 53.31,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 32.9,
@@ -1767,10 +2042,12 @@
             "title": "KОЕЛЬНЕР Саморіз 3,5Х9,5 з буром  1000шт",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 264.84,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -1785,10 +2062,12 @@
             "title": "Дюбель з Саморізом 6/40, 100 шт",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 31.6,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 33.2,
@@ -1796,10 +2075,12 @@
             "title": "Дюбель з Саморізом 6/40 (гриб), 200шт KОЕЛЬНЕР",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 149.11,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 33.3,
@@ -1807,10 +2088,12 @@
             "title": "Дюбель стельовий TDN 6/40 BIERBAH Коельнер, 1шт",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 2.41,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -1825,10 +2108,12 @@
             "title": "Knauf Клей для ГКП Перлфікс MD, 25 кг",
             "description": "",
             "weight": 25,
+            "volume": 0,
             "price": 261.29,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 34.2,
@@ -1836,10 +2121,12 @@
             "title": "Knauf Шпатлівка Фугенфюллер MD, 25кг",
             "description": "",
             "weight": 1,
+            "volume": 0,
             "price": 333.9,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -1854,10 +2141,12 @@
             "title": "Ekobord M 050x0610x01250mm /12,2м2 /0,61м3",
             "description": "",
             "weight": 7.93,
+            "volume": 0,
             "price": 812.92,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 35.2,
@@ -1865,10 +2154,12 @@
             "title": "Naturroll M (50+50)x1200x(2x9100MM)/21,84м2/ 1,092м3",
             "description": "",
             "weight": 11.2,
+            "volume": 0,
             "price": 1052.77,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 35.3,
@@ -1876,10 +2167,12 @@
             "title": "NatuRollPro M (50+50)X1200X(2X7700мм)/18,48м2/ 0,924м3",
             "description": "",
             "weight": 11.55,
+            "volume": 0,
             "price": 1062.5,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 35.4,
@@ -1887,10 +2180,12 @@
             "title": "Akustik board M 050X0610X1250мм /12,2м2/0,61м3.",
             "description": "",
             "weight": 9.76,
+            "volume": 0,
             "price": 929.04,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 35.5,
@@ -1898,10 +2193,12 @@
             "title": "Акустична мінеральна вата Acoustic Wool Sonet 6,0м2/упак,(1000*600*50)",
             "description": "",
             "weight": 14.4,
+            "volume": 0,
             "price": 1005.3,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       }
@@ -1922,10 +2219,12 @@
             "title": "SILTEK F-20/25кг",
             "description": "Суміш для підлоги SILTEK F-20 призначена для вирівнювання поверхонь підлог товщиною до 100 мм. Вона забезпечує міцну та надійну основу для подальшого нанесення фінішних покриттів, таких як ламінат, паркет або керамічна плитка. Завдяки своїм властивостям, суміш легко наноситься та розрівнюється, забезпечуючи рівну поверхню без тріщин та усадок. Підходить для використання як у житлових, так і в комерційних приміщеннях.",
             "weight": 25,
+            "volume": 0,
             "price": 0,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
           {
             "id": 36.2,
@@ -1933,10 +2232,12 @@
             "title": "CERESIT СТЯЖКА (10-100 мм)",
             "description": "CERESIT СТЯЖКА — це універсальна армована суміш, призначена для влаштування та ремонту стяжок підлог всередині та зовні будівель за умови експлуатації в сухих умовах. Вона підходить для нанесення на жорсткі, недеформівні основи, такі як бетон або цементно-піщані стяжки, з товщиною шару від 10 до 100 мм. Суміш також може використовуватися в системах водяного та електричного підігріву підлог, забезпечуючи рівномірний розподіл тепла та надійну основу для фінішних покриттів. ",
             "weight": 25,
+            "volume": 0,
             "price": 0,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           },
 
           {
@@ -1945,10 +2246,12 @@
             "title": "ПОЛІМІН СЦ-5",
             "description": "Цементна армована стяжка ПОЛІМІН СЦ-5 призначена для вирівнювання підлог товщиною від 10 до 80 мм. Вона забезпечує міцну та довговічну основу перед укладанням фінішних покриттів або може використовуватися як самостійне покриття для підлоги. Суміш характеризується високою адгезією до різних типів основ, стійкістю до утворення тріщин та усадки, а також зручністю в нанесенні та розрівнюванні. Підходить для використання в житлових та комерційних приміщеннях.",
             "weight": 25,
+            "volume": 0,
             "price": 0,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
           }
         ]
       },
@@ -1958,38 +2261,30 @@
         "isCategoryOpen": true,
         "materials": [
           {
-            "id": 38.1,
-            "image": "https://i.imgur.com/5icpjHb.jpeg",
-            "title": "SILTEK F-20/25кг",
-            "description": "Суміш для підлоги SILTEK F-20 призначена для вирівнювання поверхонь підлог товщиною до 100 мм. Вона забезпечує міцну та надійну основу для подальшого нанесення фінішних покриттів, таких як ламінат, паркет або керамічна плитка. Завдяки своїм властивостям, суміш легко наноситься та розрівнюється, забезпечуючи рівну поверхню без тріщин та усадок. Підходить для використання як у житлових, так і в комерційних приміщеннях.",
+            "id": 37.1,
+            "image": "https://i.imgur.com/6HfzBmm.jpeg",
+            "title": "SILTEK F-35",
+            "description": "SILTEK F-35 — високоякісна стяжка, призначена для створення тонкошарових високоміцних підлогових покриттів товщиною від 5 до 50 мм. Вона ефективна для ремонту існуючих стяжок та бетону, заповнення міжпанельних швів, заливки обігріваючих елементів та влаштування підлог під нахилом. Суміш підходить для використання як всередині, так і зовні будівель, включаючи поверхні, що деформуються. SILTEK F-35 забезпечує міцну основу для подальшого нанесення самовирівнювальних сумішей або укладання всіх видів природних та штучних облицювальних плит. Для підвищення адгезії на гладких поверхнях рекомендується використовувати ґрунтівку SILTEK E-120. ",
             "weight": 25,
+            "volume": 0,
             "price": 0,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://siltek.ua/product/f-35"
           },
           {
-            "id": 38.2,
-            "image": "https://i.imgur.com/ua2BBXe.jpeg",
-            "title": "CERESIT СТЯЖКА (10-100 мм)",
-            "description": "CERESIT СТЯЖКА — це універсальна армована суміш, призначена для влаштування та ремонту стяжок підлог всередині та зовні будівель за умови експлуатації в сухих умовах. Вона підходить для нанесення на жорсткі, недеформівні основи, такі як бетон або цементно-піщані стяжки, з товщиною шару від 10 до 100 мм. Суміш також може використовуватися в системах водяного та електричного підігріву підлог, забезпечуючи рівномірний розподіл тепла та надійну основу для фінішних покриттів. ",
+            "id": 37.2,
+            "image": "https://i.imgur.com/UaYGCVd.jpeg",
+            "title": "Kreisel 440",
+            "description": "KREISEL 440 — високоміцна цементна стяжка для підлог класу бетону B-35, призначена для виконання стяжок як всередині, так і зовні будівель. Використовується для створення підлог, зв'язаних з основою, на роздільному шарі, плаваючих підлог, а також підлог з підігрівом. Може застосовуватися для виготовлення інших елементів безпосередньо на будівельному майданчику після попереднього укладання відповідного армування. Рекомендована товщина шару — від 10 до 100 мм. Суміш забезпечує високу міцність, довговічність та стійкість до механічних навантажень.",
             "weight": 25,
+            "volume": 0,
             "price": 0,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
-          },
-
-          {
-            "id": 38.3,
-            "image": "https://i.imgur.com/njhuhM4.jpeg",
-            "title": "ПОЛІМІН СЦ-5",
-            "description": "Цементна армована стяжка ПОЛІМІН СЦ-5 призначена для вирівнювання підлог товщиною від 10 до 80 мм. Вона забезпечує міцну та довговічну основу перед укладанням фінішних покриттів або може використовуватися як самостійне покриття для підлоги. Суміш характеризується високою адгезією до різних типів основ, стійкістю до утворення тріщин та усадки, а також зручністю в нанесенні та розрівнюванні. Підходить для використання в житлових та комерційних приміщеннях.",
-            "weight": 25,
-            "price": 0,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://www.kreisel.ua/produkt/440-visokomicna-stjazhka-dlja-pidlog-beton-b-35"
           }
         ]
       },
@@ -2000,37 +2295,369 @@
         "materials": [
           {
             "id": 38.1,
-            "image": "https://i.imgur.com/5icpjHb.jpeg",
-            "title": "SILTEK F-20/25кг",
-            "description": "Суміш для підлоги SILTEK F-20 призначена для вирівнювання поверхонь підлог товщиною до 100 мм. Вона забезпечує міцну та надійну основу для подальшого нанесення фінішних покриттів, таких як ламінат, паркет або керамічна плитка. Завдяки своїм властивостям, суміш легко наноситься та розрівнюється, забезпечуючи рівну поверхню без тріщин та усадок. Підходить для використання як у житлових, так і в комерційних приміщеннях.",
+            "image": "https://i.imgur.com/jHm7Ilk.jpeg",
+            "title": "SILTEK  F-05/25кг",
+            "description": "SILTEK F-05 — самовирівнювальна суміш для підлоги, призначена для створення гладких та рівних поверхонь перед укладанням фінішних покриттів. Вона забезпечує високу адгезію до основи, швидке твердіння та мінімальну усадку. Підходить для використання як у житлових, так і в комерційних приміщеннях. Може застосовуватися на різних типах основ, включаючи бетонні та цементно-піщані стяжки. Рекомендована товщина шару — від 2 до 10 мм. Суміш характеризується зручністю у використанні, пластичністю та стійкістю до тріщин.",
             "weight": 25,
+            "volume": 0,
             "price": 0,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://siltek.ua/product/f-05"
           },
           {
             "id": 38.2,
-            "image": "https://i.imgur.com/ua2BBXe.jpeg",
-            "title": "CERESIT СТЯЖКА (10-100 мм)",
-            "description": "CERESIT СТЯЖКА — це універсальна армована суміш, призначена для влаштування та ремонту стяжок підлог всередині та зовні будівель за умови експлуатації в сухих умовах. Вона підходить для нанесення на жорсткі, недеформівні основи, такі як бетон або цементно-піщані стяжки, з товщиною шару від 10 до 100 мм. Суміш також може використовуватися в системах водяного та електричного підігріву підлог, забезпечуючи рівномірний розподіл тепла та надійну основу для фінішних покриттів. ",
+            "image": "https://i.imgur.com/h9bHZqj.jpeg",
+            "title": "SILTEK F-50/25кг",
+            "description": "SILTEK F-50 — високоміцна самовирівнювальна суміш для підлоги, призначена для створення рівних та гладких поверхонь перед укладанням фінішних покриттів. Вона забезпечує швидке твердіння, високу адгезію до основи та стійкість до механічних навантажень. Підходить для використання у приміщеннях з підвищеними експлуатаційними вимогами, таких як офіси, торгові зали та виробничі приміщення. Рекомендована товщина шару — від 5 до 20 мм. Суміш може застосовуватися на бетонних та цементно-піщаних основах.",
             "weight": 25,
+            "volume": 0,
             "price": 0,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://siltek.ua/product/f-50"
           },
-
           {
             "id": 38.3,
-            "image": "https://i.imgur.com/njhuhM4.jpeg",
-            "title": "ПОЛІМІН СЦ-5",
-            "description": "Цементна армована стяжка ПОЛІМІН СЦ-5 призначена для вирівнювання підлог товщиною від 10 до 80 мм. Вона забезпечує міцну та довговічну основу перед укладанням фінішних покриттів або може використовуватися як самостійне покриття для підлоги. Суміш характеризується високою адгезією до різних типів основ, стійкістю до утворення тріщин та усадки, а також зручністю в нанесенні та розрівнюванні. Підходить для використання в житлових та комерційних приміщеннях.",
+            "image": "https://i.imgur.com/Hlhg2Gh.jpeg",
+            "title": "Kreisel 412",
+            "description": "Kreisel 412 — самовирівнювальна підлогова суміш, призначена для вирівнювання бетонних та цементно-піщаних основ всередині приміщень. Вона створює гладку та рівну поверхню, придатну для укладання різних підлогових покриттів, таких як плитка, лінолеум, паркет або килимові покриття. Суміш характеризується високою плинністю, швидким твердінням та стійкістю до тріщин. Рекомендована товщина шару становить від 2 до 20 мм.",
             "weight": 25,
+            "volume": 0,
             "price": 0,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "weight"
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://www.kreisel.ua/produkt/412-samovirivnjuvalna-sumish-dlja-pidlog"
+          },
+          {
+            "id": 38.4,
+            "image": "https://i.imgur.com/f5uChAj.jpeg",
+            "title": "CERESIT CN-68",
+            "description": "CERESIT CN-68 — самовирівнювальна суміш для підлоги, призначена для створення рівних та гладких поверхонь перед укладанням фінішних покриттів. Вона підходить для використання на бетонних та цементно-піщаних основах всередині приміщень. Суміш забезпечує швидке твердіння, високу адгезію та стійкість до тріщин. Рекомендована товщина шару — від 2 до 10 мм. Після нанесення поверхня готова до укладання підлогових покриттів через 24 години.",
+            "weight": 25,
+            "volume": 0,
+            "price": 0,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://www.ceresit.ua/catalog/pidlogi/materialy-dlja-vlastuvannja-pidloh-samovyrivnjuval-ni-sumisi/produkti.html/ceresit-cn-68/SAP_0201TAC013Y9/variation/2790370.html"
+          },
+          {
+            "id": 38.5,
+            "image": "https://i.imgur.com/4rA5PP0.jpeg",
+            "title": "CERESIT CN-69",
+            "description": "CERESIT CN-69 — самовирівнювальна суміш для підлоги з підвищеною міцністю, призначена для створення рівних та гладких поверхонь перед укладанням фінішних покриттів. Вона підходить для використання на бетонних та цементно-піщаних основах всередині приміщень з підвищеними навантаженнями, таких як офіси, магазини та громадські будівлі. Суміш забезпечує швидке твердіння, високу адгезію та стійкість до тріщин. Рекомендована товщина шару — від 4 до 15 мм. Поверхня готова до укладання підлогових покриттів через 3 години після нанесення.Ці описи допоможуть вам краще зрозуміти характеристики та призначення зазначених будівельних матеріалів.",
+            "weight": 25,
+            "volume": 0,
+            "price": 0,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://www.ceresit.ua/catalog/pidlogi/materialy-dlja-vlastuvannja-pidloh-samovyrivnjuval-ni-sumisi/produkti.html/ceresit-cn-69/SAP_0201TAC013Z0.html"
+          }
+        ]
+      },
+      {
+        "id": 39,
+        "categoryTitle": "Пісок",
+        "isCategoryOpen": true,
+        "materials": [
+          {
+            "id": 39.1,
+            "image": "https://i.imgur.com/dbdE0MY.jpeg",
+            "title": "ПІСОК річковий, 0,03м.куб.",
+            "description": "Річковий пісок є незамінним матеріалом у багатьох сферах. У будівництві його використовують для приготування цементно-піщаних розчинів та бетонів, що забезпечує міцність і довговічність конструкцій. У ландшафтному дизайні він застосовується при влаштуванні дренажних систем та укладанні тротуарної плитки, оскільки відмінно пропускає воду, не затримуючи її. У садівництві пісок служить для створення дренажних шарів або покращення структури ґрунту. Під час ремонтних робіт він підходить для заповнення тріщин та вирівнювання поверхонь. Таким чином, річковий пісок забезпечує надійність та якість виконуваних робіт у різних сферах діяльності.",
+            "weight": 45,
+            "volume": 0,
+            "price": 0,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://siltek.ua/product/f-05"
+          }
+        ]
+      },
+      {
+        "id": 40,
+        "categoryTitle": "Цемент",
+        "isCategoryOpen": true,
+        "materials": [
+          {
+            "id": 39.1,
+            "image": "https://i.imgur.com/dbdE0MY.jpeg",
+            "title": "ПІСОК річковий, 0,03м.куб.",
+            "description": "Річковий пісок є незамінним матеріалом у багатьох сферах. У будівництві його використовують для приготування цементно-піщаних розчинів та бетонів, що забезпечує міцність і довговічність конструкцій. У ландшафтному дизайні він застосовується при влаштуванні дренажних систем та укладанні тротуарної плитки, оскільки відмінно пропускає воду, не затримуючи її. У садівництві пісок служить для створення дренажних шарів або покращення структури ґрунту. Під час ремонтних робіт він підходить для заповнення тріщин та вирівнювання поверхонь. Таким чином, річковий пісок забезпечує надійність та якість виконуваних робіт у різних сферах діяльності.",
+            "weight": 45,
+            "volume": 0,
+            "price": 0,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kladka",
+    "title": "Замовлення матеріалів для кладочних робіт",
+    "categories": [
+      {
+        "id": 41,
+        "categoryTitle": "Газоблок",
+        "isCategoryOpen": true,
+        "materials": [
+          {
+            "id": 41.1,
+            "image": "https://i.imgur.com/UAQXTfn.jpeg",
+            "title": "СТОУНЛАЙТ ГАЗОБЛОК 100/200/600",
+            "description": "Газоблок СТОУНЛАЙТ 100/200/600 — це високоякісний будівельний матеріал, виготовлений з пористого бетону, що забезпечує відмінні тепло- та звукоізоляційні властивості. Ідеально підходить для зведення стін, перегородок та інших конструкцій у житлових та комерційних будівлях.",
+            "weight": 25,
+            "volume": 0.012,
+            "price": 44.03,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "gazoSM",
+            "officialLink": ""
+          },
+          {
+            "id": 41.2,
+            "image": "https://i.imgur.com/UAQXTfn.jpeg",
+            "title": "СТОУНЛАЙТ ГАЗОБЛОК 120/200/600",
+            "description": "Газоблок СТОУНЛАЙТ 120/200/600 — це високоякісний будівельний матеріал, виготовлений з пористого бетону, що забезпечує відмінні тепло- та звукоізоляційні властивості. Ідеально підходить для зведення стін, перегородок та інших конструкцій у житлових та комерційних будівлях.",
+            "weight": 25,
+            "volume": 0.0144,
+            "price": 44.03,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "gazoMD",
+            "officialLink": ""
+          },
+          {
+            "id": 41.3,
+            "image": "https://i.imgur.com/UAQXTfn.jpeg",
+            "title": "СТОУНЛАЙТ ГАЗОБЛОК 150/200/600",
+            "description": "Газоблок СТОУНЛАЙТ 150/200/600 — це високоякісний будівельний матеріал, виготовлений з пористого бетону, що забезпечує відмінні тепло- та звукоізоляційні властивості. Ідеально підходить для зведення стін, перегородок та інших конструкцій у житлових та комерційних будівлях.",
+            "weight": 25,
+            "volume": 0.018,
+            "price": 44.03,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "gazoLG",
+            "officialLink": ""
+          },
+          {
+            "id": 41.4,
+            "image": "https://i.imgur.com/UAQXTfn.jpeg",
+            "title": "СТОУНЛАЙТ ГАЗОБЛОК 200/200/600",
+            "description": "Газоблок СТОУНЛАЙТ 200/200/600 — це високоякісний будівельний матеріал, виготовлений з пористого бетону, що забезпечує відмінні тепло- та звукоізоляційні властивості. Ідеально підходить для зведення стін, перегородок та інших конструкцій у житлових та комерційних будівлях.",
+            "weight": 25,
+            "volume": 0.024,
+            "price": 44.03,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "gazoXL",
+            "officialLink": ""
+          },
+          {
+            "id": 41.5,
+            "image": "https://i.imgur.com/UAQXTfn.jpeg",
+            "title": "СТОУНЛАЙТ ГАЗОБЛОК 250/200/600",
+            "description": "Газоблок СТОУНЛАЙТ 250/200/600 — це високоякісний будівельний матеріал, виготовлений з пористого бетону, що забезпечує відмінні тепло- та звукоізоляційні властивості. Ідеально підходить для зведення стін, перегородок та інших конструкцій у житлових та комерційних будівлях.",
+            "weight": 25,
+            "volume": 0.03,
+            "price": 44.03,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "gazo2XL",
+            "officialLink": ""
+          },
+          {
+            "id": 41.6,
+            "image": "https://i.imgur.com/UAQXTfn.jpeg",
+            "title": "СТОУНЛАЙТ ГАЗОБЛОК 300/200/600",
+            "description": "Газоблок СТОУНЛАЙТ 300/200/600 — це високоякісний будівельний матеріал, виготовлений з пористого бетону, що забезпечує відмінні тепло- та звукоізоляційні властивості. Ідеально підходить для зведення стін, перегородок та інших конструкцій у житлових та комерційних будівлях.",
+            "weight": 25,
+            "volume": 0.036,
+            "price": 44.03,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "gazo3XL",
+            "officialLink": ""
+          },
+          {
+            "id": 41.7,
+            "image": "https://i.imgur.com/UAQXTfn.jpeg",
+            "title": "СТОУНЛАЙТ ГАЗОБЛОК 375/200/600",
+            "description": "Газоблок СТОУНЛАЙТ 375/200/600 — це високоякісний будівельний матеріал, виготовлений з пористого бетону, що забезпечує відмінні тепло- та звукоізоляційні властивості. Ідеально підходить для зведення стін, перегородок та інших конструкцій у житлових та комерційних будівлях.",
+            "weight": 25,
+            "volume": 0.045,
+            "price": 44.03,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "gazo4XL",
+            "officialLink": ""
+          },
+          {
+            "id": 41.8,
+            "image": "https://i.imgur.com/UAQXTfn.jpeg",
+            "title": "СТОУНЛАЙТ ГАЗОБЛОК 400/200/600",
+            "description": "Газоблок СТОУНЛАЙТ 400/200/600 — це високоякісний будівельний матеріал, виготовлений з пористого бетону, що забезпечує відмінні тепло- та звукоізоляційні властивості. Ідеально підходить для зведення стін, перегородок та інших конструкцій у житлових та комерційних будівлях.",
+            "weight": 25,
+            "volume": 0.048,
+            "price": 44.03,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "gazo5XL",
+            "officialLink": ""
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "categoryTitle": "Цегла",
+        "isCategoryOpen": true,
+        "materials": [
+          {
+            "id": 42.1,
+            "image": "https://i.imgur.com/jZL3aao.jpeg",
+            "title": "Цегла М100 повнотіла червона рядова 250х120х65мм",
+            "description": "Цегла М100 повнотіла червона рядова розміру 250×120×65 мм — це традиційний будівельний матеріал, виготовлений з обпаленої глини. Вона широко використовується для зведення несучих та огороджувальних конструкцій, таких як зовнішні та внутрішні стіни, перегородки, підвальні приміщення, а також для облицювання будівель.Цегла М100 відрізняється високою міцністю, морозостійкістю та водостійкістю, що забезпечує довговічність та надійність конструкцій. Вона є екологічно чистим матеріалом, оскільки виготовляється з природної глини без використання шкідливих добавок.",
+            "weight": 3.5,
+            "volume": 0.00195,
+            "price": 8.57,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "gazoSM",
+            "officialLink": ""
+          },
+          {
+            "id": 42.2,
+            "image": "https://i.imgur.com/jZL3aao.jpeg",
+            "title": "Цегла М125 повнотіла червона рядова 250х120х65мм",
+            "description": "Цегла М125 повнотіла червона рядова розміру 250×120×65 мм — це традиційний будівельний матеріал, виготовлений з обпаленої глини. Вона широко використовується для зведення несучих та огороджувальних конструкцій, таких як зовнішні та внутрішні стіни, перегородки, підвальні приміщення, а також для облицювання будівель.Цегла М100 відрізняється високою міцністю, морозостійкістю та водостійкістю, що забезпечує довговічність та надійність конструкцій. Вона є екологічно чистим матеріалом, оскільки виготовляється з природної глини без використання шкідливих добавок.",
+            "weight": 3.5,
+            "volume": 0.00195,
+            "price": 8.74,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "gazoSM",
+            "officialLink": ""
+          },
+          {
+            "id": 42.3,
+            "image": "https://i.imgur.com/jZL3aao.jpeg",
+            "title": "Цегла М150 повнотіла червона рядова 250х120х65мм",
+            "description": "Цегла М150 повнотіла червона рядова розміру 250×120×65 мм — це традиційний будівельний матеріал, виготовлений з обпаленої глини. Вона широко використовується для зведення несучих та огороджувальних конструкцій, таких як зовнішні та внутрішні стіни, перегородки, підвальні приміщення, а також для облицювання будівель.Цегла М100 відрізняється високою міцністю, морозостійкістю та водостійкістю, що забезпечує довговічність та надійність конструкцій. Вона є екологічно чистим матеріалом, оскільки виготовляється з природної глини без використання шкідливих добавок.",
+            "weight": 3.5,
+            "volume": 0.00195,
+            "price": 8.74,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "gazoSM",
+            "officialLink": ""
+          },
+          {
+            "id": 42.4,
+            "image": "https://i.imgur.com/jZL3aao.jpeg",
+            "title": "Цегла М100 пустотіла червона рядова 250х120х65мм",
+            "description": "Цегла М100 пустотіла червона рядова розміру 250×120×65 мм — це традиційний будівельний матеріал, виготовлений з обпаленої глини. Вона широко використовується для зведення несучих та огороджувальних конструкцій, таких як зовнішні та внутрішні стіни, перегородки, підвальні приміщення, а також для облицювання будівель.Цегла М100 відрізняється високою міцністю, морозостійкістю та водостійкістю, що забезпечує довговічність та надійність конструкцій. Вона є екологічно чистим матеріалом, оскільки виготовляється з природної глини без використання шкідливих добавок.",
+            "weight": 2.4,
+            "volume": 0.00195,
+            "price": 8.74,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "gazoSM",
+            "officialLink": ""
+          },
+          {
+            "id": 42.5,
+            "image": "https://i.imgur.com/8jOABbA.jpeg",
+            "title": "Цегла М-200 силікатна ПОЛУТОРНА рядова 120х88х250",
+            "description": "Силікатна полуторна цегла М-200 розміром 250х120х88 мм виготовляється з екологічно чистих природних матеріалів: піску, меленого вапна та води. Вона має високу міцність (марка М-200), що забезпечує надійність та стійкість до механічних впливів, роблячи її ідеальною для несучих стін та перегородок. Цегла характеризується білим кольором, повнотілою структурою та розмірами 250 мм (довжина) х 120 мм (ширина) х 88 мм (висота). Середня щільність становить 1850 кг/м³, водопоглинання – 11,5%, морозостійкість – 25 циклів. Завдяки своїм властивостям, вона підходить для будівництва внутрішніх та зовнішніх стін, забезпечуючи хорошу звукоізоляцію та довговічність конструкцій.",
+            "weight": 2.4,
+            "volume": 0.00195,
+            "price": 15.03,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "gazoSM",
+            "officialLink": ""
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "categoryTitle": "Клей для газоблоку, цегли",
+        "isCategoryOpen": true,
+        "materials": [
+          {
+            "id": 43.1,
+            "image": "https://i.imgur.com/GuO7VlU.jpeg",
+            "title": "Wallmix B-3",
+            "description": "Wallmix B-3 — це високоякісна клейова суміш, спеціально розроблена для тонкошарового мурування блоків з газобетону. Завдяки своїй формулі, вона забезпечує надійне та міцне з'єднання блоків, мінімізуючи утворення «містків холоду», що сприяє підвищенню енергоефективності будівель. Суміш характеризується високою адгезією, зручністю в роботі та економічною витратою. Підходить для використання як всередині, так і зовні приміщень.",
+            "weight": 25,
+            "volume": 0.00195,
+            "price": 8.57,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "gazoSM",
+            "officialLink": ""
+          },
+          {
+            "id": 43.2,
+            "image": "https://i.imgur.com/2ksKmLj.jpeg",
+            "title": "Wallmix B-5",
+            "description": "Wallmix B-5 — це універсальна клейова суміш, призначена для мурування керамічних та силікатних блоків. Вона відзначається високою адгезією до різних типів поверхонь, що забезпечує міцність та довговічність конструкцій. Суміш легко наноситься, має оптимальний час коригування та сприяє створенню рівних швів, що покращує теплоізоляційні властивості стін. Підходить для внутрішніх та зовнішніх робіт.",
+            "weight": 25,
+            "volume": 0.00195,
+            "price": 8.74,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "gazoSM",
+            "officialLink": ""
+          },
+          {
+            "id": 43.3,
+            "image": "https://i.imgur.com/N5oXa8X.jpeg",
+            "title": "Kreisel 127",
+            "description": "Kreisel 127 — це спеціалізована клейова суміш, призначена для тонкошарового мурування стін з блоків із пористого бетону, таких як газо- та пінобетонні блоки. Вона також підходить для зведення стін з вапняно-піщаних (силікатних), звичайних бетонних та керамзитобетонних блоків. Суміш запобігає утворенню термічних містків у місцях швів між елементами стіни, що підвищує теплоізоляційні характеристики будівлі. Після змішування з водою утворює однорідну масу з властивостями клейового розчину, яка після затвердіння стає водо- та морозостійкою.",
+            "weight": 25,
+            "volume": 0.00195,
+            "price": 8.74,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "gazoSM",
+            "officialLink": ""
+          },
+          {
+            "id": 43.4,
+            "image": "https://i.imgur.com/5X3eugO.jpeg",
+            "title": "Dops Block",
+            "description": "Dops Block — це високоякісна клейова суміш, спеціально розроблена для мурування газо- та піноблоків. Вона забезпечує тонкошарове нанесення, що сприяє економії матеріалу та зменшенню товщини швів. Суміш характеризується високою адгезією, пластичністю та зручністю у використанні, що дозволяє швидко та якісно виконувати будівельні роботи. Після затвердіння клейовий шов стає водо- та морозостійким, забезпечуючи довговічність конструкції.",
+            "weight": 25,
+            "volume": 0.00195,
+            "price": 8.74,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "gazoSM",
+            "officialLink": ""
+          },
+          {
+            "id": 43.5,
+            "image": "https://i.imgur.com/8InGIF4.jpeg",
+            "title": "ПОЛІМІН ПБ-45",
+            "description": "ПОЛІМІН ПБ-45 — це клейова суміш, призначена для кладки зовнішніх і внутрішніх стін з точних за розміром теплоізоляційних бетонів, таких як газо- та пінобетон, а також поризованого керамічного каменю або силікатних блоків. Висока пластичність клейового розчину дозволяє мінімізувати товщину швів, що запобігає утворенню «містків холоду» та покращує теплоізоляційні властивості стін. Суміш має високу адгезію, водо- та морозостійкість, що забезпечує надійність та довговічність конструкцій.",
+            "weight": 25,
+            "volume": 0.00195,
+            "price": 15.03,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "gazoSM",
+            "officialLink": ""
           }
         ]
       }

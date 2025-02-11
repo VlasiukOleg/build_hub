@@ -10,7 +10,13 @@
     "burgerClose": "Закрити модальне меню",
     "burgerOpen": "Відкрити модальне меню"
   },
-  "materialSlugs": ["shtukaturka", "gipsokarton", "catalog", "styazhka"],
+  "materialSlugs": [
+    "shtukaturka",
+    "gipsokarton",
+    "catalog",
+    "styazhka",
+    "kladka"
+  ],
   "moving": {
     "columnLabels": {
       "type": "Тип мат.",

@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface Material {
   title: string;
-  quantity: number;
+  quantity: string;
   price: string;
 }
 

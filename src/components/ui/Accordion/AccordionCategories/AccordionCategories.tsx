@@ -19,6 +19,7 @@ const BREADCRUMBS_LABEL = {
   [Pages.GIPSOKARTON]: 'Гіпсокартон',
   [Pages.ORDER]: 'Корзина',
   [Pages.STYAZHKA]: 'Cтяжка',
+  [Pages.KLADKA]: 'Кладка',
 };
 
 interface IAccordionCategoriesProps {
@@ -34,8 +35,24 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
   const isMovingAddToOrder = useAppSelector(
     state => state.moving.isMovingPriceAddToOrder
   );
+  const additionalMaterialList = useAppSelector(
+    state => state.additionalMaterial.additionalMaterial
+  );
 
-  const { totalPrice, totalWeight, totalQuantity, title } = useMaterials(slug);
+  const totalQuantityAdditionalMaterial = additionalMaterialList.reduce(
+    (totalQuantity, additionalMaterial) => {
+      return totalQuantity + Number(additionalMaterial.quantity);
+    },
+    0
+  );
+
+  console.log(totalQuantityAdditionalMaterial);
+
+  const { totalPrice, totalWeight, totalQuantity, title, totalVolume } =
+    useMaterials(slug);
+
+  const allMaterilalTotalQuantity =
+    totalQuantity + totalQuantityAdditionalMaterial;
 
   const handleOrderClick = () => {
     const url = `/order?from=${slug}`;
@@ -49,6 +66,7 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
       <div className="container">
         <OrderBar
           totalQuantity={totalQuantity}
+          totalVolume={totalVolume}
           totalWeight={totalWeight}
           totalPrice={totalPrice}
           deliveryPrice={deliveryPrice}
@@ -73,7 +91,7 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
               className="bg-accent text-white ml-2 mt-3 font-medium text-base h-10 xl:text-lg xl:h-12"
               radius="sm"
               onPress={handleOrderClick}
-              isDisabled={totalQuantity === 0}
+              isDisabled={allMaterilalTotalQuantity === 0}
             >
               Оформити замовлення
             </Button>

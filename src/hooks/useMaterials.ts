@@ -34,6 +34,10 @@ export const useMaterials = (slug?: string) => {
     return acc + value.quantity;
   }, 0);
 
+  const totalVolume = materials?.reduce((acc, value) => {
+    return acc + value.volume * value.quantity;
+  }, 0);
+
   return {
     subCategoriesBySlug,
     materials,
@@ -41,5 +45,6 @@ export const useMaterials = (slug?: string) => {
     totalPrice,
     totalWeight,
     totalQuantity,
+    totalVolume,
   };
 };

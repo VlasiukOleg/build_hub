@@ -20,6 +20,8 @@ interface IDisclosureMaterialsPanelProps {
     price: number;
     quantity: number;
     totalPrice: number;
+    officialLink: string;
+    volume: number;
   };
   catInd: number;
   matInd: number;
@@ -58,6 +60,7 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
           title={material.title}
           description={material.description}
           image={material.image}
+          officialLink={material.officialLink}
         />
       </CardHeader>
       <Divider />

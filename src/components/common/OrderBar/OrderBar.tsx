@@ -23,6 +23,7 @@ import { LuWeight } from 'react-icons/lu';
 import { FaPersonWalkingLuggage } from 'react-icons/fa6';
 import { TbTruckDelivery } from 'react-icons/tb';
 import { GiMoneyStack } from 'react-icons/gi';
+import { BsBox } from 'react-icons/bs';
 
 interface IOrderBarProps {
   totalQuantity: number;
@@ -32,6 +33,7 @@ interface IOrderBarProps {
   deliveryType: string;
   movingPrice: number;
   isMovingAddToOrder: boolean;
+  totalVolume: number;
 }
 
 const OrderBar: React.FC<IOrderBarProps> = ({
@@ -42,6 +44,7 @@ const OrderBar: React.FC<IOrderBarProps> = ({
   deliveryType,
   movingPrice,
   isMovingAddToOrder,
+  totalVolume,
 }) => {
   const router = useRouter();
   const dispatch = useAppDispatch();
@@ -65,6 +68,10 @@ const OrderBar: React.FC<IOrderBarProps> = ({
         <div className="p-1 rounded-lg bg-white text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
           <LuWeight className="size-5  xl:size-7 text-grey" />
           {totalWeight.toFixed(2)} кг.
+        </div>
+        <div className="p-1 rounded-lg bg-white text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
+          <BsBox className="size-5  xl:size-7 text-grey" />
+          {totalVolume.toFixed(2)} м3
         </div>
         {isMovingAddToOrder && (
           <div className="p-1 rounded-lg bg-white text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">

@@ -21,12 +21,14 @@ interface IMaterialDrawerProps {
   title: String;
   description: String;
   image: string;
+  officialLink: string;
 }
 
 const MaterialDrawer: React.FC<IMaterialDrawerProps> = ({
   title,
   description,
   image,
+  officialLink,
 }) => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
@@ -93,13 +95,16 @@ const MaterialDrawer: React.FC<IMaterialDrawerProps> = ({
                 </div>
               </DrawerBody>
               <DrawerFooter className="justify-start">
-                <Link
-                  href="https://knauf.com/uk-UA/p/produkt/shtukaturka-mp-75-10256_0150"
-                  size="sm"
-                  color="primary"
-                >
-                  Офіційна сторінка
-                </Link>
+                {officialLink && (
+                  <Link
+                    href={officialLink}
+                    size="sm"
+                    color="primary"
+                    isExternal
+                  >
+                    Офіційна сторінка
+                  </Link>
+                )}
               </DrawerFooter>
             </>
           )}

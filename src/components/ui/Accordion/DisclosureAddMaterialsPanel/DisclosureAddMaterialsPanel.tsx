@@ -3,18 +3,22 @@
 import React, { useState } from 'react';
 import { Button } from '@heroui/react';
 import clsx from 'clsx';
-import { Field, Label, Input } from '@headlessui/react';
+import { Input, Chip, Alert } from '@heroui/react';
+import { Field, Label } from '@headlessui/react';
+import { Autocomplete, AutocompleteItem } from '@heroui/react';
 
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 import {
   addAdditionalMaterial,
   removeAdditionalMaterial,
-  clearAdditionalMaterial,
   toggleAdditionalPriceAddToOrder,
 } from '@/redux/additionalMaterialSlice';
 
+import materials from '@/data/materials.json';
+
 import { FiPlusCircle } from 'react-icons/fi';
 import { MdOutlineCancel } from 'react-icons/md';
+import { RiSearchLine } from 'react-icons/ri';
 
 interface IDisclosureAddMaterialsPanelProps {}
 
@@ -24,10 +28,18 @@ interface ICustomMaterial {
   price: string;
 }
 
+const description =
+  'В наявності більше 5 000 позицій, якщ Ви не знайшли потрібний матеріал в КАТАЛОЗІ, скористайтесь пошуком матеріалів або додайте вручну';
+
 const DisclosureAddMaterialsPanel: React.FC<
   IDisclosureAddMaterialsPanelProps
 > = ({}) => {
-  const [newMaterial, setNewMaterial] = useState({ title: '', quantity: 0 });
+  // const [newMaterial, setNewMaterial] = useState({ title: '', quantity: 0 });
+  const [materialTitle, setMaterialTitle] = useState<string>('');
+  const [quantity, setQuantity] = useState<string>('');
+  const [manualMaterialTitle, setManualMaterialTitle] = useState<string>('');
+  const [manualQuantity, setManualQuantity] = useState<string>('');
+  const [materialPrice, setMaterialPrice] = useState<string>('');
 
   const dispatch = useAppDispatch();
 
@@ -38,24 +50,60 @@ const DisclosureAddMaterialsPanel: React.FC<
     state => state.additionalMaterial.isAdditionalMaterialAddToOrder
   );
 
-  const isButtonActive =
-    Number(newMaterial.quantity) > 0 && newMaterial.title.length > 0;
+  const isButtonActive = materialTitle.length > 0 && Number(quantity) > 0;
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setNewMaterial(prev => ({ ...prev, [name]: value }));
+  const isManualButtonActive =
+    manualMaterialTitle.length > 0 && Number(manualQuantity) > 0;
+
+  const onSelectionChange = (id: React.Key | null) => {
+    console.log(id);
+    const selectedMaterial = materials.find(material => material.key === id);
+    if (selectedMaterial) {
+      setMaterialPrice(selectedMaterial.price);
+    }
   };
 
+  const test = 'Договірна';
+
+  console.log(isNaN(Number(test) * 5));
+
+  // const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   const { name, value } = e.target;
+  //   setNewMaterial(prev => ({ ...prev, [name]: value }));
+  // };
+
   const handleAddMaterial = () => {
-    if (newMaterial.title && newMaterial.quantity) {
-      dispatch(addAdditionalMaterial({ ...newMaterial, price: 'Договірна' }));
-      setNewMaterial({ title: '', quantity: 0 });
-    }
+    dispatch(
+      addAdditionalMaterial({
+        title: materialTitle,
+        quantity,
+        price: materialPrice,
+      })
+    );
+    setQuantity('');
+    setMaterialTitle('');
+    setMaterialPrice('');
+  };
+
+  const handleManualMaterialAdd = () => {
+    dispatch(
+      addAdditionalMaterial({
+        title: manualMaterialTitle,
+        quantity: manualQuantity,
+        price: 'Договірна',
+      })
+    );
+    setManualQuantity('');
+    setManualMaterialTitle('');
   };
 
   const handleRemoveMaterial = (index: number) => {
     dispatch(removeAdditionalMaterial(index));
-    dispatch(toggleAdditionalPriceAddToOrder());
+
+    if (additionalMaterial.length === 1) {
+      console.log('Yes');
+      dispatch(toggleAdditionalPriceAddToOrder());
+    }
   };
 
   const onToggleAdditionalMaterialToOrder = () => {
@@ -64,50 +112,116 @@ const DisclosureAddMaterialsPanel: React.FC<
 
   return (
     <div className="mt-2 text-sm/5 text-grey md:text-lg xl:text-xl xl:mt-6">
-      <p className="text-xs text-center text-accent font-bold mb-2 md:text-base xl:text-xl">
-        Якщо Ви не знайшли потрібний матеріал, додайте що Вам необхідно:
-      </p>
-      <div className="xl:flex xl:gap-4">
-        <Field className="relative mb-2 xl:mb-0 xl:w-[500px]">
-          <Label className="text-xs/6 font-medium  text-grey md:text-sm">
-            Назва матеріалу
-          </Label>
-          <Input
-            onChange={handleInputChange}
-            name="title"
-            value={newMaterial.title}
-            className={clsx(
-              'mt-1 block w-full rounded-lg border-[1px] border-grey bg-bgWhite py-1.5 px-3 text-xs/6 text-grey md:text-sm md:py-2',
-              'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-accent'
-            )}
-          />
-        </Field>
-        <div className="flex items-end gap-1">
-          <Field className="relative">
-            <Label className="text-xs/6 font-medium  text-grey md:text-sm">
-              Кількість
-            </Label>
-            <Input
-              onChange={handleInputChange}
-              name="quantity"
-              value={newMaterial.quantity}
-              className={clsx(
-                'mt-1 block w-full rounded-lg border-[1px] border-grey bg-bgWhite py-1.5 px-3 text-xs/6 text-grey md:text-sm md:py-2',
-                'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-accent'
-              )}
-            />
-          </Field>
-          <Button
-            isIconOnly
-            aria-label="Clear Order"
-            onPress={handleAddMaterial}
-            className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
-            radius="sm"
-            isDisabled={!isButtonActive}
-          >
-            <FiPlusCircle className="size-6  xl:size-9 text-green-500" />
-          </Button>
-        </div>
+      <Alert
+        description={description}
+        color="danger"
+        classNames={{
+          base: 'mb-4',
+          title: 'font-bold text-xs/6 md:text-sm xl:text-base',
+          description: 'text-xs/6 md:text-sm xl:text-base',
+        }}
+      />
+      <p className="text-center font-semibold">Пошук матеріалів</p>
+      <Autocomplete
+        className="w-full"
+        defaultItems={materials}
+        label="Назва матеріалу"
+        placeholder="Введіть назву"
+        size="md"
+        variant="bordered"
+        labelPlacement="outside"
+        inputValue={materialTitle}
+        onInputChange={setMaterialTitle}
+        onSelectionChange={onSelectionChange}
+        startContent={<RiSearchLine className="size-5" />}
+        inputProps={{
+          classNames: {
+            label: 'text-xs md:text-sm !text-grey',
+            inputWrapper: 'group-data-[focus=true]:border-accent',
+          },
+        }}
+      >
+        {material => (
+          <AutocompleteItem key={material.key} textValue={material.label}>
+            <div className="flex gap-1 items-center justify-between">
+              <p className="text-xs  md:text-base">{material.label}</p>
+              <Chip
+                variant="bordered"
+                className="bg-slate-50 border-accent text-xs md:text-base"
+              >
+                {material.price} грн.
+              </Chip>
+            </div>
+          </AutocompleteItem>
+        )}
+      </Autocomplete>
+      <div className="flex gap-2 items-end mt-2">
+        <Input
+          label="Кількість"
+          placeholder="Введіть кількість"
+          type="number"
+          size="md"
+          labelPlacement="outside"
+          variant="bordered"
+          value={quantity}
+          onValueChange={setQuantity}
+          classNames={{
+            label: 'text-xs md:text-sm !text-grey',
+            inputWrapper: 'group-data-[focus=true]:border-accent',
+          }}
+        />
+        <Button
+          isIconOnly
+          aria-label="Clear Order"
+          onPress={handleAddMaterial}
+          className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
+          radius="sm"
+          isDisabled={!isButtonActive}
+        >
+          <FiPlusCircle className="size-6  xl:size-9 text-green-500" />
+        </Button>
+      </div>
+      <p className="text-center font-semibold mt-4">Додати вручну</p>
+      <div>
+        <Input
+          label="Назва матеріалу"
+          placeholder="Введіть назву"
+          size="md"
+          labelPlacement="outside"
+          variant="bordered"
+          value={manualMaterialTitle}
+          onValueChange={setManualMaterialTitle}
+          classNames={{
+            label: 'text-xs md:text-sm !text-grey',
+            inputWrapper: 'group-data-[focus=true]:border-accent',
+          }}
+        />
+      </div>
+      <div className="flex gap-2 items-end mt-2">
+        <Input
+          label="Кількість"
+          placeholder="Введіть кількість"
+          type="number"
+          size="md"
+          labelPlacement="outside"
+          variant="bordered"
+          value={manualQuantity}
+          onValueChange={setManualQuantity}
+          classNames={{
+            label: 'text-xs md:text-sm !text-grey',
+            inputWrapper: 'group-data-[focus=true]:border-accent',
+          }}
+        />
+        <Button
+          isIconOnly
+          aria-label="Clear Order"
+          onPress={handleManualMaterialAdd}
+          className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
+          radius="sm"
+          isDisabled={!isManualButtonActive}
+        >
+          <FiPlusCircle className="size-6  xl:size-9 text-green-500" />
+        </Button>
       </div>
 
       {additionalMaterial.length > 0 && (
@@ -130,6 +244,20 @@ const DisclosureAddMaterialsPanel: React.FC<
                     <p className="text-sm font-normal text-center w-[15%] md:text-lg">
                       {material.quantity}
                     </p>
+                    <div className="w-[25%] text-right">
+                      <p className="text-xs font-normal md:text-base">
+                        {material.price} грн.
+                      </p>
+                      <p className="text-sm text-accent md:text-lg">
+                        {!isNaN(
+                          Number(material.quantity) * Number(material.price)
+                        )
+                          ? `${(
+                              Number(material.quantity) * Number(material.price)
+                            ).toFixed(2)} грн. `
+                          : '-- грн.'}{' '}
+                      </p>
+                    </div>
                     <div className="w-[15%] text-right flex items-center justify-end">
                       <Button
                         isIconOnly

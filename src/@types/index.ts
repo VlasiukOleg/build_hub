@@ -4,6 +4,7 @@ export enum Pages {
   GIPSOKARTON = 'gipsokarton',
   ORDER = 'order',
   STYAZHKA = 'styazhka',
+  KLADKA = 'kladka',
 }
 
 export interface Material {

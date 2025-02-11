@@ -58,7 +58,6 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     state => state.additionalMaterial.additionalMaterial
   );
 
-  console.log(isAdditionalMaterialAddToOrder);
   const totalPrice = materials.reduce((acc, value) => {
     return acc + value.price * value.quantity;
   }, 0);

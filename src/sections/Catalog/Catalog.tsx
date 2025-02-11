@@ -6,6 +6,7 @@ import { Breadcrumbs, BreadcrumbItem } from '@heroui/react';
 import Shtukaturka from '@/../public/images/shtukaturka-450x300.webp';
 import Gipsokarton from '@/../public/images/gipsokarton-450х300.webp';
 import Styazhka from '@/../public/images/styazhka.jpg';
+import Kladka from '@/../public/images/kladka.webp';
 
 import { Pages } from '@/@types';
 
@@ -24,9 +25,15 @@ const catalog = [
   },
   {
     id: 3,
-    text: 'Стяжка',
+    text: 'Стяжка, Цемент, Пісок',
     img: Styazhka,
     href: 'styazhka',
+  },
+  {
+    id: 4,
+    text: 'Кладочні роботи',
+    img: Kladka,
+    href: 'kladka',
   },
 ];
 
