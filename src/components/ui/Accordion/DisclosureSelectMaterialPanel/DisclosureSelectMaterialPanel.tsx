@@ -21,7 +21,7 @@ import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 import {
   addConfigurableMaterial,
   removeConfigurableMaterial,
-} from '@/redux/ConfigurableMaterialSlice';
+} from '@/redux/configurableMaterialSlice';
 
 import gazoblok from '@/data/gazoblok.json';
 

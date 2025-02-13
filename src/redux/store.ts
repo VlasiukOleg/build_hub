@@ -6,7 +6,7 @@ import { deliveryReducer } from './deliverySlice';
 import { materialsReducer } from './materialsSlice';
 import { movingReducer } from './movingSlice';
 import { additionalMaterialReducer } from './additionalMaterialSlice';
-import { configurableMaterialReducer } from './ConfigurableMaterialSlice';
+import { configurableMaterialReducer } from './configurableMaterialSlice';
 
 const persistConfig = {
   key: 'root',

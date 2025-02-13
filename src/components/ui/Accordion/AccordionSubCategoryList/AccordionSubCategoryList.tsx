@@ -133,7 +133,10 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
                     );
                   } else {
                     return (
-                      <DisclosureSelectMaterialPanel material={material} />
+                      <DisclosureSelectMaterialPanel
+                        key={matInd}
+                        material={material}
+                      />
                     );
                   }
                 })}
