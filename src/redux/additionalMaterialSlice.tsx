@@ -1,13 +1,15 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-interface Material {
+interface AdditionalMaterial {
   title: string;
-  quantity: string;
-  price: string;
+  quantity: number;
+  price: number;
+  volume: number;
+  weight: number;
 }
 
 interface AdditionalMaterialState {
-  additionalMaterial: Material[];
+  additionalMaterial: AdditionalMaterial[];
   isAdditionalMaterialAddToOrder: boolean;
 }
 
@@ -20,7 +22,7 @@ const additionalMaterialSlice = createSlice({
   name: 'additionalMaterial',
   initialState,
   reducers: {
-    addAdditionalMaterial(state, action: PayloadAction<Material>) {
+    addAdditionalMaterial(state, action: PayloadAction<AdditionalMaterial>) {
       state.additionalMaterial.push(action.payload);
     },
     removeAdditionalMaterial(state, action: PayloadAction<number>) {

@@ -22,12 +22,6 @@ import { RiSearchLine } from 'react-icons/ri';
 
 interface IDisclosureAddMaterialsPanelProps {}
 
-interface ICustomMaterial {
-  title: string;
-  quantity: number;
-  price: string;
-}
-
 const description =
   'В наявності більше 5 000 позицій, якщ Ви не знайшли потрібний матеріал в КАТАЛОЗІ, скористайтесь пошуком матеріалів або додайте вручну';
 
@@ -37,9 +31,12 @@ const DisclosureAddMaterialsPanel: React.FC<
   // const [newMaterial, setNewMaterial] = useState({ title: '', quantity: 0 });
   const [materialTitle, setMaterialTitle] = useState<string>('');
   const [quantity, setQuantity] = useState<string>('');
+  const [volume, setVolume] = useState<number>(0);
+  const [weight, setWeight] = useState<number>(0);
+  const [materialPrice, setMaterialPrice] = useState<number>(0);
+
   const [manualMaterialTitle, setManualMaterialTitle] = useState<string>('');
   const [manualQuantity, setManualQuantity] = useState<string>('');
-  const [materialPrice, setMaterialPrice] = useState<string>('');
 
   const dispatch = useAppDispatch();
 
@@ -56,41 +53,37 @@ const DisclosureAddMaterialsPanel: React.FC<
     manualMaterialTitle.length > 0 && Number(manualQuantity) > 0;
 
   const onSelectionChange = (id: React.Key | null) => {
-    console.log(id);
     const selectedMaterial = materials.find(material => material.key === id);
     if (selectedMaterial) {
       setMaterialPrice(selectedMaterial.price);
+      setVolume(selectedMaterial.volume);
+      setWeight(selectedMaterial.weight);
     }
   };
-
-  const test = 'Договірна';
-
-  console.log(isNaN(Number(test) * 5));
-
-  // const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-  //   const { name, value } = e.target;
-  //   setNewMaterial(prev => ({ ...prev, [name]: value }));
-  // };
 
   const handleAddMaterial = () => {
     dispatch(
       addAdditionalMaterial({
         title: materialTitle,
-        quantity,
-        price: materialPrice,
+        quantity: Number(quantity),
+        price: Number(materialPrice),
+        volume: Number(volume),
+        weight,
       })
     );
     setQuantity('');
     setMaterialTitle('');
-    setMaterialPrice('');
+    setMaterialPrice(0);
   };
 
   const handleManualMaterialAdd = () => {
     dispatch(
       addAdditionalMaterial({
         title: manualMaterialTitle,
-        quantity: manualQuantity,
-        price: 'Договірна',
+        quantity: Number(manualQuantity),
+        price: 0,
+        volume: 0,
+        weight: 0,
       })
     );
     setManualQuantity('');
@@ -171,14 +164,13 @@ const DisclosureAddMaterialsPanel: React.FC<
           }}
         />
         <Button
-          isIconOnly
           aria-label="Clear Order"
           onPress={handleAddMaterial}
-          className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
-          radius="sm"
+          color="success"
+          className="text-bgWhite"
           isDisabled={!isButtonActive}
         >
-          <FiPlusCircle className="size-6  xl:size-9 text-green-500" />
+          Додати
         </Button>
       </div>
       <p className="text-center font-semibold mt-4">Додати вручну</p>
@@ -213,14 +205,13 @@ const DisclosureAddMaterialsPanel: React.FC<
           }}
         />
         <Button
-          isIconOnly
           aria-label="Clear Order"
           onPress={handleManualMaterialAdd}
-          className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
-          radius="sm"
+          color="success"
+          className="text-bgWhite"
           isDisabled={!isManualButtonActive}
         >
-          <FiPlusCircle className="size-6  xl:size-9 text-green-500" />
+          Додати
         </Button>
       </div>
 

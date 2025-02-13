@@ -6,11 +6,17 @@ import { deliveryReducer } from './deliverySlice';
 import { materialsReducer } from './materialsSlice';
 import { movingReducer } from './movingSlice';
 import { additionalMaterialReducer } from './additionalMaterialSlice';
+import { configurableMaterialReducer } from './ConfigurableMaterialSlice';
 
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['delivery', 'moving', 'additionalMaterial'],
+  whitelist: [
+    'delivery',
+    'moving',
+    'additionalMaterial',
+    'configurableMaterial',
+  ],
 };
 
 const rootReducer = combineReducers({
@@ -18,6 +24,7 @@ const rootReducer = combineReducers({
   categories: materialsReducer,
   moving: movingReducer,
   additionalMaterial: additionalMaterialReducer,
+  configurableMaterial: configurableMaterialReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

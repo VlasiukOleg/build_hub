@@ -3,7 +3,6 @@
 import Logo from '@/components/ui/Logo';
 import Phone from '@/components/ui/Phone';
 import OpenBurgerMenuBtn from '@/components/common/OpenBurgerMenuBtn';
-import OpenDesktopMenuBtn from '@/components/common/OpenDesktopMenuBtn';
 
 import { usePathname } from 'next/navigation';
 

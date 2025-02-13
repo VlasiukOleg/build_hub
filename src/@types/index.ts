@@ -16,4 +16,5 @@ export interface Material {
   price: number;
   quantity: number;
   totalPrice: number;
+  volume: number;
 }

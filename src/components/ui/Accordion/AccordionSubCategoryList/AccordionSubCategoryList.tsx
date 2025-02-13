@@ -8,6 +8,7 @@ import DisclosureMaterialsPanel from '../DisclosureMaterialsPanel';
 import DisclosureMovingPanel from '../DisclosureMovingPanel';
 import DisclosureDeliveryPanel from '../DisclosureDeliveryPanel';
 import DisclosureAddMaterialsPanel from '../DisclosureAddMaterialsPanel';
+import DisclosureSelectMaterialPanel from '../DisclosureSelectMaterialPanel';
 
 import { Pages } from '@/@types';
 
@@ -116,19 +117,25 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
                 {subCategory.materials.map((material, matInd) => {
                   const { quantity, price } = material;
                   const totalMaterialPrice = quantity * price;
-                  return (
-                    <DisclosureMaterialsPanel
-                      key={matInd}
-                      material={material}
-                      totalMaterialPrice={totalMaterialPrice}
-                      catInd={catInd}
-                      matInd={matInd}
-                      handleButtonChangeQuantity={handleButtonChangeQuantity}
-                      handleInputChangeQuantity={handleInputChangeQuantity}
-                      handleFocus={handleFocus}
-                      handleBlur={handleBlur}
-                    />
-                  );
+                  if (subCategory.categoryTitle !== 'Газоблок1') {
+                    return (
+                      <DisclosureMaterialsPanel
+                        key={matInd}
+                        material={material}
+                        totalMaterialPrice={totalMaterialPrice}
+                        catInd={catInd}
+                        matInd={matInd}
+                        handleButtonChangeQuantity={handleButtonChangeQuantity}
+                        handleInputChangeQuantity={handleInputChangeQuantity}
+                        handleFocus={handleFocus}
+                        handleBlur={handleBlur}
+                      />
+                    );
+                  } else {
+                    return (
+                      <DisclosureSelectMaterialPanel material={material} />
+                    );
+                  }
                 })}
               </div>
             </AccordionItem>

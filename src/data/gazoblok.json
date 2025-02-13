@@ -1,0 +1,44 @@
+[
+  {
+    "label": "100x200x600",
+    "key": "gaz_100x200x600",
+    "price": 41.94,
+    "weight": 12.19,
+    "volume": 0.01875
+  },
+  {
+    "label": "120x200x600",
+    "key": "gaz_120x200x600",
+    "price": 50.33,
+    "weight": 12.19,
+    "volume": 0.01875
+  },
+  {
+    "label": "150x200x600",
+    "key": "gaz_150x200x600",
+    "price": 62.91,
+    "weight": 12.19,
+    "volume": 0.01875
+  },
+  {
+    "label": "200x200x600",
+    "key": "gaz_200x200x600",
+    "price": 357.51,
+    "weight": 12.19,
+    "volume": 0.01875
+  },
+  {
+    "label": "250x200x600",
+    "key": "gaz_250x200x600",
+    "price": 357.51,
+    "weight": 12.19,
+    "volume": 0.01875
+  },
+  {
+    "label": "300x200x600",
+    "key": "gaz_300x200x600",
+    "price": 357.51,
+    "weight": 12.19,
+    "volume": 0.01875
+  }
+]
