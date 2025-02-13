@@ -30,19 +30,10 @@ import { RiSearchLine } from 'react-icons/ri';
 import { FaMinus } from 'react-icons/fa6';
 import { FaPlus } from 'react-icons/fa6';
 
+import { Material } from '@/@types';
+
 interface IDisclosureAddMaterialsPanelProps {
-  material: {
-    id: number;
-    image: string;
-    title: string;
-    description: string;
-    weight: number;
-    price: number;
-    quantity: number;
-    totalPrice: number;
-    officialLink: string;
-    volume: number;
-  };
+  material: Material;
 }
 
 const DisclosureAddMaterialsPanel: React.FC<
@@ -118,6 +109,35 @@ const DisclosureAddMaterialsPanel: React.FC<
         </CardHeader>
         <Divider />
         <CardBody>
+          <Autocomplete
+            className="w-full"
+            aria-label="Розмір газоблока"
+            defaultItems={material.configurableList}
+            placeholder="Виберіть розмір"
+            size="md"
+            variant="bordered"
+            radius="sm"
+            inputValue={gazoblokSize}
+            onInputChange={setGazoblokSize}
+            onSelectionChange={onGazoblokSelectionChange}
+            startContent={<RiSearchLine className="size-5" />}
+            inputProps={{
+              classNames: {
+                label: 'text-xs md:text-sm !text-grey mb-0',
+                inputWrapper:
+                  'group-data-[focus=true]:border-accent min-h-7 h-7 mb-3 md:h-10',
+                input: 'text-xs md:text-sm',
+              },
+            }}
+          >
+            {item => (
+              <AutocompleteItem key={item.key} textValue={item.label}>
+                <div className="flex gap-1 items-center justify-between">
+                  <p className="text-xs  md:text-base">{item.label}</p>
+                </div>
+              </AutocompleteItem>
+            )}
+          </Autocomplete>
           <div className="flex items-center gap-4 md:gap-4">
             <div className="rounded-xl border-[1px] border-accent overflow-hidden inline-block min-w-[75px] max-h-[75px] md:min-w-[100px] md:max-h-[100px] xl:min-w-[150px] xl:max-h-[150px]">
               <Image
@@ -128,35 +148,8 @@ const DisclosureAddMaterialsPanel: React.FC<
                 className="size-[75px] md:size-[100px] xl:size-[150px]"
               />
             </div>
-            <div className="flex flex-col justify-between xl:w-[500px]">
-              <Autocomplete
-                className="w-full"
-                defaultItems={gazoblok}
-                placeholder="Виберіть розмір"
-                size="md"
-                variant="bordered"
-                inputValue={gazoblokSize}
-                onInputChange={setGazoblokSize}
-                onSelectionChange={onGazoblokSelectionChange}
-                startContent={<RiSearchLine className="size-5" />}
-                inputProps={{
-                  classNames: {
-                    label: 'text-xs md:text-sm !text-grey mb-0',
-                    inputWrapper:
-                      'group-data-[focus=true]:border-accent min-h-7 h-7 mb-2',
-                    input: 'text-xs',
-                  },
-                }}
-              >
-                {item => (
-                  <AutocompleteItem key={item.key} textValue={item.label}>
-                    <div className="flex gap-1 items-center justify-between">
-                      <p className="text-xs  md:text-base">{item.label}</p>
-                    </div>
-                  </AutocompleteItem>
-                )}
-              </Autocomplete>
-              <div className="flex items-center md:mb-0 xl:mb-5 mb-2">
+            <div className="flex flex-col xl:w-[500px]">
+              <div className="flex items-center md:mb-3  xl:mb-5 mb-4">
                 <Button
                   isIconOnly
                   aria-label="Take a photo"
@@ -201,7 +194,7 @@ const DisclosureAddMaterialsPanel: React.FC<
                   <FaPlus className=" text-accent" />
                 </Button>
               </div>
-              <div className="flex gap-2">
+              <div className="flex md:flex-col gap-2">
                 <div className=" text-grey font-semibold flex items-center gap-1 md:text-lg xl:text-xl">
                   Ціна: {gazoblokPrice} грн.
                 </div>
@@ -209,7 +202,8 @@ const DisclosureAddMaterialsPanel: React.FC<
                   aria-label="Clear Order"
                   onPress={handleAddConfigurableMaterial}
                   color="success"
-                  className="text-bgWhite min-h-7 h-7 min-w-16 w-16 text-xs"
+                  radius="sm"
+                  className="text-bgWhite min-h-7 h-7 min-w-16 w-16 text-xs md:w-[100px] md:text-sm"
                   isDisabled={!isButtonActive}
                 >
                   Додати

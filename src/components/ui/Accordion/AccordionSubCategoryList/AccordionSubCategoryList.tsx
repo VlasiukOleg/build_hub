@@ -5,10 +5,10 @@ import { Accordion, AccordionItem } from '@heroui/accordion';
 import { Avatar } from '@heroui/react';
 
 import DisclosureMaterialsPanel from '../DisclosureMaterialsPanel';
+import DisclosureConfigurableMaterialPanel from '../DisclosureConfigurableMaterialPanel';
 import DisclosureMovingPanel from '../DisclosureMovingPanel';
 import DisclosureDeliveryPanel from '../DisclosureDeliveryPanel';
 import DisclosureAddMaterialsPanel from '../DisclosureAddMaterialsPanel';
-import DisclosureSelectMaterialPanel from '../DisclosureSelectMaterialPanel';
 
 import { Pages } from '@/@types';
 
@@ -133,7 +133,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
                     );
                   } else {
                     return (
-                      <DisclosureSelectMaterialPanel
+                      <DisclosureConfigurableMaterialPanel
                         key={matInd}
                         material={material}
                       />

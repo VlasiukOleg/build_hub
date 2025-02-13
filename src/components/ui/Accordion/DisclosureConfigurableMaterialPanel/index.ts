@@ -1,0 +1,2 @@
+import DisclosureConfigurableMaterialPanel from './DisclosureConfigurableMaterialPanel';
+export default DisclosureConfigurableMaterialPanel;

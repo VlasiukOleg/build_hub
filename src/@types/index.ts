@@ -7,6 +7,14 @@ export enum Pages {
   KLADKA = 'kladka',
 }
 
+export interface ConfigurableList {
+  label: string;
+  key: string;
+  price: number;
+  weight: number;
+  volume: number;
+}
+
 export interface Material {
   id: number;
   image: string;
@@ -17,4 +25,6 @@ export interface Material {
   quantity: number;
   totalPrice: number;
   volume: number;
+  officialLink: string;
+  configurableList?: ConfigurableList[];
 }

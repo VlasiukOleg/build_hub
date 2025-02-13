@@ -10,19 +10,10 @@ import MaterialDrawer from '../../MaterialDrawer';
 import { FaMinus } from 'react-icons/fa6';
 import { FaPlus } from 'react-icons/fa6';
 
+import { Material } from '@/@types';
+
 interface IDisclosureMaterialsPanelProps {
-  material: {
-    id: number;
-    image: string;
-    title: string;
-    description: string;
-    weight: number;
-    price: number;
-    quantity: number;
-    totalPrice: number;
-    officialLink: string;
-    volume: number;
-  };
+  material: Material;
   catInd: number;
   matInd: number;
   totalMaterialPrice: number;

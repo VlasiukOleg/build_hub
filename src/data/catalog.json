@@ -19,7 +19,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -39,7 +40,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 2.2,
@@ -52,7 +54,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 2.3,
@@ -65,7 +68,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -85,7 +89,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 3.2,
@@ -98,7 +103,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 3.3,
@@ -111,7 +117,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 3.4,
@@ -124,7 +131,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 3.5,
@@ -137,7 +145,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -157,7 +166,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 4.2,
@@ -170,7 +180,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -190,7 +201,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 5.2,
@@ -203,7 +215,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 5.3,
@@ -216,7 +229,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 5.4,
@@ -229,7 +243,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -249,7 +264,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 6.2,
@@ -262,7 +278,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -282,7 +299,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 7.2,
@@ -295,7 +313,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -315,7 +334,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 8.2,
@@ -328,7 +348,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -348,7 +369,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 9.2,
@@ -361,7 +383,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -381,7 +404,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 10.2,
@@ -394,7 +418,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -414,7 +439,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 11.2,
@@ -427,7 +453,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 11.3,
@@ -440,7 +467,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 11.4,
@@ -453,7 +481,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 11.5,
@@ -466,7 +495,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       }
@@ -492,7 +522,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gipsSM",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 12.2,
@@ -505,7 +536,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gipsMD",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 12.3,
@@ -518,7 +550,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gipsLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -538,7 +571,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gipsSM",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 13.2,
@@ -551,7 +585,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gipsMD",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 13.3,
@@ -564,7 +599,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gipsLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -584,7 +620,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gipsSM",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 14.2,
@@ -597,7 +634,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gipsMD",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -618,7 +656,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 15.2,
@@ -631,7 +670,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 15.3,
@@ -644,7 +684,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 15.4,
@@ -657,7 +698,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 15.5,
@@ -670,7 +712,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 15.6,
@@ -683,7 +726,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -703,7 +747,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 16.2,
@@ -716,7 +761,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 16.3,
@@ -729,7 +775,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 16.4,
@@ -742,7 +789,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 16.5,
@@ -755,7 +803,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 16.6,
@@ -768,7 +817,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -788,7 +838,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 17.2,
@@ -801,7 +852,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 17.3,
@@ -814,7 +866,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
 
           {
@@ -828,7 +881,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 17.6,
@@ -841,7 +895,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -861,7 +916,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 18.2,
@@ -874,7 +930,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 18.3,
@@ -887,7 +944,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
 
           {
@@ -901,7 +959,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 18.5,
@@ -914,7 +973,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 18.6,
@@ -927,7 +987,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -947,7 +1008,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 19.2,
@@ -960,7 +1022,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 19.3,
@@ -973,7 +1036,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
 
           {
@@ -987,7 +1051,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 19.5,
@@ -1000,7 +1065,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 19.6,
@@ -1013,7 +1079,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -1033,7 +1100,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 20.2,
@@ -1046,7 +1114,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 20.3,
@@ -1059,7 +1128,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 20.5,
@@ -1072,7 +1142,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 20.6,
@@ -1085,7 +1156,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -1105,7 +1177,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 21.2,
@@ -1118,7 +1191,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 21.3,
@@ -1131,7 +1205,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
 
           {
@@ -1145,7 +1220,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 21.5,
@@ -1158,7 +1234,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 21.6,
@@ -1171,7 +1248,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -1191,7 +1269,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 22.2,
@@ -1204,7 +1283,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 22.3,
@@ -1217,7 +1297,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
 
           {
@@ -1231,7 +1312,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 22.5,
@@ -1244,7 +1326,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 22.6,
@@ -1257,7 +1340,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -1277,7 +1361,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 23.2,
@@ -1290,7 +1375,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 23.3,
@@ -1303,7 +1389,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
 
           {
@@ -1317,7 +1404,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 23.5,
@@ -1330,7 +1418,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 23.6,
@@ -1343,7 +1432,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 23.7,
@@ -1356,7 +1446,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -1376,7 +1467,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 24.2,
@@ -1389,7 +1481,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 24.3,
@@ -1402,7 +1495,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -1422,7 +1516,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 25.2,
@@ -1435,7 +1530,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 25.3,
@@ -1448,7 +1544,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
 
           {
@@ -1462,7 +1559,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 25.5,
@@ -1475,7 +1573,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -1495,7 +1594,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 26.2,
@@ -1508,7 +1608,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 26.3,
@@ -1521,7 +1622,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
 
           {
@@ -1535,7 +1637,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 26.5,
@@ -1548,7 +1651,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -1568,7 +1672,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 27.2,
@@ -1581,7 +1686,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -1601,7 +1707,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 28.2,
@@ -1614,7 +1721,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 28.3,
@@ -1627,7 +1735,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
 
           {
@@ -1641,7 +1750,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 28.5,
@@ -1654,7 +1764,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 28.6,
@@ -1667,7 +1778,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -1687,7 +1799,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 29.2,
@@ -1700,7 +1813,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 29.3,
@@ -1713,7 +1827,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
 
           {
@@ -1727,7 +1842,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -1747,7 +1863,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 30.2,
@@ -1760,7 +1877,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 30.3,
@@ -1773,7 +1891,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 30.4,
@@ -1786,7 +1905,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 30.5,
@@ -1799,7 +1919,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 30.6,
@@ -1812,7 +1933,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -1832,7 +1954,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 31.2,
@@ -1845,7 +1968,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 31.3,
@@ -1858,7 +1982,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 31.4,
@@ -1871,7 +1996,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 31.5,
@@ -1884,7 +2010,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 31.6,
@@ -1897,7 +2024,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 31.7,
@@ -1910,7 +2038,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 31.8,
@@ -1923,7 +2052,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -1943,7 +2073,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 32.2,
@@ -1956,7 +2087,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 32.3,
@@ -1969,7 +2101,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 32.4,
@@ -1982,7 +2115,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 32.5,
@@ -1995,7 +2129,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 32.6,
@@ -2008,7 +2143,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 32.7,
@@ -2021,7 +2157,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 32.8,
@@ -2034,7 +2171,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 32.9,
@@ -2047,7 +2185,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -2067,7 +2206,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 33.2,
@@ -2080,7 +2220,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 33.3,
@@ -2093,7 +2234,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -2113,7 +2255,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 34.2,
@@ -2126,7 +2269,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -2146,7 +2290,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 35.2,
@@ -2159,7 +2304,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 35.3,
@@ -2172,7 +2318,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 35.4,
@@ -2185,7 +2332,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 35.5,
@@ -2198,7 +2346,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       }
@@ -2224,7 +2373,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 36.2,
@@ -2237,7 +2387,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
 
           {
@@ -2251,7 +2402,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -2271,7 +2423,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": "https://siltek.ua/product/f-35"
+            "officialLink": "https://siltek.ua/product/f-35",
+            "configurableList": []
           },
           {
             "id": 37.2,
@@ -2284,7 +2437,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": "https://www.kreisel.ua/produkt/440-visokomicna-stjazhka-dlja-pidlog-beton-b-35"
+            "officialLink": "https://www.kreisel.ua/produkt/440-visokomicna-stjazhka-dlja-pidlog-beton-b-35",
+            "configurableList": []
           }
         ]
       },
@@ -2304,7 +2458,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": "https://siltek.ua/product/f-05"
+            "officialLink": "https://siltek.ua/product/f-05",
+            "configurableList": []
           },
           {
             "id": 38.2,
@@ -2317,7 +2472,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": "https://siltek.ua/product/f-50"
+            "officialLink": "https://siltek.ua/product/f-50",
+            "configurableList": []
           },
           {
             "id": 38.3,
@@ -2330,7 +2486,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": "https://www.kreisel.ua/produkt/412-samovirivnjuvalna-sumish-dlja-pidlog"
+            "officialLink": "https://www.kreisel.ua/produkt/412-samovirivnjuvalna-sumish-dlja-pidlog",
+            "configurableList": []
           },
           {
             "id": 38.4,
@@ -2343,7 +2500,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": "https://www.ceresit.ua/catalog/pidlogi/materialy-dlja-vlastuvannja-pidloh-samovyrivnjuval-ni-sumisi/produkti.html/ceresit-cn-68/SAP_0201TAC013Y9/variation/2790370.html"
+            "officialLink": "https://www.ceresit.ua/catalog/pidlogi/materialy-dlja-vlastuvannja-pidloh-samovyrivnjuval-ni-sumisi/produkti.html/ceresit-cn-68/SAP_0201TAC013Y9/variation/2790370.html",
+            "configurableList": []
           },
           {
             "id": 38.5,
@@ -2356,7 +2514,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": "https://www.ceresit.ua/catalog/pidlogi/materialy-dlja-vlastuvannja-pidloh-samovyrivnjuval-ni-sumisi/produkti.html/ceresit-cn-69/SAP_0201TAC013Z0.html"
+            "officialLink": "https://www.ceresit.ua/catalog/pidlogi/materialy-dlja-vlastuvannja-pidloh-samovyrivnjuval-ni-sumisi/produkti.html/ceresit-cn-69/SAP_0201TAC013Z0.html",
+            "configurableList": []
           }
         ]
       },
@@ -2376,7 +2535,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": "https://siltek.ua/product/f-05"
+            "officialLink": "https://siltek.ua/product/f-05",
+            "configurableList": []
           }
         ]
       },
@@ -2396,7 +2556,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       }
@@ -2422,7 +2583,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazoSM",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 41.2,
@@ -2435,7 +2597,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazoMD",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 41.3,
@@ -2448,7 +2611,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazoLG",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 41.4,
@@ -2461,7 +2625,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazoXL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 41.5,
@@ -2474,7 +2639,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazo2XL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 41.6,
@@ -2487,7 +2653,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazo3XL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 41.7,
@@ -2500,7 +2667,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazo4XL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 41.8,
@@ -2513,7 +2681,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazo5XL",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -2533,7 +2702,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazoSM",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 42.2,
@@ -2546,7 +2716,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazoSM",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 42.3,
@@ -2559,7 +2730,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazoSM",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 42.4,
@@ -2572,7 +2744,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazoSM",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 42.5,
@@ -2585,7 +2758,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazoSM",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -2605,7 +2779,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazoSM",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 43.2,
@@ -2618,7 +2793,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazoSM",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 43.3,
@@ -2631,7 +2807,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazoSM",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 43.4,
@@ -2644,7 +2821,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazoSM",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           },
           {
             "id": 43.5,
@@ -2657,7 +2835,8 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazoSM",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -2677,7 +2856,51 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gazoSM",
-            "officialLink": ""
+            "officialLink": "",
+            "configurableList": [
+              {
+                "label": "100x200x600",
+                "key": "gaz_100x200x600",
+                "price": 41.94,
+                "weight": 12.19,
+                "volume": 0.01875
+              },
+              {
+                "label": "120x200x600",
+                "key": "gaz_120x200x600",
+                "price": 50.33,
+                "weight": 12.19,
+                "volume": 0.01875
+              },
+              {
+                "label": "150x200x600",
+                "key": "gaz_150x200x600",
+                "price": 62.91,
+                "weight": 12.19,
+                "volume": 0.01875
+              },
+              {
+                "label": "200x200x600",
+                "key": "gaz_200x200x600",
+                "price": 357.51,
+                "weight": 12.19,
+                "volume": 0.01875
+              },
+              {
+                "label": "250x200x600",
+                "key": "gaz_250x200x600",
+                "price": 357.51,
+                "weight": 12.19,
+                "volume": 0.01875
+              },
+              {
+                "label": "300x200x600",
+                "key": "gaz_300x200x600",
+                "price": 357.51,
+                "weight": 12.19,
+                "volume": 0.01875
+              }
+            ]
           }
         ]
       }
