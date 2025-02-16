@@ -19,6 +19,7 @@ const BREADCRUMBS_LABEL = {
   [Pages.SHTUKATURKA]: 'Штукатурка',
   [Pages.GIPSOKARTON]: 'Гіпсокартон',
   [Pages.ORDER]: 'Корзина',
+  [Pages.KLADKA]: 'Кладка',
 };
 
 interface IOrderListProps {}

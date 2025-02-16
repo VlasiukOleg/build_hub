@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Button } from '@heroui/react';
 import clsx from 'clsx';
 import { Input, Chip, Alert } from '@heroui/react';
@@ -23,7 +23,7 @@ import { RiSearchLine } from 'react-icons/ri';
 interface IDisclosureAddMaterialsPanelProps {}
 
 const description =
-  'В наявності більше 5 000 позицій, якщ Ви не знайшли потрібний матеріал в КАТАЛОЗІ, скористайтесь пошуком матеріалів або додайте вручну';
+  'В наявності більше 5 000 позицій, якщо Ви не знайшли потрібний матеріал в КАТАЛОЗІ, скористайтесь пошуком матеріалів або додайте вручну';
 
 const DisclosureAddMaterialsPanel: React.FC<
   IDisclosureAddMaterialsPanelProps

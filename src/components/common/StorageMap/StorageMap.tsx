@@ -10,7 +10,6 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
 const ModalHeroUi = dynamic(() => import('@/components/ui/ModalHeroUi'));
-import ButtonLink from '@/components/ui/ButtonLink';
 import DeliveryTypeChoice from '@/components/ui/DeliveryTypeChoice/DeliveryTypeChoice';
 
 import { useAppSelector, useAppDispatch } from '../../../redux/hooks';
@@ -96,6 +95,10 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
     dispatch(setDeliveryStorage(selectedStore));
     dispatch(setDeliveryType(deliveryType));
     onClose();
+
+    setTimeout(() => {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }, 300);
   };
 
   return (
@@ -105,7 +108,7 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
       </h1>
       <MapContainer
         center={position}
-        zoom={11}
+        zoom={10}
         style={{
           height: '500px',
           width: '100%',

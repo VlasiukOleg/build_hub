@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import {
   Button,
@@ -20,6 +20,7 @@ import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 
 import {
   addConfigurableMaterial,
+  updateConfigurableMaterial,
   removeConfigurableMaterial,
 } from '@/redux/configurableMaterialSlice';
 
@@ -29,6 +30,9 @@ import { MdOutlineCancel } from 'react-icons/md';
 import { RiSearchLine } from 'react-icons/ri';
 import { FaMinus } from 'react-icons/fa6';
 import { FaPlus } from 'react-icons/fa6';
+import { FiEdit2 } from 'react-icons/fi';
+import { FaRegEdit } from 'react-icons/fa';
+import { IoSaveOutline } from 'react-icons/io5';
 
 import { Material } from '@/@types';
 
@@ -40,10 +44,25 @@ const DisclosureAddMaterialsPanel: React.FC<
   IDisclosureAddMaterialsPanelProps
 > = ({ material }) => {
   const [gazoblokSize, setGazoblokSize] = useState<string>('');
+  const [gazoblokKey, setGazoblokKey] = useState<string>('');
   const [gazoblokPrice, setGazoblokPrice] = useState<number>(0);
   const [gazoblokQuantity, setGazoblokQuantity] = useState<string>('0');
   const [gazoblokVolume, setGazoblokVolume] = useState<number>(0);
   const [gazoblokWeight, setGazoblokWeight] = useState<number>(0);
+  const [gazoblokEditModeQuantity, setGazoblokEditModeQuantity] =
+    useState<string>('0');
+
+  const [editMaterialKey, setEditMaterialKey] = useState<string>('');
+
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  console.log(inputRef.current);
+
+  useEffect(() => {
+    if (editMaterialKey && inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, [editMaterialKey]);
 
   const errors: string[] = [];
 
@@ -57,6 +76,9 @@ const DisclosureAddMaterialsPanel: React.FC<
     state => state.configurableMaterial.configurableMaterial
   );
 
+  console.log(editMaterialKey);
+  console.log(configurableMaterial);
+
   const isButtonActive =
     gazoblokSize.length > 0 && Number(gazoblokQuantity) > 0;
 
@@ -66,6 +88,7 @@ const DisclosureAddMaterialsPanel: React.FC<
       setGazoblokPrice(selectedGazoblok.price);
       setGazoblokVolume(selectedGazoblok.volume);
       setGazoblokWeight(selectedGazoblok.weight);
+      setGazoblokKey(selectedGazoblok.key);
     }
   };
 
@@ -77,6 +100,7 @@ const DisclosureAddMaterialsPanel: React.FC<
     dispatch(
       addConfigurableMaterial({
         title: `${material.title} ${gazoblokSize} `,
+        key: gazoblokKey,
         quantity: Number(gazoblokQuantity),
         price: Number(gazoblokPrice),
         volume: Number(gazoblokVolume),
@@ -89,9 +113,37 @@ const DisclosureAddMaterialsPanel: React.FC<
     setGazoblokPrice(0);
   };
 
-  const handleRemoveConfigurableMaterial = (index: number) => {
-    dispatch(removeConfigurableMaterial(index));
+  const handleEditModeInputChange = (value: string) => {
+    setGazoblokEditModeQuantity(value);
   };
+
+  const handleRemoveConfigurableMaterial = (materialKey: string) => {
+    dispatch(removeConfigurableMaterial(materialKey));
+  };
+
+  const handleEditConfigurableMaterial = (
+    materialKey: string,
+    quantity: number
+  ) => {
+    // setTimeout(() => {
+    //   inputRef?.current?.focus();
+    // }, 0);
+    setEditMaterialKey(materialKey);
+    setGazoblokEditModeQuantity(String(quantity));
+  };
+
+  const handleUpdateConfigurableMaterial = (
+    materialKey: string,
+    quantity: number
+  ) => {
+    const payload = { materialKey, quantity };
+    dispatch(updateConfigurableMaterial(payload));
+    setEditMaterialKey('');
+  };
+
+  const autocompleteDisabledKeys = configurableMaterial.map(
+    material => material.key
+  );
 
   return (
     <div className="mt-2 text-sm/5 text-grey md:text-lg xl:text-xl xl:mt-6">
@@ -120,12 +172,13 @@ const DisclosureAddMaterialsPanel: React.FC<
             inputValue={gazoblokSize}
             onInputChange={setGazoblokSize}
             onSelectionChange={onGazoblokSelectionChange}
+            disabledKeys={autocompleteDisabledKeys}
             startContent={<RiSearchLine className="size-5" />}
             inputProps={{
               classNames: {
                 label: 'text-xs md:text-sm !text-grey mb-0',
                 inputWrapper:
-                  'group-data-[focus=true]:border-accent min-h-7 h-7 mb-3 md:h-10',
+                  'group-data-[focus=true]:border-accent min-h-8 h-8 mb-3 md:h-10',
                 input: 'text-xs md:text-sm',
               },
             }}
@@ -176,6 +229,7 @@ const DisclosureAddMaterialsPanel: React.FC<
                   onValueChange={setGazoblokQuantity}
                   type="number"
                   radius="sm"
+                  isDisabled={!gazoblokSize}
                   classNames={{
                     inputWrapper:
                       'group-data-[focus=true]:border-accent min-h-7 h-7 w-20',
@@ -189,6 +243,7 @@ const DisclosureAddMaterialsPanel: React.FC<
                   className="h-7 w-7 min-w-7 border-accent"
                   radius="sm"
                   variant="bordered"
+                  isDisabled={!gazoblokSize}
                   onPress={() => handleQuantityChange(1)}
                 >
                   <FaPlus className=" text-accent" />
@@ -223,18 +278,58 @@ const DisclosureAddMaterialsPanel: React.FC<
                       key={material.title}
                       className="p-2 font-semibold flex items-center text-grey"
                     >
-                      <p className="text-xs text-semibold w-[50%] md:text-base ">
+                      <p className="text-xs text-semibold w-[45%] md:text-sm">
                         {' '}
                         {material.title}
                       </p>
-                      <p className="text-sm font-normal text-center w-[15%] md:text-lg">
-                        {material.quantity}
-                      </p>
+                      {editMaterialKey === material.key ? (
+                        <Input
+                          errorMessage={() => (
+                            <ul>
+                              {errors.map((error, i) => (
+                                <li key={i}>{error}</li>
+                              ))}
+                            </ul>
+                          )}
+                          isInvalid={errors.length > 0}
+                          name="quantity"
+                          variant="bordered"
+                          defaultValue={String(material.quantity)}
+                          onValueChange={handleEditModeInputChange}
+                          isReadOnly={editMaterialKey !== material.key}
+                          onBlur={e => {
+                            const relatedTarget =
+                              e.relatedTarget as HTMLElement | null;
+
+                            if (relatedTarget?.dataset?.action === 'save')
+                              return;
+
+                            handleUpdateConfigurableMaterial(
+                              material.key,
+                              Number(gazoblokEditModeQuantity)
+                            );
+                          }}
+                          type="number"
+                          radius="sm"
+                          ref={inputRef}
+                          classNames={{
+                            inputWrapper:
+                              'group-data-[focus=true]:border-accent min-h-7 h-7 w-14',
+                            base: 'w-14 mx-1',
+                            input: 'text-center',
+                          }}
+                        />
+                      ) : (
+                        <p className="text-sm font-normal text-center w-[15%] md:text-base">
+                          {material.quantity}
+                        </p>
+                      )}
+
                       <div className="w-[25%] text-right">
-                        <p className="text-xs font-normal md:text-base">
+                        <p className="text-xs font-normal md:text-sm ">
                           {material.price} грн.
                         </p>
-                        <p className="text-sm text-accent md:text-lg">
+                        <p className="text-sm text-accent md:text-base">
                           {!isNaN(
                             Number(material.quantity) * Number(material.price)
                           )
@@ -245,18 +340,50 @@ const DisclosureAddMaterialsPanel: React.FC<
                             : '-- грн.'}{' '}
                         </p>
                       </div>
-                      <div className="w-[15%] text-right flex items-center justify-end">
+                      <div className="w-[15%] text-right flex flex-col items-center justify-end">
                         <Button
                           isIconOnly
                           aria-label="Clear Order"
                           onPress={() =>
-                            handleRemoveConfigurableMaterial(index)
+                            handleRemoveConfigurableMaterial(material.key)
                           }
-                          className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
+                          className="bg-transparent h-7 md:h-9 md:w-9"
                           radius="sm"
                         >
-                          <MdOutlineCancel className="size-6  xl:size-9 text-red-600" />
+                          <MdOutlineCancel className="size-6 md:size-7 text-red-600" />
                         </Button>
+                        {editMaterialKey !== material.key ? (
+                          <Button
+                            isIconOnly
+                            aria-label="Clear Order"
+                            onPress={() =>
+                              handleEditConfigurableMaterial(
+                                material.key,
+                                material.quantity
+                              )
+                            }
+                            className="bg-transparent h-7 md:h-9 md:w-9"
+                            radius="sm"
+                          >
+                            <FaRegEdit className="size-6  xl:size-7 text-yellow-500" />
+                          </Button>
+                        ) : (
+                          <Button
+                            isIconOnly
+                            aria-label="Update Material Quantity"
+                            data-action="save"
+                            onPress={() =>
+                              handleUpdateConfigurableMaterial(
+                                material.key,
+                                Number(gazoblokEditModeQuantity)
+                              )
+                            }
+                            className="bg-transparent h-7 md:h-9 md:w-9"
+                            radius="sm"
+                          >
+                            <IoSaveOutline className="size-6 text-green-600" />
+                          </Button>
+                        )}
                       </div>
                     </li>
                   ))}

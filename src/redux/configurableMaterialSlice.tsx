@@ -2,6 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface ConfigurableMaterial {
   title: string;
+  key: string;
   image: string;
   quantity: number;
   price: number;
@@ -27,8 +28,16 @@ const configurableMaterialSlice = createSlice({
     ) {
       state.configurableMaterial.push(action.payload);
     },
-    removeConfigurableMaterial(state, action: PayloadAction<number>) {
-      state.configurableMaterial.splice(action.payload, 1);
+    updateConfigurableMaterial(state, action) {
+      const { materialKey, quantity } = action.payload;
+      state.configurableMaterial = state.configurableMaterial.map(material =>
+        material.key === materialKey ? { ...material, quantity } : material
+      );
+    },
+    removeConfigurableMaterial(state, action: PayloadAction<string>) {
+      state.configurableMaterial = state.configurableMaterial.filter(
+        material => material.key !== action.payload
+      );
     },
     clearConfigurableMaterial(state) {
       state.configurableMaterial = [];
@@ -38,6 +47,7 @@ const configurableMaterialSlice = createSlice({
 
 export const {
   addConfigurableMaterial,
+  updateConfigurableMaterial,
   removeConfigurableMaterial,
   clearConfigurableMaterial,
 } = configurableMaterialSlice.actions;
