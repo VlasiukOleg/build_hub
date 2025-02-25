@@ -66,7 +66,8 @@ const DisclosureMovingPanel: React.FunctionComponent<
 
   const dispatch = useAppDispatch();
 
-  const { materials, totalWeight } = useMaterials();
+  const { materials, totalWeight, totalAdditionalMaterialInfo } =
+    useMaterials();
 
   const handleFloorChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;

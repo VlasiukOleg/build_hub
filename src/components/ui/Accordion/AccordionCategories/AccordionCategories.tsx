@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import clsx from 'clsx';
 import { Breadcrumbs, BreadcrumbItem } from '@heroui/react';
@@ -40,6 +41,7 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
     state => state.additionalMaterial.additionalMaterial
   );
 
+  
   const {
     totalPrice,
     totalWeight,

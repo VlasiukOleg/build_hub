@@ -1,11 +1,14 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface AdditionalMaterial {
+  id: string;
   title: string;
   quantity: number;
   price: number;
   volume: number;
   weight: number;
+  movingTypeCalculation: string;
+  measure: string;
 }
 
 interface AdditionalMaterialState {
@@ -25,6 +28,12 @@ const additionalMaterialSlice = createSlice({
     addAdditionalMaterial(state, action: PayloadAction<AdditionalMaterial>) {
       state.additionalMaterial.push(action.payload);
     },
+    updateAdditionalMaterial(state, action) {
+      const { materialId, quantity } = action.payload;
+      state.additionalMaterial = state.additionalMaterial.map(material =>
+        material.id === materialId ? { ...material, quantity } : material
+      );
+    },
     removeAdditionalMaterial(state, action: PayloadAction<number>) {
       state.additionalMaterial.splice(action.payload, 1);
     },
@@ -43,5 +52,6 @@ export const {
   removeAdditionalMaterial,
   clearAdditionalMaterial,
   toggleAdditionalPriceAddToOrder,
+  updateAdditionalMaterial,
 } = additionalMaterialSlice.actions;
 export const additionalMaterialReducer = additionalMaterialSlice.reducer;

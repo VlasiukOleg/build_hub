@@ -6,6 +6,7 @@ import { useSearchParams } from 'next/navigation';
 import { Breadcrumbs, BreadcrumbItem, Button } from '@heroui/react';
 
 import { useAppSelector } from '@/redux/hooks';
+import { useMaterials } from '@/hooks/useMaterials';
 
 import OrderForm from '../OrderForm';
 
@@ -28,6 +29,15 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const from = searchParams.get('from');
+
+  const {
+    totalPrice,
+    totalWeight,
+    totalQuantity,
+    title,
+    totalVolume,
+    totalAdditionalMaterialInfo,
+  } = useMaterials();
 
   const allCategories = useAppSelector(state => state.categories);
 
@@ -59,17 +69,17 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     state => state.additionalMaterial.additionalMaterial
   );
 
-  const totalPrice = materials.reduce((acc, value) => {
-    return acc + value.price * value.quantity;
-  }, 0);
+  // const totalPrice = materials.reduce((acc, value) => {
+  //   return acc + value.price * value.quantity;
+  // }, 0);
 
-  const totalWeight = materials.reduce((acc, value) => {
-    return acc + value.weight * value.quantity;
-  }, 0);
+  // const totalWeight = materials.reduce((acc, value) => {
+  //   return acc + value.weight * value.quantity;
+  // }, 0);
 
-  const totalQuantity = materials.reduce((acc, value) => {
-    return acc + value.quantity;
-  }, 0);
+  // const totalQuantity = materials.reduce((acc, value) => {
+  //   return acc + value.quantity;
+  // }, 0);
 
   return (
     <>

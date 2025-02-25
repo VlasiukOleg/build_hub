@@ -51,12 +51,9 @@ const DisclosureAddMaterialsPanel: React.FC<
   const [gazoblokWeight, setGazoblokWeight] = useState<number>(0);
   const [gazoblokEditModeQuantity, setGazoblokEditModeQuantity] =
     useState<string>('0');
-
   const [editMaterialKey, setEditMaterialKey] = useState<string>('');
 
   const inputRef = useRef<HTMLInputElement>(null);
-
-  console.log(inputRef.current);
 
   useEffect(() => {
     if (editMaterialKey && inputRef.current) {
@@ -75,9 +72,6 @@ const DisclosureAddMaterialsPanel: React.FC<
   const configurableMaterial = useAppSelector(
     state => state.configurableMaterial.configurableMaterial
   );
-
-  console.log(editMaterialKey);
-  console.log(configurableMaterial);
 
   const isButtonActive =
     gazoblokSize.length > 0 && Number(gazoblokQuantity) > 0;

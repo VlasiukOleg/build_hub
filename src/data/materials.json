@@ -4,167 +4,191 @@
     "key": "osb_pg_12mm_625x2500",
     "price": 357.51,
     "weight": 12.19,
-    "volume": 0.01875
+    "volume": 0.01875,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "OSB-3 плита П+Г (паз-гребінь) товщина 15мм 625х2500 мм",
     "key": "osb_pg_15mm_625x2500",
     "price": 446.76,
     "weight": 15.23,
-    "volume": 0.02344
+    "volume": 0.02344,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "OSB-3 плита П+Г (паз-гребінь) товщина 22мм 625х2500 мм",
     "key": "osb_pg_22mm_625x2500",
     "price": 655.46,
     "weight": 22.35,
-    "volume": 0.03438
+    "volume": 0.03438,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "ПЛИТА OSB-3 6мм Х 2500 Х 1250",
     "key": "osb_6mm_2500x1250",
     "price": 379.63,
     "weight": 12.19,
-    "volume": 0.01875
+    "volume": 0.01875,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "ПЛИТА OSB-3 8мм Х 2500 Х 1250",
     "key": "osb_8mm_2500x1250",
     "price": 398.03,
     "weight": 16.25,
-    "volume": 0.025
+    "volume": 0.025,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "ПЛИТА OSB-3 10мм Х 2500 Х 1250 Kronospan",
     "key": "osb_10mm_2500x1250_kronospan",
     "price": 369.48,
     "weight": 20.31,
-    "volume": 0.03125
+    "volume": 0.03125,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "ПЛИТА OSB-3 10мм Х 2500 Х 1250 Україна",
     "key": "osb_10mm_2500x1250_ukraine",
     "price": 369.48,
     "weight": 20.31,
-    "volume": 0.03125
+    "volume": 0.03125,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "ПЛИТА OSB-3 12мм Х 2500 Х 1250 Kronospan",
     "key": "osb_12mm_2500x1250_kronospan",
     "price": 447.44,
     "weight": 24.38,
-    "volume": 0.0375
+    "volume": 0.0375,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "ПЛИТА OSB-3 12мм Х 2500 Х 1250 Україна",
     "key": "osb_12mm_2500x1250_ukraine",
     "price": 447.44,
     "weight": 24.38,
-    "volume": 0.0375
+    "volume": 0.0375,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "ПЛИТА OSB-3 15мм Х 2500 Х 1250 Kronospan",
     "key": "osb_15mm_2500x1250_kronospan",
     "price": 531.92,
-    "weight": 0,
-    "volume": 0
+    "weight": 29,
+    "volume": 0.046875,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "ПЛИТА OSB-3 15мм Х 2500 Х 1250 Україна",
     "key": "osb_15mm_2500x1250_ukraine",
     "price": 531.92,
-    "weight": 0,
-    "volume": 0
+    "weight": 29,
+    "volume": 0.046875,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "ПЛИТА OSB-3 18мм Х 2500 Х 1250 Kronospan",
     "key": "osb_18mm_2500x1250_kronospan",
     "price": 638.31,
-    "weight": 0,
-    "volume": 0
+    "weight": 35,
+    "volume": 0.05625,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "ПЛИТА OSB-3 18мм Х 2500 Х 1250 Україна",
     "key": "osb_18mm_2500x1250_ukraine",
     "price": 638.31,
-    "weight": 0,
-    "volume": 0
+    "weight": 35,
+    "volume": 0.05625,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "ПЛИТА OSB-3 22мм Х 2500 Х 1250 Kronospan",
     "key": "osb_22mm_2500x1250_kronospan",
     "price": 820.3,
-    "weight": 0,
-    "volume": 0
+    "weight": 42,
+    "volume": 0.06875,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "ПЛИТА OSB-3 22мм Х 2500 Х 1250 Україна",
     "key": "osb_22mm_2500x1250_ukraine",
     "price": 820.3,
-    "weight": 0,
-    "volume": 0
+    "weight": 42,
+    "volume": 0.06875,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "ПЛИТА OSB-3 9мм Х 2500 Х 1250 Kronospan",
     "key": "osb_9mm_2500x1250_kronospan",
     "price": 348.69,
-    "weight": 0,
-    "volume": 0
+    "weight": 18.28,
+    "volume": 0.028125,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "ПЛИТА OSB-3 9мм Х 2500 Х 1250 Україна",
     "key": "osb_9mm_2500x1250_ukraine",
     "price": 348.69,
-    "weight": 0,
-    "volume": 0
+    "weight": 18.28,
+    "volume": 0.028125,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "Брус 50мм*100мм*4м",
     "key": "brus_50x100x4m",
     "price": 210.56,
-    "weight": 0,
-    "volume": 0
+    "weight": 10.8,
+    "volume": 0.02,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "Брус 50мм*150мм*4м",
     "key": "brus_50x150x4m",
     "price": 318.98,
-    "weight": 0,
-    "volume": 0
+    "weight": 16.2,
+    "volume": 0.03,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "Брус 50мм*50мм*3м",
     "key": "brus_50x50x3m",
     "price": 79.18,
-    "weight": 0,
-    "volume": 0
+    "weight": 4.05,
+    "volume": 0.0075,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "Брус 50ммх50ммх4м",
     "key": "brus_50x50x4m",
     "price": 105.28,
-    "weight": 0,
-    "volume": 0
+    "weight": 5.4,
+    "volume": 0.01,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "Дошка 25мм*100мм*3м",
     "key": "doshka_25x100x3m",
     "price": 79.18,
-    "weight": 0,
-    "volume": 0
+    "weight": 3.75,
+    "volume": 0.0075,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "Дошка 25мм*100мм*4м",
     "key": "doshka_25x100x4m",
     "price": 105.28,
-    "weight": 0,
-    "volume": 0
+    "weight": 5.0,
+    "volume": 0.01,
+    "movingTypeCalculation": "weight"
   },
   {
     "label": "Дошка 25мм*150мм*4м",
     "key": "doshka_25x150x4m",
     "price": 159.49,
-    "weight": 0,
-    "volume": 0
+    "weight": 7.5,
+    "volume": 0.015,
+    "movingTypeCalculation": "weight"
   }
 ]

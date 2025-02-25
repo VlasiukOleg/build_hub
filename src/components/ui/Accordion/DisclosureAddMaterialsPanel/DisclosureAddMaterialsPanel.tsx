@@ -2,9 +2,7 @@
 
 import React, { useEffect, useState, useRef } from 'react';
 import { Button } from '@heroui/react';
-import clsx from 'clsx';
 import { Input, Chip, Alert } from '@heroui/react';
-import { Field, Label } from '@headlessui/react';
 import { Autocomplete, AutocompleteItem } from '@heroui/react';
 
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
@@ -12,13 +10,29 @@ import {
   addAdditionalMaterial,
   removeAdditionalMaterial,
   toggleAdditionalPriceAddToOrder,
+  updateAdditionalMaterial,
 } from '@/redux/additionalMaterialSlice';
 
-import materials from '@/data/materials.json';
+import { fetchGoogleSheetData } from '@/api/googlesheets';
 
-import { FiPlusCircle } from 'react-icons/fi';
 import { MdOutlineCancel } from 'react-icons/md';
 import { RiSearchLine } from 'react-icons/ri';
+import { FaRegEdit } from 'react-icons/fa';
+import { IoSaveOutline } from 'react-icons/io5';
+
+interface AdditionalMaterial {
+  id: string;
+  label: string;
+  price: string;
+  volume: string;
+  weight: string;
+  movingTypeCalculation: string;
+  measure: string;
+}
+
+interface CustomError {
+  message: string;
+}
 
 interface IDisclosureAddMaterialsPanelProps {}
 
@@ -29,14 +43,40 @@ const DisclosureAddMaterialsPanel: React.FC<
   IDisclosureAddMaterialsPanelProps
 > = ({}) => {
   // const [newMaterial, setNewMaterial] = useState({ title: '', quantity: 0 });
+  const [materialId, setMaterialId] = useState<string>('');
   const [materialTitle, setMaterialTitle] = useState<string>('');
   const [quantity, setQuantity] = useState<string>('');
   const [volume, setVolume] = useState<number>(0);
   const [weight, setWeight] = useState<number>(0);
   const [materialPrice, setMaterialPrice] = useState<number>(0);
+  const [movingTypeCalculation, setMovingTypeCalculation] =
+    useState<string>('');
+  const [measure, setMeasure] = useState<string>('');
 
   const [manualMaterialTitle, setManualMaterialTitle] = useState<string>('');
   const [manualQuantity, setManualQuantity] = useState<string>('');
+
+  const [materials, setMaterials] = useState<AdditionalMaterial[]>([]);
+
+  const [editMaterialKey, setEditMaterialKey] = useState<string>('');
+  const [
+    additionalMaterialsEditModeQuantity,
+    setAdditionalMaterialsEditModeQuantity,
+  ] = useState<string>('0');
+
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  const errors: string[] = [];
+
+  if (Number(additionalMaterialsEditModeQuantity) < 0) {
+    errors.push('Введіть > 0');
+  }
+
+  useEffect(() => {
+    if (editMaterialKey && inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, [editMaterialKey]);
 
   const dispatch = useAppDispatch();
 
@@ -47,28 +87,76 @@ const DisclosureAddMaterialsPanel: React.FC<
     state => state.additionalMaterial.isAdditionalMaterialAddToOrder
   );
 
+  function convertToObjects(data: (string | null)[][]): AdditionalMaterial[] {
+    const keys = data[0];
+    return data.slice(1).map((row, index) => {
+      let obj: AdditionalMaterial = {
+        id: `item-${index}`,
+        label: '',
+        price: '',
+        volume: '',
+        weight: '',
+        movingTypeCalculation: '',
+        measure: '',
+      };
+      keys.forEach((key, index) => {
+        if (key) {
+          obj[key.trim() as keyof AdditionalMaterial] = row[index]
+            ? row[index].trim()
+            : '';
+        }
+      });
+      return obj;
+    });
+  }
+
+  useEffect(() => {
+    async function getData() {
+      try {
+        const result = await fetchGoogleSheetData();
+        if (!result.values) throw new Error('Данні відсутні');
+        const normilizedData = convertToObjects(result.values);
+        setMaterials(normilizedData);
+      } catch (err) {
+        const error = err as CustomError;
+        console.log(error.message);
+      }
+    }
+
+    getData();
+  }, []);
+
   const isButtonActive = materialTitle.length > 0 && Number(quantity) > 0;
 
   const isManualButtonActive =
     manualMaterialTitle.length > 0 && Number(manualQuantity) > 0;
 
   const onSelectionChange = (id: React.Key | null) => {
-    const selectedMaterial = materials.find(material => material.key === id);
+    const selectedMaterial = materials.find(material => material.id === id);
+
     if (selectedMaterial) {
-      setMaterialPrice(selectedMaterial.price);
-      setVolume(selectedMaterial.volume);
-      setWeight(selectedMaterial.weight);
+      const price = selectedMaterial.price.replace(',', '.');
+
+      setMaterialPrice(Number(price));
+      setVolume(Number(selectedMaterial.volume));
+      setWeight(Number(selectedMaterial.weight));
+      setMovingTypeCalculation(selectedMaterial.movingTypeCalculation);
+      setMeasure(selectedMaterial.measure);
+      setMaterialId(selectedMaterial.id);
     }
   };
 
   const handleAddMaterial = () => {
     dispatch(
       addAdditionalMaterial({
+        id: materialId,
         title: materialTitle,
         quantity: Number(quantity),
         price: Number(materialPrice),
         volume: Number(volume),
         weight,
+        movingTypeCalculation,
+        measure,
       })
     );
     setQuantity('');
@@ -79,11 +167,14 @@ const DisclosureAddMaterialsPanel: React.FC<
   const handleManualMaterialAdd = () => {
     dispatch(
       addAdditionalMaterial({
+        id: String(Date.now()),
         title: manualMaterialTitle,
         quantity: Number(manualQuantity),
         price: 0,
         volume: 0,
         weight: 0,
+        movingTypeCalculation: 'weight',
+        measure: 'шт.',
       })
     );
     setManualQuantity('');
@@ -101,6 +192,30 @@ const DisclosureAddMaterialsPanel: React.FC<
 
   const onToggleAdditionalMaterialToOrder = () => {
     dispatch(toggleAdditionalPriceAddToOrder());
+  };
+
+  const handleEditModeInputChange = (value: string) => {
+    setAdditionalMaterialsEditModeQuantity(value);
+  };
+
+  const handleUpdateAdditionalMaterial = (
+    materialId: string,
+    quantity: number
+  ) => {
+    const payload = { materialId, quantity };
+    dispatch(updateAdditionalMaterial(payload));
+    setEditMaterialKey('');
+  };
+
+  const handleEditAdditionalMaterial = (
+    materialId: string,
+    quantity: number
+  ) => {
+    // setTimeout(() => {
+    //   inputRef?.current?.focus();
+    // }, 0);
+    setEditMaterialKey(materialId);
+    setAdditionalMaterialsEditModeQuantity(String(quantity));
   };
 
   return (
@@ -127,6 +242,7 @@ const DisclosureAddMaterialsPanel: React.FC<
         onInputChange={setMaterialTitle}
         onSelectionChange={onSelectionChange}
         startContent={<RiSearchLine className="size-5" />}
+        itemHeight={60}
         inputProps={{
           classNames: {
             label: 'text-xs md:text-sm !text-grey',
@@ -135,8 +251,8 @@ const DisclosureAddMaterialsPanel: React.FC<
         }}
       >
         {material => (
-          <AutocompleteItem key={material.key} textValue={material.label}>
-            <div className="flex gap-1 items-center justify-between">
+          <AutocompleteItem key={material.id} textValue={material.label}>
+            <div className="flex gap-1 items-center justify-between ">
               <p className="text-xs  md:text-base">{material.label}</p>
               <Chip
                 variant="bordered"
@@ -232,9 +348,47 @@ const DisclosureAddMaterialsPanel: React.FC<
                       {' '}
                       {material.title}
                     </p>
-                    <p className="text-sm font-normal text-center w-[15%] md:text-lg">
-                      {material.quantity}
-                    </p>
+                    {editMaterialKey === material.id ? (
+                      <Input
+                        errorMessage={() => (
+                          <ul>
+                            {errors.map((error, i) => (
+                              <li key={i}>{error}</li>
+                            ))}
+                          </ul>
+                        )}
+                        isInvalid={errors.length > 0}
+                        name="quantity"
+                        variant="bordered"
+                        defaultValue={String(material.quantity)}
+                        onValueChange={handleEditModeInputChange}
+                        isReadOnly={editMaterialKey !== material.id}
+                        onBlur={e => {
+                          const relatedTarget =
+                            e.relatedTarget as HTMLElement | null;
+
+                          if (relatedTarget?.dataset?.action === 'save') return;
+
+                          handleUpdateAdditionalMaterial(
+                            material.id,
+                            Number(additionalMaterialsEditModeQuantity)
+                          );
+                        }}
+                        type="number"
+                        radius="sm"
+                        ref={inputRef}
+                        classNames={{
+                          inputWrapper:
+                            'group-data-[focus=true]:border-accent min-h-7 h-7 w-14',
+                          base: 'w-14 mx-1',
+                          input: 'text-center',
+                        }}
+                      />
+                    ) : (
+                      <p className="text-sm font-normal text-center w-[15%] md:text-base">
+                        {material.quantity}
+                      </p>
+                    )}
                     <div className="w-[25%] text-right">
                       <p className="text-xs font-normal md:text-base">
                         {material.price} грн.
@@ -249,7 +403,7 @@ const DisclosureAddMaterialsPanel: React.FC<
                           : '-- грн.'}{' '}
                       </p>
                     </div>
-                    <div className="w-[15%] text-right flex items-center justify-end">
+                    <div className="w-[15%] text-right flex flex-col items-center justify-end">
                       <Button
                         isIconOnly
                         aria-label="Clear Order"
@@ -259,6 +413,41 @@ const DisclosureAddMaterialsPanel: React.FC<
                       >
                         <MdOutlineCancel className="size-6  xl:size-9 text-red-600" />
                       </Button>
+                      {editMaterialKey !== material.id ? (
+                        <Button
+                          isIconOnly
+                          aria-label="Clear Order"
+                          onPress={() =>
+                            handleEditAdditionalMaterial(
+                              material.id,
+                              material.quantity
+                            )
+                          }
+                          className="bg-transparent h-7 md:h-9 md:w-9"
+                          radius="sm"
+                        >
+                          <FaRegEdit className="size-6  xl:size-7 text-yellow-500" />
+                        </Button>
+                      ) : (
+                        <Button
+                          isIconOnly
+                          aria-label="Update Material Quantity"
+                          data-action="save"
+                          onPress={() =>
+                            handleUpdateAdditionalMaterial(
+                              material.id,
+                              Number(additionalMaterialsEditModeQuantity)
+                            )
+                          }
+                          className="bg-transparent h-7 md:h-9 md:w-9"
+                          radius="sm"
+                          isDisabled={
+                            Number(additionalMaterialsEditModeQuantity) < 0
+                          }
+                        >
+                          <IoSaveOutline className="size-6 text-green-600" />
+                        </Button>
+                      )}
                     </div>
                   </li>
                 ))}
