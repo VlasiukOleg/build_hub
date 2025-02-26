@@ -12,6 +12,7 @@ import OrderForm from '../OrderForm';
 
 import DeliveryIcon from '@/../public/icons/delivery-truck.svg';
 import MovingIcon from '@/../public/icons/moving.svg';
+import { FcImageFile } from 'react-icons/fc';
 
 import { Pages } from '@/@types';
 
@@ -115,7 +116,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                         />
                       </div>
 
-                      <p className="text-xs text-semibold w-[50%] md:text-base ">
+                      <p className="text-xs text-semibold w-[40%] md:text-base ">
                         {' '}
                         {material.title}
                       </p>
@@ -132,6 +133,44 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                       </div>
                     </li>
                   ))}
+                  {isAdditionalMaterialAddToOrder &&
+                    additionalMaterial.map(material => (
+                      <li
+                        key={material.id}
+                        className="p-1 font-semibold flex items-center text-grey md:p-2"
+                      >
+                        <div className="mr-2 text-center inline-block size-[50px] md:size-[75px] md:mr-4">
+                          <FcImageFile className="size-[40px]" />
+                        </div>
+
+                        <p className="text-xs text-semibold w-[40%] md:text-base line-clamp-2">
+                          {' '}
+                          {material.title}
+                        </p>
+                        <p className="text-sm font-normal text-center w-[15%] md:text-lg">
+                          {material.quantity}
+                        </p>
+                        <div className="w-[25%] text-right">
+                          {material.price === 0 ? (
+                            <p className="text-xs font-normal md:text-base">
+                              Договірна
+                            </p>
+                          ) : (
+                            <>
+                              <p className="text-xs font-normal md:text-base">
+                                {material.price} грн.
+                              </p>
+                              <p className="text-sm text-accent md:text-lg">
+                                {(material.quantity * material.price).toFixed(
+                                  2
+                                )}{' '}
+                                грн.
+                              </p>
+                            </>
+                          )}
+                        </div>
+                      </li>
+                    ))}
                   {isMovingAddToOrder && (
                     <li className="p-2 font-semibold flex items-center text-grey md:p-4">
                       <div className="mr-2 p-1 text-center inline-block md:size-[60px] md:mr-4">
@@ -142,7 +181,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                         />
                       </div>
 
-                      <p className="text-xs text-semibold w-[50%] md:text-base ">
+                      <p className="text-xs text-semibold w-[40%] md:text-base ">
                         {' '}
                         Розвантаження
                       </p>
@@ -169,7 +208,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                         />
                       </div>
 
-                      <p className="text-xs text-semibold w-[50%] md:text-base ">
+                      <p className="text-xs text-semibold w-[40%] md:text-base ">
                         {' '}
                         Доставка
                       </p>
@@ -190,6 +229,9 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
               </div>
               <div className="text-grey text-xs/5 md:text-base">
                 Вага: {totalWeight} кг.
+              </div>
+              <div className="text-grey text-xs/5 md:text-base">
+                Об&apos;єм: {totalVolume.toFixed(2)} м3
               </div>
               <div className="text-grey text-xs/5 md:text-base">
                 Склад: {deliveryStorage ? deliveryStorage : 'Не вибрано'}{' '}
@@ -217,45 +259,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                   грн.{' '}
                 </span>
               </div>
-              {isAdditionalMaterialAddToOrder && (
-                <div className="mt-4 mb-4 md:mb-6">
-                  <h3 className="font-bold mb-2 text-sm md:text-lg">
-                    Додані матеріали:
-                  </h3>
-                  <table className="min-w-full border-collapse border border-grey">
-                    <thead>
-                      <tr>
-                        <th className="border border-grey px-4 py-2 text-left text-xs md:text-base">
-                          Матеріал
-                        </th>
-                        <th className="border border-grey px-4 py-2 text-left text-xs md:text-base">
-                          К-ть
-                        </th>
-                        <th className="border border-grey px-4 py-2 text-left text-xs md:text-base">
-                          Ціна
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {additionalMaterial?.map((material, index) => (
-                        <tr key={index}>
-                          <td className="border border-grey px-4 py-2 text-xs md:text-base">
-                            {material.title}
-                          </td>
-                          <td className="border border-grey px-4 py-2 text-xs md:text-base">
-                            {material.quantity}
-                          </td>
-                          <td className="border border-grey px-4 py-2 text-xs md:text-base">
-                            {material.price}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              )}
             </div>
-
             <OrderForm />
           </div>
         </>

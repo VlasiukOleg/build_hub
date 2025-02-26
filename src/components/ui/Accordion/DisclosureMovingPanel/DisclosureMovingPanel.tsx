@@ -64,6 +64,13 @@ const DisclosureMovingPanel: React.FunctionComponent<
     state => state.moving.isMovingPriceAddToOrder
   );
 
+  const isAdditionalMaterialAddToOrder = useAppSelector(
+    state => state.additionalMaterial.isAdditionalMaterialAddToOrder
+  );
+  const additionalMaterial = useAppSelector(
+    state => state.additionalMaterial.additionalMaterial
+  );
+
   const dispatch = useAppDispatch();
 
   const { materials, totalWeight, totalAdditionalMaterialInfo } =
@@ -79,6 +86,19 @@ const DisclosureMovingPanel: React.FunctionComponent<
   const onAddMovingToOrderBar = () => {
     dispatch(toggleMovingPriceToOrder());
   };
+
+  const weightTypeCalculateAdditionalMaterial = additionalMaterial.filter(
+    material =>
+      material.movingTypeCalculation === MOVING_TYPE_CALCULATION_LIST_MAP.WEIGHT
+  );
+
+  const weightTypeCalculateAdditionalMaterialTotalWeight =
+    weightTypeCalculateAdditionalMaterial.reduce((acc, value) => {
+      return acc + value.weight * value.quantity;
+    }, 0);
+
+  const normalizedWeightTypeCalculateAdditionalMaterialTotalWeight =
+    normalizedWeight(weightTypeCalculateAdditionalMaterialTotalWeight);
 
   const weightTypeCalculateMaterial = materials.filter(
     material =>
@@ -154,9 +174,11 @@ const DisclosureMovingPanel: React.FunctionComponent<
       key: '1',
       type: 'Ваговий матеріал',
       measure: 'тн',
-      quantity: normalizedWeightTypeCalculateMaterialTotalWeight,
+      quantity:
+        normalizedWeightTypeCalculateMaterialTotalWeight +
+        normalizedWeightTypeCalculateAdditionalMaterialTotalWeight,
       price: `${weightTypeCalculateMaterialFee.toFixed()} грн.`,
-      totalPrice: `${normalizedWeightTypeCalculateMaterialTotalWeight * weightTypeCalculateMaterialFee} грн. `,
+      totalPrice: `${(normalizedWeightTypeCalculateMaterialTotalWeight + normalizedWeightTypeCalculateAdditionalMaterialTotalWeight) * weightTypeCalculateMaterialFee} грн. `,
     },
     {
       key: '2',
@@ -203,7 +225,8 @@ const DisclosureMovingPanel: React.FunctionComponent<
   const visibleRows = rows.filter(row => row.quantity > 0);
 
   const totalMovingFee =
-    normalizedWeightTypeCalculateMaterialTotalWeight *
+    (normalizedWeightTypeCalculateMaterialTotalWeight +
+      normalizedWeightTypeCalculateAdditionalMaterialTotalWeight) *
       weightTypeCalculateMaterialFee +
     gipsSmCalculateQuantity * gipsSmCalculateFee +
     gipsMdCalculateQuantity * gipsMdCalculateFee +

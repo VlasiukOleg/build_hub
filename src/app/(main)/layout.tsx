@@ -10,6 +10,8 @@ import './globals.css';
 import { Providers } from '../provider';
 import Header from '@/layout/Header';
 import Footer from '@/layout/Footer/Footer';
+import FixedOpenBurgerMenuBtn from '@/components/common/FixedOpenBurgerMenuBtn';
+
 import configuration from '@/utils/configuration';
 
 import StoreProvider from './StoreProvider';
@@ -59,6 +61,7 @@ export default function RootLayout({
               </main>
               <Footer />
             </div>
+            <FixedOpenBurgerMenuBtn />
           </Providers>
         </StoreProvider>
       </body>

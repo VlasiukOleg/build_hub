@@ -101,9 +101,8 @@ const DisclosureAddMaterialsPanel: React.FC<
       };
       keys.forEach((key, index) => {
         if (key) {
-          obj[key.trim() as keyof AdditionalMaterial] = row[index]
-            ? row[index].trim()
-            : '';
+          obj[key.trim() as keyof AdditionalMaterial] =
+            row[index]?.trim() || '';
         }
       });
       return obj;
@@ -171,8 +170,8 @@ const DisclosureAddMaterialsPanel: React.FC<
         title: manualMaterialTitle,
         quantity: Number(manualQuantity),
         price: 0,
-        volume: 0,
-        weight: 0,
+        volume: 0.01,
+        weight: 5,
         movingTypeCalculation: 'weight',
         measure: 'шт.',
       })
@@ -253,7 +252,7 @@ const DisclosureAddMaterialsPanel: React.FC<
         {material => (
           <AutocompleteItem key={material.id} textValue={material.label}>
             <div className="flex gap-1 items-center justify-between ">
-              <p className="text-xs  md:text-base">{material.label}</p>
+              <p className="text-[10px]  md:text-base">{material.label}</p>
               <Chip
                 variant="bordered"
                 className="bg-slate-50 border-accent text-xs md:text-base"
