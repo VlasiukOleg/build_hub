@@ -7,6 +7,7 @@ import { Breadcrumbs, BreadcrumbItem } from '@heroui/react';
 import { Button } from '@heroui/react';
 
 import OrderBar from '@/components/common/OrderBar';
+import FixedOpenBurgerMenuBtn from '@/components/common/FixedOpenBurgerMenuBtn';
 import AccordionSubCategoryList from '../AccordionSubCategoryList';
 
 import { useMaterials } from '@/hooks/useMaterials';
@@ -41,7 +42,6 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
     state => state.additionalMaterial.additionalMaterial
   );
 
-  
   const {
     totalPrice,
     totalWeight,
@@ -95,6 +95,7 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
           </div>
         </div>
       </div>
+      <FixedOpenBurgerMenuBtn />
     </section>
   );
 };

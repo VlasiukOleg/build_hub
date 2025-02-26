@@ -112,6 +112,7 @@ const DisclosureAddMaterialsPanel: React.FC<
   useEffect(() => {
     async function getData() {
       try {
+        console.log('Start');
         const result = await fetchGoogleSheetData();
         if (!result.values) throw new Error('Данні відсутні');
         const normilizedData = convertToObjects(result.values);

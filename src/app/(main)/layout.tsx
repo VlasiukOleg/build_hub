@@ -61,7 +61,7 @@ export default function RootLayout({
               </main>
               <Footer />
             </div>
-            <FixedOpenBurgerMenuBtn />
+            
           </Providers>
         </StoreProvider>
       </body>
