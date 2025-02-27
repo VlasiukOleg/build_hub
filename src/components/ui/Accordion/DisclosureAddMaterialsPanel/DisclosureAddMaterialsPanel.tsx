@@ -22,6 +22,7 @@ import { IoSaveOutline } from 'react-icons/io5';
 
 interface AdditionalMaterial {
   id: string;
+  image: string;
   label: string;
   price: string;
   volume: string;
@@ -92,6 +93,7 @@ const DisclosureAddMaterialsPanel: React.FC<
     return data.slice(1).map((row, index) => {
       let obj: AdditionalMaterial = {
         id: `item-${index}`,
+        image: '',
         label: '',
         price: '',
         volume: '',
@@ -151,6 +153,7 @@ const DisclosureAddMaterialsPanel: React.FC<
       addAdditionalMaterial({
         id: materialId,
         title: materialTitle,
+        image: '',
         quantity: Number(quantity),
         price: Number(materialPrice),
         volume: Number(volume),
@@ -169,6 +172,7 @@ const DisclosureAddMaterialsPanel: React.FC<
       addAdditionalMaterial({
         id: String(Date.now()),
         title: manualMaterialTitle,
+        image: '',
         quantity: Number(manualQuantity),
         price: 0,
         volume: 0.01,
@@ -344,7 +348,7 @@ const DisclosureAddMaterialsPanel: React.FC<
                     key={material.title}
                     className="p-2 font-semibold flex items-center text-grey"
                   >
-                    <p className="text-xs text-semibold w-[70%] md:text-base ">
+                    <p className="text-xs text-semibold w-[50%] md:text-base ">
                       {' '}
                       {material.title}
                     </p>
@@ -385,11 +389,11 @@ const DisclosureAddMaterialsPanel: React.FC<
                         }}
                       />
                     ) : (
-                      <p className="text-sm font-normal text-center w-[15%] md:text-base">
+                      <p className="text-sm font-normal text-center w-[20%] md:text-base">
                         {material.quantity}
                       </p>
                     )}
-                    <div className="w-[25%] text-right">
+                    <div className="w-[30%] text-right">
                       <p className="text-xs font-normal md:text-base">
                         {material.price} грн.
                       </p>

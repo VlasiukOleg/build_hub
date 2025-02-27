@@ -113,7 +113,7 @@ const OrderBar: React.FC<IOrderBarProps> = ({
             <MdOutlineCancel className="size-4 md:size-6 xl:size-8 text-red-600" />
           </Button>
         </div>
-        <div className="hidden">
+        <div className="hidden md:block">
           <OpenBurgerMenuBtn totalQuantity={totalQuantity} />
         </div>
       </div>

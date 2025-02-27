@@ -3,6 +3,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 interface AdditionalMaterial {
   id: string;
   title: string;
+  image: string;
   quantity: number;
   price: number;
   volume: number;
