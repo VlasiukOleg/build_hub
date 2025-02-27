@@ -2,12 +2,9 @@
 
 import { useRouter } from 'next/navigation';
 
-import { DisclosurePanel } from '@headlessui/react';
 import { Button } from '@heroui/react';
 
 import { useEffect } from 'react';
-
-import ButtonLink from '@/components/ui/ButtonLink';
 
 import { useAppSelector, useAppDispatch } from '../../../../redux/hooks';
 import { setDeliveryPrice } from '@/redux/deliverySlice';

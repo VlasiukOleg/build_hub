@@ -10,7 +10,7 @@ export const calculateDeliveryFee = (weight: number) => {
   } else if (weight > 5000 && weight <= 10000) {
     return 2000;
   } else if (weight > 10000) {
-    return 'розраховується індивідуально';
+    return 3000;
   } else {
     return 0;
   }

@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 import catalog from '@/data/catalog.json';
 
@@ -95,9 +95,47 @@ const materialsSlice = createSlice({
       groupMaterials.map(item => (item.quantity = action.payload));
       localStorage.removeItem('selectedMaterials');
     },
+    removeMaterial(state, action: PayloadAction<number>) {
+      const allMaterials = state.flatMap(item => item.categories);
+      const groupMaterials = allMaterials.flatMap(
+        category => category.materials
+      );
+      const updateMaterial = groupMaterials.find(
+        material => material.id === action.payload
+      );
+
+      if (updateMaterial) {
+        updateMaterial.quantity = 0;
+      }
+      saveToLocalStorage(
+        state.flatMap(item => item.categories).flatMap(cat => cat.materials)
+      );
+    },
+    updateMaterial(state, action) {
+      const { materialId, quantity } = action.payload;
+      const allMaterials = state.flatMap(item => item.categories);
+      const groupMaterials = allMaterials.flatMap(
+        category => category.materials
+      );
+      const updateMaterial = groupMaterials.find(
+        material => material.id === materialId
+      );
+
+      if (updateMaterial) {
+        updateMaterial.quantity = quantity;
+      }
+      saveToLocalStorage(
+        state.flatMap(item => item.categories).flatMap(cat => cat.materials)
+      );
+    },
   },
 });
 
-export const { changeQuantity, inputChangeQuantity, clearQuantity } =
-  materialsSlice.actions;
+export const {
+  changeQuantity,
+  inputChangeQuantity,
+  clearQuantity,
+  removeMaterial,
+  updateMaterial,
+} = materialsSlice.actions;
 export const materialsReducer = materialsSlice.reducer;

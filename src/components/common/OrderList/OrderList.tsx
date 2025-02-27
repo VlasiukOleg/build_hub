@@ -5,6 +5,8 @@ import { useRouter } from 'next/navigation';
 import { useSearchParams } from 'next/navigation';
 import { Breadcrumbs, BreadcrumbItem, Button, Input } from '@heroui/react';
 
+import OrderForm from '../OrderForm';
+
 import { useAppSelector, useAppDispatch } from '@/redux/hooks';
 import { useMaterials } from '@/hooks/useMaterials';
 import {
@@ -12,8 +14,10 @@ import {
   removeAdditionalMaterial,
   toggleAdditionalPriceAddToOrder,
 } from '@/redux/additionalMaterialSlice';
+import { updateMaterial, removeMaterial } from '@/redux/materialsSlice';
+import { setDeliveryPrice } from '@/redux/deliverySlice';
 
-import OrderForm from '../OrderForm';
+import { calculateDeliveryFee } from '@/utils/calculateDeliveryFee';
 
 import DeliveryIcon from '@/../public/icons/delivery-truck.svg';
 import MovingIcon from '@/../public/icons/moving.svg';
@@ -40,6 +44,8 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     additionalMaterialsEditModeQuantity,
     setAdditionalMaterialsEditModeQuantity,
   ] = useState<string>('0');
+  const [materialEditModeQuantity, setMaterialEditModeQuantity] =
+    useState<string>('0');
 
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -68,6 +74,11 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     totalVolume,
     totalAdditionalMaterialInfo,
   } = useMaterials();
+
+  useEffect(() => {
+    const deliveryFee = calculateDeliveryFee(totalWeight);
+    dispatch(setDeliveryPrice(deliveryFee));
+  }, [dispatch, totalWeight]);
 
   const allCategories = useAppSelector(state => state.categories);
 
@@ -103,6 +114,21 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     setAdditionalMaterialsEditModeQuantity(value);
   };
 
+  const handleUpdateMaterial = (materialId: number, quantity: number) => {
+    const payload = { materialId, quantity };
+    dispatch(updateMaterial(payload));
+    setEditMaterialKey('');
+  };
+
+  const handleEditMaterial = (materialId: string, quantity: number) => {
+    setEditMaterialKey(materialId);
+    setAdditionalMaterialsEditModeQuantity(String(quantity));
+  };
+
+  const handleRemoveMaterial = (id: number) => {
+    dispatch(removeMaterial(id));
+  };
+
   const handleUpdateAdditionalMaterial = (
     materialId: string,
     quantity: number
@@ -116,18 +142,14 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     materialId: string,
     quantity: number
   ) => {
-    // setTimeout(() => {
-    //   inputRef?.current?.focus();
-    // }, 0);
     setEditMaterialKey(materialId);
     setAdditionalMaterialsEditModeQuantity(String(quantity));
   };
 
-  const handleRemoveMaterial = (index: number) => {
+  const handleRemoveAdditionalMaterial = (index: number) => {
     dispatch(removeAdditionalMaterial(index));
 
     if (additionalMaterial.length === 1) {
-      console.log('Yes');
       dispatch(toggleAdditionalPriceAddToOrder());
     }
   };
@@ -163,7 +185,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
             <div className="xl:w-[48%]">
               <div className=" bg-bgWhite border-[1px] border-grey rounded-xl py-2 mb-2 md:py-3">
                 <ul className="divide-y divide-grey">
-                  {filteredMaterialsByQuantity.map(material => (
+                  {filteredMaterialsByQuantity.map((material, index) => (
                     <li
                       key={material.id}
                       className="p-1 font-semibold flex items-center text-grey md:p-2"
@@ -182,9 +204,59 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                         {' '}
                         {material.title}
                       </p>
-                      <p className="text-sm font-normal text-center w-[15%] md:text-lg">
-                        {material.quantity}
-                      </p>
+                      {editMaterialKey === String(material.id) ? (
+                        <Input
+                          errorMessage={() => (
+                            <ul>
+                              {errors.map((error, i) => (
+                                <li key={i}>{error}</li>
+                              ))}
+                            </ul>
+                          )}
+                          isInvalid={errors.length > 0}
+                          name="quantity"
+                          variant="bordered"
+                          defaultValue={String(material.quantity)}
+                          onValueChange={handleEditModeInputChange}
+                          onBlur={e => {
+                            const relatedTarget =
+                              e.relatedTarget as HTMLElement | null;
+
+                            if (relatedTarget?.dataset?.action === 'save')
+                              return;
+
+                            if (
+                              Number(additionalMaterialsEditModeQuantity) < 0
+                            ) {
+                              const absQuantity = Math.abs(
+                                Number(additionalMaterialsEditModeQuantity)
+                              );
+
+                              handleUpdateMaterial(material.id, absQuantity);
+
+                              return;
+                            }
+
+                            handleUpdateMaterial(
+                              material.id,
+                              Number(additionalMaterialsEditModeQuantity)
+                            );
+                          }}
+                          type="number"
+                          radius="sm"
+                          ref={inputRef}
+                          classNames={{
+                            inputWrapper:
+                              'group-data-[focus=true]:border-accent min-h-7 h-7 w-14',
+                            base: 'w-14 mx-1',
+                            input: 'text-center',
+                          }}
+                        />
+                      ) : (
+                        <p className="text-sm font-normal text-center w-[20%] md:text-base">
+                          {material.quantity}
+                        </p>
+                      )}
                       <div className="w-[25%] text-right">
                         <p className="text-xs font-normal md:text-base">
                           {material.price} грн.
@@ -192,6 +264,52 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                         <p className="text-sm text-accent md:text-lg">
                           {(material.quantity * material.price).toFixed(2)} грн.
                         </p>
+                      </div>
+                      <div className="w-[15%] text-right flex flex-col items-center justify-end">
+                        <Button
+                          isIconOnly
+                          aria-label="Clear Order"
+                          onPress={() => handleRemoveMaterial(material.id)}
+                          className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
+                          radius="sm"
+                        >
+                          <MdOutlineCancel className="size-6  xl:size-9 text-red-600" />
+                        </Button>
+                        {editMaterialKey !== String(material.id) ? (
+                          <Button
+                            isIconOnly
+                            aria-label="Clear Order"
+                            onPress={() =>
+                              handleEditMaterial(
+                                String(material.id),
+                                material.quantity
+                              )
+                            }
+                            className="bg-transparent h-7 md:h-9 md:w-9"
+                            radius="sm"
+                          >
+                            <FaRegEdit className="size-6  xl:size-7 text-yellow-500" />
+                          </Button>
+                        ) : (
+                          <Button
+                            isIconOnly
+                            aria-label="Update Material Quantity"
+                            data-action="save"
+                            onPress={() =>
+                              handleUpdateMaterial(
+                                material.id,
+                                Number(additionalMaterialsEditModeQuantity)
+                              )
+                            }
+                            className="bg-transparent h-7 md:h-9 md:w-9"
+                            radius="sm"
+                            isDisabled={
+                              Number(additionalMaterialsEditModeQuantity) < 0
+                            }
+                          >
+                            <IoSaveOutline className="size-6 text-green-600" />
+                          </Button>
+                        )}
                       </div>
                     </li>
                   ))}
@@ -274,7 +392,9 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                           <Button
                             isIconOnly
                             aria-label="Clear Order"
-                            onPress={() => handleRemoveMaterial(index)}
+                            onPress={() =>
+                              handleRemoveAdditionalMaterial(index)
+                            }
                             className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
                             radius="sm"
                           >
