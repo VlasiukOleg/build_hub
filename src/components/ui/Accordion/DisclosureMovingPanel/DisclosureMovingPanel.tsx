@@ -116,6 +116,8 @@ const DisclosureMovingPanel: React.FunctionComponent<
     return groupedMaterials;
   };
 
+  console.log(elevator);
+
   const activeMaterials = getActiveMaterials(materials);
   const activeAdditionalMaterials = getActiveMaterials(additionalMaterial);
 
@@ -181,6 +183,7 @@ const DisclosureMovingPanel: React.FunctionComponent<
       quantity: gipsSmTypeMaterial.quantity,
       price: `${gipsSmCalculateFee.toFixed()} грн.`,
       totalPrice: `${(gipsSmTypeMaterial.quantity * gipsSmCalculateFee).toFixed()} грн.`,
+      isLiftIssue: false,
     },
     {
       key: '3',
@@ -189,7 +192,8 @@ const DisclosureMovingPanel: React.FunctionComponent<
       quantity: gipsMdTypeMaterial.quantity,
       price: `${gipsMdCalculateFee.toFixed()} грн.`,
       totalPrice: `${(gipsMdTypeMaterial.quantity * gipsMdCalculateFee).toFixed()} грн.`,
-      isLiftIssue: true,
+      isLiftIssue:
+        gipsMdTypeMaterial.quantity > 0 && elevator.label !== 'nolift',
     },
     {
       key: '4',
@@ -198,7 +202,8 @@ const DisclosureMovingPanel: React.FunctionComponent<
       quantity: gipsLgTypeMaterial.quantity,
       price: `${gipsLgCalculateFee.toFixed()} грн.`,
       totalPrice: `${(gipsLgTypeMaterial.quantity * gipsLgCalculateFee).toFixed()} грн.`,
-      isLiftIssue: true,
+      isLiftIssue:
+        gipsLgTypeMaterial.quantity > 0 && elevator.label !== 'nolift',
     },
     {
       key: '5',
@@ -216,7 +221,8 @@ const DisclosureMovingPanel: React.FunctionComponent<
       quantity: profXlTypeMaterial.quantity,
       price: `${profXlCalculateFee.toFixed()} грн.`,
       totalPrice: `${(profXlTypeMaterial.quantity * profXlCalculateFee).toFixed()} грн.`,
-      isLiftIssue: true,
+      isLiftIssue:
+        profXlTypeMaterial.quantity > 0 && elevator.label !== 'nolift',
     },
   ];
 
