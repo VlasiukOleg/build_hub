@@ -6,7 +6,7 @@ import {
   TableRow,
   TableCell,
   getKeyValue,
-} from "@heroui/react";
+} from '@heroui/react';
 
 import MovingTotalPrice from './MovingTotalPrice';
 
@@ -32,9 +32,10 @@ interface IMovingCostTableProps {
         key: string;
         type: string;
         measure: string;
-        quantity: number;
+        quantity: number | string;
         price: string;
         totalPrice: string;
+        isLiftIssue: boolean;
       }[]
     | [];
 }
@@ -56,7 +57,10 @@ const MovingCOstTable: React.FunctionComponent<IMovingCostTableProps> = ({
       </TableHeader>
       <TableBody items={rows}>
         {item => (
-          <TableRow key={item.key}>
+          <TableRow
+            key={item.key}
+            className={item.isLiftIssue ? 'bg-red-100' : ''}
+          >
             {columnKey => <TableCell>{getKeyValue(item, columnKey)}</TableCell>}
           </TableRow>
         )}

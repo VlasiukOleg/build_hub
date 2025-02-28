@@ -1,26 +1,31 @@
 'use client';
 
-import { Radio, RadioGroup, Input, Field, Label } from '@headlessui/react';
-import { Alert } from '@heroui/react';
-import clsx from 'clsx';
-import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import { useState, useEffect } from 'react';
-import { Button } from '@heroui/react';
+import { Radio, RadioGroup, Input, Field, Label } from '@headlessui/react';
+import { Alert, Button } from '@heroui/react';
+import clsx from 'clsx';
 
 import MovingCostTable from '@/components/common/MovingCostTable';
 
 import { useAppSelector, useAppDispatch } from '../../../../redux/hooks';
 import { setMovingCost, toggleMovingPriceToOrder } from '@/redux/movingSlice';
+import { useMaterials } from '@/hooks/useMaterials';
 
 import { calculateMovingFee } from '@/utils/calculateMovingFee';
-import { getMaterialsByCalculationType } from '@/utils/getMaterialsByCalculationType';
 import { normalizedWeight } from '@/utils/normalizesWeight';
 
 import { MOVING_TYPE_CALCULATION_LIST_MAP } from '@/components/common/MovingCostTable/constans';
-import { PRICE_PER_TON } from '@/constants/constants';
-import { useMaterials } from '@/hooks/useMaterials';
+import { Material, AdditionalMaterial } from '@/@types';
+
+import { CheckCircleIcon } from '@heroicons/react/24/solid';
 
 interface IDisclosureMovingPanelProps {}
+
+interface ActiveMaterial {
+  movingTypeCalculation: string;
+  quantity: number;
+  weight: number;
+}
 
 const elevators = [
   {
@@ -59,14 +64,10 @@ const DisclosureMovingPanel: React.FunctionComponent<
   const [profLgCalculateFee, setProfLgCalculateFee] = useState(0);
   const [profXlCalculateFee, setProfXlCalculateFee] = useState(0);
 
-  const movingPrice = useAppSelector(state => state.moving.movingPrice);
   const isMovingPriceAddToOrderBar = useAppSelector(
     state => state.moving.isMovingPriceAddToOrder
   );
 
-  const isAdditionalMaterialAddToOrder = useAppSelector(
-    state => state.additionalMaterial.isAdditionalMaterialAddToOrder
-  );
   const additionalMaterial = useAppSelector(
     state => state.additionalMaterial.additionalMaterial
   );
@@ -87,152 +88,149 @@ const DisclosureMovingPanel: React.FunctionComponent<
     dispatch(toggleMovingPriceToOrder());
   };
 
-  const weightTypeCalculateAdditionalMaterial = additionalMaterial.filter(
-    material =>
-      material.movingTypeCalculation === MOVING_TYPE_CALCULATION_LIST_MAP.WEIGHT
+  const getActiveMaterials = (materials: Material[] | AdditionalMaterial[]) => {
+    return materials
+      .filter(material => material.quantity > 0)
+      .map(material => ({
+        movingTypeCalculation: material.movingTypeCalculation,
+        quantity: material.quantity,
+        weight: material.weight,
+      }));
+  };
+
+  const groupMaterialsByType = (materials: ActiveMaterial[]) => {
+    const groupedMaterials = materials.reduce(
+      (acc, material) => {
+        const { movingTypeCalculation, quantity, weight } = material;
+        if (!acc[movingTypeCalculation]) {
+          acc[movingTypeCalculation] = { quantity: 0, totalWeight: 0 };
+        }
+        acc[movingTypeCalculation].quantity += quantity;
+        acc[movingTypeCalculation].totalWeight += quantity * weight;
+
+        return acc;
+      },
+      {} as Record<string, { quantity: number; totalWeight: number }>
+    );
+
+    return groupedMaterials;
+  };
+
+  const activeMaterials = getActiveMaterials(materials);
+  const activeAdditionalMaterials = getActiveMaterials(additionalMaterial);
+
+  const groupedMaterials = groupMaterialsByType(activeMaterials);
+  const groupedAdditionalMaterials = groupMaterialsByType(
+    activeAdditionalMaterials
   );
 
-  const weightTypeCalculateAdditionalMaterialTotalWeight =
-    weightTypeCalculateAdditionalMaterial.reduce((acc, value) => {
-      return acc + value.weight * value.quantity;
-    }, 0);
+  const weightTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.WEIGHT
+  ] || { quantity: 0, weight: 0 };
 
-  const normalizedWeightTypeCalculateAdditionalMaterialTotalWeight =
-    normalizedWeight(weightTypeCalculateAdditionalMaterialTotalWeight);
+  const weightTypeAdditionalMaterial = groupedAdditionalMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.WEIGHT
+  ] || { quantity: 0, weight: 0 };
 
-  const weightTypeCalculateMaterial = materials.filter(
-    material =>
-      material.movingTypeCalculation === MOVING_TYPE_CALCULATION_LIST_MAP.WEIGHT
-  );
+  const gipsSmTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.GIPS_SM
+  ] || { quantity: 0, weight: 0 };
 
-  const weightTypeCalculateMaterialTotalWeight =
-    weightTypeCalculateMaterial.reduce((acc, value) => {
-      return acc + value.weight * value.quantity;
-    }, 0);
+  const gipsMdTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.GIPS_MD
+  ] || { quantity: 0, weight: 0 };
 
-  const normalizedWeightTypeCalculateMaterialTotalWeight = normalizedWeight(
-    weightTypeCalculateMaterialTotalWeight
-  );
+  const gipsLgTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.GIPS_LG
+  ] || { quantity: 0, weight: 0 };
 
-  const gipsSmCalculate = materials.filter(
-    material =>
-      material.movingTypeCalculation ===
-      MOVING_TYPE_CALCULATION_LIST_MAP.GIPS_SM
-  );
+  const profLgTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.PROF_LG
+  ] || { quantity: 0, weight: 0 };
 
-  const gipsSmCalculateQuantity = gipsSmCalculate.reduce((acc, value) => {
-    return acc + Number(value.quantity);
-  }, 0);
-
-  const gipsMdCalculate = materials.filter(
-    material =>
-      material.movingTypeCalculation ===
-      MOVING_TYPE_CALCULATION_LIST_MAP.GIPS_MD
-  );
-
-  const gipsMdCalculateQuantity = gipsMdCalculate.reduce((acc, value) => {
-    return acc + Number(value.quantity);
-  }, 0);
-
-  const gipsLgCalculate = materials.filter(
-    material =>
-      material.movingTypeCalculation ===
-      MOVING_TYPE_CALCULATION_LIST_MAP.GIPS_LG
-  );
-
-  const gipsLgCalculateQuantity = gipsLgCalculate.reduce((acc, value) => {
-    return acc + Number(value.quantity);
-  }, 0);
-
-  const profLgCalculate = materials.filter(
-    material =>
-      material.movingTypeCalculation ===
-      MOVING_TYPE_CALCULATION_LIST_MAP.PROF_LG
-  );
-
-  const profLgCalculateQuantity = profLgCalculate.reduce((acc, value) => {
-    return acc + Number(value.quantity);
-  }, 0);
-
-  const profXlCalculate = materials.filter(
-    material =>
-      material.movingTypeCalculation ===
-      MOVING_TYPE_CALCULATION_LIST_MAP.PROF_XL
-  );
-
-  const profXlCalculateQuantity = profXlCalculate.reduce((acc, value) => {
-    return acc + Number(value.quantity);
-  }, 0);
+  const profXlTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.PROF_XL
+  ] || { quantity: 0, weight: 0 };
 
   const isFloorInputVisible =
-    (gipsMdCalculateQuantity > 0 && elevator.label !== 'nolift') ||
-    (gipsLgCalculateQuantity > 0 && elevator.label !== 'nolift') ||
-    (profXlCalculateQuantity > 0 && elevator.label !== 'nolift');
+    (gipsMdTypeMaterial.quantity > 0 && elevator.label !== 'nolift') ||
+    (gipsLgTypeMaterial.quantity > 0 && elevator.label !== 'nolift') ||
+    (profXlTypeMaterial.quantity > 0 && elevator.label !== 'nolift');
 
   const rows = [
     {
       key: '1',
       type: 'Ваговий матеріал',
       measure: 'тн',
-      quantity:
-        normalizedWeightTypeCalculateMaterialTotalWeight +
-        normalizedWeightTypeCalculateAdditionalMaterialTotalWeight,
+      quantity: (
+        normalizedWeight(weightTypeMaterial.totalWeight) +
+        normalizedWeight(weightTypeAdditionalMaterial.totalWeight)
+      ).toFixed(2),
       price: `${weightTypeCalculateMaterialFee.toFixed()} грн.`,
-      totalPrice: `${(normalizedWeightTypeCalculateMaterialTotalWeight + normalizedWeightTypeCalculateAdditionalMaterialTotalWeight) * weightTypeCalculateMaterialFee} грн. `,
+      totalPrice: `${(
+        (normalizedWeight(weightTypeMaterial.totalWeight) +
+          normalizedWeight(weightTypeAdditionalMaterial.totalWeight)) *
+        weightTypeCalculateMaterialFee
+      ).toFixed(2)} грн. `,
+      isLiftIssue: false,
     },
     {
       key: '2',
       type: 'Гіпсокартон 2 м.',
       measure: 'шт',
-      quantity: gipsSmCalculateQuantity,
+      quantity: gipsSmTypeMaterial.quantity,
       price: `${gipsSmCalculateFee.toFixed()} грн.`,
-      totalPrice: `${(gipsSmCalculateQuantity * gipsSmCalculateFee).toFixed()} грн.`,
+      totalPrice: `${(gipsSmTypeMaterial.quantity * gipsSmCalculateFee).toFixed()} грн.`,
     },
     {
       key: '3',
       type: 'Гіпсокартон 2.5 м.',
       measure: 'шт',
-      quantity: gipsMdCalculateQuantity,
+      quantity: gipsMdTypeMaterial.quantity,
       price: `${gipsMdCalculateFee.toFixed()} грн.`,
-      totalPrice: `${(gipsMdCalculateQuantity * gipsMdCalculateFee).toFixed()} грн.`,
+      totalPrice: `${(gipsMdTypeMaterial.quantity * gipsMdCalculateFee).toFixed()} грн.`,
+      isLiftIssue: true,
     },
     {
       key: '4',
       type: 'Гіпсокартон 3 м.',
       measure: 'шт',
-      quantity: gipsLgCalculateQuantity,
+      quantity: gipsLgTypeMaterial.quantity,
       price: `${gipsLgCalculateFee.toFixed()} грн.`,
-      totalPrice: `${(gipsLgCalculateQuantity * gipsLgCalculateFee).toFixed()} грн.`,
+      totalPrice: `${(gipsLgTypeMaterial.quantity * gipsLgCalculateFee).toFixed()} грн.`,
+      isLiftIssue: true,
     },
     {
       key: '5',
       type: 'Профіль 3 м.',
       measure: 'шт',
-      quantity: profLgCalculateQuantity,
+      quantity: profLgTypeMaterial.quantity,
       price: `${profLgCalculateFee.toFixed()} грн.`,
-      totalPrice: `${(profLgCalculateQuantity * profLgCalculateFee).toFixed()} грн.`,
+      totalPrice: `${(profLgTypeMaterial.quantity * profLgCalculateFee).toFixed()} грн.`,
+      isLiftIssue: false,
     },
     {
       key: '6',
       type: 'Профіль 4 м.',
       measure: 'шт',
-      quantity: profXlCalculateQuantity,
+      quantity: profXlTypeMaterial.quantity,
       price: `${profXlCalculateFee.toFixed()} грн.`,
-      totalPrice: `${(profXlCalculateQuantity * profXlCalculateFee).toFixed()} грн.`,
+      totalPrice: `${(profXlTypeMaterial.quantity * profXlCalculateFee).toFixed()} грн.`,
+      isLiftIssue: true,
     },
   ];
 
-  const visibleRows = rows.filter(row => row.quantity > 0);
+  const visibleRows = rows.filter(row => Number(row.quantity) > 0);
 
   const totalMovingFee =
-    (normalizedWeightTypeCalculateMaterialTotalWeight +
-      normalizedWeightTypeCalculateAdditionalMaterialTotalWeight) *
+    (normalizedWeight(weightTypeMaterial.totalWeight) +
+      normalizedWeight(weightTypeAdditionalMaterial.totalWeight)) *
       weightTypeCalculateMaterialFee +
-    gipsSmCalculateQuantity * gipsSmCalculateFee +
-    gipsMdCalculateQuantity * gipsMdCalculateFee +
-    gipsLgCalculateQuantity * gipsLgCalculateFee +
-    profLgCalculateQuantity * profLgCalculateFee +
-    profXlCalculateQuantity * profXlCalculateFee;
+    gipsSmTypeMaterial.quantity * gipsSmCalculateFee +
+    gipsMdTypeMaterial.quantity * gipsMdCalculateFee +
+    gipsLgTypeMaterial.quantity * gipsLgCalculateFee +
+    profLgTypeMaterial.quantity * profLgCalculateFee +
+    profXlTypeMaterial.quantity * profXlCalculateFee;
 
   dispatch(setMovingCost(Math.round(totalMovingFee)));
 
@@ -254,11 +252,11 @@ const DisclosureMovingPanel: React.FunctionComponent<
       distance,
       building.label,
       floorNumber,
-      gipsSmCalculateQuantity,
-      gipsMdCalculateQuantity,
-      gipsLgCalculateQuantity,
-      profLgCalculateQuantity,
-      profXlCalculateQuantity
+      gipsSmTypeMaterial.quantity,
+      gipsMdTypeMaterial.quantity,
+      gipsLgTypeMaterial.quantity,
+      profLgTypeMaterial.quantity,
+      profXlTypeMaterial.quantity
     );
 
     setWeightTypeCalculateMaterialFee(weightTypeMovingFee);
@@ -269,16 +267,15 @@ const DisclosureMovingPanel: React.FunctionComponent<
     setProfXlCalculateFee(profXlMovingFee);
   }, [
     totalWeight,
-    dispatch,
     elevator.label,
     distance,
     floor,
     building.label,
-    gipsSmCalculateQuantity,
-    gipsMdCalculateQuantity,
-    gipsLgCalculateQuantity,
-    profLgCalculateQuantity,
-    profXlCalculateQuantity,
+    gipsSmTypeMaterial.quantity,
+    gipsMdTypeMaterial.quantity,
+    gipsLgTypeMaterial.quantity,
+    profLgTypeMaterial.quantity,
+    profXlTypeMaterial.quantity,
   ]);
 
   return (
@@ -360,7 +357,7 @@ const DisclosureMovingPanel: React.FunctionComponent<
               color="danger"
               classNames={{
                 title: 'font-bold text-xs/6 md:text-sm xl:text-base',
-                description: 'text-xs/6 md:text-sm xl:text-base',
+                description: 'text-xs md:text-sm xl:text-base',
               }}
             />
             <Field className="mb-3 md:mb-0 md:flex md:items-center md:gap-2">

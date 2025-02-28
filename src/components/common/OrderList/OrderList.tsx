@@ -154,18 +154,6 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     }
   };
 
-  // const totalPrice = materials.reduce((acc, value) => {
-  //   return acc + value.price * value.quantity;
-  // }, 0);
-
-  // const totalWeight = materials.reduce((acc, value) => {
-  //   return acc + value.weight * value.quantity;
-  // }, 0);
-
-  // const totalQuantity = materials.reduce((acc, value) => {
-  //   return acc + value.quantity;
-  // }, 0);
-
   return (
     <>
       {totalQuantity > 0 ? (
@@ -495,7 +483,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                 </ul>
               </div>
               <div className="text-grey text-xs/5 md:text-base">
-                Вага: {totalWeight} кг.
+                Вага: {totalWeight.toFixed(2)} кг.
               </div>
               <div className="text-grey text-xs/5 md:text-base">
                 Об&apos;єм: {totalVolume.toFixed(2)} м3

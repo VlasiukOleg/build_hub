@@ -1,7 +1,6 @@
 import { useAppSelector } from '@/redux/hooks';
 
 export const useMaterials = (slug?: string) => {
-  console.log(slug);
   const allCategories = useAppSelector(state => state.categories);
 
   const additionalMaterialList = useAppSelector(
@@ -39,15 +38,9 @@ export const useMaterials = (slug?: string) => {
     { quantity: 0, price: 0, volume: 0, weight: 0 }
   );
 
-  console.log(totalAdditionalMaterialInfo);
-
-  console.log(allCategories);
-
   const allSubCategories = allCategories.flatMap(
     category => category.categories
   );
-
-  console.log(allSubCategories);
 
   const subCategoriesBySlug = allCategories.find(
     category => category.id === slug

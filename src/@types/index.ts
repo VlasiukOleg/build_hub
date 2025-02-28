@@ -26,5 +26,18 @@ export interface Material {
   totalPrice: number;
   volume: number;
   officialLink: string;
+  movingTypeCalculation: string;
   configurableList?: ConfigurableList[];
+}
+
+export interface AdditionalMaterial {
+  id: string;
+  title: string;
+  image: string;
+  quantity: number;
+  price: number;
+  volume: number;
+  weight: number;
+  movingTypeCalculation: string;
+  measure: string;
 }
