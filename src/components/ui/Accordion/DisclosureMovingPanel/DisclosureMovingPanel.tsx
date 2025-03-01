@@ -116,8 +116,6 @@ const DisclosureMovingPanel: React.FunctionComponent<
     return groupedMaterials;
   };
 
-  console.log(elevator);
-
   const activeMaterials = getActiveMaterials(materials);
   const activeAdditionalMaterials = getActiveMaterials(additionalMaterial);
 
@@ -128,31 +126,31 @@ const DisclosureMovingPanel: React.FunctionComponent<
 
   const weightTypeMaterial = groupedMaterials[
     MOVING_TYPE_CALCULATION_LIST_MAP.WEIGHT
-  ] || { quantity: 0, weight: 0 };
+  ] || { quantity: 0, totalWeight: 0 };
 
   const weightTypeAdditionalMaterial = groupedAdditionalMaterials[
     MOVING_TYPE_CALCULATION_LIST_MAP.WEIGHT
-  ] || { quantity: 0, weight: 0 };
+  ] || { quantity: 0, totalWeight: 0 };
 
   const gipsSmTypeMaterial = groupedMaterials[
     MOVING_TYPE_CALCULATION_LIST_MAP.GIPS_SM
-  ] || { quantity: 0, weight: 0 };
+  ] || { quantity: 0, totalWeight: 0 };
 
   const gipsMdTypeMaterial = groupedMaterials[
     MOVING_TYPE_CALCULATION_LIST_MAP.GIPS_MD
-  ] || { quantity: 0, weight: 0 };
+  ] || { quantity: 0, totalWeight: 0 };
 
   const gipsLgTypeMaterial = groupedMaterials[
     MOVING_TYPE_CALCULATION_LIST_MAP.GIPS_LG
-  ] || { quantity: 0, weight: 0 };
+  ] || { quantity: 0, totalWeight: 0 };
 
   const profLgTypeMaterial = groupedMaterials[
     MOVING_TYPE_CALCULATION_LIST_MAP.PROF_LG
-  ] || { quantity: 0, weight: 0 };
+  ] || { quantity: 0, totalWeight: 0 };
 
   const profXlTypeMaterial = groupedMaterials[
     MOVING_TYPE_CALCULATION_LIST_MAP.PROF_XL
-  ] || { quantity: 0, weight: 0 };
+  ] || { quantity: 0, totalWeight: 0 };
 
   const isFloorInputVisible =
     (gipsMdTypeMaterial.quantity > 0 && elevator.label !== 'nolift') ||
