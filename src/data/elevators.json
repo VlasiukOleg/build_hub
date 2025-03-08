@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Пасажирський ліфт",
+    "label": "passenger"
+  },
+  { "name": "Вантажний ліфт", "label": "cargo" },
+  { "name": "'Без ліфта'", "label": "nolift" }
+]

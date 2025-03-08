@@ -14,10 +14,17 @@ import {
   removeAdditionalMaterial,
   toggleAdditionalPriceAddToOrder,
 } from '@/redux/additionalMaterialSlice';
+import { recalculateMovingFee } from '@/redux/movingSlice';
 import { updateMaterial, removeMaterial } from '@/redux/materialsSlice';
 import { setDeliveryPrice } from '@/redux/deliverySlice';
+import { setMovingCost } from '@/redux/movingSlice';
 
 import { calculateDeliveryFee } from '@/utils/calculateDeliveryFee';
+import { normalizedWeight } from '@/utils/normalizesWeight';
+import { getActiveMaterials } from '@/components/ui/Accordion/DisclosureMovingPanel/utils';
+import { groupMaterialsByType } from '@/components/ui/Accordion/DisclosureMovingPanel/utils';
+
+import { MOVING_TYPE_CALCULATION_LIST_MAP } from '../MovingCostTable/constans';
 
 import DeliveryIcon from '@/../public/icons/delivery-truck.svg';
 import MovingIcon from '@/../public/icons/moving.svg';
@@ -70,6 +77,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     totalPrice,
     totalWeight,
     totalQuantity,
+    materials,
     title,
     totalVolume,
     totalAdditionalMaterialInfo,
@@ -79,19 +87,6 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     const deliveryFee = calculateDeliveryFee(totalWeight);
     dispatch(setDeliveryPrice(deliveryFee));
   }, [dispatch, totalWeight]);
-
-  const allCategories = useAppSelector(state => state.categories);
-
-  const allSubCategories = allCategories.flatMap(
-    category => category.categories
-  );
-  const materials = allSubCategories.flatMap(
-    subCategory => subCategory.materials
-  );
-
-  const filteredMaterialsByQuantity = materials.filter(
-    material => material.quantity > 0
-  );
 
   const deliveryPrice = useAppSelector(state => state.delivery.deliveryPrice);
   const deliveryType = useAppSelector(state => state.delivery.deliveryType);
@@ -109,6 +104,79 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
   const additionalMaterial = useAppSelector(
     state => state.additionalMaterial.additionalMaterial
   );
+
+  const filteredMaterialsByQuantity = materials.filter(
+    material => material.quantity > 0
+  );
+
+  const activeMaterials = getActiveMaterials(materials);
+
+  const activeAdditionalMaterials = isAdditionalMaterialAddToOrder
+    ? getActiveMaterials(additionalMaterial)
+    : [];
+
+  const allActiveMaterials = [...activeMaterials, ...activeAdditionalMaterials];
+
+  const groupedMaterials = groupMaterialsByType(allActiveMaterials);
+
+  console.log(groupedMaterials);
+
+  const weightTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.WEIGHT
+  ] || { quantity: 0, totalWeight: 0 };
+
+  const gipsSmTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.GIPS_SM
+  ] || { quantity: 0, totalWeight: 0 };
+
+  const gipsMdTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.GIPS_MD
+  ] || { quantity: 0, totalWeight: 0 };
+
+  const gipsLgTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.GIPS_LG
+  ] || { quantity: 0, totalWeight: 0 };
+
+  const profLgTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.PROF_LG
+  ] || { quantity: 0, totalWeight: 0 };
+
+  const profXlTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.PROF_XL
+  ] || { quantity: 0, totalWeight: 0 };
+
+  useEffect(() => {
+    const fetchMovingFee = async () => {
+      try {
+        const movingFee = await dispatch(recalculateMovingFee()).unwrap(); // Ждем завершения thunk
+        console.log('Пересчитанная стоимость разгрузки:', movingFee);
+
+        const totalMovingFee =
+          normalizedWeight(weightTypeMaterial.totalWeight) *
+            movingFee.weightTypeMovingFee +
+          gipsSmTypeMaterial.quantity * movingFee.gipsSmMovingFee +
+          gipsMdTypeMaterial.quantity * movingFee.gipsMdMovingFee +
+          gipsLgTypeMaterial.quantity * movingFee.gipsLgMovingFee +
+          profLgTypeMaterial.quantity * movingFee.profLgMovingFee +
+          profXlTypeMaterial.quantity * movingFee.profXlMovingFee;
+
+        dispatch(setMovingCost(Math.round(totalMovingFee)));
+      } catch (error) {
+        console.error('Ошибка при пересчете стоимости разгрузки:', error);
+      }
+    };
+
+    fetchMovingFee();
+  }, [
+    dispatch,
+    gipsLgTypeMaterial.quantity,
+    gipsMdTypeMaterial.quantity,
+    gipsSmTypeMaterial.quantity,
+    profLgTypeMaterial.quantity,
+    profXlTypeMaterial.quantity,
+    totalWeight,
+    weightTypeMaterial.totalWeight,
+  ]);
 
   const handleEditModeInputChange = (value: string) => {
     setAdditionalMaterialsEditModeQuantity(value);

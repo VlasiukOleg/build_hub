@@ -1,18 +1,27 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Radio, RadioGroup, Input, Field, Label } from '@headlessui/react';
+import { Input, Field, Label } from '@headlessui/react';
 import { Alert, Button } from '@heroui/react';
+import { RadioGroup, Radio, cn } from '@heroui/react';
 import clsx from 'clsx';
 
 import MovingCostTable from '@/components/common/MovingCostTable';
 
 import { useAppSelector, useAppDispatch } from '../../../../redux/hooks';
-import { setMovingCost, toggleMovingPriceToOrder } from '@/redux/movingSlice';
+import {
+  setMovingCost,
+  setMovingDistance,
+  setMovingFloor,
+  setMovingElevator,
+  setMovingBuilding,
+  toggleMovingPriceToOrder,
+} from '@/redux/movingSlice';
 import { useMaterials } from '@/hooks/useMaterials';
 
 import { calculateMovingFee } from '@/utils/calculateMovingFee';
 import { normalizedWeight } from '@/utils/normalizesWeight';
+import { getActiveMaterials, groupMaterialsByType } from './utils';
 
 import { MOVING_TYPE_CALCULATION_LIST_MAP } from '@/components/common/MovingCostTable/constans';
 import { Material, AdditionalMaterial } from '@/@types';
@@ -38,7 +47,7 @@ const elevators = [
 
 const buildings = [
   {
-    name: 'Новий дім/Хрущевка',
+    name: 'Новобудова/Хрущевка',
     label: 'new',
   },
   { name: 'Сталінка/Царський', label: 'old' },
@@ -49,13 +58,21 @@ const title = 'Увага!';
 const description =
   'У вашому замовленні є матеріали, які не входять в ліфт (в таблиці виділені червоним кольором), введіть будь ласка поверх для розрахунку';
 
+const description1 = 'Мінімальна ціна виїзду вантажників 500 грн.';
+
 const DisclosureMovingPanel: React.FunctionComponent<
   IDisclosureMovingPanelProps
 > = () => {
-  const [elevator, setElevator] = useState(elevators[1]);
-  const [building, setBuilding] = useState(buildings[0]);
-  const [floor, setFloor] = useState('1');
-  const [distance, setDistance] = useState(20);
+  const movingDistance = useAppSelector(state => state.moving.distance);
+  const movingElevator = useAppSelector(state => state.moving.elevator);
+  const movingBuilding = useAppSelector(state => state.moving.building);
+  const movingFloor = useAppSelector(state => state.moving.floor);
+
+  const [elevator, setElevator] = useState(movingElevator);
+  const [building, setBuilding] = useState(movingBuilding);
+  const [floor, setFloor] = useState(movingFloor);
+  const [distance, setDistance] = useState(movingDistance);
+
   const [weightTypeCalculateMaterialFee, setWeightTypeCalculateMaterialFee] =
     useState(0);
   const [gipsSmCalculateFee, setGipsSmCalculateFee] = useState(0);
@@ -68,67 +85,52 @@ const DisclosureMovingPanel: React.FunctionComponent<
     state => state.moving.isMovingPriceAddToOrder
   );
 
+  const categories = useAppSelector(state => state.categories);
+  console.log(categories);
+
   const additionalMaterial = useAppSelector(
     state => state.additionalMaterial.additionalMaterial
   );
 
+  const isAdditionalMaterialAddToOrder = useAppSelector(
+    state => state.additionalMaterial.isAdditionalMaterialAddToOrder
+  );
+
   const dispatch = useAppDispatch();
 
-  const { materials, totalWeight, totalAdditionalMaterialInfo } =
-    useMaterials();
+  const { materials, totalWeight } = useMaterials();
+
+  console.log(materials);
 
   const handleFloorChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     if (/^\d*$/.test(value) && Number(value) <= 35) {
       setFloor(value);
+      dispatch(setMovingFloor(value));
     }
+  };
+
+  const handleDistanceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const distance = Number(e.target.value);
+    setDistance(distance);
+    dispatch(setMovingDistance(distance));
   };
 
   const onAddMovingToOrderBar = () => {
     dispatch(toggleMovingPriceToOrder());
   };
 
-  const getActiveMaterials = (materials: Material[] | AdditionalMaterial[]) => {
-    return materials
-      .filter(material => material.quantity > 0)
-      .map(material => ({
-        movingTypeCalculation: material.movingTypeCalculation,
-        quantity: material.quantity,
-        weight: material.weight,
-      }));
-  };
-
-  const groupMaterialsByType = (materials: ActiveMaterial[]) => {
-    const groupedMaterials = materials.reduce(
-      (acc, material) => {
-        const { movingTypeCalculation, quantity, weight } = material;
-        if (!acc[movingTypeCalculation]) {
-          acc[movingTypeCalculation] = { quantity: 0, totalWeight: 0 };
-        }
-        acc[movingTypeCalculation].quantity += quantity;
-        acc[movingTypeCalculation].totalWeight += quantity * weight;
-
-        return acc;
-      },
-      {} as Record<string, { quantity: number; totalWeight: number }>
-    );
-
-    return groupedMaterials;
-  };
-
   const activeMaterials = getActiveMaterials(materials);
-  const activeAdditionalMaterials = getActiveMaterials(additionalMaterial);
 
-  const groupedMaterials = groupMaterialsByType(activeMaterials);
-  const groupedAdditionalMaterials = groupMaterialsByType(
-    activeAdditionalMaterials
-  );
+  const activeAdditionalMaterials = isAdditionalMaterialAddToOrder
+    ? getActiveMaterials(additionalMaterial)
+    : [];
+
+  const allActiveMaterials = [...activeMaterials, ...activeAdditionalMaterials];
+
+  const groupedMaterials = groupMaterialsByType(allActiveMaterials);
 
   const weightTypeMaterial = groupedMaterials[
-    MOVING_TYPE_CALCULATION_LIST_MAP.WEIGHT
-  ] || { quantity: 0, totalWeight: 0 };
-
-  const weightTypeAdditionalMaterial = groupedAdditionalMaterials[
     MOVING_TYPE_CALCULATION_LIST_MAP.WEIGHT
   ] || { quantity: 0, totalWeight: 0 };
 
@@ -153,23 +155,19 @@ const DisclosureMovingPanel: React.FunctionComponent<
   ] || { quantity: 0, totalWeight: 0 };
 
   const isFloorInputVisible =
-    (gipsMdTypeMaterial.quantity > 0 && elevator.label !== 'nolift') ||
-    (gipsLgTypeMaterial.quantity > 0 && elevator.label !== 'nolift') ||
-    (profXlTypeMaterial.quantity > 0 && elevator.label !== 'nolift');
+    (gipsMdTypeMaterial.quantity > 0 && elevator !== 'nolift') ||
+    (gipsLgTypeMaterial.quantity > 0 && elevator !== 'nolift') ||
+    (profXlTypeMaterial.quantity > 0 && elevator !== 'nolift');
 
   const rows = [
     {
       key: '1',
       type: 'Ваговий матеріал',
       measure: 'тн',
-      quantity: (
-        normalizedWeight(weightTypeMaterial.totalWeight) +
-        normalizedWeight(weightTypeAdditionalMaterial.totalWeight)
-      ).toFixed(2),
+      quantity: normalizedWeight(weightTypeMaterial.totalWeight).toFixed(2),
       price: `${weightTypeCalculateMaterialFee.toFixed()} грн.`,
       totalPrice: `${(
-        (normalizedWeight(weightTypeMaterial.totalWeight) +
-          normalizedWeight(weightTypeAdditionalMaterial.totalWeight)) *
+        normalizedWeight(weightTypeMaterial.totalWeight) *
         weightTypeCalculateMaterialFee
       ).toFixed(2)} грн. `,
       isLiftIssue: false,
@@ -190,8 +188,7 @@ const DisclosureMovingPanel: React.FunctionComponent<
       quantity: gipsMdTypeMaterial.quantity,
       price: `${gipsMdCalculateFee.toFixed()} грн.`,
       totalPrice: `${(gipsMdTypeMaterial.quantity * gipsMdCalculateFee).toFixed()} грн.`,
-      isLiftIssue:
-        gipsMdTypeMaterial.quantity > 0 && elevator.label !== 'nolift',
+      isLiftIssue: gipsMdTypeMaterial.quantity > 0 && elevator !== 'nolift',
     },
     {
       key: '4',
@@ -200,8 +197,7 @@ const DisclosureMovingPanel: React.FunctionComponent<
       quantity: gipsLgTypeMaterial.quantity,
       price: `${gipsLgCalculateFee.toFixed()} грн.`,
       totalPrice: `${(gipsLgTypeMaterial.quantity * gipsLgCalculateFee).toFixed()} грн.`,
-      isLiftIssue:
-        gipsLgTypeMaterial.quantity > 0 && elevator.label !== 'nolift',
+      isLiftIssue: gipsLgTypeMaterial.quantity > 0 && elevator !== 'nolift',
     },
     {
       key: '5',
@@ -219,16 +215,14 @@ const DisclosureMovingPanel: React.FunctionComponent<
       quantity: profXlTypeMaterial.quantity,
       price: `${profXlCalculateFee.toFixed()} грн.`,
       totalPrice: `${(profXlTypeMaterial.quantity * profXlCalculateFee).toFixed()} грн.`,
-      isLiftIssue:
-        profXlTypeMaterial.quantity > 0 && elevator.label !== 'nolift',
+      isLiftIssue: profXlTypeMaterial.quantity > 0 && elevator !== 'nolift',
     },
   ];
 
   const visibleRows = rows.filter(row => Number(row.quantity) > 0);
 
   const totalMovingFee =
-    (normalizedWeight(weightTypeMaterial.totalWeight) +
-      normalizedWeight(weightTypeAdditionalMaterial.totalWeight)) *
+    normalizedWeight(weightTypeMaterial.totalWeight) *
       weightTypeCalculateMaterialFee +
     gipsSmTypeMaterial.quantity * gipsSmCalculateFee +
     gipsMdTypeMaterial.quantity * gipsMdCalculateFee +
@@ -239,8 +233,11 @@ const DisclosureMovingPanel: React.FunctionComponent<
   dispatch(setMovingCost(Math.round(totalMovingFee)));
 
   useEffect(() => {
-    if (elevator.label !== 'nolift') {
-      setBuilding(buildings[0]);
+    dispatch(setMovingElevator(elevator));
+    dispatch(setMovingBuilding(building));
+
+    if (elevator !== 'nolift') {
+      setBuilding(buildings[0].label);
     }
     const floorNumber = Number(floor) || 0;
     const {
@@ -250,18 +247,7 @@ const DisclosureMovingPanel: React.FunctionComponent<
       gipsLgMovingFee,
       profLgMovingFee,
       profXlMovingFee,
-    } = calculateMovingFee(
-      totalWeight,
-      elevator.label,
-      distance,
-      building.label,
-      floorNumber,
-      gipsSmTypeMaterial.quantity,
-      gipsMdTypeMaterial.quantity,
-      gipsLgTypeMaterial.quantity,
-      profLgTypeMaterial.quantity,
-      profXlTypeMaterial.quantity
-    );
+    } = calculateMovingFee(elevator, distance, building, floorNumber);
 
     setWeightTypeCalculateMaterialFee(weightTypeMovingFee);
     setGipsSmCalculateFee(gipsSmMovingFee);
@@ -271,15 +257,16 @@ const DisclosureMovingPanel: React.FunctionComponent<
     setProfXlCalculateFee(profXlMovingFee);
   }, [
     totalWeight,
-    elevator.label,
+    elevator,
     distance,
     floor,
-    building.label,
+    building,
     gipsSmTypeMaterial.quantity,
     gipsMdTypeMaterial.quantity,
     gipsLgTypeMaterial.quantity,
     profLgTypeMaterial.quantity,
     profXlTypeMaterial.quantity,
+    dispatch,
   ]);
 
   return (
@@ -290,50 +277,68 @@ const DisclosureMovingPanel: React.FunctionComponent<
       </div>
       <RadioGroup
         value={elevator}
-        onChange={setElevator}
-        aria-label="Server size"
-        className="space-y-2 mb-2 md:flex md:items-center md:gap-5 md:space-y-0 md:mb-4"
+        onValueChange={setElevator}
+        label="Виберіть тип ліфта"
+        classNames={{
+          wrapper: 'md:flex-row',
+          label: 'text-grey font-medium',
+        }}
       >
         {elevators.map(elevator => (
           <Radio
             key={elevator.name}
-            value={elevator}
-            className="group relative flex  cursor-pointer rounded-lg bg-gray-200 py-2 px-3 text-grey shadow-md transition focus:outline-none data-[focus]:outline-1 data-[focus]:outline-grey data-[checked]:bg-lightAccent"
+            value={elevator.label}
+            classNames={{
+              base: cn(
+                'inline-flex m-0  bg-content1  hover:bg-content2 items-center justify-between',
+                'flex-row-reverse max-w-full cursor-pointer rounded-lg gap-4 p-3 border-2 border-content2',
+                'data-[selected=true]:border-accent'
+              ),
+
+              label: 'text-xs md:text-sm xl:text-base',
+              control: 'bg-accent',
+              wrapper:
+                'group-data-[selected=true]:border-accent w-4 h-4 md:w-5 md:h-5',
+            }}
           >
-            <div className="flex  w-full items-center justify-between md:gap-3">
-              <div className="text-xs/6 md:text-sm xl:text-base">
-                <p className="font-semibold text-grey">{elevator.name}</p>
-              </div>
-              <CheckCircleIcon className="size-6 fill-accent opacity-0 transition group-data-[checked]:opacity-100 xl:size-7" />
-            </div>
+            {elevator.name}
           </Radio>
         ))}
       </RadioGroup>
-
-      {elevator.label === 'nolift' && (
-        <div className="md:flex md:gap-5 md:items-center md:mb-4">
+      {elevator === 'nolift' && (
+        <div className="md:flex md:gap-5 md:items-end md:mb-4 mt-4">
           <RadioGroup
+            color="warning"
             value={building}
-            onChange={setBuilding}
-            aria-label="Server size"
-            className="space-y-2 mb-3 md:flex md:space-y-0 md:gap-5 md:mb-0"
+            label="Виберіть тип будинку та поверх"
+            onValueChange={setBuilding}
+            classNames={{
+              wrapper: 'md:flex-row',
+              label: 'text-grey font-medium',
+            }}
           >
             {buildings.map(building => (
               <Radio
                 key={building.name}
-                value={building}
-                className="group relative flex cursor-pointer rounded-lg bg-gray-200  py-2 px-3 text-grey shadow-md transition focus:outline-none data-[focus]:outline-1 data-[focus]:outline-white data-[checked]:bg-lightAccent"
+                value={building.label}
+                classNames={{
+                  base: cn(
+                    'inline-flex m-0  bg-content1  hover:bg-content2 items-center justify-between',
+                    'flex-row-reverse max-w-full cursor-pointer rounded-lg gap-4 p-3 border-2 border-content2',
+                    'data-[selected=true]:border-accent'
+                  ),
+
+                  label: 'text-xs md:text-sm xl:text-base',
+                  control: 'bg-accent',
+                  wrapper:
+                    'group-data-[selected=true]:border-accent w-4 h-4 md:w-5 md:h-5',
+                }}
               >
-                <div className="flex w-full items-center justify-between md:gap-3">
-                  <div className="text-xs/6 md:text-sm xl:text-base">
-                    <p className="font-semibold text-grey">{building.name}</p>
-                  </div>
-                  <CheckCircleIcon className="size-6 fill-accent opacity-0 transition group-data-[checked]:opacity-100 xl:size-7" />
-                </div>
+                {building.name}
               </Radio>
             ))}
           </RadioGroup>
-          <Field className="mb-3 md:mb-0 md:flex md:items-center md:gap-2">
+          <Field className="my-3 md:mb-0 md:flex md:items-center md:gap-2">
             <Label className="text-sm/6 font-medium textgrey xl:text-base">
               Поверх
             </Label>
@@ -384,7 +389,7 @@ const DisclosureMovingPanel: React.FunctionComponent<
         </>
       )}
 
-      <div className="md:flex md:gap-5 md:items-center xl:flex-col xl:items-start mb-3 xl:mb-5">
+      <div className="md:flex md:gap-5 md:items-center xl:flex-col xl:items-start my-3 xl:mb-5">
         <Field className="mb-5 md:mb-0 md:flex-[50%] xl:w-[50%]">
           <Label className="text-sm/6 font-medium text-grey md:text-base xl:text-lg">
             Відстань заносу матеріалу -{' '}
@@ -397,7 +402,7 @@ const DisclosureMovingPanel: React.FunctionComponent<
             max="100"
             value={distance}
             step="5"
-            onChange={e => setDistance(Number(e.target.value))}
+            onChange={handleDistanceChange}
             className={clsx(
               'block w-full rounded-lg border-none bg-white/5 py-1.5  text-sm/6 text-white',
               'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25'
@@ -408,6 +413,19 @@ const DisclosureMovingPanel: React.FunctionComponent<
       <div>
         <p className="text-center mb-2">Розрахунок розвантаження</p>
         <MovingCostTable rows={visibleRows} />
+      </div>
+      <div>
+        {totalMovingFee < 500 && (
+          <Alert
+            description={description1}
+            title={title}
+            color="danger"
+            classNames={{
+              title: 'font-bold text-xs/6 md:text-sm xl:text-base',
+              description: 'text-xs md:text-sm xl:text-base',
+            }}
+          />
+        )}
       </div>
       <div className="text-center">
         {' '}

@@ -1,63 +1,83 @@
-const PRICE_PER_FLOOR = 250;
-const PRICE_GIPSOKARTON_SM = 25;
-const PRICE_GIPSOKARTON_MD = 35;
-const PRICE_GIPSOKARTON_LG = 40;
-const PRICE_PROF_LG = 2;
-const PRICE_PROF_XL = 3;
+import { getDistanceMultiplier } from '@/components/ui/Accordion/DisclosureMovingPanel/utils';
 
-const PRICE_GIPSOKARTON_SM_PER_FLOOR = 15;
-const PRICE_GIPSOKARTON_MD_PER_FLOOR = 20;
-const PRICE_GIPSOKARTON_LG_PER_FLOOR = 30;
-const PRICE_PROF_LG_PER_FLOOR = 1;
-const PRICE_PROF_XL_PER_FLOOR = 2;
+const MOVING_PRICE_CONFIG = {
+  PER_TON: 600,
+  PER_FLOOR: 250,
+  OLD_BUILDING_PER_FLOOR: 300,
+  GIPSOKARTON: {
+    SM: { BASE: 25, PER_FLOOR: 15 },
+    MD: { BASE: 35, PER_FLOOR: 20 },
+    LG: { BASE: 40, PER_FLOOR: 30 },
+  },
+  PROF: {
+    LG: { BASE: 2, PER_FLOOR: 1 },
+    XL: { BASE: 3, PER_FLOOR: 2 },
+  },
+};
 
-import { PRICE_PER_TON } from '@/constants/constants';
-
-const getDistanceMultiplier = (distance: number) => {
-  if (distance <= 20) return 1;
-  if (distance > 20 && distance < 35) return 1.2;
-  if (distance >= 35 && distance < 45) return 1.4;
-  if (distance >= 45 && distance <= 50) return 1.5;
-  return 2;
+const calculateMovingTypeFeePerItem = (
+  basePrice: number,
+  perFloorPrice: number,
+  floor: number,
+  distanceMultiplier: number,
+  elevator: string
+) => {
+  let fee = basePrice;
+  if (floor > 1 && elevator === 'nolift') {
+    fee += perFloorPrice * (floor - 1);
+  }
+  return fee * distanceMultiplier;
 };
 
 export const calculateMovingFee = (
-  weight: number,
   elevator: string,
   distance: number,
   building: string,
-  floor: number,
-  gipsSmCalculateQuantity: number,
-  gipsMdCalculateQuantity: number,
-  gipsLgCalculateQuantity: number,
-  profLgCalculateQuantity: number,
-  profXlCalculateQuantity: number
+  floor: number
 ) => {
-  let weightTypeMovingFee = 0;
-  let gipsSmMovingFee = 0;
-  let gipsMdMovingFee = 0;
-  let gipsLgMovingFee = 0;
-  let profLgMovingFee = 0;
-  let profXlMovingFee = 0;
+  const distanceMultiplier = getDistanceMultiplier(distance);
 
-  if (
-    weight > 0 &&
-    weight < 1000 &&
-    gipsSmCalculateQuantity === 0 &&
-    gipsMdCalculateQuantity === 0 &&
-    gipsLgCalculateQuantity === 0 &&
-    profLgCalculateQuantity === 0 &&
-    profXlCalculateQuantity === 0
-  ) {
-    weightTypeMovingFee = PRICE_PER_TON;
-  } else {
-    weightTypeMovingFee = PRICE_PER_TON;
-    gipsSmMovingFee = PRICE_GIPSOKARTON_SM;
-    gipsMdMovingFee = PRICE_GIPSOKARTON_MD;
-    gipsLgMovingFee = PRICE_GIPSOKARTON_LG;
-    profLgMovingFee = PRICE_PROF_LG;
-    profXlMovingFee = PRICE_PROF_XL;
-  }
+  let weightTypeMovingFee = MOVING_PRICE_CONFIG.PER_TON * distanceMultiplier;
+
+  let gipsSmMovingFee = calculateMovingTypeFeePerItem(
+    MOVING_PRICE_CONFIG.GIPSOKARTON.SM.BASE,
+    MOVING_PRICE_CONFIG.GIPSOKARTON.SM.PER_FLOOR,
+    floor,
+    distanceMultiplier,
+    elevator
+  );
+
+  let gipsMdMovingFee = calculateMovingTypeFeePerItem(
+    MOVING_PRICE_CONFIG.GIPSOKARTON.MD.BASE,
+    MOVING_PRICE_CONFIG.GIPSOKARTON.MD.PER_FLOOR,
+    floor,
+    distanceMultiplier,
+    elevator
+  );
+
+  let gipsLgMovingFee = calculateMovingTypeFeePerItem(
+    MOVING_PRICE_CONFIG.GIPSOKARTON.LG.BASE,
+    MOVING_PRICE_CONFIG.GIPSOKARTON.LG.PER_FLOOR,
+    floor,
+    distanceMultiplier,
+    elevator
+  );
+
+  let profLgMovingFee = calculateMovingTypeFeePerItem(
+    MOVING_PRICE_CONFIG.PROF.LG.BASE,
+    MOVING_PRICE_CONFIG.PROF.LG.PER_FLOOR,
+    floor,
+    distanceMultiplier,
+    elevator
+  );
+
+  let profXlMovingFee = calculateMovingTypeFeePerItem(
+    MOVING_PRICE_CONFIG.PROF.XL.BASE,
+    MOVING_PRICE_CONFIG.PROF.XL.PER_FLOOR,
+    floor,
+    distanceMultiplier,
+    elevator
+  );
 
   if (elevator === 'passenger') {
     weightTypeMovingFee *= 1.15;
@@ -65,34 +85,21 @@ export const calculateMovingFee = (
     profLgMovingFee *= 1.2;
   }
 
-  if (
-    (floor > 1 && elevator === 'cargo') ||
-    (floor > 1 && elevator === 'passenger')
-  ) {
-    gipsMdMovingFee += PRICE_GIPSOKARTON_MD_PER_FLOOR * (floor - 1);
-    gipsLgMovingFee += PRICE_GIPSOKARTON_LG_PER_FLOOR * (floor - 1);
-    profXlMovingFee += PRICE_PROF_XL_PER_FLOOR * (floor - 1);
+  const movingPricePerFloorByBuilding =
+    building === 'old'
+      ? MOVING_PRICE_CONFIG.OLD_BUILDING_PER_FLOOR
+      : MOVING_PRICE_CONFIG.PER_FLOOR;
+
+  if (floor > 1 && elevator === 'nolift') {
+    weightTypeMovingFee += movingPricePerFloorByBuilding * (floor - 1);
   }
 
-  const distanceMultiplier = getDistanceMultiplier(distance);
-
-  weightTypeMovingFee *= distanceMultiplier;
-  gipsSmMovingFee *= distanceMultiplier;
-  gipsMdMovingFee = PRICE_GIPSOKARTON_MD * distanceMultiplier;
-  gipsLgMovingFee = PRICE_GIPSOKARTON_LG * distanceMultiplier;
-  profLgMovingFee *= distanceMultiplier;
-  profXlMovingFee = PRICE_PROF_XL * distanceMultiplier;
-
-  if (floor > 1) {
-    gipsMdMovingFee += PRICE_GIPSOKARTON_MD_PER_FLOOR * (floor - 1);
-    gipsLgMovingFee += PRICE_GIPSOKARTON_LG_PER_FLOOR * (floor - 1);
-    weightTypeMovingFee +=
-      building === 'old'
-        ? (PRICE_PER_FLOOR + 50) * (floor - 1)
-        : PRICE_PER_FLOOR * (floor - 1);
-    gipsSmMovingFee += PRICE_GIPSOKARTON_SM_PER_FLOOR * (floor - 1);
-    profLgMovingFee += PRICE_PROF_LG_PER_FLOOR * (floor - 1);
-    profXlMovingFee += PRICE_PROF_LG_PER_FLOOR * (floor - 1);
+  if (floor > 1 && elevator !== 'nolift') {
+    gipsMdMovingFee +=
+      MOVING_PRICE_CONFIG.GIPSOKARTON.MD.PER_FLOOR * (floor - 1);
+    gipsLgMovingFee +=
+      MOVING_PRICE_CONFIG.GIPSOKARTON.LG.PER_FLOOR * (floor - 1);
+    profXlMovingFee += MOVING_PRICE_CONFIG.PROF.XL.PER_FLOOR * (floor - 1);
   }
 
   return {
