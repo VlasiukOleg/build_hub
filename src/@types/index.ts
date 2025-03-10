@@ -13,6 +13,7 @@ export interface ConfigurableList {
   price: number;
   weight: number;
   volume: number;
+  movingTypeCalculation: string;
 }
 
 export interface Material {
@@ -40,4 +41,15 @@ export interface AdditionalMaterial {
   weight: number;
   movingTypeCalculation: string;
   measure: string;
+}
+
+export interface ConfigurableMaterial {
+  title: string;
+  key: string;
+  image: string;
+  quantity: number;
+  price: number;
+  volume: number;
+  weight: number;
+  movingTypeCalculation: string;
 }

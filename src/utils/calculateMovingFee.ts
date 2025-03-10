@@ -13,6 +13,13 @@ const MOVING_PRICE_CONFIG = {
     LG: { BASE: 2, PER_FLOOR: 1 },
     XL: { BASE: 3, PER_FLOOR: 2 },
   },
+  BLOCK: {
+    XS: { BASE: 8, PER_FLOOR: 3 },
+    SM: { BASE: 10, PER_FLOOR: 4.5 },
+    MD: { BASE: 15, PER_FLOOR: 6 },
+    LG: { BASE: 24, PER_FLOOR: 9 },
+    XL: { BASE: 32, PER_FLOOR: 12 },
+  },
 };
 
 const calculateMovingTypeFeePerItem = (
@@ -79,10 +86,57 @@ export const calculateMovingFee = (
     elevator
   );
 
+  let blockXsMovingFee = calculateMovingTypeFeePerItem(
+    MOVING_PRICE_CONFIG.BLOCK.XS.BASE,
+    MOVING_PRICE_CONFIG.BLOCK.XS.PER_FLOOR,
+    floor,
+    distanceMultiplier,
+    elevator
+  );
+
+  let blockSmMovingFee = calculateMovingTypeFeePerItem(
+    MOVING_PRICE_CONFIG.BLOCK.SM.BASE,
+    MOVING_PRICE_CONFIG.BLOCK.SM.PER_FLOOR,
+    floor,
+    distanceMultiplier,
+    elevator
+  );
+
+  let blockMdMovingFee = calculateMovingTypeFeePerItem(
+    MOVING_PRICE_CONFIG.BLOCK.MD.BASE,
+    MOVING_PRICE_CONFIG.BLOCK.MD.PER_FLOOR,
+    floor,
+    distanceMultiplier,
+    elevator
+  );
+
+  let blockLgMovingFee = calculateMovingTypeFeePerItem(
+    MOVING_PRICE_CONFIG.BLOCK.LG.BASE,
+    MOVING_PRICE_CONFIG.BLOCK.LG.PER_FLOOR,
+    floor,
+    distanceMultiplier,
+    elevator
+  );
+
+  let blockXlMovingFee = calculateMovingTypeFeePerItem(
+    MOVING_PRICE_CONFIG.BLOCK.XL.BASE,
+    MOVING_PRICE_CONFIG.BLOCK.XL.PER_FLOOR,
+    floor,
+    distanceMultiplier,
+    elevator
+  );
+
+  console.log(blockXsMovingFee);
+
   if (elevator === 'passenger') {
     weightTypeMovingFee *= 1.15;
     gipsSmMovingFee *= 1.15;
     profLgMovingFee *= 1.2;
+    blockXsMovingFee *= 1.15;
+    blockSmMovingFee *= 1.15;
+    blockMdMovingFee *= 1.15;
+    blockLgMovingFee *= 1.15;
+    blockXlMovingFee *= 1.15;
   }
 
   const movingPricePerFloorByBuilding =
@@ -109,5 +163,10 @@ export const calculateMovingFee = (
     gipsLgMovingFee,
     profLgMovingFee,
     profXlMovingFee,
+    blockXsMovingFee,
+    blockSmMovingFee,
+    blockMdMovingFee,
+    blockLgMovingFee,
+    blockXlMovingFee,
   };
 };

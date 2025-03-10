@@ -30,12 +30,6 @@ import { CheckCircleIcon } from '@heroicons/react/24/solid';
 
 interface IDisclosureMovingPanelProps {}
 
-interface ActiveMaterial {
-  movingTypeCalculation: string;
-  quantity: number;
-  weight: number;
-}
-
 const elevators = [
   {
     name: 'Пасажирський ліфт',
@@ -80,6 +74,11 @@ const DisclosureMovingPanel: React.FunctionComponent<
   const [gipsLgCalculateFee, setGipsLgCalculateFee] = useState(0);
   const [profLgCalculateFee, setProfLgCalculateFee] = useState(0);
   const [profXlCalculateFee, setProfXlCalculateFee] = useState(0);
+  const [blockXsCalculateFee, setBlockXsCalculateFee] = useState(0);
+  const [blockSmCalculateFee, setBlockSmCalculateFee] = useState(0);
+  const [blockMdCalculateFee, setBlockMdCalculateFee] = useState(0);
+  const [blockLgCalculateFee, setBlockLgCalculateFee] = useState(0);
+  const [blockXlCalculateFee, setBlockXlCalculateFee] = useState(0);
 
   const isMovingPriceAddToOrderBar = useAppSelector(
     state => state.moving.isMovingPriceAddToOrder
@@ -92,6 +91,10 @@ const DisclosureMovingPanel: React.FunctionComponent<
     state => state.additionalMaterial.additionalMaterial
   );
 
+  const configurableMaterialList = useAppSelector(
+    state => state.configurableMaterial.configurableMaterial
+  );
+
   const isAdditionalMaterialAddToOrder = useAppSelector(
     state => state.additionalMaterial.isAdditionalMaterialAddToOrder
   );
@@ -99,8 +102,6 @@ const DisclosureMovingPanel: React.FunctionComponent<
   const dispatch = useAppDispatch();
 
   const { materials, totalWeight } = useMaterials();
-
-  console.log(materials);
 
   const handleFloorChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
@@ -126,7 +127,15 @@ const DisclosureMovingPanel: React.FunctionComponent<
     ? getActiveMaterials(additionalMaterial)
     : [];
 
-  const allActiveMaterials = [...activeMaterials, ...activeAdditionalMaterials];
+  const activeConfigurableAdditionalMaterials = getActiveMaterials(
+    configurableMaterialList
+  );
+
+  const allActiveMaterials = [
+    ...activeMaterials,
+    ...activeAdditionalMaterials,
+    ...activeConfigurableAdditionalMaterials,
+  ];
 
   const groupedMaterials = groupMaterialsByType(allActiveMaterials);
 
@@ -152,6 +161,26 @@ const DisclosureMovingPanel: React.FunctionComponent<
 
   const profXlTypeMaterial = groupedMaterials[
     MOVING_TYPE_CALCULATION_LIST_MAP.PROF_XL
+  ] || { quantity: 0, totalWeight: 0 };
+
+  const blockXsTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.BLOCK_XS
+  ] || { quantity: 0, totalWeight: 0 };
+
+  const blockSmTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.BLOCK_SM
+  ] || { quantity: 0, totalWeight: 0 };
+
+  const blockMdTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.BLOCK_MD
+  ] || { quantity: 0, totalWeight: 0 };
+
+  const blockLgTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.BLOCK_LG
+  ] || { quantity: 0, totalWeight: 0 };
+
+  const blockXlTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.BLOCK_XL
   ] || { quantity: 0, totalWeight: 0 };
 
   const isFloorInputVisible =
@@ -183,7 +212,7 @@ const DisclosureMovingPanel: React.FunctionComponent<
     },
     {
       key: '3',
-      type: 'Гіпсокартон 2.5 м.',
+      type: 'Гіпсокартон (OSB) 2.5 м.',
       measure: 'шт',
       quantity: gipsMdTypeMaterial.quantity,
       price: `${gipsMdCalculateFee.toFixed()} грн.`,
@@ -217,6 +246,51 @@ const DisclosureMovingPanel: React.FunctionComponent<
       totalPrice: `${(profXlTypeMaterial.quantity * profXlCalculateFee).toFixed()} грн.`,
       isLiftIssue: profXlTypeMaterial.quantity > 0 && elevator !== 'nolift',
     },
+    {
+      key: '7',
+      type: 'Газоблок 100(120)х200х600',
+      measure: 'шт',
+      quantity: blockXsTypeMaterial.quantity,
+      price: `${blockXsCalculateFee.toFixed()} грн.`,
+      totalPrice: `${(blockXsTypeMaterial.quantity * blockXsCalculateFee).toFixed()} грн.`,
+      isLiftIssue: false,
+    },
+    {
+      key: '8',
+      type: 'Газоблок 150х200х600',
+      measure: 'шт',
+      quantity: blockSmTypeMaterial.quantity,
+      price: `${blockSmCalculateFee.toFixed()} грн.`,
+      totalPrice: `${(blockSmTypeMaterial.quantity * blockSmCalculateFee).toFixed()} грн.`,
+      isLiftIssue: false,
+    },
+    {
+      key: '9',
+      type: 'Газоблок 200(250)х200х600',
+      measure: 'шт',
+      quantity: blockMdTypeMaterial.quantity,
+      price: `${blockMdCalculateFee.toFixed()} грн.`,
+      totalPrice: `${(blockMdTypeMaterial.quantity * blockMdCalculateFee).toFixed()} грн.`,
+      isLiftIssue: false,
+    },
+    {
+      key: '10',
+      type: 'Газоблок 300х200х600',
+      measure: 'шт',
+      quantity: blockLgTypeMaterial.quantity,
+      price: `${blockLgCalculateFee.toFixed()} грн.`,
+      totalPrice: `${(blockLgTypeMaterial.quantity * blockLgCalculateFee).toFixed()} грн.`,
+      isLiftIssue: false,
+    },
+    {
+      key: '11',
+      type: 'Газоблок 375(400)х200х600',
+      measure: 'шт',
+      quantity: blockXlTypeMaterial.quantity,
+      price: `${blockXlCalculateFee.toFixed()} грн.`,
+      totalPrice: `${(blockXlTypeMaterial.quantity * blockXlCalculateFee).toFixed()} грн.`,
+      isLiftIssue: false,
+    },
   ];
 
   const visibleRows = rows.filter(row => Number(row.quantity) > 0);
@@ -228,7 +302,12 @@ const DisclosureMovingPanel: React.FunctionComponent<
     gipsMdTypeMaterial.quantity * gipsMdCalculateFee +
     gipsLgTypeMaterial.quantity * gipsLgCalculateFee +
     profLgTypeMaterial.quantity * profLgCalculateFee +
-    profXlTypeMaterial.quantity * profXlCalculateFee;
+    profXlTypeMaterial.quantity * profXlCalculateFee +
+    blockXsTypeMaterial.quantity * blockXsCalculateFee +
+    blockSmTypeMaterial.quantity * blockSmCalculateFee +
+    blockMdTypeMaterial.quantity * blockMdCalculateFee +
+    blockLgTypeMaterial.quantity * blockLgCalculateFee +
+    blockXlTypeMaterial.quantity * blockXlCalculateFee;
 
   dispatch(setMovingCost(Math.round(totalMovingFee)));
 
@@ -247,6 +326,11 @@ const DisclosureMovingPanel: React.FunctionComponent<
       gipsLgMovingFee,
       profLgMovingFee,
       profXlMovingFee,
+      blockXsMovingFee,
+      blockSmMovingFee,
+      blockMdMovingFee,
+      blockLgMovingFee,
+      blockXlMovingFee,
     } = calculateMovingFee(elevator, distance, building, floorNumber);
 
     setWeightTypeCalculateMaterialFee(weightTypeMovingFee);
@@ -255,19 +339,12 @@ const DisclosureMovingPanel: React.FunctionComponent<
     setGipsLgCalculateFee(gipsLgMovingFee);
     setProfLgCalculateFee(profLgMovingFee);
     setProfXlCalculateFee(profXlMovingFee);
-  }, [
-    totalWeight,
-    elevator,
-    distance,
-    floor,
-    building,
-    gipsSmTypeMaterial.quantity,
-    gipsMdTypeMaterial.quantity,
-    gipsLgTypeMaterial.quantity,
-    profLgTypeMaterial.quantity,
-    profXlTypeMaterial.quantity,
-    dispatch,
-  ]);
+    setBlockXsCalculateFee(blockXsMovingFee);
+    setBlockSmCalculateFee(blockSmMovingFee);
+    setBlockMdCalculateFee(blockMdMovingFee);
+    setBlockLgCalculateFee(blockLgMovingFee);
+    setBlockXlCalculateFee(blockXlMovingFee);
+  }, [building, dispatch, distance, elevator, floor]);
 
   return (
     <div className="mt-2 text-sm/5 text-grey md:text-lg xl:text-xl xl:mt-6">

@@ -24,8 +24,6 @@ import {
   removeConfigurableMaterial,
 } from '@/redux/configurableMaterialSlice';
 
-import gazoblok from '@/data/gazoblok.json';
-
 import { MdOutlineCancel } from 'react-icons/md';
 import { RiSearchLine } from 'react-icons/ri';
 import { FaMinus } from 'react-icons/fa6';
@@ -49,6 +47,8 @@ const DisclosureAddMaterialsPanel: React.FC<
   const [gazoblokQuantity, setGazoblokQuantity] = useState<string>('0');
   const [gazoblokVolume, setGazoblokVolume] = useState<number>(0);
   const [gazoblokWeight, setGazoblokWeight] = useState<number>(0);
+  const [movingTypeCalculation, setMovingTypeCalculation] =
+    useState<string>('');
   const [gazoblokEditModeQuantity, setGazoblokEditModeQuantity] =
     useState<string>('0');
   const [editMaterialKey, setEditMaterialKey] = useState<string>('');
@@ -77,12 +77,16 @@ const DisclosureAddMaterialsPanel: React.FC<
     gazoblokSize.length > 0 && Number(gazoblokQuantity) > 0;
 
   const onGazoblokSelectionChange = (id: React.Key | null) => {
-    const selectedGazoblok = gazoblok.find(item => item.key === id);
+    const selectedGazoblok = material.configurableList?.find(
+      item => item.key === id
+    );
+    console.log(selectedGazoblok);
     if (selectedGazoblok) {
       setGazoblokPrice(selectedGazoblok.price);
       setGazoblokVolume(selectedGazoblok.volume);
       setGazoblokWeight(selectedGazoblok.weight);
       setGazoblokKey(selectedGazoblok.key);
+      setMovingTypeCalculation(selectedGazoblok.movingTypeCalculation);
     }
   };
 
@@ -100,6 +104,7 @@ const DisclosureAddMaterialsPanel: React.FC<
         volume: Number(gazoblokVolume),
         weight: Number(gazoblokWeight),
         image: material.image,
+        movingTypeCalculation,
       })
     );
     setGazoblokQuantity('0');
@@ -119,9 +124,6 @@ const DisclosureAddMaterialsPanel: React.FC<
     materialKey: string,
     quantity: number
   ) => {
-    // setTimeout(() => {
-    //   inputRef?.current?.focus();
-    // }, 0);
     setEditMaterialKey(materialKey);
     setGazoblokEditModeQuantity(String(quantity));
   };

@@ -14,9 +14,14 @@ import {
   removeAdditionalMaterial,
   toggleAdditionalPriceAddToOrder,
 } from '@/redux/additionalMaterialSlice';
+import {
+  updateConfigurableMaterial,
+  removeConfigurableMaterial,
+} from '@/redux/configurableMaterialSlice';
+import { toggleMovingPriceToOrder } from '@/redux/movingSlice';
 import { recalculateMovingFee } from '@/redux/movingSlice';
 import { updateMaterial, removeMaterial } from '@/redux/materialsSlice';
-import { setDeliveryPrice } from '@/redux/deliverySlice';
+import { setDeliveryPrice, setDeliveryType } from '@/redux/deliverySlice';
 import { setMovingCost } from '@/redux/movingSlice';
 
 import { calculateDeliveryFee } from '@/utils/calculateDeliveryFee';
@@ -51,6 +56,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     additionalMaterialsEditModeQuantity,
     setAdditionalMaterialsEditModeQuantity,
   ] = useState<string>('0');
+
   const [materialEditModeQuantity, setMaterialEditModeQuantity] =
     useState<string>('0');
 
@@ -109,17 +115,27 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     material => material.quantity > 0
   );
 
+  const configurableMaterialList = useAppSelector(
+    state => state.configurableMaterial.configurableMaterial
+  );
+
   const activeMaterials = getActiveMaterials(materials);
 
   const activeAdditionalMaterials = isAdditionalMaterialAddToOrder
     ? getActiveMaterials(additionalMaterial)
     : [];
 
-  const allActiveMaterials = [...activeMaterials, ...activeAdditionalMaterials];
+  const activeConfigurableMaterials = getActiveMaterials(
+    configurableMaterialList
+  );
+
+  const allActiveMaterials = [
+    ...activeMaterials,
+    ...activeAdditionalMaterials,
+    ...activeConfigurableMaterials,
+  ];
 
   const groupedMaterials = groupMaterialsByType(allActiveMaterials);
-
-  console.log(groupedMaterials);
 
   const weightTypeMaterial = groupedMaterials[
     MOVING_TYPE_CALCULATION_LIST_MAP.WEIGHT
@@ -145,6 +161,26 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     MOVING_TYPE_CALCULATION_LIST_MAP.PROF_XL
   ] || { quantity: 0, totalWeight: 0 };
 
+  const blockXsTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.BLOCK_XS
+  ] || { quantity: 0, totalWeight: 0 };
+
+  const blockSmTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.BLOCK_SM
+  ] || { quantity: 0, totalWeight: 0 };
+
+  const blockMdTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.BLOCK_MD
+  ] || { quantity: 0, totalWeight: 0 };
+
+  const blockLgTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.BLOCK_LG
+  ] || { quantity: 0, totalWeight: 0 };
+
+  const blockXlTypeMaterial = groupedMaterials[
+    MOVING_TYPE_CALCULATION_LIST_MAP.BLOCK_XL
+  ] || { quantity: 0, totalWeight: 0 };
+
   useEffect(() => {
     const fetchMovingFee = async () => {
       try {
@@ -158,7 +194,12 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
           gipsMdTypeMaterial.quantity * movingFee.gipsMdMovingFee +
           gipsLgTypeMaterial.quantity * movingFee.gipsLgMovingFee +
           profLgTypeMaterial.quantity * movingFee.profLgMovingFee +
-          profXlTypeMaterial.quantity * movingFee.profXlMovingFee;
+          profXlTypeMaterial.quantity * movingFee.profXlMovingFee +
+          blockSmTypeMaterial.quantity * movingFee.blockSmMovingFee +
+          blockXsTypeMaterial.quantity * movingFee.blockXsMovingFee +
+          blockMdTypeMaterial.quantity * movingFee.blockMdMovingFee +
+          blockLgTypeMaterial.quantity * movingFee.blockLgMovingFee +
+          blockXlTypeMaterial.quantity * movingFee.blockXlMovingFee;
 
         dispatch(setMovingCost(Math.round(totalMovingFee)));
       } catch (error) {
@@ -168,6 +209,11 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
 
     fetchMovingFee();
   }, [
+    blockLgTypeMaterial.quantity,
+    blockMdTypeMaterial.quantity,
+    blockSmTypeMaterial.quantity,
+    blockXlTypeMaterial.quantity,
+    blockXsTypeMaterial.quantity,
     dispatch,
     gipsLgTypeMaterial.quantity,
     gipsMdTypeMaterial.quantity,
@@ -179,6 +225,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
   ]);
 
   const handleEditModeInputChange = (value: string) => {
+    console.log(value);
     setAdditionalMaterialsEditModeQuantity(value);
   };
 
@@ -220,6 +267,30 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     if (additionalMaterial.length === 1) {
       dispatch(toggleAdditionalPriceAddToOrder());
     }
+  };
+
+  const handleUpdateConfigurableMaterial = (
+    materialKey: string,
+    quantity: number
+  ) => {
+    const payload = { materialKey, quantity };
+    console.log(payload);
+    dispatch(updateConfigurableMaterial(payload));
+    setEditMaterialKey('');
+  };
+
+  const handleEditConfigurableMaterial = (
+    materialId: string,
+    quantity: number
+  ) => {
+    console.log(materialId);
+    console.log(quantity);
+    setEditMaterialKey(materialId);
+    setAdditionalMaterialsEditModeQuantity(String(quantity));
+  };
+
+  const handleRemoveConfigurableMaterial = (index: string) => {
+    dispatch(removeConfigurableMaterial(index));
   };
 
   return (
@@ -494,6 +565,137 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                         </div>
                       </li>
                     ))}
+                  {configurableMaterialList.map((material, index) => (
+                    <li
+                      key={material.key}
+                      className="p-1 font-semibold flex items-center text-grey md:p-2"
+                    >
+                      <div className="mr-2 text-center inline-block size-[50px] md:size-[75px] md:mr-4">
+                        <Image
+                          src={material.image}
+                          alt={material.title}
+                          width={75}
+                          height={75}
+                          className="md:size-[75px]"
+                        />
+                      </div>
+                      {/* <div className="flex items-center justify-center mr-2 text-center inline-block size-[50px] md:size-[75px] md:mr-4">
+                        <FcImageFile className="size-[40px] md:size-[65px]" />
+                      </div> */}
+
+                      <p className="text-xs text-semibold w-[40%] md:text-base line-clamp-2">
+                        {' '}
+                        {material.title}
+                      </p>
+                      {editMaterialKey === material.key ? (
+                        <Input
+                          errorMessage={() => (
+                            <ul>
+                              {errors.map((error, i) => (
+                                <li key={i}>{error}</li>
+                              ))}
+                            </ul>
+                          )}
+                          isInvalid={errors.length > 0}
+                          name="quantity"
+                          variant="bordered"
+                          defaultValue={String(material.quantity)}
+                          onValueChange={handleEditModeInputChange}
+                          isReadOnly={editMaterialKey !== material.key}
+                          onBlur={e => {
+                            const relatedTarget =
+                              e.relatedTarget as HTMLElement | null;
+
+                            if (relatedTarget?.dataset?.action === 'save')
+                              return;
+
+                            handleUpdateConfigurableMaterial(
+                              material.key,
+                              Number(additionalMaterialsEditModeQuantity)
+                            );
+                          }}
+                          type="number"
+                          radius="sm"
+                          ref={inputRef}
+                          classNames={{
+                            inputWrapper:
+                              'group-data-[focus=true]:border-accent min-h-7 h-7 w-14',
+                            base: 'w-14 mx-1',
+                            input: 'text-center',
+                          }}
+                        />
+                      ) : (
+                        <p className="text-sm font-normal text-center w-[20%] md:text-base">
+                          {material.quantity}
+                        </p>
+                      )}
+                      <div className="w-[25%] text-right">
+                        {material.price === 0 ? (
+                          <p className="text-xs font-normal md:text-base">
+                            Договірна
+                          </p>
+                        ) : (
+                          <>
+                            <p className="text-xs font-normal md:text-base">
+                              {material.price} грн.
+                            </p>
+                            <p className="text-sm text-accent md:text-lg">
+                              {(material.quantity * material.price).toFixed(2)}{' '}
+                              грн.
+                            </p>
+                          </>
+                        )}
+                      </div>
+                      <div className="w-[15%] text-right flex flex-col items-center justify-end">
+                        <Button
+                          isIconOnly
+                          aria-label="Clear Order"
+                          onPress={() =>
+                            handleRemoveConfigurableMaterial(material.key)
+                          }
+                          className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
+                          radius="sm"
+                        >
+                          <MdOutlineCancel className="size-6  xl:size-9 text-red-600" />
+                        </Button>
+                        {editMaterialKey !== material.key ? (
+                          <Button
+                            isIconOnly
+                            aria-label="Clear Order"
+                            onPress={() =>
+                              handleEditConfigurableMaterial(
+                                material.key,
+                                material.quantity
+                              )
+                            }
+                            className="bg-transparent h-7 md:h-9 md:w-9"
+                            radius="sm"
+                          >
+                            <FaRegEdit className="size-6  xl:size-7 text-yellow-500" />
+                          </Button>
+                        ) : (
+                          <Button
+                            isIconOnly
+                            aria-label="Update Material Quantity"
+                            data-action="save"
+                            onPress={() =>
+                              handleUpdateConfigurableMaterial(
+                                material.key,
+                                Number(additionalMaterialsEditModeQuantity)
+                              )
+                            }
+                            className="bg-transparent h-7 md:h-9 md:w-9"
+                            radius="sm"
+                            isDisabled={
+                              Number(additionalMaterialsEditModeQuantity) < 0
+                            }
+                          >
+                            <IoSaveOutline className="size-6 text-green-600" />
+                          </Button>
+                        )}
+                      </div>
+                    </li>
+                  ))}
                   {isMovingAddToOrder && (
                     <li className="p-2 font-semibold flex items-center text-grey md:p-4">
                       <div className="mr-2 p-1 text-center inline-block md:size-[60px] md:mr-4">
@@ -518,6 +720,19 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                         <p className="text-sm text-accent md:text-lg">
                           {movingPrice} грн.
                         </p>
+                      </div>
+                      <div className="w-[15%] text-right flex flex-col items-center justify-end">
+                        <Button
+                          isIconOnly
+                          aria-label="Clear Order"
+                          onPress={() => {
+                            dispatch(toggleMovingPriceToOrder());
+                          }}
+                          className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
+                          radius="sm"
+                        >
+                          <MdOutlineCancel className="size-6  xl:size-9 text-red-600" />
+                        </Button>
                       </div>
                     </li>
                   )}
@@ -545,6 +760,19 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                         <p className="text-sm text-accent md:text-lg">
                           {deliveryPrice} грн.
                         </p>
+                      </div>
+                      <div className="w-[15%] text-right flex flex-col items-center justify-end">
+                        <Button
+                          isIconOnly
+                          aria-label="Clear Order"
+                          onPress={() => {
+                            dispatch(setDeliveryType('pickup'));
+                          }}
+                          className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
+                          radius="sm"
+                        >
+                          <MdOutlineCancel className="size-6  xl:size-9 text-red-600" />
+                        </Button>
                       </div>
                     </li>
                   )}

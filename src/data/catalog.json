@@ -2849,7 +2849,7 @@
             "id": 44.1,
             "image": "https://i.imgur.com/UAQXTfn.jpeg",
             "title": "СТОУНЛАЙТ",
-            "description": "Газоблок СТОУНЛАЙТ 100/200/600 — це високоякісний будівельний матеріал, виготовлений з пористого бетону, що забезпечує відмінні тепло- та звукоізоляційні властивості. Ідеально підходить для зведення стін, перегородок та інших конструкцій у житлових та комерційних будівлях.",
+            "description": "Газоблок СТОУНЛАЙТ — це високоякісний будівельний матеріал, виготовлений з пористого бетону, що забезпечує відмінні тепло- та звукоізоляційні властивості. Ідеально підходить для зведення стін, перегородок та інших конструкцій у житлових та комерційних будівлях.",
             "weight": 25,
             "volume": 0.012,
             "price": 44.03,
@@ -2863,42 +2863,64 @@
                 "key": "gaz_100x200x600",
                 "price": 41.94,
                 "weight": 12.19,
-                "volume": 0.01875
+                "volume": 0.01875,
+                "movingTypeCalculation": "blockXS"
               },
               {
                 "label": "120x200x600",
                 "key": "gaz_120x200x600",
                 "price": 50.33,
                 "weight": 12.19,
-                "volume": 0.01875
+                "volume": 0.01875,
+                "movingTypeCalculation": "blockXS"
               },
               {
                 "label": "150x200x600",
                 "key": "gaz_150x200x600",
                 "price": 62.91,
                 "weight": 12.19,
-                "volume": 0.01875
+                "volume": 0.01875,
+                "movingTypeCalculation": "blockSM"
               },
               {
                 "label": "200x200x600",
                 "key": "gaz_200x200x600",
                 "price": 357.51,
                 "weight": 12.19,
-                "volume": 0.01875
+                "volume": 0.01875,
+                "movingTypeCalculation": "blockMD"
               },
               {
                 "label": "250x200x600",
                 "key": "gaz_250x200x600",
                 "price": 357.51,
                 "weight": 12.19,
-                "volume": 0.01875
+                "volume": 0.01875,
+                "movingTypeCalculation": "blockMD"
               },
               {
                 "label": "300x200x600",
                 "key": "gaz_300x200x600",
                 "price": 357.51,
                 "weight": 12.19,
-                "volume": 0.01875
+                "volume": 0.01875,
+                "movingTypeCalculation": "blockLG"
+              },
+              {
+                "label": "370x200x600",
+                "key": "gaz_375x200x600",
+                "price": 357.51,
+                "weight": 12.19,
+                "volume": 0.01875,
+                "movingTypeCalculation": "blockXL"
+              },
+              {
+                "label": "400x200x600",
+                "key": "gaz_400x200x600",
+                "price": 357.51,
+                "weight": 12.19,
+                "volume": 0.01875,
+                "movingTypeCalculation": "blockXL"
               }
             ]
           }

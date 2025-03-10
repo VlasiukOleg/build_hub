@@ -8,6 +8,7 @@ interface ConfigurableMaterial {
   price: number;
   volume: number;
   weight: number;
+  movingTypeCalculation: string;
 }
 
 interface ConfigurableMaterialState {
@@ -30,6 +31,8 @@ const configurableMaterialSlice = createSlice({
     },
     updateConfigurableMaterial(state, action) {
       const { materialKey, quantity } = action.payload;
+      console.log(materialKey, quantity);
+      console.log(state.configurableMaterial);
       state.configurableMaterial = state.configurableMaterial.map(material =>
         material.key === materialKey ? { ...material, quantity } : material
       );

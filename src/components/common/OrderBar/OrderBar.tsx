@@ -16,6 +16,7 @@ import {
   clearAdditionalMaterial,
   toggleAdditionalPriceAddToOrder,
 } from '@/redux/additionalMaterialSlice';
+import { clearConfigurableMaterial } from '@/redux/configurableMaterialSlice';
 
 import { PiShoppingCartSimpleBold } from 'react-icons/pi';
 import { MdOutlineCancel } from 'react-icons/md';
@@ -55,6 +56,7 @@ const OrderBar: React.FC<IOrderBarProps> = ({
     dispatch(toggleMovingPriceToOrder());
     dispatch(toggleAdditionalPriceAddToOrder());
     dispatch(clearAdditionalMaterial());
+    dispatch(clearConfigurableMaterial());
   };
 
   return (

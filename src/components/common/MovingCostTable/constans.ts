@@ -13,4 +13,9 @@ export const MOVING_TYPE_CALCULATION_LIST_MAP = {
   GIPS_LG: 'gipsLG',
   PROF_LG: 'profLG',
   PROF_XL: 'profXL',
+  BLOCK_XS: 'blockXS',
+  BLOCK_SM: 'blockSM',
+  BLOCK_MD: 'blockMD',
+  BLOCK_LG: 'blockLG',
+  BLOCK_XL: 'blockXL',
 };
