@@ -20,6 +20,7 @@ import { LiaLuggageCartSolid } from 'react-icons/lia';
 import { TbTruckDelivery } from 'react-icons/tb';
 import { FaPlus } from 'react-icons/fa6';
 
+
 interface IAccordionSubCategoryList {
   slug: Pages;
   totalWeight: number;

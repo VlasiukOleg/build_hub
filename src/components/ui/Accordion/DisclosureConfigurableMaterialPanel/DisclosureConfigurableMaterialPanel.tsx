@@ -28,11 +28,12 @@ import { MdOutlineCancel } from 'react-icons/md';
 import { RiSearchLine } from 'react-icons/ri';
 import { FaMinus } from 'react-icons/fa6';
 import { FaPlus } from 'react-icons/fa6';
-import { FiEdit2 } from 'react-icons/fi';
 import { FaRegEdit } from 'react-icons/fa';
 import { IoSaveOutline } from 'react-icons/io5';
 
 import { Material } from '@/@types';
+
+import { CONFIGURABLE_MATERIAL_LIST_SELECT_PLACEHOLDER_TEXT_MAP } from '@/data/constants';
 
 interface IDisclosureAddMaterialsPanelProps {
   material: Material;
@@ -161,7 +162,7 @@ const DisclosureAddMaterialsPanel: React.FC<
             className="w-full"
             aria-label="Розмір газоблока"
             defaultItems={material.configurableList}
-            placeholder="Виберіть розмір"
+            placeholder={CONFIGURABLE_MATERIAL_LIST_SELECT_PLACEHOLDER_TEXT_MAP[material.title]}
             size="md"
             variant="bordered"
             radius="sm"
