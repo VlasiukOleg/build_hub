@@ -20,6 +20,10 @@ const MOVING_PRICE_CONFIG = {
     LG: { BASE: 24, PER_FLOOR: 9 },
     XL: { BASE: 32, PER_FLOOR: 12 },
   },
+  CEGLA: {
+    XS: { BASE: 3, PER_FLOOR: 1.7 },
+    SM: { BASE: 4, PER_FLOOR: 2 },
+  }
 };
 
 const calculateMovingTypeFeePerItem = (

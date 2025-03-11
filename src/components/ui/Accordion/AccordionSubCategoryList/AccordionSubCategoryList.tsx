@@ -117,7 +117,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
                 {subCategory.materials.map((material, matInd) => {
                   const { quantity, price } = material;
                   const totalMaterialPrice = quantity * price;
-                  if (subCategory.categoryTitle !== 'Газоблок1') {
+                  if (material.configurableList.length === 0) {
                     return (
                       <DisclosureMaterialsPanel
                         key={matInd}
