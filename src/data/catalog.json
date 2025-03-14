@@ -50,7 +50,7 @@
             "description": "KNAUF Шпаклівка HP ФІНІШ (MD) — це високоякісна гіпсова шпаклювальна суміш, спеціально розроблена для фінішного вирівнювання стін та стель у внутрішніх приміщеннях. Завдяки своїй дрібнодисперсній структурі, вона забезпечує ідеально гладку поверхню, готову до подальшого оздоблення, такого як фарбування або наклеювання шпалер.",
             "weight": 25,
             "volume": 0.025,
-            "price": 252.70,
+            "price": 252.7,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
@@ -340,7 +340,7 @@
             "description": "Грунтовка Siltek Е-100 призначена для зміцнення та просочування поглинаючих основ перед нанесенням дисперсійних фарб для зменшення їх витрати, клейових розчинів, фінішних шпаклівок, приклеюванням керамічної плитки та шпалер, нанесенням основи для покриттів для підлоги.",
             "weight": 10,
             "volume": 0.01,
-            "price": 355.20,
+            "price": 355.2,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
@@ -354,7 +354,7 @@
             "description": "Ґрунтівка глибокопроникна Ceresit СТ 17 призначена для підготовки (зниження та вирівнювання водопоглинання, знепилення, укріплення) зовнішніх та внутрішніх мінеральних поверхонь перед виконанням опоряджувальних робіт...",
             "weight": 10,
             "volume": 0.01,
-            "price": 435.10,
+            "price": 435.1,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
@@ -459,7 +459,7 @@
             "description": "Застосовується для армування поверхні, захисту поверхні від тріщин, гідроізоляції будівель, внутрішній обробки різних споруд. Висока опірність до розривів і розтягувань. Висока стійкість до впливу лужних розчинів. Запобігає утворенню тріщин в штукатурному шарі.",
             "weight": 8,
             "volume": 0.05,
-            "price": 535.80,
+            "price": 535.8,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
@@ -619,7 +619,7 @@
             "title": "Кастра кругла 65 л. (Польща)",
             "description": "Пластикові відра можуть використовуватися для змішування різних матеріалів, таких як цемент та пісок, для створення бетонної суміші. Це швидкий та ефективний спосіб змішування матеріалів без необхідності використання інших інструментів.",
             "weight": 3.5,
-            "volume": 0.065 ,
+            "volume": 0.065,
             "price": 207.5,
             "quantity": 0,
             "totalPrice": 0,
@@ -637,14 +637,14 @@
     "categories": [
       {
         "id": 12,
-        "categoryTitle": "Гіпсокартон стіновий (вологостікий)",
+        "categoryTitle": "Гіпсокартон",
         "isCategoryOpen": "weight",
         "materials": [
           {
             "id": 12.1,
             "image": "https://i.imgur.com/qFCxJEB.jpeg",
-            "title": "Knauf 2000х1200х12.5 мм",
-            "description": "",
+            "title": "Knauf стіновий (вологостійкий)",
+            "description": "Вологостійкий стіновий гіпсокартон — це будівельний матеріал, призначений для використання у приміщеннях з підвищеною вологістю, таких як ванні кімнати, кухні та пральні. Він складається з гіпсового сердечника, обкладеного спеціальним картоном, стійким до вологи, що запобігає деформації та пошкодженню матеріалу під впливом вологи.",
             "weight": 20,
             "volume": 0,
             "price": 287.66,
@@ -652,133 +652,115 @@
             "totalPrice": 0,
             "movingTypeCalculation": "gipsSM",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "2000x1200x12.5 мм",
+                "key": "gips_vlg_2000x1200x12.5",
+                "price": 284.54,
+                "weight": 21,
+                "volume": 0.03,
+                "movingTypeCalculation": "gipsSM"
+              },
+              {
+                "label": "2500x1200x12.5 мм",
+                "key": "gips_vlg_2500x1200x12.5 мм",
+                "price": 355.68,
+                "weight": 24,
+                "volume": 0.0375,
+                "movingTypeCalculation": "gipsMD"
+              },
+              {
+                "label": "3000x1200x12.5 мм",
+                "key": "gips_vlg_3000x1200x12.5 мм",
+                "price": 426.82,
+                "weight": 27.7,
+                "volume": 0.045,
+                "movingTypeCalculation": "gipsLG"
+              }
+            ]
           },
           {
             "id": 12.2,
-            "image": "https://i.imgur.com/qFCxJEB.jpeg",
-            "title": "Knauf 2500х1200х12.5 мм",
-            "description": "",
-            "weight": 30,
-            "volume": 0,
-            "price": 359.58,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "gipsMD",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 12.3,
-            "image": "https://i.imgur.com/qFCxJEB.jpeg",
-            "title": "Knauf 3000х1200х12.5 мм",
-            "description": "",
-            "weight": 25,
-            "volume": 0,
-            "price": 431.5,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "gipsLG",
-            "officialLink": "",
-            "configurableList": []
-          }
-        ]
-      },
-      {
-        "id": 13,
-        "categoryTitle": "Гіпсокартон стіновий (звичайний)",
-        "isCategoryOpen": false,
-        "materials": [
-          {
-            "id": 13.1,
             "image": "https://i.imgur.com/EoCn52n.jpeg",
-            "title": "Knauf 2000х1200х12.5 мм",
-            "description": "",
-            "weight": 25,
+            "title": "Knauf стіновий (звичайний)",
+            "description": "Гіпсокартонні плити Knauf — це сучасний будівельний матеріал, що складається з двох шарів будівельного картону з гіпсовою серцевиною між ними. Ці плити широко застосовуються для внутрішніх оздоблювальних робіт, зокрема для зведення міжкімнатних перегородок, облицювання стін та стель у приміщеннях із нормальною вологістю.",
+            "weight": 20,
             "volume": 0,
-            "price": 239.86,
+            "price": 287.66,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gipsSM",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "2000x1200x12.5 мм",
+                "key": "gips_2000x1200x12.5",
+                "price": 242.45,
+                "weight": 17.8,
+                "volume": 0.03,
+                "movingTypeCalculation": "gipsSM"
+              },
+              {
+                "label": "2500x1200x12.5 мм",
+                "key": "gips_2500x1200x12.5 мм",
+                "price": 303.06,
+                "weight": 22.2,
+                "volume": 0.0375,
+                "movingTypeCalculation": "gipsMD"
+              },
+              {
+                "label": "3000x1200x12.5 мм",
+                "key": "gips_3000x1200x12.5 мм",
+                "price": 363.67,
+                "weight": 26.6,
+                "volume": 0.045,
+                "movingTypeCalculation": "gipsLG"
+              }
+            ]
           },
           {
-            "id": 13.2,
+            "id": 12.2,
             "image": "https://i.imgur.com/EoCn52n.jpeg",
-            "title": "Knauf 2500х1200х12.5 мм",
-            "description": "Цементно-вапняна суміш з мінеральними заповнювачами та полімерними добавками.  Призначена для механізованого штукатурення всіх видів щільних мінеральних основ всередині будівель. Придатна для нанесення",
-            "weight": 25,
+            "title": "Knauf стельовий (звичайний)",
+            "description": "Гіпсокартонні плити Knauf — це сучасний будівельний матеріал, що складається з двох шарів будівельного картону з гіпсовою серцевиною між ними. Ці плити широко застосовуються для внутрішніх оздоблювальних робіт, зокрема для зведення міжкімнатних перегородок, облицювання стін та стель у приміщеннях із нормальною вологістю.",
+            "weight": 20,
             "volume": 0,
-            "price": 299.82,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "gipsMD",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 13.3,
-            "image": "https://i.imgur.com/EoCn52n.jpeg",
-            "title": "Knauf 3000х1200х12.5 мм",
-            "description": "Застосовується для виконання високоякісних штукатурних робіт на різних мінеральних основах (бетон, цегла і т.д.) усередині приміщень. Рекомендована як для традиційного ручного, так і для механічного нанесення. Після затвердіння є міцною основою для гіпсових шпаклівок і внутрішніх декоративних штукатурок.",
-            "weight": 25,
-            "volume": 0,
-            "price": 359.78,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "gipsLG",
-            "officialLink": "",
-            "configurableList": []
-          }
-        ]
-      },
-      {
-        "id": 14,
-        "categoryTitle": "Гіпсокартон стельовий (звичайний)",
-        "isCategoryOpen": false,
-        "materials": [
-          {
-            "id": 14.1,
-            "image": "https://i.imgur.com/EoCn52n.jpeg",
-            "title": "Knauf 2000х1200х9.5 мм",
-            "description": "",
-            "weight": 25,
-            "volume": 0,
-            "price": 227.78,
+            "price": 287.66,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "gipsSM",
             "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 14.2,
-            "image": "https://i.imgur.com/EoCn52n.jpeg",
-            "title": "Knauf 2500х1200х9.5 мм",
-            "description": "Цементно-вапняна суміш з мінеральними заповнювачами та полімерними добавками.  Призначена для механізованого штукатурення всіх видів щільних мінеральних основ всередині будівель. Придатна для нанесення",
-            "weight": 25,
-            "volume": 0,
-            "price": 284.73,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "gipsMD",
-            "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "2000x1200x9.5 мм",
+                "key": "gips_2000x1200x9.5",
+                "price": 225.89,
+                "weight": 15.6,
+                "volume": 0.03,
+                "movingTypeCalculation": "gipsSM"
+              },
+              {
+                "label": "2500x1200x9.5 мм",
+                "key": "gips_2500x1200x9.5 мм",
+                "price": 282.36,
+                "weight": 19.5,
+                "volume": 0.0375,
+                "movingTypeCalculation": "gipsMD"
+              }
+            ]
           }
         ]
       },
       {
         "id": 15,
-        "categoryTitle": "Профіль для гіпсокартону CD-60",
+        "categoryTitle": "Профіль для гіпсокартону",
         "isCategoryOpen": false,
-
         "materials": [
           {
             "id": 15.1,
             "image": "https://i.imgur.com/pZn5nEs.jpeg",
-            "title": "Профіль CD-60 (0.55 мм) - 3м",
-            "description": "",
+            "title": "Профіль CD-60",
+            "description": "Профіль CD-60, є стельовим профілем, що використовується для створення каркасів підвісних стель та облицювання стін гіпсокартоном. Виготовлений з оцинкованої сталі товщиною 0,55 мм, він забезпечує міцність та довговічність конструкції. Ширина профілю становить 60 мм, висота – 27 мм, а довжина – 3 метри. Завдяки трьом канавкам з кожного боку, профіль має додаткову жорсткість та полегшує центрування шурупів під час монтажу.Профіль CD-60 встановлюється разом із направляючими профілями UD і є основою для кріплення гіпсокартонних листів у стельових конструкціях.",
             "weight": 2,
             "volume": 0,
             "price": 81.9,
@@ -786,691 +768,421 @@
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "(0.55 мм) - 3м",
+                "key": "prof_cd60_0.55_3",
+                "price": 79.47,
+                "weight": 1.25,
+                "volume": 0.00486,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "(0.55 мм) - 4м",
+                "key": "prof_cd60_0.55_4",
+                "price": 105.96,
+                "weight": 1.67,
+                "volume": 0.00648,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "label": "(0.6 мм ГОСТ) - 3м",
+                "key": "prof_cd60_0.6_3",
+                "price": 105.03,
+                "weight": 1.25,
+                "volume": 0.00486,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "(0.6 мм ГОСТ) - 4м",
+                "key": "prof_cd60_0.6_4",
+                "price": 140.04,
+                "weight": 1.67,
+                "volume": 0.00648,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "label": "КНАУФ (0.6 мм) - 3м",
+                "key": "prof_knauf_cd60_0.6_3",
+                "price": 148.23,
+                "weight": 1.25,
+                "volume": 0.00486,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "КНАУФ (0.6 мм) - 4м",
+                "key": "prof_knauf_cd60_0.6_4",
+                "price": 206.2,
+                "weight": 1.67,
+                "volume": 0.00648,
+                "movingTypeCalculation": "profXL"
+              }
+            ]
           },
           {
             "id": 15.2,
-            "image": "https://i.imgur.com/pZn5nEs.jpeg",
-            "title": "Профіль CD-60 (0.55 мм) - 4м",
-            "description": "",
+            "image": "https://i.imgur.com/tSzHGba.jpeg",
+            "title": "Профіль UD-27",
+            "description": "Профіль UD-27 (0,55 мм), довжиною 3 метри, використовується як направляючий елемент при монтажі каркасів для підвісних стель та облицювання стін гіпсокартоном. Він виготовлений з оцинкованої сталі методом холодного прокату, що забезпечує стійкість до корозії та механічних навантажень. Профіль має П-подібну форму з шириною 27 мм і товщиною стінки 0,55 мм. При монтажі підвісних стель профіль UD-27 кріпиться по периметру приміщення, забезпечуючи надійну основу для встановлення CD-профілів. При облицюванні стін профіль фіксується до підлоги та стелі, забезпечуючи жорсткість конструкції. Завдяки легкій вазі та простоті монтажу, профіль UD-27 є популярним вибором для створення надійних каркасних систем.",
             "weight": 2,
             "volume": 0,
-            "price": 109.2,
+            "price": 81.9,
             "quantity": 0,
             "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
+            "movingTypeCalculation": "profLG",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "(0.55 мм) - 3м",
+                "key": "prof_ud27_0.55_3",
+                "price": 49.05,
+                "weight": 1,
+                "volume": 0.002187,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "(0.55 мм) - 4м",
+                "key": "prof_ud27_0.55_4",
+                "price": 71.28,
+                "weight": 1,
+                "volume": 0.002916,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "label": "(0.6 мм ГОСТ) - 3м",
+                "key": "prof_ud27_0.6_3",
+                "price": 65.82,
+                "weight": 1,
+                "volume": 0.002187,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "(0.6 мм ГОСТ) - 4м",
+                "key": "prof_ud27_0.6_4",
+                "price": 87.76,
+                "weight": 1,
+                "volume": 0.002916,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "label": "КНАУФ (0.6 мм) - 3м",
+                "key": "prof_knauf_ud27_0.6_3",
+                "price": 106.47,
+                "weight": 1,
+                "volume": 0.002187,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "КНАУФ (0.6 мм) - 4м",
+                "key": "prof_knauf_ud27_0.6_4",
+                "price": 141.96,
+                "weight": 1,
+                "volume": 0.002916,
+                "movingTypeCalculation": "profXL"
+              }
+            ]
           },
           {
             "id": 15.3,
-            "image": "https://i.imgur.com/pZn5nEs.jpeg",
-            "title": "Профіль CD-60 (0.6 мм) ГОСТ - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 105.03,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 15.4,
-            "image": "https://i.imgur.com/pZn5nEs.jpeg",
-            "title": "Профіль CD-60 (0.6 мм) ГОСТ - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 140.04,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 15.5,
-            "image": "https://i.imgur.com/pZn5nEs.jpeg",
-            "title": "Knauf Профіль CD-60 (0.6 мм) - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 148.23,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 15.6,
-            "image": "https://i.imgur.com/pZn5nEs.jpeg",
-            "title": "Knauf Профіль CD-60 (0.6 мм) - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 206.2,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          }
-        ]
-      },
-      {
-        "id": 16,
-        "categoryTitle": "Профіль для гіпсокартону UD-27",
-        "isCategoryOpen": false,
-        "materials": [
-          {
-            "id": 16.1,
-            "image": "https://i.imgur.com/tSzHGba.jpeg",
-            "title": "Профіль UD-27 (0.55 мм) - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 50.13,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 16.2,
-            "image": "https://i.imgur.com/tSzHGba.jpeg",
-            "title": "Профіль UD-27 (0.55 мм) - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 66.84,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 16.3,
-            "image": "https://i.imgur.com/tSzHGba.jpeg",
-            "title": "Профіль UD-27 (0.6 мм) ГОСТ - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 65.82,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 16.4,
-            "image": "https://i.imgur.com/tSzHGba.jpeg",
-            "title": "Профіль UD-27 (0.6 мм) ГОСТ - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 87.76,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 16.5,
-            "image": "https://i.imgur.com/tSzHGba.jpeg",
-            "title": "Knauf Профіль UD-27 (0.6 мм) - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 106.47,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 16.6,
-            "image": "https://i.imgur.com/tSzHGba.jpeg",
-            "title": "Knauf Профіль UD-27 (0.6 мм) - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 141.96,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          }
-        ]
-      },
-      {
-        "id": 17,
-        "categoryTitle": "Профіль для гіпсокартону CW-50",
-        "isCategoryOpen": false,
-        "materials": [
-          {
-            "id": 17.1,
             "image": "https://i.imgur.com/AtlYCOt.jpeg",
-            "title": "Профіль CW-50 (0.55 мм) - 3м",
-            "description": "",
+            "title": "Профіль CW",
+            "description": "Профіль CW є вертикальною стійкою для каркасів міжкімнатних перегородок та облицювань на основі гіпсокартону, гіпсоволокнистих плит і аквапанелей. Він використовується в парі з напрямним профілем UW-50.",
             "weight": 2,
             "volume": 0,
-            "price": 107.91,
+            "price": 81.9,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "50 (0.55 мм) - 3м",
+                "key": "prof_cw50_0.55_3",
+                "price": 99.09,
+                "weight": 1.65,
+                "volume": 0.0075,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "50 (0.55 мм) - 4м",
+                "key": "prof_cw50_0.55_4",
+                "price": 132.12,
+                "weight": 2.2,
+                "volume": 0.01,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "label": "50 (0.6 мм ГОСТ) - 3м",
+                "key": "prof_cw50_0.6_3",
+                "price": 133.68,
+                "weight": 1.65,
+                "volume": 0.0075,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "50 КНАУФ (0.6 мм) - 3м",
+                "key": "prof_knauf_cw50_0.6_3",
+                "price": 178.38,
+                "weight": 1.65,
+                "volume": 0.0075,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "50 КНАУФ (0.6 мм) - 4м",
+                "key": "prof_knauf_cw50_0.6_4",
+                "price": 237.84,
+                "weight": 2.2,
+                "volume": 0.01,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "label": "75 (0.55 мм) - 3м",
+                "key": "prof_cw75_0.55_3",
+                "price": 122.64,
+                "weight": 1.9,
+                "volume": 0.01125,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "75 (0.55 мм) - 4м",
+                "key": "prof_cw75_0.55_4",
+                "price": 163.52,
+                "weight": 2.53,
+                "volume": 0.015,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "label": "75 (0.6 мм ГОСТ) - 3м",
+                "key": "prof_cw75_0.6_3",
+                "price": 159.06,
+                "weight": 1.9,
+                "volume": 0.01125,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "75 (0.6 мм ГОСТ) - 4м",
+                "key": "prof_cw75_0.6_4",
+                "price": 212.08,
+                "weight": 2.53,
+                "volume": 0.015,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "label": "75 КНАУФ (0.6 мм) - 3м",
+                "key": "prof_knauf_cw75_0.6_3",
+                "price": 199.17,
+                "weight": 1.9,
+                "volume": 0.01125,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "75 КНАУФ (0.6 мм) - 4м",
+                "key": "prof_knauf_cw75_0.6_4",
+                "price": 265.56,
+                "weight": 2.53,
+                "volume": 0.015,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "label": "100 (0.55 мм) - 3м",
+                "key": "prof_cw100_0.55_3",
+                "price": 138.93,
+                "weight": 2.3,
+                "volume": 0.015,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "100 (0.55 мм) - 4м",
+                "key": "prof_cw100_0.55_4",
+                "price": 185.24,
+                "weight": 3,
+                "volume": 0.02,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "label": "100 (0.6 мм ГОСТ) - 3м",
+                "key": "prof_cw100_0.6_3",
+                "price": 181.95,
+                "weight": 2.3,
+                "volume": 0.015,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "100 (0.6 мм ГОСТ) - 4м",
+                "key": "prof_cw100_0.6_4",
+                "price": 242.6,
+                "weight": 3,
+                "volume": 0.02,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "label": "100 КНАУФ (0.6 мм) - 3м",
+                "key": "prof_knauf_cw100_0.6_3",
+                "price": 239.97,
+                "weight": 2.3,
+                "volume": 0.015,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "100 КНАУФ (0.6 мм) - 4м",
+                "key": "prof_knauf_cw100_0.6_4",
+                "price": 319.96,
+                "weight": 3,
+                "volume": 0.02,
+                "movingTypeCalculation": "profXL"
+              }
+            ]
           },
           {
-            "id": 17.2,
-            "image": "https://i.imgur.com/AtlYCOt.jpeg",
-            "title": "Профіль CW-50 (0.55 мм) - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 143.88,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 17.3,
-            "image": "https://i.imgur.com/AtlYCOt.jpeg",
-            "title": "Профіль CW-50 (0.6 мм) ГОСТ - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 133.68,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-
-          {
-            "id": 17.5,
-            "image": "https://i.imgur.com/AtlYCOt.jpeg",
-            "title": "Knauf Профіль CW-50 (0.6 мм) - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 165.96,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 17.6,
-            "image": "https://i.imgur.com/AtlYCOt.jpeg",
-            "title": "Knauf Профіль CW-50 (0.6 мм) - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 221.28,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          }
-        ]
-      },
-      {
-        "id": 18,
-        "categoryTitle": "Профіль для гіпсокартону CW-75",
-        "isCategoryOpen": false,
-        "materials": [
-          {
-            "id": 18.1,
-            "image": "https://i.imgur.com/AtlYCOt.jpeg",
-            "title": "Профіль CW-75 (0.55 мм) - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 126.93,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 18.2,
-            "image": "https://i.imgur.com/AtlYCOt.jpeg",
-            "title": "Профіль CW-75 (0.55 мм) - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 169.24,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 18.3,
-            "image": "https://i.imgur.com/AtlYCOt.jpeg",
-            "title": "Профіль CW-75 (0.6 мм) ГОСТ - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 159.06,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-
-          {
-            "id": 18.4,
-            "image": "https://i.imgur.com/AtlYCOt.jpeg",
-            "title": "Профіль CW-75 (0.6 мм) - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 212.08,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 18.5,
-            "image": "https://i.imgur.com/AtlYCOt.jpeg",
-            "title": "Knauf Профіль CW-75 (0.6 мм) - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 189.24,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 18.6,
-            "image": "https://i.imgur.com/AtlYCOt.jpeg",
-            "title": "Knauf Профіль CW-75 (0.6 мм) - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 252.32,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          }
-        ]
-      },
-      {
-        "id": 19,
-        "categoryTitle": "Профіль для гіпсокартону CW-100",
-        "isCategoryOpen": false,
-        "materials": [
-          {
-            "id": 19.1,
-            "image": "https://i.imgur.com/AtlYCOt.jpeg",
-            "title": "Профіль CW-100 (0.55 мм) - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 145.59,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 19.2,
-            "image": "https://i.imgur.com/AtlYCOt.jpeg",
-            "title": "Профіль CW-100 (0.55 мм) - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 194.12,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 19.3,
-            "image": "https://i.imgur.com/AtlYCOt.jpeg",
-            "title": "Профіль CW-100 (0.6 мм) ГОСТ - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 181.95,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-
-          {
-            "id": 19.4,
-            "image": "https://i.imgur.com/AtlYCOt.jpeg",
-            "title": "Профіль CW-100 (0.6 мм) ГОСТ - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 242.6,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 19.5,
-            "image": "https://i.imgur.com/AtlYCOt.jpeg",
-            "title": "Knauf Профіль CW-100 (0.6 мм) - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 223.26,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 19.6,
-            "image": "https://i.imgur.com/AtlYCOt.jpeg",
-            "title": "Knauf Профіль CW-100 (0.6 мм) - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 297.68,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          }
-        ]
-      },
-      {
-        "id": 20,
-        "categoryTitle": "Профіль для гіпсокартону UW-50",
-        "isCategoryOpen": false,
-        "materials": [
-          {
-            "id": 20.1,
+            "id": 15.3,
             "image": "https://i.imgur.com/rYGeLgO.jpeg",
-            "title": "Профіль UW-50 (0.55 мм) - 3м",
-            "description": "",
+            "title": "Профіль UW",
+            "description": "Профіль UW-50 (0,55 мм) довжиною 3 м є напрямним елементом, призначеним для створення каркасів стінових перегородок із гіпсокартону. Він слугує основою для встановлення вертикальних стійкових профілів CW-50, забезпечуючи стабільність та надійність конструкції.",
             "weight": 2,
             "volume": 0,
-            "price": 85.86,
+            "price": 81.9,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
             "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 20.2,
-            "image": "https://i.imgur.com/rYGeLgO.jpeg",
-            "title": "Профіль UW-50 (0.55 мм) - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 114.48,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 20.3,
-            "image": "https://i.imgur.com/rYGeLgO.jpeg",
-            "title": "Профіль UW-50 (0.6 мм) ГОСТ - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 109.08,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 20.5,
-            "image": "https://i.imgur.com/rYGeLgO.jpeg",
-            "title": "Knauf Профіль UW-50 (0.6 мм) - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 145.26,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 20.6,
-            "image": "https://i.imgur.com/rYGeLgO.jpeg",
-            "title": "Knauf Профіль UW-50 (0.6 мм) - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 193.68,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          }
-        ]
-      },
-      {
-        "id": 21,
-        "categoryTitle": "Профіль для гіпсокартону UW-75",
-        "isCategoryOpen": false,
-        "materials": [
-          {
-            "id": 21.1,
-            "image": "https://i.imgur.com/rYGeLgO.jpeg",
-            "title": "Профіль UW-75 (0.55 мм) - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 102.51,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 21.2,
-            "image": "https://i.imgur.com/rYGeLgO.jpeg",
-            "title": "Профіль UW-75 (0.55 мм) - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 136.68,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 21.3,
-            "image": "https://i.imgur.com/rYGeLgO.jpeg",
-            "title": "Профіль UW-75 (0.6 мм) ГОСТ - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 141.36,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-
-          {
-            "id": 21.4,
-            "image": "https://i.imgur.com/rYGeLgO.jpeg",
-            "title": "Профіль UW-75 (0.6 мм) - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 188.48,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 21.5,
-            "image": "https://i.imgur.com/rYGeLgO.jpeg",
-            "title": "Knauf Профіль UW-75 (0.6 мм) - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 169.17,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 21.6,
-            "image": "https://i.imgur.com/rYGeLgO.jpeg",
-            "title": "Knauf Профіль UW-75 (0.6 мм) - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 225.56,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          }
-        ]
-      },
-      {
-        "id": 22,
-        "categoryTitle": "Профіль для гіпсокартону UW-100",
-        "isCategoryOpen": false,
-        "materials": [
-          {
-            "id": 22.1,
-            "image": "https://i.imgur.com/rYGeLgO.jpeg",
-            "title": "Профіль UW-100 (0.55 мм) - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 120.48,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 22.2,
-            "image": "https://i.imgur.com/rYGeLgO.jpeg",
-            "title": "Профіль UW-100 (0.55 мм) - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 160.64,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 22.3,
-            "image": "https://i.imgur.com/rYGeLgO.jpeg",
-            "title": "Профіль UW-100 (0.6 мм) ГОСТ - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 157.68,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-
-          {
-            "id": 22.4,
-            "image": "https://i.imgur.com/rYGeLgO.jpeg",
-            "title": "Профіль UW-100 (0.6 мм) ГОСТ - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 210.24,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 22.5,
-            "image": "https://i.imgur.com/rYGeLgO.jpeg",
-            "title": "Knauf Профіль UW-100 (0.6 мм) - 3м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 198.69,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profLG",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 22.6,
-            "image": "https://i.imgur.com/rYGeLgO.jpeg",
-            "title": "Knauf Профіль UW-100 (0.6 мм) - 4м",
-            "description": "",
-            "weight": 2,
-            "volume": 0,
-            "price": 264.92,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "profXL",
-            "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "50 (0.55 мм) - 3м",
+                "key": "prof_uw50_0.55_3",
+                "price": 81.75,
+                "weight": 1.65,
+                "volume": 0.0075,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "50 (0.55 мм) - 4м",
+                "key": "prof_uw50_0.55_4",
+                "price": 109.0,
+                "weight": 2.2,
+                "volume": 0.01,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "label": "50 (0.6 мм ГОСТ) - 3м",
+                "key": "prof_uw50_0.6_3",
+                "price": 109.08,
+                "weight": 1.65,
+                "volume": 0.0075,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "50 КНАУФ (0.6 мм) - 3м",
+                "key": "prof_knauf_uw50_0.6_3",
+                "price": 152.97,
+                "weight": 1.65,
+                "volume": 0.0075,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "50 КНАУФ (0.6 мм) - 4м",
+                "key": "prof_knauf_uw50_0.6_4",
+                "price": 203.96,
+                "weight": 2.2,
+                "volume": 0.01,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "label": "75 (0.55 мм) - 3м",
+                "key": "prof_uw75_0.55_3",
+                "price": 99.42,
+                "weight": 1.9,
+                "volume": 0.01125,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "75 (0.55 мм) - 4м",
+                "key": "prof_uw75_0.55_4",
+                "price": 132.56,
+                "weight": 2.53,
+                "volume": 0.015,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "label": "75 (0.6 мм ГОСТ) - 3м",
+                "key": "prof_uw75_0.6_3",
+                "price": 141.36,
+                "weight": 1.9,
+                "volume": 0.01125,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "75 (0.6 мм ГОСТ) - 4м",
+                "key": "prof_uw75_0.6_4",
+                "price": 188.48,
+                "weight": 2.53,
+                "volume": 0.015,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "label": "75 КНАУФ (0.6 мм) - 3м",
+                "key": "prof_knauf_uw75_0.6_3",
+                "price": 177.93,
+                "weight": 1.9,
+                "volume": 0.01125,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "75 КНАУФ (0.6 мм) - 4м",
+                "key": "prof_knauf_uw75_0.6_4",
+                "price": 237.24,
+                "weight": 2.53,
+                "volume": 0.015,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "label": "100 (0.55 мм) - 3м",
+                "key": "prof_uw100_0.55_3",
+                "price": 117.72,
+                "weight": 2.3,
+                "volume": 0.015,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "100 (0.55 мм) - 4м",
+                "key": "prof_uw100_0.55_4",
+                "price": 156.96,
+                "weight": 3,
+                "volume": 0.02,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "label": "100 (0.6 мм ГОСТ) - 3м",
+                "key": "prof_uw100_0.6_3",
+                "price": 157.96,
+                "weight": 2.3,
+                "volume": 0.015,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "100 (0.6 мм ГОСТ) - 4м",
+                "key": "prof_uw100_0.6_4",
+                "price": 210.24,
+                "weight": 3,
+                "volume": 0.02,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "label": "100 КНАУФ (0.6 мм) - 3м",
+                "key": "prof_knauf_uw100_0.6_3",
+                "price": 209.1,
+                "weight": 2.3,
+                "volume": 0.015,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "label": "100 КНАУФ (0.6 мм) - 4м",
+                "key": "prof_knauf_uw100_0.6_4",
+                "price": 278.8,
+                "weight": 3,
+                "volume": 0.02,
+                "movingTypeCalculation": "profXL"
+              }
+            ]
           }
         ]
       },
@@ -1483,7 +1195,7 @@
             "id": 23.1,
             "image": "https://i.imgur.com/zgEWUS5.jpeg",
             "title": "З'єднувач для нарощування для CD 60/90",
-            "description": "",
+            "description": "З'єднувач для нарощування CD 60/90, також відомий як поздовжній з'єднувач, призначений для подовження несучих профілів CD 60 під час монтажу металевих каркасів у гіпсокартонних системах. Цей елемент є незамінним при створенні стельових конструкцій у приміщеннях великої площі, де стандартної довжини профілю недостатньо. ",
             "weight": 1,
             "volume": 0,
             "price": 3.88,
@@ -1496,8 +1208,8 @@
           {
             "id": 23.2,
             "image": "https://i.imgur.com/bczUFPB.jpeg",
-            "title": "З'єднувач хрестоподібний КРАБ 148х148 (0.65 мм)",
-            "description": "",
+            "title": "З'єднувач хрестоподібний КРАБ 148х148",
+            "description": "З'єднувач хрестоподібний 'Краб' 148х148 мм (товщина 0,55 мм) — це однорівневий елемент, призначений для надійного з'єднання профілів у гіпсокартонних системах. Він забезпечує фіксацію профілів у одній площині, що спрощує монтаж складних конструкцій.",
             "weight": 1,
             "volume": 0,
             "price": 9.12,
@@ -1505,45 +1217,41 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 23.3,
-            "image": "https://i.imgur.com/bczUFPB.jpeg",
-            "title": "З'єднувач хрестоподібний КРАБ 148х148 (0.8 мм)",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 11.29,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-
-          {
-            "id": 23.4,
-            "image": "https://i.imgur.com/YbMfRU4.jpeg",
-            "title": "З'єднувач хрестовий  дворівневий 60/60 (0.8 мм)",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 5.47,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "(0.55 мм)",
+                "key": "krab_0.55",
+                "price": 7.87,
+                "weight": 0.1,
+                "volume": 0.00486,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "(0.65 мм)",
+                "key": "krab_0.65",
+                "price": 9.06,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "(0.8 мм)",
+                "key": "krab_0.8",
+                "price": 10.72,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           },
           {
             "id": 23.5,
             "image": "https://i.imgur.com/YbMfRU4.jpeg",
             "title": "З'єднувач хрестовий  дворівневий 60/60 (0.9 мм)",
-            "description": "",
+            "description": "З'єднувач хрестовий дворівневий 60/60 (товщина 0,9 мм) використовується для перехресного з'єднання двох профілів CD 60×27 мм на різних рівнях під час монтажу гіпсокартонних конструкцій. Цей елемент забезпечує надійне кріплення профілів, що сприяє міцності та стабільності всієї конструкції.",
             "weight": 1,
             "volume": 0,
-            "price": 5.69,
+            "price": 5.7,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
@@ -1554,10 +1262,10 @@
             "id": 23.6,
             "image": "https://i.imgur.com/jtm6Biw.jpeg",
             "title": "Кутове з'єднання для CD-профілю (0,65 мм)",
-            "description": "",
+            "description": "Кутовий з'єднувач для CD-профілю (товщина 0,65 мм) — це елемент кріплення, призначений для з'єднання CD-профілів під прямим кутом при монтажі однорівневих конструкцій підвісних стель. Він забезпечує надійне та міцне з'єднання профілів, що сприяє стабільності та довговічності всієї конструкції.",
             "weight": 2,
             "volume": 0,
-            "price": 5.34,
+            "price": 4.56,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
@@ -1568,7 +1276,7 @@
             "id": 23.7,
             "image": "https://i.imgur.com/jtm6Biw.jpeg",
             "title": "Кутове з'єднання для CD-профілю (0,9 мм)",
-            "description": "",
+            "description": "Кутовий з'єднувач для CD-профілю (товщина 0,65 мм) — це елемент кріплення, призначений для з'єднання CD-профілів під прямим кутом при монтажі однорівневих конструкцій підвісних стель. Він забезпечує надійне та міцне з'єднання профілів, що сприяє стабільності та довговічності всієї конструкції.",
             "weight": 2,
             "volume": 0,
             "price": 7.88,
@@ -1588,8 +1296,8 @@
           {
             "id": 24.1,
             "image": "https://i.imgur.com/RS9hvRp.jpeg",
-            "title": "П-подібний кронштейн - підвіс 60х125 (0.80 мм)",
-            "description": "",
+            "title": "П-подібний кронштейн - підвіс ",
+            "description": "П-подібний кронштейн - підвіс — це кріпильний елемент, призначений для надійного з'єднання CD-профілю з несучими конструкціями стелі або стін у системах гіпсокартонних облицювань та підвісних стель. Він забезпечує стабільність та довговічність конструкції, дозволяючи мінімізувати відстань між профілем та поверхнею основи.",
             "weight": 1,
             "volume": 0,
             "price": 5.88,
@@ -1597,48 +1305,77 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 24.2,
-            "image": "https://i.imgur.com/RS9hvRp.jpeg",
-            "title": "П-подібний кронштейн - підвіс 60х125 (0.9 мм)",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 6.16,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 24.3,
-            "image": "https://i.imgur.com/RS9hvRp.jpeg",
-            "title": "П-подібний кронштейн - підвіс 60х125 (1 мм)",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 6.71,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "60x125 (0.65 мм)",
+                "key": "pidvic_0.65",
+                "price": 3.99,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "60x125 (0.8 мм)",
+                "key": "pidvic_0.8",
+                "price": 4.56,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "60x125 (0.9 мм)",
+                "key": "pidvic_0.9",
+                "price": 5.13,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "60x125 (1 мм)",
+                "key": "pidvic_1",
+                "price": 5.76,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "60x250 (0.65 мм)",
+                "key": "pidvic_250_0.65",
+                "price": 7.64,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "60x250 (0.8 мм)",
+                "key": "pidvic_250_0.8",
+                "price": 9.69,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "60x250 (1 мм)",
+                "key": "pidvic_250_1",
+                "price": 11.97,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           }
         ]
       },
       {
         "id": 25,
-        "categoryTitle": "Стрижень, гачок",
+        "categoryTitle": "Стрижень",
         "isCategoryOpen": false,
         "materials": [
           {
             "id": 25.1,
-            "image": "https://i.imgur.com/S3jVvWN.jpeg",
-            "title": "Стрижень 125 мм, гачок",
-            "description": "",
+            "image": "https://i.imgur.com/OlQeozC.jpeg",
+            "title": "Стрижень",
+            "description": "Стрижень оцинкований  — це металевий елемент, призначений для кріплення підвісних стельових конструкцій, таких як гіпсокартонні стелі або стелі типу «Армстронг». Він дозволяє опустити навісну металеву конструкцію на необхыдну відстань від основи стелі.",
             "weight": 1,
             "volume": 0,
             "price": 1.57,
@@ -1646,142 +1383,88 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 25.2,
-            "image": "https://i.imgur.com/S3jVvWN.jpeg",
-            "title": "Стрижень 250 мм, гачок",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 2.15,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 25.3,
-            "image": "https://i.imgur.com/S3jVvWN.jpeg",
-            "title": "Стрижень 500 мм, гачок",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 4.73,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-
-          {
-            "id": 25.4,
-            "image": "https://i.imgur.com/S3jVvWN.jpeg",
-            "title": "Стрижень 1000 мм, гачок",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 9.17,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 25.5,
-            "image": "https://i.imgur.com/S3jVvWN.jpeg",
-            "title": "Стрижень 1500 мм, гачок",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 14.33,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          }
-        ]
-      },
-      {
-        "id": 26,
-        "categoryTitle": "Стрижень, кільце",
-        "isCategoryOpen": false,
-        "materials": [
-          {
-            "id": 26.1,
-            "image": "https://i.imgur.com/1ruU6cx.jpeg",
-            "title": "Стрижень 125 мм, кільце",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 1.57,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 26.2,
-            "image": "https://i.imgur.com/1ruU6cx.jpeg",
-            "title": "Стрижень 250 мм, кільце",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 2.15,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 26.3,
-            "image": "https://i.imgur.com/1ruU6cx.jpeg",
-            "title": "Стрижень 500 мм, кільце",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 4.73,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-
-          {
-            "id": 26.4,
-            "image": "https://i.imgur.com/1ruU6cx.jpeg",
-            "title": "Стрижень 1000 мм, кільце",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 9.17,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 26.5,
-            "image": "https://i.imgur.com/1ruU6cx.jpeg",
-            "title": "Стрижень 1500 мм, кільце",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 14.33,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "гачок 125 мм",
+                "key": "gachok_125",
+                "price": 1.2,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "гачок 250 мм",
+                "key": "gachok_250",
+                "price": 2.11,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "гачок 500 мм",
+                "key": "gachok_500",
+                "price": 4.16,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "гачок 1000 мм",
+                "key": "gachok_1000",
+                "price": 8.04,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "гачок 1500 мм",
+                "key": "gachok_1500",
+                "price": 12.08,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "кільце 125 мм",
+                "key": "kilce_125",
+                "price": 1.2,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "кільце 250 мм",
+                "key": "kilce_250",
+                "price": 2.11,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "кільце 500 мм",
+                "key": "kilce_500",
+                "price": 4.16,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "кільце 1000 мм",
+                "key": "kilce_1000",
+                "price": 8.04,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "кільце 1500 мм",
+                "key": "kilce_1500",
+                "price": 12.08,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           }
         ]
       },
@@ -1793,11 +1476,11 @@
           {
             "id": 27.1,
             "image": "https://i.imgur.com/WRc8AkP.jpeg",
-            "title": "Швидкопідвіс для CD-профілю (поворотний) ",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 9.12,
+            "title": "Швидкопідвіс для CD-профілю (поворотний)",
+            "description": "Швидкопідвіс поворотний для CD-профілю, також відомий як анкерний підвіс, використовується для кріплення металевих профілів під час монтажу підвісних стель з гіпсокартону. Він забезпечує надійне з'єднання CD-профілів з несучою конструкцією, дозволяючи регулювати висоту та положення стелі.",
+            "weight": 0.1,
+            "volume": 0.001,
+            "price": 7.98,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
@@ -1808,10 +1491,10 @@
             "id": 27.2,
             "image": "https://i.imgur.com/pJ6afWN.jpeg",
             "title": "Швидкопідвіс пружинний метелик",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 7.52,
+            "description": "Пружинний швидкопідвіс «Метелик» — це елемент, призначений для монтажу підвісних стельових систем з гіпсокартону. Він забезпечує надійне кріплення несучих профілів до основних та дозволяє регулювати висоту стелі відносно перекриття.",
+            "weight": 0.1,
+            "volume": 0.001,
+            "price": 5.59,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
@@ -1822,14 +1505,14 @@
       },
       {
         "id": 28,
-        "categoryTitle": "Профіль кутовий перфорований алюмінієвий",
+        "categoryTitle": "Профіль кутовий перфорований",
         "isCategoryOpen": false,
         "materials": [
           {
             "id": 28.1,
             "image": "https://i.imgur.com/OLWRs1w.jpeg",
-            "title": "Профіль кутовий перфорований алюмінієвий (0.25) 18,5х18,5 2.5м",
-            "description": "",
+            "title": "Профіль кутовий перфорований алюмінієвий",
+            "description": "Профіль кутовий перфорований алюмінієвий — це будівельний елемент, призначений для захисту та армування зовнішніх кутів стін, гіпсокартонних перегородок та відкосів. Він забезпечує точну геометрію кутів, захищає їх від механічних пошкоджень та сприяє покращенню якості оздоблювальних робіт.",
             "weight": 1,
             "volume": 0,
             "price": 16.82,
@@ -1837,94 +1520,57 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 28.2,
-            "image": "https://i.imgur.com/OLWRs1w.jpeg",
-            "title": "Профіль кутовий перфорований алюмінієвий (0.25) 18,5х18,5 3м",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 20.18,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 28.3,
-            "image": "https://i.imgur.com/OLWRs1w.jpeg",
-            "title": "Профіль кутовий перфорований алюмінієвий (0.3) 20х20 2.5м",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 20.61,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-
-          {
-            "id": 28.4,
-            "image": "https://i.imgur.com/OLWRs1w.jpeg",
-            "title": "Профіль кутовий перфорований алюмінієвий (0.3) 20х20 3м",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 24.74,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 28.5,
-            "image": "https://i.imgur.com/OLWRs1w.jpeg",
-            "title": "Профіль кутовий перфорований алюмінієвий (0.4) 30х30 3м",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 51.65,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "18.5x18.5 (0.25) 2.5м",
+                "key": "prof_alum_18.5_2.5",
+                "price": 18.04,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "18.5x18.5 (0.25) 3м",
+                "key": "prof_alum_18.5_3",
+                "price": 21.64,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "20x20 (0.3) 2.5м",
+                "key": "prof_alum_20_2.5",
+                "price": 21.64,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "20x20 (0.3) 3м",
+                "key": "prof_alum_20_3",
+                "price": 25.98,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "30x30 (0.4) 3м",
+                "key": "prof_alum_30_3",
+                "price": 54.21,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           },
           {
             "id": 28.6,
             "image": "https://i.imgur.com/8KbsZq9.jpeg",
-            "title": "Профіль кутовий перфорований алюмінієвий з сіткою 7х7 3м",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
+            "title": "Профіль кутовий перфорований алюмінієвий з сіткою 7x7 см 3м",
+            "description": "Профіль кутовий перфорований алюмінієвий — це будівельний елемент, призначений для захисту та армування зовнішніх кутів стін, гіпсокартонних перегородок та відкосів. Він забезпечує точну геометрію кутів, захищає їх від механічних пошкоджень та сприяє покращенню якості оздоблювальних робіт.",
+            "weight": 0.1,
+            "volume": 0.01,
             "price": 34.5,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          }
-        ]
-      },
-      {
-        "id": 29,
-        "categoryTitle": "Профіль кутовий перфорований пластиковий",
-        "isCategoryOpen": false,
-        "materials": [
-          {
-            "id": 29.1,
-            "image": "https://i.imgur.com/9dX4SWT.jpeg",
-            "title": "Профіль кутовий перфорований пластиковий 2.5м",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 8.73,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
@@ -1935,9 +1581,9 @@
             "id": 29.2,
             "image": "https://i.imgur.com/9dX4SWT.jpeg",
             "title": "Профіль кутовий перфорований пластиковий 3м",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
+            "description": "Профіль кутовий перфорований пластиковий — це будівельний елемент, призначений для захисту та армування зовнішніх кутів стін, гіпсокартонних перегородок та відкосів. Він забезпечує точну геометрію кутів, захищає їх від механічних пошкоджень та сприяє покращенню якості оздоблювальних робіт.",
+            "weight": 0.1,
+            "volume": 0.001,
             "price": 10.47,
             "quantity": 0,
             "totalPrice": 0,
@@ -1946,28 +1592,13 @@
             "configurableList": []
           },
           {
-            "id": 29.3,
-            "image": "https://i.imgur.com/l2JIUCZ.jpeg",
-            "title": "Профіль кутовий перфорований пластиковий з сіткою 10х10 3м",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 33.17,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-
-          {
             "id": 29.4,
             "image": "https://i.imgur.com/l2JIUCZ.jpeg",
-            "title": "Профіль кутовий перфорований пластиковий з сіткою 10х15 3м",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 37.9,
+            "title": "Профіль кутовий перфорований пластиковий з сіткою 7x7 см 3м",
+            "description": "Профіль кутовий перфорований пластиковий — це будівельний елемент, призначений для захисту та армування зовнішніх кутів стін, гіпсокартонних перегородок та відкосів. Він забезпечує точну геометрію кутів, захищає їх від механічних пошкоджень та сприяє покращенню якості оздоблювальних робіт.",
+            "weight": 0.1,
+            "volume": 0.001,
+            "price": 30.75,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
@@ -1984,8 +1615,8 @@
           {
             "id": 30.1,
             "image": "https://i.imgur.com/zp2v93K.jpeg",
-            "title": "Стрічка  для швів  клейка  46 мм, рулон  45 м",
-            "description": "",
+            "title": "Стрічка  для швів  клейка  (серпянка)",
+            "description": "Клейка стрічка для швів, відома як серп'янка, використовується для армування та зміцнення стиків між листами гіпсокартону, гіпсоволокнистих плит, а також для обробки швів на основах з бетону та штукатурки. Вона допомагає запобігти утворенню тріщин і деформацій у місцях з'єднань.",
             "weight": 1,
             "volume": 0,
             "price": 50.52,
@@ -1993,43 +1624,40 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 30.2,
-            "image": "https://i.imgur.com/zp2v93K.jpeg",
-            "title": "Стрічка  для швів  клейка  46 мм, рулон  90 м",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 94.97,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 30.3,
-            "image": "https://i.imgur.com/zp2v93K.jpeg",
-            "title": "Стрічка  для швів  клейка  46 мм, рулон 150 м",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 160.4,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "46 мм, рулон  45 м",
+                "key": "strichka_46_45",
+                "price": 50.52,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "46 мм, рулон  90 м",
+                "key": "strichka_46_90",
+                "price": 94.97,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "46 мм, рулон  150 м",
+                "key": "strichka_46_150",
+                "price": 160.4,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           },
           {
             "id": 30.4,
             "image": "https://i.imgur.com/i95CK5f.jpeg",
             "title": "KNAUF КУРТ Стрічка для швів паперова 25м НІМЕЧЧИНА",
             "description": "",
-            "weight": 1,
-            "volume": 0,
+            "weight": 0.1,
+            "volume": 0.001,
             "price": 769.53,
             "quantity": 0,
             "totalPrice": 0,
@@ -2042,8 +1670,8 @@
             "image": "https://i.imgur.com/i95CK5f.jpeg",
             "title": "KNAUF КУРТ Стрічка для швів паперова 75м НІМЕЧЧИНА",
             "description": "",
-            "weight": 1,
-            "volume": 0,
+            "weight": 0.1,
+            "volume": 0.001,
             "price": 1539.06,
             "quantity": 0,
             "totalPrice": 0,
@@ -2056,9 +1684,9 @@
             "image": "https://i.imgur.com/0Rwt8Qt.jpeg",
             "title": "SEMIN BANDE JOINT Стрічка паперова 50 мм, 150 м.п.",
             "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 259.45,
+            "weight": 0.1,
+            "volume": 0.01,
+            "price": 271.4,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
@@ -2075,8 +1703,8 @@
           {
             "id": 31.1,
             "image": "https://i.imgur.com/ShcSdBw.jpeg",
-            "title": "Стрічка звукоізоляційна клейка 30 мм, 30 м",
-            "description": "",
+            "title": "Стрічка звукоізоляційна клейка",
+            "description": "Звукоізоляційна самоклейка стрічка призначена для покращення звукоізоляції в будівельних конструкціях, зокрема при монтажі гіпсокартонних систем. Вона забезпечує надійне ущільнення та зменшує передачу звукових вібрацій між елементами конструкції.",
             "weight": 1,
             "volume": 0,
             "price": 107.46,
@@ -2084,105 +1712,87 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 31.2,
-            "image": "https://i.imgur.com/ShcSdBw.jpeg",
-            "title": "Стрічка звукоізоляційна клейка 50 мм, 30 м",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 170.95,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 31.3,
-            "image": "https://i.imgur.com/ShcSdBw.jpeg",
-            "title": "Стрічка звукоізоляційна клейка 70 мм, 30 м",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 226.86,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 31.4,
-            "image": "https://i.imgur.com/ShcSdBw.jpeg",
-            "title": "Стрічка звукоізоляційна клейка 90 мм, 30 м",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 310.64,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "30 мм, рулон 30 м",
+                "key": "strichka_zvuk_30_30",
+                "price": 112.93,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "50 мм, рулон 30 м",
+                "key": "strichka_zvuk_50_30",
+                "price": 179.34,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "70 мм, рулон 30 м",
+                "key": "strichka_zvuk_70_30",
+                "price": 243.78,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "90 мм, рулон 30 м",
+                "key": "strichka_zvuk_90_30",
+                "price": 310.64,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           },
           {
             "id": 31.5,
             "image": "https://i.imgur.com/OEqxlJm.jpeg",
-            "title": "KNAUF Стрічка звукоізоляційна 30мм, 30м НІМЕЧЧИНА",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
+            "title": "KNAUF Стрічка звукоізоляційна НІМЕЧЧИНА",
+            "description": "Звукоізоляційна самоклейка стрічка призначена для покращення звукоізоляції в будівельних конструкціях, зокрема при монтажі гіпсокартонних систем. Вона забезпечує надійне ущільнення та зменшує передачу звукових вібрацій між елементами конструкції.",
+            "weight": 0.1,
+            "volume": 0.01,
             "price": 354.82,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 31.6,
-            "image": "https://i.imgur.com/OEqxlJm.jpeg",
-            "title": "KNAUF Стрічка звукоізоляційна 50мм, 30м НІМЕЧЧИНА",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 567.26,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 31.7,
-            "image": "https://i.imgur.com/OEqxlJm.jpeg",
-            "title": "KNAUF Стрічка звукоізоляційна 70мм, 30м НІМЕЧЧИНА",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 797.78,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 31.8,
-            "image": "https://i.imgur.com/OEqxlJm.jpeg",
-            "title": "KNAUF Стрічка звукоізоляційна 95мм, 30м НІМЕЧЧИНА",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 1059.94,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "30 мм, рулон 30 м",
+                "key": "strichka_zvuk_knauf_30_30",
+                "price": 354.82,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "50 мм, рулон 30 м",
+                "key": "strichka_zvuk_knauf_50_30",
+                "price": 567.27,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "70 мм, рулон 30 м",
+                "key": "strichka_zvuk_knauf_70_30",
+                "price": 797.78,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "95 мм, рулон 30 м",
+                "key": "strichka_zvuk_knauf_95_30",
+                "price": 1059.94,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           }
         ]
       },
@@ -2203,7 +1813,24 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "3,5x9,5 з буром 1000 шт",
+                "key": "samoriz_metal_3.5x9.5_1000",
+                "price": 155.61,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "3,5x9,5 з буром 1000 шт",
+                "key": "samoriz_metal_3.5x9.5_1000",
+                "price": 155.61,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           },
           {
             "id": 32.2,

@@ -5,6 +5,8 @@ import { Button } from '@heroui/react';
 import { Input, Chip, Alert } from '@heroui/react';
 import { Autocomplete, AutocompleteItem } from '@heroui/react';
 
+import styles from '@/components/ui/Accordion/DisclosureConfigurableMaterialPanel/configurable.module.css';
+
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 import {
   addAdditionalMaterial,
@@ -127,6 +129,8 @@ const DisclosureAddMaterialsPanel: React.FC<
 
     getData();
   }, []);
+
+  console.log(materials);
 
   const isButtonActive = materialTitle.length > 0 && Number(quantity) > 0;
 
@@ -251,6 +255,11 @@ const DisclosureAddMaterialsPanel: React.FC<
           classNames: {
             label: 'text-xs md:text-sm !text-grey',
             inputWrapper: 'group-data-[focus=true]:border-accent',
+          },
+        }}
+        listboxProps={{
+          classNames: {
+            base: styles.listbox,
           },
         }}
       >

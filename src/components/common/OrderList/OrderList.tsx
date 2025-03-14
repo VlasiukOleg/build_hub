@@ -3,7 +3,13 @@ import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useSearchParams } from 'next/navigation';
-import { Breadcrumbs, BreadcrumbItem, Button, Input } from '@heroui/react';
+import {
+  Breadcrumbs,
+  BreadcrumbItem,
+  Button,
+  Input,
+  Tooltip,
+} from '@heroui/react';
 
 import OrderForm from '../OrderForm';
 
@@ -449,11 +455,13 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                         <div className="flex items-center justify-center mr-2 text-center inline-block size-[50px] md:size-[75px] md:mr-4">
                           <FcImageFile className="size-[40px] md:size-[65px]" />
                         </div>
+                        <Tooltip content={material.title}>
+                          <p className="text-xs text-semibold w-[40%] md:text-base line-clamp-2">
+                            {' '}
+                            {material.title}
+                          </p>
+                        </Tooltip>
 
-                        <p className="text-xs text-semibold w-[40%] md:text-base line-clamp-2">
-                          {' '}
-                          {material.title}
-                        </p>
                         {editMaterialKey === material.id ? (
                           <Input
                             errorMessage={() => (
@@ -582,11 +590,13 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                       {/* <div className="flex items-center justify-center mr-2 text-center inline-block size-[50px] md:size-[75px] md:mr-4">
                         <FcImageFile className="size-[40px] md:size-[65px]" />
                       </div> */}
+                      <Tooltip content={material.title}>
+                        <p className="text-xs text-semibold w-[40%] md:text-base line-clamp-2">
+                          {' '}
+                          {material.title}
+                        </p>
+                      </Tooltip>
 
-                      <p className="text-xs text-semibold w-[40%] md:text-base line-clamp-2">
-                        {' '}
-                        {material.title}
-                      </p>
                       {editMaterialKey === material.key ? (
                         <Input
                           errorMessage={() => (

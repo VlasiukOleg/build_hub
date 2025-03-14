@@ -12,7 +12,9 @@ import {
 } from '@heroui/react';
 import clsx from 'clsx';
 import { Input } from '@heroui/react';
-import { Autocomplete, AutocompleteItem } from '@heroui/react';
+import { Autocomplete, AutocompleteItem, Chip } from '@heroui/react';
+
+import styles from './configurable.module.css';
 
 import MaterialDrawer from '../../MaterialDrawer';
 
@@ -37,11 +39,12 @@ import { CONFIGURABLE_MATERIAL_LIST_SELECT_PLACEHOLDER_TEXT_MAP } from '@/data/c
 
 interface IDisclosureAddMaterialsPanelProps {
   material: Material;
+  categoryTitle: string;
 }
 
 const DisclosureAddMaterialsPanel: React.FC<
   IDisclosureAddMaterialsPanelProps
-> = ({ material }) => {
+> = ({ material, categoryTitle }) => {
   const [gazoblokSize, setGazoblokSize] = useState<string>('');
   const [gazoblokKey, setGazoblokKey] = useState<string>('');
   const [gazoblokPrice, setGazoblokPrice] = useState<number>(0);
@@ -70,7 +73,7 @@ const DisclosureAddMaterialsPanel: React.FC<
 
   const dispatch = useAppDispatch();
 
-  const configurableMaterial = useAppSelector(
+  const configurableMaterialList = useAppSelector(
     state => state.configurableMaterial.configurableMaterial
   );
 
@@ -138,12 +141,26 @@ const DisclosureAddMaterialsPanel: React.FC<
     setEditMaterialKey('');
   };
 
-  const autocompleteDisabledKeys = configurableMaterial.map(
+  const autocompleteDisabledKeys = configurableMaterialList.map(
     material => material.key
   );
 
+  const configurableMaterialKeys = material.configurableList?.map(
+    item => item.key
+  );
+
+  console.log(configurableMaterialKeys);
+  console.log(configurableMaterialList);
+
+  const filteredConfigurableList = configurableMaterialList.filter(
+    configurableMaterial =>
+      configurableMaterialKeys?.includes(configurableMaterial.key)
+  );
+
+  console.log('filteredConfigurableList', filteredConfigurableList);
+
   return (
-    <div className="mt-2 text-sm/5 text-grey md:text-lg xl:text-xl xl:mt-6">
+    <div className="text-sm/5 text-grey md:text-lg xl:text-xl">
       <Card>
         <CardHeader className="justify-between">
           <div className="text-sm text-grey md:text-base  xl:text-lg">
@@ -162,7 +179,11 @@ const DisclosureAddMaterialsPanel: React.FC<
             className="w-full"
             aria-label="Розмір газоблока"
             defaultItems={material.configurableList}
-            placeholder={CONFIGURABLE_MATERIAL_LIST_SELECT_PLACEHOLDER_TEXT_MAP[material.title]}
+            placeholder={
+              CONFIGURABLE_MATERIAL_LIST_SELECT_PLACEHOLDER_TEXT_MAP[
+                categoryTitle
+              ]
+            }
             size="md"
             variant="bordered"
             radius="sm"
@@ -179,11 +200,24 @@ const DisclosureAddMaterialsPanel: React.FC<
                 input: 'text-xs md:text-sm',
               },
             }}
+            listboxProps={{
+              classNames: {
+                base: styles.listbox,
+              },
+            }}
           >
             {item => (
               <AutocompleteItem key={item.key} textValue={item.label}>
                 <div className="flex gap-1 items-center justify-between">
-                  <p className="text-xs  md:text-base">{item.label}</p>
+                  <p className="text-xs  md:text-sm xl:text-base">
+                    {item.label}
+                  </p>
+                  <Chip
+                    variant="bordered"
+                    className="bg-slate-50 border-accent text-xs md:text-sm xl:text-base"
+                  >
+                    {item.price} грн.
+                  </Chip>
                 </div>
               </AutocompleteItem>
             )}
@@ -266,11 +300,11 @@ const DisclosureAddMaterialsPanel: React.FC<
         </CardBody>
         <Divider />
         <CardFooter>
-          {configurableMaterial.length > 0 && (
+          {filteredConfigurableList.length > 0 && (
             <>
               <div className=" bg-bgWhite border-[1px] w-full border-grey rounded-xl py-1 mb-2 md:py-3">
                 <ul className="divide-y divide-grey">
-                  {configurableMaterial.map((material, index) => (
+                  {filteredConfigurableList.map((material, index) => (
                     <li
                       key={material.title}
                       className="p-2 font-semibold flex items-center text-grey"

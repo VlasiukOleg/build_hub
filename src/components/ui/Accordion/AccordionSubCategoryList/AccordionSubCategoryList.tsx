@@ -137,6 +137,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
                       <DisclosureConfigurableMaterialPanel
                         key={matInd}
                         material={material}
+                        categoryTitle={subCategory.categoryTitle}
                       />
                     );
                   }
