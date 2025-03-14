@@ -1803,8 +1803,8 @@
         "materials": [
           {
             "id": 32.1,
-            "image": "https://i.imgur.com/x1XO64d.jpeg",
-            "title": "Саморіз 3,5Х25 по металу 200 шт",
+            "image": "https://i.imgur.com/HqzqVRp.jpeg",
+            "title": "Саморіз по металу",
             "description": "",
             "weight": 1,
             "volume": 0,
@@ -1818,15 +1818,31 @@
                 "label": "3,5x9,5 з буром 1000 шт",
                 "key": "samoriz_metal_3.5x9.5_1000",
                 "price": 155.61,
-                "weight": 0.1,
+                "weight": 1.27,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "3,5x9,5 з буром 1000 шт",
-                "key": "samoriz_metal_3.5x9.5_1000",
-                "price": 155.61,
-                "weight": 0.1,
+                "label": "3,5x25 1000 шт",
+                "key": "samoriz_metal_3.5x25_1000",
+                "price": 131.78,
+                "weight": 1.27,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "3,5x35 200 шт",
+                "key": "samoriz_metal_3.5x35_200",
+                "price": 54.15,
+                "weight": 0.25,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "3,5x35 1000 шт",
+                "key": "samoriz_metal_3.5x35_1000",
+                "price": 184.45,
+                "weight": 1.27,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
@@ -1834,115 +1850,66 @@
           },
           {
             "id": 32.2,
-            "image": "https://i.imgur.com/x1XO64d.jpeg",
-            "title": "Саморіз 3,5Х25 по металу 1000 шт",
+            "image": "https://i.imgur.com/OWMvfii.jpeg",
+            "title": "КОЕЛЬНЕР Саморіз по металу",
             "description": "",
             "weight": 1,
             "volume": 0,
-            "price": 113.76,
+            "price": 45.03,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 32.3,
-            "image": "https://i.imgur.com/JXULf9w.jpeg",
-            "title": "KОЕЛЬНЕР Саморіз 3,5Х25 по металу 200шт ",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 56.61,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 32.4,
-            "image": "https://i.imgur.com/JXULf9w.jpeg",
-            "title": "KОЕЛЬНЕР Саморіз 3,5Х25 по металу 1000шт",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 264.84,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 32.5,
-            "image": "https://i.imgur.com/JXULf9w.jpeg",
-            "title": "KОЕЛЬНЕР Саморіз 3,5Х35 по металу 200шт",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 71.36,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 32.6,
-            "image": "https://i.imgur.com/JXULf9w.jpeg",
-            "title": "KОЕЛЬНЕР Саморіз 3,5Х 35 по металу 1000 шт",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 316.28,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 32.7,
-            "image": "https://i.imgur.com/6PAIb8O.jpeg",
-            "title": "Саморіз 3,5Х 9,5 з буром  1000 шт",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 148.43,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 32.8,
-            "image": "https://i.imgur.com/GU8NZvz.jpeg",
-            "title": "KОЕЛЬНЕР Саморіз 3,5Х9,5 з буром 200шт ",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 53.31,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 32.9,
-            "image": "https://i.imgur.com/GU8NZvz.jpeg",
-            "title": "KОЕЛЬНЕР Саморіз 3,5Х9,5 з буром  1000шт",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
-            "price": 264.84,
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "3,5x9,5 з буром 200 шт",
+                "key": "samoriz_koelner_metal_3.5x9.5_200",
+                "price": 59.28,
+                "weight": 0.25,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "3,5x9,5 з буром 1000 шт",
+                "key": "samoriz_koelner_metal_3.5x9.5_1000",
+                "price": 264.84,
+                "weight": 1.27,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "3,5x25 200 шт",
+                "key": "samoriz_koelner_3.5x25_200",
+                "price": 56.61,
+                "weight": 0.25,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "3,5x25 1000 шт",
+                "key": "samoriz_koelner_3.5x25_1000",
+                "price": 264.84,
+                "weight": 1.27,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "3,5x35 200 шт",
+                "key": "samoriz_koelner_3.5x35_200",
+                "price": 71.36,
+                "weight": 0.25,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "3,5x35 1000 шт",
+                "key": "samoriz_koelner_3.5x35_1000",
+                "price": 316.28,
+                "weight": 1.27,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           }
         ]
       },

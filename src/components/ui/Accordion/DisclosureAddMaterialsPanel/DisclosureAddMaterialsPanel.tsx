@@ -1,9 +1,14 @@
 'use client';
 
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useMemo } from 'react';
 import { Button } from '@heroui/react';
 import { Input, Chip, Alert } from '@heroui/react';
-import { Autocomplete, AutocompleteItem } from '@heroui/react';
+import {
+  Autocomplete,
+  AutocompleteItem,
+  Listbox,
+  ListboxItem,
+} from '@heroui/react';
 
 import styles from '@/components/ui/Accordion/DisclosureConfigurableMaterialPanel/configurable.module.css';
 
@@ -21,6 +26,7 @@ import { MdOutlineCancel } from 'react-icons/md';
 import { RiSearchLine } from 'react-icons/ri';
 import { FaRegEdit } from 'react-icons/fa';
 import { IoSaveOutline } from 'react-icons/io5';
+import { FcImageFile } from 'react-icons/fc';
 
 interface AdditionalMaterial {
   id: string;
@@ -37,6 +43,16 @@ interface CustomError {
   message: string;
 }
 
+interface ListboxWrapperProps {
+  children: React.ReactNode;
+}
+
+export const ListboxWrapper: React.FC<ListboxWrapperProps> = ({ children }) => (
+  <div className="w-full max-w-full border-small py-2 rounded-small border-default-200 dark:border-default-100">
+    {children}
+  </div>
+);
+
 interface IDisclosureAddMaterialsPanelProps {}
 
 const description =
@@ -45,6 +61,7 @@ const description =
 const DisclosureAddMaterialsPanel: React.FC<
   IDisclosureAddMaterialsPanelProps
 > = ({}) => {
+  const [query, setQuery] = useState('');
   // const [newMaterial, setNewMaterial] = useState({ title: '', quantity: 0 });
   const [materialId, setMaterialId] = useState<string>('');
   const [materialTitle, setMaterialTitle] = useState<string>('');
@@ -132,24 +149,43 @@ const DisclosureAddMaterialsPanel: React.FC<
 
   console.log(materials);
 
+  const filteredMaterials = useMemo(() => {
+    if (!query) return [];
+
+    setQuantity('');
+    setMaterialTitle('');
+    setMaterialPrice(0);
+
+    return materials.filter(material =>
+      material.label.toLowerCase().includes(query.toLowerCase())
+    );
+  }, [query, materials]);
+
   const isButtonActive = materialTitle.length > 0 && Number(quantity) > 0;
 
   const isManualButtonActive =
     manualMaterialTitle.length > 0 && Number(manualQuantity) > 0;
 
   const onSelectionChange = (id: React.Key | null) => {
-    const selectedMaterial = materials.find(material => material.id === id);
+    console.log(id);
+    const selectedMaterial = filteredMaterials.find(
+      material => material.id === id
+    );
+    console.log(selectedMaterial);
 
     if (selectedMaterial) {
       const price = selectedMaterial.price.replace(',', '.');
 
       setMaterialPrice(Number(price));
+      setMaterialTitle(selectedMaterial.label);
       setVolume(Number(selectedMaterial.volume));
       setWeight(Number(selectedMaterial.weight));
       setMovingTypeCalculation(selectedMaterial.movingTypeCalculation);
       setMeasure(selectedMaterial.measure);
       setMaterialId(selectedMaterial.id);
     }
+
+    setQuery('');
   };
 
   const handleAddMaterial = () => {
@@ -193,7 +229,6 @@ const DisclosureAddMaterialsPanel: React.FC<
     dispatch(removeAdditionalMaterial(index));
 
     if (additionalMaterial.length === 1) {
-      console.log('Yes');
       dispatch(toggleAdditionalPriceAddToOrder());
     }
   };
@@ -238,45 +273,69 @@ const DisclosureAddMaterialsPanel: React.FC<
         }}
       />
       <p className="text-center font-semibold">Пошук матеріалів</p>
-      <Autocomplete
-        className="w-full"
-        defaultItems={materials}
+      <Input
+        isClearable
         label="Назва матеріалу"
         placeholder="Введіть назву"
         size="md"
-        variant="bordered"
         labelPlacement="outside"
-        inputValue={materialTitle}
-        onInputChange={setMaterialTitle}
-        onSelectionChange={onSelectionChange}
+        variant="bordered"
+        value={query}
+        onValueChange={setQuery}
         startContent={<RiSearchLine className="size-5" />}
-        itemHeight={60}
-        inputProps={{
-          classNames: {
-            label: 'text-xs md:text-sm !text-grey',
-            inputWrapper: 'group-data-[focus=true]:border-accent',
-          },
+        classNames={{
+          label: 'text-xs md:text-sm !text-grey',
+          inputWrapper: 'group-data-[focus=true]:border-accent',
         }}
-        listboxProps={{
-          classNames: {
-            base: styles.listbox,
-          },
-        }}
-      >
-        {material => (
-          <AutocompleteItem key={material.id} textValue={material.label}>
-            <div className="flex gap-1 items-center justify-between ">
-              <p className="text-[10px]  md:text-base">{material.label}</p>
-              <Chip
-                variant="bordered"
-                className="bg-slate-50 border-accent text-xs md:text-base"
-              >
-                {material.price} грн.
-              </Chip>
-            </div>
-          </AutocompleteItem>
-        )}
-      </Autocomplete>
+      />
+      {materialTitle && (
+        <div className="my-2">
+          <p className="text-xs md:text-sm text-red-500 mb-1">
+            Вибраний матеріал
+          </p>
+          <div className="flex items-center gap-2 justify-between">
+            <p className="font-semibold text-xs md:text-sm xl:text-lg">
+              {materialTitle}
+            </p>
+            <div className="font-semibold whitespace-nowrap">{`${materialPrice} грн.`}</div>
+          </div>
+        </div>
+      )}
+
+      {query && (
+        <ListboxWrapper>
+          <Listbox
+            isVirtualized
+            aria-label="Dynamic Actions"
+            items={filteredMaterials}
+            virtualization={{
+              maxListboxHeight: 360,
+              itemHeight: 80,
+            }}
+            onAction={key => onSelectionChange(key)}
+          >
+            {item => (
+              <ListboxItem
+                key={item.id}
+                startContent={
+                  <FcImageFile className="size-[40px] md:size-[65px]" />
+                }
+                endContent={
+                  <span className="text-xs md:text-base font-semibold">
+                    {item.price} грн.
+                  </span>
+                }
+                classNames={{
+                  base: 'px-0 pr-1',
+                  title: 'text-xs md:text-sm whitespace-normal break-words',
+                }}
+                title={item.label}
+              ></ListboxItem>
+            )}
+          </Listbox>
+        </ListboxWrapper>
+      )}
+
       <div className="flex gap-2 items-end mt-2">
         <Input
           label="Кількість"
