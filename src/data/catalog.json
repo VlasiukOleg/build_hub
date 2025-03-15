@@ -1921,22 +1921,71 @@
           {
             "id": 33.1,
             "image": "https://i.imgur.com/4ab8Pw9.jpeg",
-            "title": "Дюбель з Саморізом 6/40, 100 шт",
-            "description": "",
+            "title": "Дюбель з Саморізом Коелнер",
+            "description": "Дюбель із саморізом — це комплект кріпильних елементів, що складається з пластикового дюбеля діаметром 6 мм і довжиною 40 мм та металевого саморіза. Цей набір використовується для швидкого та надійного монтажу різних конструкцій до твердих основ.",
             "weight": 1,
             "volume": 0,
-            "price": 31.6,
+            "price": 33.52,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "6/40, (гриб) 100 шт",
+                "key": "dubel_g_6.40_100",
+                "price": 33.52,
+                "weight": 0.28,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "6/40, (потай) 100 шт",
+                "key": "dubel_p_6.40_100",
+                "price": 33.52,
+                "weight": 0.28,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "6/60, (потай) 100 шт",
+                "key": "dubel_p_6.60_100",
+                "price": 52.67,
+                "weight": 0.28,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "6/60, (гриб) 100 шт",
+                "key": "dubel_p_g.60_100",
+                "price": 52.67,
+                "weight": 0.28,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "6/80, (потай) 100 шт",
+                "key": "dubel_p_6.80_100",
+                "price": 71.82,
+                "weight": 0.28,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "6/80, (гриб) 100 шт",
+                "key": "dubel_p_g.80_100",
+                "price": 71.82,
+                "weight": 0.28,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           },
           {
             "id": 33.2,
             "image": "https://i.imgur.com/XKcbiKi.jpeg",
-            "title": "Дюбель з Саморізом 6/40 (гриб), 200шт KОЕЛЬНЕР",
-            "description": "",
+            "title": "Дюбель з Саморізом",
+            "description": "Дюбель із саморізом — це комплект кріпильних елементів, що складається з пластикового дюбеля діаметром 6 мм і довжиною 40 мм та металевого саморіза. Цей набір використовується для швидкого та надійного монтажу різних конструкцій до твердих основ.",
             "weight": 1,
             "volume": 0,
             "price": 149.11,
@@ -1944,7 +1993,32 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "6/40, (гриб) 200 шт",
+                "key": "dubel_g_koelner_6.40_200",
+                "price": 149.11,
+                "weight": 0.56,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "6/60, (потай) 100 шт",
+                "key": "dubel_p_koelner_6.60_100",
+                "price": 112.79,
+                "weight": 0.28,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "6/80, (потай) 100 шт",
+                "key": "dubel_p_koelner_6.80_100",
+                "price": 148.98,
+                "weight": 0.28,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           },
           {
             "id": 33.3,
@@ -1971,9 +2045,9 @@
             "id": 34.1,
             "image": "https://i.imgur.com/16Wf7kA.jpeg",
             "title": "Knauf Клей для ГКП Перлфікс MD, 25 кг",
-            "description": "",
+            "description": "Knauf Перлфікс  — це суха монтажна суміш на основі гіпсу з полімерами, призначена для надійного приклеювання гіпсокартонних листів (ГКЛ), комбінованих гіпсових панелей, пазогребневих плит, а також ізоляційних матеріалів, таких як пінополістирольні та мінераловатні плити, до стін із цегли, бетону, оштукатурених та газобетонних поверхонь з нерівностями.",
             "weight": 25,
-            "volume": 0,
+            "volume": 0.025,
             "price": 261.29,
             "quantity": 0,
             "totalPrice": 0,
@@ -1985,10 +2059,52 @@
             "id": 34.2,
             "image": "https://i.imgur.com/zbO17AF.jpeg",
             "title": "Knauf Шпатлівка Фугенфюллер MD, 25кг",
-            "description": "",
-            "weight": 1,
-            "volume": 0,
+            "description": "Knauf Фугенфюллер — це високоякісна гіпсова шпаклівка, призначена для закладення швів гіпсокартонних плит, монтажу та шпаклювання пазогребневих плит, приклеювання гіпсокартонних плит до рівних поверхонь, а також для заповнення тріщин і дефектів на бетонних та пористих поверхнях. ",
+            "weight": 25,
+            "volume": 0.025,
             "price": 333.9,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "",
+            "configurableList": []
+          },
+          {
+            "id": 34.3,
+            "image": "https://i.imgur.com/2bumlE7.jpeg",
+            "title": "KNAUF Шпатлівка УНІФЛОТ, 5 кг",
+            "description": "Knauf Uniflott — це високоякісна гіпсова шпаклівка, призначена для закладення швів гіпсокартонних плит без використання армуючої стрічки. Вона виготовлена на основі спеціального гіпсу з мінеральними наповнювачами та полімерними добавками, що забезпечує її відмінні технічні характеристики.  ",
+            "weight": 5,
+            "volume": 0.005,
+            "price": 203.52,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "",
+            "configurableList": []
+          },
+          {
+            "id": 34.4,
+            "image": "https://i.imgur.com/ZMYFhlK.jpeg",
+            "title": "KNAUF Шпатлівка УНІФЛОТ, 25 кг",
+            "description": "Knauf Uniflott — це високоякісна гіпсова шпаклівка, призначена для закладення швів гіпсокартонних плит без використання армуючої стрічки. Вона виготовлена на основі спеціального гіпсу з мінеральними наповнювачами та полімерними добавками, що забезпечує її відмінні технічні характеристики.  ",
+            "weight": 5,
+            "volume": 0.005,
+            "price": 959.3,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "",
+            "configurableList": []
+          },
+          {
+            "id": 34.5,
+            "image": "https://i.imgur.com/BjcY1EB.jpeg",
+            "title": " SEMIN Шпаклівка високоміцна CE-86 25кг",
+            "description": "SEMIN CE-86 — це багатофункціональна, тріщиностійка високоміцна шпаклівка для внутрішніх робіт, спеціально розроблена для закладення стиків гіпсокартонних (ГКЛ) та гіпсоволокнистих (ГВЛ) листів.",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 959.3,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
@@ -2004,39 +2120,112 @@
         "materials": [
           {
             "id": 35.1,
-            "image": "https://i.imgur.com/fS7kej2.jpeg",
-            "title": "Ekobord M 050x0610x01250mm /12,2м2 /0,61м3",
-            "description": "",
+            "image": "https://i.imgur.com/D1P422z.jpeg",
+            "title": "Ekoboard M",
+            "description": "EKOBOARD M — це універсальний мінераловатний теплоізоляційний матеріал від компанії Knauf, виготовлений із застосуванням технології ECOSE® Technology. Ця інноваційна технологія дозволяє уникнути використання фенол-формальдегідних смол, що робить матеріал екологічно чистим та безпечним для здоров'я. ",
             "weight": 7.93,
             "volume": 0,
             "price": 812.92,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
+            "officialLink": "https://knauf.com/uk-UA/p/produkt/ekoboard-27238_4218#description",
+            "configurableList": [
+              {
+                "label": "50x610x1250mm, 16 шт., 12,2м2",
+                "key": "ekoboard_50",
+                "price": 804.45,
+                "weight": 8.5,
+                "volume": 0.61,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "100x610x1250mm, 8 шт., 6,1м2",
+                "key": "ekoboard_100",
+                "price": 804.45,
+                "weight": 8.5,
+                "volume": 0.61,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "150x610x1250mm, 5 шт., 3,81м2",
+                "key": "ekoboard_150",
+                "price": 804.45,
+                "weight": 8.5,
+                "volume": 0.61,
+                "movingTypeCalculation": "weight"
+              }
+            ]
+          },
+          {
+            "id": 35.2,
+            "image": "https://i.imgur.com/D1P422z.jpeg",
+            "title": "NATURBOARD 035 M",
+            "description": "NATURBOARD 035 M — це універсальний мінераловатний теплоізоляційний матеріал від компанії Knauf, виготовлений із застосуванням технології ECOSE® Technology. Ця інноваційна технологія дозволяє уникнути використання фенол-формальдегідних смол, що робить матеріал екологічно чистим та безпечним для здоров'я. ",
+            "weight": 7.93,
+            "volume": 0,
+            "price": 1191.5,
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://knauf.com/uk-UA/p/produkt/naturboard-035-27241_4218",
+            "configurableList": [
+              {
+                "label": "50x610x1250mm, 16 шт., 12,2м2",
+                "key": "naturboard_50",
+                "price": 1191.5,
+                "weight": 8.5,
+                "volume": 0.61,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "100x610x1250mm, 8 шт., 6,1м2",
+                "key": "naturboard_100",
+                "price": 1191.5,
+                "weight": 8.5,
+                "volume": 0.61,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           },
           {
             "id": 35.2,
             "image": "https://i.imgur.com/1LRAI9b.jpeg",
-            "title": "Naturroll M (50+50)x1200x(2x9100MM)/21,84м2/ 1,092м3",
-            "description": "",
+            "title": "Naturroll M",
+            "description": "Naturroll M — це універсальний мінераловатний теплоізоляційний матеріал від компанії Knauf, виготовлений із застосуванням технології ECOSE® Technology. Ця інноваційна технологія дозволяє уникнути використання фенол-формальдегідних смол, що робить матеріал екологічно чистим та безпечним для здоров'я. ",
             "weight": 11.2,
             "volume": 0,
             "price": 1052.77,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
+            "officialLink": "https://knauf.com/uk-UA/p/produkt/naturoll-27239_4218",
+            "configurableList": [
+              {
+                "label": "(50+50)x1200x(2x9100мм) рулон 21,84м2",
+                "key": "naturroll_50_50",
+                "price": 1041.8,
+                "weight": 14.5,
+                "volume": 1.1,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "100x1200x9100мм рулон 10,92м2",
+                "key": "naturroll_100",
+                "price": 1041.8,
+                "weight": 14.5,
+                "volume": 1.1,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           },
           {
             "id": 35.3,
             "image": "https://i.imgur.com/1LRAI9b.jpeg",
-            "title": "NatuRollPro M (50+50)X1200X(2X7700мм)/18,48м2/ 0,924м3",
-            "description": "",
+            "title": "NatuRollPro M (50+50)X1200X(2X7700мм) рулон 18,48м2",
+            "description": "NaturrollPro M — це універсальний мінераловатний теплоізоляційний матеріал від компанії Knauf, виготовлений із застосуванням технології ECOSE® Technology. Ця інноваційна технологія дозволяє уникнути використання фенол-формальдегідних смол, що робить матеріал екологічно чистим та безпечним для здоров'я. ",
             "weight": 11.55,
-            "volume": 0,
+            "volume": 0.924,
             "price": 1062.5,
             "quantity": 0,
             "totalPrice": 0,
@@ -2047,25 +2236,42 @@
           {
             "id": 35.4,
             "image": "https://i.imgur.com/ct7ISh9.jpeg",
-            "title": "Akustik board M 050X0610X1250мм /12,2м2/0,61м3.",
-            "description": "",
+            "title": "Akustik board M",
+            "description": "Akustik board M — це універсальний мінераловатний теплоізоляційний матеріал від компанії Knauf, виготовлений із застосуванням технології ECOSE® Technology. Ця інноваційна технологія дозволяє уникнути використання фенол-формальдегідних смол, що робить матеріал екологічно чистим та безпечним для здоров'я. ",
             "weight": 9.76,
             "volume": 0,
             "price": 929.04,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
+            "officialLink": "https://knauf.com/uk-UA/p/produkt/akustik-board-23825_4218",
+            "configurableList": [
+              {
+                "label": "50X610X1250мм, 16 шт. 12,2м2",
+                "key": "akustik_board_50",
+                "price": 919.36,
+                "weight": 8.5,
+                "volume": 0.61,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "75X610X1250мм, 10 шт. 7,625м2",
+                "key": "akustik_board_100",
+                "price": 861.91,
+                "weight": 8,
+                "volume": 0.572,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           },
           {
             "id": 35.5,
             "image": "https://i.imgur.com/ND4L9Tj.jpeg",
-            "title": "Акустична мінеральна вата Acoustic Wool Sonet 6,0м2/упак,(1000*600*50)",
-            "description": "",
-            "weight": 14.4,
-            "volume": 0,
-            "price": 1005.3,
+            "title": "Акустична мінеральна вата Acoustic Wool Sonet 50x600x1000 мм, 10 шт, 6,0м2",
+            "description": "Акустична мінеральна вата AcousticWool Sonet — це жорсткі звукоізоляційні плити, виготовлені на основі базальтових волокон. Вони призначені для підвищення звукоізоляційних властивостей будівельних конструкцій, таких як стіни, підлоги та стелі.",
+            "weight": 5,
+            "volume": 0.3,
+            "price": 1102.08,
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",

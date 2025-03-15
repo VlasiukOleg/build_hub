@@ -20,7 +20,6 @@ import { LiaLuggageCartSolid } from 'react-icons/lia';
 import { TbTruckDelivery } from 'react-icons/tb';
 import { FaPlus } from 'react-icons/fa6';
 
-
 interface IAccordionSubCategoryList {
   slug: Pages;
   totalWeight: number;
@@ -92,7 +91,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
     <>
       <Accordion
         variant="splitted"
-        className="mb-4 max-w-full w-full h-full md:w-[760px] xl:w-[1200px]"
+        className="mb-4 px-1 max-w-full w-full h-full md:w-[760px] xl:w-[1200px]"
         itemClasses={{ content: 'pb-4' }}
         defaultExpandedKeys={['1']}
         selectionMode="multiple"

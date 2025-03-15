@@ -56,7 +56,7 @@ export const ListboxWrapper: React.FC<ListboxWrapperProps> = ({ children }) => (
 interface IDisclosureAddMaterialsPanelProps {}
 
 const description =
-  'В наявності більше 5 000 позицій, якщо Ви не знайшли потрібний матеріал в КАТАЛОЗІ, скористайтесь пошуком матеріалів або додайте вручну';
+  'В наявності більше 9 000 позицій, якщо Ви не знайшли потрібний матеріал в КАТАЛОЗІ, скористайтесь пошуком матеріалів або додайте вручну';
 
 const DisclosureAddMaterialsPanel: React.FC<
   IDisclosureAddMaterialsPanelProps
@@ -262,14 +262,14 @@ const DisclosureAddMaterialsPanel: React.FC<
   };
 
   return (
-    <div className="mt-2 text-sm/5 text-grey md:text-lg xl:text-xl xl:mt-6">
+    <div className="mt-2 text-sm/5 text-grey md:text-lg xl:text-xl xl:mt-6 ">
       <Alert
         description={description}
         color="danger"
         classNames={{
           base: 'mb-4',
-          title: 'font-bold text-xs/6 md:text-sm xl:text-base',
-          description: 'text-xs/6 md:text-sm xl:text-base',
+          title: 'font-bold text-xs md:text-sm xl:text-base',
+          description: 'text-xs/4 md:text-sm xl:text-base',
         }}
       />
       <p className="text-center font-semibold">Пошук матеріалів</p>

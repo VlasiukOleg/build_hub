@@ -84,7 +84,7 @@ const DisclosureAddMaterialsPanel: React.FC<
     const selectedGazoblok = material.configurableList?.find(
       item => item.key === id
     );
-    console.log(selectedGazoblok);
+
     if (selectedGazoblok) {
       setGazoblokPrice(selectedGazoblok.price);
       setGazoblokVolume(selectedGazoblok.volume);
@@ -162,7 +162,7 @@ const DisclosureAddMaterialsPanel: React.FC<
   return (
     <div className="text-sm/5 text-grey md:text-lg xl:text-xl">
       <Card>
-        <CardHeader className="justify-between">
+        <CardHeader className="justify-between gap-2">
           <div className="text-sm text-grey md:text-base  xl:text-lg">
             {material.title}
           </div>
@@ -212,12 +212,9 @@ const DisclosureAddMaterialsPanel: React.FC<
                   <p className="text-xs  md:text-sm xl:text-base">
                     {item.label}
                   </p>
-                  <Chip
-                    variant="bordered"
-                    className="bg-slate-50 border-accent text-xs md:text-sm xl:text-base"
-                  >
+                  <p className="text-xs md:text-base font-semibold">
                     {item.price} грн.
-                  </Chip>
+                  </p>
                 </div>
               </AutocompleteItem>
             )}

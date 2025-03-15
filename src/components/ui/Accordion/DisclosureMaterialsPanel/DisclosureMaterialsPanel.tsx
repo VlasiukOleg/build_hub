@@ -43,7 +43,7 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
 }) => {
   return (
     <Card>
-      <CardHeader className="justify-between">
+      <CardHeader className="justify-between gap-2">
         <div className="text-sm text-grey md:text-base  xl:text-lg">
           {material.title}
         </div>
