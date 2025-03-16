@@ -33,7 +33,7 @@ const ModalHeroUi: React.FC<IModalHeroUi> = ({
         placement="center"
         onOpenChange={onOpenChange}
         size="sm"
-        className="bg-white"
+        className=""
         classNames={{
           wrapper: 'p-4',
         }}
@@ -41,7 +41,9 @@ const ModalHeroUi: React.FC<IModalHeroUi> = ({
         <ModalContent>
           {onClose => (
             <>
-              <ModalHeader className="flex flex-col gap-1">{title}</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1 text-base md:text-lg">
+                {title}
+              </ModalHeader>
               <ModalBody>{children}</ModalBody>
               {withActions && (
                 <ModalFooter>

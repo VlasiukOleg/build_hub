@@ -149,15 +149,10 @@ const DisclosureAddMaterialsPanel: React.FC<
     item => item.key
   );
 
-  console.log(configurableMaterialKeys);
-  console.log(configurableMaterialList);
-
   const filteredConfigurableList = configurableMaterialList.filter(
     configurableMaterial =>
       configurableMaterialKeys?.includes(configurableMaterial.key)
   );
-
-  console.log('filteredConfigurableList', filteredConfigurableList);
 
   return (
     <div className="text-sm/5 text-grey md:text-lg xl:text-xl">
@@ -212,8 +207,9 @@ const DisclosureAddMaterialsPanel: React.FC<
                   <p className="text-xs  md:text-sm xl:text-base">
                     {item.label}
                   </p>
-                  <p className="text-xs md:text-base font-semibold">
-                    {item.price} грн.
+                  <p className="flex flex-nowrap gap-[2px]  text-xs md:text-base font-semibold">
+                    <span>{item.price}</span>
+                    <span>грн.</span>
                   </p>
                 </div>
               </AutocompleteItem>

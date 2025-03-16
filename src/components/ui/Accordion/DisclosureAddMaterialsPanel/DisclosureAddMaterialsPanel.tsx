@@ -2,15 +2,8 @@
 
 import React, { useEffect, useState, useRef, useMemo } from 'react';
 import { Button } from '@heroui/react';
-import { Input, Chip, Alert } from '@heroui/react';
-import {
-  Autocomplete,
-  AutocompleteItem,
-  Listbox,
-  ListboxItem,
-} from '@heroui/react';
-
-import styles from '@/components/ui/Accordion/DisclosureConfigurableMaterialPanel/configurable.module.css';
+import { Input, Alert } from '@heroui/react';
+import { Listbox, ListboxItem } from '@heroui/react';
 
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 import {
@@ -146,8 +139,6 @@ const DisclosureAddMaterialsPanel: React.FC<
 
     getData();
   }, []);
-
-  console.log(materials);
 
   const filteredMaterials = useMemo(() => {
     if (!query) return [];

@@ -13,7 +13,7 @@ const DeliveryTypeChoice: React.FC<IDeliveryTypeChoiceProps> = ({
   handleDeliveryType,
 }) => {
   return (
-    <div className="bg-white pb-2">
+    <div className="pb-2">
       <p className="text-gray-600 font-semibold mb-2 md:text-md xl:text-xl md:mb-3 xl:mb-5">
         Виберіть тип доставки:
       </p>

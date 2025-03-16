@@ -110,7 +110,7 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
         center={position}
         zoom={10}
         style={{
-          height: '500px',
+          height: '350px',
           width: '100%',
           marginBottom: '20px',
           zIndex: '40',
@@ -132,7 +132,9 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
               <div className="text-center mb-2">{storage.location}</div>
               <Button
                 color="primary"
+                className="p-2 text-xs h-6 md:text-sm md:h-8"
                 onPress={() => handleStorageClick(storage.location)}
+                radius="sm"
               >
                 Вибрати
               </Button>
@@ -154,7 +156,7 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
 
       <Button
         onPress={() => router.push('/catalog')}
-        className="bg-accent text-white  font-medium text-base h-10 xl:text-lg xl:h-12"
+        className="bg-accent text-white  font-medium text-sm md:text-base h-10 xl:text-lg xl:h-12"
         radius="sm"
         isDisabled={deliveryType === ''}
       >
@@ -163,7 +165,7 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
       {!deliveryType && (
         <Button
           onPress={() => router.push('/catalog')}
-          className="bg-accent text-white ml-3   font-medium text-base h-10 xl:text-lg xl:h-12"
+          className="bg-accent text-white ml-3   text-sm md:text-base font-medium text-base h-10 xl:text-lg xl:h-12"
           radius="sm"
         >
           Пропустити
