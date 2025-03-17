@@ -96,17 +96,7 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
           </div>
         </div>
       </div>
-      <FixedOpenBurgerMenuBtn
-        totalQuantity={totalQuantity}
-        totalVolume={totalVolume}
-        totalWeight={totalWeight}
-        totalPrice={totalPrice}
-        deliveryPrice={deliveryPrice}
-        deliveryType={deliveryType}
-        movingPrice={movingPrice}
-        isMovingAddToOrder={isMovingAddToOrder}
-        slug={slug}
-      />
+      <FixedOpenBurgerMenuBtn />
     </section>
   );
 };
