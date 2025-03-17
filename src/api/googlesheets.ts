@@ -1,5 +1,3 @@
-import configuration from '@/utils/configuration';
-
 const sheetId = '1mspPVAdnGfDqwEw_QB_rflYKNPenBiD1ZNubfznXtOw';
 const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API_KEY;
 
