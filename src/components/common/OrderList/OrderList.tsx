@@ -398,7 +398,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                           {(material.quantity * material.price).toFixed(2)} грн.
                         </p>
                       </div>
-                      <div className="w-[15%] text-right flex flex-col items-center justify-end">
+                      <div className="w-[15%] text-right flex flex-col items-center justify-end gap-1">
                         <Button
                           isIconOnly
                           aria-label="Clear Order"
@@ -523,7 +523,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                             </>
                           )}
                         </div>
-                        <div className="w-[15%] text-right flex flex-col items-center justify-end">
+                        <div className="w-[15%] text-right flex flex-col items-center justify-end gap-1">
                           <Button
                             isIconOnly
                             aria-label="Clear Order"
@@ -656,7 +656,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                           </>
                         )}
                       </div>
-                      <div className="w-[15%] text-right flex flex-col items-center justify-end">
+                      <div className="w-[15%] text-right flex flex-col items-center justify-end gap-1">
                         <Button
                           isIconOnly
                           aria-label="Clear Order"

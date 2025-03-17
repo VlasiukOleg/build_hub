@@ -25,6 +25,7 @@ import { FaPersonWalkingLuggage } from 'react-icons/fa6';
 import { TbTruckDelivery } from 'react-icons/tb';
 import { GiMoneyStack } from 'react-icons/gi';
 import { BsBox } from 'react-icons/bs';
+import { Pages } from '@/@types';
 
 interface IOrderBarProps {
   totalQuantity: number;
@@ -35,6 +36,7 @@ interface IOrderBarProps {
   movingPrice: number;
   isMovingAddToOrder: boolean;
   totalVolume: number;
+  slug: Pages;
 }
 
 const OrderBar: React.FC<IOrderBarProps> = ({
@@ -46,6 +48,7 @@ const OrderBar: React.FC<IOrderBarProps> = ({
   movingPrice,
   isMovingAddToOrder,
   totalVolume,
+  slug,
 }) => {
   const router = useRouter();
   const dispatch = useAppDispatch();
@@ -57,6 +60,11 @@ const OrderBar: React.FC<IOrderBarProps> = ({
     dispatch(toggleAdditionalPriceAddToOrder());
     dispatch(clearAdditionalMaterial());
     dispatch(clearConfigurableMaterial());
+  };
+
+  const handleOrderClick = () => {
+    const url = `/order?from=${slug}`;
+    router.push(url);
   };
 
   return (
@@ -99,11 +107,11 @@ const OrderBar: React.FC<IOrderBarProps> = ({
           <Button
             isIconOnly
             aria-label="Go to Cart"
-            onPress={() => router.push('/order')}
+            onPress={handleOrderClick}
             className="bg-white h-7 md:h-9 md:w-9 xl:size-11"
             radius="sm"
           >
-            <PiShoppingCartSimpleBold className="size-4 md:size-6 xl:size-8 text-green-500" />
+            <PiShoppingCartSimpleBold className="size-5 md:size-6 xl:size-8 text-green-500" />
           </Button>
           <Button
             isIconOnly
@@ -112,7 +120,7 @@ const OrderBar: React.FC<IOrderBarProps> = ({
             className="bg-white h-7 md:h-9 md:w-9 xl:size-11"
             radius="sm"
           >
-            <MdOutlineCancel className="size-4 md:size-6 xl:size-8 text-red-600" />
+            <MdOutlineCancel className="size-5 md:size-6 xl:size-8 text-red-600" />
           </Button>
         </div>
         <div className="hidden md:block">

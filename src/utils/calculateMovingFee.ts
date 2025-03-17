@@ -23,7 +23,7 @@ const MOVING_PRICE_CONFIG = {
   CEGLA: {
     XS: { BASE: 3, PER_FLOOR: 1.7 },
     SM: { BASE: 4, PER_FLOOR: 2 },
-  }
+  },
 };
 
 const calculateMovingTypeFeePerItem = (
@@ -129,8 +129,6 @@ export const calculateMovingFee = (
     distanceMultiplier,
     elevator
   );
-
-  console.log(blockXsMovingFee);
 
   if (elevator === 'passenger') {
     weightTypeMovingFee *= 1.15;

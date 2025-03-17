@@ -84,9 +84,6 @@ const DisclosureMovingPanel: React.FunctionComponent<
     state => state.moving.isMovingPriceAddToOrder
   );
 
-  const categories = useAppSelector(state => state.categories);
-  console.log(categories);
-
   const additionalMaterial = useAppSelector(
     state => state.additionalMaterial.additionalMaterial
   );

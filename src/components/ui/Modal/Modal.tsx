@@ -27,7 +27,7 @@ const Modal: React.FC<IModalProps> = ({ isOpen, close, children, variant }) => {
             transition
             className={clsx(
               variant === 'burger'
-                ? 'h-full w-full xl:max-w-[450px]  bg-lightAccent  data-[enter]:duration-100 data-[enter]:data-[closed]:-translate-x-full data-[leave]:duration-300 data-[leave]:data-[closed]:translate-x-full'
+                ? 'h-full w-full xl:max-w-[450px]   bg-bgWhite data-[enter]:duration-100 data-[enter]:data-[closed]:-translate-x-full data-[leave]:duration-300 data-[leave]:data-[closed]:translate-x-full'
                 : 'max-h-[90%] min-w-[328px] sm:max-w-[480px] md:max-w-[700px] xl:max-w-[900px]'
             )}
           >

@@ -12,7 +12,7 @@ const BurgerMenu: React.FC<IBurgerMenuProps> = ({ close }) => {
   return (
     <div className="container flex h-full min-h-screen flex-col overflow-x-hidden">
       <header className="mb-24">
-        <div className=" py-5 flex items-center justify-between">
+        <div className=" py-5 flex items-center justify-between ">
           <Logo close={close} />
           <button
             onClick={close}
