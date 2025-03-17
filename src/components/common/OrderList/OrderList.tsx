@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import { useRouter } from 'next/navigation';
 import { useSearchParams } from 'next/navigation';
 import {
@@ -9,9 +10,11 @@ import {
   Button,
   Input,
   Tooltip,
+  useDisclosure,
 } from '@heroui/react';
 
-import OrderForm from '../OrderForm';
+import OrderForm from '@/components/common/OrderForm';
+const ModalHeroUi = dynamic(() => import('@/components/ui/ModalHeroUi'));
 
 import { useAppSelector, useAppDispatch } from '@/redux/hooks';
 import { useMaterials } from '@/hooks/useMaterials';
@@ -67,6 +70,36 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     useState<string>('0');
 
   const inputRef = useRef<HTMLInputElement>(null);
+
+  const {
+    isOpen: isOpenMaterial,
+    onOpen: onOpenMaterial,
+    onOpenChange: onOpenChangeMaterial,
+  } = useDisclosure();
+
+  const {
+    isOpen: isOpenAdditionalMaterial,
+    onOpen: onOpenAdditionalMaterial,
+    onOpenChange: onOpenChangeAdditionalMaterial,
+  } = useDisclosure();
+
+  const {
+    isOpen: isOpenConfigurableMaterial,
+    onOpen: onOpenConfigurableMaterial,
+    onOpenChange: onOpenChangeConfigurableMaterial,
+  } = useDisclosure();
+
+  const {
+    isOpen: isOpenDelivery,
+    onOpen: onOpenDelivery,
+    onOpenChange: onOpenChangeDelivery,
+  } = useDisclosure();
+
+  const {
+    isOpen: isOpenMoving,
+    onOpen: onOpenMoving,
+    onOpenChange: onOpenChangeMoving,
+  } = useDisclosure();
 
   const errors: string[] = [];
 
@@ -402,12 +435,27 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                         <Button
                           isIconOnly
                           aria-label="Clear Order"
-                          onPress={() => handleRemoveMaterial(material.id)}
+                          onPress={onOpenMaterial}
                           className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
                           radius="sm"
                         >
                           <MdOutlineCancel className="size-6  xl:size-9 text-red-600" />
                         </Button>
+                        <ModalHeroUi
+                          title="Увага"
+                          isOpen={isOpenMaterial}
+                          onOpenChange={onOpenChangeMaterial}
+                          onAction={() => handleRemoveMaterial(material.id)}
+                          withActions
+                        >
+                          <p className="text-sm">
+                            Ви впевнені, що хочете видалити матеріал{' '}
+                            <span className="font-semibold">
+                              {material.title}
+                            </span>
+                            ?
+                          </p>
+                        </ModalHeroUi>
                         {editMaterialKey !== String(material.id) ? (
                           <Button
                             isIconOnly
@@ -527,14 +575,29 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                           <Button
                             isIconOnly
                             aria-label="Clear Order"
-                            onPress={() =>
-                              handleRemoveAdditionalMaterial(index)
-                            }
+                            onPress={onOpenAdditionalMaterial}
                             className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
                             radius="sm"
                           >
                             <MdOutlineCancel className="size-6  xl:size-9 text-red-600" />
                           </Button>
+                          <ModalHeroUi
+                            title="Увага"
+                            isOpen={isOpenAdditionalMaterial}
+                            onOpenChange={onOpenChangeAdditionalMaterial}
+                            onAction={() =>
+                              handleRemoveAdditionalMaterial(index)
+                            }
+                            withActions
+                          >
+                            <p className="text-sm">
+                              Ви впевнені, що хочете видалити матеріал{' '}
+                              <span className="font-semibold">
+                                {material.title}
+                              </span>
+                              ?
+                            </p>
+                          </ModalHeroUi>
                           {editMaterialKey !== material.id ? (
                             <Button
                               isIconOnly
@@ -660,14 +723,29 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                         <Button
                           isIconOnly
                           aria-label="Clear Order"
-                          onPress={() =>
-                            handleRemoveConfigurableMaterial(material.key)
-                          }
+                          onPress={onOpenConfigurableMaterial}
                           className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
                           radius="sm"
                         >
                           <MdOutlineCancel className="size-6  xl:size-9 text-red-600" />
                         </Button>
+                        <ModalHeroUi
+                          title="Увага"
+                          isOpen={isOpenConfigurableMaterial}
+                          onOpenChange={onOpenChangeConfigurableMaterial}
+                          onAction={() =>
+                            handleRemoveConfigurableMaterial(material.key)
+                          }
+                          withActions
+                        >
+                          <p className="text-sm">
+                            Ви впевнені, що хочете видалити матеріал{' '}
+                            <span className="font-semibold">
+                              {material.title}
+                            </span>
+                            ?
+                          </p>
+                        </ModalHeroUi>
                         {editMaterialKey !== material.key ? (
                           <Button
                             isIconOnly
@@ -735,14 +813,27 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                         <Button
                           isIconOnly
                           aria-label="Clear Order"
-                          onPress={() => {
-                            dispatch(toggleMovingPriceToOrder());
-                          }}
+                          onPress={onOpenMoving}
                           className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
                           radius="sm"
                         >
                           <MdOutlineCancel className="size-6  xl:size-9 text-red-600" />
                         </Button>
+                        <ModalHeroUi
+                          title="Увага"
+                          isOpen={isOpenMoving}
+                          onOpenChange={onOpenChangeMoving}
+                          onAction={() => {
+                            dispatch(toggleMovingPriceToOrder());
+                          }}
+                          withActions
+                        >
+                          <p className="text-sm">
+                            Ви впевнені, що хочете видалити{' '}
+                            <span className="font-semibold">Розвантаження</span>
+                            ?
+                          </p>
+                        </ModalHeroUi>
                       </div>
                     </li>
                   )}
@@ -775,14 +866,26 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                         <Button
                           isIconOnly
                           aria-label="Clear Order"
-                          onPress={() => {
-                            dispatch(setDeliveryType('pickup'));
-                          }}
+                          onPress={onOpenDelivery}
                           className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
                           radius="sm"
                         >
                           <MdOutlineCancel className="size-6  xl:size-9 text-red-600" />
                         </Button>
+                        <ModalHeroUi
+                          title="Увага"
+                          isOpen={isOpenDelivery}
+                          onOpenChange={onOpenChangeDelivery}
+                          onAction={() => {
+                            dispatch(setDeliveryType('pickup'));
+                          }}
+                          withActions
+                        >
+                          <p className="text-sm">
+                            Ви впевнені, що хочете видалити{' '}
+                            <span className="font-semibold">Доставка</span>?
+                          </p>
+                        </ModalHeroUi>
                       </div>
                     </li>
                   )}

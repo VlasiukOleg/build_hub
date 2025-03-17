@@ -41,7 +41,7 @@ interface ICatalogProps {}
 
 const Catalog: React.FC<ICatalogProps> = ({}) => {
   return (
-    <section className="py-5 md:py-10">
+    <section className="py-4 md:py-8">
       <div className="container">
         <Breadcrumbs className="mb-4">
           <BreadcrumbItem href="/">Головна</BreadcrumbItem>

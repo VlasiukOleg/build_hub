@@ -50,13 +50,14 @@ const ModalHeroUi: React.FC<IModalHeroUi> = ({
                   <Button
                     color="danger"
                     variant="light"
+                    radius="sm"
                     onPress={() => {
                       onAction(), onClose();
                     }}
                   >
                     Так
                   </Button>
-                  <Button color="primary" onPress={onClose}>
+                  <Button color="primary" radius="sm" onPress={onClose}>
                     Відмінити
                   </Button>
                 </ModalFooter>

@@ -1,9 +1,11 @@
 'use client';
 
 import React, { useEffect, useState, useRef, useMemo } from 'react';
+import configuration from '@/utils/configuration';
 import { Button } from '@heroui/react';
 import { Input, Alert } from '@heroui/react';
 import { Listbox, ListboxItem } from '@heroui/react';
+import translate from 'translate';
 
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 import {
@@ -46,6 +48,9 @@ export const ListboxWrapper: React.FC<ListboxWrapperProps> = ({ children }) => (
   </div>
 );
 
+translate.engine = 'deepl';
+translate.key = process.env.DEEPL_KEY;
+
 interface IDisclosureAddMaterialsPanelProps {}
 
 const description =
@@ -84,6 +89,8 @@ const DisclosureAddMaterialsPanel: React.FC<
   if (Number(additionalMaterialsEditModeQuantity) < 0) {
     errors.push('Введіть > 0');
   }
+
+  console.log(configuration);
 
   useEffect(() => {
     if (editMaterialKey && inputRef.current) {
@@ -126,11 +133,10 @@ const DisclosureAddMaterialsPanel: React.FC<
   useEffect(() => {
     async function getData() {
       try {
-        console.log('Start');
         const result = await fetchGoogleSheetData();
         if (!result.values) throw new Error('Данні відсутні');
-        const normilizedData = convertToObjects(result.values);
-        setMaterials(normilizedData);
+        const normalizedData = convertToObjects(result.values);
+        setMaterials(normalizedData);
       } catch (err) {
         const error = err as CustomError;
         console.log(error.message);

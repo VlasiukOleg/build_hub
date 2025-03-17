@@ -2,12 +2,13 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation';
+import dynamic from 'next/dynamic';
 import clsx from 'clsx';
 import { Button } from '@heroui/react';
 import { useDisclosure } from '@heroui/react';
 
 import OpenBurgerMenuBtn from '../OpenBurgerMenuBtn';
-import ModalHeroUi from '@/components/ui/ModalHeroUi';
+const ModalHeroUi = dynamic(() => import('@/components/ui/ModalHeroUi'));
 
 import { useAppDispatch } from '@/redux/hooks';
 import { clearQuantity } from '@/redux/materialsSlice';
