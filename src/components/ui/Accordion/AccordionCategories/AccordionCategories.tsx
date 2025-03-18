@@ -18,6 +18,7 @@ import { Pages } from '@/@types';
 const BREADCRUMBS_LABEL = {
   [Pages.CATALOG]: 'Каталог',
   [Pages.SHTUKATURKA]: 'Штукатурка',
+  [Pages.SHPAKLIVKA]: 'Шпаклівка',
   [Pages.GIPSOKARTON]: 'Гіпсокартон',
   [Pages.ORDER]: 'Корзина',
   [Pages.STYAZHKA]: 'Cтяжка',

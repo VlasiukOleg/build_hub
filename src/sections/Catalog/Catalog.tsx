@@ -7,6 +7,7 @@ import Shtukaturka from '@/../public/images/shtukaturka-450x300.webp';
 import Gipsokarton from '@/../public/images/gipsokarton-450х300.webp';
 import Styazhka from '@/../public/images/styazhka.jpg';
 import Kladka from '@/../public/images/kladka.webp';
+import Shpaklivka from '@/../public/images/spackling.jpg';
 
 import { Pages } from '@/@types';
 
@@ -19,18 +20,24 @@ const catalog = [
   },
   {
     id: 2,
+    text: 'Фінішна шпаклівка. Фарбування ',
+    img: Shpaklivka,
+    href: 'shpaklivka',
+  },
+  {
+    id: 3,
     text: 'Гіпсокартон',
     img: Gipsokarton,
     href: 'gipsokarton',
   },
   {
-    id: 3,
-    text: 'Стяжка, Цемент, Пісок',
+    id: 4,
+    text: 'Стяжка. Цемент. Пісок',
     img: Styazhka,
     href: 'styazhka',
   },
   {
-    id: 4,
+    id: 5,
     text: 'Кладочні роботи',
     img: Kladka,
     href: 'kladka',

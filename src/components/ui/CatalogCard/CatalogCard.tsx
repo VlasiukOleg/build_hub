@@ -32,7 +32,7 @@ const CataogCard: React.FunctionComponent<ICatalogCardProps> = ({
             src={img.src}
             width="100%"
           />
-          <CardFooter className="absolute bg-black/50 bottom-0 border-t-1 border-zinc-100/50 z-10 text-white p-3 text-sm font-light justify-center">
+          <CardFooter className="absolute bg-black/50 bottom-0 border-t-1 border-zinc-100/50 z-10 text-white p-3 text-sm font-light justify-center text-center">
             <b>{text}</b>
           </CardFooter>
         </Card>

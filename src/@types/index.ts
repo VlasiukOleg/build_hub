@@ -1,6 +1,7 @@
 export enum Pages {
   CATALOG = 'catalog',
   SHTUKATURKA = 'shtukaturka',
+  SHPAKLIVKA = 'shpaklivka',
   GIPSOKARTON = 'gipsokarton',
   ORDER = 'order',
   STYAZHKA = 'styazhka',
