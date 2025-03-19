@@ -32,12 +32,18 @@ const catalog = [
   },
   {
     id: 4,
+    text: 'Утеплення. Фасадні роботи',
+    img: Gipsokarton,
+    href: 'uteplenya',
+  },
+  {
+    id: 5,
     text: 'Стяжка. Цемент. Пісок',
     img: Styazhka,
     href: 'styazhka',
   },
   {
-    id: 5,
+    id: 6,
     text: 'Кладочні роботи',
     img: Kladka,
     href: 'kladka',

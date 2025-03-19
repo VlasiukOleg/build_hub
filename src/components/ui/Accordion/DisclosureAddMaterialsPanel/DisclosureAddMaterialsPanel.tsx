@@ -5,9 +5,7 @@ import configuration from '@/utils/configuration';
 import { Button } from '@heroui/react';
 import { Input, Alert } from '@heroui/react';
 import { Listbox, ListboxItem } from '@heroui/react';
-import translate from 'translate';
 import Fuse from 'fuse.js';
-
 
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 import {
@@ -51,8 +49,6 @@ export const ListboxWrapper: React.FC<ListboxWrapperProps> = ({ children }) => (
   </div>
 );
 
-translate.engine = 'deepl';
-translate.key = process.env.DEEPL_KEY;
 
 interface IDisclosureAddMaterialsPanelProps {}
 
@@ -133,21 +129,20 @@ const DisclosureAddMaterialsPanel: React.FC<
   }
 
   useEffect(() => {
-    async function getData() {
+    async function fetchData() {
       try {
-        const result = await fetchGoogleSheetData();
-        if (!result.values) throw new Error('Данні відсутні');
+        const response = await fetch('/api/googlesheets');
+        const result = await response.json();
+        console.log(result);
         const normalizedData = convertToObjects(result.values);
-        setMaterials(normalizedData);
-      } catch (err) {
-        const error = err as CustomError;
-        console.log(error.message);
+        setMaterials(normalizedData || []);
+      } catch (error) {
+        console.error('Помилка при отриманні даних:', error);
       }
     }
 
-    getData();
+    fetchData();
   }, []);
-
 
   const filteredMaterials = useMemo(() => {
     const fuseOptions = {

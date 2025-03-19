@@ -23,6 +23,7 @@ const BREADCRUMBS_LABEL = {
   [Pages.ORDER]: 'Корзина',
   [Pages.STYAZHKA]: 'Cтяжка',
   [Pages.KLADKA]: 'Кладка',
+  [Pages.UTEPLENYA]: 'Утеплення',
 };
 
 interface IAccordionCategoriesProps {

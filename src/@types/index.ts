@@ -6,6 +6,7 @@ export enum Pages {
   ORDER = 'order',
   STYAZHKA = 'styazhka',
   KLADKA = 'kladka',
+  UTEPLENYA = 'uteplenya'
 }
 
 export interface ConfigurableList {
