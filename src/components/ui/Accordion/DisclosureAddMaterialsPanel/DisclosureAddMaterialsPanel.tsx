@@ -6,6 +6,8 @@ import { Button } from '@heroui/react';
 import { Input, Alert } from '@heroui/react';
 import { Listbox, ListboxItem } from '@heroui/react';
 import translate from 'translate';
+import Fuse from 'fuse.js';
+
 
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 import {
@@ -22,6 +24,7 @@ import { RiSearchLine } from 'react-icons/ri';
 import { FaRegEdit } from 'react-icons/fa';
 import { IoSaveOutline } from 'react-icons/io5';
 import { FcImageFile } from 'react-icons/fc';
+import fuse from 'fuse.js';
 
 interface AdditionalMaterial {
   id: string;
@@ -86,11 +89,10 @@ const DisclosureAddMaterialsPanel: React.FC<
 
   const errors: string[] = [];
 
+ 
   if (Number(additionalMaterialsEditModeQuantity) < 0) {
     errors.push('Введіть > 0');
   }
-
-  console.log(configuration);
 
   useEffect(() => {
     if (editMaterialKey && inputRef.current) {
@@ -146,17 +148,22 @@ const DisclosureAddMaterialsPanel: React.FC<
     getData();
   }, []);
 
+
   const filteredMaterials = useMemo(() => {
+    const fuseOptions = {
+      keys: ['label'],
+      includeScore: true,
+      threshold: 0.4,
+    };
+    const fuse = new Fuse(materials, fuseOptions);
     if (!query) return [];
 
     setQuantity('');
     setMaterialTitle('');
     setMaterialPrice(0);
 
-    return materials.filter(material =>
-      material.label.toLowerCase().includes(query.toLowerCase())
-    );
-  }, [query, materials]);
+    return fuse.search(query).map(result => result.item);
+  }, [materials, query]);
 
   const isButtonActive = materialTitle.length > 0 && Number(quantity) > 0;
 
