@@ -63,7 +63,12 @@ const DisclosureAddMaterialsPanel: React.FC<
     if (editMaterialKey && inputRef.current) {
       inputRef.current.focus();
     }
-  }, [editMaterialKey]);
+
+    if (!gazoblokSize) {
+      console.log('yes');
+      setGazoblokPrice(0)
+    }
+  }, [editMaterialKey, gazoblokSize]);
 
   const errors: string[] = [];
 
@@ -203,11 +208,11 @@ const DisclosureAddMaterialsPanel: React.FC<
           >
             {item => (
               <AutocompleteItem key={item.key} textValue={item.label}>
-                <div className="flex gap-1 items-center justify-between">
+                <div className="flex gap-4 items-center justify-between">
                   <p className="text-xs  md:text-sm xl:text-base">
                     {item.label}
                   </p>
-                  <p className="flex flex-nowrap gap-[2px]  text-xs md:text-base font-semibold">
+                  <p className="flex no-wrap gap-1 text-xs md:text-base font-semibold">
                     <span>{item.price}</span>
                     <span>грн.</span>
                   </p>
@@ -274,9 +279,13 @@ const DisclosureAddMaterialsPanel: React.FC<
                 </Button>
               </div>
               <div className="flex md:flex-col gap-2">
-                <div className=" text-grey font-semibold flex items-center gap-1 md:text-lg xl:text-xl">
-                  Ціна: {gazoblokPrice} грн.
-                </div>
+                {material.measure ? <div className=" text-grey font-semibold  md:text-lg xl:text-xl">
+                  <div className='flex items-center gap-1'>Ціна: {gazoblokPrice} грн.<span className='text-red-500'>*</span></div>
+                  <div className='font-normal text-xs md:text-base text-red-500'>*ціна за {material.measure}</div>
+                </div> : <div className=" text-grey font-semibold  md:text-lg xl:text-xl">
+                  <div className='flex items-center gap-1'>Ціна: {gazoblokPrice} грн.</div>
+                </div>}
+                
                 <Button
                   aria-label="Clear Order"
                   onPress={handleAddConfigurableMaterial}

@@ -30,6 +30,7 @@ export interface Material {
   volume: number;
   officialLink: string;
   movingTypeCalculation: string;
+  measure: string;
   configurableList?: ConfigurableList[];
 }
 
