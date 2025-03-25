@@ -158,6 +158,8 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     state => state.configurableMaterial.configurableMaterial
   );
 
+  console.log(materials);
+
   const activeMaterials = getActiveMaterials(materials);
 
   const activeAdditionalMaterials = isAdditionalMaterialAddToOrder
@@ -223,8 +225,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
   useEffect(() => {
     const fetchMovingFee = async () => {
       try {
-        const movingFee = await dispatch(recalculateMovingFee()).unwrap(); // Ждем завершения thunk
-        console.log('Пересчитанная стоимость разгрузки:', movingFee);
+        const movingFee = await dispatch(recalculateMovingFee()).unwrap();
 
         const totalMovingFee =
           normalizedWeight(weightTypeMaterial.totalWeight) *
