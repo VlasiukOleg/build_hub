@@ -87,6 +87,10 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
     return null;
   }
 
+  console.log(
+    subCategoriesBySlug.flatMap(subCategory => subCategory.materials)
+  );
+
   return (
     <>
       <Accordion
@@ -112,6 +116,23 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
                 />
               }
               title={subCategory.categoryTitle}
+              subtitle={
+                <p className="text-xs text-red-500">
+                  {subCategory.materials.filter(
+                    material => material.quantity > 0
+                  ).length > 0 && (
+                    <div>
+                      Вибрано{' '}
+                      {
+                        subCategory.materials.filter(
+                          material => material.quantity > 0
+                        ).length
+                      }{' '}
+                      позицію
+                    </div>
+                  )}
+                </p>
+              }
             >
               <div className="gap-2 grid md:grid-cols-2 md:gap-4 xl:grid-cols-3 ">
                 {subCategory.materials.map((material, matInd) => {
