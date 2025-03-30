@@ -9,12 +9,12 @@ import {
   BreadcrumbItem,
   Button,
   Input,
-  Tooltip,
   useDisclosure,
 } from '@heroui/react';
 
 import OrderForm from '@/components/common/OrderForm';
 const ModalHeroUi = dynamic(() => import('@/components/ui/ModalHeroUi'));
+import ClampedText from '../ClampedText';
 
 import { useAppSelector, useAppDispatch } from '@/redux/hooks';
 import { useMaterials } from '@/hooks/useMaterials';
@@ -52,9 +52,12 @@ import { Pages } from '@/@types';
 const BREADCRUMBS_LABEL = {
   [Pages.CATALOG]: 'Каталог',
   [Pages.SHTUKATURKA]: 'Штукатурка',
+  [Pages.SHPAKLIVKA]: 'Шпаклівка',
   [Pages.GIPSOKARTON]: 'Гіпсокартон',
   [Pages.ORDER]: 'Корзина',
+  [Pages.STYAZHKA]: 'Cтяжка',
   [Pages.KLADKA]: 'Кладка',
+  [Pages.UTEPLENYA]: 'Утеплення',
 };
 
 interface IOrderListProps {}
@@ -158,9 +161,9 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     state => state.configurableMaterial.configurableMaterial
   );
 
-  console.log(materials);
-
   const activeMaterials = getActiveMaterials(materials);
+
+  console.log(additionalMaterial);
 
   const activeAdditionalMaterials = isAdditionalMaterialAddToOrder
     ? getActiveMaterials(additionalMaterial)
@@ -355,7 +358,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                   {filteredMaterialsByQuantity.map((material, index) => (
                     <li
                       key={material.id}
-                      className="p-1 font-semibold flex items-center text-grey md:p-2"
+                      className="p-1 font-semibold relative flex items-center text-grey md:p-2"
                     >
                       <div className="mr-2 text-center inline-block size-[50px] md:size-[75px] md:mr-4">
                         <Image
@@ -367,10 +370,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                         />
                       </div>
 
-                      <p className="text-xs text-semibold w-[40%] md:text-base ">
-                        {' '}
-                        {material.title}
-                      </p>
+                      <ClampedText text={material.title} />
                       {editMaterialKey === String(material.id) ? (
                         <Input
                           errorMessage={() => (
@@ -499,17 +499,12 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                     additionalMaterial.map((material, index) => (
                       <li
                         key={material.id}
-                        className="p-1 font-semibold flex items-center text-grey md:p-2"
+                        className="p-1 relative font-semibold flex items-center text-grey md:p-2"
                       >
                         <div className="flex items-center justify-center mr-2 text-center inline-block size-[50px] md:size-[75px] md:mr-4">
                           <FcImageFile className="size-[40px] md:size-[65px]" />
                         </div>
-                        <Tooltip content={material.title}>
-                          <p className="text-xs text-semibold w-[40%] md:text-base line-clamp-2">
-                            {' '}
-                            {material.title}
-                          </p>
-                        </Tooltip>
+                        <ClampedText text={material.title} />
 
                         {editMaterialKey === material.id ? (
                           <Input
@@ -640,7 +635,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                   {configurableMaterialList.map((material, index) => (
                     <li
                       key={material.key}
-                      className="p-1 font-semibold flex items-center text-grey md:p-2"
+                      className="p-1 font-semibold relative flex items-center text-grey md:p-2"
                     >
                       <div className="mr-2 text-center inline-block size-[50px] md:size-[75px] md:mr-4">
                         <Image
@@ -654,12 +649,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                       {/* <div className="flex items-center justify-center mr-2 text-center inline-block size-[50px] md:size-[75px] md:mr-4">
                         <FcImageFile className="size-[40px] md:size-[65px]" />
                       </div> */}
-                      <Tooltip content={material.title}>
-                        <p className="text-xs text-semibold w-[40%] md:text-base line-clamp-2">
-                          {' '}
-                          {material.title}
-                        </p>
-                      </Tooltip>
+                      <ClampedText text={material.title} />
 
                       {editMaterialKey === material.key ? (
                         <Input

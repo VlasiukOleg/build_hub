@@ -6,13 +6,21 @@ export enum Pages {
   ORDER = 'order',
   STYAZHKA = 'styazhka',
   KLADKA = 'kladka',
-  UTEPLENYA = 'uteplenya'
+  UTEPLENYA = 'uteplenya',
 }
 
-export interface ConfigurableList {
+export interface SubCategory {
+  id: number;
+  categoryTitle: string;
+  isCategoryOpen: boolean | string;
+  materials: Material[];
+}
+
+export interface ConfigurableItem {
   label: string;
   key: string;
   price: number;
+  salePrice: number;
   weight: number;
   volume: number;
   movingTypeCalculation: string;
@@ -25,13 +33,14 @@ export interface Material {
   description: string;
   weight: number;
   price: number;
+  salePrice: number;
   quantity: number;
   totalPrice: number;
   volume: number;
   officialLink: string;
   movingTypeCalculation: string;
   measure: string;
-  configurableList?: ConfigurableList[];
+  configurableList?: ConfigurableItem[];
 }
 
 export interface AdditionalMaterial {

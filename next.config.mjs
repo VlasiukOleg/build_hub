@@ -23,6 +23,21 @@ const nextConfig = {
       },
     ],
   },
+
+  async headers() {
+    return [
+      {
+        source: '/robots.txt',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'text/plain',
+          },
+        ],
+      },
+    ];
+  },
+
   webpack(config, options) {
     const fileLoaderRule = config.module.rules.find(rule =>
       rule.test?.test?.('.svg')

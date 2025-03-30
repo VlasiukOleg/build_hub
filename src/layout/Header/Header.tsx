@@ -24,7 +24,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="border-b-[1px] border-accent">
-      <div className="container py-4 flex items-center justify-between">
+      <div className="container py-3 flex items-center justify-between">
         <Logo />
         <Phone />
         <div>

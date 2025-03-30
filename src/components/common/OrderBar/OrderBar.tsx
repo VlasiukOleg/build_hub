@@ -71,7 +71,7 @@ const OrderBar: React.FC<IOrderBarProps> = ({
   return (
     <div
       className={clsx(
-        'flex items-center justify-between gap-2 fixed  left-1/2 transform -translate-x-1/2 bg-lightAccent w-full max-w-[448px] rounded-xl p-3 transition-all  z-20 md:max-w-[700px] xl:max-w-[1216px]',
+        'flex items-center justify-between gap-2 fixed  left-1/2 transform -translate-x-1/2 bg-lightAccent w-full max-w-[448px] rounded-xl p-2 transition-all  z-20 md:max-w-[700px] xl:max-w-[1216px]',
         totalQuantity > 0 ? 'opacity-1 visible' : 'opacity-0 invisible'
       )}
     >

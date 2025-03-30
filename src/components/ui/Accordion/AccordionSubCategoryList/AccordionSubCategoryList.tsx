@@ -9,11 +9,12 @@ import DisclosureConfigurableMaterialPanel from '../DisclosureConfigurableMateri
 import DisclosureMovingPanel from '../DisclosureMovingPanel';
 import DisclosureDeliveryPanel from '../DisclosureDeliveryPanel';
 import DisclosureAddMaterialsPanel from '../DisclosureAddMaterialsPanel';
+import AccordionItemSubTitle from './AccordionItemSubTitle';
 
-import { Pages } from '@/@types';
+import { Pages, SubCategory } from '@/@types';
 
 import { useMaterials } from '@/hooks/useMaterials';
-import { useAppDispatch } from '@/redux/hooks';
+import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 import { inputChangeQuantity, changeQuantity } from '@/redux/materialsSlice';
 
 import { LiaLuggageCartSolid } from 'react-icons/lia';
@@ -29,8 +30,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
   slug,
   totalWeight,
 }) => {
-  const { subCategoriesBySlug, materials, totalPrice, totalQuantity, title } =
-    useMaterials(slug);
+  const { subCategoriesBySlug } = useMaterials(slug);
 
   const dispatch = useAppDispatch();
 
@@ -87,10 +87,6 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
     return null;
   }
 
-  console.log(
-    subCategoriesBySlug.flatMap(subCategory => subCategory.materials)
-  );
-
   return (
     <>
       <Accordion
@@ -116,23 +112,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
                 />
               }
               title={subCategory.categoryTitle}
-              subtitle={
-                <p className="text-xs text-red-500">
-                  {subCategory.materials.filter(
-                    material => material.quantity > 0
-                  ).length > 0 && (
-                    <div>
-                      Вибрано{' '}
-                      {
-                        subCategory.materials.filter(
-                          material => material.quantity > 0
-                        ).length
-                      }{' '}
-                      позицію
-                    </div>
-                  )}
-                </p>
-              }
+              subtitle={<AccordionItemSubTitle subCategory={subCategory} />}
             >
               <div className="gap-2 grid md:grid-cols-2 md:gap-4 xl:grid-cols-3 ">
                 {subCategory.materials.map((material, matInd) => {

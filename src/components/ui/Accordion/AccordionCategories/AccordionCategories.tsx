@@ -55,6 +55,7 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
 
   const handleOrderClick = () => {
     const url = `/order?from=${slug}`;
+
     router.push(url);
   };
 
@@ -74,7 +75,11 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
           isMovingAddToOrder={isMovingAddToOrder}
           slug={slug}
         />
-        <div className={clsx(totalQuantity > 0 && 'pt-[95px]')}>
+        <div
+          className={clsx(
+            totalQuantity > 0 && 'pt-[90px] md:pt-[100px] xl:pt-[70px]'
+          )}
+        >
           <Breadcrumbs className="mb-4">
             <BreadcrumbItem href={`/${Pages.CATALOG}`}>Каталог</BreadcrumbItem>
             <BreadcrumbItem href="/catalog/slug">

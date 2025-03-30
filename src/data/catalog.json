@@ -16,6 +16,7 @@
             "weight": 30,
             "volume": 0.03,
             "price": 285.56,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -38,6 +39,7 @@
             "weight": 30,
             "volume": 0.03,
             "price": 239.03,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -53,6 +55,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 252.7,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -68,6 +71,7 @@
             "weight": 30,
             "volume": 0.03,
             "price": 304.33,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -83,6 +87,7 @@
             "weight": 20,
             "volume": 0.02,
             "price": 426.69,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -98,6 +103,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 206.46,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -113,6 +119,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 231.26,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -128,6 +135,7 @@
             "weight": 30,
             "volume": 0.03,
             "price": 213.79,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -150,6 +158,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 137.64,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -165,6 +174,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 130.13,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -180,6 +190,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 125.96,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -202,6 +213,7 @@
             "weight": 0.2,
             "volume": 0,
             "price": 1,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -212,6 +224,7 @@
                 "label": "0.2",
                 "key": "mayak_6x20x3000",
                 "price": 11.94,
+                "salePrice": 0,
                 "weight": 2,
                 "volume": 0.000324,
                 "movingTypeCalculation": "weight"
@@ -220,6 +233,7 @@
                 "label": "0.25",
                 "key": "mayak_6x25x3000",
                 "price": 14.43,
+                "salePrice": 0,
                 "weight": 2,
                 "volume": 0.000324,
                 "movingTypeCalculation": "weight"
@@ -228,6 +242,7 @@
                 "label": "0.3",
                 "key": "mayak_6x30x3000",
                 "price": 14.72,
+                "salePrice": 0,
                 "weight": 2,
                 "volume": 0.000324,
                 "movingTypeCalculation": "weight"
@@ -236,6 +251,7 @@
                 "label": "0.35",
                 "key": "mayak_6x35x3000",
                 "price": 19.21,
+                "salePrice": 0,
                 "weight": 2,
                 "volume": 0.000324,
                 "movingTypeCalculation": "weight"
@@ -250,6 +266,7 @@
             "weight": 0.2,
             "volume": 0,
             "price": 1,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -260,6 +277,7 @@
                 "label": "0.2",
                 "key": "mayak_10x20x3000",
                 "price": 14.61,
+                "salePrice": 0,
                 "weight": 2,
                 "volume": 0.000324,
                 "movingTypeCalculation": "weight"
@@ -268,6 +286,7 @@
                 "label": "0.25",
                 "key": "mayak_10x25x3000",
                 "price": 18.75,
+                "salePrice": 0,
                 "weight": 2,
                 "volume": 0.000324,
                 "movingTypeCalculation": "weight"
@@ -276,6 +295,7 @@
                 "label": "0.3",
                 "key": "mayak_10x30x3000",
                 "price": 24.84,
+                "salePrice": 0,
                 "weight": 2,
                 "volume": 0.000324,
                 "movingTypeCalculation": "weight"
@@ -284,6 +304,7 @@
                 "label": "0.35",
                 "key": "mayak_10x35x3000",
                 "price": 19.21,
+                "salePrice": 0,
                 "weight": 2,
                 "volume": 0.000324,
                 "movingTypeCalculation": "weight"
@@ -305,6 +326,7 @@
             "weight": 5,
             "volume": 0.005,
             "price": 377.88,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -320,6 +342,7 @@
             "weight": 20,
             "volume": 0.02,
             "price": 1447.97,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -342,6 +365,7 @@
             "weight": 10,
             "volume": 0.01,
             "price": 867.02,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -357,6 +381,7 @@
             "weight": 10,
             "volume": 0.01,
             "price": 355.2,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -372,6 +397,7 @@
             "weight": 10,
             "volume": 0.01,
             "price": 435.1,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -387,6 +413,7 @@
             "weight": 10,
             "volume": 0.01,
             "price": 232.78,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -409,6 +436,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 23.64,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -424,6 +452,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 11.14,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -446,6 +475,7 @@
             "weight": 0.2,
             "volume": 0.001,
             "price": 46.37,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -461,6 +491,7 @@
             "weight": 0.2,
             "volume": 0.001,
             "price": 86.17,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -483,6 +514,7 @@
             "weight": 8,
             "volume": 0.05,
             "price": 535.8,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -498,6 +530,7 @@
             "weight": 8,
             "volume": 0.05,
             "price": 535.8,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -520,6 +553,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 40,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -535,6 +569,7 @@
             "weight": 22.5,
             "volume": 0.15,
             "price": 1188,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -557,6 +592,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 42.68,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -572,6 +608,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 76.4,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -594,6 +631,7 @@
             "weight": 3,
             "volume": 0.001,
             "price": 1131.58,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -609,6 +647,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 6.22,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -624,6 +663,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 15.63,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -639,6 +679,7 @@
             "weight": 1,
             "volume": 0.02,
             "price": 78.75,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -654,6 +695,7 @@
             "weight": 3.5,
             "volume": 0.065,
             "price": 207.5,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -682,6 +724,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 252.7,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -697,6 +740,7 @@
             "weight": 20,
             "volume": 0.02,
             "price": 487.6,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -712,6 +756,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 188.96,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -727,6 +772,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 231.26,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -749,6 +795,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 942.84,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -764,6 +811,7 @@
             "weight": 28,
             "volume": 0.028,
             "price": 1069.74,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -779,6 +827,7 @@
             "weight": 17,
             "volume": 0.017,
             "price": 651.57,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -794,6 +843,7 @@
             "weight": 27,
             "volume": 0.027,
             "price": 983.0,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -809,6 +859,7 @@
             "weight": 27,
             "volume": 0.027,
             "price": 1119.55,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -824,6 +875,7 @@
             "weight": 16,
             "volume": 0.01,
             "price": 501.13,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -839,6 +891,7 @@
             "weight": 27,
             "volume": 0.016,
             "price": 1018.98,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -854,6 +907,7 @@
             "weight": 17,
             "volume": 0.01,
             "price": 628.85,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -869,6 +923,7 @@
             "weight": 27,
             "volume": 0.016,
             "price": 628.85,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -891,6 +946,7 @@
             "weight": 0.2,
             "volume": 0,
             "price": 888,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -901,6 +957,7 @@
                 "label": "p-40 econom, рулон 50м2",
                 "key": "sklokholst_wellton_40_50",
                 "price": 888,
+                "salePrice": 0,
                 "weight": 2,
                 "volume": 0.005,
                 "movingTypeCalculation": "weight"
@@ -909,6 +966,7 @@
                 "label": "p-45, рулон 20м2",
                 "key": "sklokholst_wellton_45_20",
                 "price": 355.2,
+                "salePrice": 0,
                 "weight": 1,
                 "volume": 0.003,
                 "movingTypeCalculation": "weight"
@@ -917,6 +975,7 @@
                 "label": "p-45, рулон 50м2",
                 "key": "sklokholst_wellton_45_50",
                 "price": 939.06,
+                "salePrice": 0,
                 "weight": 2,
                 "volume": 0.005,
                 "movingTypeCalculation": "weight"
@@ -925,6 +984,7 @@
                 "label": "p-50 premium, рулон 20м2",
                 "key": "sklokholst_wellton_50_20",
                 "price": 385.17,
+                "salePrice": 0,
                 "weight": 1,
                 "volume": 0.003,
                 "movingTypeCalculation": "weight"
@@ -933,6 +993,7 @@
                 "label": "p-50 premium, рулон 50м2",
                 "key": "sklokholst_wellton_50_50",
                 "price": 1017.87,
+                "salePrice": 0,
                 "weight": 2,
                 "volume": 0.005,
                 "movingTypeCalculation": "weight"
@@ -947,6 +1008,7 @@
             "weight": 0.2,
             "volume": 0,
             "price": 888,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -957,6 +1019,7 @@
                 "label": "p-40 SN, рулон 50м2",
                 "key": "sklokholst_elf_40_50",
                 "price": 779.22,
+                "salePrice": 0,
                 "weight": 2,
                 "volume": 0.005,
                 "movingTypeCalculation": "weight"
@@ -965,6 +1028,7 @@
                 "label": "p-45 SN, рулон 50м2",
                 "key": "sklokholst_elf_45_50",
                 "price": 876.9,
+                "salePrice": 0,
                 "weight": 2,
                 "volume": 0.005,
                 "movingTypeCalculation": "weight"
@@ -973,6 +1037,7 @@
                 "label": "p-50 SN, рулон 50м2",
                 "key": "sklokholst_elf_50_50",
                 "price": 896.1,
+                "salePrice": 0,
                 "weight": 2,
                 "volume": 0.005,
                 "movingTypeCalculation": "weight"
@@ -994,6 +1059,7 @@
             "weight": 5,
             "volume": 0.005,
             "price": 426.08,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1009,6 +1075,7 @@
             "weight": 15,
             "volume": 0.015,
             "price": 1120.11,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1024,6 +1091,7 @@
             "weight": 15,
             "volume": 0.015,
             "price": 1461.66,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1039,6 +1107,7 @@
             "weight": 15,
             "volume": 0.015,
             "price": 1817.89,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1061,6 +1130,7 @@
             "weight": 10,
             "volume": 0.01,
             "price": 867.02,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1076,6 +1146,7 @@
             "weight": 10,
             "volume": 0.01,
             "price": 355.2,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1091,6 +1162,7 @@
             "weight": 10,
             "volume": 0.01,
             "price": 435.1,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1106,6 +1178,7 @@
             "weight": 10,
             "volume": 0.01,
             "price": 232.78,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1128,6 +1201,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 40,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1143,6 +1217,7 @@
             "weight": 22.5,
             "volume": 0.15,
             "price": 1188,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1165,6 +1240,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 42.68,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1180,6 +1256,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 76.4,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1202,6 +1279,7 @@
             "weight": 3,
             "volume": 0.001,
             "price": 1131.58,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1217,6 +1295,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 6.22,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1232,6 +1311,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 15.63,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1247,6 +1327,7 @@
             "weight": 1,
             "volume": 0.02,
             "price": 78.75,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1262,6 +1343,7 @@
             "weight": 3.5,
             "volume": 0.065,
             "price": 207.5,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1290,6 +1372,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 252.7,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1300,6 +1383,7 @@
                 "label": "30 (50х1000х600 мм) уп. 10 шт, 6м2",
                 "key": "izovat_30_50",
                 "price": 329.12,
+                "salePrice": 0,
                 "weight": 9,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1308,6 +1392,7 @@
                 "label": "30 (100х1000х600 мм) уп. 5 шт, 6м2",
                 "key": "izovat_30_100",
                 "price": 329.12,
+                "salePrice": 0,
                 "weight": 9,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1316,6 +1401,7 @@
                 "label": "30 LS (50х1000х600 мм) уп. 10 шт, 6м2",
                 "key": "izovat_ls_30_50",
                 "price": 323.25,
+                "salePrice": 0,
                 "weight": 9,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1324,6 +1410,7 @@
                 "label": "30 LS (100х1000х600 мм) уп. 5 шт, 6м2",
                 "key": "izovat_ls_30_100",
                 "price": 323.25,
+                "salePrice": 0,
                 "weight": 9,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1332,6 +1419,7 @@
                 "label": "45 (50х1000х600 мм) уп. 10 шт, 6м2",
                 "key": "izovat_45_50",
                 "price": 501.47,
+                "salePrice": 0,
                 "weight": 9,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1340,6 +1428,7 @@
                 "label": "45 (100х1000х600 мм) уп. 5 шт, 6м2",
                 "key": "izovat_45_100",
                 "price": 501.47,
+                "salePrice": 0,
                 "weight": 13.5,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1348,6 +1437,7 @@
                 "label": "80 (50х1000х600 мм) уп. 6 шт, 3.6м2",
                 "key": "izovat_80_50",
                 "price": 470.18,
+                "salePrice": 0,
                 "weight": 14.4,
                 "volume": 0.18,
                 "movingTypeCalculation": "weight"
@@ -1356,6 +1446,7 @@
                 "label": "80 (100х1000х600 мм) уп. 4 шт, 2.4м2",
                 "key": "izovat_80_100",
                 "price": 626.9,
+                "salePrice": 0,
                 "weight": 19.2,
                 "volume": 0.24,
                 "movingTypeCalculation": "weight"
@@ -1364,6 +1455,7 @@
                 "label": "135 (30х1000х600 мм) уп. 6 шт, 3.6м2",
                 "key": "izovat_135_30",
                 "price": 424.59,
+                "salePrice": 0,
                 "weight": 14.58,
                 "volume": 0.108,
                 "movingTypeCalculation": "weight"
@@ -1372,6 +1464,7 @@
                 "label": "135 (50х1000х600 мм) уп. 4 шт, 2.4м2",
                 "key": "izovat_135_50",
                 "price": 471.74,
+                "salePrice": 0,
                 "weight": 16.2,
                 "volume": 0.12,
                 "movingTypeCalculation": "weight"
@@ -1380,6 +1473,7 @@
                 "label": "135 (100х1000х600 мм) уп. 2 шт, 1.2м2",
                 "key": "izovat_135_100",
                 "price": 471.74,
+                "salePrice": 0,
                 "weight": 16.2,
                 "volume": 0.12,
                 "movingTypeCalculation": "weight"
@@ -1388,6 +1482,7 @@
                 "label": "135 (150х1000х600 мм) уп. 2 шт, 1.2м2",
                 "key": "izovat_135_150",
                 "price": 707.62,
+                "salePrice": 0,
                 "weight": 24.3,
                 "volume": 0.18,
                 "movingTypeCalculation": "weight"
@@ -1396,6 +1491,7 @@
                 "label": "145 (50х1000х600 мм) уп. 4 шт, 2.4м2",
                 "key": "izovat_145_50",
                 "price": 506.69,
+                "salePrice": 0,
                 "weight": 16.2,
                 "volume": 0.12,
                 "movingTypeCalculation": "weight"
@@ -1404,6 +1500,7 @@
                 "label": "145 (150х1000х600 мм) уп. 2 шт, 1.2м2",
                 "key": "izovat_145_150",
                 "price": 760.03,
+                "salePrice": 0,
                 "weight": 26,
                 "volume": 0.18,
                 "movingTypeCalculation": "weight"
@@ -1418,6 +1515,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 252.7,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1428,6 +1526,7 @@
                 "label": "НТ Лайт 30 (1000*600*50 мм) уп. 12 шт., 7,2м2",
                 "key": "nt_30_50",
                 "price": 408.84,
+                "salePrice": 0,
                 "weight": 10.8,
                 "volume": 0.36,
                 "movingTypeCalculation": "weight"
@@ -1436,6 +1535,7 @@
                 "label": "НТ Лайт 30 (1000*600*100 мм) уп. 6 шт., 3,6м2",
                 "key": "nt_30_100",
                 "price": 392.02,
+                "salePrice": 0,
                 "weight": 10.8,
                 "volume": 0.36,
                 "movingTypeCalculation": "weight"
@@ -1444,6 +1544,7 @@
                 "label": "НТ Фасад 135 (1000*600*50 мм) уп. 4 шт., 2,4м2",
                 "key": "nt_135_50",
                 "price": 451.58,
+                "salePrice": 0,
                 "weight": 16.2,
                 "volume": 0.12,
                 "movingTypeCalculation": "weight"
@@ -1452,6 +1553,7 @@
                 "label": "НТ Фасад 135 (1000*600*100 мм) уп. 2 шт., 1,2м2",
                 "key": "nt_135_100",
                 "price": 451.58,
+                "salePrice": 0,
                 "weight": 16.2,
                 "volume": 0.12,
                 "movingTypeCalculation": "weight"
@@ -1460,6 +1562,7 @@
                 "label": "НТ Фасад 135 (1000*600*150 мм) уп. 2 шт., 1,2м2",
                 "key": "nt_135_150",
                 "price": 677.38,
+                "salePrice": 0,
                 "weight": 24.3,
                 "volume": 0.18,
                 "movingTypeCalculation": "weight"
@@ -1481,6 +1584,7 @@
             "weight": 7.93,
             "volume": 0,
             "price": 812.92,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1491,6 +1595,7 @@
                 "label": "50x610x1250mm, 16 шт., 12,2м2",
                 "key": "ekoboard_50",
                 "price": 804.45,
+                "salePrice": 0,
                 "weight": 8.5,
                 "volume": 0.61,
                 "movingTypeCalculation": "weight"
@@ -1499,6 +1604,7 @@
                 "label": "100x610x1250mm, 8 шт., 6,1м2",
                 "key": "ekoboard_100",
                 "price": 804.45,
+                "salePrice": 0,
                 "weight": 8.5,
                 "volume": 0.61,
                 "movingTypeCalculation": "weight"
@@ -1507,6 +1613,7 @@
                 "label": "150x610x1250mm, 5 шт., 3,81м2",
                 "key": "ekoboard_150",
                 "price": 804.45,
+                "salePrice": 0,
                 "weight": 8.5,
                 "volume": 0.61,
                 "movingTypeCalculation": "weight"
@@ -1521,6 +1628,7 @@
             "weight": 7.93,
             "volume": 0,
             "price": 1191.5,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1531,6 +1639,7 @@
                 "label": "50x610x1250mm, 16 шт., 12,2м2",
                 "key": "naturboard_50",
                 "price": 1191.5,
+                "salePrice": 0,
                 "weight": 8.5,
                 "volume": 0.61,
                 "movingTypeCalculation": "weight"
@@ -1539,6 +1648,7 @@
                 "label": "100x610x1250mm, 8 шт., 6,1м2",
                 "key": "naturboard_100",
                 "price": 1191.5,
+                "salePrice": 0,
                 "weight": 8.5,
                 "volume": 0.61,
                 "movingTypeCalculation": "weight"
@@ -1553,6 +1663,7 @@
             "weight": 11.2,
             "volume": 0,
             "price": 1052.77,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1563,6 +1674,7 @@
                 "label": "(50+50)x1200x(2x9100мм) рулон 21,84м2",
                 "key": "naturroll_50_50",
                 "price": 1041.8,
+                "salePrice": 0,
                 "weight": 14.5,
                 "volume": 1.1,
                 "movingTypeCalculation": "weight"
@@ -1571,6 +1683,7 @@
                 "label": "100x1200x9100мм рулон 10,92м2",
                 "key": "naturroll_100",
                 "price": 1041.8,
+                "salePrice": 0,
                 "weight": 14.5,
                 "volume": 1.1,
                 "movingTypeCalculation": "weight"
@@ -1580,11 +1693,12 @@
           {
             "id": 25.4,
             "image": "https://i.imgur.com/1LRAI9b.jpeg",
-            "title": "NatuRollPro M (50+50)X1200X(2X7700мм) рулон 18,48м2",
+            "title": "NatuRollPro M (50+50) X 1200 X (2X7700) мм, рулон 18,48м2",
             "description": "NaturrollPro M — це універсальний мінераловатний теплоізоляційний матеріал від компанії Knauf, виготовлений із застосуванням технології ECOSE® Technology. Ця інноваційна технологія дозволяє уникнути використання фенол-формальдегідних смол, що робить матеріал екологічно чистим та безпечним для здоров'я. ",
             "weight": 11.55,
             "volume": 0.924,
             "price": 1062.5,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1600,6 +1714,7 @@
             "weight": 9.76,
             "volume": 0,
             "price": 929.04,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1610,6 +1725,7 @@
                 "label": "50X610X1250мм, 16 шт. 12,2м2",
                 "key": "akustik_board_50",
                 "price": 919.36,
+                "salePrice": 0,
                 "weight": 8.5,
                 "volume": 0.61,
                 "movingTypeCalculation": "weight"
@@ -1618,6 +1734,7 @@
                 "label": "75X610X1250мм, 10 шт. 7,625м2",
                 "key": "akustik_board_100",
                 "price": 861.91,
+                "salePrice": 0,
                 "weight": 8,
                 "volume": 0.572,
                 "movingTypeCalculation": "weight"
@@ -1632,6 +1749,7 @@
             "weight": 5,
             "volume": 0.3,
             "price": 1102.08,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -1654,6 +1772,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 252.7,
+            "salePrice": 0,
             "measure": "м2",
             "quantity": 0,
             "totalPrice": 0,
@@ -1664,6 +1783,7 @@
                 "label": "EPS 40, 1000*500*100 мм, 10 кг/м3(M25), уп. 6 шт., 3м2",
                 "key": "termoformat_40_100",
                 "price": 126.54,
+                "salePrice": 0,
                 "weight": 3.5,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1672,6 +1792,7 @@
                 "label": "EPS 50, 1000*500*50 мм, 11 кг/м3(M25), уп. 12 шт., 6м2",
                 "key": "termoformat_50_50",
                 "price": 67.69,
+                "salePrice": 0,
                 "weight": 3.5,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1680,6 +1801,7 @@
                 "label": "EPS 50, 1000*500*100 мм, 11 кг/м3(M25), уп. 6 шт., 3м2",
                 "key": "termoformat_50_100",
                 "price": 135.37,
+                "salePrice": 0,
                 "weight": 3.5,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1688,6 +1810,7 @@
                 "label": "EPS 50, 1000*500*150 мм, 11 кг/м3(M25), уп. 4 шт., 2м2",
                 "key": "termoformat_50_150",
                 "price": 203.06,
+                "salePrice": 0,
                 "weight": 3.5,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1696,6 +1819,7 @@
                 "label": "EPS 70, 1000*500*20 мм, 13 кг/м3(M35), уп. 30 шт., 15м2",
                 "key": "termoformat_70_20",
                 "price": 31.26,
+                "salePrice": 0,
                 "weight": 4,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1704,6 +1828,7 @@
                 "label": "EPS 70, 1000*500*30 мм, 13 кг/м3(M35), уп. 20 шт., 10м2",
                 "key": "termoformat_70_30",
                 "price": 46.89,
+                "salePrice": 0,
                 "weight": 4,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1712,6 +1837,7 @@
                 "label": "EPS 70, 1000*500*50 мм, 13 кг/м3(M35), уп. 12 шт., 6м2",
                 "key": "termoformat_70_50",
                 "price": 78.15,
+                "salePrice": 0,
                 "weight": 4,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1720,6 +1846,7 @@
                 "label": "EPS 70, 1000*500*100 мм, 13 кг/м3(M35), уп. 6 шт., 3м2",
                 "key": "termoformat_70_100",
                 "price": 156.29,
+                "salePrice": 0,
                 "weight": 4,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1728,6 +1855,7 @@
                 "label": "EPS 70, 1000*500*150 мм, 13 кг/м3(M35), уп. 4 шт., 2м2",
                 "key": "termoformat_70_150",
                 "price": 234.44,
+                "salePrice": 0,
                 "weight": 4,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1736,6 +1864,7 @@
                 "label": "EPS 80, 1000*500*20 мм, 15 кг/м3(M35), уп. 30 шт., 15м2",
                 "key": "termoformat_80_20",
                 "price": 35.52,
+                "salePrice": 0,
                 "weight": 4.5,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1744,6 +1873,7 @@
                 "label": "EPS 80, 1000*500*30 мм, 15 кг/м3(M35), уп. 20 шт., 10м2",
                 "key": "termoformat_80_30",
                 "price": 53.28,
+                "salePrice": 0,
                 "weight": 4.5,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1752,6 +1882,7 @@
                 "label": "EPS 80, 1000*500*50 мм, 13 кг/м3(M35), уп. 12 шт., 6м2",
                 "key": "termoformat_80_50",
                 "price": 88.81,
+                "salePrice": 0,
                 "weight": 4,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1760,6 +1891,7 @@
                 "label": "EPS 80, 1000*500*100 мм, 15 кг/м3(M35), уп. 6 шт., 3м2",
                 "key": "termoformat_80_100",
                 "price": 177.61,
+                "salePrice": 0,
                 "weight": 4.5,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1774,6 +1906,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 252.7,
+            "salePrice": 0,
             "measure": "м2",
             "quantity": 0,
             "totalPrice": 0,
@@ -1784,6 +1917,7 @@
                 "label": "EPS 50, 1000*500*50 мм, 11 кг/м3(M25), уп. 12 шт., 6м2",
                 "key": "vikbud_50_50",
                 "price": 67.69,
+                "salePrice": 0,
                 "weight": 3.5,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1792,6 +1926,7 @@
                 "label": "EPS 50, 1000*500*100 мм, 11 кг/м3(M25), уп. 6 шт., 3м2",
                 "key": "vikbud_50_100",
                 "price": 135.37,
+                "salePrice": 0,
                 "weight": 3.5,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1800,6 +1935,7 @@
                 "label": "EPS 70, 1000*500*20 мм, 13 кг/м3(M35), уп. 30 шт., 15м2",
                 "key": "vikbud_70_20",
                 "price": 31.26,
+                "salePrice": 0,
                 "weight": 4,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1808,6 +1944,7 @@
                 "label": "EPS 70, 1000*500*30 мм, 13 кг/м3(M35), уп. 20 шт., 10м2",
                 "key": "vikbud_70_30",
                 "price": 46.89,
+                "salePrice": 0,
                 "weight": 4,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1816,6 +1953,7 @@
                 "label": "EPS 70, 1000*500*50 мм, 13 кг/м3(M35), уп. 12 шт., 6м2",
                 "key": "vikbud_70_50",
                 "price": 78.15,
+                "salePrice": 0,
                 "weight": 4,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1824,6 +1962,7 @@
                 "label": "EPS 70, 1000*500*100 мм, 13 кг/м3(M35), уп. 6 шт., 3м2",
                 "key": "vikbud_70_100",
                 "price": 156.29,
+                "salePrice": 0,
                 "weight": 4,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1832,6 +1971,7 @@
                 "label": "EPS 80, 1000*500*30 мм, 15 кг/м3(M35), уп. 20 шт., 10м2",
                 "key": "vikbud_80_30",
                 "price": 53.28,
+                "salePrice": 0,
                 "weight": 4.5,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1840,6 +1980,7 @@
                 "label": "EPS 80, 1000*500*50 мм, 13 кг/м3(M35), уп. 12 шт., 6м2",
                 "key": "vikbud_80_50",
                 "price": 88.81,
+                "salePrice": 0,
                 "weight": 4,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1848,6 +1989,7 @@
                 "label": "EPS 80, 1000*500*100 мм, 15 кг/м3(M35), уп. 6 шт., 3м2",
                 "key": "vikbud_80_100",
                 "price": 177.61,
+                "salePrice": 0,
                 "weight": 4.5,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1869,6 +2011,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 252.7,
+            "salePrice": 0,
             "measure": "лист",
             "quantity": 0,
             "totalPrice": 0,
@@ -1879,6 +2022,7 @@
                 "label": "товщина 10мм, лист 1200*550, уп. 15 шт.(9.9м2)",
                 "key": "penoboard_10",
                 "price": 36.36,
+                "salePrice": 0,
                 "weight": 3,
                 "volume": 0.1,
                 "movingTypeCalculation": "weight"
@@ -1887,6 +2031,7 @@
                 "label": "товщина 20мм, лист 1200*550, уп. 21 шт.(13.86м2)",
                 "key": "penoboard_20",
                 "price": 61.88,
+                "salePrice": 0,
                 "weight": 9.7,
                 "volume": 0.27,
                 "movingTypeCalculation": "weight"
@@ -1895,6 +2040,7 @@
                 "label": "товщина 30мм, лист 1200*550, уп. 14 шт.(9.24м2)",
                 "key": "penoboard_30",
                 "price": 91.74,
+                "salePrice": 0,
                 "weight": 9.7,
                 "volume": 0.27,
                 "movingTypeCalculation": "weight"
@@ -1903,6 +2049,7 @@
                 "label": "товщина 40мм, лист 1200*550, уп. 10 шт.(6.6м2)",
                 "key": "penoboard_40",
                 "price": 119.3,
+                "salePrice": 0,
                 "weight": 9.7,
                 "volume": 0.27,
                 "movingTypeCalculation": "weight"
@@ -1911,6 +2058,7 @@
                 "label": "товщина 50мм, лист 1200*550 мм, уп. 8 шт.(5.28м2)",
                 "key": "penoboard_50",
                 "price": 147.52,
+                "salePrice": 0,
                 "weight": 9.7,
                 "volume": 0.27,
                 "movingTypeCalculation": "weight"
@@ -1919,6 +2067,7 @@
                 "label": "товщина 100мм, лист 1250*600 мм, уп. 4 шт.(3м2)",
                 "key": "penoboard_100",
                 "price": 343.39,
+                "salePrice": 0,
                 "weight": 10.5,
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
@@ -1933,6 +2082,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 252.7,
+            "salePrice": 0,
             "measure": "лист",
             "quantity": 0,
             "totalPrice": 0,
@@ -1943,6 +2093,7 @@
                 "label": "товщина 20мм, лист 1180*580, уп. 20 шт.(14.4м2)",
                 "key": "carbolex_eco_20",
                 "price": 36.36,
+                "salePrice": 0,
                 "weight": 0.5,
                 "volume": 0.014,
                 "movingTypeCalculation": "weight"
@@ -1951,6 +2102,7 @@
                 "label": "товщина 30мм, лист 1180*580, уп. 13 шт.(8.9м2)",
                 "key": "carbolex_eco_30",
                 "price": 91.91,
+                "salePrice": 0,
                 "weight": 0.62,
                 "volume": 0.02,
                 "movingTypeCalculation": "weight"
@@ -1959,6 +2111,7 @@
                 "label": "товщина 40мм, лист 1180*580, уп. 10 шт.(6.85м2)",
                 "key": "carbolex_eco_40",
                 "price": 117.5,
+                "salePrice": 0,
                 "weight": 0.83,
                 "volume": 0.027,
                 "movingTypeCalculation": "weight"
@@ -1967,6 +2120,7 @@
                 "label": "товщина 50мм, лист 1180*580, уп. 8 шт.(5.47м2)",
                 "key": "carbolex_eco_50",
                 "price": 146.23,
+                "salePrice": 0,
                 "weight": 1,
                 "volume": 0.034,
                 "movingTypeCalculation": "weight"
@@ -1975,6 +2129,7 @@
                 "label": "товщина 100мм (2x50), лист 1180*580, уп. 4 шт.(2.74м2)",
                 "key": "carbolex_eco_100",
                 "price": 302.64,
+                "salePrice": 0,
                 "weight": 2,
                 "volume": 0.068,
                 "movingTypeCalculation": "weight"
@@ -1989,6 +2144,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 252.7,
+            "salePrice": 0,
             "measure": "лист",
             "quantity": 0,
             "totalPrice": 0,
@@ -1999,6 +2155,7 @@
                 "label": "товщина 30мм, лист 1180*580, уп. 13 шт.(8.9м2)",
                 "key": "carbolex_eco_fas_30",
                 "price": 94.19,
+                "salePrice": 0,
                 "weight": 0.62,
                 "volume": 0.02,
                 "movingTypeCalculation": "weight"
@@ -2007,6 +2164,7 @@
                 "label": "товщина 40мм, лист 1180*580, уп. 10 шт.(6.85м2)",
                 "key": "carbolex_eco_fas_40",
                 "price": 120.55,
+                "salePrice": 0,
                 "weight": 0.83,
                 "volume": 0.027,
                 "movingTypeCalculation": "weight"
@@ -2015,6 +2173,7 @@
                 "label": "товщина 50мм, лист 1180*580, уп. 8 шт.(5.47м2)",
                 "key": "carbolex_eco_fas_50",
                 "price": 150.05,
+                "salePrice": 0,
                 "weight": 1,
                 "volume": 0.034,
                 "movingTypeCalculation": "weight"
@@ -2023,6 +2182,7 @@
                 "label": "товщина 100мм (2x50), лист 1180*580, уп. 4 шт.(2.74м2)",
                 "key": "carbolex_eco_fas_100",
                 "price": 310.27,
+                "salePrice": 0,
                 "weight": 2,
                 "volume": 0.068,
                 "movingTypeCalculation": "weight"
@@ -2044,6 +2204,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 187.2,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2059,6 +2220,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 211.2,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2074,6 +2236,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 153.89,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2089,6 +2252,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 276.56,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2104,6 +2268,7 @@
             "weight": 27,
             "volume": 0.027,
             "price": 315.39,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2126,6 +2291,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 225.6,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2141,6 +2307,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 211.2,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2156,6 +2323,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 202.78,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2171,6 +2339,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 392.88,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2186,6 +2355,7 @@
             "weight": 27,
             "volume": 0.027,
             "price": 483.95,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2201,6 +2371,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 369.0,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2223,6 +2394,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 225.6,
+            "salePrice": 0,
             "measure": "шт",
             "quantity": 0,
             "totalPrice": 0,
@@ -2233,6 +2405,7 @@
                 "label": "10x100 мм.",
                 "key": "amex_metal_10x100",
                 "price": 2.98,
+                "salePrice": 0,
                 "weight": 0.07,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2241,6 +2414,7 @@
                 "label": "10x120 мм.",
                 "key": "amex_metal_10x120",
                 "price": 3.37,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2249,6 +2423,7 @@
                 "label": "10x140 мм.",
                 "key": "amex_metal_10x140",
                 "price": 3.14,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2257,6 +2432,7 @@
                 "label": "10x160 мм.",
                 "key": "amex_metal_10x160",
                 "price": 4.2,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2265,6 +2441,7 @@
                 "label": "10x180 мм.",
                 "key": "amex_metal_10x180",
                 "price": 4.5,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2273,6 +2450,7 @@
                 "label": "10x200 мм.",
                 "key": "amex_metal_10x200",
                 "price": 4.08,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2281,6 +2459,7 @@
                 "label": "10x220 мм.",
                 "key": "amex_metal_10x220",
                 "price": 5.34,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2289,6 +2468,7 @@
                 "label": "10x240 мм.",
                 "key": "amex_metal_10x240",
                 "price": 5.45,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2297,6 +2477,7 @@
                 "label": "10x260 мм.",
                 "key": "amex_metal_10x260",
                 "price": 5.87,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2305,6 +2486,7 @@
                 "label": "10x300 мм.",
                 "key": "amex_metal_10x300",
                 "price": 6.49,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2319,6 +2501,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 225.6,
+            "salePrice": 0,
             "measure": "шт",
             "quantity": 0,
             "totalPrice": 0,
@@ -2329,6 +2512,7 @@
                 "label": "10x100 мм.",
                 "key": "metal_10x100",
                 "price": 2.43,
+                "salePrice": 0,
                 "weight": 0.07,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2337,6 +2521,7 @@
                 "label": "10x120 мм.",
                 "key": "metal_10x120",
                 "price": 2.74,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2345,6 +2530,7 @@
                 "label": "10x140 мм.",
                 "key": "metal_10x140",
                 "price": 2.96,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2353,6 +2539,7 @@
                 "label": "10x160 мм.",
                 "key": "metal_10x160",
                 "price": 3.29,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2361,6 +2548,7 @@
                 "label": "10x180 мм.",
                 "key": "metal_10x180",
                 "price": 3.51,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2369,6 +2557,7 @@
                 "label": "10x200 мм.",
                 "key": "metal_10x200",
                 "price": 4.06,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2377,6 +2566,7 @@
                 "label": "10x220 мм.",
                 "key": "metal_10x220",
                 "price": 4.02,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2391,6 +2581,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 225.6,
+            "salePrice": 0,
             "measure": "шт",
             "quantity": 0,
             "totalPrice": 0,
@@ -2401,6 +2592,7 @@
                 "label": "10x70 мм.",
                 "key": "plastic_10x70",
                 "price": 0.98,
+                "salePrice": 0,
                 "weight": 0.07,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2409,6 +2601,7 @@
                 "label": "10x80 мм.",
                 "key": "plastic_10x80",
                 "price": 2.74,
+                "salePrice": 0,
                 "weight": 1.09,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2417,6 +2610,7 @@
                 "label": "10x90 мм.",
                 "key": "plastic_10x90",
                 "price": 1.36,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2425,6 +2619,7 @@
                 "label": "10x100 мм.",
                 "key": "plastic_10x100",
                 "price": 1.52,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2433,6 +2628,7 @@
                 "label": "10x120 мм.",
                 "key": "plastic_10x120",
                 "price": 1.41,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2441,6 +2637,7 @@
                 "label": "10x140 мм.",
                 "key": "plastic_10x140",
                 "price": 1.84,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2449,6 +2646,7 @@
                 "label": "10x160 мм.",
                 "key": "plastic_10x160",
                 "price": 1.95,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2457,6 +2655,7 @@
                 "label": "10x180 мм.",
                 "key": "plastic_10x180",
                 "price": 2.19,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -2465,11 +2664,212 @@
                 "label": "10x200 мм.",
                 "key": "plastic_10x200",
                 "price": 2.25,
+                "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
             ]
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "categoryTitle": "Сітка штукатурна армуюча (скловолокно)",
+        "isCategoryOpen": false,
+        "materials": [
+          {
+            "id": 9.1,
+            "image": "https://i.imgur.com/bijPpG4.jpeg",
+            "title": "Штукатурна сітка 145 г/м2 WORKS Синя, 5ммх5мм, рулон 1м*50м",
+            "description": "Застосовується для армування поверхні, захисту поверхні від тріщин, гідроізоляції будівель, внутрішній обробки різних споруд. Висока опірність до розривів і розтягувань. Висока стійкість до впливу лужних розчинів. Запобігає утворенню тріщин в штукатурному шарі.",
+            "weight": 8,
+            "volume": 0.05,
+            "price": 535.8,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "",
+            "configurableList": []
+          },
+          {
+            "id": 9.2,
+            "image": "https://i.imgur.com/XSDCXY2.jpeg",
+            "title": "  Штукатурна сітка 160 г/м2 WORKS PRO ПОМАРАНЧЕВА, 5ммх5мм, рулон 1м*50м ",
+            "description": "Застосовується для армування поверхні, захисту поверхні від тріщин, гідроізоляції будівель, внутрішній обробки різних споруд. Висока опірність до розривів і розтягувань. Висока стійкість до впливу лужних розчинів. Запобігає утворенню тріщин в штукатурному шарі.",
+            "weight": 8,
+            "volume": 0.05,
+            "price": 535.8,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "",
+            "configurableList": []
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "categoryTitle": "Профіль кутовий перфорований",
+        "isCategoryOpen": false,
+        "materials": [
+          {
+            "id": 19.11,
+            "image": "https://i.ibb.co/4wn8G75x/thermomaster-50mm-2-5m.jpg",
+            "title": "Профіль цокольний",
+            "description": "Матеріал цокольного UL-профілю - гнутий алюміній з перфорацією і крапельним приливом для забезпечення естетичного і ударостійкого оформлення нижніх кутів в системах термоізоляції фасадів. Крапельний прилив служить захистом від проникнення води під утеплювач. Зручна ширина профілю 50 мм і 100 мм ідеально поєднується з товщиною теплоізоляційного матеріалу, будь то мінеральна вата або пінополістирол.",
+            "weight": 0.1,
+            "volume": 0.01,
+            "price": 97.83,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "",
+            "configurableList": [
+              {
+                "label": "50 мм (0.5 мм), 2.5 м",
+                "key": "50_2.5",
+                "price": 97.83,
+                "salePrice": 0,
+                "weight": 1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "100 мм (0.5 мм), 2.5 м",
+                "key": "100_2.5",
+                "price": 147.02,
+                "salePrice": 0,
+                "weight": 1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "153 мм (0.5 мм), 2.5 м",
+                "key": "153_2.5",
+                "price": 216.65,
+                "salePrice": 0,
+                "weight": 1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
+          },
+          {
+            "id": 19.1,
+            "image": "https://i.imgur.com/OLWRs1w.jpeg",
+            "title": "Профіль кутовий перфорований алюмінієвий",
+            "description": "Профіль кутовий перфорований алюмінієвий — це будівельний елемент, призначений для захисту та армування зовнішніх кутів стін, гіпсокартонних перегородок та відкосів. Він забезпечує точну геометрію кутів, захищає їх від механічних пошкоджень та сприяє покращенню якості оздоблювальних робіт.",
+            "weight": 1,
+            "volume": 0,
+            "price": 16.82,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "",
+            "configurableList": [
+              {
+                "label": "18.5x18.5 (0.25) 2.5м",
+                "key": "prof_alum_18.5_2.5",
+                "price": 18.04,
+                "salePrice": 0,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "18.5x18.5 (0.25) 3м",
+                "key": "prof_alum_18.5_3",
+                "price": 21.64,
+                "salePrice": 0,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "20x20 (0.3) 2.5м",
+                "key": "prof_alum_20_2.5",
+                "price": 21.64,
+                "salePrice": 0,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "20x20 (0.3) 3м",
+                "key": "prof_alum_20_3",
+                "price": 25.98,
+                "salePrice": 0,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "30x30 (0.4) 3м",
+                "key": "prof_alum_30_3",
+                "price": 54.21,
+                "salePrice": 0,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
+          },
+          {
+            "id": 19.2,
+            "image": "https://i.imgur.com/8KbsZq9.jpeg",
+            "title": "Профіль кутовий перфорований алюмінієвий з сіткою 7x7 см 3м",
+            "description": "Профіль кутовий перфорований алюмінієвий — це будівельний елемент, призначений для захисту та армування зовнішніх кутів стін, гіпсокартонних перегородок та відкосів. Він забезпечує точну геометрію кутів, захищає їх від механічних пошкоджень та сприяє покращенню якості оздоблювальних робіт.",
+            "weight": 0.1,
+            "volume": 0.01,
+            "price": 34.5,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "",
+            "configurableList": []
+          },
+          {
+            "id": 19.3,
+            "image": "https://i.imgur.com/9dX4SWT.jpeg",
+            "title": "Профіль кутовий перфорований пластиковий 3м",
+            "description": "Профіль кутовий перфорований пластиковий — це будівельний елемент, призначений для захисту та армування зовнішніх кутів стін, гіпсокартонних перегородок та відкосів. Він забезпечує точну геометрію кутів, захищає їх від механічних пошкоджень та сприяє покращенню якості оздоблювальних робіт.",
+            "weight": 0.1,
+            "volume": 0.001,
+            "price": 10.47,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "",
+            "configurableList": []
+          },
+          {
+            "id": 19.4,
+            "image": "https://i.imgur.com/l2JIUCZ.jpeg",
+            "title": "Профіль кутовий перфорований пластиковий з сіткою 7x7 см 3м",
+            "description": "Профіль кутовий перфорований пластиковий — це будівельний елемент, призначений для захисту та армування зовнішніх кутів стін, гіпсокартонних перегородок та відкосів. Він забезпечує точну геометрію кутів, захищає їх від механічних пошкоджень та сприяє покращенню якості оздоблювальних робіт.",
+            "weight": 0.1,
+            "volume": 0.001,
+            "price": 30.75,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "",
+            "configurableList": []
           }
         ]
       },
@@ -2486,6 +2886,7 @@
             "weight": 10,
             "volume": 0.01,
             "price": 867.02,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2501,6 +2902,7 @@
             "weight": 10,
             "volume": 0.01,
             "price": 355.2,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2516,6 +2918,7 @@
             "weight": 10,
             "volume": 0.01,
             "price": 435.1,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2531,6 +2934,7 @@
             "weight": 10,
             "volume": 0.01,
             "price": 232.78,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2553,6 +2957,7 @@
             "weight": 10,
             "volume": 0.01,
             "price": 873.6,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2568,6 +2973,7 @@
             "weight": 10,
             "volume": 0.01,
             "price": 791.96,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2583,6 +2989,7 @@
             "weight": 10,
             "volume": 0.01,
             "price": 1054.62,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2591,6 +2998,429 @@
             "configurableList": []
           }
         ]
+      },
+      {
+        "id": 10401,
+        "categoryTitle": "Декоративна штукатурка полімерна (готова)",
+        "isCategoryOpen": false,
+        "materials": [
+          {
+            "id": 10401.1,
+            "image": "https://i.ibb.co/8nk3GZDx/11.jpg",
+            "title": "CERESIT CT-60 Штукатурка декоративна акрилова камінцева, 25кг",
+            "description": "CERESIT® CT 60 — штукатурка полімерна для декоративного оздоблення бетонних, цементно-піщаних, цементно-вапняних, гіпсових та інших мінеральних поверхонь, а також гіпсокартону чи OSB всередині та зовні будівель. Рекомендована для влаштування оздоблювально-захисного шару в системі фасадної теплоізоляції. Використовується для декоративного оздоблення стін в приміщеннях з нормальною та підвищеною вологістю. Див. тех. опис продукту.",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 873.6,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://www.ceresit.ua/catalog/uteplennja-fasadiv/polimerni-stukaturky/produkti.html/ceresit-ct-60-acrylic-elastic-/SAP_0201IDC014K0.html",
+            "configurableList": [
+              {
+                "label": "БАЗА прозора 1.5 мм",
+                "key": "ct60_prozora_1.5",
+                "price": 2450.0,
+                "salePrice": 1749.29,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "БАЗА біла 1.5 мм",
+                "key": "ct60_bila_1.5",
+                "price": 2439.0,
+                "salePrice": 1741.42,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "БАЗА біла 2.5 мм",
+                "key": "ct60_bila_2.5",
+                "price": 2439.0,
+                "salePrice": 1741.42,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              }
+            ]
+          },
+          {
+            "id": 10401.2,
+            "image": "https://i.ibb.co/ycx7fVRT/13.jpg",
+            "title": "CERESIT CT-64 БАЗА (2мм) Штукатурка декоративна акрилова короїд, 25кг",
+            "description": "CERESIT® СТ 64 — штукатурка полімерна для декоративного оздоблення бетонних, цементно-піщаних, цементно-вапняних, гіпсових та інших мінеральних поверхонь, а також гіпсокартону чи OSB (деревостружкових плит) усередині та зовні будівель. Рекомендується для влаштування оздоблювально-захисного шару в системі фасадної теплоізоляції. Використовується для декоративного оздоблення стін у приміщеннях з нормальною та підвищеною вологістю. Див. тех. опис продукту.",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 2333.0,
+            "salePrice": 1665.74,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://www.ceresit.ua/catalog/uteplennja-fasadiv/polimerni-stukaturky/produkti.html/ceresit-ct-64/SAP_0201IDC014K4.html",
+            "configurableList": []
+          },
+          {
+            "id": 10401.3,
+            "image": "https://i.ibb.co/rKvMf7Ph/12.jpg",
+            "title": "CERESIT CT-74 Штукатурка декоративна силіконова камінцева, 25кг",
+            "description": "CERESIT® CT 74 — штукатурка полімерна для декоративного оздоблення бетонних, цементно-піщаних, цементно-вапняних, гіпсових та інших мінеральних поверхонь, а також гіпсокартону чи OSB всередині та зовні будівель. Рекомендується для влаштування оздоблювально-захисного шару в системі фасадної теплоізоляції (на пінополістирольній та мінераловатній основах). Використовується для декоративного оздоблення стін у приміщеннях з нормальною та підвищеною вологістю. ",
+            "weight": 10,
+            "volume": 0.01,
+            "price": 873.6,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://www.ceresit.ua/catalog/uteplennja-fasadiv/polimerni-stukaturky/produkti.html/ceresit-ct-74/SAP_0201IDC014L4.html",
+            "configurableList": [
+              {
+                "label": "БАЗА біла 1.5 мм",
+                "key": "ct74_bila_1.5",
+                "price": 3940.0,
+                "salePrice": 2813.12,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "БАЗА біла 2.5 мм",
+                "key": "ct74_bila_2.5",
+                "price": 3940.0,
+                "salePrice": 2813.12,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              }
+            ]
+          },
+          {
+            "id": 10401.4,
+            "image": "https://i.ibb.co/HLPkww7V/14.jpg",
+            "title": "CERESIT CT 174 Штукатурка декоративна силікон-силікатна камінцева, 25кг",
+            "description": "CERESIT® CT 174 — штукатурка полімерна для декоративного оздоблення мінеральних поверхонь, а також гіпсокартону чи OSB всередині та зовні будівель. Рекомендована для влаштування оздоблювально-захисного шару в системі фасадної теплоізоляції (на пінополістирольній та мінераловатній основах). Для декоративного оздоблення стін в приміщеннях з нормальною та підвищеною вологістю. Див. тех. опис продукту. ",
+            "weight": 10,
+            "volume": 0.01,
+            "price": 873.6,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://www.ceresit.ua/catalog/uteplennja-fasadiv/polimerni-stukaturky/produkti.html/ceresit-ct-174/SAP_0201IDC014F2.html",
+            "configurableList": [
+              {
+                "label": "БАЗА прозора 1.5 мм",
+                "key": "ct174_prozora_1.5",
+                "price": 3230.0,
+                "salePrice": 2306.19,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "БАЗА біла 1.5 мм",
+                "key": "ct174_bila_1.5",
+                "price": 3230.0,
+                "salePrice": 2306.19,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              }
+            ]
+          },
+          {
+            "id": 10401.5,
+            "image": "https://i.ibb.co/Kj7X35XX/ceresit-ct-175-500x500.png",
+            "title": "CERESIT CT 175 БАЗА Штукатурка декоративна силікон-силікатна короїд (зерно 2мм), 25кг",
+            "description": "CERESIT® CT 175 — штукатурка полімерна для декоративного оздоблення мінеральних поверхонь, а також гіпсокартону чи OSB всередині та зовні будівель. Рекомендована для влаштування оздоблювально-захисного шару в системі фасадної теплоізоляції (на пінополістирольній та мінераловатній основах). Для декоративного оздоблення стін в приміщеннях з нормальною та підвищеною вологістю. Див. тех. опис продукту. ",
+            "weight": 10,
+            "volume": 0.01,
+            "price": 3099.0,
+            "salePrice": 2012.66,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://www.ceresit.ua/catalog/uteplennja-fasadiv/polimerni-stukaturky/produkti.html/ceresit-ct-174/SAP_0201IDC014F2.html",
+            "configurableList": []
+          },
+          {
+            "id": 10401.6,
+            "image": "https://i.ibb.co/xSV8DXkX/siltek-decor.jpg",
+            "title": " Siltek Decor Камінцева Штукатурка декоративна, камінцева 1,5 мм. База DА, 25 кг",
+            "description": "Siltek Decor — це готова до застосування тонкошарова акрилова декоративна штукатурка, призначена для оздоблення мінеральних поверхонь як усередині, так і зовні будівель. Вона утворює довговічне покриття, стійке до дії вологи, ультрафіолетового випромінювання, високих та низьких температур. Штукатурка паропроникна, водо- та морозостійка, приховує недоліки поверхні та не потребує додаткового фінішного пофарбування. Завдяки своїм властивостям, Siltek Decor забезпечує надійний захист фасадів від водоростей, плісняви та грибків, а також має екологічний сертифікат.",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 1622.4,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://siltek.ua/product/decor/",
+            "configurableList": []
+          },
+          {
+            "id": 10401.7,
+            "image": "https://i.ibb.co/GQdS55LW/siltek-silicon-decor-pro.jpg",
+            "title": "Siltek Decor Silicon Pro Штукатурка декоративна силіконова, камінцева 1,5 мм, база DА, 25 кг",
+            "description": "Siltek Decor Silicon Pro — це готова до застосування тонкошарова силіконова декоративна штукатурка, армована мікроволокном, призначена для оздоблення мінеральних поверхонь зовні будівель. Вона забезпечує надійний захист фасаду від інтенсивних атмосферних впливів, має високу паропроникність та властивості самоочищення. Завдяки еластичності та армуючим волокнам, штукатурка запобігає утворенню мікротріщин, зберігає яскравість кольорів протягом тривалого часу та забезпечує додатковий захист від водоростей, плісняви та грибків. Рекомендується для фінішного оздоблення фасадів, зокрема в системах теплоізоляції з мінераловатним утеплювачем.",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 2385.0,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://siltek.ua/product/decor_silicon_pro/",
+            "configurableList": []
+          },
+          {
+            "id": 10401.8,
+            "image": "https://i.ibb.co/Rk9kmpVF/kreisel-010.jpg",
+            "title": "Kreisel AKRYTYNK 010 PL Штукатурка декоративна акрилова",
+            "description": "Акрилова фасадна штукатурка Kreisel 010 Баранець готова до використання штукатурна суміш призначена для ручного та механізованого нанесення декоративної рельєфної штукатурки на рівний і стійкий шар мінеральних традиційних штукатурок, на гіпсокартонні і гіпсоволокнисті плити, а також на базовий армований шар у системах утеплення зовнішніх стін будинків ТМ KREISEL TURBO. В залежності від вмісту та розміру зерна мінерального заповнювача, можливе отримання різних фактур типу баранець. ",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 2385.0,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://kreisel.com.ua/ru/akrilova-shtukaturka-baranecz-baza-a-kreisel-akrytynk-010-25-kg/",
+            "configurableList": [
+              {
+                "label": "БАЗА A 1.5 мм",
+                "key": "010_baza_a_1.5",
+                "price": 1599.96,
+                "salePrice": 0,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "БАЗА A 2 мм",
+                "key": "010_baza_a_2",
+                "price": 1599.96,
+                "salePrice": 0,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "БАЗА B 1.5 мм",
+                "key": "010_baza_b_1.5",
+                "price": 1519.96,
+                "salePrice": 0,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              }
+            ]
+          },
+          {
+            "id": 10401.9,
+            "image": "https://i.ibb.co/F4NpLT8T/kreisel-040.jpg",
+            "title": "Kreisel SISITYNK 040 Штукатурка декоративна силікатно-силікон. барашек зерно 1,5мм, 25кг",
+            "description": "Силікатно-силіконова фасадна штукатурка Kreisel 040 (баранець) готова до використання штукатурна суміш призначена для ручного та механізованого нанесення декоративної рельєфної штукатурки на шар мінеральних традиційних штукатурок, на гіпсокартонні і гіпсоволокнисті плити, а також на базовий армований шар у системах утеплення зовнішніх стін будинків ТМ KREISEL TURBO. В залежності від вмісту та розміру зерна мінерального заповнювача, можливе отримання різних фактур типу баранець.",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 2385.0,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://kreisel.com.ua/silikatno-silikonova-shtukaturka-baranecz-baza-a-kreisel-sisitynk-040-25-kg/",
+            "configurableList": [
+              {
+                "label": "БАЗА D 1.5 мм",
+                "key": "040_baza_d_1.5",
+                "price": 1759.96,
+                "salePrice": 0,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "БАЗА B 1.5 мм",
+                "key": "040_baza_b_1.5",
+                "price": 1839.96,
+                "salePrice": 0,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "БАЗА B 1.5 мм",
+                "key": "040_baza_b_1.5",
+                "price": 1519.96,
+                "salePrice": 0,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 10402,
+        "categoryTitle": "Декоративна штукатурка полімерцементна (суха суміш)",
+        "isCategoryOpen": false,
+        "materials": [
+          {
+            "id": 10402.1,
+            "image": "https://i.ibb.co/MxKYms85/ceresit-ct35.png",
+            "title": "CERESIT CT-35 БАЗА Штукатурка декоративна, зерно 2,5 мм,  25 кг",
+            "description": "CERESIT® CT 35 — штукатурка для оздоблення фактурою короїд мінеральних поверхонь всередині та зовні будівель. Для влаштування декоративного шару в системі фасадної теплоізоляції. Для отримання ідеально білої поверхні, яка не потребує додаткового фарбування, застосовувати Ceresit CT 35 пігментовану білу (вказано на упаковці). Для отримання різних кольорів застосовувати Ceresit CT 35 Базу (вказано на упаковці) та пофарбувати фарбами TM Ceresit згідно з призначенням. Див. тех. опис продукту.",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 426.51,
+            "salePrice": 399.0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://www.ceresit.ua/catalog/uteplennja-fasadiv/mineral-ni-sukaturky/produkti.html/ceresit-ct-35/SAP_0201IEC014H8.html",
+            "configurableList": []
+          },
+          {
+            "id": 10402.2,
+            "image": "https://i.ibb.co/wNmmcgkR/ceresit-ct137.jpg",
+            "title": "CERESIT CT-137 Штукатурка камінцева, 25 кг",
+            "description": "CERESIT® CT 137 — штукатурка для оздоблення фактурою «камінець» мінерал. поверхонь усередині та зовні будівель. Для влаштування декоративного шару в системі фасадної теплоізоляції. Для отримання ідеально білої поверхні, яка не потребує додаткового фарбування, застосувати Ceresit CT 137 пігментовану білу (вказано на упаковці). Для отримання різноманітних кольорів застосувати Ceresit CT 137 базу (вказано на упаковці) та пофарбувати фарбами ТМ Ceresit згідно з призначенням. Див. тех. опис продукту.",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 426.51,
+            "salePrice": 399.0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://www.ceresit.ua/catalog/uteplennja-fasadiv/mineral-ni-sukaturky/produkti.html/ceresit-ct-137/SAP_0201IEC014E4.html",
+            "configurableList": [
+              {
+                "label": "Біла 1.5 мм",
+                "key": "ct137_bila_1.5",
+                "price": 1250.0,
+                "salePrice": 974.59,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "Сіра 1.5 мм",
+                "key": "ct137_sira_1.5",
+                "price": 950.0,
+                "salePrice": 722.62,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              }
+            ]
+          },
+          {
+            "id": 10402.3,
+            "image": "https://i.ibb.co/NdWxKffD/siltek-p15.jpg",
+            "title": " SILTEK P-15/25кг Камінцева 1,5мм Декоративна мінеральна штукатурка",
+            "description": "для тонкошарового декоративного опорядження всіх видів мінеральних поверхонь (бетон, гіпсові та цементно-піщані штукатурки, гіпсокартон тощо) всередині та зовні будівель. Рекомендується застосовувати для влаштування декоративного шару в системі фасадної теплоізоляції з використанням мінераловатних та пінополістирольних плит (EPS, XPS). Потребує подальшого покриття водно-дисперсійними фарбами",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 580.8,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://siltek.ua/product/p-15_kamintseva/",
+            "configurableList": []
+          },
+          {
+            "id": 10402.4,
+            "image": "https://i.ibb.co/JWGQX3Fd/kreisel-p100.jpg",
+            "title": "Kreisel P100 Штукатурка мінеральна  декоративна Барашек 25кг",
+            "description": "Kreisel Edelputz Mineralisch P100 баранець - біла, тонкошарова декоративна штукатурка, яка складається з білого цементу, гідратного вапна, мінеральних заповнювачів і добавок, що покращують властивості матеріалу. Декоративна штукатурка призначена для виконання високоякісного тонкошарового декоративного покриття. Має високу паропроникність, морозостійкість, адгезію до основи та стійкість до атмосферних впливів. Може застосовуватися всередині будівель, а також в приміщеннях з підвищеною вологістю. Після змішування з водою утворює однорідну штукатурну масу, що має високу адгезію до основи та легко наноситься.",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 580.8,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://kreisel.com.ua/mineralna-shtukaturka-baranecz-15-mm-kreisel-edelputz-mineralisch-p100-25-kg/",
+            "configurableList": [
+              {
+                "label": "зерно 1.5 мм",
+                "key": "p100_bila_1.5",
+                "price": 562.46,
+                "salePrice": 0,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "зерно 2 мм",
+                "key": "p100_bila_2",
+                "price": 562.46,
+                "salePrice": 0,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              }
+            ]
+          },
+          {
+            "id": 10402.5,
+            "image": "https://i.ibb.co/xK0CF6Fh/kreisel-p110.jpg",
+            "title": "Kreisel P110 Штукатурка мінеральна  декоративна Короїд 25кг",
+            "description": "Kreisel Edelputz Mineralisch P110 короїд 2,0 мм - біла, тонкошарова декоративна штукатурка, яка складається з білого цементу, гідратного вапна, мінеральних заповнювачів і добавок, що покращують властивості матеріалу. Декоративна штукатурка призначена для виконання високоякісного тонкошарового декоративного покриття. Має високу паропроникність, морозостійкість, адгезію до основи та стійкість до атмосферних впливів. Може застосовуватися всередині будівель, а також в приміщеннях з підвищеною вологістю. Після змішування з водою утворює однорідну штукатурну масу, що має високу адгезію до основи та легко наноситься.",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 580.8,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://kreisel.com.ua/mineralna-shtukaturka-koroyid-15-mm-kreisel-edelputz-mineralisch-p110-25-kg/",
+            "configurableList": [
+              {
+                "label": "зерно 2 мм",
+                "key": "p100_bila_1.5",
+                "price": 461.96,
+                "salePrice": 0,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "зерно 3 мм",
+                "key": "p100_bila_2",
+                "price": 461.96,
+                "salePrice": 0,
+                "weight": 25,
+                "volume": 0.025,
+                "movingTypeCalculation": "weight"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 10403,
+        "categoryTitle": "Фарба фасадна",
+        "isCategoryOpen": false,
+        "materials": []
       },
       {
         "id": 105,
@@ -2605,6 +3435,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 40,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2620,6 +3451,7 @@
             "weight": 22.5,
             "volume": 0.15,
             "price": 1188,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2642,6 +3474,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 42.68,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2657,6 +3490,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 76.4,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2679,6 +3513,7 @@
             "weight": 3,
             "volume": 0.001,
             "price": 251.68,
+            "salePrice": 0,
             "measure": "уп. (100шт)",
             "quantity": 0,
             "totalPrice": 0,
@@ -2694,6 +3529,7 @@
             "weight": 3,
             "volume": 0.001,
             "price": 1131.58,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2709,6 +3545,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 6.22,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2724,6 +3561,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 15.63,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2739,6 +3577,7 @@
             "weight": 1,
             "volume": 0.02,
             "price": 78.75,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2754,6 +3593,7 @@
             "weight": 3.5,
             "volume": 0.065,
             "price": 207.5,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2782,6 +3622,7 @@
             "weight": 20,
             "volume": 0,
             "price": 287.66,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2792,6 +3633,7 @@
                 "label": "2000x1200x12.5 мм",
                 "key": "gips_vlg_2000x1200x12.5",
                 "price": 284.54,
+                "salePrice": 0,
                 "weight": 21,
                 "volume": 0.03,
                 "movingTypeCalculation": "gipsSM"
@@ -2800,6 +3642,7 @@
                 "label": "2500x1200x12.5 мм",
                 "key": "gips_vlg_2500x1200x12.5 мм",
                 "price": 355.68,
+                "salePrice": 0,
                 "weight": 24,
                 "volume": 0.0375,
                 "movingTypeCalculation": "gipsMD"
@@ -2808,6 +3651,7 @@
                 "label": "3000x1200x12.5 мм",
                 "key": "gips_vlg_3000x1200x12.5 мм",
                 "price": 426.82,
+                "salePrice": 0,
                 "weight": 27.7,
                 "volume": 0.045,
                 "movingTypeCalculation": "gipsLG"
@@ -2822,6 +3666,7 @@
             "weight": 20,
             "volume": 0,
             "price": 287.66,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2832,6 +3677,7 @@
                 "label": "2000x1200x12.5 мм",
                 "key": "gips_2000x1200x12.5",
                 "price": 242.45,
+                "salePrice": 0,
                 "weight": 17.8,
                 "volume": 0.03,
                 "movingTypeCalculation": "gipsSM"
@@ -2840,6 +3686,7 @@
                 "label": "2500x1200x12.5 мм",
                 "key": "gips_2500x1200x12.5 мм",
                 "price": 303.06,
+                "salePrice": 0,
                 "weight": 22.2,
                 "volume": 0.0375,
                 "movingTypeCalculation": "gipsMD"
@@ -2848,6 +3695,7 @@
                 "label": "3000x1200x12.5 мм",
                 "key": "gips_3000x1200x12.5 мм",
                 "price": 363.67,
+                "salePrice": 0,
                 "weight": 26.6,
                 "volume": 0.045,
                 "movingTypeCalculation": "gipsLG"
@@ -2862,6 +3710,7 @@
             "weight": 20,
             "volume": 0,
             "price": 287.66,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2872,6 +3721,7 @@
                 "label": "2000x1200x9.5 мм",
                 "key": "gips_2000x1200x9.5",
                 "price": 225.89,
+                "salePrice": 0,
                 "weight": 15.6,
                 "volume": 0.03,
                 "movingTypeCalculation": "gipsSM"
@@ -2880,6 +3730,7 @@
                 "label": "2500x1200x9.5 мм",
                 "key": "gips_2500x1200x9.5 мм",
                 "price": 282.36,
+                "salePrice": 0,
                 "weight": 19.5,
                 "volume": 0.0375,
                 "movingTypeCalculation": "gipsMD"
@@ -2901,6 +3752,7 @@
             "weight": 2,
             "volume": 0,
             "price": 81.9,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2911,6 +3763,7 @@
                 "label": "(0.55 мм) - 3м",
                 "key": "prof_cd60_0.55_3",
                 "price": 79.47,
+                "salePrice": 0,
                 "weight": 1.25,
                 "volume": 0.00486,
                 "movingTypeCalculation": "profLG"
@@ -2919,6 +3772,7 @@
                 "label": "(0.55 мм) - 4м",
                 "key": "prof_cd60_0.55_4",
                 "price": 105.96,
+                "salePrice": 0,
                 "weight": 1.67,
                 "volume": 0.00648,
                 "movingTypeCalculation": "profXL"
@@ -2927,6 +3781,7 @@
                 "label": "(0.6 мм ГОСТ) - 3м",
                 "key": "prof_cd60_0.6_3",
                 "price": 105.03,
+                "salePrice": 0,
                 "weight": 1.25,
                 "volume": 0.00486,
                 "movingTypeCalculation": "profLG"
@@ -2935,6 +3790,7 @@
                 "label": "(0.6 мм ГОСТ) - 4м",
                 "key": "prof_cd60_0.6_4",
                 "price": 140.04,
+                "salePrice": 0,
                 "weight": 1.67,
                 "volume": 0.00648,
                 "movingTypeCalculation": "profXL"
@@ -2943,6 +3799,7 @@
                 "label": "КНАУФ (0.6 мм) - 3м",
                 "key": "prof_knauf_cd60_0.6_3",
                 "price": 148.23,
+                "salePrice": 0,
                 "weight": 1.25,
                 "volume": 0.00486,
                 "movingTypeCalculation": "profLG"
@@ -2951,6 +3808,7 @@
                 "label": "КНАУФ (0.6 мм) - 4м",
                 "key": "prof_knauf_cd60_0.6_4",
                 "price": 206.2,
+                "salePrice": 0,
                 "weight": 1.67,
                 "volume": 0.00648,
                 "movingTypeCalculation": "profXL"
@@ -2965,6 +3823,7 @@
             "weight": 2,
             "volume": 0,
             "price": 81.9,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -2975,6 +3834,7 @@
                 "label": "(0.55 мм) - 3м",
                 "key": "prof_ud27_0.55_3",
                 "price": 49.05,
+                "salePrice": 0,
                 "weight": 1,
                 "volume": 0.002187,
                 "movingTypeCalculation": "profLG"
@@ -2983,6 +3843,7 @@
                 "label": "(0.55 мм) - 4м",
                 "key": "prof_ud27_0.55_4",
                 "price": 71.28,
+                "salePrice": 0,
                 "weight": 1,
                 "volume": 0.002916,
                 "movingTypeCalculation": "profXL"
@@ -2991,6 +3852,7 @@
                 "label": "(0.6 мм ГОСТ) - 3м",
                 "key": "prof_ud27_0.6_3",
                 "price": 65.82,
+                "salePrice": 0,
                 "weight": 1,
                 "volume": 0.002187,
                 "movingTypeCalculation": "profLG"
@@ -2999,6 +3861,7 @@
                 "label": "(0.6 мм ГОСТ) - 4м",
                 "key": "prof_ud27_0.6_4",
                 "price": 87.76,
+                "salePrice": 0,
                 "weight": 1,
                 "volume": 0.002916,
                 "movingTypeCalculation": "profXL"
@@ -3007,6 +3870,7 @@
                 "label": "КНАУФ (0.6 мм) - 3м",
                 "key": "prof_knauf_ud27_0.6_3",
                 "price": 106.47,
+                "salePrice": 0,
                 "weight": 1,
                 "volume": 0.002187,
                 "movingTypeCalculation": "profLG"
@@ -3015,6 +3879,7 @@
                 "label": "КНАУФ (0.6 мм) - 4м",
                 "key": "prof_knauf_ud27_0.6_4",
                 "price": 141.96,
+                "salePrice": 0,
                 "weight": 1,
                 "volume": 0.002916,
                 "movingTypeCalculation": "profXL"
@@ -3029,6 +3894,7 @@
             "weight": 2,
             "volume": 0,
             "price": 81.9,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3039,6 +3905,7 @@
                 "label": "50 (0.55 мм) - 3м",
                 "key": "prof_cw50_0.55_3",
                 "price": 99.09,
+                "salePrice": 0,
                 "weight": 1.65,
                 "volume": 0.0075,
                 "movingTypeCalculation": "profLG"
@@ -3047,6 +3914,7 @@
                 "label": "50 (0.55 мм) - 4м",
                 "key": "prof_cw50_0.55_4",
                 "price": 132.12,
+                "salePrice": 0,
                 "weight": 2.2,
                 "volume": 0.01,
                 "movingTypeCalculation": "profXL"
@@ -3055,6 +3923,7 @@
                 "label": "50 (0.6 мм ГОСТ) - 3м",
                 "key": "prof_cw50_0.6_3",
                 "price": 133.68,
+                "salePrice": 0,
                 "weight": 1.65,
                 "volume": 0.0075,
                 "movingTypeCalculation": "profLG"
@@ -3063,6 +3932,7 @@
                 "label": "50 КНАУФ (0.6 мм) - 3м",
                 "key": "prof_knauf_cw50_0.6_3",
                 "price": 178.38,
+                "salePrice": 0,
                 "weight": 1.65,
                 "volume": 0.0075,
                 "movingTypeCalculation": "profLG"
@@ -3071,6 +3941,7 @@
                 "label": "50 КНАУФ (0.6 мм) - 4м",
                 "key": "prof_knauf_cw50_0.6_4",
                 "price": 237.84,
+                "salePrice": 0,
                 "weight": 2.2,
                 "volume": 0.01,
                 "movingTypeCalculation": "profXL"
@@ -3079,6 +3950,7 @@
                 "label": "75 (0.55 мм) - 3м",
                 "key": "prof_cw75_0.55_3",
                 "price": 122.64,
+                "salePrice": 0,
                 "weight": 1.9,
                 "volume": 0.01125,
                 "movingTypeCalculation": "profLG"
@@ -3087,6 +3959,7 @@
                 "label": "75 (0.55 мм) - 4м",
                 "key": "prof_cw75_0.55_4",
                 "price": 163.52,
+                "salePrice": 0,
                 "weight": 2.53,
                 "volume": 0.015,
                 "movingTypeCalculation": "profXL"
@@ -3095,6 +3968,7 @@
                 "label": "75 (0.6 мм ГОСТ) - 3м",
                 "key": "prof_cw75_0.6_3",
                 "price": 159.06,
+                "salePrice": 0,
                 "weight": 1.9,
                 "volume": 0.01125,
                 "movingTypeCalculation": "profLG"
@@ -3103,6 +3977,7 @@
                 "label": "75 (0.6 мм ГОСТ) - 4м",
                 "key": "prof_cw75_0.6_4",
                 "price": 212.08,
+                "salePrice": 0,
                 "weight": 2.53,
                 "volume": 0.015,
                 "movingTypeCalculation": "profXL"
@@ -3111,6 +3986,7 @@
                 "label": "75 КНАУФ (0.6 мм) - 3м",
                 "key": "prof_knauf_cw75_0.6_3",
                 "price": 199.17,
+                "salePrice": 0,
                 "weight": 1.9,
                 "volume": 0.01125,
                 "movingTypeCalculation": "profLG"
@@ -3119,6 +3995,7 @@
                 "label": "75 КНАУФ (0.6 мм) - 4м",
                 "key": "prof_knauf_cw75_0.6_4",
                 "price": 265.56,
+                "salePrice": 0,
                 "weight": 2.53,
                 "volume": 0.015,
                 "movingTypeCalculation": "profXL"
@@ -3127,6 +4004,7 @@
                 "label": "100 (0.55 мм) - 3м",
                 "key": "prof_cw100_0.55_3",
                 "price": 138.93,
+                "salePrice": 0,
                 "weight": 2.3,
                 "volume": 0.015,
                 "movingTypeCalculation": "profLG"
@@ -3135,6 +4013,7 @@
                 "label": "100 (0.55 мм) - 4м",
                 "key": "prof_cw100_0.55_4",
                 "price": 185.24,
+                "salePrice": 0,
                 "weight": 3,
                 "volume": 0.02,
                 "movingTypeCalculation": "profXL"
@@ -3143,6 +4022,7 @@
                 "label": "100 (0.6 мм ГОСТ) - 3м",
                 "key": "prof_cw100_0.6_3",
                 "price": 181.95,
+                "salePrice": 0,
                 "weight": 2.3,
                 "volume": 0.015,
                 "movingTypeCalculation": "profLG"
@@ -3151,6 +4031,7 @@
                 "label": "100 (0.6 мм ГОСТ) - 4м",
                 "key": "prof_cw100_0.6_4",
                 "price": 242.6,
+                "salePrice": 0,
                 "weight": 3,
                 "volume": 0.02,
                 "movingTypeCalculation": "profXL"
@@ -3159,6 +4040,7 @@
                 "label": "100 КНАУФ (0.6 мм) - 3м",
                 "key": "prof_knauf_cw100_0.6_3",
                 "price": 239.97,
+                "salePrice": 0,
                 "weight": 2.3,
                 "volume": 0.015,
                 "movingTypeCalculation": "profLG"
@@ -3167,6 +4049,7 @@
                 "label": "100 КНАУФ (0.6 мм) - 4м",
                 "key": "prof_knauf_cw100_0.6_4",
                 "price": 319.96,
+                "salePrice": 0,
                 "weight": 3,
                 "volume": 0.02,
                 "movingTypeCalculation": "profXL"
@@ -3181,6 +4064,7 @@
             "weight": 2,
             "volume": 0,
             "price": 81.9,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3191,6 +4075,7 @@
                 "label": "50 (0.55 мм) - 3м",
                 "key": "prof_uw50_0.55_3",
                 "price": 81.75,
+                "salePrice": 0,
                 "weight": 1.65,
                 "volume": 0.0075,
                 "movingTypeCalculation": "profLG"
@@ -3199,6 +4084,7 @@
                 "label": "50 (0.55 мм) - 4м",
                 "key": "prof_uw50_0.55_4",
                 "price": 109.0,
+                "salePrice": 0,
                 "weight": 2.2,
                 "volume": 0.01,
                 "movingTypeCalculation": "profXL"
@@ -3207,6 +4093,7 @@
                 "label": "50 (0.6 мм ГОСТ) - 3м",
                 "key": "prof_uw50_0.6_3",
                 "price": 109.08,
+                "salePrice": 0,
                 "weight": 1.65,
                 "volume": 0.0075,
                 "movingTypeCalculation": "profLG"
@@ -3215,6 +4102,7 @@
                 "label": "50 КНАУФ (0.6 мм) - 3м",
                 "key": "prof_knauf_uw50_0.6_3",
                 "price": 152.97,
+                "salePrice": 0,
                 "weight": 1.65,
                 "volume": 0.0075,
                 "movingTypeCalculation": "profLG"
@@ -3223,6 +4111,7 @@
                 "label": "50 КНАУФ (0.6 мм) - 4м",
                 "key": "prof_knauf_uw50_0.6_4",
                 "price": 203.96,
+                "salePrice": 0,
                 "weight": 2.2,
                 "volume": 0.01,
                 "movingTypeCalculation": "profXL"
@@ -3231,6 +4120,7 @@
                 "label": "75 (0.55 мм) - 3м",
                 "key": "prof_uw75_0.55_3",
                 "price": 99.42,
+                "salePrice": 0,
                 "weight": 1.9,
                 "volume": 0.01125,
                 "movingTypeCalculation": "profLG"
@@ -3239,6 +4129,7 @@
                 "label": "75 (0.55 мм) - 4м",
                 "key": "prof_uw75_0.55_4",
                 "price": 132.56,
+                "salePrice": 0,
                 "weight": 2.53,
                 "volume": 0.015,
                 "movingTypeCalculation": "profXL"
@@ -3247,6 +4138,7 @@
                 "label": "75 (0.6 мм ГОСТ) - 3м",
                 "key": "prof_uw75_0.6_3",
                 "price": 141.36,
+                "salePrice": 0,
                 "weight": 1.9,
                 "volume": 0.01125,
                 "movingTypeCalculation": "profLG"
@@ -3255,6 +4147,7 @@
                 "label": "75 (0.6 мм ГОСТ) - 4м",
                 "key": "prof_uw75_0.6_4",
                 "price": 188.48,
+                "salePrice": 0,
                 "weight": 2.53,
                 "volume": 0.015,
                 "movingTypeCalculation": "profXL"
@@ -3263,6 +4156,7 @@
                 "label": "75 КНАУФ (0.6 мм) - 3м",
                 "key": "prof_knauf_uw75_0.6_3",
                 "price": 177.93,
+                "salePrice": 0,
                 "weight": 1.9,
                 "volume": 0.01125,
                 "movingTypeCalculation": "profLG"
@@ -3271,6 +4165,7 @@
                 "label": "75 КНАУФ (0.6 мм) - 4м",
                 "key": "prof_knauf_uw75_0.6_4",
                 "price": 237.24,
+                "salePrice": 0,
                 "weight": 2.53,
                 "volume": 0.015,
                 "movingTypeCalculation": "profXL"
@@ -3279,6 +4174,7 @@
                 "label": "100 (0.55 мм) - 3м",
                 "key": "prof_uw100_0.55_3",
                 "price": 117.72,
+                "salePrice": 0,
                 "weight": 2.3,
                 "volume": 0.015,
                 "movingTypeCalculation": "profLG"
@@ -3287,6 +4183,7 @@
                 "label": "100 (0.55 мм) - 4м",
                 "key": "prof_uw100_0.55_4",
                 "price": 156.96,
+                "salePrice": 0,
                 "weight": 3,
                 "volume": 0.02,
                 "movingTypeCalculation": "profXL"
@@ -3295,6 +4192,7 @@
                 "label": "100 (0.6 мм ГОСТ) - 3м",
                 "key": "prof_uw100_0.6_3",
                 "price": 157.96,
+                "salePrice": 0,
                 "weight": 2.3,
                 "volume": 0.015,
                 "movingTypeCalculation": "profLG"
@@ -3303,6 +4201,7 @@
                 "label": "100 (0.6 мм ГОСТ) - 4м",
                 "key": "prof_uw100_0.6_4",
                 "price": 210.24,
+                "salePrice": 0,
                 "weight": 3,
                 "volume": 0.02,
                 "movingTypeCalculation": "profXL"
@@ -3311,6 +4210,7 @@
                 "label": "100 КНАУФ (0.6 мм) - 3м",
                 "key": "prof_knauf_uw100_0.6_3",
                 "price": 209.1,
+                "salePrice": 0,
                 "weight": 2.3,
                 "volume": 0.015,
                 "movingTypeCalculation": "profLG"
@@ -3319,6 +4219,7 @@
                 "label": "100 КНАУФ (0.6 мм) - 4м",
                 "key": "prof_knauf_uw100_0.6_4",
                 "price": 278.8,
+                "salePrice": 0,
                 "weight": 3,
                 "volume": 0.02,
                 "movingTypeCalculation": "profXL"
@@ -3340,6 +4241,7 @@
             "weight": 1,
             "volume": 0,
             "price": 3.88,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3355,6 +4257,7 @@
             "weight": 1,
             "volume": 0,
             "price": 9.12,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3365,6 +4268,7 @@
                 "label": "(0.55 мм)",
                 "key": "krab_0.55",
                 "price": 7.87,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.00486,
                 "movingTypeCalculation": "weight"
@@ -3373,6 +4277,7 @@
                 "label": "(0.65 мм)",
                 "key": "krab_0.65",
                 "price": 9.06,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3381,6 +4286,7 @@
                 "label": "(0.8 мм)",
                 "key": "krab_0.8",
                 "price": 10.72,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3395,6 +4301,7 @@
             "weight": 1,
             "volume": 0,
             "price": 5.7,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3410,6 +4317,7 @@
             "weight": 2,
             "volume": 0,
             "price": 4.56,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3425,6 +4333,7 @@
             "weight": 2,
             "volume": 0,
             "price": 7.88,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3447,6 +4356,7 @@
             "weight": 1,
             "volume": 0,
             "price": 5.88,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3457,6 +4367,7 @@
                 "label": "60x125 (0.65 мм)",
                 "key": "pidvic_0.65",
                 "price": 3.99,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3465,6 +4376,7 @@
                 "label": "60x125 (0.8 мм)",
                 "key": "pidvic_0.8",
                 "price": 4.56,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3473,6 +4385,7 @@
                 "label": "60x125 (0.9 мм)",
                 "key": "pidvic_0.9",
                 "price": 5.13,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3481,6 +4394,7 @@
                 "label": "60x125 (1 мм)",
                 "key": "pidvic_1",
                 "price": 5.76,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3489,6 +4403,7 @@
                 "label": "60x250 (0.65 мм)",
                 "key": "pidvic_250_0.65",
                 "price": 7.64,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3497,6 +4412,7 @@
                 "label": "60x250 (0.8 мм)",
                 "key": "pidvic_250_0.8",
                 "price": 9.69,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3505,6 +4421,7 @@
                 "label": "60x250 (1 мм)",
                 "key": "pidvic_250_1",
                 "price": 11.97,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3526,6 +4443,7 @@
             "weight": 1,
             "volume": 0,
             "price": 1.57,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3536,6 +4454,7 @@
                 "label": "гачок 125 мм",
                 "key": "gachok_125",
                 "price": 1.2,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3544,6 +4463,7 @@
                 "label": "гачок 250 мм",
                 "key": "gachok_250",
                 "price": 2.11,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3552,6 +4472,7 @@
                 "label": "гачок 500 мм",
                 "key": "gachok_500",
                 "price": 4.16,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3560,6 +4481,7 @@
                 "label": "гачок 1000 мм",
                 "key": "gachok_1000",
                 "price": 8.04,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3568,6 +4490,7 @@
                 "label": "гачок 1500 мм",
                 "key": "gachok_1500",
                 "price": 12.08,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3576,6 +4499,7 @@
                 "label": "кільце 125 мм",
                 "key": "kilce_125",
                 "price": 1.2,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3584,6 +4508,7 @@
                 "label": "кільце 250 мм",
                 "key": "kilce_250",
                 "price": 2.11,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3592,6 +4517,7 @@
                 "label": "кільце 500 мм",
                 "key": "kilce_500",
                 "price": 4.16,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3600,6 +4526,7 @@
                 "label": "кільце 1000 мм",
                 "key": "kilce_1000",
                 "price": 8.04,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3608,6 +4535,7 @@
                 "label": "кільце 1500 мм",
                 "key": "kilce_1500",
                 "price": 12.08,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3629,6 +4557,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 7.98,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3644,6 +4573,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 5.59,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3666,6 +4596,7 @@
             "weight": 1,
             "volume": 0,
             "price": 16.82,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3676,6 +4607,7 @@
                 "label": "18.5x18.5 (0.25) 2.5м",
                 "key": "prof_alum_18.5_2.5",
                 "price": 18.04,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3684,6 +4616,7 @@
                 "label": "18.5x18.5 (0.25) 3м",
                 "key": "prof_alum_18.5_3",
                 "price": 21.64,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3692,6 +4625,7 @@
                 "label": "20x20 (0.3) 2.5м",
                 "key": "prof_alum_20_2.5",
                 "price": 21.64,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3700,6 +4634,7 @@
                 "label": "20x20 (0.3) 3м",
                 "key": "prof_alum_20_3",
                 "price": 25.98,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3708,6 +4643,7 @@
                 "label": "30x30 (0.4) 3м",
                 "key": "prof_alum_30_3",
                 "price": 54.21,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3722,6 +4658,7 @@
             "weight": 0.1,
             "volume": 0.01,
             "price": 34.5,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3737,6 +4674,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 10.47,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3752,6 +4690,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 30.75,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3774,6 +4713,7 @@
             "weight": 1,
             "volume": 0,
             "price": 50.52,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3784,6 +4724,7 @@
                 "label": "46 мм, рулон  45 м",
                 "key": "strichka_46_45",
                 "price": 50.52,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3792,6 +4733,7 @@
                 "label": "46 мм, рулон  90 м",
                 "key": "strichka_46_90",
                 "price": 94.97,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3800,6 +4742,7 @@
                 "label": "46 мм, рулон  150 м",
                 "key": "strichka_46_150",
                 "price": 160.4,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3814,6 +4757,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 769.53,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3829,6 +4773,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 1539.06,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3844,6 +4789,7 @@
             "weight": 0.1,
             "volume": 0.01,
             "price": 271.4,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3866,6 +4812,7 @@
             "weight": 1,
             "volume": 0,
             "price": 107.46,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3876,6 +4823,7 @@
                 "label": "30 мм, рулон 30 м",
                 "key": "strichka_zvuk_30_30",
                 "price": 112.93,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3884,6 +4832,7 @@
                 "label": "50 мм, рулон 30 м",
                 "key": "strichka_zvuk_50_30",
                 "price": 179.34,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3892,6 +4841,7 @@
                 "label": "70 мм, рулон 30 м",
                 "key": "strichka_zvuk_70_30",
                 "price": 243.78,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3900,6 +4850,7 @@
                 "label": "90 мм, рулон 30 м",
                 "key": "strichka_zvuk_90_30",
                 "price": 310.64,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3914,6 +4865,7 @@
             "weight": 0.1,
             "volume": 0.01,
             "price": 354.82,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3924,6 +4876,7 @@
                 "label": "30 мм, рулон 30 м",
                 "key": "strichka_zvuk_knauf_30_30",
                 "price": 354.82,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3932,6 +4885,7 @@
                 "label": "50 мм, рулон 30 м",
                 "key": "strichka_zvuk_knauf_50_30",
                 "price": 567.27,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3940,6 +4894,7 @@
                 "label": "70 мм, рулон 30 м",
                 "key": "strichka_zvuk_knauf_70_30",
                 "price": 797.78,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3948,6 +4903,7 @@
                 "label": "95 мм, рулон 30 м",
                 "key": "strichka_zvuk_knauf_95_30",
                 "price": 1059.94,
+                "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3969,6 +4925,7 @@
             "weight": 1,
             "volume": 0,
             "price": 45.03,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -3979,6 +4936,7 @@
                 "label": "3,5x9,5 з буром 1000 шт",
                 "key": "samoriz_metal_3.5x9.5_1000",
                 "price": 155.61,
+                "salePrice": 0,
                 "weight": 1.27,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3987,6 +4945,7 @@
                 "label": "3,5x25 1000 шт",
                 "key": "samoriz_metal_3.5x25_1000",
                 "price": 131.78,
+                "salePrice": 0,
                 "weight": 1.27,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -3995,6 +4954,7 @@
                 "label": "3,5x35 200 шт",
                 "key": "samoriz_metal_3.5x35_200",
                 "price": 54.15,
+                "salePrice": 0,
                 "weight": 0.25,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -4003,6 +4963,7 @@
                 "label": "3,5x35 1000 шт",
                 "key": "samoriz_metal_3.5x35_1000",
                 "price": 184.45,
+                "salePrice": 0,
                 "weight": 1.27,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -4017,6 +4978,7 @@
             "weight": 1,
             "volume": 0,
             "price": 45.03,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4027,6 +4989,7 @@
                 "label": "3,5x9,5 з буром 200 шт",
                 "key": "samoriz_koelner_metal_3.5x9.5_200",
                 "price": 59.28,
+                "salePrice": 0,
                 "weight": 0.25,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -4035,6 +4998,7 @@
                 "label": "3,5x9,5 з буром 1000 шт",
                 "key": "samoriz_koelner_metal_3.5x9.5_1000",
                 "price": 264.84,
+                "salePrice": 0,
                 "weight": 1.27,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -4043,6 +5007,7 @@
                 "label": "3,5x25 200 шт",
                 "key": "samoriz_koelner_3.5x25_200",
                 "price": 56.61,
+                "salePrice": 0,
                 "weight": 0.25,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -4051,6 +5016,7 @@
                 "label": "3,5x25 1000 шт",
                 "key": "samoriz_koelner_3.5x25_1000",
                 "price": 264.84,
+                "salePrice": 0,
                 "weight": 1.27,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -4059,6 +5025,7 @@
                 "label": "3,5x35 200 шт",
                 "key": "samoriz_koelner_3.5x35_200",
                 "price": 71.36,
+                "salePrice": 0,
                 "weight": 0.25,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -4067,6 +5034,7 @@
                 "label": "3,5x35 1000 шт",
                 "key": "samoriz_koelner_3.5x35_1000",
                 "price": 316.28,
+                "salePrice": 0,
                 "weight": 1.27,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -4088,6 +5056,7 @@
             "weight": 1,
             "volume": 0,
             "price": 33.52,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4098,6 +5067,7 @@
                 "label": "6/40, (гриб) 100 шт",
                 "key": "dubel_g_6.40_100",
                 "price": 33.52,
+                "salePrice": 0,
                 "weight": 0.28,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -4106,6 +5076,7 @@
                 "label": "6/40, (потай) 100 шт",
                 "key": "dubel_p_6.40_100",
                 "price": 33.52,
+                "salePrice": 0,
                 "weight": 0.28,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -4114,6 +5085,7 @@
                 "label": "6/60, (потай) 100 шт",
                 "key": "dubel_p_6.60_100",
                 "price": 52.67,
+                "salePrice": 0,
                 "weight": 0.28,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -4122,6 +5094,7 @@
                 "label": "6/60, (гриб) 100 шт",
                 "key": "dubel_p_g.60_100",
                 "price": 52.67,
+                "salePrice": 0,
                 "weight": 0.28,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -4130,6 +5103,7 @@
                 "label": "6/80, (потай) 100 шт",
                 "key": "dubel_p_6.80_100",
                 "price": 71.82,
+                "salePrice": 0,
                 "weight": 0.28,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -4138,6 +5112,7 @@
                 "label": "6/80, (гриб) 100 шт",
                 "key": "dubel_p_g.80_100",
                 "price": 71.82,
+                "salePrice": 0,
                 "weight": 0.28,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -4152,6 +5127,7 @@
             "weight": 1,
             "volume": 0,
             "price": 149.11,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4162,6 +5138,7 @@
                 "label": "6/40, (гриб) 200 шт",
                 "key": "dubel_g_koelner_6.40_200",
                 "price": 149.11,
+                "salePrice": 0,
                 "weight": 0.56,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -4170,6 +5147,7 @@
                 "label": "6/60, (потай) 100 шт",
                 "key": "dubel_p_koelner_6.60_100",
                 "price": 112.79,
+                "salePrice": 0,
                 "weight": 0.28,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -4178,6 +5156,7 @@
                 "label": "6/80, (потай) 100 шт",
                 "key": "dubel_p_koelner_6.80_100",
                 "price": 148.98,
+                "salePrice": 0,
                 "weight": 0.28,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
@@ -4192,6 +5171,7 @@
             "weight": 1,
             "volume": 0,
             "price": 2.41,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4214,6 +5194,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 261.29,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4229,6 +5210,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 333.9,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4244,6 +5226,7 @@
             "weight": 5,
             "volume": 0.005,
             "price": 203.52,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4259,6 +5242,7 @@
             "weight": 5,
             "volume": 0.005,
             "price": 959.3,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4274,6 +5258,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 959.3,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4296,6 +5281,7 @@
             "weight": 7.93,
             "volume": 0,
             "price": 812.92,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4306,6 +5292,7 @@
                 "label": "50x610x1250mm, 16 шт., 12,2м2",
                 "key": "ekoboard_50",
                 "price": 804.45,
+                "salePrice": 0,
                 "weight": 8.5,
                 "volume": 0.61,
                 "movingTypeCalculation": "weight"
@@ -4314,6 +5301,7 @@
                 "label": "100x610x1250mm, 8 шт., 6,1м2",
                 "key": "ekoboard_100",
                 "price": 804.45,
+                "salePrice": 0,
                 "weight": 8.5,
                 "volume": 0.61,
                 "movingTypeCalculation": "weight"
@@ -4322,6 +5310,7 @@
                 "label": "150x610x1250mm, 5 шт., 3,81м2",
                 "key": "ekoboard_150",
                 "price": 804.45,
+                "salePrice": 0,
                 "weight": 8.5,
                 "volume": 0.61,
                 "movingTypeCalculation": "weight"
@@ -4336,6 +5325,7 @@
             "weight": 7.93,
             "volume": 0,
             "price": 1191.5,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4346,6 +5336,7 @@
                 "label": "50x610x1250mm, 16 шт., 12,2м2",
                 "key": "naturboard_50",
                 "price": 1191.5,
+                "salePrice": 0,
                 "weight": 8.5,
                 "volume": 0.61,
                 "movingTypeCalculation": "weight"
@@ -4354,6 +5345,7 @@
                 "label": "100x610x1250mm, 8 шт., 6,1м2",
                 "key": "naturboard_100",
                 "price": 1191.5,
+                "salePrice": 0,
                 "weight": 8.5,
                 "volume": 0.61,
                 "movingTypeCalculation": "weight"
@@ -4368,6 +5360,7 @@
             "weight": 11.2,
             "volume": 0,
             "price": 1052.77,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4378,6 +5371,7 @@
                 "label": "(50+50)x1200x(2x9100мм) рулон 21,84м2",
                 "key": "naturroll_50_50",
                 "price": 1041.8,
+                "salePrice": 0,
                 "weight": 14.5,
                 "volume": 1.1,
                 "movingTypeCalculation": "weight"
@@ -4386,6 +5380,7 @@
                 "label": "100x1200x9100мм рулон 10,92м2",
                 "key": "naturroll_100",
                 "price": 1041.8,
+                "salePrice": 0,
                 "weight": 14.5,
                 "volume": 1.1,
                 "movingTypeCalculation": "weight"
@@ -4395,11 +5390,12 @@
           {
             "id": 25.4,
             "image": "https://i.imgur.com/1LRAI9b.jpeg",
-            "title": "NatuRollPro M (50+50)X1200X(2X7700мм) рулон 18,48м2",
+            "title": "NatuRollPro M (50+50) X 1200 X (2X7700) мм, рулон 18,48м2",
             "description": "NaturrollPro M — це універсальний мінераловатний теплоізоляційний матеріал від компанії Knauf, виготовлений із застосуванням технології ECOSE® Technology. Ця інноваційна технологія дозволяє уникнути використання фенол-формальдегідних смол, що робить матеріал екологічно чистим та безпечним для здоров'я. ",
             "weight": 11.55,
             "volume": 0.924,
             "price": 1062.5,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4415,6 +5411,7 @@
             "weight": 9.76,
             "volume": 0,
             "price": 929.04,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4425,6 +5422,7 @@
                 "label": "50X610X1250мм, 16 шт. 12,2м2",
                 "key": "akustik_board_50",
                 "price": 919.36,
+                "salePrice": 0,
                 "weight": 8.5,
                 "volume": 0.61,
                 "movingTypeCalculation": "weight"
@@ -4433,6 +5431,7 @@
                 "label": "75X610X1250мм, 10 шт. 7,625м2",
                 "key": "akustik_board_100",
                 "price": 861.91,
+                "salePrice": 0,
                 "weight": 8,
                 "volume": 0.572,
                 "movingTypeCalculation": "weight"
@@ -4447,6 +5446,7 @@
             "weight": 5,
             "volume": 0.3,
             "price": 1102.08,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4475,6 +5475,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 158.4,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4490,6 +5491,7 @@
             "weight": 25,
             "volume": 0.25,
             "price": 176.94,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4506,6 +5508,7 @@
             "weight": 25,
             "volume": 0.25,
             "price": 122.85,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4528,6 +5531,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 216.05,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4543,6 +5547,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 143.96,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4565,6 +5570,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 235.2,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4580,6 +5586,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 326.4,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4595,6 +5602,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 231.96,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4610,6 +5618,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 308.92,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4625,6 +5634,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 361.29,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4647,6 +5657,7 @@
             "weight": 45,
             "volume": 0.03,
             "price": 36.95,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4669,6 +5680,7 @@
             "weight": 45,
             "volume": 0.03,
             "price": 144.3,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4691,6 +5703,7 @@
             "weight": 3,
             "volume": 0.05,
             "price": 372.6,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4701,6 +5714,7 @@
                 "label": "ширина 15см 7мм рулон 50м/п",
                 "key": "dempf_15_7_50",
                 "price": 372.6,
+                "salePrice": 0,
                 "weight": 2,
                 "volume": 0.05,
                 "movingTypeCalculation": "weight"
@@ -4709,6 +5723,7 @@
                 "label": "ширина 15см 8мм рулон 50м/п",
                 "key": "dempf_15_8_50",
                 "price": 427.8,
+                "salePrice": 0,
                 "weight": 2,
                 "volume": 0.05,
                 "movingTypeCalculation": "weight"
@@ -4723,6 +5738,7 @@
             "weight": 3,
             "volume": 0.001,
             "price": 1131.58,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4738,6 +5754,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 6.22,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4753,6 +5770,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 15.63,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4768,6 +5786,7 @@
             "weight": 1,
             "volume": 0.02,
             "price": 78.75,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4783,6 +5802,7 @@
             "weight": 3.5,
             "volume": 0.065,
             "price": 207.5,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4811,6 +5831,7 @@
             "weight": 25,
             "volume": 0.012,
             "price": 44.03,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4821,6 +5842,7 @@
                 "label": "100x200x600",
                 "key": "gaz_100x200x600",
                 "price": 41.94,
+                "salePrice": 0,
                 "weight": 6,
                 "volume": 0.012,
                 "movingTypeCalculation": "blockXS"
@@ -4829,6 +5851,7 @@
                 "label": "120x200x600",
                 "key": "gaz_120x200x600",
                 "price": 50.33,
+                "salePrice": 0,
                 "weight": 7.2,
                 "volume": 0.0144,
                 "movingTypeCalculation": "blockXS"
@@ -4837,6 +5860,7 @@
                 "label": "150x200x600",
                 "key": "gaz_150x200x600",
                 "price": 62.91,
+                "salePrice": 0,
                 "weight": 9,
                 "volume": 0.018,
                 "movingTypeCalculation": "blockSM"
@@ -4845,6 +5869,7 @@
                 "label": "200x200x600",
                 "key": "gaz_200x200x600",
                 "price": 83.88,
+                "salePrice": 0,
                 "weight": 12,
                 "volume": 0.024,
                 "movingTypeCalculation": "blockMD"
@@ -4853,6 +5878,7 @@
                 "label": "250x200x600",
                 "key": "gaz_250x200x600",
                 "price": 104.84,
+                "salePrice": 0,
                 "weight": 15,
                 "volume": 0.03,
                 "movingTypeCalculation": "blockMD"
@@ -4861,6 +5887,7 @@
                 "label": "300x200x600",
                 "key": "gaz_300x200x600",
                 "price": 125.65,
+                "salePrice": 0,
                 "weight": 18,
                 "volume": 0.036,
                 "movingTypeCalculation": "blockLG"
@@ -4869,6 +5896,7 @@
                 "label": "375x200x600",
                 "key": "gaz_375x200x600",
                 "price": 157.27,
+                "salePrice": 0,
                 "weight": 22.5,
                 "volume": 0.045,
                 "movingTypeCalculation": "blockXL"
@@ -4877,6 +5905,7 @@
                 "label": "400x200x600",
                 "key": "gaz_400x200x600",
                 "price": 167.75,
+                "salePrice": 0,
                 "weight": 24,
                 "volume": 0.048,
                 "movingTypeCalculation": "blockXL"
@@ -4898,6 +5927,7 @@
             "weight": 3.5,
             "volume": 0.00195,
             "price": 8.57,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4913,6 +5943,7 @@
             "weight": 3.5,
             "volume": 0.00195,
             "price": 8.74,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4928,6 +5959,7 @@
             "weight": 3.5,
             "volume": 0.00195,
             "price": 9.12,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4943,6 +5975,7 @@
             "weight": 2.4,
             "volume": 0.00195,
             "price": 8.74,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4958,6 +5991,7 @@
             "weight": 4.2,
             "volume": 0.00264,
             "price": 15.03,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4980,6 +6014,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 117.43,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -4995,6 +6030,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 125.35,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -5010,6 +6046,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 131.96,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -5025,6 +6062,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 116.37,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
@@ -5040,6 +6078,7 @@
             "weight": 25,
             "volume": 0.025,
             "price": 115.26,
+            "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,

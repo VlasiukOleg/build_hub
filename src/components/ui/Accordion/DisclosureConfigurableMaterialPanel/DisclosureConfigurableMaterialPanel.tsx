@@ -66,7 +66,7 @@ const DisclosureAddMaterialsPanel: React.FC<
 
     if (!gazoblokSize) {
       console.log('yes');
-      setGazoblokPrice(0)
+      setGazoblokPrice(0);
     }
   }, [editMaterialKey, gazoblokSize]);
 
@@ -91,7 +91,12 @@ const DisclosureAddMaterialsPanel: React.FC<
     );
 
     if (selectedGazoblok) {
-      setGazoblokPrice(selectedGazoblok.price);
+      console.log(selectedGazoblok);
+      setGazoblokPrice(
+        selectedGazoblok.salePrice > 0
+          ? selectedGazoblok.salePrice
+          : selectedGazoblok.price
+      );
       setGazoblokVolume(selectedGazoblok.volume);
       setGazoblokWeight(selectedGazoblok.weight);
       setGazoblokKey(selectedGazoblok.key);
@@ -212,10 +217,28 @@ const DisclosureAddMaterialsPanel: React.FC<
                   <p className="text-xs  md:text-sm xl:text-base">
                     {item.label}
                   </p>
-                  <p className="flex no-wrap gap-1 text-xs md:text-base font-semibold">
-                    <span>{item.price}</span>
-                    <span>грн.</span>
-                  </p>
+                  <div>
+                    <p className="flex no-wrap gap-1 text-xs md:text-base font-semibold">
+                      <span
+                        className={clsx(
+                          'text-xs md:text-base',
+                          item.salePrice > 0 && 'line-through text-[10px]'
+                        )}
+                      >
+                        {item.price}
+                      </span>
+                      <span>грн.</span>
+                    </p>
+                    {item.salePrice > 0 && (
+                      <div className="flex no-wrap gap-1 text-xs md:text-base font-semibold">
+                        <p>
+                          <span className="text-[10px] mr-1">від</span>
+                          <span>{item.salePrice}</span>
+                        </p>
+                        <span>грн.</span>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </AutocompleteItem>
             )}
@@ -279,13 +302,24 @@ const DisclosureAddMaterialsPanel: React.FC<
                 </Button>
               </div>
               <div className="flex md:flex-col gap-2">
-                {material.measure ? <div className=" text-grey font-semibold  md:text-lg xl:text-xl">
-                  <div className='flex items-center gap-1'>Ціна: {gazoblokPrice} грн.<span className='text-red-500'>*</span></div>
-                  <div className='font-normal text-xs md:text-base text-red-500'>*ціна за {material.measure}</div>
-                </div> : <div className=" text-grey font-semibold  md:text-lg xl:text-xl">
-                  <div className='flex items-center gap-1'>Ціна: {gazoblokPrice} грн.</div>
-                </div>}
-                
+                {material.measure ? (
+                  <div className=" text-grey font-semibold  md:text-lg xl:text-xl">
+                    <div className="flex items-center gap-1">
+                      Ціна: {gazoblokPrice} грн.
+                      <span className="text-red-500">*</span>
+                    </div>
+                    <div className="font-normal text-xs md:text-base text-red-500">
+                      *ціна за {material.measure}
+                    </div>
+                  </div>
+                ) : (
+                  <div className=" text-grey font-semibold  md:text-lg xl:text-xl">
+                    <div className="flex items-center gap-1">
+                      Ціна: {gazoblokPrice} грн.
+                    </div>
+                  </div>
+                )}
+
                 <Button
                   aria-label="Clear Order"
                   onPress={handleAddConfigurableMaterial}
