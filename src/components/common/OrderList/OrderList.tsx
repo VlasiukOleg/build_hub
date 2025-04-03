@@ -163,8 +163,6 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
 
   const activeMaterials = getActiveMaterials(materials);
 
-  console.log(additionalMaterial);
-
   const activeAdditionalMaterials = isAdditionalMaterialAddToOrder
     ? getActiveMaterials(additionalMaterial)
     : [];

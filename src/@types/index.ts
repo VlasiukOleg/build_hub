@@ -7,7 +7,20 @@ export enum Pages {
   STYAZHKA = 'styazhka',
   KLADKA = 'kladka',
   UTEPLENYA = 'uteplenya',
+  POLICY = 'policy',
 }
+
+export const BREADCRUMBS_LABEL = {
+  [Pages.CATALOG]: 'Каталог',
+  [Pages.SHTUKATURKA]: 'Штукатурка',
+  [Pages.SHPAKLIVKA]: 'Шпаклівка',
+  [Pages.GIPSOKARTON]: 'Гіпсокартон',
+  [Pages.ORDER]: 'Корзина',
+  [Pages.STYAZHKA]: 'Cтяжка',
+  [Pages.KLADKA]: 'Кладка',
+  [Pages.UTEPLENYA]: 'Утеплення',
+  [Pages.POLICY]: 'Політика конфіденційності',
+};
 
 export interface SubCategory {
   id: number;

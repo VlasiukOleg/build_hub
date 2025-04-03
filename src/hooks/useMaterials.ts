@@ -1,5 +1,4 @@
 import { useAppSelector } from '@/redux/hooks';
-import { start } from 'repl';
 
 export const useMaterials = (slug?: string) => {
   const allCategories = useAppSelector(state => state.categories);

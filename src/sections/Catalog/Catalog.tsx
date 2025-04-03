@@ -8,7 +8,7 @@ import Gipsokarton from '@/../public/images/gipsokarton-450х300.webp';
 import Styazhka from '@/../public/images/styazhka.jpg';
 import Kladka from '@/../public/images/kladka.webp';
 import Shpaklivka from '@/../public/images/spackling.jpg';
-import Uteplenya from '@/../public/images/Uteplenie-450x300.jpg'
+import Uteplenya from '@/../public/images/Uteplenie-450x300.jpg';
 
 import { Pages } from '@/@types';
 
