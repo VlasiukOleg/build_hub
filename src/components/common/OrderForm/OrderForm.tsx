@@ -1,40 +1,32 @@
 'use client';
 
-import React, { useState } from 'react';
-import dynamic from 'next/dynamic';
-
+import React, { useState, useEffect } from 'react';
 import { uk } from 'date-fns/locale';
+import {
+  isToday,
+  isAfter,
+  setHours,
+  setMinutes,
+  getHours,
+  getMinutes,
+} from 'date-fns';
 import 'react-datepicker/dist/react-datepicker.css';
-import DatePicker from 'react-datepicker';
 import { Button } from '@heroui/react';
-
 import { useRouter } from 'next/navigation';
 
 import { useAppSelector, useAppDispatch } from '@/redux/hooks';
-
 import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
 import sendingEmail from '@/utils/sendEmail';
 
-import CircleIcon from '/public/icons/circle.svg';
-import { CheckIcon, ChevronDownIcon } from '@heroicons/react/20/solid';
+import DatePicker from 'react-datepicker';
+import { Input, Textarea, Select, SelectItem } from '@heroui/react';
 
-import {
-  Description,
-  Field,
-  Fieldset,
-  Input,
-  Label,
-  Legend,
-  Select,
-  Textarea,
-  Listbox,
-  ListboxButton,
-  ListboxOption,
-  ListboxOptions,
-} from '@headlessui/react';
+import { Field, Label } from '@headlessui/react';
+
+import { CiCalendar } from 'react-icons/ci';
 
 import clsx from 'clsx';
 
@@ -56,9 +48,18 @@ const orderValidationSchema = yup.object({
 });
 
 const timesList = [
-  { id: 1, name: '11.00 - 12.00' },
-  { id: 2, name: '14.00 - 15.00' },
-  { id: 3, name: '17.00-18.00' },
+  {
+    key: '11.00 - 12.00',
+    label: '11.00 - 12.00',
+  },
+  {
+    key: '14.00 - 15.00',
+    label: '14.00 - 15.00',
+  },
+  {
+    key: '17.00 - 18.00',
+    label: '17.00 - 18.00',
+  },
 ];
 
 export interface IFormState {
@@ -126,10 +127,40 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
     },
   });
 
+  const selectedDate = watch('date');
+
   const [sendError, setSendError] = useState(false);
   const [isSending, setIsSending] = useState(false);
+  const [deliveryTime, setDeliveryTime] = useState<any>(new Set([]));
+  const [disabledTimeKeys, setDisabledTimeKeys] = useState<string[]>([]);
 
-  const [deliveryTime, setDeliveryTime] = useState(timesList[0]);
+  useEffect(() => {
+    console.log(selectedDate);
+    console.log(isToday(selectedDate));
+
+    if (isToday(selectedDate)) {
+      const now = new Date();
+      const currentHour = getHours(now);
+      const currentMinute = getMinutes(now);
+
+      if (currentHour > 13 || (currentHour === 13 && currentMinute >= 30)) {
+        // Після 13:30 - тільки 17:00-18:00
+        setDisabledTimeKeys(['11.00 - 12.00', '14.00 - 15.00']);
+      } else if (
+        currentHour > 9 ||
+        (currentHour === 9 && currentMinute >= 30)
+      ) {
+        // Після 9:30 - тільки 14:00-15:00 і 17:00-18:00
+        setDisabledTimeKeys(['11.00 - 12.00']);
+      } else {
+        // До 9:00 - всі слоти доступні
+        setDisabledTimeKeys([]);
+      }
+    } else {
+      // Для інших дат - всі слоти доступні
+      setDisabledTimeKeys([]);
+    }
+  }, [selectedDate]);
 
   const onSubmit = async (data: IFormState) => {
     setSendError(false);
@@ -167,83 +198,112 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
 
   return (
     <>
-      <form className="w-full xl:w-[48%]" onSubmit={handleSubmit(onSubmit)}>
-        <Fieldset className="space-y-3 rounded-xl bg-bgWhite border-[1px] border-grey p-4 md:space-y-4">
-          <Field className="relative">
-            <Label className="text-xs/6 font-medium  text-grey md:text-sm">
-              Ваше імя
-            </Label>
+      <form className="w-full xl:w-[48%] " onSubmit={handleSubmit(onSubmit)}>
+        <div className="rounded-xl flex flex-col gap-4 bg-bgWhite border-[1px] border-grey p-4 md:space-y-4">
+          <div className="relative">
             <Input
               {...register('firstName')}
-              className={clsx(
-                'mt-1 block w-full rounded-lg border-[1px] border-grey bg-bgWhite py-1.5 px-3 text-xs/6 text-grey md:text-sm md:py-2',
-                'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-accent'
-              )}
+              isClearable
+              label="Ваше ім'я"
+              placeholder="Введіть ім'я"
+              size="md"
+              labelPlacement="outside"
+              variant="bordered"
+              classNames={{
+                label: 'text-xs font-semibold md:text-sm !text-grey',
+                inputWrapper: 'group-data-[focus=true]:border-accent',
+              }}
             />
-
             <p className="absolute left-0 bottom-[-20px] text-[10px]/6 text-red-600">
               {errors.firstName?.message}
             </p>
-          </Field>
-          <Field className="relative">
-            <Label className="text-xs/6 font-medium  text-grey md:text-sm">
-              Email
-            </Label>
+          </div>
+          <div className="relative">
             <Input
               {...register('email')}
-              className={clsx(
-                'mt-1 block w-full rounded-lg border-[1px] border-grey bg-bgWhite py-1.5 px-3 text-xs/6 text-grey md:text-sm md:py-2',
-                'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-accent'
-              )}
+              isClearable
+              label="Email"
+              placeholder="Введіть email"
+              size="md"
+              labelPlacement="outside"
+              variant="bordered"
+              classNames={{
+                label: 'text-xs font-semibold md:text-sm !text-grey',
+                inputWrapper: 'group-data-[focus=true]:border-accent',
+              }}
             />
             <p className="absolute left-0 bottom-[-20px] text-[10px]/6 text-red-600">
               {errors.email?.message}
             </p>
-          </Field>
-          <Field className="relative">
-            <Label className="text-xs/6 font-medium  text-grey md:text-sm">
-              Телефон
-            </Label>
+          </div>
+          <div className="relative">
             <Input
               {...register('phone')}
-              className={clsx(
-                'mt-1 block w-full rounded-lg border-[1px] border-grey bg-bgWhite py-1.5 px-3 text-xs/6 text-grey md:text-sm md:py-2',
-                'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-accent'
-              )}
+              isClearable
+              label="Телефон"
+              placeholder="Введіть телефон"
+              size="md"
+              labelPlacement="outside"
+              variant="bordered"
+              classNames={{
+                label: 'text-xs font-semibold md:text-sm !text-grey',
+                inputWrapper: 'group-data-[focus=true]:border-accent',
+              }}
             />
             <p className="absolute left-0 bottom-[-20px] text-[10px]/6 text-red-600">
               {errors.phone?.message}
             </p>
-          </Field>
-          <Field className="relative">
-            <Label className="text-xs/6 font-medium  text-grey md:text-sm">
-              Адреса доставки
-            </Label>
+          </div>
+          <div className="relative">
             <Input
               {...register('address')}
-              className={clsx(
-                'mt-1 block w-full rounded-lg border-[1px] border-grey bg-bgWhite py-1.5 px-3 text-xs/6 text-grey md:text-sm md:py-2',
-                'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-accent'
-              )}
+              isClearable
+              label="Адреса"
+              placeholder="Введіть адресу доставки"
+              size="md"
+              labelPlacement="outside"
+              variant="bordered"
+              classNames={{
+                label: 'text-xs  font-semibold md:text-sm !text-grey',
+                inputWrapper: 'group-data-[focus=true]:border-accent',
+              }}
             />
-            <p className="absolute left-0 bottom-[-20px] text-[10px]/6 text-red-600">
+            <p className="absolute  left-0 bottom-[-20px] text-[10px]/6 text-red-600">
               {errors.address?.message}
             </p>
-          </Field>
+          </div>
+          <Textarea
+            {...register('message')}
+            label="Додаткова інформація"
+            labelPlacement="outside"
+            size="md"
+            placeholder="Напишіть додаткову інформацію якщо потрібно"
+            variant="bordered"
+            classNames={{
+              label: 'text-xs font-semibold md:text-sm !text-grey',
+              inputWrapper: 'group-data-[focus=true]:border-accent',
+            }}
+          />
           <Field className="relative flex flex-col">
-            <Label className="text-xs/6 font-medium text-grey md:text-sm">
+            <Label className="text-xs font-semibold text-grey md:text-sm">
               Дата та час доставки
             </Label>
-            <div className="mt-1 flex flex-col gap-2 md:flex-row">
+            <div className="mt-2 flex flex-col gap-2 md:flex-row">
               <Controller
                 control={control}
                 name="date"
                 render={({ field }) => (
                   <DatePicker
+                    showIcon
                     selected={field.value}
+                    icon={<CiCalendar />}
                     onChange={field.onChange}
                     dateFormat="dd/MM/yyyy"
                     locale={uk}
+                    minDate={new Date()}
+                    filterDate={date => {
+                      return date.getDay() !== 0;
+                    }}
                     className={clsx(
                       'w-full md:w-[300px] block  rounded-lg border-[1px] border-grey bg-bgWhite py-1.5 px-3 text-xs/6 text-grey md:text-sm md:py-2',
                       'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-accent'
@@ -251,59 +311,28 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
                   />
                 )}
               />
-              <Listbox value={deliveryTime} onChange={setDeliveryTime}>
-                <ListboxButton
-                  className={clsx(
-                    'relative block w-full  rounded-lg bg-bgWhite border border-grey py-1.5 pr-8 pl-3 text-left text-xs/6 text-grey md:text-sm',
-                    'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-accent'
-                  )}
-                >
-                  {deliveryTime.name}
-                  <ChevronDownIcon
-                    className="group pointer-events-none absolute top-2.5 right-2.5 size-4 fill-grey"
-                    aria-hidden="true"
-                  />
-                </ListboxButton>
-                <ListboxOptions
-                  anchor="bottom"
-                  transition
-                  className={clsx(
-                    'w-[var(--button-width)] rounded-xl border border-grey bg-bgWhite [--anchor-gap:var(--spacing-1)] focus:outline-none',
-                    'transition duration-100 ease-in data-[leave]:data-[closed]:opacity-0'
-                  )}
-                >
-                  {timesList.map(time => (
-                    <ListboxOption
-                      key={time.name}
-                      value={time}
-                      className="group flex cursor-default items-center gap-2 rounded-lg py-1.5 px-3 select-none data-[focus]:bg-white/10"
-                    >
-                      <CheckIcon className="invisible size-4 fill-grey group-data-[selected]:visible" />
-                      <div className="text-xs/6 md:text-sm text-grey">
-                        {time.name}
-                      </div>
-                    </ListboxOption>
-                  ))}
-                </ListboxOptions>
-              </Listbox>
+              <Select
+                aria-label="Час доставки"
+                renderValue={items => (
+                  <div className="text-grey text-sm">
+                    {items.map(item => item.textValue).join(', ')}
+                  </div>
+                )}
+                items={timesList}
+                placeholder="Виберіть час доставки"
+                labelPlacement="outside"
+                size="md"
+                variant="bordered"
+                selectedKeys={deliveryTime}
+                onSelectionChange={setDeliveryTime}
+                disabledKeys={disabledTimeKeys}
+              >
+                {time => <SelectItem key={time.key}>{time.label}</SelectItem>}
+              </Select>
             </div>
           </Field>
+        </div>
 
-          <Field>
-            <Label className="text-xs/6 font-medium text-grey md:text-sm">
-              Додаткова інформація
-            </Label>
-
-            <Textarea
-              {...register('message')}
-              className={clsx(
-                'mt-1 block w-full resize-none rounded-lg border-[1px] border-grey bg-bgWhite py-1.5 px-3 text-sm/6 text-grey md:text-sm md:py-2',
-                'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25'
-              )}
-              rows={3}
-            />
-          </Field>
-        </Fieldset>
         <div className="text-center mt-4 flex justify-center">
           <Button
             type="submit"
