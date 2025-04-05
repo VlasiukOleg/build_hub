@@ -65,7 +65,6 @@ const DisclosureAddMaterialsPanel: React.FC<
     }
 
     if (!gazoblokSize) {
-      console.log('yes');
       setGazoblokPrice(0);
     }
   }, [editMaterialKey, gazoblokSize]);
@@ -91,7 +90,6 @@ const DisclosureAddMaterialsPanel: React.FC<
     );
 
     if (selectedGazoblok) {
-      console.log(selectedGazoblok);
       setGazoblokPrice(
         selectedGazoblok.salePrice > 0
           ? selectedGazoblok.salePrice

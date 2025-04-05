@@ -1,15 +1,9 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import clsx from 'clsx';
 import { uk } from 'date-fns/locale';
-import {
-  isToday,
-  isAfter,
-  setHours,
-  setMinutes,
-  getHours,
-  getMinutes,
-} from 'date-fns';
+import { isToday, getHours, getMinutes, getDay } from 'date-fns';
 import 'react-datepicker/dist/react-datepicker.css';
 import { Button } from '@heroui/react';
 import { useRouter } from 'next/navigation';
@@ -27,8 +21,7 @@ import { Input, Textarea, Select, SelectItem } from '@heroui/react';
 import { Field, Label } from '@headlessui/react';
 
 import { CiCalendar } from 'react-icons/ci';
-
-import clsx from 'clsx';
+import styles from './orderform.module.css';
 
 const phoneRegex = /^(0\d{9})$/;
 
@@ -36,7 +29,9 @@ const orderValidationSchema = yup.object({
   firstName: yup.string().required("Це поле є обов'язковим до заповнення"),
   email: yup
     .string()
-    .required("Це поле є обов'язковим до заповнення")
+    .required(
+      "Це поле є обов'язковим до заповнення, на цю пошту прийде Ваше замовлення"
+    )
     .email('Не правильний email'),
   phone: yup
     .string()
@@ -135,30 +130,55 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
   const [disabledTimeKeys, setDisabledTimeKeys] = useState<string[]>([]);
 
   useEffect(() => {
-    console.log(selectedDate);
-    console.log(isToday(selectedDate));
+    if (selectedDate.getDay() === 0) {
+      setDisabledTimeKeys(['11.00 - 12.00', '14.00 - 15.00', '17.00 - 18.00']);
+
+      return;
+    }
 
     if (isToday(selectedDate)) {
       const now = new Date();
       const currentHour = getHours(now);
       const currentMinute = getMinutes(now);
+      const currentDay = getDay(now);
+
+      if (currentDay === 6) {
+        const disabledKeys = ['17.00 - 18.00'];
+        if (currentHour > 9 || (currentHour === 9 && currentMinute >= 30)) {
+          disabledKeys.push('11.00 - 12.00');
+        }
+        if (currentHour > 13 || (currentHour === 13 && currentMinute >= 30)) {
+          disabledKeys.push('14.00 - 15.00');
+        }
+        setDisabledTimeKeys(disabledKeys);
+        return;
+      }
 
       if (currentHour > 13 || (currentHour === 13 && currentMinute >= 30)) {
-        // Після 13:30 - тільки 17:00-18:00
         setDisabledTimeKeys(['11.00 - 12.00', '14.00 - 15.00']);
       } else if (
         currentHour > 9 ||
         (currentHour === 9 && currentMinute >= 30)
       ) {
-        // Після 9:30 - тільки 14:00-15:00 і 17:00-18:00
         setDisabledTimeKeys(['11.00 - 12.00']);
+      } else if (
+        currentHour > 15 ||
+        (currentHour === 15 && currentMinute >= 30)
+      ) {
+        setDisabledTimeKeys([
+          '11.00 - 12.00',
+          '14.00 - 15.00',
+          '17.00 - 18.00',
+        ]);
       } else {
-        // До 9:00 - всі слоти доступні
         setDisabledTimeKeys([]);
       }
     } else {
-      // Для інших дат - всі слоти доступні
-      setDisabledTimeKeys([]);
+      if (getDay(selectedDate) === 6) {
+        setDisabledTimeKeys(['17.00 - 18.00']);
+      } else {
+        setDisabledTimeKeys([]);
+      }
     }
   }, [selectedDate]);
 
@@ -173,7 +193,7 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
       message: data.message ? data.message.trim() : '',
       date: data.date,
       materials: filteredMaterialsByQuantity,
-      deliveryTime: deliveryTime,
+      deliveryTime: Array.from(deliveryTime)[0],
       totalPrice: totalPrice,
       totalWeight: totalWeight,
       deliveryPrice: deliveryPrice,
@@ -288,7 +308,7 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
             <Label className="text-xs font-semibold text-grey md:text-sm">
               Дата та час доставки
             </Label>
-            <div className="mt-2 flex flex-col gap-2 md:flex-row">
+            <div className="mt-2 flex flex-col  gap-2 md:flex-row">
               <Controller
                 control={control}
                 name="date"
@@ -296,17 +316,18 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
                   <DatePicker
                     showIcon
                     selected={field.value}
-                    icon={<CiCalendar />}
+                    icon={<CiCalendar className="!size-[22px]" />}
                     onChange={field.onChange}
                     dateFormat="dd/MM/yyyy"
                     locale={uk}
                     minDate={new Date()}
+                    popperClassName="!z-[11]"
                     filterDate={date => {
                       return date.getDay() !== 0;
                     }}
                     className={clsx(
-                      'w-full md:w-[300px] block  rounded-lg border-[1px] border-grey bg-bgWhite py-1.5 px-3 text-xs/6 text-grey md:text-sm md:py-2',
-                      'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-accent'
+                      styles.input,
+                      'w-full md:w-[300px] block rounded-xl border-[2px] border-gray-200 hover:border-gray-400 focus:border-accent focus:outline-none bg-bgWhite h-10 px-5 !pl-8 text-sm text-grey md:text-sm md:py-2'
                     )}
                   />
                 )}
@@ -326,6 +347,10 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
                 selectedKeys={deliveryTime}
                 onSelectionChange={setDeliveryTime}
                 disabledKeys={disabledTimeKeys}
+                classNames={{
+                  trigger:
+                    'data-[open=true]:border-accent data-[focus=true]:border-accent',
+                }}
               >
                 {time => <SelectItem key={time.key}>{time.label}</SelectItem>}
               </Select>

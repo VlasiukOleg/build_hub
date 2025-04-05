@@ -10,8 +10,6 @@ const Footer: React.FunctionComponent<IFooterProps> = props => {
 
   const isPolicyPage = pathname === '/policy';
 
-  console.log(isPolicyPage);
-
   return (
     <footer className="border-t-[1px] border-accent">
       <div className="container text-center py-3 text-sm md:text-lg xl:text-xl">
@@ -19,7 +17,7 @@ const Footer: React.FunctionComponent<IFooterProps> = props => {
         <div>
           {!isPolicyPage ? (
             <Link
-              href="policy"
+              href="/policy"
               className="text-xs md:text-sm xl:text-lg text-accent"
             >
               Політика конфіденційності

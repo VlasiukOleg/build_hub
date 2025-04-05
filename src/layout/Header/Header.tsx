@@ -13,8 +13,6 @@ const Header: React.FC = () => {
 
   const { totalQuantity } = useMaterials();
 
-  console.log(pathname);
-
   if (
     totalQuantity > 0 &&
     pathname !== '/order' &&
