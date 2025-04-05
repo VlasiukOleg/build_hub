@@ -16,7 +16,7 @@ import * as yup from 'yup';
 import sendingEmail from '@/utils/sendEmail';
 
 import DatePicker from 'react-datepicker';
-import { Input, Textarea, Select, SelectItem } from '@heroui/react';
+import { Input, Textarea, Select, SelectItem, Checkbox } from '@heroui/react';
 
 import { Field, Label } from '@headlessui/react';
 
@@ -29,9 +29,7 @@ const orderValidationSchema = yup.object({
   firstName: yup.string().required("Це поле є обов'язковим до заповнення"),
   email: yup
     .string()
-    .required(
-      "Це поле є обов'язковим до заповнення, на цю пошту прийде Ваше замовлення"
-    )
+    .required("Це поле є обов'язковим до заповнення")
     .email('Не правильний email'),
   phone: yup
     .string()
@@ -40,6 +38,10 @@ const orderValidationSchema = yup.object({
   address: yup.string().required("Це поле є обов'язковим до заповнення"),
   message: yup.string().nullable(),
   date: yup.date().required("Це поле є обов'язковим до заповнення"),
+  policy: yup
+    .boolean()
+    .oneOf([true])
+    .required("Це поле є обов'язковим до заповнення"),
 });
 
 const timesList = [
@@ -64,6 +66,7 @@ export interface IFormState {
   address: string;
   message?: string | null;
   date: Date;
+  policy: boolean;
 }
 
 interface IOrderFormProps {}
@@ -119,6 +122,7 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
     resolver: yupResolver(orderValidationSchema),
     defaultValues: {
       date: new Date(),
+      policy: false,
     },
   });
 
@@ -356,6 +360,27 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
               </Select>
             </div>
           </Field>
+          <Controller
+            control={control}
+            name="policy"
+            render={({ field }) => (
+              <Checkbox
+                {...register('policy')}
+                isSelected={field.value}
+                onValueChange={field.onChange}
+                color="success"
+                classNames={{
+                  label: clsx(
+                    'text-xs md:text-sm',
+                    errors.policy?.message && 'text-red-500'
+                  ),
+                  wrapper: errors.policy?.message && 'before:!border-red-500',
+                }}
+              >
+                Даю згоду на обробку персональних даних
+              </Checkbox>
+            )}
+          />
         </div>
 
         <div className="text-center mt-4 flex justify-center">
