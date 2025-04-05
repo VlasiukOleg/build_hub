@@ -245,7 +245,7 @@ const DisclosureMovingPanel: React.FunctionComponent<
     },
     {
       key: '7',
-      type: 'Газоблок 100(120)х200х600',
+      type: 'Газоблок 100(120)',
       measure: 'шт',
       quantity: blockXsTypeMaterial.quantity,
       price: `${blockXsCalculateFee.toFixed()} грн.`,
@@ -254,7 +254,7 @@ const DisclosureMovingPanel: React.FunctionComponent<
     },
     {
       key: '8',
-      type: 'Газоблок 150х200х600',
+      type: 'Газоблок 150',
       measure: 'шт',
       quantity: blockSmTypeMaterial.quantity,
       price: `${blockSmCalculateFee.toFixed()} грн.`,
@@ -263,7 +263,7 @@ const DisclosureMovingPanel: React.FunctionComponent<
     },
     {
       key: '9',
-      type: 'Газоблок 200(250)х200х600',
+      type: 'Газоблок 200(250)',
       measure: 'шт',
       quantity: blockMdTypeMaterial.quantity,
       price: `${blockMdCalculateFee.toFixed()} грн.`,
@@ -272,7 +272,7 @@ const DisclosureMovingPanel: React.FunctionComponent<
     },
     {
       key: '10',
-      type: 'Газоблок 300х200х600',
+      type: 'Газоблок 300',
       measure: 'шт',
       quantity: blockLgTypeMaterial.quantity,
       price: `${blockLgCalculateFee.toFixed()} грн.`,
@@ -281,7 +281,7 @@ const DisclosureMovingPanel: React.FunctionComponent<
     },
     {
       key: '11',
-      type: 'Газоблок 375(400)х200х600',
+      type: 'Газоблок 375(400)',
       measure: 'шт',
       quantity: blockXlTypeMaterial.quantity,
       price: `${blockXlCalculateFee.toFixed()} грн.`,
