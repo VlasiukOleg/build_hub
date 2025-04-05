@@ -71,12 +71,9 @@ const CatalogCard: React.FunctionComponent<ICatalogCardProps> = ({
           className="border-2 border-accent overflow-visible"
         >
           {totalSelectedMaterialsCount > 0 && (
-            <Chip
-              size="sm"
-              className="bg-red-500 text-white text-xs absolute z-50 top-[-10px] right-[-10px]"
-            >
+            <div className=" flex items-center justify-center z-10 absolute top-[-6px] right-[-8px] w-5 h-5 rounded-xl text-white  bg-red-400 text-xs md:size-6 md:text-sm">
               {totalSelectedMaterialsCount}
-            </Chip>
+            </div>
           )}
 
           <Image

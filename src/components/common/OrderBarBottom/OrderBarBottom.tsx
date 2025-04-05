@@ -1,0 +1,119 @@
+'use client';
+
+import React from 'react';
+import { useRouter } from 'next/navigation';
+import dynamic from 'next/dynamic';
+import clsx from 'clsx';
+import { Button } from '@heroui/react';
+import { useDisclosure } from '@heroui/react';
+
+import OpenBurgerMenuBtn from '../OpenBurgerMenuBtn';
+const ModalHeroUi = dynamic(() => import('@/components/ui/ModalHeroUi'));
+
+import { useAppDispatch } from '@/redux/hooks';
+import { clearQuantity } from '@/redux/materialsSlice';
+import { toggleMovingPriceToOrder } from '@/redux/movingSlice';
+import {
+  clearAdditionalMaterial,
+  toggleAdditionalPriceAddToOrder,
+} from '@/redux/additionalMaterialSlice';
+import { clearConfigurableMaterial } from '@/redux/configurableMaterialSlice';
+
+import { PiShoppingCartSimpleBold } from 'react-icons/pi';
+import { MdOutlineCancel } from 'react-icons/md';
+import { LuWeight } from 'react-icons/lu';
+import { FaPersonWalkingLuggage } from 'react-icons/fa6';
+import { TbTruckDelivery } from 'react-icons/tb';
+import { GiMoneyStack } from 'react-icons/gi';
+import { BsBox } from 'react-icons/bs';
+import { Pages } from '@/@types';
+
+interface IOrderBarBottomProps {
+  totalQuantity: number;
+  totalWeight: number;
+  totalPrice: number;
+  deliveryPrice: number;
+  deliveryType: string;
+  movingPrice: number;
+  isMovingAddToOrder: boolean;
+  totalVolume: number;
+  slug: Pages;
+}
+
+const OrderBarBottom: React.FC<IOrderBarBottomProps> = ({
+  totalQuantity,
+  totalWeight,
+  totalPrice,
+  deliveryPrice,
+  deliveryType,
+  movingPrice,
+  isMovingAddToOrder,
+  totalVolume,
+  slug,
+}) => {
+  const router = useRouter();
+  const dispatch = useAppDispatch();
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
+  const handleOrderClear = () => {
+    dispatch(clearQuantity(0));
+    dispatch(toggleMovingPriceToOrder());
+    dispatch(toggleAdditionalPriceAddToOrder());
+    dispatch(clearAdditionalMaterial());
+    dispatch(clearConfigurableMaterial());
+  };
+
+  const handleOrderClick = () => {
+    const url = `/order?from=${slug}`;
+    router.push(url);
+  };
+
+  return (
+    <div
+      className={clsx(
+        'flex items-center justify-between gap-2 fixed bottom-0 left-1/2 transform -translate-x-1/2 bg-white w-full max-w-[767px] border-t-2  border-t-gray-300 p-2 transition-all  z-20 md:max-w-[700px] xl:max-w-[1216px]',
+        totalQuantity > 0 ? 'opacity-1 visible' : 'opacity-0 invisible'
+      )}
+    >
+      <div className="flex gap-2">
+        <div className="p-1 h-8 rounded-lg  bg-transparent border-1 border-gray-400 text-black flex gap-1 items-center text-sm md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
+          <GiMoneyStack className="size-5  xl:size-7 text-grey" />
+          Сума {totalPrice.toFixed(2)} грн.
+        </div>
+        <Button
+          isIconOnly
+          aria-label="Go to Cart"
+          onPress={handleOrderClick}
+          className=" bg-transparent border-1 border-gray-400 h-8 w-12 md:h-9 md:w-9 xl:size-11"
+          radius="sm"
+        >
+          <PiShoppingCartSimpleBold className="size-5 md:size-6 xl:size-8 text-green-500" />
+        </Button>
+        <Button
+          isIconOnly
+          aria-label="Clear Order"
+          onPress={onOpen}
+          className=" bg-transparent border-1 border-gray-400 h-8 w-12 md:h-9 md:w-9 xl:size-11"
+          radius="sm"
+        >
+          <MdOutlineCancel className="size-5 md:size-6 xl:size-8 text-red-600" />
+        </Button>
+      </div>
+
+      <div className="md:block">
+        <OpenBurgerMenuBtn totalQuantity={totalQuantity} />
+      </div>
+      <ModalHeroUi
+        title="Увага"
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        onAction={handleOrderClear}
+        withActions
+      >
+        <p>Ви впевнені, що хочете очистити замовлення?</p>
+      </ModalHeroUi>
+    </div>
+  );
+};
+
+export default OrderBarBottom;

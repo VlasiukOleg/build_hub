@@ -1,8 +1,8 @@
 'use client';
 
-import React from 'react';
+import { useMemo } from 'react';
 import { Accordion, AccordionItem } from '@heroui/accordion';
-import { Avatar } from '@heroui/react';
+import { Avatar, Chip } from '@heroui/react';
 
 import DisclosureMaterialsPanel from '../DisclosureMaterialsPanel';
 import DisclosureConfigurableMaterialPanel from '../DisclosureConfigurableMaterialPanel';
@@ -83,6 +83,17 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
     }
   };
 
+  const configurableMaterialList = useAppSelector(
+    state => state.configurableMaterial.configurableMaterial
+  );
+
+  const configurableMaterialKeys = useMemo(
+    () => configurableMaterialList.map(configurable => configurable.key),
+    [configurableMaterialList]
+  );
+
+  console.log(configurableMaterialList);
+
   if (!subCategoriesBySlug) {
     return null;
   }
@@ -100,15 +111,13 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
           return (
             <AccordionItem
               key={subCategory.id}
-              className="bg-slate-50"
+              className="bg-slate-50 relative"
               classNames={{ title: 'text-sm md:text-base' }}
               aria-label="Accordion 1"
               startContent={
                 <Avatar
                   icon={catInd + 1}
-                  className="w-5 h-5 bg-accent text-xs md:size-6 md:text-sm xl:size-7 xl:text-base"
-                  radius="sm"
-                  color="primary"
+                  className="w-5 h-5 border-1 rounded border-accent bg-transparent text-xs md:size-6 md:text-sm xl:size-7 xl:text-base"
                 />
               }
               title={subCategory.categoryTitle}

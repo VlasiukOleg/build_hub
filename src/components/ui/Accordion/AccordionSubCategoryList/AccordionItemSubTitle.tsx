@@ -4,6 +4,8 @@ import { useAppSelector } from '@/redux/hooks';
 
 import { SubCategory } from '@/@types';
 
+import { Avatar } from '@heroui/react';
+
 interface IAccordionItemSubTitle {
   subCategory: SubCategory;
 }
@@ -47,16 +49,14 @@ const AccordionItemSubTitle: React.FC<IAccordionItemSubTitle> = ({
   return (
     <>
       {selectedMaterialsCount > 0 && (
-        <p className="text-xs text-red-500">
-          Вибрано {selectedMaterialsCount}{' '}
-          {getPluralForm(selectedMaterialsCount)}
-        </p>
+        <div className=" flex items-center justify-center absolute top-[-6px] right-[-8px] w-5 h-5 rounded-xl text-white  bg-red-400 text-xs md:size-6 md:text-sm">
+          {selectedMaterialsCount}
+        </div>
       )}
       {selectedConfigurableCount > 0 && (
-        <p className="text-xs text-red-500">
-          Вибрано {selectedConfigurableCount}{' '}
-          {getPluralForm(selectedConfigurableCount)}
-        </p>
+        <div className=" flex items-center justify-center absolute top-[-6px] right-[-8px] w-5 h-5 rounded-xl text-white  bg-red-400 text-xs md:size-6 md:text-sm">
+          {selectedMaterialsCount}
+        </div>
       )}
     </>
   );

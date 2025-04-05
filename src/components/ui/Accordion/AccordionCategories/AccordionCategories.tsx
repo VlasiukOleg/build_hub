@@ -7,6 +7,7 @@ import { Breadcrumbs, BreadcrumbItem } from '@heroui/react';
 import { Button } from '@heroui/react';
 
 import OrderBar from '@/components/common/OrderBar';
+import OrderBarBottom from '@/components/common/OrderBarBottom';
 import FixedOpenBurgerMenuBtn from '@/components/common/FixedOpenBurgerMenuBtn';
 import AccordionSubCategoryList from '../AccordionSubCategoryList';
 
@@ -104,7 +105,18 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
           </div>
         </div>
       </div>
-      <FixedOpenBurgerMenuBtn />
+      {/* <FixedOpenBurgerMenuBtn /> */}
+      <OrderBarBottom
+        totalQuantity={totalQuantity}
+        totalVolume={totalVolume}
+        totalWeight={totalWeight}
+        totalPrice={totalPrice}
+        deliveryPrice={deliveryPrice}
+        deliveryType={deliveryType}
+        movingPrice={movingPrice}
+        isMovingAddToOrder={isMovingAddToOrder}
+        slug={slug}
+      />
     </section>
   );
 };

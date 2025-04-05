@@ -71,45 +71,45 @@ const OrderBar: React.FC<IOrderBarProps> = ({
   return (
     <div
       className={clsx(
-        'flex items-center justify-between gap-2 fixed  left-1/2 transform -translate-x-1/2 bg-lightAccent w-full max-w-[448px] rounded-xl p-2 transition-all  z-20 md:max-w-[700px] xl:max-w-[1216px]',
+        'flex items-center justify-center gap-2 fixed  left-1/2 transform -translate-x-1/2 bg-white w-full max-w-[767px] border-b-2  border-b-gray-300 p-2 transition-all  z-20 md:max-w-[700px] xl:max-w-[1216px]',
         totalQuantity > 0 ? 'opacity-1 visible' : 'opacity-0 invisible'
       )}
     >
       <div className="flex flex-wrap items-center gap-2 md:gap-3 xl:gap-5">
-        <div className="p-1 rounded-lg bg-white text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
+        <div className="p-1 rounded-lg bg-bgWhite border-1 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
           <LuWeight className="size-5  xl:size-7 text-grey" />
           {totalWeight.toFixed(2)} кг.
         </div>
-        <div className="p-1 rounded-lg bg-white text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
+        <div className="p-1 rounded-lg  bg-bgWhite border-1 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
           <BsBox className="size-5  xl:size-7 text-grey" />
           {totalVolume.toFixed(2)} м3
         </div>
         {isMovingAddToOrder && (
-          <div className="p-1 rounded-lg bg-white text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
+          <div className="p-1 rounded-lg  bg-bgWhite border-1 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
             <FaPersonWalkingLuggage className="size-5  xl:size-7 text-grey" />
             {movingPrice} грн.
           </div>
         )}
 
         {deliveryType === 'delivery' && (
-          <div className="p-1 rounded-lg bg-white text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
+          <div className="p-1 rounded-lg  bg-bgWhite border-1 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
             <TbTruckDelivery className="size-5  xl:size-7 text-grey" />
             {deliveryPrice} грн.
           </div>
         )}
-        <div className="p-1 rounded-lg bg-white text-black flex gap-1 items-center text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
+        {/* <div className="p-1 rounded-lg  bg-bgWhite border-1 border-gray-400 text-black flex gap-1 items-center text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
           <GiMoneyStack className="size-5  xl:size-7 text-grey" />
           {totalPrice.toFixed(2)} грн.
-        </div>
+        </div> */}
       </div>
 
-      <div className="flex gap-2 md:items-center">
+      {/* <div className="flex gap-2 md:items-center">
         <div className="flex flex-col gap-2 md:flex-row">
           <Button
             isIconOnly
             aria-label="Go to Cart"
             onPress={handleOrderClick}
-            className="bg-white h-7 md:h-9 md:w-9 xl:size-11"
+            className=" bg-bgWhite border-1 border-gray-400 h-7 md:h-9 md:w-9 xl:size-11"
             radius="sm"
           >
             <PiShoppingCartSimpleBold className="size-5 md:size-6 xl:size-8 text-green-500" />
@@ -118,7 +118,7 @@ const OrderBar: React.FC<IOrderBarProps> = ({
             isIconOnly
             aria-label="Clear Order"
             onPress={onOpen}
-            className="bg-white h-7 md:h-9 md:w-9 xl:size-11"
+            className=" bg-bgWhite border-1 border-gray-400 h-7 md:h-9 md:w-9 xl:size-11"
             radius="sm"
           >
             <MdOutlineCancel className="size-5 md:size-6 xl:size-8 text-red-600" />
@@ -127,7 +127,7 @@ const OrderBar: React.FC<IOrderBarProps> = ({
         <div className="hidden md:block">
           <OpenBurgerMenuBtn totalQuantity={totalQuantity} />
         </div>
-      </div>
+      </div> */}
       <ModalHeroUi
         title="Увага"
         isOpen={isOpen}

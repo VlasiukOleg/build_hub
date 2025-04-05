@@ -28,7 +28,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/ui/Accordion/AccordionSubCategoryList/AccordionSubCategoryList.ts"
+    "src/components/ui/Accordion/AccordionSubCategoryList/AccordionSubCategoryList.ts",
+    "src/components/common/OrderBarBottom/OrderBarBottom.tsx"
   ],
   "exclude": ["node_modules"]
 }
