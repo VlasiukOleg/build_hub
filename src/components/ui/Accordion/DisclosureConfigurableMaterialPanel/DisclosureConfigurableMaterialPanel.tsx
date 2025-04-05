@@ -12,7 +12,12 @@ import {
 } from '@heroui/react';
 import clsx from 'clsx';
 import { Input } from '@heroui/react';
-import { Autocomplete, AutocompleteItem, Chip } from '@heroui/react';
+import {
+  Autocomplete,
+  AutocompleteItem,
+  Select,
+  SelectItem,
+} from '@heroui/react';
 
 import styles from './configurable.module.css';
 
@@ -84,10 +89,14 @@ const DisclosureAddMaterialsPanel: React.FC<
   const isButtonActive =
     gazoblokSize.length > 0 && Number(gazoblokQuantity) > 0;
 
-  const onGazoblokSelectionChange = (id: React.Key | null) => {
+  const onGazoblokSelectionChange = (
+    e: React.ChangeEvent<HTMLSelectElement>
+  ) => {
     const selectedGazoblok = material.configurableList?.find(
-      item => item.key === id
+      item => item.key === e.target.value
     );
+
+    console.log(selectedGazoblok);
 
     if (selectedGazoblok) {
       setGazoblokPrice(
@@ -95,6 +104,7 @@ const DisclosureAddMaterialsPanel: React.FC<
           ? selectedGazoblok.salePrice
           : selectedGazoblok.price
       );
+      setGazoblokSize(selectedGazoblok.label);
       setGazoblokVolume(selectedGazoblok.volume);
       setGazoblokWeight(selectedGazoblok.weight);
       setGazoblokKey(selectedGazoblok.key);
@@ -178,30 +188,27 @@ const DisclosureAddMaterialsPanel: React.FC<
         </CardHeader>
         <Divider />
         <CardBody>
-          <Autocomplete
-            className="w-full"
-            aria-label="Розмір газоблока"
-            defaultItems={material.configurableList}
+          <Select
+            aria-label="Час доставки"
             placeholder={
               CONFIGURABLE_MATERIAL_LIST_SELECT_PLACEHOLDER_TEXT_MAP[
                 categoryTitle
               ]
             }
+            labelPlacement="outside"
             size="md"
-            variant="bordered"
             radius="sm"
-            inputValue={gazoblokSize}
-            onInputChange={setGazoblokSize}
-            onSelectionChange={onGazoblokSelectionChange}
+            variant="bordered"
+            selectedKeys={[gazoblokKey]}
+            onChange={onGazoblokSelectionChange}
+            itemHeight={40}
             disabledKeys={autocompleteDisabledKeys}
-            startContent={<RiSearchLine className="size-5" />}
-            inputProps={{
-              classNames: {
-                label: 'text-xs md:text-sm !text-grey mb-0',
-                inputWrapper:
-                  'group-data-[focus=true]:border-accent min-h-8 h-8 mb-3 md:h-10',
-                input: 'text-xs md:text-sm',
-              },
+            classNames={{
+              mainWrapper: '',
+              trigger:
+                'min-h-8 h-8 xl:h-8  data-[open=true]:border-accent data-[focus=true]:border-accent',
+              value: 'text-xs xl:text-sm',
+              innerWrapper: 'w-[250px]',
             }}
             listboxProps={{
               classNames: {
@@ -209,39 +216,38 @@ const DisclosureAddMaterialsPanel: React.FC<
               },
             }}
           >
-            {item => (
-              <AutocompleteItem key={item.key} textValue={item.label}>
+            {(material?.configurableList || []).map(configurable => (
+              <SelectItem key={configurable.key} textValue={configurable.label}>
                 <div className="flex gap-4 items-center justify-between">
-                  <p className="text-xs  md:text-sm xl:text-base">
-                    {item.label}
-                  </p>
+                  <p className="text-xs  xl:text-sm">{configurable.label}</p>
                   <div>
                     <p className="flex no-wrap gap-1 text-xs md:text-base font-semibold">
                       <span
                         className={clsx(
-                          'text-xs md:text-base',
-                          item.salePrice > 0 && 'line-through text-[10px]'
+                          'text-xs md:text-sm',
+                          configurable.salePrice > 0 &&
+                            'line-through text-[10px]'
                         )}
                       >
-                        {item.price}
+                        {configurable.price}
                       </span>
                       <span>грн.</span>
                     </p>
-                    {item.salePrice > 0 && (
+                    {configurable.salePrice > 0 && (
                       <div className="flex no-wrap gap-1 text-xs md:text-base font-semibold">
                         <p>
                           <span className="text-[10px] mr-1">від</span>
-                          <span>{item.salePrice}</span>
+                          <span>{configurable.salePrice}</span>
                         </p>
                         <span>грн.</span>
                       </div>
                     )}
                   </div>
                 </div>
-              </AutocompleteItem>
-            )}
-          </Autocomplete>
-          <div className="flex items-center gap-4 md:gap-4">
+              </SelectItem>
+            ))}
+          </Select>
+          <div className="flex items-center justify-around mt-3 gap-4 md:gap-4">
             <div className="rounded-xl border-[1px] border-accent overflow-hidden inline-block min-w-[75px] max-h-[75px] md:min-w-[100px] md:max-h-[100px] xl:min-w-[150px] xl:max-h-[150px]">
               <Image
                 src={material.image}
@@ -299,7 +305,7 @@ const DisclosureAddMaterialsPanel: React.FC<
                   <FaPlus className=" text-accent" />
                 </Button>
               </div>
-              <div className="flex md:flex-col gap-2">
+              <div className="flex items-center md:flex-col gap-2">
                 {material.measure ? (
                   <div className=" text-grey font-semibold  md:text-lg xl:text-xl">
                     <div className="flex items-center gap-1">
