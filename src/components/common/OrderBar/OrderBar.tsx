@@ -19,6 +19,8 @@ import {
 } from '@/redux/additionalMaterialSlice';
 import { clearConfigurableMaterial } from '@/redux/configurableMaterialSlice';
 
+import { normalizedWeight } from '@/utils/normalizesWeight';
+
 import { PiShoppingCartSimpleBold } from 'react-icons/pi';
 import { MdOutlineCancel } from 'react-icons/md';
 import { LuWeight } from 'react-icons/lu';
@@ -71,29 +73,29 @@ const OrderBar: React.FC<IOrderBarProps> = ({
   return (
     <div
       className={clsx(
-        'flex items-center justify-center gap-2 fixed  left-1/2 transform -translate-x-1/2 bg-white w-full max-w-[767px] border-b-2  border-b-gray-300 p-2 transition-all  z-20 md:max-w-[700px] xl:max-w-[1216px]',
+        'flex items-center justify-center gap-2 fixed  left-1/2 transform -translate-x-1/2 bg-gray-400 w-full max-w-[767px] border-b-2  border-b-gray-300 p-2 transition-all  z-20 md:max-w-[700px] xl:max-w-[1216px]',
         totalQuantity > 0 ? 'opacity-1 visible' : 'opacity-0 invisible'
       )}
     >
       <div className="flex flex-wrap items-center gap-2 md:gap-3 xl:gap-5">
-        <div className="p-1 rounded-lg bg-bgWhite border-1 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
-          <LuWeight className="size-5  xl:size-7 text-grey" />
-          {totalWeight.toFixed(2)} кг.
+        <div className="p-1 rounded-lg bg-white  text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
+          <LuWeight className="size-4  xl:size-7 text-grey" />
+          {normalizedWeight(totalWeight).toFixed(2)} тн.
         </div>
-        <div className="p-1 rounded-lg  bg-bgWhite border-1 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
-          <BsBox className="size-5  xl:size-7 text-grey" />
+        <div className="p-1 rounded-lg  bg-white border-1 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
+          <BsBox className="size-4  xl:size-7 text-grey" />
           {totalVolume.toFixed(2)} м3
         </div>
         {isMovingAddToOrder && (
-          <div className="p-1 rounded-lg  bg-bgWhite border-1 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
-            <FaPersonWalkingLuggage className="size-5  xl:size-7 text-grey" />
+          <div className="p-1 rounded-lg  bg-white  text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
+            <FaPersonWalkingLuggage className="size-4  xl:size-7 text-grey" />
             {movingPrice} грн.
           </div>
         )}
 
         {deliveryType === 'delivery' && (
-          <div className="p-1 rounded-lg  bg-bgWhite border-1 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
-            <TbTruckDelivery className="size-5  xl:size-7 text-grey" />
+          <div className="p-1 rounded-lg  bg-white  text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
+            <TbTruckDelivery className="size-4  xl:size-7 text-grey" />
             {deliveryPrice} грн.
           </div>
         )}

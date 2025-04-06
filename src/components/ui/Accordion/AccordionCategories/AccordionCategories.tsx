@@ -79,7 +79,7 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
         />
         <div
           className={clsx(
-            totalQuantity > 0 && 'pt-[90px] md:pt-[100px] xl:pt-[70px]'
+            totalQuantity > 0 && 'pt-[50px]  md:pt-[100px] xl:pt-[70px]'
           )}
         >
           <Breadcrumbs className="mb-4">
