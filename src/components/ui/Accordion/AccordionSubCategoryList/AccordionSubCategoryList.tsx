@@ -117,7 +117,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
               startContent={
                 <Avatar
                   icon={catInd + 1}
-                  className="w-5 h-5 border-1 rounded border-accent bg-transparent text-xs md:size-6 md:text-sm xl:size-7 xl:text-base"
+                  className="w-5 h-5 border-1 rounded  bg-accent text-bgWhite text-xs md:size-6 md:text-sm xl:size-7 xl:text-base"
                 />
               }
               title={subCategory.categoryTitle}

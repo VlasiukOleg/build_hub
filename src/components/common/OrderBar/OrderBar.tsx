@@ -70,66 +70,71 @@ const OrderBar: React.FC<IOrderBarProps> = ({
     router.push(url);
   };
 
+  const orderTotalPrice = (totalPrice + movingPrice + deliveryPrice).toFixed(2);
+
   return (
     <div
       className={clsx(
-        'flex items-center justify-center gap-2 fixed  left-1/2 transform -translate-x-1/2 bg-gray-400 w-full max-w-[767px] border-b-2  border-b-gray-300 p-2 transition-all  z-20 md:max-w-[700px] xl:max-w-[1216px]',
+        'flex items-center justify-center gap-2 fixed  left-1/2 transform -translate-x-1/2 bg-lightAccent w-full max-w-[767px] border-b-2  border-b-gray-300 p-2 transition-all  z-20 md:max-w-[700px] xl:max-w-[1216px]',
         totalQuantity > 0 ? 'opacity-1 visible' : 'opacity-0 invisible'
       )}
     >
       <div className="flex flex-wrap items-center gap-2 md:gap-3 xl:gap-5">
-        <div className="p-1 rounded-lg bg-white  text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
-          <LuWeight className="size-4  xl:size-7 text-grey" />
-          {normalizedWeight(totalWeight).toFixed(2)} тн.
-        </div>
-        <div className="p-1 rounded-lg  bg-white border-1 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
-          <BsBox className="size-4  xl:size-7 text-grey" />
-          {totalVolume.toFixed(2)} м3
-        </div>
-        {isMovingAddToOrder && (
-          <div className="p-1 rounded-lg  bg-white  text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
-            <FaPersonWalkingLuggage className="size-4  xl:size-7 text-grey" />
-            {movingPrice} грн.
+        <div className="flex gap-2">
+          <div className="p-1 rounded-lg bg-white border-2 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm  xl:text-lg xl:p-2 xl:gap-2">
+            <LuWeight className="size-5  xl:size-7 text-grey" />
+            {totalWeight.toFixed(2)} кг.
           </div>
-        )}
-
-        {deliveryType === 'delivery' && (
-          <div className="p-1 rounded-lg  bg-white  text-black flex items-center gap-1 text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
-            <TbTruckDelivery className="size-4  xl:size-7 text-grey" />
-            {deliveryPrice} грн.
+          <div className="p-1 rounded-lg  bg-white border-2 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm  xl:text-lg xl:p-2 xl:gap-2">
+            <BsBox className="size-5  xl:size-7 text-grey" />
+            {totalVolume.toFixed(2)} м3
           </div>
-        )}
-        {/* <div className="p-1 rounded-lg  bg-bgWhite border-1 border-gray-400 text-black flex gap-1 items-center text-xs md:text-sm md:p-2 xl:text-lg xl:p-2 xl:gap-2">
-          <GiMoneyStack className="size-5  xl:size-7 text-grey" />
-          {totalPrice.toFixed(2)} грн.
-        </div> */}
-      </div>
+          <div className="p-1 rounded-lg  bg-white border-2 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm  xl:text-lg xl:p-2 xl:gap-2">
+            <FaPersonWalkingLuggage className="size-5  xl:size-7 text-grey" />
+            {isMovingAddToOrder ? `${movingPrice} грн.` : 'не додано'}
+          </div>
+        </div>
 
-      {/* <div className="flex gap-2 md:items-center">
-        <div className="flex flex-col gap-2 md:flex-row">
-          <Button
-            isIconOnly
-            aria-label="Go to Cart"
-            onPress={handleOrderClick}
-            className=" bg-bgWhite border-1 border-gray-400 h-7 md:h-9 md:w-9 xl:size-11"
-            radius="sm"
-          >
-            <PiShoppingCartSimpleBold className="size-5 md:size-6 xl:size-8 text-green-500" />
-          </Button>
+        <div className="flex gap-2">
+          <div className="p-1 rounded-lg  bg-white border-2 border-gray-400  text-black flex items-center gap-1 text-xs md:text-sm  xl:text-lg xl:p-2 xl:gap-2">
+            <TbTruckDelivery className="size-5  xl:size-7 text-grey" />
+            {deliveryType === 'delivery'
+              ? `${deliveryPrice} грн.`
+              : 'самовивіз'}
+          </div>
+
+          <div className="p-1 rounded-lg  bg-white border-2 border-gray-400 text-black flex gap-1 items-center text-xs md:text-sm  xl:text-lg xl:p-2 xl:gap-2">
+            <GiMoneyStack className="size-5  xl:size-7 text-grey" />
+            {orderTotalPrice} грн.
+          </div>
           <Button
             isIconOnly
             aria-label="Clear Order"
             onPress={onOpen}
-            className=" bg-bgWhite border-1 border-gray-400 h-7 md:h-9 md:w-9 xl:size-11"
+            className=" bg-white border-2 border-gray-400 h-[31px] md:h-9 md:w-9 xl:size-11"
             radius="sm"
           >
             <MdOutlineCancel className="size-5 md:size-6 xl:size-8 text-red-600" />
           </Button>
         </div>
+      </div>
+
+      <div className="flex gap-2 md:items-center">
+        <div className="flex flex-row gap-2">
+          <Button
+            isIconOnly
+            aria-label="Go to Cart"
+            onPress={handleOrderClick}
+            className=" bg-white border-2 border-gray-400 h-10 w-12 md:h-9 md:w-9 xl:size-11"
+            radius="sm"
+          >
+            <PiShoppingCartSimpleBold className="size-7 md:size-6 xl:size-8 text-green-500" />
+          </Button>
+        </div>
         <div className="hidden md:block">
           <OpenBurgerMenuBtn totalQuantity={totalQuantity} />
         </div>
-      </div> */}
+      </div>
       <ModalHeroUi
         title="Увага"
         isOpen={isOpen}
