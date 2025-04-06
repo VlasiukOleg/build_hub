@@ -34,7 +34,7 @@ const AccordionItemSubTitle: React.FC<IAccordionItemSubTitle> = ({
     [subCategory.materials]
   );
 
-  const selectedConfigurableCount = useMemo(
+  const selectedConfigurableMaterialsCount = useMemo(
     () =>
       subCategory.materials
         ?.flatMap(material => material.configurableList)
@@ -46,16 +46,14 @@ const AccordionItemSubTitle: React.FC<IAccordionItemSubTitle> = ({
     [subCategory.materials, configurableMaterialKeys]
   );
 
+  const totalSelectedMaterialsCount =
+    selectedConfigurableMaterialsCount + selectedMaterialsCount;
+
   return (
     <>
-      {selectedMaterialsCount > 0 && (
+      {totalSelectedMaterialsCount > 0 && (
         <div className=" flex items-center justify-center absolute top-[-6px] right-[-8px] w-5 h-5 rounded-xl text-white  bg-red-400 text-xs xl:size-6 xl:text-sm">
-          {selectedMaterialsCount}
-        </div>
-      )}
-      {selectedConfigurableCount > 0 && (
-        <div className=" flex items-center justify-center absolute top-[-6px] right-[-8px] w-5 h-5 rounded-xl text-white  bg-red-400 text-xs xl:size-6 xl:text-sm">
-          {selectedConfigurableCount}
+          {totalSelectedMaterialsCount}
         </div>
       )}
     </>

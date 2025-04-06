@@ -71,7 +71,13 @@ const OrderBar: React.FC<IOrderBarProps> = ({
     router.push(url);
   };
 
-  const orderTotalPrice = (totalPrice + movingPrice + deliveryPrice).toFixed(2);
+  const computedMovingPrice = isMovingAddToOrder ? movingPrice : 0;
+
+  const orderTotalPrice = (
+    totalPrice +
+    computedMovingPrice +
+    deliveryPrice
+  ).toFixed(2);
 
   const configurableMaterialList = useAppSelector(
     state => state.configurableMaterial.configurableMaterial
@@ -96,8 +102,6 @@ const OrderBar: React.FC<IOrderBarProps> = ({
     () => materials.filter(material => material.quantity > 0).length ?? 0,
     [materials]
   );
-
-  console.log(selectedMaterialsCount);
 
   const totalSelectedMaterialsCount =
     selectedConfigurableMaterialsCount + selectedMaterialsCount;
