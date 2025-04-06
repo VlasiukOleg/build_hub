@@ -49,12 +49,12 @@ const AccordionItemSubTitle: React.FC<IAccordionItemSubTitle> = ({
   return (
     <>
       {selectedMaterialsCount > 0 && (
-        <div className=" flex items-center justify-center absolute top-[-6px] right-[-8px] w-5 h-5 rounded-xl text-white  bg-red-400 text-xs md:size-6 md:text-sm">
+        <div className=" flex items-center justify-center absolute top-[-6px] right-[-8px] w-5 h-5 rounded-xl text-white  bg-red-400 text-xs xl:size-6 xl:text-sm">
           {selectedMaterialsCount}
         </div>
       )}
       {selectedConfigurableCount > 0 && (
-        <div className=" flex items-center justify-center absolute top-[-6px] right-[-8px] w-5 h-5 rounded-xl text-white  bg-red-400 text-xs md:size-6 md:text-sm">
+        <div className=" flex items-center justify-center absolute top-[-6px] right-[-8px] w-5 h-5 rounded-xl text-white  bg-red-400 text-xs xl:size-6 xl:text-sm">
           {selectedConfigurableCount}
         </div>
       )}

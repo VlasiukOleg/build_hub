@@ -1,5 +1,9 @@
 import Link from 'next/link';
 
+import { Button } from '@heroui/react';
+
+import { IoClose } from 'react-icons/io5';
+
 import Logo from '@/components/ui/Logo';
 import Phone from '@/components/ui/Phone';
 import Email from '@/components/ui/Email';
@@ -10,16 +14,19 @@ interface IBurgerMenuProps {
 
 const BurgerMenu: React.FC<IBurgerMenuProps> = ({ close }) => {
   return (
-    <div className="container flex h-full min-h-screen flex-col overflow-x-hidden">
+    <div className="container flex h-full bg-white min-h-screen flex-col overflow-x-hidden">
       <header className="mb-24">
         <div className=" py-5 flex items-center justify-between ">
           <Logo close={close} />
-          <button
-            onClick={close}
-            className="px-2 py-3 bg-white/30 text-accent inline-block text-xs font-semibold rounded-lg border-[1px] border-accent"
+          <Button
+            isIconOnly
+            aria-label="Go to Cart"
+            onPress={close}
+            className="items-center justify-center w-12  bg-bgwhite border-[2px] border-accent inline-flex rounded-lg text-accent"
+            radius="sm"
           >
-            CLOSE
-          </button>
+            <IoClose className="size-7 md:size-6 xl:size-8 text-accent" />
+          </Button>
         </div>
       </header>
       <nav className="flex-1">

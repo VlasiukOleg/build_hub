@@ -83,17 +83,6 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
     }
   };
 
-  const configurableMaterialList = useAppSelector(
-    state => state.configurableMaterial.configurableMaterial
-  );
-
-  const configurableMaterialKeys = useMemo(
-    () => configurableMaterialList.map(configurable => configurable.key),
-    [configurableMaterialList]
-  );
-
-  console.log(configurableMaterialList);
-
   if (!subCategoriesBySlug) {
     return null;
   }

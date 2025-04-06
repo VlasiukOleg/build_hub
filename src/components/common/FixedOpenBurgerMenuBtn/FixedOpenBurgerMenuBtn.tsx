@@ -10,7 +10,7 @@ const FixedOpenBurgerMenuBtn = () => {
   return (
     <>
       {isBtnVisible && (
-        <div className="fixed bottom-4 right-4 md:hidden">
+        <div className="sticky bottom-4 right-4 xl:hidden pr-2 text-right">
           <OpenBurgerMenuBtn totalQuantity={totalQuantity} />
         </div>
       )}

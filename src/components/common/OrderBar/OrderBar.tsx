@@ -1,16 +1,16 @@
 'use client';
 
-import React from 'react';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import clsx from 'clsx';
 import { Button } from '@heroui/react';
 import { useDisclosure } from '@heroui/react';
+import { useMemo } from 'react';
 
 import OpenBurgerMenuBtn from '../OpenBurgerMenuBtn';
 const ModalHeroUi = dynamic(() => import('@/components/ui/ModalHeroUi'));
 
-import { useAppDispatch } from '@/redux/hooks';
+import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 import { clearQuantity } from '@/redux/materialsSlice';
 import { toggleMovingPriceToOrder } from '@/redux/movingSlice';
 import {
@@ -19,7 +19,7 @@ import {
 } from '@/redux/additionalMaterialSlice';
 import { clearConfigurableMaterial } from '@/redux/configurableMaterialSlice';
 
-import { normalizedWeight } from '@/utils/normalizesWeight';
+import { useMaterials } from '@/hooks/useMaterials';
 
 import { PiShoppingCartSimpleBold } from 'react-icons/pi';
 import { MdOutlineCancel } from 'react-icons/md';
@@ -56,6 +56,7 @@ const OrderBar: React.FC<IOrderBarProps> = ({
   const router = useRouter();
   const dispatch = useAppDispatch();
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const { materials } = useMaterials();
 
   const handleOrderClear = () => {
     dispatch(clearQuantity(0));
@@ -72,14 +73,43 @@ const OrderBar: React.FC<IOrderBarProps> = ({
 
   const orderTotalPrice = (totalPrice + movingPrice + deliveryPrice).toFixed(2);
 
+  const configurableMaterialList = useAppSelector(
+    state => state.configurableMaterial.configurableMaterial
+  );
+
+  const configurableMaterialKeys = useMemo(
+    () => configurableMaterialList.map(configurable => configurable.key),
+    [configurableMaterialList]
+  );
+
+  const selectedConfigurableMaterialsCount = useMemo(
+    () =>
+      configurableMaterialList.filter(
+        configurableMaterial =>
+          configurableMaterial &&
+          configurableMaterialKeys.includes(configurableMaterial.key)
+      ).length ?? 0,
+    [configurableMaterialList, configurableMaterialKeys]
+  );
+
+  const selectedMaterialsCount = useMemo(
+    () => materials.filter(material => material.quantity > 0).length ?? 0,
+    [materials]
+  );
+
+  console.log(selectedMaterialsCount);
+
+  const totalSelectedMaterialsCount =
+    selectedConfigurableMaterialsCount + selectedMaterialsCount;
+
   return (
     <div
       className={clsx(
-        'flex items-center justify-center gap-2 fixed  left-1/2 transform -translate-x-1/2 bg-lightAccent w-full max-w-[767px] border-b-2  border-b-gray-300 p-2 transition-all  z-20 md:max-w-[700px] xl:max-w-[1216px]',
+        'flex items-center justify-between gap-2 fixed  left-1/2 transform -translate-x-1/2 bg-lightAccent w-full max-w-[767px] border-b-2  border-b-gray-300 py-2 px-3 md:py-3 transition-all  z-20 md:max-w-[700px] xl:max-w-[1216px]',
         totalQuantity > 0 ? 'opacity-1 visible' : 'opacity-0 invisible'
       )}
     >
-      <div className="flex flex-wrap items-center gap-2 md:gap-3 xl:gap-5">
+      <div className="flex flex-col gap-2 md:flex-row md:gap-3 xl:gap-5">
         <div className="flex gap-2">
           <div className="p-1 rounded-lg bg-white border-2 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm  xl:text-lg xl:p-2 xl:gap-2">
             <LuWeight className="size-5  xl:size-7 text-grey" />
@@ -120,7 +150,7 @@ const OrderBar: React.FC<IOrderBarProps> = ({
       </div>
 
       <div className="flex gap-2 md:items-center">
-        <div className="flex flex-row gap-2">
+        <div className="flex relative flex-row gap-2">
           <Button
             isIconOnly
             aria-label="Go to Cart"
@@ -130,8 +160,11 @@ const OrderBar: React.FC<IOrderBarProps> = ({
           >
             <PiShoppingCartSimpleBold className="size-7 md:size-6 xl:size-8 text-green-500" />
           </Button>
+          <div className=" flex items-center justify-center absolute top-[-6px] right-[-6px] w-5 h-5 rounded-xl text-white  bg-green-600 text-xs xl:size-6 xl:text-sm">
+            {totalSelectedMaterialsCount}
+          </div>
         </div>
-        <div className="hidden md:block">
+        <div className="hidden xl:block">
           <OpenBurgerMenuBtn totalQuantity={totalQuantity} />
         </div>
       </div>

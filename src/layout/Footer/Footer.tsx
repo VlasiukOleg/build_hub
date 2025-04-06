@@ -18,7 +18,7 @@ const Footer: React.FunctionComponent<IFooterProps> = props => {
           {!isPolicyPage ? (
             <Link
               href="/policy"
-              className="text-xs md:text-sm xl:text-lg text-accent"
+              className="text-xs md:text-sm xl:text-base text-accent"
             >
               Політика конфіденційності
             </Link>

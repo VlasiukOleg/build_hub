@@ -62,7 +62,10 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
 
   return (
     <section
-      className={clsx('pt-5 py-5 w-full', totalQuantity > 0 && 'pt-[0px]')}
+      className={clsx(
+        'pt-5 py-5 w-full relative',
+        totalQuantity > 0 && 'pt-[0px]'
+      )}
     >
       <div className="container">
         <OrderBar
@@ -78,7 +81,7 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
         />
         <div
           className={clsx(
-            totalQuantity > 0 && 'pt-[90px]  md:pt-[100px] xl:pt-[70px]'
+            totalQuantity > 0 && 'pt-[95px]  md:pt-[65px] xl:pt-[75px]'
           )}
         >
           <Breadcrumbs className="mb-4">
