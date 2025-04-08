@@ -125,7 +125,9 @@ const OrderBar: React.FC<IOrderBarProps> = ({
           </div>
           <div className="p-1 rounded-lg  bg-white border-2 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm  xl:text-lg xl:p-2 xl:gap-2">
             <FaPersonWalkingLuggage className="size-5  xl:size-7 text-grey" />
-            {isMovingAddToOrder ? `${movingPrice} грн.` : 'не додано'}
+            {isMovingAddToOrder
+              ? `${movingPrice > 500 ? movingPrice : 500} грн.`
+              : 'не додано'}
           </div>
         </div>
 

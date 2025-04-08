@@ -133,7 +133,7 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
       <Divider />
       <CardFooter>
         <div className="bg-bgWhite text-grey  font-semibold text-center w-full rounded-lg border-[1px] border-accent p-2 md:text-lg xl:w-full xl:text-xl xl:p-3">
-          Всього: {totalMaterialPrice.toFixed(2)} грн.
+          {material.salePrice > 0 ? `Всього: ${(material.salePrice * material.quantity).toFixed(2)} грн.` : `Всього: ${totalMaterialPrice.toFixed(2)} грн.`}
         </div>
       </CardFooter>
     </Card>

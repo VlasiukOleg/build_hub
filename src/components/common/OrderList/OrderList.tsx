@@ -368,6 +368,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                           className="md:size-[75px]"
                         />
                       </div>
+                      <p>{material.id}</p>
 
                       <ClampedText text={material.title} />
                       {editMaterialKey === String(material.id) ? (
@@ -793,10 +794,10 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                       </p>
                       <div className="w-[25%] text-right">
                         <p className="text-xs font-normal md:text-base">
-                          {movingPrice} грн.
+                          {movingPrice > 500 ? movingPrice : 500} грн.
                         </p>
                         <p className="text-sm text-accent md:text-lg">
-                          {movingPrice} грн.
+                          {movingPrice > 500 ? movingPrice : 500} грн.
                         </p>
                       </div>
                       <div className="w-[15%] text-right flex flex-col items-center justify-end">

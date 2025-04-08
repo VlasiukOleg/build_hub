@@ -3467,15 +3467,6 @@
                 "weight": 25,
                 "volume": 0.025,
                 "movingTypeCalculation": "weight"
-              },
-              {
-                "label": "БАЗА B 1.5 мм",
-                "key": "040_baza_b_1.5",
-                "price": 1519.96,
-                "salePrice": 0,
-                "weight": 25,
-                "volume": 0.025,
-                "movingTypeCalculation": "weight"
               }
             ]
           }
@@ -3629,7 +3620,56 @@
         "id": 10403,
         "categoryTitle": "Фарба фасадна",
         "isCategoryOpen": false,
-        "materials": []
+        "materials": [
+          {
+            "id": 10403.1,
+            "image": "https://i.ibb.co/JRSstjJK/kompozit-facade-universal.webp",
+            "title": "Фарба фасадна силіконова Kompozit FACADE UNIVERSAL, 14 кг",
+            "description": "Посилена силіконом універсальна латексна фарба для зовнішніх і внутрішніх робіт, що розбавляється водою. Утворює атмосферостійке сніжно-біле матове покриття з відмінною паропроникністю, зносостійкістю та стійкістю до миття. Виготовлена на основі спеціалізованого 100% акрилового латексу!ПРИЗНАЧЕННЯ: призначена для фарбування міцних цементно-вапняних й полімер-модифікованих штукатурок, шпаклівок, бетону та інших відповідних мінеральних поверхонь зовні та всередині будівель. Може застосовуватись для фарбування цегляних фасадів та систем утеплення (зокрема, з мінеральною ватою). Застосовують для фарбування фасадів різноманітних будівель і споруд, а також стін і стель всередині приміщень, зокрема з високими експлуатаційними навантаженнями й вимогами до зносостійкості.",
+            "weight": 0.14,
+            "volume": 0.01,
+            "price": 1155.48,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://kompozit.ua/catalog/farbi/farbi_inter_rni/farba_fasadna_facade_universal/?srsltid=AfmBOopeRXs45TfdfaDK3637Pi2ArU2CPjfK6jUtS3_yGW3tLwdm6cYZ",
+            "configurableList": []
+          },
+          {
+            "id": 10403.2,
+            "image": "https://i.ibb.co/ZzbzbqqD/dufa-facade-eko.webp",
+            "title": "Фарба фасадна DUFA EKO FASSADE MGF M690, 14 кг",
+            "description": "Фасадна фарба MGF Eco Fassade M690 – матова дисперсійна , що застосовується для нанесення на цементні і цементно-вапняні штукатурки, бетон і пінобетон, цеглу, а також на гіпсові основи, гіпсокартон, ДВП, ДСП, QSB і OSB.",
+            "weight": 14,
+            "volume": 0.01,
+            "price": 694.95,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://dufa-mgf.com.ua/farba-fasadna-mgf-eco-fassade-m690-14-kh-bilyi-matovyi/",
+            "configurableList": []
+          },
+          {
+            "id": 10403.3,
+            "image": "https://i.ibb.co/21fycqmp/ceresit-ct42.webp",
+            "title": "CERESIT CT-42 БАЗА біла Фарба акрилова, 10л",
+            "description": "CERESIT CT 42 — для фарбування мінеральних поверхонь всередині та зовні будівель. Для фарбування систем фасадної теплоізоляції (з ППС утеплювачем). Витримує інтенсивне, багаторазове миття, може застосовуватись у приміщеннях, де необхідне довговічне, зносостійке фарбувальне покриття (місця загального користування, розважальні центри, сходові майданчики, коридори, фойє, паркінги, гаражі, офісні приміщення, громадські заклади тощо). ",
+            "weight": 14,
+            "volume": 0.01,
+            "price": 2688.00,
+            "salePrice": 1722.50,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://dufa-mgf.com.ua/farba-fasadna-mgf-eco-fassade-m690-14-kh-bilyi-matovyi/",
+            "configurableList": []
+          }
+        ]
       },
       {
         "id": 105,

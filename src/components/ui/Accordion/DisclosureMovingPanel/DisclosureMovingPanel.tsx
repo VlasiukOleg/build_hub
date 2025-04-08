@@ -488,19 +488,18 @@ const DisclosureMovingPanel: React.FunctionComponent<
         <p className="text-center mb-2">Розрахунок розвантаження</p>
         <MovingCostTable rows={visibleRows} />
       </div>
-      <div>
-        {totalMovingFee < 500 && (
-          <Alert
-            description={description1}
-            title={title}
-            color="danger"
-            classNames={{
-              title: 'font-bold text-xs/6 md:text-sm xl:text-base',
-              description: 'text-xs md:text-sm xl:text-base',
-            }}
-          />
-        )}
-      </div>
+      {totalMovingFee < 500 && (
+        <Alert
+          description={description1}
+          className="mt-4"
+          title={title}
+          color="danger"
+          classNames={{
+            title: 'font-bold text-xs/6 md:text-sm xl:text-base',
+            description: 'text-xs md:text-sm xl:text-base',
+          }}
+        />
+      )}
       <div className="text-center">
         {' '}
         <Button
