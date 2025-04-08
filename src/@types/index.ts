@@ -8,6 +8,7 @@ export enum Pages {
   KLADKA = 'kladka',
   UTEPLENYA = 'uteplenya',
   POLICY = 'policy',
+  PLITKA = 'plitka',
 }
 
 export const BREADCRUMBS_LABEL = {

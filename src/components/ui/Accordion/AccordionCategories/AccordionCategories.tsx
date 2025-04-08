@@ -25,6 +25,7 @@ const BREADCRUMBS_LABEL = {
   [Pages.KLADKA]: 'Кладка',
   [Pages.UTEPLENYA]: 'Утеплення',
   [Pages.POLICY]: 'Політика конфіденційності',
+  [Pages.PLITKA]: 'Плитка',
 };
 
 interface IAccordionCategoriesProps {

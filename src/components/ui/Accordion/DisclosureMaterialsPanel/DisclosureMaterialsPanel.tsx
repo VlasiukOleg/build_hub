@@ -67,9 +67,28 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
             />
           </div>
           <div className="flex flex-col justify-between xl:w-[500px]">
-            <div className=" text-grey font-semibold flex items-center gap-1 md:text-lg xl:text-xl">
-              Ціна: {material.price} грн.
-            </div>
+            {material.salePrice > 0 ? (
+              <div>
+                <p className="flex no-wrap gap-1 text-xs  text-grey md:text-sm font-semibold">
+                  <span className=" line-through">
+                    Ціна: {material.price} грн.
+                  </span>
+                </p>
+                <div className="flex no-wrap  text-grey gap-1  xl:text-lg font-semibold">
+                  <p>
+                    <span className=" mr-1">
+                      Ціна: <span className="text-[10px]">від</span>{' '}
+                    </span>
+                    <span>{material.salePrice}</span>
+                  </p>
+                  <span>грн.</span>
+                </div>
+              </div>
+            ) : (
+              <div className=" text-grey font-semibold flex items-center gap-1 md:text-lg xl:text-xl">
+                Ціна: {material.price} грн.
+              </div>
+            )}
             <div className="flex items-center justify-between md:mb-0 xl:mb-5">
               <div>
                 <Button

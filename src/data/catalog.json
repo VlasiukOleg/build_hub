@@ -6024,6 +6024,216 @@
     ]
   },
   {
+    "id": "plitka",
+    "title": "Замовлення матеріалів для плиточних робіт",
+    "categories": [
+      {
+        "id": 456,
+        "categoryTitle": "Клей для плитки універсальний",
+        "isCategoryOpen": true,
+        "materials": [
+          {
+            "id": 456.1,
+            "image": "https://i.ibb.co/JW7Qn9KV/siltek-t80.webp",
+            "title": "Клей для плитки Siltek T-80 універсальний, 25 кг",
+            "description": "Для приклеювання керамічних плиток розміром не більше ніж 50х50 см із водопоглинанням більше 1% на горизонтальні та вертикальні поверхні (бетон, цегляне мурування, цементно-піщані, цементно-вапняні та гіпсові штукатурки, стяжки тощо), що не деформуються, всередині будівель. Дозволяється облицювання горизонтальних поверхонь плитками із водопоглинанням менше 1% (керамограніт), розміром не більше ніж 40х40 см. Для кріплення плиток зовні будівель слід застосовувати суху суміш Siltek Т-80 з використанням композиції Siltek Arm-mix Е-120 замість води",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 187.2,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "",
+            "officialLink": "https://siltek.ua/product/t-80/",
+            "configurableList": []
+          },
+          {
+            "id": 456.2,
+            "image": "https://i.ibb.co/gLfgygCb/siltek-t83.webp",
+            "title": "Клей для плитки Siltek T-83 облицювання підлоги, 25 кг",
+            "description": "Для приклеювання керамічних, керамогранітних, клінкерних та інших облицювальних виробів розміром не більше ніж 100х100 см та водопоглинанням від 0 до 20 %, а також природного каменю (крім мармуру) на бетонні і цементно-піщані горизонтальні поверхні, що не деформуються всередині та зовні промислових і цивільних будівель. Ефективний при влаштуванні всіх типів системи «тепла підлога». Рекомендується застосовувати при локальному ремонті горизонтальних поверхонь перед облицюванням.",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 316.8,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "",
+            "officialLink": "https://siltek.ua/product/t-83/",
+            "configurableList": []
+          },
+          {
+            "id": 456.3,
+            "image": "https://i.ibb.co/35rnR3c0/siltek-t801.webp",
+            "title": "Клей для плитки та каменю SILTEK T-801 універсальний, 25 кг",
+            "description": "Для приклеювання всіх типів облицювальних плиток (крім мармурових) розміром до 80х80 см на горизонтальні та вертикальні поверхні, всередині та зовні будівель. Ефективний при облицюванні балконів, терас, цокольної частини будівель. Застосовується в системі “тепла підлога” з водяним підігрівом та підігрівом за допомогою електричного дроту.",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 432.0,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "",
+            "officialLink": "https://siltek.ua/product/t-801/",
+            "configurableList": []
+          },
+          {
+            "id": 456.4,
+            "image": "https://i.ibb.co/DPn1pH3S/siltek-t803.webp",
+            "title": "Клей для плитки SILTEK T-803 ГРЕС, 25 кг",
+            "description": "Для приклеювання керамогранітних (GRES) та керамічних облицювальних виробів розміром не більше ніж 60х60 см на горизонтальні та вертикальні поверхні (бетон, цегляне мурування, цементно-піщані, цементно-вапняні та гіпсові штукатурки, стяжки тощо) всередині та зовні будівлі.",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 264.0,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "",
+            "officialLink": "https://siltek.ua/product/t-803/",
+            "configurableList": []
+          },
+          {
+            "id": 456.5,
+            "image": "https://i.ibb.co/rfvF7J8g/packshot-product-ceresit-cm11-25kg-ua.webp",
+            "title": "Клей для керамічної плитки Ceramic CERESIT CM-11 , 25 кг",
+            "description": "CERESIT® CM 11 — суха суміш для облицювання бетонних, цегляних, цементно-піщаних, цементно-вапняних, гіпсових та інших мінеральних горизонтальних і вертикальних поверхонь, що не деформуються, керамічними плитками (розмір ≤ 40×40 см, водопоглинання ≥ 1%) всередині та зовні будівель. Для облицювання поверхонь зовні будівель та приклеювання керамогранітних плиток із водопоглинанням < 1% до Ceresit CM 11 додають емульсію Ceresit CC 83.",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 273.0,
+            "salePrice": 226.04,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "",
+            "officialLink": "https://www.ceresit.ua/catalog/oblicjuvannja/standartni-kleji-dlja-plytky/produkti.html/ceresit-cm-11/SAP_0201SAC013S3.html",
+            "configurableList": []
+          },
+          {
+            "id": 456.6,
+            "image": "https://i.ibb.co/TB4HTNV2/ceresit-cm117.webp",
+            "title": "Клей для плитки CERESIT CM-117 Flex, 25 кг",
+            "description": "CERESIT® CM 117 — суха суміш для облицювання мінерал. горизонт. і вертикал. поверхонь, в т. ч. тих, що обмежено деформуються (прогин до 2 мм), різними плитками, в т. ч. зі штучного каменю, (розмір ≤ 80х80 см, водопоглинання > 0%) всередині та зовні будівель. Для певних видів основ до Ceresit CМ 117 додають Ceresit СС 83. Ефективна для облицювання басейнів і резервуарів; основ, що зазнають постійних атмосферних впливів та інтенсивних навантажень; методом «плитка по плитці».",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 719.0,
+            "salePrice": 497.71,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "",
+            "officialLink": "https://www.ceresit.ua/catalog/oblicjuvannja/elastycni-kleji-dlja-plytky/produkti.html/ceresit-cm-117/SAP_0201SBC013S7.html",
+            "configurableList": []
+          }
+        ]
+      },
+      {
+        "id": 457,
+        "categoryTitle": "Клей для плитки еластичний",
+        "isCategoryOpen": true,
+        "materials": [
+          {
+            "id": 457.2,
+            "image": "https://i.ibb.co/Vph9qKYD/ceresit-cm12.webp",
+            "title": "Клей для плитки та керамограніту еластичний CERESIT CM-12, мішок 25 кг",
+            "description": "CERESIT CM 12 — суха суміш для облицювання бетонних, цегляних, цементно-піщаних, цементно-вапняних, гіпсових та інших мінеральних горизонт. і вертикал. поверхонь, що не деформуються, всередині будівель керамічними, керамогранітними плитками та плитками зі штучного каменю (розмір ≤ 60×60 см, водопоглинання > 0%).",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 390.0,
+            "salePrice": 304.11,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "",
+            "officialLink": "https://www.ceresit.ua/catalog/oblicjuvannja/elastycni-kleji-dlja-plytky/produkti.html/ceresit-cm-12/SAP_0201SBC013S9.html",
+            "configurableList": []
+          },
+          {
+            "id": 457.3,
+            "image": "https://i.ibb.co/vx1C27VW/ceresit-cm14.webp",
+            "title": "Клей для плитки та керамограніту еластичний CERESIT CM-14 Elastic Universal, мішок 25 кг",
+            "description": "CERESIT® CM 14 — суха суміш для облицювання бетонних, цегляних, цементно-піщаних, цементно-вапняних та ін. мінерал. горизонт. і вертикал. поверхонь різними плитками, в т. ч. зі штучного каменю, (розмір ≤ 60×60 см, водопоглинання > 0%) всередині та зовні будівель. Ефективна при облицюванні холів, сходинкових кліток, холодних переходів та підлог з підігрівом.",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 552.0,
+            "salePrice": 425.24,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "",
+            "officialLink": "https://www.ceresit.ua/catalog/oblicjuvannja/elastycni-kleji-dlja-plytky/produkti.html/ceresit-cm-14/SAP_0201SBC013T4.html",
+            "configurableList": []
+          }
+        ]
+      },
+      {
+        "id": 458,
+        "categoryTitle": "Клей для плитки високоеластичний",
+        "isCategoryOpen": true,
+        "materials": [
+          {
+            "id": 458.1,
+            "image": "https://i.ibb.co/bg56d7D6/siltek-81.webp",
+            "title": "Клей для плитки супереластичний SILTEK T-81 PRO, 25кг",
+            "description": "Для приклеювання всіх типів природних (крім мармуру) та штучних (керамічних, мозаїчних, бетонних, скляних і т. п.) облицювальних виробів розміром не більше ніж 1,5 м2 на усі види мінеральних поверхонь всередині та зовні будівель. Рекомендується для облицювання поверхонь, що деформуються, з підвищеною щільністю та інших складних мінеральних поверхонь (магнезитова плита, бетон, гіпсокартон, OSB тощо). Ефективний для тонкошарового мурування склоблоками, а також при облицюванні балконів, басейнів (глибиною до 5 м), терас, цокольної частини будівель, влаштуванні систем «плитка на плитку» та «тепла підлога». Може застосовуватися для облицювання барбекю, мангалів, камінів та печей.",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 700.8,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "",
+            "officialLink": "hhttps://siltek.ua/product/t-81/",
+            "configurableList": []
+          },
+          {
+            "id": 458.2,
+            "image": "https://i.ibb.co/gMpfWcJ5/ceresit-cm17.webp",
+            "title": "Високоеластична клеюча суміш CERESIT CM-17 AERO  AERO Super Flexible, 25 кг ",
+            "description": "CERESIT® CM 17 AERO — суха суміш для облицювання мінерал. горизонт. і вертикал. поверхонь, в т. ч. тих, що деформуються, плитками будь-якого виду (розмір ≤ 1 м х 1 м або площа < 1 м2 із довшою стороною до 1,2 м) всередині та зовні будівель. Для облицювання гіпсокартону, OSB, ДСП, заґрунтованих гіпсових та ангідридних поверхонь, басейнів та резервуарів, методом «плитка по плитці», підлог з підігрівом, печей та камінів. ",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 1155.0,
+            "salePrice": 889.76,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "",
+            "officialLink": "https://www.ceresit.ua/catalog/oblicjuvannja/elastycni-kleji-dlja-plytky/produkti.html/ceresit-cm-17/SAP_0201SBC013W2.html",
+            "configurableList": []
+          }
+        ]
+      },
+      {
+        "id": 459,
+        "categoryTitle": "Клей для великоформатної плитки",
+        "isCategoryOpen": true,
+        "materials": [
+          {
+            "id": 459.1,
+            "image": "https://i.ibb.co/RT8jXY5r/ceresit-cm22.webp",
+            "title": "Високоеластична клеюча суміш для великоформатної плитки CERESIT CM-22  Mega Format Strong Flexible,",
+            "description": "CERESIT CM 22 — суха суміш для облицювання мінерал. та органовмісних вертикал. і горизонт. поверхонь, в т. ч. деформівних, всередині та зовні будівель різною плиткою (в т. ч. зі штуч. та природ. каменю зі стійким забарвленням) великого формату. Для підлог з підігрівом, фасадів, басейнів, резервуарів з тех. водою. Для місць з інтенсив. рухом і високими мех. навантаженнями. Є можливість облицювання вертикал. поверхонь великими плитками без додаткового мех. кріплення. ",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 1552.0,
+            "salePrice": 1195.6,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "",
+            "officialLink": "https://www.ceresit.ua/catalog/oblicjuvannja/elastycni-kleji-dlja-plytky/produkti.html/ceresit-cm-22/SAP_0201SBC013W5.html",
+            "configurableList": []
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "kladka",
     "title": "Замовлення матеріалів для кладочних робіт",
     "categories": [

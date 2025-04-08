@@ -9,6 +9,7 @@ import Styazhka from '@/../public/images/styazhka.jpg';
 import Kladka from '@/../public/images/kladka.webp';
 import Shpaklivka from '@/../public/images/spackling.jpg';
 import Uteplenya from '@/../public/images/Uteplenie-450x300.jpg';
+import Plytka from '@/../public/images/ukladannia-plytky-450x300.webp';
 
 import { Pages } from '@/@types';
 
@@ -45,6 +46,12 @@ const catalog = [
   },
   {
     id: 6,
+    text: 'Плиточні роботи',
+    img: Plytka,
+    href: 'plitka',
+  },
+  {
+    id: 7,
     text: 'Кладочні роботи',
     img: Kladka,
     href: 'kladka',
