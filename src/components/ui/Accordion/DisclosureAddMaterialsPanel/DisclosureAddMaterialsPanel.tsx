@@ -49,7 +49,6 @@ export const ListboxWrapper: React.FC<ListboxWrapperProps> = ({ children }) => (
   </div>
 );
 
-
 interface IDisclosureAddMaterialsPanelProps {}
 
 const description =
@@ -85,7 +84,6 @@ const DisclosureAddMaterialsPanel: React.FC<
 
   const errors: string[] = [];
 
- 
   if (Number(additionalMaterialsEditModeQuantity) < 0) {
     errors.push('Введіть > 0');
   }
@@ -224,12 +222,8 @@ const DisclosureAddMaterialsPanel: React.FC<
     setManualMaterialTitle('');
   };
 
-  const handleRemoveMaterial = (index: number) => {
+  const handleRemoveMaterial = (index: string) => {
     dispatch(removeAdditionalMaterial(index));
-
-    if (additionalMaterial.length === 1) {
-      dispatch(toggleAdditionalPriceAddToOrder());
-    }
   };
 
   const onToggleAdditionalMaterialToOrder = () => {
@@ -478,7 +472,7 @@ const DisclosureAddMaterialsPanel: React.FC<
                       <Button
                         isIconOnly
                         aria-label="Clear Order"
-                        onPress={() => handleRemoveMaterial(index)}
+                        onPress={() => handleRemoveMaterial(material.id)}
                         className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
                         radius="sm"
                       >
