@@ -79,6 +79,12 @@ const OrderBar: React.FC<IOrderBarProps> = ({
     deliveryPrice
   ).toFixed(2);
 
+  const additionalMaterialList = useAppSelector(
+    state => state.additionalMaterial.additionalMaterial
+  );
+
+  const selectedAdditionalMaterialsCount = additionalMaterialList.length;
+
   const configurableMaterialList = useAppSelector(
     state => state.configurableMaterial.configurableMaterial
   );
@@ -104,7 +110,9 @@ const OrderBar: React.FC<IOrderBarProps> = ({
   );
 
   const totalSelectedMaterialsCount =
-    selectedConfigurableMaterialsCount + selectedMaterialsCount;
+    selectedConfigurableMaterialsCount +
+    selectedMaterialsCount +
+    selectedAdditionalMaterialsCount;
 
   return (
     <div

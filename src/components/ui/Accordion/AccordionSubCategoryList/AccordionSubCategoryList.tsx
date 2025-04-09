@@ -1,8 +1,7 @@
 'use client';
 
-import { useMemo } from 'react';
 import { Accordion, AccordionItem } from '@heroui/accordion';
-import { Avatar, Chip } from '@heroui/react';
+import { Avatar } from '@heroui/react';
 
 import DisclosureMaterialsPanel from '../DisclosureMaterialsPanel';
 import DisclosureConfigurableMaterialPanel from '../DisclosureConfigurableMaterialPanel';
@@ -10,16 +9,17 @@ import DisclosureMovingPanel from '../DisclosureMovingPanel';
 import DisclosureDeliveryPanel from '../DisclosureDeliveryPanel';
 import DisclosureAddMaterialsPanel from '../DisclosureAddMaterialsPanel';
 import AccordionItemSubTitle from './AccordionItemSubTitle';
-
-import { Pages, SubCategory } from '@/@types';
+import AccordionItemAdditionalSubTitle from './AccordionItemAdditionalSubTitle';
 
 import { useMaterials } from '@/hooks/useMaterials';
-import { useAppDispatch, useAppSelector } from '@/redux/hooks';
+import { useAppDispatch } from '@/redux/hooks';
 import { inputChangeQuantity, changeQuantity } from '@/redux/materialsSlice';
 
 import { LiaLuggageCartSolid } from 'react-icons/lia';
 import { TbTruckDelivery } from 'react-icons/tb';
 import { FaPlus } from 'react-icons/fa6';
+
+import { Pages } from '@/@types';
 
 interface IAccordionSubCategoryList {
   slug: Pages;
@@ -155,8 +155,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
       >
         <AccordionItem
           key="add"
-          title="Додати матеріал"
-          className="bg-slate-50"
+          className="bg-slate-50 relative"
           classNames={{ title: 'text-sm md:text-base' }}
           startContent={
             <Avatar
@@ -166,6 +165,8 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
               color="primary"
             />
           }
+          title="Додати матеріал"
+          subtitle={<AccordionItemAdditionalSubTitle />}
         >
           <DisclosureAddMaterialsPanel />
         </AccordionItem>
