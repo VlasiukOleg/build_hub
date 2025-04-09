@@ -20,7 +20,7 @@ export const BREADCRUMBS_LABEL = {
   [Pages.STYAZHKA]: 'Cтяжка',
   [Pages.KLADKA]: 'Кладка',
   [Pages.UTEPLENYA]: 'Утеплення',
-  [Pages.POLICY]: 'Політика конфіденційності',
+  [Pages.PLITKA]: 'Плитка',
 };
 
 export interface SubCategory {

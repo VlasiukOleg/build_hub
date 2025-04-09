@@ -35,8 +35,10 @@ const additionalMaterialSlice = createSlice({
         material.id === materialId ? { ...material, quantity } : material
       );
     },
-    removeAdditionalMaterial(state, action: PayloadAction<number>) {
-      state.additionalMaterial.splice(action.payload, 1);
+    removeAdditionalMaterial(state, action: PayloadAction<string>) {
+      state.additionalMaterial = state.additionalMaterial.filter(
+        material => material.id !== action.payload
+      );
     },
     clearAdditionalMaterial(state) {
       state.additionalMaterial = [];

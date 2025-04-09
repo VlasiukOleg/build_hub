@@ -47,23 +47,20 @@ import { FaRegEdit } from 'react-icons/fa';
 import { IoSaveOutline } from 'react-icons/io5';
 import { MdOutlineCancel } from 'react-icons/md';
 
-import { Pages } from '@/@types';
-
-const BREADCRUMBS_LABEL = {
-  [Pages.CATALOG]: 'Каталог',
-  [Pages.SHTUKATURKA]: 'Штукатурка',
-  [Pages.SHPAKLIVKA]: 'Шпаклівка',
-  [Pages.GIPSOKARTON]: 'Гіпсокартон',
-  [Pages.ORDER]: 'Корзина',
-  [Pages.STYAZHKA]: 'Cтяжка',
-  [Pages.KLADKA]: 'Кладка',
-  [Pages.UTEPLENYA]: 'Утеплення',
-  [Pages.PLITKA]: 'Плитка',
-};
+import {
+  Pages,
+  Material,
+  ConfigurableMaterial,
+  AdditionalMaterial,
+  BREADCRUMBS_LABEL,
+} from '@/@types';
 
 interface IOrderListProps {}
 
 const OrderList: React.FC<IOrderListProps> = ({}) => {
+  const [materialId, setMaterialId] = useState<number | string | null>(null);
+  const [materialTitle, setMaterialTitle] = useState<string>('');
+
   const [editMaterialKey, setEditMaterialKey] = useState<string>('');
   const [
     additionalMaterialsEditModeQuantity,
@@ -178,6 +175,8 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     ...activeConfigurableMaterials,
   ];
 
+  console.log(filteredMaterialsByQuantity);
+
   const groupedMaterials = groupMaterialsByType(allActiveMaterials);
 
   const weightTypeMaterial = groupedMaterials[
@@ -267,8 +266,20 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
   ]);
 
   const handleEditModeInputChange = (value: string) => {
-    console.log(value);
     setAdditionalMaterialsEditModeQuantity(value);
+  };
+
+  const handleMaterialConfirmModalOpen = (
+    material: Material | ConfigurableMaterial | AdditionalMaterial
+  ) => {
+    console.log(material);
+    if ('id' in material) {
+      setMaterialId(material.id);
+      setMaterialTitle(material.title);
+    } else if ('key' in material) {
+      setMaterialId(material.key);
+      setMaterialTitle(material.title);
+    }
   };
 
   const handleUpdateMaterial = (materialId: number, quantity: number) => {
@@ -303,12 +314,12 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     setAdditionalMaterialsEditModeQuantity(String(quantity));
   };
 
-  const handleRemoveAdditionalMaterial = (index: number) => {
-    dispatch(removeAdditionalMaterial(index));
+  const handleRemoveAdditionalMaterial = (id: string) => {
+    dispatch(removeAdditionalMaterial(id));
 
-    if (additionalMaterial.length === 1) {
-      dispatch(toggleAdditionalPriceAddToOrder());
-    }
+    // if (additionalMaterial.length === 1) {
+    //   dispatch(toggleAdditionalPriceAddToOrder());
+    // }
   };
 
   const handleUpdateConfigurableMaterial = (
@@ -331,8 +342,8 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     setAdditionalMaterialsEditModeQuantity(String(quantity));
   };
 
-  const handleRemoveConfigurableMaterial = (index: string) => {
-    dispatch(removeConfigurableMaterial(index));
+  const handleRemoveConfigurableMaterial = (id: string) => {
+    dispatch(removeConfigurableMaterial(id));
   };
 
   return (
@@ -368,8 +379,6 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                           className="md:size-[75px]"
                         />
                       </div>
-                      <p>{material.id}</p>
-
                       <ClampedText text={material.title} />
                       {editMaterialKey === String(material.id) ? (
                         <Input
@@ -436,27 +445,15 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                         <Button
                           isIconOnly
                           aria-label="Clear Order"
-                          onPress={onOpenMaterial}
+                          onPress={() => {
+                            handleMaterialConfirmModalOpen(material);
+                            onOpenMaterial();
+                          }}
                           className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
                           radius="sm"
                         >
                           <MdOutlineCancel className="size-6  xl:size-9 text-red-600" />
                         </Button>
-                        <ModalHeroUi
-                          title="Увага"
-                          isOpen={isOpenMaterial}
-                          onOpenChange={onOpenChangeMaterial}
-                          onAction={() => handleRemoveMaterial(material.id)}
-                          withActions
-                        >
-                          <p className="text-sm">
-                            Ви впевнені, що хочете видалити матеріал{' '}
-                            <span className="font-semibold">
-                              {material.title}
-                            </span>
-                            ?
-                          </p>
-                        </ModalHeroUi>
                         {editMaterialKey !== String(material.id) ? (
                           <Button
                             isIconOnly
@@ -571,29 +568,15 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                           <Button
                             isIconOnly
                             aria-label="Clear Order"
-                            onPress={onOpenAdditionalMaterial}
+                            onPress={() => {
+                              handleMaterialConfirmModalOpen(material);
+                              onOpenAdditionalMaterial();
+                            }}
                             className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
                             radius="sm"
                           >
                             <MdOutlineCancel className="size-6  xl:size-9 text-red-600" />
                           </Button>
-                          <ModalHeroUi
-                            title="Увага"
-                            isOpen={isOpenAdditionalMaterial}
-                            onOpenChange={onOpenChangeAdditionalMaterial}
-                            onAction={() =>
-                              handleRemoveAdditionalMaterial(index)
-                            }
-                            withActions
-                          >
-                            <p className="text-sm">
-                              Ви впевнені, що хочете видалити матеріал{' '}
-                              <span className="font-semibold">
-                                {material.title}
-                              </span>
-                              ?
-                            </p>
-                          </ModalHeroUi>
                           {editMaterialKey !== material.id ? (
                             <Button
                               isIconOnly
@@ -714,29 +697,15 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                         <Button
                           isIconOnly
                           aria-label="Clear Order"
-                          onPress={onOpenConfigurableMaterial}
+                          onPress={() => {
+                            handleMaterialConfirmModalOpen(material);
+                            onOpenConfigurableMaterial();
+                          }}
                           className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
                           radius="sm"
                         >
                           <MdOutlineCancel className="size-6  xl:size-9 text-red-600" />
                         </Button>
-                        <ModalHeroUi
-                          title="Увага"
-                          isOpen={isOpenConfigurableMaterial}
-                          onOpenChange={onOpenChangeConfigurableMaterial}
-                          onAction={() =>
-                            handleRemoveConfigurableMaterial(material.key)
-                          }
-                          withActions
-                        >
-                          <p className="text-sm">
-                            Ви впевнені, що хочете видалити матеріал{' '}
-                            <span className="font-semibold">
-                              {material.title}
-                            </span>
-                            ?
-                          </p>
-                        </ModalHeroUi>
                         {editMaterialKey !== material.key ? (
                           <Button
                             isIconOnly
@@ -931,6 +900,55 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
           </Button>
         </div>
       )}
+      <ModalHeroUi
+        title="Увага"
+        isOpen={isOpenMaterial}
+        onOpenChange={onOpenChangeMaterial}
+        onAction={() => {
+          if (typeof materialId === 'number') {
+            handleRemoveMaterial(materialId);
+          }
+        }}
+        withActions
+      >
+        <p className="text-sm">
+          Ви впевнені, що хочете видалити матеріал{' '}
+          <span className="font-semibold">{materialTitle}</span>?
+        </p>
+      </ModalHeroUi>
+
+      <ModalHeroUi
+        title="Увага"
+        isOpen={isOpenConfigurableMaterial}
+        onOpenChange={onOpenChangeConfigurableMaterial}
+        onAction={() => {
+          if (typeof materialId === 'string') {
+            handleRemoveConfigurableMaterial(materialId);
+          }
+        }}
+        withActions
+      >
+        <p className="text-sm">
+          Ви впевнені, що хочете видалити матеріал{' '}
+          <span className="font-semibold">{materialTitle}</span>?
+        </p>
+      </ModalHeroUi>
+      <ModalHeroUi
+        title="Увага"
+        isOpen={isOpenAdditionalMaterial}
+        onOpenChange={onOpenChangeAdditionalMaterial}
+        onAction={() => {
+          if (typeof materialId === 'string') {
+            handleRemoveAdditionalMaterial(materialId);
+          }
+        }}
+        withActions
+      >
+        <p className="text-sm">
+          Ви впевнені, що хочете видалити матеріал{' '}
+          <span className="font-semibold">{materialTitle}</span>?
+        </p>
+      </ModalHeroUi>
     </>
   );
 };
