@@ -62,6 +62,8 @@ const DisclosureMovingPanel: React.FunctionComponent<
   const movingBuilding = useAppSelector(state => state.moving.building);
   const movingFloor = useAppSelector(state => state.moving.floor);
 
+  console.log(movingElevator);
+
   const [elevator, setElevator] = useState(movingElevator);
   const [building, setBuilding] = useState(movingBuilding);
   const [floor, setFloor] = useState(movingFloor);
@@ -92,10 +94,6 @@ const DisclosureMovingPanel: React.FunctionComponent<
     state => state.configurableMaterial.configurableMaterial
   );
 
-  const isAdditionalMaterialAddToOrder = useAppSelector(
-    state => state.additionalMaterial.isAdditionalMaterialAddToOrder
-  );
-
   const dispatch = useAppDispatch();
 
   const { materials, totalWeight } = useMaterials();
@@ -120,9 +118,7 @@ const DisclosureMovingPanel: React.FunctionComponent<
 
   const activeMaterials = getActiveMaterials(materials);
 
-  const activeAdditionalMaterials = isAdditionalMaterialAddToOrder
-    ? getActiveMaterials(additionalMaterial)
-    : [];
+  const activeAdditionalMaterials = getActiveMaterials(additionalMaterial);
 
   const activeConfigurableAdditionalMaterials = getActiveMaterials(
     configurableMaterialList

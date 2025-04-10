@@ -11,16 +11,8 @@ export const useMaterials = (slug?: string) => {
     state => state.configurableMaterial.configurableMaterial
   );
 
-  const isAdditionalMaterialAddToOrder = useAppSelector(
-    state => state.additionalMaterial.isAdditionalMaterialAddToOrder
-  );
-
   const totalAdditionalMaterialInfo = additionalMaterialList.reduce(
     (additionalMaterialsInfo, additionalMaterial) => {
-      if (!isAdditionalMaterialAddToOrder) {
-        return additionalMaterialsInfo;
-      }
-
       return {
         quantity:
           additionalMaterialsInfo.quantity +

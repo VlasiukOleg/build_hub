@@ -85,9 +85,6 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
   const isMovingAddToOrder = useAppSelector(
     state => state.moving.isMovingPriceAddToOrder
   );
-  const isAdditionalMaterialAddToOrder = useAppSelector(
-    state => state.additionalMaterial.isAdditionalMaterialAddToOrder
-  );
 
   const allMaterialsCategories = categories.flatMap(
     material => material.categories
@@ -206,7 +203,6 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
       deliveryStorage: deliveryStorage,
       isMovingAddToOrder: isMovingAddToOrder,
       additionalMaterial: additionalMaterial,
-      isAdditionalMaterialAddToOrder: isAdditionalMaterialAddToOrder,
     };
     try {
       setIsSending(true);

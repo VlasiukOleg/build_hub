@@ -14,12 +14,10 @@ interface AdditionalMaterial {
 
 interface AdditionalMaterialState {
   additionalMaterial: AdditionalMaterial[];
-  isAdditionalMaterialAddToOrder: boolean;
 }
 
 const initialState: AdditionalMaterialState = {
   additionalMaterial: [],
-  isAdditionalMaterialAddToOrder: false,
 };
 
 const additionalMaterialSlice = createSlice({
@@ -43,10 +41,6 @@ const additionalMaterialSlice = createSlice({
     clearAdditionalMaterial(state) {
       state.additionalMaterial = [];
     },
-    toggleAdditionalPriceAddToOrder(state) {
-      state.isAdditionalMaterialAddToOrder =
-        !state.isAdditionalMaterialAddToOrder;
-    },
   },
 });
 
@@ -54,7 +48,6 @@ export const {
   addAdditionalMaterial,
   removeAdditionalMaterial,
   clearAdditionalMaterial,
-  toggleAdditionalPriceAddToOrder,
   updateAdditionalMaterial,
 } = additionalMaterialSlice.actions;
 export const additionalMaterialReducer = additionalMaterialSlice.reducer;

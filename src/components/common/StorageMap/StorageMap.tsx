@@ -15,6 +15,8 @@ import DeliveryTypeChoice from '@/components/ui/DeliveryTypeChoice/DeliveryTypeC
 import { useAppSelector, useAppDispatch } from '../../../redux/hooks';
 import { setDeliveryType, setDeliveryStorage } from '@/redux/deliverySlice';
 
+import { FaRegEdit } from 'react-icons/fa';
+
 interface IStorageMapProps {}
 
 const markerIcon = new L.Icon({
@@ -80,6 +82,9 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
   const deliveryStorage = useAppSelector(
     state => state.delivery.deliveryStorage
   );
+  const isMovingPriceAddToOrderBar = useAppSelector(
+    state => state.moving.isMovingPriceAddToOrder
+  );
 
   const popupElRef = useRef<any>(null);
 
@@ -91,9 +96,8 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
     }
   };
 
-  const handleDeliveryType = (deliveryType: string) => {
+  const handleDeliveryType = () => {
     dispatch(setDeliveryStorage(selectedStore));
-    dispatch(setDeliveryType(deliveryType));
     onClose();
 
     setTimeout(() => {
@@ -132,7 +136,7 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
               <div className="text-center mb-2">{storage.location}</div>
               <Button
                 color="primary"
-                className="p-2 text-xs h-6 md:text-sm md:h-8"
+                className="p-2 text-xs h-7 md:text-sm md:h-8"
                 onPress={() => handleStorageClick(storage.location)}
                 radius="sm"
               >
@@ -143,15 +147,25 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
         ))}
       </MapContainer>
       {deliveryStorage && (
-        <ul className="flex flex-col gap-2 text-sm mb-5 md:text-base xl:text-xl">
-          <li>Склад: {deliveryStorage}</li>
-          <li>
-            Тип доставки:{' '}
-            {deliveryType === 'delivery'
-              ? 'Доставка автотранспортом'
-              : 'Cамовивіз зі складу'}
-          </li>
-        </ul>
+        <div className="flex flex-col gap-2 text-xs mb-5 md:text-base xl:text-xl">
+          <div>
+            <span className="font-semibold">Склад: </span> {deliveryStorage}
+          </div>
+          <div className="">
+            <span className="font-semibold">Тип доставки: </span>
+            <span>
+              {deliveryType === 'delivery'
+                ? 'Доставка до об’єкта'
+                : 'Cамовивіз зі складу'}
+            </span>
+          </div>
+          <div>
+            <span className="font-semibold">Послуга розвантаження: </span>
+            <span>
+              {isMovingPriceAddToOrderBar ? 'Вантажники' : 'Без розвантаження'}
+            </span>
+          </div>
+        </div>
       )}
 
       <Button
@@ -175,7 +189,10 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
         title={selectedStore}
         isOpen={isOpen}
         onOpenChange={onOpenChange}
-        onAction={() => {}}
+        onAction={handleDeliveryType}
+        withActions
+        submitButtonTitle="Продовжити"
+        onlySubmit
       >
         <DeliveryTypeChoice
           selectedStore={selectedStore}

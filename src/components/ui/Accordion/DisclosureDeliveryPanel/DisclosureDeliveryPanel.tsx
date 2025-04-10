@@ -52,7 +52,7 @@ const DisclosureDeliveryPanel: React.FC<IDisclosureDeliveryPanelProps> = ({
             <span className="text-grey">
               {deliveryType === 'pickup'
                 ? 'Самовивіз зі складу'
-                : 'Доставка автотранспортом'}
+                : 'Доставка до об’єкта'}
             </span>
           </div>
           {deliveryType === 'delivery' && (

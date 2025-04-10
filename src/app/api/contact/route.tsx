@@ -31,7 +31,6 @@ export async function POST(request: Request) {
       movingPrice,
       isMovingAddToOrder,
       additionalMaterial,
-      isAdditionalMaterialAddToOrder,
     } = await request.json();
 
     const formattedDate = format(new Date(date), "d MMMM yyyy 'року'", {
@@ -154,7 +153,7 @@ export async function POST(request: Request) {
         <p>Коментар: ${message}</p>
         ${materialsTable}
         <p style="font-weight: bold;">Додані матеріали</p>
-        ${isAdditionalMaterialAddToOrder && additionalMaterialTable}
+        ${additionalMaterialTable}
         
         <p>Склад: ${deliveryStorage ? deliveryStorage : 'Не вибрано'}</p>
         <p>Тип доставки: ${
@@ -182,7 +181,7 @@ export async function POST(request: Request) {
         <p>Коментар: ${message}</p>
         ${materialsTable}
          <p style="font-weight: bold;">Додані матеріали</p>
-        ${isAdditionalMaterialAddToOrder && additionalMaterialTable}
+        ${additionalMaterialTable}
         
         <p>Склад: ${deliveryStorage ? deliveryStorage : 'Не вибрано'}</p>
         <p>Тип доставки: ${

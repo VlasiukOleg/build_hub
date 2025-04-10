@@ -16,6 +16,9 @@ interface IModalHeroUi {
   onAction: () => void;
   children: ReactNode;
   withActions?: boolean;
+  submitButtonTitle?: string;
+  cancelButtonTitle?: string;
+  onlySubmit?: boolean;
 }
 
 const ModalHeroUi: React.FC<IModalHeroUi> = ({
@@ -25,6 +28,9 @@ const ModalHeroUi: React.FC<IModalHeroUi> = ({
   onAction,
   children,
   withActions,
+  onlySubmit,
+  submitButtonTitle = 'Так',
+  cancelButtonTitle = 'Відмінити',
 }) => {
   return (
     <>
@@ -48,18 +54,24 @@ const ModalHeroUi: React.FC<IModalHeroUi> = ({
               {withActions && (
                 <ModalFooter>
                   <Button
-                    color="danger"
+                    color="success"
                     variant="light"
                     radius="sm"
                     onPress={() => {
                       onAction(), onClose();
                     }}
                   >
-                    Так
+                    {submitButtonTitle}
                   </Button>
-                  <Button color="primary" radius="sm" onPress={onClose}>
-                    Відмінити
-                  </Button>
+                  {!onlySubmit && (
+                    <Button
+                      className="bg-red-300 text-bgWhite"
+                      radius="sm"
+                      onPress={onClose}
+                    >
+                      {cancelButtonTitle}
+                    </Button>
+                  )}
                 </ModalFooter>
               )}
             </>

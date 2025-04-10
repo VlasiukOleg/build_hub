@@ -21,7 +21,6 @@ import { useMaterials } from '@/hooks/useMaterials';
 import {
   updateAdditionalMaterial,
   removeAdditionalMaterial,
-  toggleAdditionalPriceAddToOrder,
 } from '@/redux/additionalMaterialSlice';
 import {
   updateConfigurableMaterial,
@@ -144,9 +143,6 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     state => state.moving.isMovingPriceAddToOrder
   );
 
-  const isAdditionalMaterialAddToOrder = useAppSelector(
-    state => state.additionalMaterial.isAdditionalMaterialAddToOrder
-  );
   const additionalMaterial = useAppSelector(
     state => state.additionalMaterial.additionalMaterial
   );
@@ -161,9 +157,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
 
   const activeMaterials = getActiveMaterials(materials);
 
-  const activeAdditionalMaterials = isAdditionalMaterialAddToOrder
-    ? getActiveMaterials(additionalMaterial)
-    : [];
+  const activeAdditionalMaterials = getActiveMaterials(additionalMaterial);
 
   const activeConfigurableMaterials = getActiveMaterials(
     configurableMaterialList
@@ -492,129 +486,126 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                       </div>
                     </li>
                   ))}
-                  {isAdditionalMaterialAddToOrder &&
-                    additionalMaterial.map((material, index) => (
-                      <li
-                        key={material.id}
-                        className="p-1 relative font-semibold flex items-center text-grey md:p-2"
-                      >
-                        <div className="flex items-center justify-center mr-2 text-center inline-block size-[50px] md:size-[75px] md:mr-4">
-                          <FcImageFile className="size-[40px] md:size-[65px]" />
-                        </div>
-                        <ClampedText text={material.title} />
+                  {additionalMaterial.map((material, index) => (
+                    <li
+                      key={material.id}
+                      className="p-1 relative font-semibold flex items-center text-grey md:p-2"
+                    >
+                      <div className="flex items-center justify-center mr-2 text-center inline-block size-[50px] md:size-[75px] md:mr-4">
+                        <FcImageFile className="size-[40px] md:size-[65px]" />
+                      </div>
+                      <ClampedText text={material.title} />
 
-                        {editMaterialKey === material.id ? (
-                          <Input
-                            errorMessage={() => (
-                              <ul>
-                                {errors.map((error, i) => (
-                                  <li key={i}>{error}</li>
-                                ))}
-                              </ul>
-                            )}
-                            isInvalid={errors.length > 0}
-                            name="quantity"
-                            variant="bordered"
-                            defaultValue={String(material.quantity)}
-                            onValueChange={handleEditModeInputChange}
-                            isReadOnly={editMaterialKey !== material.id}
-                            onBlur={e => {
-                              const relatedTarget =
-                                e.relatedTarget as HTMLElement | null;
-
-                              if (relatedTarget?.dataset?.action === 'save')
-                                return;
-
-                              handleUpdateAdditionalMaterial(
-                                material.id,
-                                Number(additionalMaterialsEditModeQuantity)
-                              );
-                            }}
-                            type="number"
-                            radius="sm"
-                            ref={inputRef}
-                            classNames={{
-                              inputWrapper:
-                                'group-data-[focus=true]:border-accent min-h-7 h-7 w-14',
-                              base: 'w-14 mx-1',
-                              input: 'text-center',
-                            }}
-                          />
-                        ) : (
-                          <p className="text-sm font-normal text-center w-[20%] md:text-base">
-                            {material.quantity}
-                          </p>
-                        )}
-                        <div className="w-[25%] text-right">
-                          {material.price === 0 ? (
-                            <p className="text-xs font-normal md:text-base">
-                              Договірна
-                            </p>
-                          ) : (
-                            <>
-                              <p className="text-xs font-normal md:text-base">
-                                {material.price} грн.
-                              </p>
-                              <p className="text-sm text-accent md:text-lg">
-                                {(material.quantity * material.price).toFixed(
-                                  2
-                                )}{' '}
-                                грн.
-                              </p>
-                            </>
+                      {editMaterialKey === material.id ? (
+                        <Input
+                          errorMessage={() => (
+                            <ul>
+                              {errors.map((error, i) => (
+                                <li key={i}>{error}</li>
+                              ))}
+                            </ul>
                           )}
-                        </div>
-                        <div className="w-[15%] text-right flex flex-col items-center justify-end gap-1">
+                          isInvalid={errors.length > 0}
+                          name="quantity"
+                          variant="bordered"
+                          defaultValue={String(material.quantity)}
+                          onValueChange={handleEditModeInputChange}
+                          isReadOnly={editMaterialKey !== material.id}
+                          onBlur={e => {
+                            const relatedTarget =
+                              e.relatedTarget as HTMLElement | null;
+
+                            if (relatedTarget?.dataset?.action === 'save')
+                              return;
+
+                            handleUpdateAdditionalMaterial(
+                              material.id,
+                              Number(additionalMaterialsEditModeQuantity)
+                            );
+                          }}
+                          type="number"
+                          radius="sm"
+                          ref={inputRef}
+                          classNames={{
+                            inputWrapper:
+                              'group-data-[focus=true]:border-accent min-h-7 h-7 w-14',
+                            base: 'w-14 mx-1',
+                            input: 'text-center',
+                          }}
+                        />
+                      ) : (
+                        <p className="text-sm font-normal text-center w-[20%] md:text-base">
+                          {material.quantity}
+                        </p>
+                      )}
+                      <div className="w-[25%] text-right">
+                        {material.price === 0 ? (
+                          <p className="text-xs font-normal md:text-base">
+                            Договірна
+                          </p>
+                        ) : (
+                          <>
+                            <p className="text-xs font-normal md:text-base">
+                              {material.price} грн.
+                            </p>
+                            <p className="text-sm text-accent md:text-lg">
+                              {(material.quantity * material.price).toFixed(2)}{' '}
+                              грн.
+                            </p>
+                          </>
+                        )}
+                      </div>
+                      <div className="w-[15%] text-right flex flex-col items-center justify-end gap-1">
+                        <Button
+                          isIconOnly
+                          aria-label="Clear Order"
+                          onPress={() => {
+                            handleMaterialConfirmModalOpen(material);
+                            onOpenAdditionalMaterial();
+                          }}
+                          className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
+                          radius="sm"
+                        >
+                          <MdOutlineCancel className="size-6  xl:size-9 text-red-600" />
+                        </Button>
+                        {editMaterialKey !== material.id ? (
                           <Button
                             isIconOnly
                             aria-label="Clear Order"
-                            onPress={() => {
-                              handleMaterialConfirmModalOpen(material);
-                              onOpenAdditionalMaterial();
-                            }}
-                            className="bg-transparent h-7 md:h-9 md:w-9 xl:size-11"
+                            onPress={() =>
+                              handleEditAdditionalMaterial(
+                                material.id,
+                                material.quantity
+                              )
+                            }
+                            className="bg-transparent h-7 md:h-9 md:w-9"
                             radius="sm"
                           >
-                            <MdOutlineCancel className="size-6  xl:size-9 text-red-600" />
+                            <FaRegEdit className="size-6  xl:size-7 text-yellow-500" />
                           </Button>
-                          {editMaterialKey !== material.id ? (
-                            <Button
-                              isIconOnly
-                              aria-label="Clear Order"
-                              onPress={() =>
-                                handleEditAdditionalMaterial(
-                                  material.id,
-                                  material.quantity
-                                )
-                              }
-                              className="bg-transparent h-7 md:h-9 md:w-9"
-                              radius="sm"
-                            >
-                              <FaRegEdit className="size-6  xl:size-7 text-yellow-500" />
-                            </Button>
-                          ) : (
-                            <Button
-                              isIconOnly
-                              aria-label="Update Material Quantity"
-                              data-action="save"
-                              onPress={() =>
-                                handleUpdateAdditionalMaterial(
-                                  material.id,
-                                  Number(additionalMaterialsEditModeQuantity)
-                                )
-                              }
-                              className="bg-transparent h-7 md:h-9 md:w-9"
-                              radius="sm"
-                              isDisabled={
-                                Number(additionalMaterialsEditModeQuantity) < 0
-                              }
-                            >
-                              <IoSaveOutline className="size-6 text-green-600" />
-                            </Button>
-                          )}
-                        </div>
-                      </li>
-                    ))}
+                        ) : (
+                          <Button
+                            isIconOnly
+                            aria-label="Update Material Quantity"
+                            data-action="save"
+                            onPress={() =>
+                              handleUpdateAdditionalMaterial(
+                                material.id,
+                                Number(additionalMaterialsEditModeQuantity)
+                              )
+                            }
+                            className="bg-transparent h-7 md:h-9 md:w-9"
+                            radius="sm"
+                            isDisabled={
+                              Number(additionalMaterialsEditModeQuantity) < 0
+                            }
+                          >
+                            <IoSaveOutline className="size-6 text-green-600" />
+                          </Button>
+                        )}
+                      </div>
+                    </li>
+                  ))}
                   {configurableMaterialList.map((material, index) => (
                     <li
                       key={material.key}
@@ -865,7 +856,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                 Тип доставки:{' '}
                 {deliveryType
                   ? deliveryType === 'delivery'
-                    ? 'Доставка автотранспотром'
+                    ? 'Доставка до об’єкта'
                     : 'Самовивіз зі складу'
                   : 'Не вибрано'}
               </div>

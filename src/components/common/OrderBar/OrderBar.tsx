@@ -13,13 +13,11 @@ const ModalHeroUi = dynamic(() => import('@/components/ui/ModalHeroUi'));
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 import { clearQuantity } from '@/redux/materialsSlice';
 import { toggleMovingPriceToOrder } from '@/redux/movingSlice';
-import {
-  clearAdditionalMaterial,
-  toggleAdditionalPriceAddToOrder,
-} from '@/redux/additionalMaterialSlice';
+import { clearAdditionalMaterial } from '@/redux/additionalMaterialSlice';
 import { clearConfigurableMaterial } from '@/redux/configurableMaterialSlice';
 
 import { useMaterials } from '@/hooks/useMaterials';
+import { normalizedWeight } from '@/utils/normalizesWeight';
 
 import { PiShoppingCartSimpleBold } from 'react-icons/pi';
 import { MdOutlineCancel } from 'react-icons/md';
@@ -28,6 +26,9 @@ import { FaPersonWalkingLuggage } from 'react-icons/fa6';
 import { TbTruckDelivery } from 'react-icons/tb';
 import { GiMoneyStack } from 'react-icons/gi';
 import { BsBox } from 'react-icons/bs';
+import { LuWarehouse } from 'react-icons/lu';
+import { FaPeopleCarry } from 'react-icons/fa';
+
 import { Pages } from '@/@types';
 
 interface IOrderBarProps {
@@ -61,7 +62,6 @@ const OrderBar: React.FC<IOrderBarProps> = ({
   const handleOrderClear = () => {
     dispatch(clearQuantity(0));
     dispatch(toggleMovingPriceToOrder());
-    dispatch(toggleAdditionalPriceAddToOrder());
     dispatch(clearAdditionalMaterial());
     dispatch(clearConfigurableMaterial());
   };
@@ -72,11 +72,12 @@ const OrderBar: React.FC<IOrderBarProps> = ({
   };
 
   const computedMovingPrice = isMovingAddToOrder ? movingPrice : 0;
+  const computedDeliveryPrice = deliveryType === 'delivery' ? deliveryPrice : 0;
 
   const orderTotalPrice = (
     totalPrice +
     computedMovingPrice +
-    deliveryPrice
+    computedDeliveryPrice
   ).toFixed(2);
 
   const additionalMaterialList = useAppSelector(
@@ -125,26 +126,33 @@ const OrderBar: React.FC<IOrderBarProps> = ({
         <div className="flex gap-2">
           <div className="p-1 rounded-lg bg-white border-2 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm  xl:text-lg xl:p-2 xl:gap-2">
             <LuWeight className="size-5  xl:size-7 text-grey" />
-            {totalWeight.toFixed(2)} кг.
+            {normalizedWeight(totalWeight).toFixed(2)} тн.
           </div>
           <div className="p-1 rounded-lg  bg-white border-2 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm  xl:text-lg xl:p-2 xl:gap-2">
             <BsBox className="size-5  xl:size-7 text-grey" />
             {totalVolume.toFixed(2)} м3
           </div>
           <div className="p-1 rounded-lg  bg-white border-2 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm  xl:text-lg xl:p-2 xl:gap-2">
-            <FaPersonWalkingLuggage className="size-5  xl:size-7 text-grey" />
+            <FaPeopleCarry className="size-5  xl:size-7 text-grey" />
             {isMovingAddToOrder
               ? `${movingPrice > 500 ? movingPrice : 500} грн.`
-              : 'не додано'}
+              : '----'}
           </div>
         </div>
 
         <div className="flex gap-2">
           <div className="p-1 rounded-lg  bg-white border-2 border-gray-400  text-black flex items-center gap-1 text-xs md:text-sm  xl:text-lg xl:p-2 xl:gap-2">
-            <TbTruckDelivery className="size-5  xl:size-7 text-grey" />
-            {deliveryType === 'delivery'
-              ? `${deliveryPrice} грн.`
-              : 'самовивіз'}
+            {deliveryType === 'delivery' ? (
+              <div className="flex items-center gap-1">
+                <TbTruckDelivery className="size-5 xl:size-7 text-grey" />
+                {deliveryPrice} грн.
+              </div>
+            ) : (
+              <div className="flex items-center gap-1">
+                <LuWarehouse className="size-5 xl:size-7 text-grey" />
+                Самовивіз
+              </div>
+            )}
           </div>
 
           <div className="p-1 rounded-lg  bg-white border-2 border-gray-400 text-black flex gap-1 items-center text-xs md:text-sm  xl:text-lg xl:p-2 xl:gap-2">

@@ -43,7 +43,7 @@ const movingSlice = createSlice({
   name: 'moving',
   initialState: {
     movingPrice: 0,
-    isMovingPriceAddToOrder: false,
+    isMovingPriceAddToOrder: true,
     floor: '1',
     test: 'Hello',
     elevator: elevators[0].label,

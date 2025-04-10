@@ -12,10 +12,7 @@ import { useRouter } from 'next/navigation';
 import { useAppDispatch } from '@/redux/hooks';
 import { clearQuantity } from '@/redux/materialsSlice';
 import { toggleMovingPriceToOrder } from '@/redux/movingSlice';
-import {
-  clearAdditionalMaterial,
-  toggleAdditionalPriceAddToOrder,
-} from '@/redux/additionalMaterialSlice';
+import { clearAdditionalMaterial } from '@/redux/additionalMaterialSlice';
 
 import ButtonLink from '@/components/ui/ButtonLink';
 
@@ -53,7 +50,6 @@ const OrderPage: React.FC<IThanksProps> = () => {
               dispatch(clearQuantity(0));
               dispatch(toggleMovingPriceToOrder());
               dispatch(clearAdditionalMaterial());
-              dispatch(toggleAdditionalPriceAddToOrder());
               router.push('/');
             }}
           >
@@ -73,7 +69,6 @@ const OrderPage: React.FC<IThanksProps> = () => {
                   dispatch(clearQuantity(0));
                   dispatch(toggleMovingPriceToOrder());
                   dispatch(clearAdditionalMaterial());
-                  dispatch(toggleAdditionalPriceAddToOrder());
                 }}
               >
                 На головну

@@ -1,9 +1,20 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+const deliveryTypeList = [
+  {
+    name: 'Доставка',
+    label: 'delivery',
+  },
+  {
+    name: 'Самовивіз',
+    label: 'pickup',
+  },
+];
+
 const deliverySlice = createSlice({
   name: 'delivery',
   initialState: {
-    deliveryType: '',
+    deliveryType: 'delivery',
     deliveryStorage: '',
     deliveryPrice: 0,
     activeStore: null,

@@ -11,7 +11,6 @@ import { useAppDispatch, useAppSelector } from '@/redux/hooks';
 import {
   addAdditionalMaterial,
   removeAdditionalMaterial,
-  toggleAdditionalPriceAddToOrder,
   updateAdditionalMaterial,
 } from '@/redux/additionalMaterialSlice';
 
@@ -98,9 +97,6 @@ const DisclosureAddMaterialsPanel: React.FC<
 
   const additionalMaterial = useAppSelector(
     state => state.additionalMaterial.additionalMaterial
-  );
-  const isAdditionalMaterialAddToOrder = useAppSelector(
-    state => state.additionalMaterial.isAdditionalMaterialAddToOrder
   );
 
   function convertToObjects(data: (string | null)[][]): AdditionalMaterial[] {
@@ -224,10 +220,6 @@ const DisclosureAddMaterialsPanel: React.FC<
 
   const handleRemoveMaterial = (index: string) => {
     dispatch(removeAdditionalMaterial(index));
-  };
-
-  const onToggleAdditionalMaterialToOrder = () => {
-    dispatch(toggleAdditionalPriceAddToOrder());
   };
 
   const handleEditModeInputChange = (value: string) => {
@@ -518,19 +510,6 @@ const DisclosureAddMaterialsPanel: React.FC<
                 ))}
               </ul>
             </div>
-          </div>
-          <div className="text-center mt-4">
-            <Button
-              onPress={onToggleAdditionalMaterialToOrder}
-              color={isAdditionalMaterialAddToOrder ? 'danger' : 'success'}
-              className="text-xs h-8 font-medium md:text-base md:h-10 xl:text-lg xl:h-12"
-              variant="bordered"
-              radius="sm"
-            >
-              {isAdditionalMaterialAddToOrder
-                ? 'Прибрати із замовлення'
-                : 'Додати до замовлення'}
-            </Button>
           </div>
         </>
       )}
