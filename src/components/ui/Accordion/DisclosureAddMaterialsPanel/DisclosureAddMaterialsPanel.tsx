@@ -42,6 +42,38 @@ interface ListboxWrapperProps {
   children: React.ReactNode;
 }
 
+const generateItems = n => {
+  const items = [
+    'Cat',
+    'Dog',
+    'Elephant',
+    'Lion',
+    'Tiger',
+    'Giraffe',
+    'Dolphin',
+    'Penguin',
+    'Zebra',
+    'Shark',
+    'Whale',
+    'Otter',
+    'Crocodile',
+  ];
+
+  const dataset = [];
+
+  for (let i = 0; i < n; i++) {
+    const item = items[i % items.length];
+
+    dataset.push({
+      label: `${item}${i}`,
+      value: `${item.toLowerCase()}${i}`,
+      description: 'Sample description',
+    });
+  }
+
+  return dataset;
+};
+
 export const ListboxWrapper: React.FC<ListboxWrapperProps> = ({ children }) => (
   <div className="w-full max-w-full border-small py-2 rounded-small border-default-200 dark:border-default-100">
     {children}
@@ -56,6 +88,7 @@ const description =
 const DisclosureAddMaterialsPanel: React.FC<
   IDisclosureAddMaterialsPanelProps
 > = ({}) => {
+  const items = generateItems(1000);
   const [query, setQuery] = useState('');
   // const [newMaterial, setNewMaterial] = useState({ title: '', quantity: 0 });
   const [materialId, setMaterialId] = useState<string>('');
@@ -286,6 +319,25 @@ const DisclosureAddMaterialsPanel: React.FC<
           </div>
         </div>
       )}
+      <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
+        <ListboxWrapper>
+          <Listbox
+            isVirtualized
+            className="max-w-xs"
+            label={'Select from 1000 items'}
+            virtualization={{
+              maxListboxHeight: 400,
+              itemHeight: 40,
+            }}
+          >
+            {items.map((item, index) => (
+              <ListboxItem key={index} value={item.value}>
+                {item.label}
+              </ListboxItem>
+            ))}
+          </Listbox>
+        </ListboxWrapper>
+      </div>
 
       {query && (
         <ListboxWrapper>
