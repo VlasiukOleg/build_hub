@@ -319,11 +319,12 @@ const DisclosureAddMaterialsPanel: React.FC<
           </div>
         </div>
       )}
-      <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
+
+      {query && (
         <ListboxWrapper>
           <Listbox
             isVirtualized
-            className="max-w-xs"
+            className="max-w-full"
             label={'Select from 1000 items'}
             virtualization={{
               maxListboxHeight: 400,
@@ -337,9 +338,9 @@ const DisclosureAddMaterialsPanel: React.FC<
             ))}
           </Listbox>
         </ListboxWrapper>
-      </div>
+      )}
 
-      {query && (
+      {/* {query && (
         <ListboxWrapper>
           <Listbox
             isVirtualized
@@ -356,7 +357,7 @@ const DisclosureAddMaterialsPanel: React.FC<
                 {item.label}
               </ListboxItem>
             ))}
-            {/* {item => (
+            {item => (
               <ListboxItem
                 key={item.id}
                 startContent={
@@ -374,10 +375,10 @@ const DisclosureAddMaterialsPanel: React.FC<
                 }}
                 title={item.label}
               ></ListboxItem>
-            )} */}
+            )}
           </Listbox>
         </ListboxWrapper>
-      )}
+      )} */}
 
       <div className="flex gap-2 items-end mt-2">
         <Input
