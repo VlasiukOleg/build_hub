@@ -1,4 +1,4 @@
-const sheetId = '1mspPVAdnGfDqwEw_QB_rflYKNPenBiD1ZNubfznXtOw';
+const sheetId = '1BlMIiv3dfFQ6d1ScNLS9OZY-k4L2SA2tnwizVFAhbN8';
 const apiKey = process.env.GOOGLE_API_KEY; // Використовуйте звичайну змінну середовища
 
 const sheetName = 'TDSheet';
@@ -16,9 +16,12 @@ export async function GET() {
     });
   } catch (error) {
     console.error('Помилка при отриманні даних:', error);
-    return new Response(JSON.stringify({ error: 'Помилка при отриманні даних' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return new Response(
+      JSON.stringify({ error: 'Помилка при отриманні даних' }),
+      {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      }
+    );
   }
 }

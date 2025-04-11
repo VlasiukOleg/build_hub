@@ -306,13 +306,14 @@ const DisclosureAddMaterialsPanel: React.FC<
                   <FcImageFile className="size-[40px] md:size-[65px]" />
                 }
                 endContent={
-                  <span className="text-xs md:text-base font-semibold">
-                    {item.price} грн.
+                  <span className="text-[11px] md:text-base font-semibold">
+                    {item.price} грн
                   </span>
                 }
                 classNames={{
                   base: 'px-0 pr-1',
-                  title: 'text-xs md:text-sm whitespace-normal break-words',
+                  title:
+                    'text-xs md:text-sm whitespace-normal break-words line-clamp-4',
                 }}
                 title={item.label}
               ></ListboxItem>
@@ -346,7 +347,7 @@ const DisclosureAddMaterialsPanel: React.FC<
           Додати
         </Button>
       </div>
-      <p className="text-center font-semibold mt-4">Додати вручну</p>
+      <p className="text-center font-semibold">Додати вручну</p>
       <div>
         <Input
           label="Назва матеріалу"
