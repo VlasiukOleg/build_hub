@@ -331,8 +331,8 @@ const DisclosureAddMaterialsPanel: React.FC<
               itemHeight: 40,
             }}
           >
-            {items.map((item, index) => (
-              <ListboxItem key={index} value={item.value}>
+            {filteredMaterials.map((item, index) => (
+              <ListboxItem key={index} value={item.label}>
                 {item.label}
               </ListboxItem>
             ))}
