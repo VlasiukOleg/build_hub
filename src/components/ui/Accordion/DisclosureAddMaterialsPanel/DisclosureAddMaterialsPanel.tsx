@@ -42,7 +42,7 @@ interface ListboxWrapperProps {
   children: React.ReactNode;
 }
 
-const generateItems = n => {
+const generateItems = (n: any) => {
   const items = [
     'Cat',
     'Dog',
