@@ -299,7 +299,12 @@ const DisclosureAddMaterialsPanel: React.FC<
             }}
             onAction={key => onSelectionChange(key)}
           >
-            {item => (
+            {filteredMaterials.map((item, index) => (
+              <ListboxItem key={item.id} value={item.label}>
+                {item.label}
+              </ListboxItem>
+            ))}
+            {/* {item => (
               <ListboxItem
                 key={item.id}
                 startContent={
@@ -317,7 +322,7 @@ const DisclosureAddMaterialsPanel: React.FC<
                 }}
                 title={item.label}
               ></ListboxItem>
-            )}
+            )} */}
           </Listbox>
         </ListboxWrapper>
       )}
