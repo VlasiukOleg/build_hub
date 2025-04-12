@@ -298,6 +298,7 @@ const DisclosureAddMaterialsPanel: React.FC<
               maxListboxHeight: 400,
               itemHeight: 40,
             }}
+            onAction={() => setQuery('')}
           >
             {filteredMaterials.map((item, index) => (
               <ListboxItem key={index} value={item.label}>
