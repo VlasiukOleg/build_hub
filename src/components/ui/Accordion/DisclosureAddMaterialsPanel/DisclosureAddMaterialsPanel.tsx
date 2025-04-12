@@ -300,11 +300,7 @@ const DisclosureAddMaterialsPanel: React.FC<
             }}
           >
             {filteredMaterials.map((item, index) => (
-              <ListboxItem
-                key={item.id}
-                value={item.label}
-                onPress={() => onSelectionChange(item.id)}
-              >
+              <ListboxItem key={item.id} value={item.label}>
                 {item.label}
               </ListboxItem>
             ))}
