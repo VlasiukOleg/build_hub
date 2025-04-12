@@ -161,6 +161,7 @@ const DisclosureAddMaterialsPanel: React.FC<
 
   const onSelectionChange = (id: React.Key | null) => {
     console.log(id);
+    console.log(filteredMaterials);
     const selectedMaterial = filteredMaterials.find(
       material => material.id === id
     );
@@ -297,9 +298,10 @@ const DisclosureAddMaterialsPanel: React.FC<
               maxListboxHeight: 400,
               itemHeight: 40,
             }}
+            onAction={key => onSelectionChange(key)}
           >
             {filteredMaterials.map((item, index) => (
-              <ListboxItem key={index} value={item.label}>
+              <ListboxItem key={item.id} value={item.label}>
                 {item.label}
               </ListboxItem>
             ))}
