@@ -1,4 +1,4 @@
-const sheetId = '1BlMIiv3dfFQ6d1ScNLS9OZY-k4L2SA2tnwizVFAhbN8';
+const sheetId = '1mqxvkhDcdpyb-9t1Bn3BxgkztNr9kx1sa_OsMEG5qeA';
 const apiKey = process.env.GOOGLE_API_KEY; // Використовуйте звичайну змінну середовища
 
 const sheetName = 'TDSheet';
@@ -6,11 +6,9 @@ const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${s
 
 export async function GET() {
   try {
-    // Виконуємо запит до Google Sheets
-    const response = await fetch(url); // Чекаємо завершення запиту
-    const data = await response.json(); // Отримуємо JSON-дані
+    const response = await fetch(url);
+    const data = await response.json();
 
-    // Повертаємо дані у форматі JSON
     return new Response(JSON.stringify(data), {
       headers: { 'Content-Type': 'application/json' },
     });

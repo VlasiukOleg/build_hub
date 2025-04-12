@@ -57,7 +57,6 @@ const DisclosureAddMaterialsPanel: React.FC<
   IDisclosureAddMaterialsPanelProps
 > = ({}) => {
   const [query, setQuery] = useState('');
-  const [selectedMaterial, setSelectedMaterial] = useState('');
   // const [newMaterial, setNewMaterial] = useState({ title: '', quantity: 0 });
   const [materialId, setMaterialId] = useState<string>('');
   const [materialTitle, setMaterialTitle] = useState<string>('');
@@ -83,8 +82,6 @@ const DisclosureAddMaterialsPanel: React.FC<
   const inputRef = useRef<HTMLInputElement>(null);
 
   const errors: string[] = [];
-
-  console.log(selectedMaterial);
 
   if (Number(additionalMaterialsEditModeQuantity) < 0) {
     errors.push('Введіть > 0');
@@ -132,6 +129,7 @@ const DisclosureAddMaterialsPanel: React.FC<
         const result = await response.json();
         console.log(result);
         const normalizedData = convertToObjects(result.values);
+        console.log(normalizedData);
         setMaterials(normalizedData || []);
       } catch (error) {
         console.error('Помилка при отриманні даних:', error);
@@ -157,6 +155,8 @@ const DisclosureAddMaterialsPanel: React.FC<
     return fuse.search(query).map(result => result.item);
   }, [materials, query]);
 
+  console.log(query);
+
   const isButtonActive = materialTitle.length > 0 && Number(quantity) > 0;
 
   const isManualButtonActive =
@@ -164,7 +164,6 @@ const DisclosureAddMaterialsPanel: React.FC<
 
   const onSelectionChange = (id: React.Key | null) => {
     console.log(id);
-    console.log(filteredMaterials);
     const selectedMaterial = filteredMaterials.find(
       material => material.id === id
     );
@@ -295,30 +294,6 @@ const DisclosureAddMaterialsPanel: React.FC<
         <ListboxWrapper>
           <Listbox
             isVirtualized
-            className="max-w-full"
-            label={'Select from 1000 items'}
-            virtualization={{
-              maxListboxHeight: 400,
-              itemHeight: 40,
-            }}
-            onAction={key => {
-              setSelectedMaterial(String(key));
-              setQuery('');
-            }}
-          >
-            {filteredMaterials.map((item, index) => (
-              <ListboxItem key={item.id} value={item.label}>
-                {item.label}
-              </ListboxItem>
-            ))}
-          </Listbox>
-        </ListboxWrapper>
-      )}
-
-      {/* {query && (
-        <ListboxWrapper>
-          <Listbox
-            isVirtualized
             aria-label="Dynamic Actions"
             items={filteredMaterials}
             virtualization={{
@@ -327,11 +302,6 @@ const DisclosureAddMaterialsPanel: React.FC<
             }}
             onAction={key => onSelectionChange(key)}
           >
-            {filteredMaterials.map((item, index) => (
-              <ListboxItem key={item.id} value={item.label}>
-                {item.label}
-              </ListboxItem>
-            ))}
             {item => (
               <ListboxItem
                 key={item.id}
@@ -353,7 +323,7 @@ const DisclosureAddMaterialsPanel: React.FC<
             )}
           </Listbox>
         </ListboxWrapper>
-      )} */}
+      )}
 
       <div className="flex gap-2 items-end mt-2">
         <Input
