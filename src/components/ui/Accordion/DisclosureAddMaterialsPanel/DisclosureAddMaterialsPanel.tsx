@@ -57,6 +57,7 @@ const DisclosureAddMaterialsPanel: React.FC<
   IDisclosureAddMaterialsPanelProps
 > = ({}) => {
   const [query, setQuery] = useState('');
+  const [selectedMaterial, setSelectedMaterial] = useState('');
   // const [newMaterial, setNewMaterial] = useState({ title: '', quantity: 0 });
   const [materialId, setMaterialId] = useState<string>('');
   const [materialTitle, setMaterialTitle] = useState<string>('');
@@ -82,6 +83,8 @@ const DisclosureAddMaterialsPanel: React.FC<
   const inputRef = useRef<HTMLInputElement>(null);
 
   const errors: string[] = [];
+
+  console.log(selectedMaterial);
 
   if (Number(additionalMaterialsEditModeQuantity) < 0) {
     errors.push('Введіть > 0');
@@ -298,7 +301,10 @@ const DisclosureAddMaterialsPanel: React.FC<
               maxListboxHeight: 400,
               itemHeight: 40,
             }}
-            onAction={() => setQuery('')}
+            onAction={key => {
+              setSelectedMaterial(String(key));
+              setQuery('');
+            }}
           >
             {filteredMaterials.map((item, index) => (
               <ListboxItem key={index} value={item.label}>
