@@ -298,17 +298,9 @@ const DisclosureAddMaterialsPanel: React.FC<
               maxListboxHeight: 400,
               itemHeight: 40,
             }}
-            selectionMode="single" // Добавьте это
-            onSelectionChange={keys => {
-              const key = Array.from(keys)[0]; // Берем первый ключ (для single selection)
-              if (key) {
-                onSelectionChange(key); // Ваша функция обработки выбора
-                setQuery(''); // Очищаем поисковый запрос (опционально)
-              }
-            }}
           >
             {filteredMaterials.map((item, index) => (
-              <ListboxItem key={item.id} value={item.label}>
+              <ListboxItem key={index} value={item.label}>
                 {item.label}
               </ListboxItem>
             ))}
