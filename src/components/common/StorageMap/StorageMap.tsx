@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { Button, useDisclosure } from '@heroui/react';
 import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet';
+import { useMap } from 'react-leaflet/hooks';
 import { LatLngTuple } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
@@ -48,25 +49,66 @@ interface Storage {
 const storages: Storage[] = [
   {
     id: 1,
-    location: 'СКЛАД №1',
-    coordinates: [50.4851, 30.4725], // Координаты для "Марка Вовчка"
+    location: 'Склад Марка Вовчка',
+    coordinates: [50.4982, 30.4723], // Координаты для "Марка Вовчка"
   },
   {
     id: 2,
-    location: 'СКЛАД №2',
-    coordinates: [50.410518843136686, 30.573064197158324], // Координаты для "Деревообробна"
+    location: 'Склад Видубичі',
+    coordinates: [50.4103888, 30.5737023], // Координаты для "Деревообробна"
   },
   {
     id: 3,
-    location: 'СКЛАД №3',
-    coordinates: [50.4547, 30.3658], // Координаты для "Пр. Перемоги 67"
+    location: 'Склад Перемоги',
+    coordinates: [50.45666, 30.40671], // Координаты для "Пр. Перемоги 67"
   },
   {
     id: 4,
-    location: 'СКЛАД №4',
-    coordinates: [50.4022, 30.6397], // Координаты для "Бориспольска 14"
+    location: 'Склад Бориспільська',
+    coordinates: [50.4301215, 30.6609815], // Координаты для "Бориспольска 14"
   },
 ];
+
+const ResetViewControl = ({ position }: { position: LatLngTuple }) => {
+  const map = useMap();
+
+  return (
+    <div className="leaflet-bottom leaflet-right">
+      <div className="leaflet-control leaflet-bar">
+        <a
+          href="#"
+          title="Повернути до початкового положення"
+          onClick={e => {
+            e.preventDefault();
+            map.flyTo(position, 10);
+          }}
+          style={{
+            width: '30px',
+            height: '30px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            backgroundColor: 'white',
+          }}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path d="M8 1a.5.5 0 0 1 .5.5V3a.5.5 0 0 1-1 0V1.5A.5.5 0 0 1 8 1z" />
+            <path d="M8 13a.5.5 0 0 1 .5.5V15a.5.5 0 0 1-1 0v-1.5a.5.5 0 0 1 .5-.5z" />
+            <path d="M1 8a.5.5 0 0 1 .5-.5H3a.5.5 0 0 1 0 1H1.5A.5.5 0 0 1 1 8z" />
+            <path d="M13 8a.5.5 0 0 1 .5-.5H15a.5.5 0 0 1 0 1h-1.5A.5.5 0 0 1 13 8z" />
+            <path d="M8 4a4 4 0 1 1 0 8A4 4 0 0 1 8 4z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  );
+};
 
 const position: LatLngTuple = [50.4501, 30.5234];
 
@@ -120,6 +162,7 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
           zIndex: '40',
         }}
       >
+        <ResetViewControl position={position} />
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -133,15 +176,19 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
             }
           >
             <Popup ref={popupElRef}>
-              <div className="text-center mb-2">{storage.location}</div>
-              <Button
-                color="primary"
-                className="p-2 text-xs h-7 md:text-sm md:h-8"
-                onPress={() => handleStorageClick(storage.location)}
-                radius="sm"
-              >
-                Вибрати
-              </Button>
+              <div className="flex flex-col justify-center items-center">
+                <div className="text-center text-[10px] md:text-[12px] xl:text-base mb-2">
+                  {storage.location}
+                </div>
+                <Button
+                  color="primary"
+                  className="p-2 text-xs h-7 md:text-sm md:h-8"
+                  onPress={() => handleStorageClick(storage.location)}
+                  radius="sm"
+                >
+                  Вибрати
+                </Button>
+              </div>
             </Popup>
           </Marker>
         ))}
