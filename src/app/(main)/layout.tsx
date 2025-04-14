@@ -14,6 +14,7 @@ import Footer from '@/layout/Footer/Footer';
 import configuration from '@/utils/configuration';
 
 import StoreProvider from './StoreProvider';
+import GTMPageViewTracker from '../gtmTracker';
 
 import { GoogleTagManager } from '@next/third-parties/google';
 
@@ -56,6 +57,7 @@ export default function RootLayout({
       <body className={clsx(montserrat.className)}>
         <StoreProvider>
           <Providers>
+            <GTMPageViewTracker />
             <div className="flex flex-col h-full min-h-screen">
               <Header />
               <main className="flex-1 flex items-center justify-center">
