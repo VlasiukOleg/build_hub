@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 
-import Script from 'next/script';
 import dynamic from 'next/dynamic';
 
 const Modal = dynamic(() => import('@/components/ui/Modal'));
@@ -26,21 +25,6 @@ const OrderPage: React.FC<IThanksProps> = () => {
 
   return (
     <>
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-EEGRJKT26X"
-      ></Script>
-      <Script
-        id="google-analytics"
-        dangerouslySetInnerHTML={{
-          __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-EEGRJKT26X');
-            `,
-        }}
-      />
       <section className="py-5 md:py-10 w-full">
         <div className="container">
           <Modal

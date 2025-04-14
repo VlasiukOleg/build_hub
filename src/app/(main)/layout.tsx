@@ -15,6 +15,8 @@ import configuration from '@/utils/configuration';
 
 import StoreProvider from './StoreProvider';
 
+import { GoogleTagManager } from '@next/third-parties/google';
+
 export const metadata: Metadata = {
   metadataBase: new URL(configuration.BASE_APP_URL as string),
   title: metaData.mainTitle,
@@ -50,6 +52,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uk">
+      <GoogleTagManager gtmId="GTM-KXTW9BD9" />
       <body className={clsx(montserrat.className)}>
         <StoreProvider>
           <Providers>
