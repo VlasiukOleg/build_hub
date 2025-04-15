@@ -9,10 +9,14 @@ export default function GTMPageViewTracker() {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: 'pageview',
-        page: pathname,
-      });
+
+      // Специальное событие только для каталога
+      if (pathname === '/catalog') {
+        window.dataLayer.push({
+          event: 'catalog',
+          page: pathname,
+        });
+      }
     }
   }, [pathname]);
 
