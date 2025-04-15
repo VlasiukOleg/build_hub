@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useRef } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { Button, useDisclosure } from '@heroui/react';
 import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet';
@@ -118,6 +118,7 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
   const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
 
   const router = useRouter();
+  const searchParams = useSearchParams();
   const dispatch = useAppDispatch();
 
   const deliveryType = useAppSelector(state => state.delivery.deliveryType);
@@ -127,6 +128,8 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
   const isMovingPriceAddToOrderBar = useAppSelector(
     state => state.moving.isMovingPriceAddToOrder
   );
+
+  console.log(deliveryStorage, 'deliveryStorage');
 
   const popupElRef = useRef<any>(null);
 
@@ -145,6 +148,25 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
     setTimeout(() => {
       window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }, 300);
+  };
+
+  const from = searchParams.get('from');
+  console.log(from);
+
+  const handleSkipClick = () => {
+    if (from) {
+      router.push(`/${from}`);
+    } else {
+      router.push('/catalog');
+    }
+  };
+
+  const handleNextClick: () => void = () => {
+    if (from) {
+      router.push(`/${from}`);
+    } else {
+      router.push('/catalog');
+    }
   };
 
   return (
@@ -216,17 +238,17 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
       )}
 
       <Button
-        onPress={() => router.push('/catalog')}
+        onPress={handleNextClick}
         className="bg-accent text-white  font-medium text-sm md:text-base h-10 xl:text-lg xl:h-12"
         radius="sm"
-        isDisabled={deliveryType === ''}
+        isDisabled={deliveryStorage === ''}
       >
         Продовжити
       </Button>
-      {!deliveryType && (
+      {!deliveryStorage && (
         <Button
-          onPress={() => router.push('/catalog')}
-          className="bg-accent text-white ml-3   text-sm md:text-base font-medium text-base h-10 xl:text-lg xl:h-12"
+          onPress={handleSkipClick}
+          className="bg-accent text-white ml-3 text-sm md:text-base font-medium  h-10 xl:text-lg xl:h-12"
           radius="sm"
         >
           Пропустити

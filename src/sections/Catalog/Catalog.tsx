@@ -1,7 +1,10 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import CatalogCard from '@/components/ui/CatalogCard';
-import { Breadcrumbs, BreadcrumbItem } from '@heroui/react';
+import { Breadcrumbs, BreadcrumbItem, Button } from '@heroui/react';
+
+import { useAppSelector } from '@/redux/hooks';
 
 import Shtukaturka from '@/../public/images/shtukaturka-450x300.webp';
 import Gipsokarton from '@/../public/images/gipsokarton-450х300.webp';
@@ -61,13 +64,40 @@ const catalog = [
 interface ICatalogProps {}
 
 const Catalog: React.FC<ICatalogProps> = ({}) => {
+  const router = useRouter();
+
+  console.log(router, 'router');
+
+  const deliveryStorage = useAppSelector(
+    state => state.delivery.deliveryStorage
+  );
+
+  const handleStorageClick = () => {
+    const url = `/?from=catalog`;
+    router.push(url);
+  };
+
   return (
     <section className="py-4 md:py-8">
       <div className="container">
-        <Breadcrumbs className="mb-4">
+        <Breadcrumbs className="mb-2">
           <BreadcrumbItem href="/">Головна</BreadcrumbItem>
           <BreadcrumbItem href={`${Pages.CATALOG}`}>Каталог</BreadcrumbItem>
         </Breadcrumbs>
+        {!deliveryStorage && (
+          <div className="flex  mb-2">
+            <Button
+              type="submit"
+              size="sm"
+              className=" text-accent font-medium text-xs min-h-5 xl:text-sm"
+              radius="sm"
+              onPress={handleStorageClick}
+              variant="bordered"
+            >
+              Вибрати склад завантаження
+            </Button>
+          </div>
+        )}
         <h1 className="font-unbounded xl:text-2xl font-bold text-center mb-5  md:text-lg">
           Оберіть потрібну Вам категорію будівельних робіт
         </h1>

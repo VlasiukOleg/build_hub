@@ -36,6 +36,9 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
   const router = useRouter();
 
   const deliveryPrice = useAppSelector(state => state.delivery.deliveryPrice);
+  const deliveryStorage = useAppSelector(
+    state => state.delivery.deliveryStorage
+  );
   const deliveryType = useAppSelector(state => state.delivery.deliveryType);
   const movingPrice = useAppSelector(state => state.moving.movingPrice);
   const isMovingAddToOrder = useAppSelector(
@@ -58,6 +61,11 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
   const handleOrderClick = () => {
     const url = `/order?from=${slug}`;
 
+    router.push(url);
+  };
+
+  const handleStorageClick = () => {
+    const url = `/?from=catalog/${slug}`;
     router.push(url);
   };
 
@@ -85,12 +93,26 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
             totalQuantity > 0 && 'pt-[95px]  md:pt-[65px] xl:pt-[75px]'
           )}
         >
-          <Breadcrumbs className="mb-4">
+          <Breadcrumbs className="mb-2">
             <BreadcrumbItem href={`/${Pages.CATALOG}`}>Каталог</BreadcrumbItem>
             <BreadcrumbItem href="/catalog/slug">
               {BREADCRUMBS_LABEL[slug]}
             </BreadcrumbItem>
           </Breadcrumbs>
+          {!deliveryStorage && (
+            <div className="flex  mb-2">
+              <Button
+                type="submit"
+                size="sm"
+                className=" text-accent font-medium text-xs min-h-5 xl:text-sm"
+                radius="sm"
+                onPress={handleStorageClick}
+                variant="bordered"
+              >
+                Вибрати склад завантаження
+              </Button>
+            </div>
+          )}
           <h1 className="font-unbounded xl:text-2xl font-bold text-center mb-5  md:text-lg">
             {title}
           </h1>
