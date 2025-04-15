@@ -129,8 +129,6 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
     state => state.moving.isMovingPriceAddToOrder
   );
 
-  console.log(deliveryStorage, 'deliveryStorage');
-
   const popupElRef = useRef<any>(null);
 
   const handleStorageClick = (location: string) => {
@@ -151,7 +149,6 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
   };
 
   const from = searchParams.get('from');
-  console.log(from);
 
   const handleSkipClick = () => {
     if (from) {

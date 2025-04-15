@@ -127,9 +127,7 @@ const DisclosureAddMaterialsPanel: React.FC<
       try {
         const response = await fetch('/api/googlesheets');
         const result = await response.json();
-        console.log(result);
         const normalizedData = convertToObjects(result.values);
-        console.log(normalizedData);
         setMaterials(normalizedData || []);
       } catch (error) {
         console.error('Помилка при отриманні даних:', error);
@@ -155,19 +153,16 @@ const DisclosureAddMaterialsPanel: React.FC<
     return fuse.search(query).map(result => result.item);
   }, [materials, query]);
 
-  console.log(query);
-
   const isButtonActive = materialTitle.length > 0 && Number(quantity) > 0;
 
   const isManualButtonActive =
     manualMaterialTitle.length > 0 && Number(manualQuantity) > 0;
 
   const onSelectionChange = (id: React.Key | null) => {
-    console.log(id);
     const selectedMaterial = filteredMaterials.find(
       material => material.id === id
     );
-    console.log(selectedMaterial);
+
 
     if (selectedMaterial) {
       const price = selectedMaterial.price.replace(',', '.');

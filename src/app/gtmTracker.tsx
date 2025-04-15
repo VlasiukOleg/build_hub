@@ -11,9 +11,9 @@ export default function GTMPageViewTracker() {
       window.dataLayer = window.dataLayer || [];
 
       // Специальное событие только для каталога
-      if (pathname === '/catalog') {
+      if (pathname === '/thanks') {
         window.dataLayer.push({
-          event: 'catalog',
+          event: 'thanks',
           page: pathname,
         });
       }

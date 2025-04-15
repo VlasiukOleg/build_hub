@@ -66,8 +66,6 @@ interface ICatalogProps {}
 const Catalog: React.FC<ICatalogProps> = ({}) => {
   const router = useRouter();
 
-  console.log(router, 'router');
-
   const deliveryStorage = useAppSelector(
     state => state.delivery.deliveryStorage
   );

@@ -62,8 +62,6 @@ const DisclosureMovingPanel: React.FunctionComponent<
   const movingBuilding = useAppSelector(state => state.moving.building);
   const movingFloor = useAppSelector(state => state.moving.floor);
 
-  console.log(movingElevator);
-
   const [elevator, setElevator] = useState(movingElevator);
   const [building, setBuilding] = useState(movingBuilding);
   const [floor, setFloor] = useState(movingFloor);

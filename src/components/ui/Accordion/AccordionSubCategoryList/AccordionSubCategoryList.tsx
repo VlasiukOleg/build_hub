@@ -40,11 +40,9 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
     matInd: number
   ) => {
     let value = e.currentTarget.value.trim();
-    console.log(value);
 
     if (value.charAt(0) === '0' && value.length > 1) {
       value = value.slice(1);
-      console.log(value);
       e.currentTarget.value = value;
     }
 
@@ -61,7 +59,6 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
     matInd: number,
     value: number
   ) => {
-    console.log(value);
     const payload = { catInd, matInd, value, slug };
 
     dispatch(changeQuantity(payload));

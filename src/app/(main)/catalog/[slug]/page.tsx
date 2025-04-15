@@ -21,7 +21,6 @@ export function generateStaticParams() {
 }
 
 const Page: React.FC<IPageProps> = ({ params: { slug } }) => {
-  console.log(slug);
   return (
     <>
       <div>

@@ -67,13 +67,10 @@ const materialsSlice = createSlice({
         const material = categoryItem?.materials[matInd];
 
         if (categoryItem && material) {
-          console.log(Number(value));
           // Обновить количество материала
           if (value === Number(0)) {
-            console.log(material.quantity);
             material.quantity = Number(0);
           } else {
-            console.log(material.quantity);
             material.quantity = Number(value);
           }
           {

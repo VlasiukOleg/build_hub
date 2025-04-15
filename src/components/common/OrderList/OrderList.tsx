@@ -169,8 +169,6 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     ...activeConfigurableMaterials,
   ];
 
-  console.log(filteredMaterialsByQuantity);
-
   const groupedMaterials = groupMaterialsByType(allActiveMaterials);
 
   const weightTypeMaterial = groupedMaterials[
@@ -266,7 +264,6 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
   const handleMaterialConfirmModalOpen = (
     material: Material | ConfigurableMaterial | AdditionalMaterial
   ) => {
-    console.log(material);
     if ('id' in material) {
       setMaterialId(material.id);
       setMaterialTitle(material.title);
@@ -321,7 +318,6 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     quantity: number
   ) => {
     const payload = { materialKey, quantity };
-    console.log(payload);
     dispatch(updateConfigurableMaterial(payload));
     setEditMaterialKey('');
   };
@@ -330,8 +326,6 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     materialId: string,
     quantity: number
   ) => {
-    console.log(materialId);
-    console.log(quantity);
     setEditMaterialKey(materialId);
     setAdditionalMaterialsEditModeQuantity(String(quantity));
   };

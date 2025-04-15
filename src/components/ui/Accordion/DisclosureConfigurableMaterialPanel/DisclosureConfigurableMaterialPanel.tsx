@@ -96,8 +96,6 @@ const DisclosureAddMaterialsPanel: React.FC<
       item => item.key === e.target.value
     );
 
-    console.log(selectedGazoblok);
-
     if (selectedGazoblok) {
       setGazoblokPrice(
         selectedGazoblok.salePrice > 0
