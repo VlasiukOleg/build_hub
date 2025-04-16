@@ -10,7 +10,6 @@ export default function GTMPageViewTracker() {
     if (typeof window !== 'undefined') {
       window.dataLayer = window.dataLayer || [];
 
-      // Специальное событие только для каталога
       if (pathname === '/thanks') {
         window.dataLayer.push({
           event: 'thanks',
