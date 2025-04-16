@@ -110,7 +110,7 @@ const DeliveryTypeChoice: React.FC<IDeliveryTypeChoiceProps> = ({
         orientation="horizontal"
         classNames={{
           wrapper: 'flex-row mb-4',
-          label: 'text-grey font-medium',
+          label: 'text-sm text-grey font-medium',
         }}
       >
         {deliveryTypeList.map(deliveryTypeItem => (
@@ -148,7 +148,7 @@ const DeliveryTypeChoice: React.FC<IDeliveryTypeChoiceProps> = ({
         label="Чи потрібні вантажники:"
         classNames={{
           wrapper: 'flex-row',
-          label: 'text-grey font-medium',
+          label: 'text-sm text-grey font-medium',
         }}
       >
         {movingTypeList.map(movingTypeItem => (

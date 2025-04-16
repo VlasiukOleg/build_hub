@@ -169,7 +169,7 @@
           {
             "id": 3.1,
             "image": "https://i.imgur.com/3DOs18B.jpeg",
-            "title": "SILTEK PM -10/25кг   Штукатурка цементно-вапняна. Ручного та машинного нанесення.",
+            "title": "SILTEK PM -10 Штукатурка цементно-вапняна. Ручного та машинного нанесення, 25 кг",
             "description": "Для вирівнювання недеформівних бетонних, цементно-вапняних, цементно-піщаних та гіпсових поверхонь (стін і стель) шаром до 50 мм всередині житлових приміщень, які не підпадають під систематичне зволоження, перед шпаклівкою.",
             "weight": 25,
             "volume": 0.025,
@@ -179,13 +179,13 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": "",
+            "officialLink": "https://siltek.ua/product/pm-10/",
             "configurableList": []
           },
           {
             "id": 3.2,
             "image": "https://i.imgur.com/Bb2lO1B.jpeg",
-            "title": "Baumit MPI-25 Штукатурная смесь, 25 кг",
+            "title": "Baumit MPI-25 цементно-вапняна штукатурна суміш, 25 кг",
             "description": "Цементно-вапняна суміш з мінеральними заповнювачами та полімерними добавками.  Призначена для механізованого штукатурення всіх видів щільних мінеральних основ всередині будівель. Придатна для нанесення",
             "weight": 25,
             "volume": 0.025,
@@ -195,7 +195,7 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": "",
+            "officialLink": "https://baumit.ua/produkti/shtukaturki-dlya-mehanizovanogo-nanesennya/cementno-vapnyani-shtukaturki/baumit-mpi-25",
             "configurableList": []
           },
           {
@@ -211,7 +211,39 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": "",
+            "officialLink": "https://polimin.ua/post_product/shc-5-start-finish-2-copy/",
+            "configurableList": []
+          },
+          {
+            "id": 3.4,
+            "image": "https://i.ibb.co/0j2pXXVJ/polimin-shc2.webp",
+            "title": "ПОЛІМІН ШЦ-2 штукатурка вирівнюча цементна, 25кг",
+            "description": "Застосовується для виконання високоякісних штукатурних робіт на різних мінеральних основах (бетон, цегла і т.д.). Рекомендована для штукатурення фасадів та стін в приміщеннях з вологим режимом експлуатації. Після затвердіння є міцним підготовчим шаром перед нанесенням різних цементних шпаклівок або декоративних штукатурок.",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 122.72,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://polimin.ua/post_product/shc-2-klassicheskaya-cementnaya-2/",
+            "configurableList": []
+          },
+          {
+            "id": 3.5,
+            "image": "https://i.ibb.co/YFdMDMdh/kreisel-500.webp",
+            "title": "Kreisel 500 Штукатурка вапняно-цементна машинна, 25 кг",
+            "description": "Штукатурна суміш для машинного та ручного нанесення, адаптована під всі види штукатурних станцій для нанесення традиційних одно- та багатошарових штукатурок.Може використовуватись як основа під декоративні штукатурки, фарби або подальше облицювання керамічною плиткою, в тому числі в приміщеннях з підвищеною відносною вологістю (кухні, душові кімнати, сауни та інше).Може застосовуватись в якості ґрунтувальної штукатурки під декоративні штукатурки, фарби, або подальше облицювання декоративною плиткою.Має антисептичні властивості.",
+            "weight": 25,
+            "volume": 0.025,
+            "price": 134.96,
+            "salePrice": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "https://www.kreisel.ua/produkt/500-mashinna-shtukaturka-startova-cementno-vapnjana",
             "configurableList": []
           }
         ]
@@ -237,7 +269,7 @@
             "officialLink": "",
             "configurableList": [
               {
-                "label": "0.2",
+                "label": "0.2 мм.",
                 "key": "mayak_6x20x3000",
                 "price": 11.94,
                 "salePrice": 0,
@@ -246,7 +278,7 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "0.25",
+                "label": "0.25 мм.",
                 "key": "mayak_6x25x3000",
                 "price": 14.43,
                 "salePrice": 0,
@@ -255,7 +287,7 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "0.3",
+                "label": "0.3 мм.",
                 "key": "mayak_6x30x3000",
                 "price": 14.72,
                 "salePrice": 0,
@@ -264,7 +296,7 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "0.35",
+                "label": "0.35 мм.",
                 "key": "mayak_6x35x3000",
                 "price": 19.21,
                 "salePrice": 0,
@@ -290,7 +322,7 @@
             "officialLink": "",
             "configurableList": [
               {
-                "label": "0.2",
+                "label": "0.2 мм.",
                 "key": "mayak_10x20x3000",
                 "price": 14.61,
                 "salePrice": 0,
@@ -299,7 +331,7 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "0.25",
+                "label": "0.25 мм.",
                 "key": "mayak_10x25x3000",
                 "price": 18.75,
                 "salePrice": 0,
@@ -308,7 +340,7 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "0.3",
+                "label": "0.3 мм.",
                 "key": "mayak_10x30x3000",
                 "price": 24.84,
                 "salePrice": 0,
@@ -317,7 +349,7 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "0.35",
+                "label": "0.35 мм.",
                 "key": "mayak_10x35x3000",
                 "price": 19.21,
                 "salePrice": 0,
