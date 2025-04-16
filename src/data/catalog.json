@@ -674,7 +674,7 @@
           {
             "id": 12.1,
             "image": "https://i.imgur.com/HBCDOjK.jpeg",
-            "title": " Правило трапецевидне 300 см арт. 0730-523000 ХАРДЕКС",
+            "title": "Правило трапецевидне ХАРДЕКС",
             "description": "правило використовується при штукатурних роботах для швидкого та ефективного розподілу розчину по оброблюваної поверхні, а також для вирівнювання штукатурних шарів у вертикальному та горизонтальному положеннях",
             "weight": 3,
             "volume": 0.001,
@@ -685,7 +685,35 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "2 м",
+                "key": "pravilo_hardex_2",
+                "price": 829.16,
+                "salePrice": 0,
+                "weight": 5,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "2.5 м",
+                "key": "pravilo_hardex_2.5",
+                "price": 1066.82,
+                "salePrice": 0,
+                "weight": 5,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "3 м",
+                "key": "pravilo_hardex_3",
+                "price": 1286.71,
+                "salePrice": 0,
+                "weight": 5,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           },
           {
             "id": 12.2,
@@ -726,7 +754,7 @@
             "description": "Пластикові відра можуть використовуватися для змішування різних матеріалів, таких як цемент та пісок, для створення бетонної суміші. Це швидкий та ефективний спосіб змішування матеріалів без необхідності використання інших інструментів.",
             "weight": 1,
             "volume": 0.02,
-            "price": 78.75,
+            "price": 97.50,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
@@ -740,9 +768,9 @@
             "image": "https://i.imgur.com/HgII2Yb.jpeg",
             "title": "Кастра кругла 65 л. (Польща)",
             "description": "Пластикові відра можуть використовуватися для змішування різних матеріалів, таких як цемент та пісок, для створення бетонної суміші. Це швидкий та ефективний спосіб змішування матеріалів без необхідності використання інших інструментів.",
-            "weight": 3.5,
+            "weight": 4,
             "volume": 0.065,
-            "price": 207.5,
+            "price": 225.00,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
@@ -1515,7 +1543,7 @@
           {
             "id": 107.1,
             "image": "https://i.imgur.com/HBCDOjK.jpeg",
-            "title": " Правило трапецевидне 300 см арт. 0730-523000 ХАРДЕКС",
+            "title": "Правило трапецевидне ХАРДЕКС",
             "description": "правило використовується при штукатурних роботах для швидкого та ефективного розподілу розчину по оброблюваної поверхні, а також для вирівнювання штукатурних шарів у вертикальному та горизонтальному положеннях",
             "weight": 3,
             "volume": 0.001,
@@ -1526,7 +1554,35 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "2 м",
+                "key": "pravilo_hardex_2",
+                "price": 829.16,
+                "salePrice": 0,
+                "weight": 5,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "2.5 м",
+                "key": "pravilo_hardex_2.5",
+                "price": 1066.82,
+                "salePrice": 0,
+                "weight": 5,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "3 м",
+                "key": "pravilo_hardex_3",
+                "price": 1286.71,
+                "salePrice": 0,
+                "weight": 5,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           },
           {
             "id": 107.2,
@@ -1565,9 +1621,9 @@
             "image": "https://i.imgur.com/x3GwTGs.jpeg",
             "title": "Відро Будівельне  20 л. (Польща)",
             "description": "Пластикові відра можуть використовуватися для змішування різних матеріалів, таких як цемент та пісок, для створення бетонної суміші. Це швидкий та ефективний спосіб змішування матеріалів без необхідності використання інших інструментів.",
-            "weight": 1,
+            "weight": 3,
             "volume": 0.02,
-            "price": 78.75,
+            "price": 97.50,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
@@ -1581,9 +1637,9 @@
             "image": "https://i.imgur.com/HgII2Yb.jpeg",
             "title": "Кастра кругла 65 л. (Польща)",
             "description": "Пластикові відра можуть використовуватися для змішування різних матеріалів, таких як цемент та пісок, для створення бетонної суміші. Це швидкий та ефективний спосіб змішування матеріалів без необхідності використання інших інструментів.",
-            "weight": 3.5,
+            "weight": 4,
             "volume": 0.065,
-            "price": 207.5,
+            "price": 225.00,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
@@ -3805,7 +3861,7 @@
           {
             "id": 107.2,
             "image": "https://i.imgur.com/HBCDOjK.jpeg",
-            "title": " Правило трапецевидне 300 см арт. 0730-523000 ХАРДЕКС",
+            "title": "Правило трапецевидне ХАРДЕКС",
             "description": "правило використовується при штукатурних роботах для швидкого та ефективного розподілу розчину по оброблюваної поверхні, а також для вирівнювання штукатурних шарів у вертикальному та горизонтальному положеннях",
             "weight": 3,
             "volume": 0.001,
@@ -3816,7 +3872,35 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "2 м",
+                "key": "pravilo_hardex_2",
+                "price": 829.16,
+                "salePrice": 0,
+                "weight": 5,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "2.5 м",
+                "key": "pravilo_hardex_2.5",
+                "price": 1066.82,
+                "salePrice": 0,
+                "weight": 5,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "3 м",
+                "key": "pravilo_hardex_3",
+                "price": 1286.71,
+                "salePrice": 0,
+                "weight": 5,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           },
           {
             "id": 107.3,
@@ -3855,9 +3939,9 @@
             "image": "https://i.imgur.com/x3GwTGs.jpeg",
             "title": "Відро Будівельне  20 л. (Польща)",
             "description": "Пластикові відра можуть використовуватися для змішування різних матеріалів, таких як цемент та пісок, для створення бетонної суміші. Це швидкий та ефективний спосіб змішування матеріалів без необхідності використання інших інструментів.",
-            "weight": 1,
+            "weight": 3,
             "volume": 0.02,
-            "price": 78.75,
+            "price": 97.50,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
@@ -3871,9 +3955,9 @@
             "image": "https://i.imgur.com/HgII2Yb.jpeg",
             "title": "Кастра кругла 65 л. (Польща)",
             "description": "Пластикові відра можуть використовуватися для змішування різних матеріалів, таких як цемент та пісок, для створення бетонної суміші. Це швидкий та ефективний спосіб змішування матеріалів без необхідності використання інших інструментів.",
-            "weight": 3.5,
+            "weight": 4,
             "volume": 0.065,
-            "price": 207.5,
+            "price": 225.0,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
@@ -6014,7 +6098,7 @@
           {
             "id": 31.1,
             "image": "https://i.imgur.com/HBCDOjK.jpeg",
-            "title": " Правило трапецевидне 300 см арт. 0730-523000 ХАРДЕКС",
+            "title": "Правило трапецевидне ХАРДЕКС",
             "description": "правило використовується при штукатурних роботах для швидкого та ефективного розподілу розчину по оброблюваної поверхні, а також для вирівнювання штукатурних шарів у вертикальному та горизонтальному положеннях",
             "weight": 3,
             "volume": 0.001,
@@ -6025,7 +6109,35 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [
+              {
+                "label": "2 м",
+                "key": "pravilo_hardex_2",
+                "price": 829.16,
+                "salePrice": 0,
+                "weight": 5,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "2.5 м",
+                "key": "pravilo_hardex_2.5",
+                "price": 1066.82,
+                "salePrice": 0,
+                "weight": 5,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "label": "3 м",
+                "key": "pravilo_hardex_3",
+                "price": 1286.71,
+                "salePrice": 0,
+                "weight": 5,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           },
           {
             "id": 31.2,
@@ -6064,9 +6176,9 @@
             "image": "https://i.imgur.com/x3GwTGs.jpeg",
             "title": "Відро Будівельне  20 л. (Польща)",
             "description": "Пластикові відра можуть використовуватися для змішування різних матеріалів, таких як цемент та пісок, для створення бетонної суміші. Це швидкий та ефективний спосіб змішування матеріалів без необхідності використання інших інструментів.",
-            "weight": 1,
+            "weight": 3,
             "volume": 0.02,
-            "price": 78.75,
+            "price": 97.50,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
@@ -6080,9 +6192,9 @@
             "image": "https://i.imgur.com/HgII2Yb.jpeg",
             "title": "Кастра кругла 65 л. (Польща)",
             "description": "Пластикові відра можуть використовуватися для змішування різних матеріалів, таких як цемент та пісок, для створення бетонної суміші. Це швидкий та ефективний спосіб змішування матеріалів без необхідності використання інших інструментів.",
-            "weight": 3.5,
+            "weight": 4,
             "volume": 0.065,
-            "price": 207.5,
+            "price": 225.0,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
