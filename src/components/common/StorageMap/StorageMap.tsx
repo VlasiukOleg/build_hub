@@ -71,8 +71,22 @@ const storages: Storage[] = [
     id:5,
     location: 'Склад Берковецька',
     coordinates: [50.49336, 30.34126], // Координаты для Берковецька
-  }
+  },
+  {
+    id:6,
+    location: 'Склад Вишневе',
+    coordinates: [50.382029, 30.339611], // Координаты для Берковецька
+  },
+  {
+    id:7,
+    location: 'Склад Бровари',
+    coordinates: [50.483656, 30.760903], // Координаты для Берковецька
+  },
+  
+
 ];
+
+
 
 const ResetViewControl = ({ position }: { position: LatLngTuple }) => {
   const map = useMap();
