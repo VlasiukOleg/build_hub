@@ -7,6 +7,7 @@ import { isToday, getHours, getMinutes, getDay } from 'date-fns';
 import 'react-datepicker/dist/react-datepicker.css';
 import { Button } from '@heroui/react';
 import { useRouter } from 'next/navigation';
+import { useMask } from '@react-input/mask';
 
 import { useAppSelector, useAppDispatch } from '@/redux/hooks';
 import { useForm, Controller } from 'react-hook-form';
@@ -23,17 +24,15 @@ import { Field, Label } from '@headlessui/react';
 import { CiCalendar } from 'react-icons/ci';
 import styles from './orderform.module.css';
 
-const phoneRegex = /^(0\d{9})$/;
+// const phoneRegex = /^(0\d{9})$/;
+const phoneRegex = /^\+38 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
 
 const orderValidationSchema = yup.object({
-  firstName: yup.string().required("Це поле є обов'язковим до заповнення"),
-  email: yup
-    .string()
-    .required("Це поле є обов'язковим до заповнення")
-    .email('Не правильний email'),
+  firstName: yup.string(),
+  email: yup.string().email('Не правильний email'),
   phone: yup
     .string()
-    .matches(phoneRegex, 'Формат 0681118888')
+    .matches(phoneRegex, 'Формат +38 (XXX) XXX-XX-XX')
     .required("Це поле є обов'язковим до заповнення"),
   address: yup.string().required("Це поле є обов'язковим до заповнення"),
   message: yup.string().nullable(),
@@ -60,8 +59,8 @@ const timesList = [
 ];
 
 export interface IFormState {
-  firstName: string;
-  email: string;
+  firstName?: string;
+  email?: string;
   phone: string;
   address: string;
   message?: string | null;
@@ -85,6 +84,11 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
   const isMovingAddToOrder = useAppSelector(
     state => state.moving.isMovingPriceAddToOrder
   );
+
+  const inputRef = useMask({
+    mask: '+38 (___) ___-__-__',
+    replacement: { _: /\d/ },
+  });
 
   const allMaterialsCategories = categories.flatMap(
     material => material.categories
@@ -187,11 +191,11 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
     setSendError(false);
     const sanitizedData = {
       ...data,
-      firstName: data.firstName.trim(),
+      firstName: data.firstName?.trim() || '',
       phone: data.phone.replace(/[\s()-]/g, ''),
-      email: data.email.trim(),
+      email: data.email?.trim() || '',
       address: data.address.trim(),
-      message: data.message ? data.message.trim() : '',
+      message: data.message?.trim() || '',
       date: data.date,
       materials: filteredMaterialsByQuantity,
       deliveryTime: Array.from(deliveryTime)[0],
@@ -204,6 +208,8 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
       isMovingAddToOrder: isMovingAddToOrder,
       additionalMaterial: additionalMaterial,
     };
+
+    console.log(sanitizedData);
     try {
       setIsSending(true);
       await sendingEmail(sanitizedData);
@@ -259,6 +265,10 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
           <div className="relative">
             <Input
               {...register('phone')}
+              ref={inputRef}
+              onChange={e => {
+                setValue('phone', e.target.value, { shouldValidate: true });
+              }}
               isClearable
               label="Телефон"
               placeholder="Введіть телефон"

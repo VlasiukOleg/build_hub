@@ -149,7 +149,7 @@ export async function POST(request: Request) {
         <p>Телефон: ${phone}</p>
         <p>Email: ${email}</p>
         <p>Адреса: ${address}</p>
-        <p>Дата та час: ${formattedDate} ${deliveryTime.name}</p>
+        <p>Дата та час: ${formattedDate} ${deliveryTime}</p>
         <p>Коментар: ${message}</p>
         ${materialsTable}
         <p style="font-weight: bold;">Додані матеріали</p>
@@ -177,7 +177,7 @@ export async function POST(request: Request) {
         <p>Телефон: ${phone}</p>
         <p>Email: ${email}</p>
         <p>Адреса: ${address}</p>
-        <p>Дата та час: ${formattedDate} ${deliveryTime.name}</p>
+        <p>Дата та час: ${formattedDate} ${deliveryTime}</p>
         <p>Коментар: ${message}</p>
         ${materialsTable}
          <p style="font-weight: bold;">Додані матеріали</p>
