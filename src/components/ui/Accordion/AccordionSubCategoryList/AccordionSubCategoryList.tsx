@@ -1,5 +1,6 @@
 'use client';
 
+import clsx from 'clsx';
 import { Accordion, AccordionItem } from '@heroui/accordion';
 import { Avatar } from '@heroui/react';
 
@@ -20,6 +21,7 @@ import { TbTruckDelivery } from 'react-icons/tb';
 import { FaPlus } from 'react-icons/fa6';
 
 import { Pages } from '@/@types';
+import { SUBCATEGORY_TITLE_LIST_MAP } from './constants';
 
 interface IAccordionSubCategoryList {
   slug: Pages;
@@ -97,7 +99,16 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
             <AccordionItem
               key={subCategory.id}
               className="bg-slate-50 relative"
-              classNames={{ title: 'text-sm md:text-base' }}
+              classNames={{
+                title: 'text-sm md:text-base',
+                trigger: clsx(
+                  Object.values(SUBCATEGORY_TITLE_LIST_MAP).includes(
+                    subCategory.categoryTitle
+                  )
+                    ? 'py-2'
+                    : 'py-4'
+                ),
+              }}
               aria-label="Accordion 1"
               startContent={
                 <Avatar

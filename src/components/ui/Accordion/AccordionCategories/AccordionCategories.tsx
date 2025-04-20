@@ -113,7 +113,7 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
               </Button>
             </div>
           )}
-          <h1 className="font-unbounded xl:text-2xl font-bold text-center mb-5  md:text-lg">
+          <h1 className="font-unbounded text-sm xl:text-xl font-bold text-center mb-5  md:text-lg">
             {title}
           </h1>
           <AccordionSubCategoryList slug={slug} totalWeight={totalWeight} />
