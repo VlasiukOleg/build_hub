@@ -13,20 +13,7 @@ import AccordionSubCategoryList from '../AccordionSubCategoryList';
 import { useMaterials } from '@/hooks/useMaterials';
 import { useAppSelector } from '@/redux/hooks';
 
-import { Pages } from '@/@types';
-
-const BREADCRUMBS_LABEL = {
-  [Pages.CATALOG]: 'Каталог',
-  [Pages.SHTUKATURKA]: 'Штукатурка',
-  [Pages.SHPAKLIVKA]: 'Шпаклівка',
-  [Pages.GIPSOKARTON]: 'Гіпсокартон',
-  [Pages.ORDER]: 'Корзина',
-  [Pages.STYAZHKA]: 'Cтяжка',
-  [Pages.KLADKA]: 'Кладка',
-  [Pages.UTEPLENYA]: 'Утеплення',
-  [Pages.POLICY]: 'Політика конфіденційності',
-  [Pages.PLITKA]: 'Плитка',
-};
+import { Pages, BREADCRUMBS_LABEL } from '@/@types';
 
 interface IAccordionCategoriesProps {
   slug: Pages;

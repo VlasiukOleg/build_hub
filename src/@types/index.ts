@@ -23,6 +23,7 @@ export const BREADCRUMBS_LABEL = {
   [Pages.UTEPLENYA]: 'Утеплення',
   [Pages.PLITKA]: 'Плитка',
   [Pages.ABOUT]: 'О проекті',
+  [Pages.POLICY]: 'Політика',
 };
 
 export interface SubCategory {
