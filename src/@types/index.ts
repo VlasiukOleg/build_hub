@@ -9,6 +9,7 @@ export enum Pages {
   UTEPLENYA = 'uteplenya',
   POLICY = 'policy',
   PLITKA = 'plitka',
+  ABOUT = 'about',
 }
 
 export const BREADCRUMBS_LABEL = {
@@ -21,6 +22,7 @@ export const BREADCRUMBS_LABEL = {
   [Pages.KLADKA]: 'Кладка',
   [Pages.UTEPLENYA]: 'Утеплення',
   [Pages.PLITKA]: 'Плитка',
+  [Pages.ABOUT]: 'О проекті',
 };
 
 export interface SubCategory {

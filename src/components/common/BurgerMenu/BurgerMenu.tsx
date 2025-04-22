@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@heroui/link';
 
 import { Button } from '@heroui/react';
 
@@ -7,6 +7,8 @@ import { IoClose } from 'react-icons/io5';
 import Logo from '@/components/ui/Logo';
 import Phone from '@/components/ui/Phone';
 import Email from '@/components/ui/Email';
+
+import { Pages } from '@/@types';
 
 interface IBurgerMenuProps {
   close: () => void;
@@ -22,7 +24,7 @@ const BurgerMenu: React.FC<IBurgerMenuProps> = ({ close }) => {
             isIconOnly
             aria-label="Go to Cart"
             onPress={close}
-            className="items-center justify-center w-12  bg-bgwhite border-[2px] border-accent inline-flex rounded-lg text-accent"
+            className="items-center justify-center h-8 w-9  bg-bgwhite border-[2px] border-accent inline-flex rounded-lg text-accent md:w-12 md:h-10"
             radius="sm"
           >
             <IoClose className="size-7 md:size-6 xl:size-8 text-accent" />
@@ -30,18 +32,30 @@ const BurgerMenu: React.FC<IBurgerMenuProps> = ({ close }) => {
         </div>
       </header>
       <nav className="flex-1">
-        <ul className="flex flex-col gap-5 text-2xl items-center uppercase font-medium  md:text-[28px]">
+        <ul className="flex flex-col gap-5  items-center uppercase font-medium  md:text-[28px]">
           <li>
-            <Link href="/catalog/" onClick={close}>
-              Матеріали
+            <Link
+              className="text-grey text-2xl md:text-[28px]"
+              href={Pages.CATALOG}
+              onPress={close}
+            >
+              Каталог
             </Link>
           </li>
-          <Link href="/services" onClick={close}>
+          <Link
+            className="text-grey text-2xl md:text-[28px]"
+            href="/services"
+            onPress={close}
+          >
             Послуги
           </Link>
           <li>
-            <Link href="/about" onClick={close}>
-              О проекті
+            <Link
+              className="text-grey text-2xl md:text-[28px]"
+              href={Pages.ABOUT}
+              onPress={close}
+            >
+              Про проект
             </Link>
           </li>
         </ul>

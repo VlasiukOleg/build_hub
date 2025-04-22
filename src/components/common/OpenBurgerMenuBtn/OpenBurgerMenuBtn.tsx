@@ -27,12 +27,12 @@ const OpenBurgerMenuBtn: React.FC<IOpenBurgerMenuBtnProps> = ({
         aria-label="Go to Cart"
         onPress={() => setIsOpen(true)}
         className={clsx(
-          'items-center justify-center w-12  bg-bgwhite border-[2px] border-accent inline-flex rounded-lg text-accent',
+          'items-center justify-center w-12 h-8 w-9  bg-bgwhite border-[2px] border-accent inline-flex rounded-lg text-accent md:w-12 md:h-10',
           totalQuantity > 0 && 'bg-white'
         )}
         radius="sm"
       >
-        <IoIosMenu className="size-7 md:size-6 xl:size-8 text-accent" />
+        <IoIosMenu className="size-6 md:size-6 xl:size-8 text-accent" />
       </Button>
       <Modal isOpen={isOpen} close={() => setIsOpen(false)} variant="burger">
         <BurgerMenu close={() => setIsOpen(false)} />
