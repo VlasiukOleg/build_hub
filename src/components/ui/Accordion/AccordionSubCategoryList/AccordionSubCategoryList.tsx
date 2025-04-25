@@ -6,6 +6,7 @@ import { Avatar } from '@heroui/react';
 
 import DisclosureMaterialsPanel from '../DisclosureMaterialsPanel';
 import DisclosureConfigurableMaterialPanel from '../DisclosureConfigurableMaterialPanel';
+import DisclosureSettingsMaterial from '../DisclosureSettingsMaterial';
 import DisclosureMovingPanel from '../DisclosureMovingPanel';
 import DisclosureDeliveryPanel from '../DisclosureDeliveryPanel';
 import DisclosureAddMaterialsPanel from '../DisclosureAddMaterialsPanel';
@@ -123,7 +124,16 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
                 {subCategory.materials.map((material, matInd) => {
                   const { quantity, price } = material;
                   const totalMaterialPrice = quantity * price;
-                  if (material.configurableList.length === 0) {
+                  if (material.settingList?.length > 0) {
+                    return (
+                      <DisclosureSettingsMaterial
+                        key={matInd}
+                        material={material}
+                        categoryTitle={subCategory.categoryTitle}
+                      />
+                    );
+                  }
+                  if (material.configurableList?.length === 0) {
                     return (
                       <DisclosureMaterialsPanel
                         key={matInd}

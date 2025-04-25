@@ -1,0 +1,15 @@
+export const SETTINGS_MATERIAL_NAME_LIST_MAP = {
+  THICKNESS: 'thickness',
+  LENGTH: 'length',
+  WIDTH: 'width',
+  SIZE: 'size',
+  TYPE: 'type',
+};
+
+export const SETTINGS_MATERIAL_LABEL_LIST_MAP = {
+  [SETTINGS_MATERIAL_NAME_LIST_MAP.THICKNESS]: 'Товщина металу, мм',
+  [SETTINGS_MATERIAL_NAME_LIST_MAP.LENGTH]: 'Довжина',
+  [SETTINGS_MATERIAL_NAME_LIST_MAP.WIDTH]: 'Ширина',
+  [SETTINGS_MATERIAL_NAME_LIST_MAP.SIZE]: 'Виберіть Розмір',
+  [SETTINGS_MATERIAL_NAME_LIST_MAP.TYPE]: 'Тип',
+};

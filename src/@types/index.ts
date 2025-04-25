@@ -43,6 +43,16 @@ export interface ConfigurableItem {
   movingTypeCalculation: string;
 }
 
+export interface MaterialSetting {
+  attributes: Record<string, string>;
+  key: string;
+  price: number;
+  salePrice: number;
+  weight: number;
+  volume: number;
+  movingTypeCalculation: string;
+}
+
 export interface Material {
   id: number;
   image: string;
@@ -57,6 +67,21 @@ export interface Material {
   officialLink: string;
   movingTypeCalculation: string;
   measure: string;
+  defaultOptions?: {
+    thickness?: string;
+    length?: string;
+    width?: string;
+    size?: string;
+    type?: string;
+  };
+  options?: {
+    thickness?: string[];
+    length?: string[];
+    width?: string[];
+    size?: string[];
+    type?: string;
+  };
+  settingList?: MaterialSetting[];
   configurableList?: ConfigurableItem[];
 }
 

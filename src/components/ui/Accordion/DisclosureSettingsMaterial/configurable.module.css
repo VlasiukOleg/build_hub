@@ -1,0 +1,8 @@
+.listbox {
+  width: 100%;
+  max-height: 14rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scroll-padding-top: 1.5rem;
+  scroll-padding-bottom: 1.5rem;
+}

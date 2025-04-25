@@ -22,7 +22,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.12,
@@ -38,7 +39,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://krumix.ua/production/km-75/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -61,7 +63,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.22,
@@ -77,7 +80,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.23,
@@ -86,14 +90,15 @@
             "description": "SNIEZKA ACRYL-PUTZ ST10 Старт+Фініш — це високоякісна гіпсова шпаклівка, призначена для внутрішніх робіт, яка поєднує в собі властивості стартової та фінішної шпаклівки. Завдяки своїй універсальності, вона підходить для вирівнювання стін і стель, заповнення тріщин та нерівностей на поверхнях із штукатурки, бетону, цегли, гіпсокартону, деревини, а також ДСП та ДВП.",
             "weight": 20,
             "volume": 0.02,
-            "price": 405.35,
+            "price": 426.69,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.24,
@@ -109,7 +114,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.25,
@@ -125,7 +131,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -148,7 +155,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://siltek.ua/product/pm-10/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.32,
@@ -164,7 +172,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://baumit.ua/produkti/shtukaturki-dlya-mehanizovanogo-nanesennya/cementno-vapnyani-shtukaturki/baumit-mpi-25",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.33,
@@ -173,14 +182,15 @@
             "description": "Застосовується для виконання високоякісних штукатурних робіт на різних мінеральних основах (бетон, цегла і т.д.) усередині приміщень. Рекомендована як для традиційного ручного, так і для механічного нанесення. Після затвердіння є міцною основою для гіпсових шпаклівок і внутрішніх декоративних штукатурок.",
             "weight": 25,
             "volume": 0.025,
-            "price": 125.96,
+            "price": 139.21,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://polimin.ua/post_product/shc-5-start-finish-2-copy/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.34,
@@ -189,14 +199,15 @@
             "description": "Застосовується для виконання високоякісних штукатурних робіт на різних мінеральних основах (бетон, цегла і т.д.). Рекомендована для штукатурення фасадів та стін в приміщеннях з вологим режимом експлуатації. Після затвердіння є міцним підготовчим шаром перед нанесенням різних цементних шпаклівок або декоративних штукатурок.",
             "weight": 25,
             "volume": 0.025,
-            "price": 122.72,
+            "price": 135.61,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://polimin.ua/post_product/shc-2-klassicheskaya-cementnaya-2/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.35,
@@ -205,14 +216,15 @@
             "description": "Штукатурна суміш для машинного та ручного нанесення, адаптована під всі види штукатурних станцій для нанесення традиційних одно- та багатошарових штукатурок.Може використовуватись як основа під декоративні штукатурки, фарби або подальше облицювання керамічною плиткою, в тому числі в приміщеннях з підвищеною відносною вологістю (кухні, душові кімнати, сауни та інше).Може застосовуватись в якості ґрунтувальної штукатурки під декоративні штукатурки, фарби, або подальше облицювання декоративною плиткою.Має антисептичні властивості.",
             "weight": 25,
             "volume": 0.025,
-            "price": 134.96,
+            "price": 139.46,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.kreisel.ua/produkt/500-mashinna-shtukaturka-startova-cementno-vapnjana",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -272,7 +284,8 @@
                 "volume": 0.000324,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 1.42,
@@ -325,7 +338,8 @@
                 "volume": 0.000324,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           }
         ]
       },
@@ -348,7 +362,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.52,
@@ -364,7 +379,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -387,7 +403,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.62,
@@ -403,7 +420,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.63,
@@ -419,7 +437,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.64,
@@ -435,7 +454,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -458,7 +478,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.72,
@@ -474,7 +495,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -497,7 +519,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.82,
@@ -513,7 +536,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -536,7 +560,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.92,
@@ -552,7 +577,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -575,7 +601,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.102,
@@ -591,7 +618,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -614,7 +642,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.112,
@@ -630,7 +659,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -681,7 +711,8 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 1.122,
@@ -690,14 +721,15 @@
             "description": "Призначена для заповнення порожнин та щілин, герметизації та ущільнення швів та тріщин, ізоляції будівельних конструкцій,з’єднань різних матеріалів. Універсальний тепло- та звукоізолятор, що фіксує матеріал під час монтажу та герметизації віконних рам, дверних коробок, покрівельних конструкцій та стінових панелей, систем трубопроводів та кабелів, систем тепло- та звукоізоляції.",
             "weight": 1,
             "volume": 0.001,
-            "price": 170.59,
+            "price": 182.29,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://lacrysil.ua/pina-montazna-profesiina-bezevii-800-ml",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.123,
@@ -706,14 +738,15 @@
             "description": "Професійна КЛЕЙ-ПІНА «60 секунд» ТМ Lacrysil – професійний аерозольнийполіуретановий клей використовується для кріплення теплоізоляційних плит у середині тазовні приміщення, герметизації з'єднань, термоізоляції будівельних конструкцій, піно- тагазоблоків, з'єднання і монтажу матеріалів у промисловості та побуті.",
             "weight": 1,
             "volume": 0.001,
-            "price": 202.12,
+            "price": 212.86,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://lacrysil.ua/products/montazhnye-peny/professionalnaya/klei-pena-professionalnaia-60-sekund",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.124,
@@ -729,7 +762,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.125,
@@ -745,7 +779,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.126,
@@ -761,7 +796,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 1.127,
@@ -777,7 +813,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       }
@@ -806,7 +843,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.12,
@@ -822,7 +860,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.13,
@@ -838,7 +877,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://krumix.ua/production/km-multifinish/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.14,
@@ -854,7 +894,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.15,
@@ -870,7 +911,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -893,7 +935,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.22,
@@ -909,7 +952,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.23,
@@ -925,7 +969,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://elf-decor.com/ru/shpaklevka-akrilovaja-d-60/p236",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.24,
@@ -941,7 +986,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://elf-decor.com/ru/shpaklevka-akrilovaja-d-60/p236",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.25,
@@ -957,7 +1003,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://elf-decor.com/ru/shpaklivka-d-70-profi/p244",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.26,
@@ -966,14 +1013,15 @@
             "description": "MBA D70 ELF — це готова до використання фінішна акрилова шпаклівка білого кольору, призначена для внутрішніх оздоблювальних робіт. Вона забезпечує ідеально гладку поверхню, підготовлену для високоякісного фарбування, художнього розпису або нанесення декоративних покриттів. Шпаклівка відзначається підвищеною еластичністю, легко та рівномірно наноситься, має добру адгезію до різних основ, таких як цементні, цементно-вапняні, бетонні поверхні, гіпсокартон, ДСП, ДВП та OSB. Вона не містить органічних розчинників, не жовтіє, добре шліфується та сумісна з усіма типами фарб. Поставляється у відрах по 27 кг.",
             "weight": 16,
             "volume": 0.01,
-            "price": 501.13,
+            "price": 550.69,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://polimin.ua/post_product/afp-77-acrylic-putty-2/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.27,
@@ -982,14 +1030,15 @@
             "description": "SEMIN SEM JOINT COMPOUND — це готова до використання полімерна шпаклівка білого кольору, призначена для внутрішніх робіт. Вона ідеально підходить для закладення стиків гіпсокартонних листів із використанням армувальної стрічки, а також для фінішного вирівнювання стін та стель перед нанесенням фарби, шпалер чи декоративних покриттів. Завдяки своїй еластичності та високій адгезії, шпаклівка забезпечує відсутність тріщин при нанесенні шаром до 3 мм. Основні технічні характеристики включають щільність 1,7 та сухий залишок 74%. Продукт готовий до застосування та не потребує додаткового приготування.",
             "weight": 27,
             "volume": 0.016,
-            "price": 1018.98,
+            "price": 1034.52,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://semin.kiev.ua/index.php?route=product/product&path=2&product_id=43",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.28,
@@ -1005,7 +1054,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://semin.kiev.ua/index.php?route=product/product&path=2&product_id=43",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.29,
@@ -1021,7 +1071,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://semin.kiev.ua/index.php?route=product/product&path=2&product_id=43",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -1090,7 +1141,8 @@
                 "volume": 0.005,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 2.32,
@@ -1128,13 +1180,14 @@
               {
                 "label": "p-50 SN, рулон 50м2",
                 "key": "sklokholst_elf_50_50",
-                "price": 896.1,
+                "price": 941.46,
                 "salePrice": 0,
                 "weight": 2,
                 "volume": 0.005,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           }
         ]
       },
@@ -1157,7 +1210,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.bostik.com/ukrania/uk/catalog/product/construction/emea/Ukraine/product-bostik-wall-standard/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.42,
@@ -1173,7 +1227,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.bostik.com/ukrania/uk/catalog/product/construction/emea/Ukraine/product-bostik-wall-standard/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.43,
@@ -1189,7 +1244,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.bostik.com/ukrania/uk/catalog/product/construction/emea/Ukraine/product-bostik-wall-super/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.44,
@@ -1205,7 +1261,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.bostik.com/ukrania/uk/catalog/product/construction/emea/Ukraine/product-bostik-wall-super/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -1228,7 +1285,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.52,
@@ -1244,7 +1302,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.53,
@@ -1260,7 +1319,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.54,
@@ -1276,7 +1336,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -1299,7 +1360,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.dufa.com.ua/production/intererni-farby/mattlatex-keramika",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.62,
@@ -1308,14 +1370,15 @@
             "description": "Інноваційна глибокоматова фарба,  особливо стійка до механічних впливів та утворення локальних заглянцовок при чищенні. Клас стирання 1 по DIN EN 13300. Призначена для фарбування поверхонь, які часто забруднюються і потребують  вологої очистки: стін громадських приміщень, коридорів, під’їздів, також інших приміщень з інтенсивною експлуатацією. Легко піддається чищенню, в тому числі з використанням дезінфекційних миючих засобів.",
             "weight": 14,
             "volume": 0.014,
-            "price": 1189.01,
+            "price": 999.17,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.dufa.com.ua/production/intererni-farby/mattlatex-keramika",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.63,
@@ -1331,7 +1394,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.caparol.ua/produkti/farbi/interjerni-farbi/interjerni-tonkosharovi-farbi/capalatex-2",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.64,
@@ -1347,7 +1411,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.caparol.ua/produkti/farbi/interjerni-farbi/interjerni-tonkosharovi-farbi/capalatex-4",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.65,
@@ -1409,7 +1474,8 @@
                 "volume": 0.01,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 2.66,
@@ -1453,7 +1519,8 @@
                 "volume": 0.01,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           }
         ]
       },
@@ -1476,7 +1543,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.72,
@@ -1492,7 +1560,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -1515,7 +1584,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.82,
@@ -1531,7 +1601,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -1582,7 +1653,8 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 2.92,
@@ -1591,14 +1663,15 @@
             "description": "Призначена для заповнення порожнин та щілин, герметизації та ущільнення швів та тріщин, ізоляції будівельних конструкцій,з’єднань різних матеріалів. Універсальний тепло- та звукоізолятор, що фіксує матеріал під час монтажу та герметизації віконних рам, дверних коробок, покрівельних конструкцій та стінових панелей, систем трубопроводів та кабелів, систем тепло- та звукоізоляції.",
             "weight": 1,
             "volume": 0.001,
-            "price": 170.59,
+            "price": 182.29,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://lacrysil.ua/pina-montazna-profesiina-bezevii-800-ml",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.93,
@@ -1607,14 +1680,15 @@
             "description": "Професійна КЛЕЙ-ПІНА «60 секунд» ТМ Lacrysil – професійний аерозольнийполіуретановий клей використовується для кріплення теплоізоляційних плит у середині тазовні приміщення, герметизації з'єднань, термоізоляції будівельних конструкцій, піно- тагазоблоків, з'єднання і монтажу матеріалів у промисловості та побуті.",
             "weight": 1,
             "volume": 0.001,
-            "price": 202.12,
+            "price": 212.86,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://lacrysil.ua/products/montazhnye-peny/professionalnaya/klei-pena-professionalnaia-60-sekund",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.94,
@@ -1630,7 +1704,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.95,
@@ -1646,7 +1721,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.96,
@@ -1662,7 +1738,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 2.97,
@@ -1678,7 +1755,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       }
@@ -1834,7 +1912,8 @@
                 "volume": 0.18,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.12,
@@ -1854,7 +1933,7 @@
               {
                 "label": "НТ Лайт 30 (1000*600*50 мм) уп. 12 шт., 7,2м2",
                 "key": "nt_30_50",
-                "price": 408.84,
+                "price": 411.26,
                 "salePrice": 0,
                 "weight": 10.8,
                 "volume": 0.36,
@@ -1863,7 +1942,7 @@
               {
                 "label": "НТ Лайт 30 (1000*600*100 мм) уп. 6 шт., 3,6м2",
                 "key": "nt_30_100",
-                "price": 395.14,
+                "price": 411.26,
                 "salePrice": 0,
                 "weight": 10.8,
                 "volume": 0.36,
@@ -1896,7 +1975,8 @@
                 "volume": 0.18,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           }
         ]
       },
@@ -1947,7 +2027,8 @@
                 "volume": 0.61,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.22,
@@ -1982,7 +2063,8 @@
                 "volume": 0.61,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.23,
@@ -2017,7 +2099,8 @@
                 "volume": 1.1,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.24,
@@ -2033,7 +2116,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.25,
@@ -2068,7 +2152,8 @@
                 "volume": 0.572,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.26,
@@ -2084,7 +2169,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -2225,7 +2311,8 @@
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.32,
@@ -2323,7 +2410,8 @@
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           }
         ]
       },
@@ -2401,7 +2489,8 @@
                 "volume": 0.3,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.42,
@@ -2463,7 +2552,8 @@
                 "volume": 0.068,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.43,
@@ -2516,7 +2606,8 @@
                 "volume": 0.068,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           }
         ]
       },
@@ -2539,7 +2630,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://siltek.ua/product/t-75/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.52,
@@ -2555,7 +2647,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://siltek.ua/product/t-85/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.53,
@@ -2571,7 +2664,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://poli-plast.ua/product/dops-thermfix/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.54,
@@ -2587,7 +2681,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.ceresit.ua/catalog/uteplennja-fasadiv/sumisi-dlja-priklejuvannja/produkti.html/ceresit-ct-83/SAP_0201IBC014M4.html",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.55,
@@ -2603,7 +2698,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.ceresit.ua/catalog/uteplennja-fasadiv/sumisi-dlja-priklejuvannja/produkti.html/ceresit-ct-83/SAP_0201IBC014M4.html",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -2626,7 +2722,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://siltek.ua/product/siltek-t-76-sumish-dlya-teploizolyatsiyi-termo-kotedzh-2-v-1/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.62,
@@ -2642,7 +2739,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://siltek.ua/product/t-77/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.63,
@@ -2658,7 +2756,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://poli-plast.ua/product/dops-multifix/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.64,
@@ -2674,7 +2773,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.ceresit.ua/catalog/uteplennja-fasadiv/sumisi-dlja-priklejuvannja-ta-armuvannja/produkti.html/ceresit-ct-190/SAP_0201IAC014F9.html",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.65,
@@ -2690,7 +2790,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.ceresit.ua/catalog/uteplennja-fasadiv/sumisi-dlja-priklejuvannja-ta-armuvannja/produkti.html/ceresit-ct-190-pro/SAP_0201IAC014G0.html",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.66,
@@ -2706,7 +2807,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.ceresit.ua/catalog/uteplennja-fasadiv/sumisi-dlja-priklejuvannja-ta-armuvannja/produkti.html/ceresit-ct-85/SAP_0201IAC014M9.html",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -2820,7 +2922,8 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.72,
@@ -2849,7 +2952,7 @@
               {
                 "label": "10x120 мм.",
                 "key": "metal_10x120",
-                "price": 2.74,
+                "price": 3.01,
                 "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
@@ -2876,7 +2979,7 @@
               {
                 "label": "10x180 мм.",
                 "key": "metal_10x180",
-                "price": 3.51,
+                "price": 3.86,
                 "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
@@ -2894,13 +2997,14 @@
               {
                 "label": "10x220 мм.",
                 "key": "metal_10x220",
-                "price": 4.02,
+                "price": 4.43,
                 "salePrice": 0,
                 "weight": 0.01,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.73,
@@ -2998,7 +3102,8 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           }
         ]
       },
@@ -3021,7 +3126,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.82,
@@ -3037,7 +3143,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -3088,7 +3195,8 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.92,
@@ -3150,7 +3258,8 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.93,
@@ -3166,7 +3275,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.94,
@@ -3182,7 +3292,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.95,
@@ -3198,7 +3309,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -3221,7 +3333,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.112,
@@ -3237,7 +3350,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.113,
@@ -3253,7 +3367,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.114,
@@ -3269,7 +3384,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -3292,7 +3408,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.122,
@@ -3301,14 +3418,15 @@
             "description": "Контактна ґрунтовка Kreisel 331 під мінеральні, акрилові та мозаїчні тонкошарові декоративні штукатурки, що виготовлена на основі дисперсії акрилових смол. Не містить органічних розчинників. Полегшує нанесення штукатурок і збільшує їх адгезію до основи. Стійка до впливу атмосферних чинників. Тонується в кольори, відповідні кольоровій гамі декоративних штукатурок.Застосовується на всіх будівельних основах всередині і зовні будівель. Є складовою частиною систем утеплення ТМ KREISEL TURBO-S, а також застосовується для консервації фасадів на зимовий період.",
             "weight": 10,
             "volume": 0.01,
-            "price": 791.96,
+            "price": 924.76,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://kreisel.com.ua/kvarcz-grunt-akrilovij-kreisel-putzgrund-s-331-10-l/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.123,
@@ -3324,7 +3442,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.ceresit.ua/catalog/uteplennja-fasadiv/grunt-farby/produkti.html/ceresit-ct-16/SAP_0201IGC014E8.html",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -3375,7 +3494,8 @@
                 "volume": 0.025,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.132,
@@ -3391,7 +3511,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.ceresit.ua/catalog/uteplennja-fasadiv/polimerni-stukaturky/produkti.html/ceresit-ct-64/SAP_0201IDC014K4.html",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.133,
@@ -3426,7 +3547,8 @@
                 "volume": 0.025,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.134,
@@ -3461,7 +3583,8 @@
                 "volume": 0.025,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.135,
@@ -3477,7 +3600,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.ceresit.ua/catalog/uteplennja-fasadiv/polimerni-stukaturky/produkti.html/ceresit-ct-174/SAP_0201IDC014F2.html",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.136,
@@ -3493,7 +3617,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://siltek.ua/product/decor/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.137,
@@ -3509,7 +3634,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://siltek.ua/product/decor_silicon_pro/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.138,
@@ -3553,7 +3679,8 @@
                 "volume": 0.025,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.139,
@@ -3588,7 +3715,8 @@
                 "volume": 0.025,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           }
         ]
       },
@@ -3611,7 +3739,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.ceresit.ua/catalog/uteplennja-fasadiv/mineral-ni-sukaturky/produkti.html/ceresit-ct-35/SAP_0201IEC014H8.html",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.142,
@@ -3646,7 +3775,8 @@
                 "volume": 0.025,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.143,
@@ -3662,7 +3792,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://siltek.ua/product/p-15_kamintseva/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.144,
@@ -3697,7 +3828,8 @@
                 "volume": 0.025,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.145,
@@ -3732,7 +3864,8 @@
                 "volume": 0.025,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           }
         ]
       },
@@ -3755,7 +3888,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://kompozit.ua/catalog/farbi/farbi_inter_rni/farba_fasadna_facade_universal/?srsltid=AfmBOopeRXs45TfdfaDK3637Pi2ArU2CPjfK6jUtS3_yGW3tLwdm6cYZ",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.152,
@@ -3771,7 +3905,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://dufa-mgf.com.ua/farba-fasadna-mgf-eco-fassade-m690-14-kh-bilyi-matovyi/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.153,
@@ -3787,7 +3922,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://dufa-mgf.com.ua/farba-fasadna-mgf-eco-fassade-m690-14-kh-bilyi-matovyi/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -3810,7 +3946,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://siltek.ua/product/e-105/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.162,
@@ -3826,7 +3963,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -3849,7 +3987,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.172,
@@ -3865,7 +4004,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -3888,7 +4028,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.182,
@@ -3932,7 +4073,8 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 3.183,
@@ -3941,14 +4083,15 @@
             "description": "Призначена для заповнення порожнин та щілин, герметизації та ущільнення швів та тріщин, ізоляції будівельних конструкцій,з’єднань різних матеріалів. Універсальний тепло- та звукоізолятор, що фіксує матеріал під час монтажу та герметизації віконних рам, дверних коробок, покрівельних конструкцій та стінових панелей, систем трубопроводів та кабелів, систем тепло- та звукоізоляції.",
             "weight": 1,
             "volume": 0.001,
-            "price": 170.59,
+            "price": 182.29,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://lacrysil.ua/pina-montazna-profesiina-bezevii-800-ml",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.184,
@@ -3957,14 +4100,15 @@
             "description": "Професійна КЛЕЙ-ПІНА «60 секунд» ТМ Lacrysil – професійний аерозольнийполіуретановий клей використовується для кріплення теплоізоляційних плит у середині тазовні приміщення, герметизації з'єднань, термоізоляції будівельних конструкцій, піно- тагазоблоків, з'єднання і монтажу матеріалів у промисловості та побуті.",
             "weight": 1,
             "volume": 0.001,
-            "price": 202.12,
+            "price": 212.86,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://lacrysil.ua/products/montazhnye-peny/professionalnaya/klei-pena-professionalnaia-60-sekund",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.185,
@@ -3980,7 +4124,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.186,
@@ -3996,7 +4141,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.187,
@@ -4012,7 +4158,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 3.188,
@@ -4028,7 +4175,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       }
@@ -4057,9 +4205,22 @@
             "totalPrice": 0,
             "movingTypeCalculation": "gipsSM",
             "officialLink": "",
-            "configurableList": [
+            "defaultOptions": {
+              "size": "2000x1200x12.5 мм."
+            },
+            "options": {
+              "size": [
+                "2000x1200x12.5 мм.",
+                "2500x1200x12.5 мм.",
+                "3000x1200x12.5 мм."
+              ]
+            },
+            "configurableList": [],
+            "settingList": [
               {
-                "label": "2000x1200x12.5 мм",
+                "attributes": {
+                  "size": "2000x1200x12.5 мм."
+                },
                 "key": "gips_vlg_2000x1200x12.5",
                 "price": 278.18,
                 "salePrice": 0,
@@ -4068,8 +4229,10 @@
                 "movingTypeCalculation": "gipsSM"
               },
               {
-                "label": "2500x1200x12.5 мм",
-                "key": "gips_vlg_2500x1200x12.5 мм",
+                "attributes": {
+                  "size": "2500x1200x12.5 мм."
+                },
+                "key": "gips_vlg_2500x1200x12.5",
                 "price": 347.73,
                 "salePrice": 0,
                 "weight": 24,
@@ -4077,8 +4240,10 @@
                 "movingTypeCalculation": "gipsMD"
               },
               {
-                "label": "3000x1200x12.5 мм",
-                "key": "gips_vlg_3000x1200x12.5 мм",
+                "attributes": {
+                  "size": "3000x1200x12.5 мм."
+                },
+                "key": "gips_vlg_3000x1200x12.5",
                 "price": 417.28,
                 "salePrice": 0,
                 "weight": 27.7,
@@ -4101,9 +4266,22 @@
             "totalPrice": 0,
             "movingTypeCalculation": "gipsSM",
             "officialLink": "",
-            "configurableList": [
+            "defaultOptions": {
+              "size": "2000x1200x12.5 мм."
+            },
+            "options": {
+              "size": [
+                "2000x1200x12.5 мм.",
+                "2500x1200x12.5 мм.",
+                "3000x1200x12.5 мм."
+              ]
+            },
+            "configurableList": [],
+            "settingList": [
               {
-                "label": "2000x1200x12.5 мм",
+                "attributes": {
+                  "size": "2000x1200x12.5 мм."
+                },
                 "key": "gips_2000x1200x12.5",
                 "price": 237.12,
                 "salePrice": 0,
@@ -4112,7 +4290,9 @@
                 "movingTypeCalculation": "gipsSM"
               },
               {
-                "label": "2500x1200x12.5 мм",
+                "attributes": {
+                  "size": "2500x1200x12.5 мм."
+                },
                 "key": "gips_2500x1200x12.5 мм",
                 "price": 296.4,
                 "salePrice": 0,
@@ -4121,7 +4301,9 @@
                 "movingTypeCalculation": "gipsMD"
               },
               {
-                "label": "3000x1200x12.5 мм",
+                "attributes": {
+                  "size": "3000x1200x12.5 мм."
+                },
                 "key": "gips_3000x1200x12.5 мм",
                 "price": 355.68,
                 "salePrice": 0,
@@ -4145,9 +4327,18 @@
             "totalPrice": 0,
             "movingTypeCalculation": "gipsSM",
             "officialLink": "",
-            "configurableList": [
+            "defaultOptions": {
+              "size": "2000x1200x9.5 мм."
+            },
+            "options": {
+              "size": ["2000x1200x9.5 мм.", "2500x1200x9.5 мм."]
+            },
+            "configurableList": [],
+            "settingList": [
               {
-                "label": "2000x1200x9.5 мм",
+                "attributes": {
+                  "size": "2000x1200x9.5 мм."
+                },
                 "key": "gips_2000x1200x9.5",
                 "price": 220.27,
                 "salePrice": 0,
@@ -4156,8 +4347,10 @@
                 "movingTypeCalculation": "gipsSM"
               },
               {
-                "label": "2500x1200x9.5 мм",
-                "key": "gips_2500x1200x9.5 мм",
+                "attributes": {
+                  "size": "2500x1200x9.5 мм."
+                },
+                "key": "gips_2500x1200x9.5",
                 "price": 275.34,
                 "salePrice": 0,
                 "weight": 19.5,
@@ -4180,7 +4373,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "gipsMD",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -4203,9 +4397,18 @@
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
             "officialLink": "",
-            "configurableList": [
+            "defaultOptions": {
+              "thickness": "0.55",
+              "length": "3 м"
+            },
+            "options": {
+              "thickness": ["0.55", "0.6 ГОСТ", "Кнауф 0.6"],
+              "length": ["3 м", "4 м"]
+            },
+            "configurableList": [],
+            "settingList": [
               {
-                "label": "(0.55 мм) - 3м",
+                "attributes": { "thickness": "0.55", "length": "3 м" },
                 "key": "prof_cd60_0.55_3",
                 "price": 79.47,
                 "salePrice": 0,
@@ -4214,16 +4417,7 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "(0.55 мм) - 4м",
-                "key": "prof_cd60_0.55_4",
-                "price": 105.96,
-                "salePrice": 0,
-                "weight": 1.67,
-                "volume": 0.00648,
-                "movingTypeCalculation": "profXL"
-              },
-              {
-                "label": "(0.6 мм ГОСТ) - 3м",
+                "attributes": { "thickness": "0.6 ГОСТ", "length": "3 м" },
                 "key": "prof_cd60_0.6_3",
                 "price": 105.03,
                 "salePrice": 0,
@@ -4232,16 +4426,7 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "(0.6 мм ГОСТ) - 4м",
-                "key": "prof_cd60_0.6_4",
-                "price": 140.04,
-                "salePrice": 0,
-                "weight": 1.67,
-                "volume": 0.00648,
-                "movingTypeCalculation": "profXL"
-              },
-              {
-                "label": "КНАУФ (0.6 мм) - 3м",
+                "attributes": { "thickness": "Кнауф 0.6", "length": "3 м" },
                 "key": "prof_knauf_cd60_0.6_3",
                 "price": 148.23,
                 "salePrice": 0,
@@ -4250,7 +4435,25 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "КНАУФ (0.6 мм) - 4м",
+                "attributes": { "thickness": "0.55", "length": "4 м" },
+                "key": "prof_cd60_0.55_4",
+                "price": 105.96,
+                "salePrice": 0,
+                "weight": 1.67,
+                "volume": 0.00648,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "attributes": { "thickness": "0.6 ГОСТ", "length": "4 м" },
+                "key": "prof_cd60_0.6_4",
+                "price": 140.04,
+                "salePrice": 0,
+                "weight": 1.67,
+                "volume": 0.00648,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "attributes": { "thickness": "Кнауф 0.6", "length": "4 м" },
                 "key": "prof_knauf_cd60_0.6_4",
                 "price": 206.2,
                 "salePrice": 0,
@@ -4264,7 +4467,7 @@
             "id": 4.22,
             "image": "https://i.imgur.com/tSzHGba.jpeg",
             "title": "Профіль UD-27",
-            "description": "Профіль UD-27 (0,55 мм), довжиною 3 метри, використовується як направляючий елемент при монтажі каркасів для підвісних стель та облицювання стін гіпсокартоном. Він виготовлений з оцинкованої сталі методом холодного прокату, що забезпечує стійкість до корозії та механічних навантажень. Профіль має П-подібну форму з шириною 27 мм і товщиною стінки 0,55 мм. При монтажі підвісних стель профіль UD-27 кріпиться по периметру приміщення, забезпечуючи надійну основу для встановлення CD-профілів. При облицюванні стін профіль фіксується до підлоги та стелі, забезпечуючи жорсткість конструкції. Завдяки легкій вазі та простоті монтажу, профіль UD-27 є популярним вибором для створення надійних каркасних систем.",
+            "description": "Профіль UD-27  використовується як направляючий елемент при монтажі каркасів для підвісних стель та облицювання стін гіпсокартоном. Він виготовлений з оцинкованої сталі методом холодного прокату, що забезпечує стійкість до корозії та механічних навантажень. Профіль має П-подібну форму з шириною 27 мм і товщиною стінки 0,55 мм. При монтажі підвісних стель профіль UD-27 кріпиться по периметру приміщення, забезпечуючи надійну основу для встановлення CD-профілів. При облицюванні стін профіль фіксується до підлоги та стелі, забезпечуючи жорсткість конструкції. Завдяки легкій вазі та простоті монтажу, профіль UD-27 є популярним вибором для створення надійних каркасних систем.",
             "weight": 2,
             "volume": 0,
             "price": 81.9,
@@ -4274,59 +4477,68 @@
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
             "officialLink": "",
-            "configurableList": [
+            "defaultOptions": {
+              "thickness": "0.55",
+              "length": "3 м"
+            },
+            "options": {
+              "thickness": ["0.55", "0.6 ГОСТ", "Кнауф 0.6"],
+              "length": ["3 м", "4 м"]
+            },
+            "configurableList": [],
+            "settingList": [
               {
-                "label": "(0.55 мм) - 3м",
+                "attributes": { "thickness": "0.55", "length": "3 м" },
                 "key": "prof_ud27_0.55_3",
                 "price": 49.05,
                 "salePrice": 0,
-                "weight": 1,
-                "volume": 0.002187,
+                "weight": 1.25,
+                "volume": 0.00486,
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "(0.55 мм) - 4м",
-                "key": "prof_ud27_0.55_4",
-                "price": 71.28,
-                "salePrice": 0,
-                "weight": 1,
-                "volume": 0.002916,
-                "movingTypeCalculation": "profXL"
-              },
-              {
-                "label": "(0.6 мм ГОСТ) - 3м",
+                "attributes": { "thickness": "0.6 ГОСТ", "length": "3 м" },
                 "key": "prof_ud27_0.6_3",
                 "price": 65.82,
                 "salePrice": 0,
-                "weight": 1,
-                "volume": 0.002187,
+                "weight": 1.25,
+                "volume": 0.00486,
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "(0.6 мм ГОСТ) - 4м",
-                "key": "prof_ud27_0.6_4",
-                "price": 87.76,
-                "salePrice": 0,
-                "weight": 1,
-                "volume": 0.002916,
-                "movingTypeCalculation": "profXL"
-              },
-              {
-                "label": "КНАУФ (0.6 мм) - 3м",
+                "attributes": { "thickness": "Кнауф 0.6", "length": "3 м" },
                 "key": "prof_knauf_ud27_0.6_3",
                 "price": 106.47,
                 "salePrice": 0,
-                "weight": 1,
-                "volume": 0.002187,
+                "weight": 1.25,
+                "volume": 0.00486,
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "КНАУФ (0.6 мм) - 4м",
+                "attributes": { "thickness": "0.55", "length": "4 м" },
+                "key": "prof_ud27_0.55_4",
+                "price": 71.28,
+                "salePrice": 0,
+                "weight": 1.67,
+                "volume": 0.00648,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "attributes": { "thickness": "0.6 ГОСТ", "length": "4 м" },
+                "key": "prof_ud27_0.6_4",
+                "price": 87.76,
+                "salePrice": 0,
+                "weight": 1.67,
+                "volume": 0.00648,
+                "movingTypeCalculation": "profXL"
+              },
+              {
+                "attributes": { "thickness": "Кнауф 0.6", "length": "4 м" },
                 "key": "prof_knauf_ud27_0.6_4",
                 "price": 141.96,
                 "salePrice": 0,
-                "weight": 1,
-                "volume": 0.002916,
+                "weight": 1.67,
+                "volume": 0.00648,
                 "movingTypeCalculation": "profXL"
               }
             ]
@@ -4335,7 +4547,7 @@
             "id": 4.23,
             "image": "https://i.imgur.com/AtlYCOt.jpeg",
             "title": "Профіль CW",
-            "description": "Профіль CW є вертикальною стійкою для каркасів міжкімнатних перегородок та облицювань на основі гіпсокартону, гіпсоволокнистих плит і аквапанелей. Він використовується в парі з напрямним профілем UW-50.",
+            "description": "Профіль CW є вертикальною стійкою для каркасів міжкімнатних перегородок та облицювань на основі гіпсокартону, гіпсоволокнистих плит і аквапанелей. Він використовується в парі з напрямним профілем UW.",
             "weight": 2,
             "volume": 0,
             "price": 81.9,
@@ -4345,9 +4557,24 @@
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
             "officialLink": "",
-            "configurableList": [
+            "configurableList": [],
+            "defaultOptions": {
+              "width": "50",
+              "thickness": "0.55",
+              "length": "3 м"
+            },
+            "options": {
+              "width": ["50", "75", "100"],
+              "thickness": ["0.55", "0.6 ГОСТ", "Кнауф 0.6"],
+              "length": ["3 м", "4 м"]
+            },
+            "settingList": [
               {
-                "label": "50 (0.55 мм) - 3м",
+                "attributes": {
+                  "width": "50",
+                  "thickness": "0.55",
+                  "length": "3 м"
+                },
                 "key": "prof_cw50_0.55_3",
                 "price": 107.91,
                 "salePrice": 0,
@@ -4356,7 +4583,11 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "50 (0.55 мм) - 4м",
+                "attributes": {
+                  "width": "50",
+                  "thickness": "0.55",
+                  "length": "4 м"
+                },
                 "key": "prof_cw50_0.55_4",
                 "price": 143.88,
                 "salePrice": 0,
@@ -4365,7 +4596,11 @@
                 "movingTypeCalculation": "profXL"
               },
               {
-                "label": "50 (0.6 мм ГОСТ) - 3м",
+                "attributes": {
+                  "width": "50",
+                  "thickness": "0.6 ГОСТ",
+                  "length": "3 м"
+                },
                 "key": "prof_cw50_0.6_3",
                 "price": 133.68,
                 "salePrice": 0,
@@ -4374,7 +4609,11 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "50 КНАУФ (0.6 мм) - 3м",
+                "attributes": {
+                  "width": "50",
+                  "thickness": "Кнауф 0.6",
+                  "length": "3 м"
+                },
                 "key": "prof_knauf_cw50_0.6_3",
                 "price": 178.38,
                 "salePrice": 0,
@@ -4383,7 +4622,11 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "50 КНАУФ (0.6 мм) - 4м",
+                "attributes": {
+                  "width": "50",
+                  "thickness": "Кнауф 0.6",
+                  "length": "4 м"
+                },
                 "key": "prof_knauf_cw50_0.6_4",
                 "price": 237.84,
                 "salePrice": 0,
@@ -4392,7 +4635,11 @@
                 "movingTypeCalculation": "profXL"
               },
               {
-                "label": "75 (0.55 мм) - 3м",
+                "attributes": {
+                  "width": "75",
+                  "thickness": "0.55",
+                  "length": "3 м"
+                },
                 "key": "prof_cw75_0.55_3",
                 "price": 126.36,
                 "salePrice": 0,
@@ -4401,7 +4648,11 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "75 (0.55 мм) - 4м",
+                "attributes": {
+                  "width": "75",
+                  "thickness": "0.55",
+                  "length": "4 м"
+                },
                 "key": "prof_cw75_0.55_4",
                 "price": 168.48,
                 "salePrice": 0,
@@ -4410,7 +4661,11 @@
                 "movingTypeCalculation": "profXL"
               },
               {
-                "label": "75 (0.6 мм ГОСТ) - 3м",
+                "attributes": {
+                  "width": "75",
+                  "thickness": "0.6 ГОСТ",
+                  "length": "3 м"
+                },
                 "key": "prof_cw75_0.6_3",
                 "price": 159.06,
                 "salePrice": 0,
@@ -4419,7 +4674,11 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "75 (0.6 мм ГОСТ) - 4м",
+                "attributes": {
+                  "width": "75",
+                  "thickness": "0.6 ГОСТ",
+                  "length": "4 м"
+                },
                 "key": "prof_cw75_0.6_4",
                 "price": 212.08,
                 "salePrice": 0,
@@ -4428,7 +4687,11 @@
                 "movingTypeCalculation": "profXL"
               },
               {
-                "label": "75 КНАУФ (0.6 мм) - 3м",
+                "attributes": {
+                  "width": "75",
+                  "thickness": "Кнауф 0.6",
+                  "length": "3 м"
+                },
                 "key": "prof_knauf_cw75_0.6_3",
                 "price": 199.17,
                 "salePrice": 0,
@@ -4437,7 +4700,11 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "75 КНАУФ (0.6 мм) - 4м",
+                "attributes": {
+                  "width": "75",
+                  "thickness": "Кнауф 0.6",
+                  "length": "4 м"
+                },
                 "key": "prof_knauf_cw75_0.6_4",
                 "price": 265.56,
                 "salePrice": 0,
@@ -4446,7 +4713,11 @@
                 "movingTypeCalculation": "profXL"
               },
               {
-                "label": "100 (0.55 мм) - 3м",
+                "attributes": {
+                  "width": "100",
+                  "thickness": "0.55",
+                  "length": "3 м"
+                },
                 "key": "prof_cw100_0.55_3",
                 "price": 143.22,
                 "salePrice": 0,
@@ -4455,7 +4726,11 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "100 (0.55 мм) - 4м",
+                "attributes": {
+                  "width": "100",
+                  "thickness": "0.55",
+                  "length": "4 м"
+                },
                 "key": "prof_cw100_0.55_4",
                 "price": 188.32,
                 "salePrice": 0,
@@ -4464,7 +4739,11 @@
                 "movingTypeCalculation": "profXL"
               },
               {
-                "label": "100 (0.6 мм ГОСТ) - 3м",
+                "attributes": {
+                  "width": "100",
+                  "thickness": "0.6 ГОСТ",
+                  "length": "3 м"
+                },
                 "key": "prof_cw100_0.6_3",
                 "price": 181.95,
                 "salePrice": 0,
@@ -4473,7 +4752,11 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "100 (0.6 мм ГОСТ) - 4м",
+                "attributes": {
+                  "width": "100",
+                  "thickness": "0.6 ГОСТ",
+                  "length": "4 м"
+                },
                 "key": "prof_cw100_0.6_4",
                 "price": 242.6,
                 "salePrice": 0,
@@ -4482,7 +4765,11 @@
                 "movingTypeCalculation": "profXL"
               },
               {
-                "label": "100 КНАУФ (0.6 мм) - 3м",
+                "attributes": {
+                  "width": "100",
+                  "thickness": "Кнауф 0.6",
+                  "length": "3 м"
+                },
                 "key": "prof_knauf_cw100_0.6_3",
                 "price": 239.97,
                 "salePrice": 0,
@@ -4491,7 +4778,11 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "100 КНАУФ (0.6 мм) - 4м",
+                "attributes": {
+                  "width": "100",
+                  "thickness": "Кнауф 0.6",
+                  "length": "4 м"
+                },
                 "key": "prof_knauf_cw100_0.6_4",
                 "price": 319.96,
                 "salePrice": 0,
@@ -4515,9 +4806,24 @@
             "totalPrice": 0,
             "movingTypeCalculation": "profLG",
             "officialLink": "",
-            "configurableList": [
+            "defaultOptions": {
+              "width": "50",
+              "thickness": "0.55",
+              "length": "3 м"
+            },
+            "options": {
+              "width": ["50", "75", "100"],
+              "thickness": ["0.55", "0.6 ГОСТ", "Кнауф 0.6"],
+              "length": ["3 м", "4 м"]
+            },
+            "configurableList": [],
+            "settingList": [
               {
-                "label": "50 (0.55 мм) - 3м",
+                "attributes": {
+                  "thickness": "0.55",
+                  "length": "3 м",
+                  "width": "50"
+                },
                 "key": "prof_uw50_0.55_3",
                 "price": 83.25,
                 "salePrice": 0,
@@ -4526,7 +4832,11 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "50 (0.55 мм) - 4м",
+                "attributes": {
+                  "thickness": "0.55",
+                  "length": "4 м",
+                  "width": "50"
+                },
                 "key": "prof_uw50_0.55_4",
                 "price": 111.0,
                 "salePrice": 0,
@@ -4535,7 +4845,11 @@
                 "movingTypeCalculation": "profXL"
               },
               {
-                "label": "50 (0.6 мм ГОСТ) - 3м",
+                "attributes": {
+                  "thickness": "0.6 ГОСТ",
+                  "length": "3 м",
+                  "width": "50"
+                },
                 "key": "prof_uw50_0.6_3",
                 "price": 109.08,
                 "salePrice": 0,
@@ -4544,7 +4858,11 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "50 КНАУФ (0.6 мм) - 3м",
+                "attributes": {
+                  "thickness": "Кнауф 0.6",
+                  "length": "3 м",
+                  "width": "50"
+                },
                 "key": "prof_knauf_uw50_0.6_3",
                 "price": 152.97,
                 "salePrice": 0,
@@ -4553,7 +4871,11 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "50 КНАУФ (0.6 мм) - 4м",
+                "attributes": {
+                  "thickness": "Кнауф 0.6",
+                  "length": "4 м",
+                  "width": "50"
+                },
                 "key": "prof_knauf_uw50_0.6_4",
                 "price": 203.96,
                 "salePrice": 0,
@@ -4562,25 +4884,37 @@
                 "movingTypeCalculation": "profXL"
               },
               {
-                "label": "75 (0.55 мм) - 3м",
+                "attributes": {
+                  "thickness": "0.55",
+                  "length": "3 м",
+                  "width": "75"
+                },
                 "key": "prof_uw75_0.55_3",
-                "price": 99.42,
+                "price": 101.04,
                 "salePrice": 0,
                 "weight": 1.9,
                 "volume": 0.01125,
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "75 (0.55 мм) - 4м",
+                "attributes": {
+                  "thickness": "0.55",
+                  "length": "4 м",
+                  "width": "75"
+                },
                 "key": "prof_uw75_0.55_4",
-                "price": 132.56,
+                "price": 134.72,
                 "salePrice": 0,
                 "weight": 2.53,
                 "volume": 0.015,
                 "movingTypeCalculation": "profXL"
               },
               {
-                "label": "75 (0.6 мм ГОСТ) - 3м",
+                "attributes": {
+                  "thickness": "0.6 ГОСТ",
+                  "length": "3 м",
+                  "width": "75"
+                },
                 "key": "prof_uw75_0.6_3",
                 "price": 141.36,
                 "salePrice": 0,
@@ -4589,7 +4923,11 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "75 (0.6 мм ГОСТ) - 4м",
+                "attributes": {
+                  "thickness": "0.6 ГОСТ",
+                  "length": "4 м",
+                  "width": "75"
+                },
                 "key": "prof_uw75_0.6_4",
                 "price": 188.48,
                 "salePrice": 0,
@@ -4598,7 +4936,11 @@
                 "movingTypeCalculation": "profXL"
               },
               {
-                "label": "75 КНАУФ (0.6 мм) - 3м",
+                "attributes": {
+                  "thickness": "Кнауф 0.6",
+                  "length": "3 м",
+                  "width": "75"
+                },
                 "key": "prof_knauf_uw75_0.6_3",
                 "price": 177.93,
                 "salePrice": 0,
@@ -4607,7 +4949,11 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "75 КНАУФ (0.6 мм) - 4м",
+                "attributes": {
+                  "thickness": "Кнауф 0.6",
+                  "length": "4 м",
+                  "width": "75"
+                },
                 "key": "prof_knauf_uw75_0.6_4",
                 "price": 237.24,
                 "salePrice": 0,
@@ -4616,7 +4962,11 @@
                 "movingTypeCalculation": "profXL"
               },
               {
-                "label": "100 (0.55 мм) - 3м",
+                "attributes": {
+                  "thickness": "0.55",
+                  "length": "3 м",
+                  "width": "100"
+                },
                 "key": "prof_uw100_0.55_3",
                 "price": 117.72,
                 "salePrice": 0,
@@ -4625,7 +4975,11 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "100 (0.55 мм) - 4м",
+                "attributes": {
+                  "thickness": "0.55",
+                  "length": "4 м",
+                  "width": "100"
+                },
                 "key": "prof_uw100_0.55_4",
                 "price": 156.96,
                 "salePrice": 0,
@@ -4634,7 +4988,11 @@
                 "movingTypeCalculation": "profXL"
               },
               {
-                "label": "100 (0.6 мм ГОСТ) - 3м",
+                "attributes": {
+                  "thickness": "0.6 ГОСТ",
+                  "length": "3 м",
+                  "width": "100"
+                },
                 "key": "prof_uw100_0.6_3",
                 "price": 157.96,
                 "salePrice": 0,
@@ -4643,7 +5001,11 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "100 (0.6 мм ГОСТ) - 4м",
+                "attributes": {
+                  "thickness": "0.6 ГОСТ",
+                  "length": "4 м",
+                  "width": "100"
+                },
                 "key": "prof_uw100_0.6_4",
                 "price": 210.24,
                 "salePrice": 0,
@@ -4652,7 +5014,11 @@
                 "movingTypeCalculation": "profXL"
               },
               {
-                "label": "100 КНАУФ (0.6 мм) - 3м",
+                "attributes": {
+                  "thickness": "Кнауф 0.6",
+                  "length": "3 м",
+                  "width": "100"
+                },
                 "key": "prof_knauf_uw100_0.6_3",
                 "price": 209.1,
                 "salePrice": 0,
@@ -4661,7 +5027,11 @@
                 "movingTypeCalculation": "profLG"
               },
               {
-                "label": "100 КНАУФ (0.6 мм) - 4м",
+                "attributes": {
+                  "thickness": "Кнауф 0.6",
+                  "length": "4 м",
+                  "width": "100"
+                },
                 "key": "prof_knauf_uw100_0.6_4",
                 "price": 278.8,
                 "salePrice": 0,
@@ -4692,7 +5062,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 4.32,
@@ -4708,9 +5079,18 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": [
+            "defaultOptions": {
+              "thickness": "0.55"
+            },
+            "options": {
+              "thickness": ["0.55", "0.65", "0.8"]
+            },
+            "configurableList": [],
+            "settingList": [
               {
-                "label": "(0.55 мм)",
+                "attributes": {
+                  "thickness": "0.55"
+                },
                 "key": "krab_0.55",
                 "price": 7.87,
                 "salePrice": 0,
@@ -4719,7 +5099,9 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "(0.65 мм)",
+                "attributes": {
+                  "thickness": "0.65"
+                },
                 "key": "krab_0.65",
                 "price": 9.06,
                 "salePrice": 0,
@@ -4728,7 +5110,9 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "(0.8 мм)",
+                "attributes": {
+                  "thickness": "0.8"
+                },
                 "key": "krab_0.8",
                 "price": 10.72,
                 "salePrice": 0,
@@ -4752,13 +5136,14 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 4.34,
             "image": "https://i.imgur.com/jtm6Biw.jpeg",
-            "title": "Кутове з'єднання для CD-профілю (0,65 мм)",
-            "description": "Кутовий з'єднувач для CD-профілю (товщина 0,65 мм) — це елемент кріплення, призначений для з'єднання CD-профілів під прямим кутом при монтажі однорівневих конструкцій підвісних стель. Він забезпечує надійне та міцне з'єднання профілів, що сприяє стабільності та довговічності всієї конструкції.",
+            "title": "Кутове з'єднання для CD-профілю",
+            "description": "Кутовий з'єднувач для CD-профілю — це елемент кріплення, призначений для з'єднання CD-профілів під прямим кутом при монтажі однорівневих конструкцій підвісних стель. Він забезпечує надійне та міцне з'єднання профілів, що сприяє стабільності та довговічності всієї конструкції.",
             "weight": 2,
             "volume": 0,
             "price": 4.56,
@@ -4768,23 +5153,37 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
-          },
-          {
-            "id": 4.35,
-            "image": "https://i.imgur.com/jtm6Biw.jpeg",
-            "title": "Кутове з'єднання для CD-профілю (0,9 мм)",
-            "description": "Кутовий з'єднувач для CD-профілю (товщина 0,65 мм) — це елемент кріплення, призначений для з'єднання CD-профілів під прямим кутом при монтажі однорівневих конструкцій підвісних стель. Він забезпечує надійне та міцне з'єднання профілів, що сприяє стабільності та довговічності всієї конструкції.",
-            "weight": 2,
-            "volume": 0,
-            "price": 7.88,
-            "salePrice": 0,
-            "measure": "",
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "defaultOptions": {
+              "thickness": "0.65"
+            },
+            "options": {
+              "thickness": ["0.65", "0.9"]
+            },
+            "settingList": [
+              {
+                "attributes": {
+                  "thickness": "0.65"
+                },
+                "key": "kutove_cd_0.55",
+                "price": 4.56,
+                "salePrice": 0,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "attributes": {
+                  "thickness": "0.9"
+                },
+                "key": "kutove_cd_0.9",
+                "price": 7.88,
+                "salePrice": 0,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           }
         ]
       },
@@ -4796,7 +5195,7 @@
           {
             "id": 4.41,
             "image": "https://i.imgur.com/RS9hvRp.jpeg",
-            "title": "П-подібний кронштейн - підвіс ",
+            "title": "П-подібний кронштейн - підвіс 60 x ",
             "description": "П-подібний кронштейн - підвіс — це кріпильний елемент, призначений для надійного з'єднання CD-профілю з несучими конструкціями стелі або стін у системах гіпсокартонних облицювань та підвісних стель. Він забезпечує стабільність та довговічність конструкції, дозволяючи мінімізувати відстань між профілем та поверхнею основи.",
             "weight": 1,
             "volume": 0,
@@ -4807,9 +5206,21 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": [
+            "configurableList": [],
+            "defaultOptions": {
+              "width": "125",
+              "thickness": "0.65"
+            },
+            "options": {
+              "width": ["125", "250"],
+              "thickness": ["0.65", "0.8", "0.9", "1"]
+            },
+            "settingList": [
               {
-                "label": "60x125 (0.65 мм)",
+                "attributes": {
+                  "width": "125",
+                  "thickness": "0.65"
+                },
                 "key": "pidvic_0.65",
                 "price": 3.99,
                 "salePrice": 0,
@@ -4818,7 +5229,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "60x125 (0.8 мм)",
+                "attributes": {
+                  "width": "125",
+                  "thickness": "0.8"
+                },
                 "key": "pidvic_0.8",
                 "price": 4.56,
                 "salePrice": 0,
@@ -4827,7 +5241,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "60x125 (0.9 мм)",
+                "attributes": {
+                  "width": "125",
+                  "thickness": "0.9"
+                },
                 "key": "pidvic_0.9",
                 "price": 5.13,
                 "salePrice": 0,
@@ -4836,7 +5253,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "60x125 (1 мм)",
+                "attributes": {
+                  "width": "125",
+                  "thickness": "1"
+                },
                 "key": "pidvic_1",
                 "price": 5.76,
                 "salePrice": 0,
@@ -4845,7 +5265,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "60x250 (0.65 мм)",
+                "attributes": {
+                  "width": "250",
+                  "thickness": "0.65"
+                },
                 "key": "pidvic_250_0.65",
                 "price": 7.64,
                 "salePrice": 0,
@@ -4854,7 +5277,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "60x250 (0.8 мм)",
+                "attributes": {
+                  "width": "250",
+                  "thickness": "0.8"
+                },
                 "key": "pidvic_250_0.8",
                 "price": 9.69,
                 "salePrice": 0,
@@ -4863,7 +5289,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "60x250 (1 мм)",
+                "attributes": {
+                  "width": "250",
+                  "thickness": "1"
+                },
                 "key": "pidvic_250_1",
                 "price": 11.97,
                 "salePrice": 0,
@@ -4894,9 +5323,20 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": [
+            "defaultOptions": {
+              "type": "кільце",
+              "length": "125 мм"
+            },
+            "options": {
+              "type": ["гачок", "кільце"],
+              "length": ["125 мм", "250 мм", "500 мм", "1000 мм", "1500 мм"]
+            },
+            "settingList": [
               {
-                "label": "гачок 125 мм",
+                "attributes": {
+                  "type": "гачок",
+                  "length": "125 мм"
+                },
                 "key": "gachok_125",
                 "price": 1.2,
                 "salePrice": 0,
@@ -4905,7 +5345,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "гачок 250 мм",
+                "attributes": {
+                  "type": "гачок",
+                  "length": "250 мм"
+                },
                 "key": "gachok_250",
                 "price": 2.11,
                 "salePrice": 0,
@@ -4914,7 +5357,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "гачок 500 мм",
+                "attributes": {
+                  "type": "гачок",
+                  "length": "500 мм"
+                },
                 "key": "gachok_500",
                 "price": 4.16,
                 "salePrice": 0,
@@ -4923,7 +5369,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "гачок 1000 мм",
+                "attributes": {
+                  "type": "гачок",
+                  "length": "1000 мм"
+                },
                 "key": "gachok_1000",
                 "price": 8.04,
                 "salePrice": 0,
@@ -4932,7 +5381,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "гачок 1500 мм",
+                "attributes": {
+                  "type": "гачок",
+                  "length": "1500 мм"
+                },
                 "key": "gachok_1500",
                 "price": 12.08,
                 "salePrice": 0,
@@ -4941,7 +5393,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "кільце 125 мм",
+                "attributes": {
+                  "type": "кільце",
+                  "length": "125 мм"
+                },
                 "key": "kilce_125",
                 "price": 1.2,
                 "salePrice": 0,
@@ -4950,7 +5405,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "кільце 250 мм",
+                "attributes": {
+                  "type": "кільце",
+                  "length": "250 мм"
+                },
                 "key": "kilce_250",
                 "price": 2.11,
                 "salePrice": 0,
@@ -4959,7 +5417,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "кільце 500 мм",
+                "attributes": {
+                  "type": "кільце",
+                  "length": "500 мм"
+                },
                 "key": "kilce_500",
                 "price": 4.16,
                 "salePrice": 0,
@@ -4968,7 +5429,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "кільце 1000 мм",
+                "attributes": {
+                  "type": "кільце",
+                  "length": "1000 мм"
+                },
                 "key": "kilce_1000",
                 "price": 8.04,
                 "salePrice": 0,
@@ -4977,7 +5441,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "кільце 1500 мм",
+                "attributes": {
+                  "type": "кільце",
+                  "length": "1500 мм"
+                },
                 "key": "kilce_1500",
                 "price": 12.08,
                 "salePrice": 0,
@@ -4985,7 +5452,8 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "configurableList": []
           }
         ]
       },
@@ -5008,7 +5476,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 4.62,
@@ -5024,7 +5493,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -5093,7 +5563,8 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 4.72,
@@ -5109,7 +5580,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 4.73,
@@ -5125,7 +5597,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 4.74,
@@ -5141,7 +5614,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -5192,7 +5666,8 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 4.82,
@@ -5208,7 +5683,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 4.83,
@@ -5224,13 +5700,14 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 4.84,
             "image": "https://i.imgur.com/0Rwt8Qt.jpeg",
             "title": "SEMIN BANDE JOINT Стрічка паперова 50 мм, 150 м.п.",
-            "description": "",
+            "description": "SEMIN BANDE JOINT — це армувальна паперова стрічка, призначена для обробки стиків гіпсокартонних конструкцій. Вона ефективно зміцнює шви, запобігаючи утворенню тріщин та деформацій, що можуть виникати через незначні рухи конструкції. Стрічка забезпечує ідеально рівну поверхню, приховуючи дрібні дефекти монтажу, що дозволяє легко наносити фарбу чи клеїти шпалери. Підходить для всіх типів стиків — прямих, тупих, гострих — та використовується виключно всередині приміщень.",
             "weight": 0.1,
             "volume": 0.01,
             "price": 271.4,
@@ -5240,7 +5717,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -5300,7 +5778,8 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 4.92,
@@ -5353,7 +5832,8 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           }
         ]
       },
@@ -5413,7 +5893,8 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 4.112,
@@ -5451,7 +5932,7 @@
               {
                 "label": "3,5x25 200 шт",
                 "key": "samoriz_koelner_3.5x25_200",
-                "price": 56.61,
+                "price": 59.39,
                 "salePrice": 0,
                 "weight": 0.25,
                 "volume": 0.001,
@@ -5460,7 +5941,7 @@
               {
                 "label": "3,5x25 1000 шт",
                 "key": "samoriz_koelner_3.5x25_1000",
-                "price": 264.84,
+                "price": 267.85,
                 "salePrice": 0,
                 "weight": 1.27,
                 "volume": 0.001,
@@ -5478,13 +5959,14 @@
               {
                 "label": "3,5x35 1000 шт",
                 "key": "samoriz_koelner_3.5x35_1000",
-                "price": 316.28,
+                "price": 341.77,
                 "salePrice": 0,
                 "weight": 1.27,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           }
         ]
       },
@@ -5562,7 +6044,8 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 4.122,
@@ -5582,7 +6065,7 @@
               {
                 "label": "6/40, (гриб) 200 шт",
                 "key": "dubel_g_koelner_6.40_200",
-                "price": 149.11,
+                "price": 167.01,
                 "salePrice": 0,
                 "weight": 0.56,
                 "volume": 0.001,
@@ -5591,7 +6074,7 @@
               {
                 "label": "6/60, (потай) 100 шт",
                 "key": "dubel_p_koelner_6.60_100",
-                "price": 112.79,
+                "price": 124.15,
                 "salePrice": 0,
                 "weight": 0.28,
                 "volume": 0.001,
@@ -5606,7 +6089,8 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 4.123,
@@ -5622,7 +6106,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -5645,7 +6130,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 4.132,
@@ -5661,7 +6147,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 4.133,
@@ -5677,7 +6164,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 4.134,
@@ -5693,7 +6181,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 4.135,
@@ -5702,14 +6191,15 @@
             "description": "SEMIN CE-86 — це багатофункціональна, тріщиностійка високоміцна шпаклівка для внутрішніх робіт, спеціально розроблена для закладення стиків гіпсокартонних (ГКЛ) та гіпсоволокнистих (ГВЛ) листів.",
             "weight": 25,
             "volume": 0.025,
-            "price": 959.3,
+            "price": 1209.9,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -5760,7 +6250,8 @@
                 "volume": 0.61,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 4.142,
@@ -5795,7 +6286,8 @@
                 "volume": 0.61,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 4.143,
@@ -5830,7 +6322,8 @@
                 "volume": 1.1,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 4.144,
@@ -5846,7 +6339,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 4.145,
@@ -5881,7 +6375,8 @@
                 "volume": 0.572,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 4.146,
@@ -5897,7 +6392,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       }
@@ -5926,7 +6422,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://siltek.ua/product/f-20/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 5.12,
@@ -5942,7 +6439,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.ceresit.ua/catalog/pidlogi/materialy-dlja-vlastuvannja-pidloh-stjazky/produkti.html/ceresit-/SAP_0201TBC015N4.html",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
 
           {
@@ -5952,14 +6450,15 @@
             "description": "Цементна армована стяжка ПОЛІМІН СЦ-5 призначена для вирівнювання підлог товщиною від 10 до 80 мм. Вона забезпечує міцну та довговічну основу перед укладанням фінішних покриттів або може використовуватися як самостійне покриття для підлоги. Суміш характеризується високою адгезією до різних типів основ, стійкістю до утворення тріщин та усадки, а також зручністю в нанесенні та розрівнюванні. Підходить для використання в житлових та комерційних приміщеннях.",
             "weight": 25,
             "volume": 0.25,
-            "price": 122.85,
+            "price": 134.59,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://polimin.ua/post_product/sc-5-styazhka-arm/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -5982,7 +6481,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://siltek.ua/product/f-35",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 5.22,
@@ -5991,14 +6491,15 @@
             "description": "KREISEL 440 — високоміцна цементна стяжка для підлог класу бетону B-35, призначена для виконання стяжок як всередині, так і зовні будівель. Використовується для створення підлог, зв'язаних з основою, на роздільному шарі, плаваючих підлог, а також підлог з підігрівом. Може застосовуватися для виготовлення інших елементів безпосередньо на будівельному майданчику після попереднього укладання відповідного армування. Рекомендована товщина шару — від 10 до 100 мм. Суміш забезпечує високу міцність, довговічність та стійкість до механічних навантажень.",
             "weight": 25,
             "volume": 0.025,
-            "price": 134.96,
+            "price": 149.96,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.kreisel.ua/produkt/440-visokomicna-stjazhka-dlja-pidlog-beton-b-35",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -6021,7 +6522,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://siltek.ua/product/f-05",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 5.32,
@@ -6037,7 +6539,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://siltek.ua/product/f-50",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 5.33,
@@ -6046,14 +6549,15 @@
             "description": "Kreisel 412 — самовирівнювальна підлогова суміш, призначена для вирівнювання бетонних та цементно-піщаних основ всередині приміщень. Вона створює гладку та рівну поверхню, придатну для укладання різних підлогових покриттів, таких як плитка, лінолеум, паркет або килимові покриття. Суміш характеризується високою плинністю, швидким твердінням та стійкістю до тріщин. Рекомендована товщина шару становить від 2 до 20 мм.",
             "weight": 25,
             "volume": 0.025,
-            "price": 217.46,
+            "price": 239.96,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.kreisel.ua/produkt/412-samovirivnjuvalna-sumish-dlja-pidlog",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 5.34,
@@ -6069,7 +6573,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.ceresit.ua/catalog/pidlogi/materialy-dlja-vlastuvannja-pidloh-samovyrivnjuval-ni-sumisi/produkti.html/ceresit-cn-68/SAP_0201TAC013Y9/variation/2790370.html",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 5.35,
@@ -6085,7 +6590,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://www.ceresit.ua/catalog/pidlogi/materialy-dlja-vlastuvannja-pidloh-samovyrivnjuval-ni-sumisi/produkti.html/ceresit-cn-69/SAP_0201TAC013Z0.html",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -6108,7 +6614,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -6131,7 +6638,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -6143,7 +6651,7 @@
           {
             "id": 5.61,
             "image": "https://i.imgur.com/W4IuKXC.jpeg",
-            "title": "Стрічка демпферна SANPOL для стяжки ширина 15см 7мм 50м/п",
+            "title": "Стрічка демпферна SANPOL",
             "description": "Демпферна стрічка SANPOL —  виготовлена із спіненого поліетилену, призначена для компенсації теплового розширення стяжки підлоги. Вона виконує функцію компенсаційного елемента при розширенні стяжки теплої підлоги, запобігає появі тріщин на несучих стінах та знижує втрати тепла через прилеглі стіни.",
             "weight": 3,
             "volume": 0.05,
@@ -6156,9 +6664,18 @@
             "officialLink": "",
             "configurableList": [
               {
+                "label": "ширина 15см 5мм рулон 50м/п",
+                "key": "dempf_15_5_50",
+                "price": 289.89,
+                "salePrice": 0,
+                "weight": 2,
+                "volume": 0.05,
+                "movingTypeCalculation": "weight"
+              },
+              {
                 "label": "ширина 15см 7мм рулон 50м/п",
                 "key": "dempf_15_7_50",
-                "price": 372.6,
+                "price": 358.8,
                 "salePrice": 0,
                 "weight": 2,
                 "volume": 0.05,
@@ -6167,13 +6684,14 @@
               {
                 "label": "ширина 15см 8мм рулон 50м/п",
                 "key": "dempf_15_8_50",
-                "price": 427.8,
+                "price": 431.25,
                 "salePrice": 0,
                 "weight": 2,
                 "volume": 0.05,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 5.62,
@@ -6217,7 +6735,8 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ]
+            ],
+            "settingList": []
           },
           {
             "id": 5.63,
@@ -6226,14 +6745,15 @@
             "description": "Призначена для заповнення порожнин та щілин, герметизації та ущільнення швів та тріщин, ізоляції будівельних конструкцій,з’єднань різних матеріалів. Універсальний тепло- та звукоізолятор, що фіксує матеріал під час монтажу та герметизації віконних рам, дверних коробок, покрівельних конструкцій та стінових панелей, систем трубопроводів та кабелів, систем тепло- та звукоізоляції.",
             "weight": 1,
             "volume": 0.001,
-            "price": 170.59,
+            "price": 182.29,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://lacrysil.ua/pina-montazna-profesiina-bezevii-800-ml",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 5.64,
@@ -6242,14 +6762,15 @@
             "description": "Професійна КЛЕЙ-ПІНА «60 секунд» ТМ Lacrysil – професійний аерозольнийполіуретановий клей використовується для кріплення теплоізоляційних плит у середині тазовні приміщення, герметизації з'єднань, термоізоляції будівельних конструкцій, піно- тагазоблоків, з'єднання і монтажу матеріалів у промисловості та побуті.",
             "weight": 1,
             "volume": 0.001,
-            "price": 202.12,
+            "price": 212.86,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "https://lacrysil.ua/products/montazhnye-peny/professionalnaya/klei-pena-professionalnaia-60-sekund",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 5.65,
@@ -6265,7 +6786,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 5.66,
@@ -6281,7 +6803,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 5.67,
@@ -6297,7 +6820,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 5.68,
@@ -6313,7 +6837,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       }
@@ -6342,7 +6867,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "",
             "officialLink": "https://siltek.ua/product/t-80/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 6.12,
@@ -6358,7 +6884,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "",
             "officialLink": "https://siltek.ua/product/t-83/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 6.13,
@@ -6374,7 +6901,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "",
             "officialLink": "https://siltek.ua/product/t-801/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 6.14,
@@ -6390,7 +6918,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "",
             "officialLink": "https://siltek.ua/product/t-803/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 6.15,
@@ -6406,7 +6935,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "",
             "officialLink": "https://www.ceresit.ua/catalog/oblicjuvannja/standartni-kleji-dlja-plytky/produkti.html/ceresit-cm-11/SAP_0201SAC013S3.html",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 6.16,
@@ -6422,7 +6952,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "",
             "officialLink": "https://www.ceresit.ua/catalog/oblicjuvannja/elastycni-kleji-dlja-plytky/produkti.html/ceresit-cm-117/SAP_0201SBC013S7.html",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 6.17,
@@ -6431,14 +6962,15 @@
             "description": "Клей Kreisel Uni Multi 101 призначений для приклеювання настінної і підлогової керамічної плитки, з водопоглинанням більше 3% та розмірами не більше ніж 40х40 см. Використовується для приклеювання плитки всередині приміщень до міцних, стабільних поверхонь з високою адгезію, що не деформуються.",
             "weight": 25,
             "volume": 0.025,
-            "price": 147.96,
+            "price": 164.76,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "",
             "officialLink": "https://kreisel.com.ua/klej-dlya-plitki-kreisel-uni-multi-101-25-kg/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 6.18,
@@ -6447,14 +6979,15 @@
             "description": "Еластичний клей Kreisel 105 Gres Multi призначений для облицювання всіма видами настінної та підлогової плитки, у тому числі великого формату, натурального та штучного каменю (за винятком мармуру) після перевірки на зміну кольору при контакті з розчином та іншими видами плитки з розмірами не більше 80х80 см. Використовується для приклеювання плитки всередині та зовні будівель до міцних, стабільних поверхонь з високою адгезією, що можуть зазнавати значних деформацій внаслідок температурного впливу, а також до таких, що не деформуються. Виріб також можна використовувати для кріплення інших видів плитки (керамічна, клінкерна, теракотова).Призначений для балконів і терас, для вологих приміщень (ванних кімнат, кухонь, пралень), для цементних і ангідритних стяжок з підігрівом підлоги. Клейова суміш ефективна при облицюванні камінів та печей, поверхні яких не нагріваються вище 170 °С.",
             "weight": 25,
             "volume": 0.025,
-            "price": 356.76,
+            "price": 391.96,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "",
             "officialLink": "https://kreisel.com.ua/klej-dlya-keramogranitu-kreisel-105-gres-multi-25-kg/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -6477,7 +7010,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "",
             "officialLink": "https://www.ceresit.ua/catalog/oblicjuvannja/elastycni-kleji-dlja-plytky/produkti.html/ceresit-cm-12/SAP_0201SBC013S9.html",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 6.22,
@@ -6493,7 +7027,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "",
             "officialLink": "https://www.ceresit.ua/catalog/oblicjuvannja/elastycni-kleji-dlja-plytky/produkti.html/ceresit-cm-14/SAP_0201SBC013T4.html",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -6516,7 +7051,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "",
             "officialLink": "hhttps://siltek.ua/product/t-81/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 6.32,
@@ -6532,7 +7068,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "",
             "officialLink": "https://www.ceresit.ua/catalog/oblicjuvannja/elastycni-kleji-dlja-plytky/produkti.html/ceresit-cm-17/SAP_0201SBC013W2.html",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 6.33,
@@ -6541,14 +7078,15 @@
             "description": "Клей Kreisel 107 Super Elasti - високоеластична універсальна суміш призначена для приклеювання всіх видів настінної і підлогової керамічної плитки (глазурованої, теракотової, клінкерної, гранітної, керамогранітної) в тому числі плитки крупного та особливо крупного формату (розміром понад 100х100 см), як до міцних основ, так і до основ, що схильні до деформацій. Для основ з високою і низькою адгезією, всередині та при використанні морозостійкої плитки – зовні приміщень, в тому числі на терасах і балконах (з ухилом >2%). Призначена для вологих приміщень (ванних кімнат, кухонь, тощо). Застосовується у басейнах і саунах. Використовується для кріплення плитки до армованого шару в системах теплоізоляції. Армована фіброволокном.Основами можуть бути: звичайні бетони, бетони з легкими заповнювачами, пористі бетони, стіни з керамічних, силікатних, бетонних, газопінобетонних блоків, цементні та цементно-вапняні штукатурки, гіпсова штукатурка, гіпсові та гіпсокартонні плити, гіпсоволокнисті плити, цементні монолітні підлоги, ангідридні стяжки, підлоги з водяним та електричним підігрівом, стара керамічна плитка (плитка на плитку), гідроізоляційний шар, ДВП, ДСП, OSB та XPS.",
             "weight": 25,
             "volume": 0.025,
-            "price": 700.76,
+            "price": 764.76,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "",
             "officialLink": "https://kreisel.com.ua/klej-visokoelastichnij-klej-kreisel-super-elasti-107-25-kg/",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -6571,7 +7109,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "",
             "officialLink": "https://www.ceresit.ua/catalog/oblicjuvannja/elastycni-kleji-dlja-plytky/produkti.html/ceresit-cm-22/SAP_0201SBC013W5.html",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       }
@@ -6673,7 +7212,8 @@
                 "volume": 0.048,
                 "movingTypeCalculation": "blockXL"
               }
-            ]
+            ],
+            "settingList": []
           }
         ]
       },
@@ -6696,7 +7236,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "ceglaXS",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 7.22,
@@ -6712,7 +7253,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "ceglaXS",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 7.23,
@@ -6728,7 +7270,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "ceglaXS",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 7.24,
@@ -6737,14 +7280,15 @@
             "description": "Цегла М100 пустотіла червона рядова розміру 250×120×65 мм — це традиційний будівельний матеріал, виготовлений з обпаленої глини. Вона широко використовується для зведення несучих та огороджувальних конструкцій, таких як зовнішні та внутрішні стіни, перегородки, підвальні приміщення, а також для облицювання будівель.Цегла М100 відрізняється високою міцністю, морозостійкістю та водостійкістю, що забезпечує довговічність та надійність конструкцій. Вона є екологічно чистим матеріалом, оскільки виготовляється з природної глини без використання шкідливих добавок.",
             "weight": 2.4,
             "volume": 0.00195,
-            "price": 8.74,
+            "price": 9.09,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "ceglaXS",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 7.25,
@@ -6760,7 +7304,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "ceglaSM",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       },
@@ -6776,14 +7321,15 @@
             "description": "Wallmix B-3 — це високоякісна клейова суміш, спеціально розроблена для тонкошарового мурування блоків з газобетону. Завдяки своїй формулі, вона забезпечує надійне та міцне з'єднання блоків, мінімізуючи утворення «містків холоду», що сприяє підвищенню енергоефективності будівель. Суміш характеризується високою адгезією, зручністю в роботі та економічною витратою. Підходить для використання як всередині, так і зовні приміщень.",
             "weight": 25,
             "volume": 0.025,
-            "price": 117.43,
+            "price": 137.88,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 7.32,
@@ -6799,7 +7345,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 7.33,
@@ -6808,14 +7355,15 @@
             "description": "Kreisel 127 — це спеціалізована клейова суміш, призначена для тонкошарового мурування стін з блоків із пористого бетону, таких як газо- та пінобетонні блоки. Вона також підходить для зведення стін з вапняно-піщаних (силікатних), звичайних бетонних та керамзитобетонних блоків. Суміш запобігає утворенню термічних містків у місцях швів між елементами стіни, що підвищує теплоізоляційні характеристики будівлі. Після змішування з водою утворює однорідну масу з властивостями клейового розчину, яка після затвердіння стає водо- та морозостійкою.",
             "weight": 25,
             "volume": 0.025,
-            "price": 123.71,
+            "price": 134.96,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 7.34,
@@ -6831,7 +7379,8 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           },
           {
             "id": 7.35,
@@ -6840,14 +7389,15 @@
             "description": "ПОЛІМІН ПБ-45 — це клейова суміш, призначена для кладки зовнішніх і внутрішніх стін з точних за розміром теплоізоляційних бетонів, таких як газо- та пінобетон, а також поризованого керамічного каменю або силікатних блоків. Висока пластичність клейового розчину дозволяє мінімізувати товщину швів, що запобігає утворенню «містків холоду» та покращує теплоізоляційні властивості стін. Суміш має високу адгезію, водо- та морозостійкість, що забезпечує надійність та довговічність конструкцій.",
             "weight": 25,
             "volume": 0.025,
-            "price": 115.26,
+            "price": 123.33,
             "salePrice": 0,
             "measure": "",
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": []
+            "configurableList": [],
+            "settingList": []
           }
         ]
       }

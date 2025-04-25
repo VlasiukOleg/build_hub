@@ -47,8 +47,22 @@ const AccordionItemSubTitle: React.FC<IAccordionItemSubTitle> = ({
     [subCategory.materials, configurableMaterialKeys]
   );
 
+  const selectedSettingMaterialsCount = useMemo(
+    () =>
+      subCategory.materials
+        ?.flatMap(material => material.settingList)
+        .filter(
+          settingMaterial =>
+            settingMaterial &&
+            configurableMaterialKeys.includes(settingMaterial.key)
+        ).length,
+    [subCategory.materials, configurableMaterialKeys]
+  );
+
   const totalSelectedMaterialsCount =
-    selectedConfigurableMaterialsCount + selectedMaterialsCount;
+    selectedConfigurableMaterialsCount +
+    selectedMaterialsCount +
+    selectedSettingMaterialsCount;
 
   const isShowSubCategorySubTitle = Object.values(
     SUBCATEGORY_TITLE_LIST_MAP
