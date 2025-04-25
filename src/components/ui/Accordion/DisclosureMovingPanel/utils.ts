@@ -1,6 +1,11 @@
 import { DISTANCE_MULTIPLIERS, MAX_DISTANCE_MULTIPLIERS } from './constants';
 
-import { Material, AdditionalMaterial, ConfigurableMaterial } from '@/@types';
+import {
+  Material,
+  AdditionalMaterial,
+  ConfigurableMaterial,
+  MaterialSetting,
+} from '@/@types';
 
 interface ActiveMaterial {
   movingTypeCalculation: string;
@@ -18,9 +23,7 @@ export const getDistanceMultiplier = (distance: number) => {
   return MAX_DISTANCE_MULTIPLIERS;
 };
 
-export const getActiveMaterials = (
-  materials: ConfigurableMaterial[] | Material[] | AdditionalMaterial[]
-) => {
+export const getActiveMaterials = (materials: any[]) => {
   return materials
     .filter(material => material.quantity > 0)
     .map(material => ({
