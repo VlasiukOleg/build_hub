@@ -2,13 +2,14 @@ import Image from 'next/image';
 import clsx from 'clsx';
 
 import { Input } from '@headlessui/react';
-import { Button, CardFooter, CardHeader } from '@heroui/react';
+import { Button, CardFooter, CardHeader, useDisclosure } from '@heroui/react';
 import { Card, CardBody } from '@heroui/react';
 import { Divider } from '@heroui/react';
-import MaterialDrawer from '../../MaterialDrawer';
+import MaterialDrawer from '@/components/ui/MaterialDrawer';
 
 import { FaMinus } from 'react-icons/fa6';
 import { FaPlus } from 'react-icons/fa6';
+import { FaCircleInfo } from 'react-icons/fa6';
 
 import { Material } from '@/@types';
 
@@ -41,18 +42,26 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
   handleFocus,
   handleBlur,
 }) => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   return (
     <Card>
       <CardHeader className="justify-between gap-2">
-        <div className="text-sm text-grey md:text-base  xl:text-lg">
+        <div className="text-sm text-grey md:hidden md:text-base  xl:text-lg">
           {material.title}
         </div>
-        <MaterialDrawer
-          title={material.title}
-          description={material.description}
-          image={material.image}
-          officialLink={material.officialLink}
-        />
+        <div className="md:hidden">
+          <Button
+            color="primary"
+            isIconOnly
+            size="sm"
+            className="text-xs md:text-sm xl:text-base"
+            variant="flat"
+            onPress={onOpen}
+          >
+            <FaCircleInfo size={16} />
+          </Button>
+        </div>
       </CardHeader>
       <Divider />
       <CardBody>
@@ -66,7 +75,21 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
               className="size-[75px] md:size-[100px] xl:size-[150px]"
             />
           </div>
-          <div className="flex flex-col justify-between xl:w-[500px]">
+          <div className="hidden text-grey flex-col gap-2 justify-between md:flex  md:text-base md:flex-[50%]  xl:text-lg">
+            {material.title}{' '}
+            <div className="hidden md:block">
+              <Button
+                color="primary"
+                size="sm"
+                className="md:text-xs xl:text-sm"
+                variant="light"
+                onPress={onOpen}
+              >
+                Детальніше про матеріал <FaCircleInfo size={16} />
+              </Button>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 justify-between md:items-center md:flex-[40%]">
             {material.salePrice > 0 ? (
               <div>
                 <p className="flex no-wrap gap-1 text-xs  text-grey md:text-sm font-semibold">
@@ -85,11 +108,11 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
                 </div>
               </div>
             ) : (
-              <div className=" text-grey font-semibold flex items-center gap-1 md:text-lg xl:text-xl">
+              <div className=" text-grey font-semibold flex items-center gap-1 md:text-base xl:text-xl">
                 Ціна: {material.price} грн.
               </div>
             )}
-            <div className="flex items-center justify-between md:mb-0 xl:mb-5">
+            <div className="flex items-center justify-between md:mb-0">
               <div>
                 <Button
                   isIconOnly
@@ -127,15 +150,30 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
                 </Button>
               </div>
             </div>
+            <div className="bg-bgWhite text-grey  font-semibold text-center hidden md:block md:font-normal md:text-base  xl:text-xl">
+              {material.salePrice > 0
+                ? `Всього: ${(material.salePrice * material.quantity).toFixed(2)} грн.`
+                : `Всього: ${totalMaterialPrice.toFixed(2)} грн.`}
+            </div>
           </div>
         </div>
       </CardBody>
       <Divider />
       <CardFooter>
-        <div className="bg-bgWhite text-grey  font-semibold text-center w-full rounded-lg border-[1px] border-accent p-2 md:text-lg xl:w-full xl:text-xl xl:p-3">
-          {material.salePrice > 0 ? `Всього: ${(material.salePrice * material.quantity).toFixed(2)} грн.` : `Всього: ${totalMaterialPrice.toFixed(2)} грн.`}
+        <div className="bg-bgWhite text-grey  font-semibold text-center w-full rounded-lg border-[1px] border-accent p-2 md:hidden md:text-lg xl:w-full xl:text-xl xl:p-3">
+          {material.salePrice > 0
+            ? `Всього: ${(material.salePrice * material.quantity).toFixed(2)} грн.`
+            : `Всього: ${totalMaterialPrice.toFixed(2)} грн.`}
         </div>
       </CardFooter>
+      <MaterialDrawer
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        title={material.title}
+        description={material.description}
+        image={material.image}
+        officialLink={material.officialLink}
+      />
     </Card>
   );
 };

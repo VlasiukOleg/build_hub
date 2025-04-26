@@ -97,7 +97,8 @@ const Catalog: React.FC<ICatalogProps> = ({}) => {
           </div>
         )}
         <h1 className="font-unbounded xl:text-2xl font-bold text-center mb-5  md:text-lg">
-          Оберіть потрібну Вам категорію будівельних робіт
+          Для замовлення будматеріалів оберіть потрібну Вам категорію
+          будівельних робіт
         </h1>
         <ul className="flex justify-center flex-wrap gap-5 uppercase font-medium text-xl md:text-base">
           {catalog.map(item => (

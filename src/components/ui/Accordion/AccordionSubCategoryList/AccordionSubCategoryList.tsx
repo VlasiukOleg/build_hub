@@ -120,7 +120,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
               title={subCategory.categoryTitle}
               subtitle={<AccordionItemSubTitle subCategory={subCategory} />}
             >
-              <div className="gap-2 grid md:grid-cols-2 md:gap-4 xl:grid-cols-3 ">
+              <div className="flex flex-col gap-3">
                 {subCategory.materials.map((material, matInd) => {
                   const { quantity, price } = material;
                   const totalMaterialPrice = quantity * price;

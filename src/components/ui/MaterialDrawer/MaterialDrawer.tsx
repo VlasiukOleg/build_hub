@@ -22,28 +22,20 @@ interface IMaterialDrawerProps {
   description: String;
   image: string;
   officialLink: string;
+  isOpen: boolean;
+  onOpenChange: () => void;
 }
 
 const MaterialDrawer: React.FC<IMaterialDrawerProps> = ({
+  isOpen,
+  onOpenChange,
   title,
   description,
   image,
   officialLink,
 }) => {
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
-
   return (
     <>
-      <Button
-        color="primary"
-        isIconOnly
-        size="sm"
-        className="text-xs md:text-sm xl:text-base"
-        variant="flat"
-        onPress={onOpen}
-      >
-        <FaCircleInfo size={16} />
-      </Button>
       <Drawer
         hideCloseButton
         backdrop="blur"

@@ -12,12 +12,7 @@ import {
 } from '@heroui/react';
 import clsx from 'clsx';
 import { Input } from '@heroui/react';
-import {
-  Autocomplete,
-  AutocompleteItem,
-  Select,
-  SelectItem,
-} from '@heroui/react';
+import { Select, SelectItem, useDisclosure } from '@heroui/react';
 
 import styles from './configurable.module.css';
 
@@ -32,11 +27,11 @@ import {
 } from '@/redux/configurableMaterialSlice';
 
 import { MdOutlineCancel } from 'react-icons/md';
-import { RiSearchLine } from 'react-icons/ri';
 import { FaMinus } from 'react-icons/fa6';
 import { FaPlus } from 'react-icons/fa6';
 import { FaRegEdit } from 'react-icons/fa';
 import { IoSaveOutline } from 'react-icons/io5';
+import { FaCircleInfo } from 'react-icons/fa6';
 
 import { Material } from '@/@types';
 
@@ -63,6 +58,8 @@ const DisclosureAddMaterialsPanel: React.FC<
   const [editMaterialKey, setEditMaterialKey] = useState<string>('');
 
   const inputRef = useRef<HTMLInputElement>(null);
+
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   useEffect(() => {
     if (editMaterialKey && inputRef.current) {
@@ -174,15 +171,21 @@ const DisclosureAddMaterialsPanel: React.FC<
     <div className="text-sm/5 text-grey md:text-lg xl:text-xl">
       <Card>
         <CardHeader className="justify-between gap-2">
-          <div className="text-sm text-grey md:text-base  xl:text-lg">
+          <div className="text-sm text-grey md:hidden md:text-base  xl:text-lg">
             {material.title}
           </div>
-          <MaterialDrawer
-            title={material.title}
-            description={material.description}
-            image={material.image}
-            officialLink={material.officialLink}
-          />
+          <div className="md:hidden">
+            <Button
+              color="primary"
+              isIconOnly
+              size="sm"
+              className="text-xs md:text-sm xl:text-base"
+              variant="flat"
+              onPress={onOpen}
+            >
+              <FaCircleInfo size={16} />
+            </Button>
+          </div>
         </CardHeader>
         <Divider />
         <CardBody>
@@ -202,7 +205,7 @@ const DisclosureAddMaterialsPanel: React.FC<
             itemHeight={40}
             disabledKeys={autocompleteDisabledKeys}
             classNames={{
-              mainWrapper: '',
+              mainWrapper: 'md:w-[50%]',
               trigger:
                 'min-h-8 h-8 xl:h-8  data-[open=true]:border-accent data-[focus=true]:border-accent',
               value: 'text-xs xl:text-sm',
@@ -255,8 +258,22 @@ const DisclosureAddMaterialsPanel: React.FC<
                 className="size-[75px] md:size-[100px] xl:size-[150px]"
               />
             </div>
-            <div className="flex flex-col xl:w-[500px]">
-              <div className="flex items-center md:mb-3  xl:mb-5 mb-4">
+            <div className="hidden text-grey flex-col gap-2 justify-between md:flex  md:text-base md:flex-[50%]  xl:text-lg">
+              {material.title}{' '}
+              <div className="hidden md:block">
+                <Button
+                  color="primary"
+                  size="sm"
+                  className="md:text-xs xl:text-sm"
+                  variant="light"
+                  onPress={onOpen}
+                >
+                  Детальніше про матеріал <FaCircleInfo size={16} />
+                </Button>
+              </div>
+            </div>
+            <div className="flex flex-col gap-2 justify-between md:items-center md:flex-[40%]">
+              <div className="flex items-center">
                 <Button
                   isIconOnly
                   aria-label="Take a photo"
@@ -303,9 +320,9 @@ const DisclosureAddMaterialsPanel: React.FC<
                   <FaPlus className=" text-accent" />
                 </Button>
               </div>
-              <div className="flex items-center md:flex-col gap-2">
+              <div className="flex items-center md:flex-col gap-2 md:gap-1 xl:gap-2">
                 {material.measure ? (
-                  <div className=" text-grey font-semibold  md:text-lg xl:text-xl">
+                  <div className=" text-grey font-semibold  md:text-base xl:text-xl">
                     <div className="flex items-center gap-1">
                       Ціна: {gazoblokPrice} грн.
                       <span className="text-red-500">*</span>
@@ -315,12 +332,17 @@ const DisclosureAddMaterialsPanel: React.FC<
                     </div>
                   </div>
                 ) : (
-                  <div className=" text-grey font-semibold  md:text-lg xl:text-xl">
+                  <div className=" text-grey font-semibold  md:text-base xl:text-xl">
                     <div className="flex items-center gap-1">
                       Ціна: {gazoblokPrice} грн.
                     </div>
                   </div>
                 )}
+                <div className="bg-bgWhite text-grey  font-semibold text-center hidden md:block md:font-normal md:text-base  xl:text-xl">
+                  {material.salePrice > 0
+                    ? `Всього: ${(material.salePrice * material.quantity).toFixed(2)} грн.`
+                    : `Всього: ${(gazoblokPrice * Number(gazoblokQuantity)).toFixed(2)} грн.`}
+                </div>
 
                 <Button
                   aria-label="Clear Order"
@@ -461,6 +483,14 @@ const DisclosureAddMaterialsPanel: React.FC<
             </>
           )}
         </CardFooter>
+        <MaterialDrawer
+          isOpen={isOpen}
+          onOpenChange={onOpenChange}
+          title={material.title}
+          description={material.description}
+          image={material.image}
+          officialLink={material.officialLink}
+        />
       </Card>
     </div>
   );

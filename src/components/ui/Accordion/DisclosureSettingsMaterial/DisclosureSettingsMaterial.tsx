@@ -10,6 +10,7 @@ import {
   CardFooter,
   Divider,
   addToast,
+  useDisclosure,
 } from '@heroui/react';
 import clsx from 'clsx';
 import { Input } from '@heroui/react';
@@ -25,11 +26,11 @@ import {
 } from '@/redux/configurableMaterialSlice';
 
 import { MdOutlineCancel } from 'react-icons/md';
-import { RiSearchLine } from 'react-icons/ri';
 import { FaMinus } from 'react-icons/fa6';
 import { FaPlus } from 'react-icons/fa6';
 import { FaRegEdit } from 'react-icons/fa';
 import { IoSaveOutline } from 'react-icons/io5';
+import { FaCircleInfo } from 'react-icons/fa6';
 
 import { Material } from '@/@types';
 
@@ -38,7 +39,6 @@ import {
   SETTINGS_MATERIAL_LABEL_LIST_MAP,
   SETTINGS_MATERIAL_UNIT_LIST_MAP,
 } from './constants';
-import { color } from 'framer-motion';
 
 interface IDisclosureSettingsMaterialProps {
   material: Material;
@@ -57,6 +57,8 @@ const DisclosureSettingsMaterial: React.FC<
 
   const [selected, setSelected] = useState({ ...material.defaultOptions });
 
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   const selectedVariant = useMemo(() => {
     return material.settingList?.find(variant =>
       Object.entries(selected).every(
@@ -64,6 +66,9 @@ const DisclosureSettingsMaterial: React.FC<
       )
     );
   }, [selected, material.settingList]);
+
+  console.log(selected);
+  console.log(gazoblokQuantity);
 
   const handleSelect = (group: string, value: string) => {
     setSelected(prev => ({ ...prev, [group]: value }));
@@ -176,7 +181,7 @@ const DisclosureSettingsMaterial: React.FC<
     <div className="text-sm/5 text-grey md:text-lg xl:text-xl">
       <Card>
         <CardHeader className="justify-between gap-2">
-          <div className="text-sm text-grey md:text-base  xl:text-lg">
+          <div className="text-sm text-grey md:hidden md:text-base  xl:text-lg">
             {material.title}{' '}
             {Object.entries(selected)
               .map(
@@ -185,12 +190,18 @@ const DisclosureSettingsMaterial: React.FC<
               )
               .join(', ')}
           </div>
-          <MaterialDrawer
-            title={material.title}
-            description={material.description}
-            image={material.image}
-            officialLink={material.officialLink}
-          />
+          <div className="md:hidden">
+            <Button
+              color="primary"
+              isIconOnly
+              size="sm"
+              className="text-xs md:text-sm xl:text-base"
+              variant="flat"
+              onPress={onOpen}
+            >
+              <FaCircleInfo size={16} />
+            </Button>
+          </div>
         </CardHeader>
         <Divider />
         <CardBody>
@@ -226,7 +237,7 @@ const DisclosureSettingsMaterial: React.FC<
               ))}
           </div>
 
-          <div className="flex items-center justify-around mt-3 gap-4 md:gap-4">
+          <div className="flex items-center justify-around md:justify-normal mt-3 gap-4 md:gap-4">
             <div className="rounded-xl border-[1px] border-accent overflow-hidden inline-block min-w-[75px] max-h-[75px] md:min-w-[100px] md:max-h-[100px] xl:min-w-[150px] xl:max-h-[150px]">
               <Image
                 src={material.image}
@@ -236,8 +247,22 @@ const DisclosureSettingsMaterial: React.FC<
                 className="size-[75px] md:size-[100px] xl:size-[150px]"
               />
             </div>
-            <div className="flex flex-col xl:w-[500px]">
-              <div className="flex items-center md:mb-3  xl:mb-5 mb-4">
+            <div className="hidden text-grey flex-col gap-2 justify-between md:flex  md:text-base md:flex-[50%]  xl:text-lg">
+              {material.title}{' '}
+              <div className="hidden md:block">
+                <Button
+                  color="primary"
+                  size="sm"
+                  className="md:text-xs xl:text-sm"
+                  variant="light"
+                  onPress={onOpen}
+                >
+                  Детальніше про матеріал <FaCircleInfo size={16} />
+                </Button>
+              </div>
+            </div>
+            <div className="flex flex-col gap-2 justify-between md:items-center md:flex-[40%]">
+              <div className="flex items-center">
                 <Button
                   isIconOnly
                   aria-label="Take a photo"
@@ -283,9 +308,9 @@ const DisclosureSettingsMaterial: React.FC<
                   <FaPlus className=" text-accent" />
                 </Button>
               </div>
-              <div className="flex items-center md:flex-col gap-2">
+              <div className="flex items-center md:flex-col gap-2 md:gap-1 xl:gap-2">
                 {material.measure ? (
-                  <div className=" text-grey font-semibold  md:text-lg xl:text-xl">
+                  <div className=" text-grey font-semibold  md:text-base xl:text-xl">
                     <div className="flex items-center gap-1">
                       {selectedVariant?.price ? (
                         `Ціна: ${selectedVariant?.price.toFixed(2)} грн.`
@@ -301,7 +326,7 @@ const DisclosureSettingsMaterial: React.FC<
                     </div>
                   </div>
                 ) : (
-                  <div className=" text-grey font-semibold  md:text-lg xl:text-xl">
+                  <div className=" text-grey font-semibold  md:text-base xl:text-xl">
                     <div className="flex items-center gap-1">
                       {selectedVariant?.price ? (
                         `Ціна: ${selectedVariant?.price.toFixed(2)} грн.`
@@ -313,7 +338,11 @@ const DisclosureSettingsMaterial: React.FC<
                     </div>
                   </div>
                 )}
-
+                <div className="bg-bgWhite text-grey  font-semibold text-center hidden md:block md:font-normal md:text-base  xl:text-xl">
+                  {material.salePrice > 0
+                    ? `Всього: ${(material.salePrice * material.quantity).toFixed(2)} грн.`
+                    : `Всього: ${selectedVariant?.price && (selectedVariant?.price * Number(gazoblokQuantity)).toFixed(2)} грн.`}
+                </div>
                 <Button
                   aria-label="Clear Order"
                   onPress={handleAddConfigurableMaterial}
@@ -453,6 +482,14 @@ const DisclosureSettingsMaterial: React.FC<
             </>
           )}
         </CardFooter>
+        <MaterialDrawer
+          isOpen={isOpen}
+          onOpenChange={onOpenChange}
+          title={material.title}
+          description={material.description}
+          image={material.image}
+          officialLink={material.officialLink}
+        />
       </Card>
     </div>
   );
