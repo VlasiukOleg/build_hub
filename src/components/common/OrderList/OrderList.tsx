@@ -155,11 +155,8 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     state => state.configurableMaterial.configurableMaterial
   );
 
-  console.log(materials);
-
   const activeMaterials = getActiveMaterials(materials);
 
-  console.log(activeMaterials);
   const activeAdditionalMaterials = getActiveMaterials(additionalMaterial);
 
   const activeConfigurableMaterials = getActiveMaterials(
@@ -264,7 +261,9 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     setAdditionalMaterialsEditModeQuantity(value);
   };
 
-  const handleMaterialConfirmModalOpen = (material: any) => {
+  const handleMaterialConfirmModalOpen = (
+    material: Material | ConfigurableMaterial | AdditionalMaterial
+  ) => {
     if ('id' in material) {
       setMaterialId(material.id);
       setMaterialTitle(material.title);

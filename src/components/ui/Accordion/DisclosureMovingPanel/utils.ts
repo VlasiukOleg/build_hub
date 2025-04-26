@@ -23,7 +23,9 @@ export const getDistanceMultiplier = (distance: number) => {
   return MAX_DISTANCE_MULTIPLIERS;
 };
 
-export const getActiveMaterials = (materials: any[]) => {
+export const getActiveMaterials = (
+  materials: ConfigurableMaterial[] | Material[] | AdditionalMaterial[]
+) => {
   return materials
     .filter(material => material.quantity > 0)
     .map(material => ({

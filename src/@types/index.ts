@@ -79,7 +79,7 @@ export interface Material {
     length?: string[];
     width?: string[];
     size?: string[];
-    type?: string;
+    type?: string[];
   };
   settingList?: MaterialSetting[];
   configurableList?: ConfigurableItem[];
