@@ -271,9 +271,18 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": [
+            "configurableList": [],
+            "defaultOptions": {
+              "thickness": "0.25"
+            },
+            "options": {
+              "thickness": ["0.2", "0.25", "0.3", "0.35"]
+            },
+            "settingList": [
               {
-                "label": "0.2 мм.",
+                "attributes": {
+                  "thickness": "0.2"
+                },
                 "key": "mayak_6x20x3000",
                 "price": 11.94,
                 "salePrice": 0,
@@ -282,7 +291,9 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "0.25 мм.",
+                "attributes": {
+                  "thickness": "0.25"
+                },
                 "key": "mayak_6x25x3000",
                 "price": 14.43,
                 "salePrice": 0,
@@ -291,7 +302,9 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "0.3 мм.",
+                "attributes": {
+                  "thickness": "0.3"
+                },
                 "key": "mayak_6x30x3000",
                 "price": 14.72,
                 "salePrice": 0,
@@ -300,7 +313,9 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "0.35 мм.",
+                "attributes": {
+                  "thickness": "0.35"
+                },
                 "key": "mayak_6x35x3000",
                 "price": 19.21,
                 "salePrice": 0,
@@ -308,10 +323,7 @@
                 "volume": 0.000324,
                 "movingTypeCalculation": "weight"
               }
-            ],
-            "defaultOptions": {},
-            "options": {},
-            "settingList": []
+            ]
           },
           {
             "id": 1.42,
@@ -327,9 +339,18 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": [
+            "configurableList": [],
+            "defaultOptions": {
+              "thickness": "0.25"
+            },
+            "options": {
+              "thickness": ["0.2", "0.25", "0.3", "0.35"]
+            },
+            "settingList": [
               {
-                "label": "0.2 мм.",
+                "attributes": {
+                  "thickness": "0.2"
+                },
                 "key": "mayak_10x20x3000",
                 "price": 14.61,
                 "salePrice": 0,
@@ -338,7 +359,9 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "0.25 мм.",
+                "attributes": {
+                  "thickness": "0.25"
+                },
                 "key": "mayak_10x25x3000",
                 "price": 18.75,
                 "salePrice": 0,
@@ -347,27 +370,28 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "0.3 мм.",
+                "attributes": {
+                  "thickness": "0.3"
+                },
                 "key": "mayak_10x30x3000",
-                "price": 24.84,
+                "price": 19.09,
                 "salePrice": 0,
                 "weight": 2,
                 "volume": 0.000324,
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "0.35 мм.",
+                "attributes": {
+                  "thickness": "0.35"
+                },
                 "key": "mayak_10x35x3000",
-                "price": 19.21,
+                "price": 24.84,
                 "salePrice": 0,
                 "weight": 2,
                 "volume": 0.000324,
                 "movingTypeCalculation": "weight"
               }
-            ],
-            "defaultOptions": {},
-            "options": {},
-            "settingList": []
+            ]
           }
         ]
       },
@@ -5510,17 +5534,17 @@
             "officialLink": "",
             "configurableList": [],
             "defaultOptions": {
-              "width": "125",
+              "length": "125",
               "thickness": "0.65"
             },
             "options": {
-              "width": ["125", "250"],
+              "length": ["125", "250"],
               "thickness": ["0.65", "0.8", "0.9", "1"]
             },
             "settingList": [
               {
                 "attributes": {
-                  "width": "125",
+                  "length": "125",
                   "thickness": "0.65"
                 },
                 "key": "pidvic_0.65",
@@ -5532,7 +5556,7 @@
               },
               {
                 "attributes": {
-                  "width": "125",
+                  "length": "125",
                   "thickness": "0.8"
                 },
                 "key": "pidvic_0.8",
@@ -5544,7 +5568,7 @@
               },
               {
                 "attributes": {
-                  "width": "125",
+                  "length": "125",
                   "thickness": "0.9"
                 },
                 "key": "pidvic_0.9",
@@ -5556,7 +5580,7 @@
               },
               {
                 "attributes": {
-                  "width": "125",
+                  "length": "125",
                   "thickness": "1"
                 },
                 "key": "pidvic_1",
@@ -5568,7 +5592,7 @@
               },
               {
                 "attributes": {
-                  "width": "250",
+                  "length": "250",
                   "thickness": "0.65"
                 },
                 "key": "pidvic_250_0.65",
@@ -5580,7 +5604,7 @@
               },
               {
                 "attributes": {
-                  "width": "250",
+                  "length": "250",
                   "thickness": "0.8"
                 },
                 "key": "pidvic_250_0.8",
@@ -5592,7 +5616,7 @@
               },
               {
                 "attributes": {
-                  "width": "250",
+                  "length": "250",
                   "thickness": "1"
                 },
                 "key": "pidvic_250_1",
