@@ -41,6 +41,7 @@ export const metadata: Metadata = {
   },
   other: {
     'color-scheme': 'light',
+    'google-site-verification': 'yAtp8bFM4TUmCzO4O51gsBFznWK-H-U5B_fD3YKY84Q',
   },
 };
 
