@@ -34,7 +34,10 @@ import { IoSaveOutline } from 'react-icons/io5';
 import { Material } from '@/@types';
 
 import { CONFIGURABLE_MATERIAL_LIST_SELECT_PLACEHOLDER_TEXT_MAP } from '@/data/constants';
-import { SETTINGS_MATERIAL_LABEL_LIST_MAP } from './constants';
+import {
+  SETTINGS_MATERIAL_LABEL_LIST_MAP,
+  SETTINGS_MATERIAL_UNIT_LIST_MAP,
+} from './constants';
 import { color } from 'framer-motion';
 
 interface IDisclosureSettingsMaterialProps {
@@ -161,14 +164,26 @@ const DisclosureSettingsMaterial: React.FC<
     setEditMaterialKey('');
   };
 
-  type OptionGroup = 'thickness' | 'length' | 'width' | 'size' | 'type';
+  type OptionGroup =
+    | 'thickness'
+    | 'length'
+    | 'width'
+    | 'size'
+    | 'type'
+    | 'lengthMM';
 
   return (
     <div className="text-sm/5 text-grey md:text-lg xl:text-xl">
       <Card>
         <CardHeader className="justify-between gap-2">
           <div className="text-sm text-grey md:text-base  xl:text-lg">
-            {material.title} {Object.values(selected).join(', ')}
+            {material.title}{' '}
+            {Object.entries(selected)
+              .map(
+                ([key, value]) =>
+                  `${value} ${SETTINGS_MATERIAL_UNIT_LIST_MAP[key]}`
+              )
+              .join(', ')}
           </div>
           <MaterialDrawer
             title={material.title}

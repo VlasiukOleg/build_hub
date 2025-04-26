@@ -70,6 +70,7 @@ export interface Material {
   defaultOptions?: {
     thickness?: string;
     length?: string;
+    lengthMM?: string;
     width?: string;
     size?: string;
     type?: string;
@@ -77,6 +78,7 @@ export interface Material {
   options?: {
     thickness?: string[];
     length?: string[];
+    lengthMM?: string[];
     width?: string[];
     size?: string[];
     type?: string[];
