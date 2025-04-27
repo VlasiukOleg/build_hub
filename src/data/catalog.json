@@ -6198,9 +6198,21 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": [
+            "configurableList": [],
+            "defaultOptions": {
+              "width": "46",
+              "length": "90"
+            },
+            "options": {
+              "width": ["46"],
+              "length": ["45", "90", "150"]
+            },
+            "settingList": [
               {
-                "label": "46 мм, рулон  45 м",
+                "attributes": {
+                  "width": "46",
+                  "length": "45"
+                },
                 "key": "strichka_46_45",
                 "price": 50.52,
                 "salePrice": 0,
@@ -6209,7 +6221,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "46 мм, рулон  90 м",
+                "attributes": {
+                  "width": "46",
+                  "length": "90"
+                },
                 "key": "strichka_46_90",
                 "price": 94.97,
                 "salePrice": 0,
@@ -6218,7 +6233,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "46 мм, рулон  150 м",
+                "attributes": {
+                  "width": "46",
+                  "length": "150"
+                },
                 "key": "strichka_46_150",
                 "price": 160.4,
                 "salePrice": 0,
@@ -6226,16 +6244,13 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ],
-            "defaultOptions": {},
-            "options": {},
-            "settingList": []
+            ]
           },
           {
             "id": 4.82,
             "image": "https://i.imgur.com/i95CK5f.jpeg",
-            "title": "KNAUF КУРТ Стрічка для швів паперова 25м НІМЕЧЧИНА",
-            "description": "",
+            "title": "KNAUF КУРТ Стрічка для швів паперова НІМЕЧЧИНА",
+            "description": "Паперова стрічка для швів KNAUF Kurt — це високоякісний армувальний матеріал, призначений для зміцнення стиків гіпсокартонних і гіпсоволокнистих плит. Виготовлена з міцного білого паперу, армованого спеціальними волокнами, вона забезпечує надійне з'єднання плит і запобігає утворенню тріщин на швах під час оздоблювальних робіт.​ Стрічка легко укладається, не розтягується при зволоженні та має центральну лінію згину, що полегшує монтаж у внутрішніх кутах. Вона сумісна з системами шпаклювання KNAUF, зокрема з Uniflott, і сприяє досягненню високої якості готової поверхні.​Вироблена в Німеччині, стрічка KNAUF Kurt відповідає високим стандартам якості та є надійним вибором для професійного використання в системах сухого будівництва.",
             "weight": 0.1,
             "volume": 0.001,
             "price": 769.53,
@@ -6244,33 +6259,41 @@
             "quantity": 0,
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
-            "officialLink": "",
+            "officialLink": "https://knauf.com/uk-UA/p/produkt/strichka-kurt-10435_0150",
             "configurableList": [],
-            "defaultOptions": {},
-            "options": {},
-            "settingList": []
+            "defaultOptions": {
+              "length": "25"
+            },
+            "options": {
+              "length": ["25", "75"]
+            },
+            "settingList": [
+              {
+                "attributes": {
+                  "length": "25"
+                },
+                "key": "kurt_25",
+                "price": 769.53,
+                "salePrice": 0,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "attributes": {
+                  "length": "75"
+                },
+                "key": "kurt_75",
+                "price": 1539.06,
+                "salePrice": 0,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           },
           {
             "id": 4.83,
-            "image": "https://i.imgur.com/i95CK5f.jpeg",
-            "title": "KNAUF КУРТ Стрічка для швів паперова 75м НІМЕЧЧИНА",
-            "description": "",
-            "weight": 0.1,
-            "volume": 0.001,
-            "price": 1539.06,
-            "salePrice": 0,
-            "measure": "",
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": [],
-            "defaultOptions": {},
-            "options": {},
-            "settingList": []
-          },
-          {
-            "id": 4.84,
             "image": "https://i.imgur.com/0Rwt8Qt.jpeg",
             "title": "SEMIN BANDE JOINT Стрічка паперова 50 мм, 150 м.п.",
             "description": "SEMIN BANDE JOINT — це армувальна паперова стрічка, призначена для обробки стиків гіпсокартонних конструкцій. Вона ефективно зміцнює шви, запобігаючи утворенню тріщин та деформацій, що можуть виникати через незначні рухи конструкції. Стрічка забезпечує ідеально рівну поверхню, приховуючи дрібні дефекти монтажу, що дозволяє легко наносити фарбу чи клеїти шпалери. Підходить для всіх типів стиків — прямих, тупих, гострих — та використовується виключно всередині приміщень.",
@@ -6309,9 +6332,21 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": [
+            "configurableList": [],
+            "defaultOptions": {
+              "width": "50",
+              "length": "30"
+            },
+            "options": {
+              "width": ["30", "50", "70", "90"],
+              "length": ["30"]
+            },
+            "settingList": [
               {
-                "label": "30 мм, рулон 30 м",
+                "attributes": {
+                  "width": "30",
+                  "length": "30"
+                },
                 "key": "strichka_zvuk_30_30",
                 "price": 112.93,
                 "salePrice": 0,
@@ -6320,7 +6355,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "50 мм, рулон 30 м",
+                "attributes": {
+                  "width": "50",
+                  "length": "30"
+                },
                 "key": "strichka_zvuk_50_30",
                 "price": 179.62,
                 "salePrice": 0,
@@ -6329,7 +6367,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "70 мм, рулон 30 м",
+                "attributes": {
+                  "width": "70",
+                  "length": "30"
+                },
                 "key": "strichka_zvuk_70_30",
                 "price": 243.78,
                 "salePrice": 0,
@@ -6338,7 +6379,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "90 мм, рулон 30 м",
+                "attributes": {
+                  "width": "90",
+                  "length": "30"
+                },
                 "key": "strichka_zvuk_90_30",
                 "price": 310.64,
                 "salePrice": 0,
@@ -6346,10 +6390,7 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ],
-            "defaultOptions": {},
-            "options": {},
-            "settingList": []
+            ]
           },
           {
             "id": 4.92,
@@ -6365,9 +6406,21 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": [
+            "configurableList": [],
+            "defaultOptions": {
+              "width": "50",
+              "length": "30"
+            },
+            "options": {
+              "width": ["30", "50", "70", "95"],
+              "length": ["30"]
+            },
+            "settingList": [
               {
-                "label": "30 мм, рулон 30 м",
+                "attributes": {
+                  "width": "30",
+                  "length": "30"
+                },
                 "key": "strichka_zvuk_knauf_30_30",
                 "price": 354.82,
                 "salePrice": 0,
@@ -6376,16 +6429,22 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "50 мм, рулон 30 м",
+                "attributes": {
+                  "width": "50",
+                  "length": "30"
+                },
                 "key": "strichka_zvuk_knauf_50_30",
-                "price": 567.27,
+                "price": 567.26,
                 "salePrice": 0,
                 "weight": 0.1,
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "70 мм, рулон 30 м",
+                "attributes": {
+                  "width": "70",
+                  "length": "30"
+                },
                 "key": "strichka_zvuk_knauf_70_30",
                 "price": 797.78,
                 "salePrice": 0,
@@ -6394,7 +6453,10 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "95 мм, рулон 30 м",
+                "attributes": {
+                  "width": "95",
+                  "length": "30"
+                },
                 "key": "strichka_zvuk_knauf_95_30",
                 "price": 1059.94,
                 "salePrice": 0,
@@ -6402,10 +6464,7 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ],
-            "defaultOptions": {},
-            "options": {},
-            "settingList": []
+            ]
           }
         ]
       },
