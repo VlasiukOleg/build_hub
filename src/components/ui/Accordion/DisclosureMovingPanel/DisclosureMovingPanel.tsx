@@ -337,6 +337,8 @@ const DisclosureMovingPanel: React.FunctionComponent<
     setBlockXlCalculateFee(blockXlMovingFee);
   }, [building, dispatch, distance, elevator, floor]);
 
+  console.log(weightTypeCalculateMaterialFee);
+
   return (
     <div className="mt-2 text-sm/5 text-grey md:text-lg xl:text-xl xl:mt-6">
       <div className="mb-3 font-medium">
