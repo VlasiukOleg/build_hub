@@ -11,9 +11,9 @@ import {
   Divider,
   addToast,
   useDisclosure,
+  Input,
 } from '@heroui/react';
 import clsx from 'clsx';
-import { Input } from '@heroui/react';
 
 import MaterialDrawer from '../../MaterialDrawer';
 
@@ -205,35 +205,38 @@ const DisclosureSettingsMaterial: React.FC<
         </CardHeader>
         <Divider />
         <CardBody>
-          <div>
+          <div className="md:flex md:gap-3 items-center">
             {material.options &&
               (
                 Object.entries(material.options) as [OptionGroup, string[]][]
               ).map(([groupName, values]) => (
-                <div key={groupName} className="mb-1">
-                  <p className="mb-1 text-xs">
-                    {SETTINGS_MATERIAL_LABEL_LIST_MAP[groupName]}
-                  </p>
-                  <div className="flex gap-2 flex-wrap">
-                    {values.map(option => (
-                      <Button
-                        key={option}
-                        aria-label="Clear Order"
-                        onPress={() => handleSelect(groupName, option)}
-                        color="success"
-                        radius="sm"
-                        className={clsx(
-                          'min-h-7 h-7 px-1 min-w-16 text-xs xl:text-sm',
-                          selected[groupName] === option
-                            ? 'bg-gray-100 text-accent font-semibold border-2 border-accent'
-                            : 'bg-gray-100 border-1 border-gray-300 text-gray-500'
-                        )}
-                      >
-                        {option}
-                      </Button>
-                    ))}
+                <>
+                  <div key={groupName} className="mb-1">
+                    <p className="mb-1 text-xs">
+                      {SETTINGS_MATERIAL_LABEL_LIST_MAP[groupName]}
+                    </p>
+                    <div className="flex gap-2 flex-wrap">
+                      {values.map(option => (
+                        <Button
+                          key={option}
+                          aria-label="Clear Order"
+                          onPress={() => handleSelect(groupName, option)}
+                          color="success"
+                          radius="sm"
+                          className={clsx(
+                            'min-h-7 h-7 px-1 min-w-16 text-xs xl:text-sm xl:p-2',
+                            selected[groupName] === option
+                              ? 'bg-gray-100 text-accent font-semibold border-2 border-accent'
+                              : 'bg-gray-100 border-1 border-gray-300 text-gray-500'
+                          )}
+                        >
+                          {option}
+                        </Button>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                  <Divider orientation="vertical" />
+                </>
               ))}
           </div>
 
@@ -247,8 +250,14 @@ const DisclosureSettingsMaterial: React.FC<
                 className="size-[75px] md:size-[100px] xl:size-[150px]"
               />
             </div>
-            <div className="hidden text-grey flex-col gap-2 justify-between md:flex  md:text-base md:flex-[50%]  xl:text-lg">
+            <div className="hidden text-grey flex-col gap-2 justify-between md:flex md:font-bold  md:text-base md:flex-[50%]  xl:text-lg">
               {material.title}{' '}
+              {Object.entries(selected)
+                .map(
+                  ([key, value]) =>
+                    `${value} ${SETTINGS_MATERIAL_UNIT_LIST_MAP[key]}`
+                )
+                .join(', ')}
               <div className="hidden md:block">
                 <Button
                   color="primary"
