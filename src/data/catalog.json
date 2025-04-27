@@ -702,7 +702,7 @@
         "isCategoryOpen": false,
         "materials": [
           {
-            "id": 1.101,
+            "id": 1.111,
             "image": "https://i.imgur.com/AURAd9R.jpeg",
             "title": "Плівка захисна малярська 4х5м, 20мкр",
             "description": "Плівка захисна призначена для захисту меблів, підлоги, стін від забруднення при виконанні ремонтних робіт. Захисна плівка призначена для застосування всередині приміщень",
@@ -721,7 +721,7 @@
             "settingList": []
           },
           {
-            "id": 1.102,
+            "id": 1.112,
             "image": "https://i.imgur.com/BE1HWZi.jpeg",
             "title": "Плівка п/ет  80мк, 1,5м*100м.п*2 рукав, 300м.кв",
             "description": "Застосовується для армування поверхні, захисту поверхні від тріщин, гідроізоляції будівель, внутрішній обробки різних споруд. Висока опірність до розривів і розтягувань. Висока стійкість до впливу лужних розчинів. Запобігає утворенню тріщин в штукатурному шарі.",
@@ -747,9 +747,9 @@
         "isCategoryOpen": false,
         "materials": [
           {
-            "id": 1.111,
+            "id": 1.121,
             "image": "https://i.imgur.com/pApmMAN.jpeg",
-            "title": "Стрічка  малярська 48 мм, рулон 20 м Eskaro",
+            "title": "Стрічка  малярська Eskaro",
             "description": "Клейка малярська стрічка використовується для збереження чистоти поверхонь, обмеження зон фарбування, захисту поверхонь від фарби у випадках неможливості демонтажу знімних елементів конструкції",
             "weight": 0.1,
             "volume": 0.001,
@@ -761,28 +761,64 @@
             "movingTypeCalculation": "weight",
             "officialLink": "",
             "configurableList": [],
-            "defaultOptions": {},
-            "options": {},
-            "settingList": []
-          },
-          {
-            "id": 1.112,
-            "image": "https://i.imgur.com/pApmMAN.jpeg",
-            "title": "Стрічка  малярська 48 мм, рулон 40 м Eskaro",
-            "description": "Клейка малярська стрічка використовується для збереження чистоти поверхонь, обмеження зон фарбування, захисту поверхонь від фарби у випадках неможливості демонтажу знімних елементів конструкції",
-            "weight": 0.1,
-            "volume": 0.001,
-            "price": 76.4,
-            "salePrice": 0,
-            "measure": "",
-            "quantity": 0,
-            "totalPrice": 0,
-            "movingTypeCalculation": "weight",
-            "officialLink": "",
-            "configurableList": [],
-            "defaultOptions": {},
-            "options": {},
-            "settingList": []
+            "defaultOptions": {
+              "width": "38",
+              "length": "20"
+            },
+            "options": {
+              "width": ["38", "48"],
+              "length": ["20", "40"]
+            },
+            "settingList": [
+              {
+                "attributes": {
+                  "width": "38",
+                  "length": "20"
+                },
+                "key": "malyarna_38_20",
+                "price": 35.23,
+                "salePrice": 0,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "attributes": {
+                  "width": "38",
+                  "length": "40"
+                },
+                "key": "malyarna_38_40",
+                "price": 62.93,
+                "salePrice": 0,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "attributes": {
+                  "width": "48",
+                  "length": "20"
+                },
+                "key": "malyarna_48_20",
+                "price": 42.68,
+                "salePrice": 0,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              },
+              {
+                "attributes": {
+                  "width": "48",
+                  "length": "40"
+                },
+                "key": "malyarna_48_40",
+                "price": 76.4,
+                "salePrice": 0,
+                "weight": 0.1,
+                "volume": 0.001,
+                "movingTypeCalculation": "weight"
+              }
+            ]
           }
         ]
       },
@@ -792,7 +828,7 @@
         "isCategoryOpen": false,
         "materials": [
           {
-            "id": 1.121,
+            "id": 1.131,
             "image": "https://i.imgur.com/HBCDOjK.jpeg",
             "title": "Правило трапецевидне ХАРДЕКС",
             "description": "правило використовується при штукатурних роботах для швидкого та ефективного розподілу розчину по оброблюваної поверхні, а також для вирівнювання штукатурних шарів у вертикальному та горизонтальному положеннях",
@@ -805,9 +841,18 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": [
+            "configurableList": [],
+            "defaultOptions": {
+              "length": "2.5"
+            },
+            "options": {
+              "length": ["2", "2.5", "3"]
+            },
+            "settingList": [
               {
-                "label": "2 м",
+                "attributes": {
+                  "length": "2"
+                },
                 "key": "pravilo_hardex_2",
                 "price": 829.16,
                 "salePrice": 0,
@@ -816,7 +861,9 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "2.5 м",
+                "attributes": {
+                  "length": "2.5"
+                },
                 "key": "pravilo_hardex_2.5",
                 "price": 1066.82,
                 "salePrice": 0,
@@ -825,7 +872,9 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "3 м",
+                "attributes": {
+                  "length": "3"
+                },
                 "key": "pravilo_hardex_3",
                 "price": 1286.71,
                 "salePrice": 0,
@@ -833,13 +882,10 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ],
-            "defaultOptions": {},
-            "options": {},
-            "settingList": []
+            ]
           },
           {
-            "id": 1.122,
+            "id": 1.132,
             "image": "https://i.ibb.co/MxxthW6s/lacrys-65.webp",
             "title": "LACRYSIL 65 піна монтажна всесезонна професійна, 800мл",
             "description": "Призначена для заповнення порожнин та щілин, герметизації та ущільнення швів та тріщин, ізоляції будівельних конструкцій,з’єднань різних матеріалів. Універсальний тепло- та звукоізолятор, що фіксує матеріал під час монтажу та герметизації віконних рам, дверних коробок, покрівельних конструкцій та стінових панелей, систем трубопроводів та кабелів, систем тепло- та звукоізоляції.",
@@ -858,7 +904,7 @@
             "settingList": []
           },
           {
-            "id": 1.123,
+            "id": 1.133,
             "image": "https://i.ibb.co/Rp55NNpx/lacrys-pina-kley-60.webp",
             "title": "LACRYSIL Клей-піна монтажна професійна 60 секунд,  800мл.",
             "description": "Професійна КЛЕЙ-ПІНА «60 секунд» ТМ Lacrysil – професійний аерозольнийполіуретановий клей використовується для кріплення теплоізоляційних плит у середині тазовні приміщення, герметизації з'єднань, термоізоляції будівельних конструкцій, піно- тагазоблоків, з'єднання і монтажу матеріалів у промисловості та побуті.",
@@ -877,7 +923,7 @@
             "settingList": []
           },
           {
-            "id": 1.124,
+            "id": 1.134,
             "image": "https://i.imgur.com/xZqqESt.jpeg",
             "title": "Мішки для сміття П/П 55смХ 90см",
             "description": "Універсальність і зручність. Формат поліпропіленового мішка  дозволяє підібрати оптимальний варіант для будь-яких потреб. Ви можете використовувати його для пакування піску, цементу, зерна, корму, насіння, соломи, будматеріалів і багатьох інших речей",
@@ -896,7 +942,7 @@
             "settingList": []
           },
           {
-            "id": 1.125,
+            "id": 1.135,
             "image": "https://i.imgur.com/xp6Blcl.jpeg",
             "title": "Рукавички  з покриттям ПВХ крапка",
             "description": "Спеціальний малюнок у вигляді ПВХ-покриття забезпечує надійність захоплення в процесі роботи і дозволяє зберігати максимальний контроль над інструментами і матеріалами, що оброблюються. Рукавички мають оптимальну жорсткість, яка дає можливість легко і точно виконувати роботи з невеликими деталями та інструментами.",
@@ -915,7 +961,7 @@
             "settingList": []
           },
           {
-            "id": 1.126,
+            "id": 1.136,
             "image": "https://i.imgur.com/x3GwTGs.jpeg",
             "title": "Відро Будівельне  20 л. (Польща)",
             "description": "Пластикові відра можуть використовуватися для змішування різних матеріалів, таких як цемент та пісок, для створення бетонної суміші. Це швидкий та ефективний спосіб змішування матеріалів без необхідності використання інших інструментів.",
@@ -934,7 +980,7 @@
             "settingList": []
           },
           {
-            "id": 1.127,
+            "id": 1.137,
             "image": "https://i.imgur.com/HgII2Yb.jpeg",
             "title": "Кастра кругла 65 л. (Польща)",
             "description": "Пластикові відра можуть використовуватися для змішування різних матеріалів, таких як цемент та пісок, для створення бетонної суміші. Це швидкий та ефективний спосіб змішування матеріалів без необхідності використання інших інструментів.",
@@ -4417,9 +4463,18 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": [
+            "configurableList": [],
+            "defaultOptions": {
+              "length": "2.5"
+            },
+            "options": {
+              "length": ["2", "2.5", "3"]
+            },
+            "settingList": [
               {
-                "label": "2 м",
+                "attributes": {
+                  "length": "2"
+                },
                 "key": "pravilo_hardex_2",
                 "price": 829.16,
                 "salePrice": 0,
@@ -4428,7 +4483,9 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "2.5 м",
+                "attributes": {
+                  "length": "2.5"
+                },
                 "key": "pravilo_hardex_2.5",
                 "price": 1066.82,
                 "salePrice": 0,
@@ -4437,7 +4494,9 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "3 м",
+                "attributes": {
+                  "length": "3"
+                },
                 "key": "pravilo_hardex_3",
                 "price": 1286.71,
                 "salePrice": 0,
@@ -4445,10 +4504,7 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ],
-            "defaultOptions": {},
-            "options": {},
-            "settingList": []
+            ]
           },
           {
             "id": 3.183,
@@ -7281,9 +7337,18 @@
             "totalPrice": 0,
             "movingTypeCalculation": "weight",
             "officialLink": "",
-            "configurableList": [
+            "configurableList": [],
+            "defaultOptions": {
+              "length": "2.5"
+            },
+            "options": {
+              "length": ["2", "2.5", "3"]
+            },
+            "settingList": [
               {
-                "label": "2 м",
+                "attributes": {
+                  "length": "2"
+                },
                 "key": "pravilo_hardex_2",
                 "price": 829.16,
                 "salePrice": 0,
@@ -7292,7 +7357,9 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "2.5 м",
+                "attributes": {
+                  "length": "2.5"
+                },
                 "key": "pravilo_hardex_2.5",
                 "price": 1066.82,
                 "salePrice": 0,
@@ -7301,7 +7368,9 @@
                 "movingTypeCalculation": "weight"
               },
               {
-                "label": "3 м",
+                "attributes": {
+                  "length": "3"
+                },
                 "key": "pravilo_hardex_3",
                 "price": 1286.71,
                 "salePrice": 0,
@@ -7309,10 +7378,7 @@
                 "volume": 0.001,
                 "movingTypeCalculation": "weight"
               }
-            ],
-            "defaultOptions": {},
-            "options": {},
-            "settingList": []
+            ]
           },
           {
             "id": 5.63,
