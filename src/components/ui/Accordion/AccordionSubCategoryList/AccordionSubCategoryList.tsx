@@ -96,7 +96,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
         className="mb-4 px-1 max-w-full w-full h-full md:w-[760px] xl:w-[1200px]"
         itemClasses={{ content: 'pb-4' }}
         selectionMode="multiple"
-        defaultExpandedKeys={["4.1"]}
+        defaultExpandedKeys={["4.1", "1.1"]}
       >
         {subCategoriesBySlug.map((subCategory, catInd) => {
           return (
