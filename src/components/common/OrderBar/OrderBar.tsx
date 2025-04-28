@@ -71,15 +71,11 @@ const OrderBar: React.FC<IOrderBarProps> = ({
     router.push(url);
   };
 
-  console.log(isMovingAddToOrder);
-
   const computedMovingPrice = isMovingAddToOrder
     ? movingPrice > 500
       ? movingPrice
       : 500
     : 0;
-
-  console.log(computedMovingPrice);
 
   const computedDeliveryPrice = deliveryType === 'delivery' ? deliveryPrice : 0;
 
