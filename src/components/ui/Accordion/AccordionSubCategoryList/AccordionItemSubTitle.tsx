@@ -76,7 +76,7 @@ const AccordionItemSubTitle: React.FC<IAccordionItemSubTitle> = ({
         </div>
       )}
       {isShowSubCategorySubTitle && (
-        <div className="text-[10px]">
+        <div className="text-[10px] md:text-xs">
           {SUBCATEGORY_SUBTITLE_LIST_MAP[subCategory.categoryTitle]}
         </div>
       )}
