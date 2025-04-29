@@ -83,7 +83,6 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
     }
   };
 
-  console.log(subCategoriesBySlug);
 
   if (!subCategoriesBySlug) {
     return null;

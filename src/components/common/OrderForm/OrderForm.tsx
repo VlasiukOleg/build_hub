@@ -209,7 +209,6 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
       additionalMaterial: additionalMaterial,
     };
 
-    console.log(sanitizedData);
     try {
       setIsSending(true);
       await sendingEmail(sanitizedData);

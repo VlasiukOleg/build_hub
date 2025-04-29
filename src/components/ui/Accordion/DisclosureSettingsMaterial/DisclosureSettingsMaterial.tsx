@@ -67,8 +67,6 @@ const DisclosureSettingsMaterial: React.FC<
     );
   }, [selected, material.settingList]);
 
-  console.log(selected);
-  console.log(gazoblokQuantity);
 
   const handleSelect = (group: string, value: string) => {
     setSelected(prev => ({ ...prev, [group]: value }));

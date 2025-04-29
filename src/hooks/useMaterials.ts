@@ -71,8 +71,6 @@ export const useMaterials = (slug?: string) => {
 
   const title = allCategories.find(category => category.id === slug)?.title;
 
-  console.log(materials);
-
   const totalPrice =
     materials?.reduce((acc, value) => {
       return acc + (value.salePrice > 0 ? value.salePrice * value.quantity : value.price * value.quantity);
