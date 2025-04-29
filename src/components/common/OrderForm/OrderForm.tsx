@@ -23,6 +23,7 @@ import { Field, Label } from '@headlessui/react';
 
 import { CiCalendar } from 'react-icons/ci';
 import styles from './orderform.module.css';
+import { useMaterials } from '@/hooks/useMaterials';
 
 // const phoneRegex = /^(0\d{9})$/;
 const phoneRegex = /^\+38 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
@@ -85,6 +86,10 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
     state => state.moving.isMovingPriceAddToOrder
   );
 
+  const configurableMaterialList = useAppSelector(
+    state => state.configurableMaterial.configurableMaterial
+  );
+
   const inputRef = useMask({
     mask: '+38 (___) ___-__-__',
     replacement: { _: /\d/ },
@@ -102,13 +107,7 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
     material => material.quantity > 0
   );
 
-  const totalPrice = materials.reduce((acc, value) => {
-    return acc + value.price * value.quantity;
-  }, 0);
-
-  const totalWeight = materials.reduce((acc, value) => {
-    return acc + value.weight * value.quantity;
-  }, 0);
+  const { totalPrice, totalWeight } = useMaterials();
 
   const router = useRouter();
   const {
@@ -207,6 +206,7 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
       deliveryStorage: deliveryStorage,
       isMovingAddToOrder: isMovingAddToOrder,
       additionalMaterial: additionalMaterial,
+      configurableMaterialList: configurableMaterialList,
     };
 
     try {

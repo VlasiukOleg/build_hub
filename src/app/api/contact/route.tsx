@@ -32,6 +32,7 @@ export async function POST(request: Request) {
       movingPrice,
       isMovingAddToOrder,
       additionalMaterial,
+      configurableMaterialList,
     } = await request.json();
 
     const formattedDate = format(new Date(date), "d MMMM yyyy 'року'", {
@@ -59,7 +60,7 @@ export async function POST(request: Request) {
       </tr>
     </thead>
     <tbody>
-      ${materials
+      ${[...materials, ...configurableMaterialList]
         .map(
           (material: Material, index: number) => `
         <tr>
