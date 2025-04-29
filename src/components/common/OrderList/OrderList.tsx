@@ -423,10 +423,10 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                       )}
                       <div className="w-[25%] text-right">
                         <p className="text-xs font-normal md:text-base">
-                          {material.price} грн.
+                          {material.salePrice > 0 ? material.salePrice : material.price} грн.
                         </p>
                         <p className="text-sm text-accent md:text-lg">
-                          {(material.quantity * material.price).toFixed(2)} грн.
+                          {(material.quantity * (material.salePrice > 0 ? material.salePrice : material.price)).toFixed(2)} грн.
                         </p>
                       </div>
                       <div className="w-[15%] text-right flex flex-col items-center justify-end gap-1">

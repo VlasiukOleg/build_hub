@@ -10,6 +10,7 @@ interface Material {
   title: string;
   quantity: number;
   price: number;
+  salePrice: number;
 }
 
 export async function POST(request: Request) {
@@ -65,8 +66,8 @@ export async function POST(request: Request) {
         <td style="border: 1px solid black; padding: 8px;">${index + 1}</td>
           <td style="border: 1px solid black; padding: 8px;">${material.title}</td>
           <td style="border: 1px solid black; padding: 8px;">${material.quantity}</td>
-          <td style="border: 1px solid black; padding: 8px;">${material.price} грн.</td>
-          <td style="border: 1px solid black; padding: 8px;">${(material.quantity * material.price).toFixed(2)} грн.</td>
+          <td style="border: 1px solid black; padding: 8px;">${material.salePrice > 0 ? material.salePrice : material.price} грн.</td>
+          <td style="border: 1px solid black; padding: 8px;">${(material.quantity * (material.salePrice > 0 ? material.salePrice : material.price)).toFixed(2)} грн.</td>
         </tr>
       `
         )
