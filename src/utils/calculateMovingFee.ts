@@ -1,28 +1,28 @@
 import { getDistanceMultiplier } from '@/components/ui/Accordion/DisclosureMovingPanel/utils';
 
 const MOVING_PRICE_CONFIG = {
-  PER_TON: 600,
-  PER_FLOOR: 250,
-  OLD_BUILDING_PER_FLOOR: 300,
+  PER_TON: 700,
+  PER_FLOOR: 350,
+  OLD_BUILDING_PER_FLOOR: 450,
   GIPSOKARTON: {
-    SM: { BASE: 25, PER_FLOOR: 15 },
-    MD: { BASE: 35, PER_FLOOR: 20 },
-    LG: { BASE: 40, PER_FLOOR: 30 },
+    SM: { BASE: 35, PER_FLOOR: 15 },
+    MD: { BASE: 40, PER_FLOOR: 20 },
+    LG: { BASE: 50, PER_FLOOR: 30 },
   },
   PROF: {
-    LG: { BASE: 2, PER_FLOOR: 1 },
-    XL: { BASE: 3, PER_FLOOR: 2 },
+    LG: { BASE: 3, PER_FLOOR: 1 },
+    XL: { BASE: 4.5, PER_FLOOR: 2 },
   },
   BLOCK: {
-    XS: { BASE: 8, PER_FLOOR: 3 },
-    SM: { BASE: 10, PER_FLOOR: 4.5 },
-    MD: { BASE: 15, PER_FLOOR: 6 },
-    LG: { BASE: 24, PER_FLOOR: 9 },
-    XL: { BASE: 32, PER_FLOOR: 12 },
+    XS: { BASE: 9, PER_FLOOR: 3 },
+    SM: { BASE: 12, PER_FLOOR: 4.5 },
+    MD: { BASE: 17, PER_FLOOR: 6 },
+    LG: { BASE: 28, PER_FLOOR: 9 },
+    XL: { BASE: 36, PER_FLOOR: 12 },
   },
   CEGLA: {
-    XS: { BASE: 3, PER_FLOOR: 1.7 },
-    SM: { BASE: 4, PER_FLOOR: 2 },
+    XS: { BASE: 4, PER_FLOOR: 1.7 },
+    SM: { BASE: 5, PER_FLOOR: 2 },
   },
 };
 

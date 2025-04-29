@@ -52,7 +52,7 @@ const title = 'Увага!';
 const description =
   'У вашому замовленні є матеріали, які не входять в ліфт (в таблиці виділені червоним кольором), введіть будь ласка поверх для розрахунку';
 
-const description1 = 'Мінімальна ціна виїзду вантажників 500 грн.';
+const description1 = 'Мінімальна ціна виїзду вантажників 600 грн.';
 
 const DisclosureMovingPanel: React.FunctionComponent<
   IDisclosureMovingPanelProps
@@ -484,7 +484,7 @@ const DisclosureMovingPanel: React.FunctionComponent<
         <p className="text-center mb-2">Розрахунок розвантаження</p>
         <MovingCostTable rows={visibleRows} />
       </div>
-      {totalMovingFee < 500 && (
+      {totalMovingFee < 600 && (
         <Alert
           description={description1}
           className="mt-4"

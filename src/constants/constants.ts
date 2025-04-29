@@ -5,4 +5,4 @@ export const MATERIAL_SIZE = {
   XL: 4,
 };
 
-export const PRICE_PER_TON = 500;
+export const PRICE_PER_TON = 700;

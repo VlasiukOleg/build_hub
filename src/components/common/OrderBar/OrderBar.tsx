@@ -72,9 +72,9 @@ const OrderBar: React.FC<IOrderBarProps> = ({
   };
 
   const computedMovingPrice = isMovingAddToOrder
-    ? movingPrice > 500
+    ? movingPrice > 600
       ? movingPrice
-      : 500
+      : 600
     : 0;
 
   const computedDeliveryPrice = deliveryType === 'delivery' ? deliveryPrice : 0;
@@ -140,7 +140,7 @@ const OrderBar: React.FC<IOrderBarProps> = ({
           <div className="p-1 rounded-lg  bg-white border-2 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm  xl:text-lg xl:p-2 xl:gap-2">
             <FaPeopleCarry className="size-5  xl:size-7 text-grey" />
             {isMovingAddToOrder
-              ? `${movingPrice > 500 ? movingPrice : 500} грн.`
+              ? `${movingPrice > 600 ? movingPrice : 600} грн.`
               : '----'}
           </div>
         </div>
