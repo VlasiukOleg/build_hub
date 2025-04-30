@@ -61,7 +61,9 @@ const OrderBar: React.FC<IOrderBarProps> = ({
 
   const handleOrderClear = () => {
     dispatch(clearQuantity(0));
-    dispatch(toggleMovingPriceToOrder());
+    if (isMovingAddToOrder) {
+      dispatch(toggleMovingPriceToOrder());
+    }
     dispatch(clearAdditionalMaterial());
     dispatch(clearConfigurableMaterial());
   };
