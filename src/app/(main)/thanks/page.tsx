@@ -31,9 +31,6 @@ const OrderPage: React.FC<IThanksProps> = () => {
             isOpen={isOpen}
             close={() => {
               setIsOpen(false);
-              dispatch(clearQuantity(0));
-              dispatch(toggleMovingPriceToOrder());
-              dispatch(clearAdditionalMaterial());
               router.push('/');
             }}
           >
@@ -44,15 +41,12 @@ const OrderPage: React.FC<IThanksProps> = () => {
               </h3>
               <p className="mb-8 text-center  text-light font-light tracking-[-0.02em] text-[#3B433E] xl:text-medium">
                 Ваші дані були успішно відправлені. Будь ласка, очікуйте, ми
-                звяжемося з вами найближчим часом для обговорення деталей.
+                зв&apos;яжемося з вами найближчим часом для обговорення деталей.
               </p>
               <ButtonLink
                 variant="main"
                 onClick={() => {
                   router.push('/');
-                  dispatch(clearQuantity(0));
-                  dispatch(toggleMovingPriceToOrder());
-                  dispatch(clearAdditionalMaterial());
                 }}
               >
                 На головну

@@ -8,24 +8,25 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { Button } from '@heroui/react';
 import { useRouter } from 'next/navigation';
 import { useMask } from '@react-input/mask';
-
-import { useAppSelector, useAppDispatch } from '@/redux/hooks';
-import { useForm, Controller } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-
-import sendingEmail from '@/utils/sendEmail';
-
 import DatePicker from 'react-datepicker';
 import { Input, Textarea, Select, SelectItem, Checkbox } from '@heroui/react';
-
 import { Field, Label } from '@headlessui/react';
+import { useForm, Controller } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+
+import { useAppSelector, useAppDispatch } from '@/redux/hooks';
+import { clearQuantity } from '@/redux/materialsSlice';
+import { toggleMovingPriceToOrder } from '@/redux/movingSlice';
+import { clearAdditionalMaterial } from '@/redux/additionalMaterialSlice';
+import { clearConfigurableMaterial } from '@/redux/configurableMaterialSlice';
+
+import sendingEmail from '@/utils/sendEmail';
 
 import { CiCalendar } from 'react-icons/ci';
 import styles from './orderform.module.css';
 import { useMaterials } from '@/hooks/useMaterials';
 
-// const phoneRegex = /^(0\d{9})$/;
 const phoneRegex = /^\+38 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
 
 const orderValidationSchema = yup.object({
@@ -108,8 +109,8 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
   );
 
   const { totalPrice, totalWeight } = useMaterials();
-
   const router = useRouter();
+  const dispatch = useAppDispatch();
   const {
     register,
     handleSubmit,
@@ -212,8 +213,14 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
     try {
       setIsSending(true);
       await sendingEmail(sanitizedData);
-      reset();
       router.push('/thanks');
+      reset();
+      dispatch(clearQuantity(0));
+      if (isMovingAddToOrder) {
+        dispatch(toggleMovingPriceToOrder());
+      }
+      dispatch(clearAdditionalMaterial());
+      dispatch(clearConfigurableMaterial());
     } catch (error) {
       setSendError(true);
     } finally {
