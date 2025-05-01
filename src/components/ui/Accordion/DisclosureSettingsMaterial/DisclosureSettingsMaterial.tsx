@@ -67,7 +67,6 @@ const DisclosureSettingsMaterial: React.FC<
     );
   }, [selected, material.settingList]);
 
-
   const handleSelect = (group: string, value: string) => {
     setSelected(prev => ({ ...prev, [group]: value }));
   };
@@ -208,33 +207,30 @@ const DisclosureSettingsMaterial: React.FC<
               (
                 Object.entries(material.options) as [OptionGroup, string[]][]
               ).map(([groupName, values]) => (
-                <>
-                  <div key={groupName} className="mb-1">
-                    <p className="mb-1 text-xs">
-                      {SETTINGS_MATERIAL_LABEL_LIST_MAP[groupName]}
-                    </p>
-                    <div className="flex gap-2 flex-wrap">
-                      {values.map(option => (
-                        <Button
-                          key={option}
-                          aria-label="Clear Order"
-                          onPress={() => handleSelect(groupName, option)}
-                          color="success"
-                          radius="sm"
-                          className={clsx(
-                            'min-h-7 h-7 px-1 min-w-16 text-xs xl:text-sm xl:p-2',
-                            selected[groupName] === option
-                              ? 'bg-gray-100 text-accent font-semibold border-2 border-accent'
-                              : 'bg-gray-100 border-1 border-gray-300 text-gray-500'
-                          )}
-                        >
-                          {option}
-                        </Button>
-                      ))}
-                    </div>
+                <div key={groupName} className="mb-1">
+                  <p className="mb-1 text-xs">
+                    {SETTINGS_MATERIAL_LABEL_LIST_MAP[groupName]}
+                  </p>
+                  <div className="flex gap-2 flex-wrap">
+                    {values.map(option => (
+                      <Button
+                        key={option}
+                        aria-label="Clear Order"
+                        onPress={() => handleSelect(groupName, option)}
+                        color="success"
+                        radius="sm"
+                        className={clsx(
+                          'min-h-7 h-7 px-1 min-w-16 text-xs xl:text-sm xl:p-2',
+                          selected[groupName] === option
+                            ? 'bg-gray-100 text-accent font-semibold border-2 border-accent'
+                            : 'bg-gray-100 border-1 border-gray-300 text-gray-500'
+                        )}
+                      >
+                        {option}
+                      </Button>
+                    ))}
                   </div>
-                  <Divider orientation="vertical" />
-                </>
+                </div>
               ))}
           </div>
 

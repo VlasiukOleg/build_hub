@@ -83,7 +83,6 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
     }
   };
 
-
   if (!subCategoriesBySlug) {
     return null;
   }
@@ -95,7 +94,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
         className="mb-4 px-1 max-w-full w-full h-full md:w-[760px] xl:w-[1200px]"
         itemClasses={{ content: 'pb-4' }}
         selectionMode="multiple"
-        defaultExpandedKeys={["4.1", "1.1"]}
+        defaultExpandedKeys={['4.1', '1.1']}
       >
         {subCategoriesBySlug.map((subCategory, catInd) => {
           return (
@@ -129,7 +128,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
                   if (material.settingList?.length > 0) {
                     return (
                       <DisclosureSettingsMaterial
-                        key={matInd}
+                        key={material.id}
                         material={material}
                         categoryTitle={subCategory.categoryTitle}
                       />
@@ -138,7 +137,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
                   if (material.configurableList?.length === 0) {
                     return (
                       <DisclosureMaterialsPanel
-                        key={matInd}
+                        key={material.id}
                         material={material}
                         totalMaterialPrice={totalMaterialPrice}
                         catInd={catInd}
@@ -152,7 +151,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
                   } else {
                     return (
                       <DisclosureConfigurableMaterialPanel
-                        key={matInd}
+                        key={material.id}
                         material={material}
                         categoryTitle={subCategory.categoryTitle}
                       />
