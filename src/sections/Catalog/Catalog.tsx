@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import CatalogCard from '@/components/ui/CatalogCard';
-import { Breadcrumbs, BreadcrumbItem, Button } from '@heroui/react';
+import { Breadcrumbs, BreadcrumbItem, Button, Tabs, Tab } from '@heroui/react';
 
 import { useAppSelector } from '@/redux/hooks';
 
@@ -13,6 +13,8 @@ import Kladka from '@/../public/images/kladka.webp';
 import Shpaklivka from '@/../public/images/spackling.jpg';
 import Uteplenya from '@/../public/images/Uteplenie-450x300.jpg';
 import Plytka from '@/../public/images/ukladannia-plytky-450x300.webp';
+
+import Dveri from '@/../public/images/skritiy-korob-farbovana-bez-obrlada1.jpg.webp';
 
 import { Pages } from '@/@types';
 
@@ -60,6 +62,51 @@ const catalog = [
     href: 'kladka',
   },
 ];
+
+// const catalogChornovi = [
+//   {
+//     id: 1,
+//     text: 'Двері',
+//     img: Dveri,
+//     href: '',
+//   },
+//   {
+//     id: 2,
+//     text: 'Ламінат',
+//     img: Gipsokarton,
+//     href: '',
+//   },
+//   {
+//     id: 3,
+//     text: 'Плитка',
+//     img: Shpaklivka,
+//     href: '',
+//   },
+//   {
+//     id: 4,
+//     text: 'Натяжні стелі',
+//     img: Uteplenya,
+//     href: '',
+//   },
+//   {
+//     id: 5,
+//     text: 'Стяжка. Цемент. Пісок',
+//     img: Styazhka,
+//     href: '',
+//   },
+//   {
+//     id: 6,
+//     text: 'Плиточні роботи',
+//     img: Plytka,
+//     href: '',
+//   },
+//   {
+//     id: 7,
+//     text: 'Кладочні роботи',
+//     img: Kladka,
+//     href: '',
+//   },
+// ];
 
 interface ICatalogProps {}
 
@@ -111,6 +158,41 @@ const Catalog: React.FC<ICatalogProps> = ({}) => {
             />
           ))}
         </ul>
+        {/* <Tabs color="primary" size="sm">
+          <Tab key="chornovi" title="Чорнові матеріали">
+            <h1 className="font-unbounded xl:text-2xl font-bold text-center mb-5  md:text-lg">
+              Для замовлення будматеріалів оберіть потрібну Вам категорію
+              будівельних робіт
+            </h1>
+            <ul className="flex justify-center flex-wrap gap-5 uppercase font-medium text-xl md:text-base">
+              {catalog.map(item => (
+                <CatalogCard
+                  id={item.id}
+                  key={item.id}
+                  img={item.img}
+                  text={item.text}
+                  href={item.href}
+                />
+              ))}
+            </ul>
+          </Tab>
+          <Tab key="chistovi" title="Чистові матеріали">
+            <h1 className="font-unbounded xl:text-2xl font-bold text-center mb-5  md:text-lg">
+              Для замовлення матеріалів оберіть потрібну Вам категорію
+            </h1>
+            <ul className="flex justify-center flex-wrap gap-5 uppercase font-medium text-xl md:text-base">
+              {catalogChornovi.map(item => (
+                <CatalogCard
+                  id={item.id}
+                  key={item.id}
+                  img={item.img}
+                  text={item.text}
+                  href={item.href}
+                />
+              ))}
+            </ul>
+          </Tab>
+        </Tabs> */}
       </div>
     </section>
   );
