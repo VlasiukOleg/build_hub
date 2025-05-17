@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://budstock.com.ua/sitemap.xml
+Sitemap: https://lum.net.ua/sitemap.xml

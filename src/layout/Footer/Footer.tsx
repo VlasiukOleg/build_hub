@@ -13,7 +13,7 @@ const Footer: React.FunctionComponent<IFooterProps> = props => {
   return (
     <footer className="border-t-[1px] border-accent">
       <div className="container text-center py-3 text-sm md:text-lg xl:text-xl">
-        <div>©BudStock 2020-2025 всі права захищені</div>
+        <div>©LUM 2020-2025 всі права захищені</div>
         <div>
           {!isPolicyPage ? (
             <Link
