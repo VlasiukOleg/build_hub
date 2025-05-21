@@ -15,6 +15,8 @@ import Uteplenya from '@/../public/images/Uteplenie-450x300.jpg';
 import Plytka from '@/../public/images/ukladannia-plytky-450x300.webp';
 
 import Dveri from '@/../public/images/skritiy-korob-farbovana-bez-obrlada1.jpg.webp';
+import Pidloga from '@/../public/images/ilgp40273_1.jpg';
+import Laminat from '@/../public/images/image_6818cb50355b7.jpg';
 
 import { Pages } from '@/@types';
 
@@ -63,50 +65,50 @@ const catalog = [
   },
 ];
 
-// const catalogChornovi = [
-//   {
-//     id: 1,
-//     text: 'Двері',
-//     img: Dveri,
-//     href: '',
-//   },
-//   {
-//     id: 2,
-//     text: 'Ламінат',
-//     img: Gipsokarton,
-//     href: '',
-//   },
-//   {
-//     id: 3,
-//     text: 'Плитка',
-//     img: Shpaklivka,
-//     href: '',
-//   },
-//   {
-//     id: 4,
-//     text: 'Натяжні стелі',
-//     img: Uteplenya,
-//     href: '',
-//   },
-//   {
-//     id: 5,
-//     text: 'Стяжка. Цемент. Пісок',
-//     img: Styazhka,
-//     href: '',
-//   },
-//   {
-//     id: 6,
-//     text: 'Плиточні роботи',
-//     img: Plytka,
-//     href: '',
-//   },
-//   {
-//     id: 7,
-//     text: 'Кладочні роботи',
-//     img: Kladka,
-//     href: '',
-//   },
-// ];
+const catalogChornovi = [
+  {
+    id: 1,
+    text: 'Двері',
+    img: Dveri,
+    href: '',
+  },
+  {
+    id: 2,
+    text: 'Вінілова підлога',
+    img: Pidloga,
+    href: '',
+  },
+  {
+    id: 3,
+    text: 'Ламінат',
+    img: Laminat,
+    href: '',
+  },
+  {
+    id: 4,
+    text: 'Натяжні стелі',
+    img: Uteplenya,
+    href: '',
+  },
+  {
+    id: 5,
+    text: 'Стяжка. Цемент. Пісок',
+    img: Styazhka,
+    href: '',
+  },
+  {
+    id: 6,
+    text: 'Плиточні роботи',
+    img: Plytka,
+    href: '',
+  },
+  {
+    id: 7,
+    text: 'Кладочні роботи',
+    img: Kladka,
+    href: '',
+  },
+];
 
 interface ICatalogProps {}
 
@@ -158,7 +160,11 @@ const Catalog: React.FC<ICatalogProps> = ({}) => {
             />
           ))}
         </ul>
-        {/* <Tabs color="primary" size="sm">
+        {/* <Tabs
+          color="primary"
+          size="md"
+          className="flex justify-center items-center"
+        >
           <Tab key="chornovi" title="Чорнові матеріали">
             <h1 className="font-unbounded xl:text-2xl font-bold text-center mb-5  md:text-lg">
               Для замовлення будматеріалів оберіть потрібну Вам категорію
