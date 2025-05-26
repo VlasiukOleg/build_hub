@@ -131,7 +131,7 @@ const ResetViewControl = ({ position }: { position: LatLngTuple }) => {
   );
 };
 
-const position: LatLngTuple = [50.4501, 30.5234];
+// const position: LatLngTuple = [50.4501, 30.5234];
 
 const CITY_CENTERS = {
   kiev: [50.4501, 30.5234] as LatLngTuple,
@@ -142,6 +142,8 @@ const StorageMap: React.FC<IStorageMapProps> = ({}) => {
   // const [isOpen, setIsOpen] = useState(false);
 
   const city = useAppSelector(state => state.city.city);
+
+  const position: LatLngTuple = CITY_CENTERS[city as keyof typeof CITY_CENTERS];
 
   const [selectedStore, setSelectedStore] = useState('');
   const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
