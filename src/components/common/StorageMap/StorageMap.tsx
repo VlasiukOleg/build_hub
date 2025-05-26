@@ -141,15 +141,16 @@ const CITY_CENTERS = {
 const StorageMap: React.FC<IStorageMapProps> = ({}) => {
   // const [isOpen, setIsOpen] = useState(false);
 
-  const cityStore = useAppSelector(state => state.city.city);
+  const city = useAppSelector(state => state.city.city);
 
   const [selectedStore, setSelectedStore] = useState('');
   const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
 
   type CityKey = keyof typeof CITY_CENTERS;
 
-  const [city, setCity] = useState<CityKey>(cityStore as CityKey);
-  const [position, setPosition] = useState<LatLngTuple>(CITY_CENTERS[city]);
+  const [position, setPosition] = useState<LatLngTuple>(
+    CITY_CENTERS[city as keyof typeof CITY_CENTERS]
+  );
 
   const router = useRouter();
   const searchParams = useSearchParams();
