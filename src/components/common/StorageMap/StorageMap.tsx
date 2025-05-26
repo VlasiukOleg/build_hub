@@ -131,7 +131,7 @@ const ResetViewControl = ({ position }: { position: LatLngTuple }) => {
   );
 };
 
-// const position: LatLngTuple = [50.4501, 30.5234];
+const position: LatLngTuple = [50.4501, 30.5234];
 
 const CITY_CENTERS = {
   kiev: [50.4501, 30.5234] as LatLngTuple,
@@ -148,9 +148,9 @@ const StorageMap: React.FC<IStorageMapProps> = ({}) => {
 
   type CityKey = keyof typeof CITY_CENTERS;
 
-  const [position, setPosition] = useState<LatLngTuple>(
-    CITY_CENTERS[city as keyof typeof CITY_CENTERS]
-  );
+  // const [position, setPosition] = useState<LatLngTuple>(
+  //   CITY_CENTERS[city as keyof typeof CITY_CENTERS]
+  // );
 
   const router = useRouter();
   const searchParams = useSearchParams();
