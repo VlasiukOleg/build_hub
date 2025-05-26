@@ -43,11 +43,12 @@ import {
 interface IDisclosureSettingsMaterialProps {
   material: Material;
   categoryTitle: string;
+  city: string;
 }
 
 const DisclosureSettingsMaterial: React.FC<
   IDisclosureSettingsMaterialProps
-> = ({ material, categoryTitle }) => {
+> = ({ material, categoryTitle, city }) => {
   const [gazoblokQuantity, setGazoblokQuantity] = useState<string>('0');
   const [gazoblokEditModeQuantity, setGazoblokEditModeQuantity] =
     useState<string>('0');
@@ -66,6 +67,11 @@ const DisclosureSettingsMaterial: React.FC<
       )
     );
   }, [selected, material.settingList]);
+
+  console.log(selectedVariant);
+
+  const selectedVariantPriceByCity =
+    city === 'kiev' ? selectedVariant?.price : selectedVariant?.priceLviv;
 
   const handleSelect = (group: string, value: string) => {
     setSelected(prev => ({ ...prev, [group]: value }));
@@ -128,7 +134,7 @@ const DisclosureSettingsMaterial: React.FC<
             title: `${material.title} ${Object.values(selected).join(', ')}`,
             key: selectedVariant.key,
             quantity: Number(gazoblokQuantity),
-            price: Number(selectedVariant.price),
+            price: Number(selectedVariantPriceByCity),
             volume: Number(selectedVariant.volume),
             weight: Number(selectedVariant.weight),
             image: material.image,
@@ -315,8 +321,8 @@ const DisclosureSettingsMaterial: React.FC<
                 {material.measure ? (
                   <div className=" text-grey font-semibold  md:text-base xl:text-xl">
                     <div className="flex items-center gap-1">
-                      {selectedVariant?.price ? (
-                        `Ціна: ${selectedVariant?.price.toFixed(2)} грн.`
+                      {selectedVariantPriceByCity ? (
+                        `Ціна: ${selectedVariantPriceByCity.toFixed(2)} грн.`
                       ) : (
                         <span className="text-xs text-red-500">
                           Немає в наявності
@@ -331,8 +337,8 @@ const DisclosureSettingsMaterial: React.FC<
                 ) : (
                   <div className=" text-grey font-semibold  md:text-base xl:text-xl">
                     <div className="flex items-center gap-1">
-                      {selectedVariant?.price ? (
-                        `Ціна: ${selectedVariant?.price.toFixed(2)} грн.`
+                      {selectedVariantPriceByCity ? (
+                        `Ціна: ${selectedVariantPriceByCity.toFixed(2)} грн.`
                       ) : (
                         <span className="text-xs text-red-500">
                           Немає в наявності
@@ -344,7 +350,7 @@ const DisclosureSettingsMaterial: React.FC<
                 <div className="bg-bgWhite text-grey  font-semibold text-center hidden md:block md:font-normal md:text-base  xl:text-xl">
                   {material.salePrice > 0
                     ? `Всього: ${(material.salePrice * material.quantity).toFixed(2)} грн.`
-                    : `Всього: ${selectedVariant?.price && (selectedVariant?.price * Number(gazoblokQuantity)).toFixed(2)} грн.`}
+                    : `Всього: ${selectedVariantPriceByCity && (selectedVariantPriceByCity * Number(gazoblokQuantity)).toFixed(2)} грн.`}
                 </div>
                 <Button
                   aria-label="Clear Order"

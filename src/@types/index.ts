@@ -38,6 +38,8 @@ export interface ConfigurableItem {
   key: string;
   price: number;
   salePrice: number;
+  priceLviv: number;
+  salePriceLviv: number;
   weight: number;
   volume: number;
   movingTypeCalculation: string;
@@ -48,6 +50,8 @@ export interface MaterialSetting {
   key: string;
   price: number;
   salePrice: number;
+  priceLviv: number;
+  salePriceLviv: number;
   weight: number;
   volume: number;
   movingTypeCalculation: string;
@@ -60,7 +64,9 @@ export interface Material {
   description: string;
   weight: number;
   price: number;
+  priceLviv: number;
   salePrice: number;
+  salePriceLviv: number;
   quantity: number;
   totalPrice: number;
   volume: number;

@@ -3,7 +3,8 @@
 import React, { useState, useRef } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import dynamic from 'next/dynamic';
-import { Button, useDisclosure } from '@heroui/react';
+
+import { Button, useDisclosure, Tabs, Tab, Chip } from '@heroui/react';
 import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet';
 import { useMap } from 'react-leaflet/hooks';
 import { LatLngTuple } from 'leaflet';
@@ -65,28 +66,29 @@ const storages: Storage[] = [
   {
     id: 4,
     location: 'Склад Бориспільська',
-    coordinates: [50.43014, 30.66100], // Координаты для "Бориспольска 14"
+    coordinates: [50.43014, 30.661], // Координаты для "Бориспольска 14"
   },
   {
-    id:5,
+    id: 5,
     location: 'Склад Берковецька',
     coordinates: [50.49336, 30.34126], // Координаты для Берковецька
   },
   {
-    id:6,
+    id: 6,
     location: 'Склад Вишневе',
     coordinates: [50.382029, 30.339611], // Координаты для Берковецька
   },
   {
-    id:7,
+    id: 7,
     location: 'Склад Бровари',
     coordinates: [50.483656, 30.760903], // Координаты для Берковецька
   },
-  
-
+  {
+    id: 8,
+    location: 'Склад Городоцька',
+    coordinates: [49.822071, 23.925747], // Координаты для "Львов, ул. Городоцька, 367А"
+  },
 ];
-
-
 
 const ResetViewControl = ({ position }: { position: LatLngTuple }) => {
   const map = useMap();
@@ -129,12 +131,25 @@ const ResetViewControl = ({ position }: { position: LatLngTuple }) => {
   );
 };
 
-const position: LatLngTuple = [50.4501, 30.5234];
+// const position: LatLngTuple = [50.4501, 30.5234];
 
-const StorageMap: React.FC<IStorageMapProps> = () => {
+const CITY_CENTERS = {
+  kiev: [50.4501, 30.5234] as LatLngTuple,
+  lviv: [49.8397, 24.0297] as LatLngTuple,
+};
+
+const StorageMap: React.FC<IStorageMapProps> = ({}) => {
   // const [isOpen, setIsOpen] = useState(false);
+
+  const cityStore = useAppSelector(state => state.city.city);
+
   const [selectedStore, setSelectedStore] = useState('');
   const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
+
+  type CityKey = keyof typeof CITY_CENTERS;
+
+  const [city, setCity] = useState<CityKey>(cityStore as CityKey);
+  const [position, setPosition] = useState<LatLngTuple>(CITY_CENTERS[city]);
 
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -155,6 +170,14 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
     setSelectedStore(location);
     if (popupElRef.current) {
       popupElRef.current._closeButton.click();
+    }
+  };
+
+  const handleCityChange = (newCity: 'kiev' | 'lviv') => {
+    if (newCity === 'lviv') {
+      window.location.href = `http://lviv.lum.net.ua${window.location.pathname}`;
+    } else {
+      window.location.href = `http://lum.net.ua${window.location.pathname}`;
     }
   };
 
@@ -187,9 +210,65 @@ const StorageMap: React.FC<IStorageMapProps> = () => {
 
   return (
     <section className="py-5 md:py-8 text-center">
-      <h1 className="font-unbounded xl:text-2xl font-bold text-center mb-5 md:mb-8 md:text-lg">
-        Оберіть найближчий до Вас склад завантаження
+      <h1 className="font-unbounded xl:text-2xl font-bold text-center mb-2 md:mb-8 md:text-lg">
+        Оберіть місто та зручний для Вас склад завантаження
       </h1>
+      <div className="mb-2 mx-auto">
+        <Tabs
+          aria-label="Options"
+          selectedKey={city}
+          onSelectionChange={key => handleCityChange(key as 'kiev' | 'lviv')}
+          classNames={{
+            tabList:
+              'gap-6 w-full relative rounded-none p-0 border-b border-divider',
+            cursor: 'w-full bg-accent',
+            tabContent: 'group-data-[selected=true]:text-accent',
+          }}
+          color="primary"
+          variant="underlined"
+        >
+          <Tab
+            key="kiev"
+            title={
+              <div className="flex items-center space-x-2">
+                <span>Київ</span>
+                <Chip
+                  size="sm"
+                  variant="bordered"
+                  classNames={{
+                    base:
+                      city === 'kiev'
+                        ? 'bg-accent text-bgWhite'
+                        : 'bg-white text-foreground',
+                  }}
+                >
+                  7
+                </Chip>
+              </div>
+            }
+          />
+          <Tab
+            key="lviv"
+            title={
+              <div className="flex items-center space-x-2">
+                <span>Львів</span>
+                <Chip
+                  size="sm"
+                  variant="bordered"
+                  classNames={{
+                    base:
+                      city === 'lviv'
+                        ? 'bg-accent text-bgWhite'
+                        : 'bg-white text-foreground',
+                  }}
+                >
+                  1
+                </Chip>
+              </div>
+            }
+          />
+        </Tabs>
+      </div>
       <MapContainer
         center={position}
         zoom={10}

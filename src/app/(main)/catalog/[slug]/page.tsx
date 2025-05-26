@@ -10,9 +10,9 @@ interface IPageProps {
   params: { slug: Pages };
 }
 
-export const dynamicParams = false;
-export const dynamic = 'error';
-export const revalidate = false;
+// export const dynamicParams = false;
+// export const dynamic = 'error';
+// export const revalidate = false;
 
 export function generateStaticParams() {
   return data.materialSlugs.map(slug => {

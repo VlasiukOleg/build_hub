@@ -15,6 +15,7 @@ import AccordionItemAdditionalSubTitle from './AccordionItemAdditionalSubTitle';
 
 import { useMaterials } from '@/hooks/useMaterials';
 import { useAppDispatch } from '@/redux/hooks';
+import { useAppSelector } from '@/redux/hooks';
 import { inputChangeQuantity, changeQuantity } from '@/redux/materialsSlice';
 
 import { LiaLuggageCartSolid } from 'react-icons/lia';
@@ -36,6 +37,8 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
   const { subCategoriesBySlug } = useMaterials(slug);
 
   const dispatch = useAppDispatch();
+
+  const city = useAppSelector(state => state.city.city);
 
   const handleInputChangeQuantity = (
     e: React.ChangeEvent<HTMLInputElement>,
@@ -123,14 +126,16 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
             >
               <div className="flex flex-col gap-3">
                 {subCategory.materials.map((material, matInd) => {
-                  const { quantity, price } = material;
-                  const totalMaterialPrice = quantity * price;
+                  const { quantity, price, priceLviv } = material;
+                  const priceByCity = city === 'kiev' ? price : priceLviv;
+                  const totalMaterialPrice = quantity * priceByCity;
                   if (material.settingList?.length > 0) {
                     return (
                       <DisclosureSettingsMaterial
                         key={material.id}
                         material={material}
                         categoryTitle={subCategory.categoryTitle}
+                        city={city}
                       />
                     );
                   }
@@ -139,13 +144,13 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
                       <DisclosureMaterialsPanel
                         key={material.id}
                         material={material}
-                        totalMaterialPrice={totalMaterialPrice}
                         catInd={catInd}
                         matInd={matInd}
                         handleButtonChangeQuantity={handleButtonChangeQuantity}
                         handleInputChangeQuantity={handleInputChangeQuantity}
                         handleFocus={handleFocus}
                         handleBlur={handleBlur}
+                        city={city}
                       />
                     );
                   } else {
@@ -154,6 +159,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
                         key={material.id}
                         material={material}
                         categoryTitle={subCategory.categoryTitle}
+                        city={city}
                       />
                     );
                   }
@@ -166,63 +172,106 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
       <h2 className="font-unbounded xl:text-2xl font-bold text-center mb-5  md:text-lg">
         Додаткові можливості
       </h2>
-      <Accordion
-        variant="splitted"
-        className="mb-4 max-w-full w-full h-full md:w-[760px] xl:w-[1200px]"
-        itemClasses={{ content: 'pb-4' }}
-      >
-        <AccordionItem
-          key="add"
-          className="bg-slate-50 relative"
-          classNames={{ title: 'text-sm md:text-base' }}
-          startContent={
-            <Avatar
-              icon={<FaPlus />}
-              className="w-5 h-5 bg-accent text-xs md:size-6 md:text-sm xl:size-7 xl:text-base"
-              radius="sm"
-              color="primary"
-            />
-          }
-          title="Додати матеріал"
-          subtitle={<AccordionItemAdditionalSubTitle />}
+      {city === 'kiev' ? (
+        <Accordion
+          variant="splitted"
+          className="mb-4 max-w-full w-full h-full md:w-[760px] xl:w-[1200px]"
+          itemClasses={{ content: 'pb-4' }}
         >
-          <DisclosureAddMaterialsPanel />
-        </AccordionItem>
-        <AccordionItem
-          key="moving"
-          title="Розвантаження"
-          className="bg-slate-50"
-          classNames={{ title: 'text-sm md:text-base' }}
-          keepContentMounted
-          startContent={
-            <Avatar
-              icon={<LiaLuggageCartSolid />}
-              className="w-5 h-5 bg-accent text-base md:size-6 md:text-base xl:size-7 xl:text-xl"
-              radius="sm"
-              color="primary"
-            />
-          }
+          <AccordionItem
+            key="add"
+            className="bg-slate-50 relative"
+            classNames={{ title: 'text-sm md:text-base' }}
+            startContent={
+              <Avatar
+                icon={<FaPlus />}
+                className="w-5 h-5 bg-accent text-xs md:size-6 md:text-sm xl:size-7 xl:text-base"
+                radius="sm"
+                color="primary"
+              />
+            }
+            title="Додати матеріал"
+            subtitle={<AccordionItemAdditionalSubTitle />}
+          >
+            <DisclosureAddMaterialsPanel />
+          </AccordionItem>
+          <AccordionItem
+            key="moving"
+            title="Розвантаження"
+            className="bg-slate-50"
+            classNames={{ title: 'text-sm md:text-base' }}
+            keepContentMounted
+            startContent={
+              <Avatar
+                icon={<LiaLuggageCartSolid />}
+                className="w-5 h-5 bg-accent text-base md:size-6 md:text-base xl:size-7 xl:text-xl"
+                radius="sm"
+                color="primary"
+              />
+            }
+          >
+            <DisclosureMovingPanel />
+          </AccordionItem>
+          <AccordionItem
+            key="delivery"
+            keepContentMounted
+            className="bg-slate-50"
+            classNames={{ title: 'text-sm md:text-base' }}
+            title="Доставка"
+            startContent={
+              <Avatar
+                icon={<TbTruckDelivery />}
+                className="w-5 h-5 bg-accent text-base md:size-6 md:text-base xl:size-7 xl:text-xl"
+                radius="sm"
+                color="primary"
+              />
+            }
+          >
+            <DisclosureDeliveryPanel totalWeight={totalWeight} />
+          </AccordionItem>
+        </Accordion>
+      ) : (
+        <Accordion
+          variant="splitted"
+          className="mb-4 max-w-full w-full h-full md:w-[760px] xl:w-[1200px]"
+          itemClasses={{ content: 'pb-4' }}
         >
-          <DisclosureMovingPanel />
-        </AccordionItem>
-        <AccordionItem
-          key="delivery"
-          keepContentMounted
-          className="bg-slate-50"
-          classNames={{ title: 'text-sm md:text-base' }}
-          title="Доставка"
-          startContent={
-            <Avatar
-              icon={<TbTruckDelivery />}
-              className="w-5 h-5 bg-accent text-base md:size-6 md:text-base xl:size-7 xl:text-xl"
-              radius="sm"
-              color="primary"
-            />
-          }
-        >
-          <DisclosureDeliveryPanel totalWeight={totalWeight} />
-        </AccordionItem>
-      </Accordion>
+          <AccordionItem
+            key="add"
+            className="bg-slate-50 relative"
+            classNames={{ title: 'text-sm md:text-base' }}
+            startContent={
+              <Avatar
+                icon={<FaPlus />}
+                className="w-5 h-5 bg-accent text-xs md:size-6 md:text-sm xl:size-7 xl:text-base"
+                radius="sm"
+                color="primary"
+              />
+            }
+            title="Додати матеріал"
+            subtitle={<AccordionItemAdditionalSubTitle />}
+          >
+            <DisclosureAddMaterialsPanel />
+          </AccordionItem>
+          <AccordionItem
+            key="delivery"
+            keepContentMounted
+            className="bg-slate-50"
+            classNames={{ title: 'text-sm md:text-base' }}
+            title="Доставка"
+            startContent={
+              <Avatar
+                icon={<TbTruckDelivery />}
+                className="w-5 h-5 bg-accent text-base md:size-6 md:text-base xl:size-7 xl:text-xl"
+                radius="sm"
+                color="primary"
+              />
+            }
+          >
+            <DisclosureDeliveryPanel totalWeight={totalWeight} />
+          </AccordionItem>
+        </Accordion>
+      )}
     </>
   );
 };

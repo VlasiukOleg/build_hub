@@ -40,11 +40,12 @@ import { CONFIGURABLE_MATERIAL_LIST_SELECT_PLACEHOLDER_TEXT_MAP } from '@/data/c
 interface IDisclosureAddMaterialsPanelProps {
   material: Material;
   categoryTitle: string;
+  city: string;
 }
 
 const DisclosureAddMaterialsPanel: React.FC<
   IDisclosureAddMaterialsPanelProps
-> = ({ material, categoryTitle }) => {
+> = ({ material, categoryTitle, city }) => {
   const [gazoblokSize, setGazoblokSize] = useState<string>('');
   const [gazoblokKey, setGazoblokKey] = useState<string>('');
   const [gazoblokPrice, setGazoblokPrice] = useState<number>(0);
@@ -79,6 +80,8 @@ const DisclosureAddMaterialsPanel: React.FC<
 
   const dispatch = useAppDispatch();
 
+  const priceByCity = city === 'kiev' ? material.price : material.priceLviv;
+
   const configurableMaterialList = useAppSelector(
     state => state.configurableMaterial.configurableMaterial
   );
@@ -93,11 +96,15 @@ const DisclosureAddMaterialsPanel: React.FC<
       item => item.key === e.target.value
     );
 
+    console.log(selectedGazoblok);
+
     if (selectedGazoblok) {
+      const selectedGazoblokPriceByCity =
+        city === 'kiev' ? selectedGazoblok.price : selectedGazoblok.priceLviv;
       setGazoblokPrice(
         selectedGazoblok.salePrice > 0
           ? selectedGazoblok.salePrice
-          : selectedGazoblok.price
+          : selectedGazoblokPriceByCity
       );
       setGazoblokSize(selectedGazoblok.label);
       setGazoblokVolume(selectedGazoblok.volume);
@@ -166,6 +173,8 @@ const DisclosureAddMaterialsPanel: React.FC<
     configurableMaterial =>
       configurableMaterialKeys?.includes(configurableMaterial.key)
   );
+
+  console.log(filteredConfigurableList);
 
   return (
     <div className="text-sm/5 text-grey md:text-lg xl:text-xl">

@@ -17,7 +17,7 @@ interface IDisclosureMaterialsPanelProps {
   material: Material;
   catInd: number;
   matInd: number;
-  totalMaterialPrice: number;
+  city: string;
   handleButtonChangeQuantity: (
     catInd: number,
     matInd: number,
@@ -36,13 +36,15 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
   material,
   catInd,
   matInd,
+  city,
   handleButtonChangeQuantity,
   handleInputChangeQuantity,
-  totalMaterialPrice,
   handleFocus,
   handleBlur,
 }) => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
+  const priceByCity = city === 'kiev' ? material.price : material.priceLviv;
 
   return (
     <Card>
@@ -94,7 +96,7 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
               <div>
                 <p className="flex no-wrap gap-1 text-xs  text-grey md:text-sm font-semibold">
                   <span className=" line-through">
-                    Ціна: {material.price} грн.
+                    Ціна: {priceByCity} грн.
                   </span>
                 </p>
                 <div className="flex no-wrap  text-grey gap-1  xl:text-lg font-semibold">
@@ -109,7 +111,7 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
               </div>
             ) : (
               <div className=" text-grey font-semibold flex items-center gap-1 md:text-base xl:text-xl">
-                Ціна: {material.price} грн.
+                Ціна: {priceByCity} грн.
               </div>
             )}
             <div className="flex items-center justify-between md:mb-0">
@@ -153,7 +155,7 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
             <div className="bg-bgWhite text-grey  font-semibold text-center hidden md:block md:font-normal md:text-base  xl:text-xl">
               {material.salePrice > 0
                 ? `Всього: ${(material.salePrice * material.quantity).toFixed(2)} грн.`
-                : `Всього: ${totalMaterialPrice.toFixed(2)} грн.`}
+                : `Всього: ${(priceByCity * material.quantity).toFixed(2)} грн.`}
             </div>
           </div>
         </div>
@@ -163,7 +165,7 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
         <div className="bg-bgWhite text-grey  font-semibold text-center w-full rounded-lg border-[1px] border-accent p-2 md:hidden md:text-lg xl:w-full xl:text-xl xl:p-3">
           {material.salePrice > 0
             ? `Всього: ${(material.salePrice * material.quantity).toFixed(2)} грн.`
-            : `Всього: ${totalMaterialPrice.toFixed(2)} грн.`}
+            : `Всього: ${(priceByCity * material.quantity).toFixed(2)} грн.`}
         </div>
       </CardFooter>
       <MaterialDrawer

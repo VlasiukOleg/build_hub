@@ -7,6 +7,7 @@ import { materialsReducer } from './materialsSlice';
 import { movingReducer } from './movingSlice';
 import { additionalMaterialReducer } from './additionalMaterialSlice';
 import { configurableMaterialReducer } from './configurableMaterialSlice';
+import { cityReducer } from './citySlice';
 
 const persistConfig = {
   key: 'root',
@@ -16,6 +17,7 @@ const persistConfig = {
     'moving',
     'additionalMaterial',
     'configurableMaterial',
+    'city',
   ],
 };
 
@@ -25,6 +27,7 @@ const rootReducer = combineReducers({
   moving: movingReducer,
   additionalMaterial: additionalMaterialReducer,
   configurableMaterial: configurableMaterialReducer,
+  city: cityReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

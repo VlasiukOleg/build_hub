@@ -15,6 +15,8 @@ import { useAppSelector } from '@/redux/hooks';
 
 import { Pages, BREADCRUMBS_LABEL } from '@/@types';
 
+import { IoLocationSharp } from 'react-icons/io5';
+
 interface IAccordionCategoriesProps {
   slug: Pages;
 }
@@ -26,6 +28,7 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
   const deliveryStorage = useAppSelector(
     state => state.delivery.deliveryStorage
   );
+  const city = useAppSelector(state => state.city.city);
   const deliveryType = useAppSelector(state => state.delivery.deliveryType);
   const movingPrice = useAppSelector(state => state.moving.movingPrice);
   const isMovingAddToOrder = useAppSelector(
@@ -80,12 +83,30 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
             totalQuantity > 0 && 'pt-[95px]  md:pt-[65px] xl:pt-[75px]'
           )}
         >
-          <Breadcrumbs className="mb-2">
-            <BreadcrumbItem href={`/${Pages.CATALOG}`}>Каталог</BreadcrumbItem>
-            <BreadcrumbItem href="/catalog/slug">
-              {BREADCRUMBS_LABEL[slug]}
-            </BreadcrumbItem>
-          </Breadcrumbs>
+          <div className="flex items-center justify-between mb-2">
+            <Breadcrumbs>
+              <BreadcrumbItem href={`/${Pages.CATALOG}`}>
+                Каталог
+              </BreadcrumbItem>
+              <BreadcrumbItem href="/catalog/slug">
+                {BREADCRUMBS_LABEL[slug]}
+              </BreadcrumbItem>
+            </Breadcrumbs>
+            <Button
+              type="submit"
+              size="sm"
+              className="font-medium min-h-5 text-sm"
+              radius="sm"
+              onPress={handleStorageClick}
+              startContent={
+                <IoLocationSharp className="size-4 text-danger-500" />
+              }
+              variant="light"
+            >
+              {city === 'lviv' ? 'Львів' : 'Київ'}
+            </Button>
+          </div>
+
           {!deliveryStorage && (
             <div className="flex  mb-2">
               <Button
@@ -101,7 +122,8 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
             </div>
           )}
           <h1 className="font-unbounded text-sm xl:text-xl font-bold text-center mb-5  md:text-lg">
-            {title}
+            {title}{' '}
+            {city === 'kiev' ? 'в Києві та області' : 'у Львові та області'}
           </h1>
           <AccordionSubCategoryList slug={slug} totalWeight={totalWeight} />
           <div className="text-center">

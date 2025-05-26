@@ -393,7 +393,12 @@
               "thickness": "0.25"
             },
             "options": {
-              "thickness": ["0.2", "0.25", "0.3", "0.35"]
+              "thickness": [
+                "0.2",
+                "0.25",
+                "0.3",
+                "0.35"
+              ]
             },
             "settingList": [
               {
@@ -471,7 +476,12 @@
               "thickness": "0.25"
             },
             "options": {
-              "thickness": ["0.2", "0.25", "0.3", "0.35"]
+              "thickness": [
+                "0.2",
+                "0.25",
+                "0.3",
+                "0.35"
+              ]
             },
             "settingList": [
               {
@@ -893,8 +903,14 @@
               "length": "20"
             },
             "options": {
-              "width": ["38", "48"],
-              "length": ["20", "40"]
+              "width": [
+                "38",
+                "48"
+              ],
+              "length": [
+                "20",
+                "40"
+              ]
             },
             "settingList": [
               {
@@ -983,7 +999,11 @@
               "length": "2.5"
             },
             "options": {
-              "length": ["2", "2.5", "3"]
+              "length": [
+                "2",
+                "2.5",
+                "3"
+              ]
             },
             "settingList": [
               {
@@ -4068,9 +4088,20 @@
               "length": "2.5"
             },
             "options": {
-              "width": ["18.5x18.5", "20x20", "30x30"],
-              "thickness": ["0.25", "0.3", "0.4"],
-              "length": ["2.5", "3"]
+              "width": [
+                "18.5x18.5",
+                "20x20",
+                "30x30"
+              ],
+              "thickness": [
+                "0.25",
+                "0.3",
+                "0.4"
+              ],
+              "length": [
+                "2.5",
+                "3"
+              ]
             },
             "settingList": [
               {
@@ -5105,7 +5136,11 @@
               "length": "2.5"
             },
             "options": {
-              "length": ["2", "2.5", "3"]
+              "length": [
+                "2",
+                "2.5",
+                "3"
+              ]
             },
             "settingList": [
               {
@@ -5296,7 +5331,7 @@
             "weight": 20,
             "volume": 0,
             "price": 287.66,
-            "priceLviv": 297,
+            "priceLviv": 287.66,
             "salePriceLviv": 0,
             "salePrice": 0,
             "measure": "",
@@ -5308,7 +5343,11 @@
               "size": "2000x1200x12.5"
             },
             "options": {
-              "size": ["2000x1200x12.5", "2500x1200x12.5", "3000x1200x12.5"]
+              "size": [
+                "2000x1200x12.5",
+                "2500x1200x12.5",
+                "3000x1200x12.5"
+              ]
             },
             "configurableList": [],
             "settingList": [
@@ -5318,7 +5357,7 @@
                 },
                 "key": "gips_vlg_2000x1200x12.5",
                 "price": 278.18,
-                "priceLviv": 297,
+                "priceLviv": 278.18,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 21,
@@ -5331,7 +5370,7 @@
                 },
                 "key": "gips_vlg_2500x1200x12.5",
                 "price": 347.73,
-                "priceLviv": 364.1,
+                "priceLviv": 347.73,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 24,
@@ -5344,7 +5383,7 @@
                 },
                 "key": "gips_vlg_3000x1200x12.5",
                 "price": 417.28,
-                "priceLviv": 451,
+                "priceLviv": 417.28,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 27.7,
@@ -5373,7 +5412,11 @@
               "size": "2000x1200x12.5"
             },
             "options": {
-              "size": ["2000x1200x12.5", "2500x1200x12.5", "3000x1200x12.5"]
+              "size": [
+                "2000x1200x12.5",
+                "2500x1200x12.5",
+                "3000x1200x12.5"
+              ]
             },
             "configurableList": [],
             "settingList": [
@@ -5383,7 +5426,7 @@
                 },
                 "key": "gips_2000x1200x12.5",
                 "price": 237.12,
-                "priceLviv": 268.4,
+                "priceLviv": 237.12,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 17.8,
@@ -5396,7 +5439,7 @@
                 },
                 "key": "gips_2500x1200x12.5",
                 "price": 296.4,
-                "priceLviv": 330,
+                "priceLviv": 296.4,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 22.2,
@@ -5409,7 +5452,7 @@
                 },
                 "key": "gips_3000x1200x12.5",
                 "price": 355.68,
-                "priceLviv": 401.5,
+                "priceLviv": 355.68,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 26.6,
@@ -5438,7 +5481,10 @@
               "size": "2000x1200x9.5 мм."
             },
             "options": {
-              "size": ["2000x1200x9.5 мм.", "2500x1200x9.5 мм."]
+              "size": [
+                "2000x1200x9.5 мм.",
+                "2500x1200x9.5 мм."
+              ]
             },
             "configurableList": [],
             "settingList": [
@@ -5448,7 +5494,7 @@
                 },
                 "key": "gips_2000x1200x9.5",
                 "price": 220.27,
-                "priceLviv": 253,
+                "priceLviv": 220.27,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 15.6,
@@ -5461,7 +5507,7 @@
                 },
                 "key": "gips_2500x1200x9.5",
                 "price": 275.34,
-                "priceLviv": 308,
+                "priceLviv": 275.34,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 19.5,
@@ -5478,7 +5524,7 @@
             "weight": 22.2,
             "volume": 0.0375,
             "price": 419.37,
-            "priceLviv": 506,
+            "priceLviv": 419.37,
             "salePriceLviv": 0,
             "salePrice": 0,
             "measure": "",
@@ -5519,8 +5565,15 @@
               "length": "3"
             },
             "options": {
-              "thickness": ["0.55", "0.6 ГОСТ", "Кнауф 0.6"],
-              "length": ["3", "4"]
+              "thickness": [
+                "0.55",
+                "0.6 ГОСТ",
+                "Кнауф 0.6"
+              ],
+              "length": [
+                "3",
+                "4"
+              ]
             },
             "configurableList": [],
             "settingList": [
@@ -5531,7 +5584,7 @@
                 },
                 "key": "prof_cd60_0.55_3",
                 "price": 79.47,
-                "priceLviv": 100.1,
+                "priceLviv": 79.47,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.25,
@@ -5545,7 +5598,7 @@
                 },
                 "key": "prof_cd60_0.6_3",
                 "price": 105.03,
-                "priceLviv": 112.2,
+                "priceLviv": 105.03,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.25,
@@ -5559,7 +5612,7 @@
                 },
                 "key": "prof_knauf_cd60_0.6_3",
                 "price": 148.23,
-                "priceLviv": 163.9,
+                "priceLviv": 148.23,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.25,
@@ -5573,7 +5626,7 @@
                 },
                 "key": "prof_cd60_0.55_4",
                 "price": 105.96,
-                "priceLviv": 133.1,
+                "priceLviv": 105.96,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.67,
@@ -5587,7 +5640,7 @@
                 },
                 "key": "prof_cd60_0.6_4",
                 "price": 140.04,
-                "priceLviv": 149.6,
+                "priceLviv": 140.04,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.67,
@@ -5601,7 +5654,7 @@
                 },
                 "key": "prof_knauf_cd60_0.6_4",
                 "price": 206.2,
-                "priceLviv": 216.7,
+                "priceLviv": 206.2,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.67,
@@ -5631,8 +5684,15 @@
               "length": "3"
             },
             "options": {
-              "thickness": ["0.55", "0.6 ГОСТ", "Кнауф 0.6"],
-              "length": ["3", "4"]
+              "thickness": [
+                "0.55",
+                "0.6 ГОСТ",
+                "Кнауф 0.6"
+              ],
+              "length": [
+                "3",
+                "4"
+              ]
             },
             "configurableList": [],
             "settingList": [
@@ -5643,7 +5703,7 @@
                 },
                 "key": "prof_ud27_0.55_3",
                 "price": 49.05,
-                "priceLviv": 61.6,
+                "priceLviv": 49.05,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.25,
@@ -5657,7 +5717,7 @@
                 },
                 "key": "prof_ud27_0.6_3",
                 "price": 65.82,
-                "priceLviv": 68.2,
+                "priceLviv": 65.82,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.25,
@@ -5671,7 +5731,7 @@
                 },
                 "key": "prof_knauf_ud27_0.6_3",
                 "price": 106.47,
-                "priceLviv": 117.7,
+                "priceLviv": 106.47,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.25,
@@ -5685,7 +5745,7 @@
                 },
                 "key": "prof_ud27_0.55_4",
                 "price": 71.28,
-                "priceLviv": 81.4,
+                "priceLviv": 71.28,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.67,
@@ -5699,7 +5759,7 @@
                 },
                 "key": "prof_ud27_0.6_4",
                 "price": 87.76,
-                "priceLviv": 90.2,
+                "priceLviv": 87.76,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.67,
@@ -5713,7 +5773,7 @@
                 },
                 "key": "prof_knauf_ud27_0.6_4",
                 "price": 141.96,
-                "priceLviv": 156.2,
+                "priceLviv": 141.96,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.67,
@@ -5745,9 +5805,20 @@
               "length": "3"
             },
             "options": {
-              "width": ["50", "75", "100"],
-              "thickness": ["0.55", "0.6 ГОСТ", "Кнауф 0.6"],
-              "length": ["3", "4"]
+              "width": [
+                "50",
+                "75",
+                "100"
+              ],
+              "thickness": [
+                "0.55",
+                "0.6 ГОСТ",
+                "Кнауф 0.6"
+              ],
+              "length": [
+                "3",
+                "4"
+              ]
             },
             "settingList": [
               {
@@ -5758,7 +5829,7 @@
                 },
                 "key": "prof_cw50_0.55_3",
                 "price": 107.91,
-                "priceLviv": 108.9,
+                "priceLviv": 107.91,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.65,
@@ -5773,7 +5844,7 @@
                 },
                 "key": "prof_cw50_0.55_4",
                 "price": 143.88,
-                "priceLviv": 145.2,
+                "priceLviv": 143.88,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 2.2,
@@ -5788,7 +5859,7 @@
                 },
                 "key": "prof_cw50_0.6_3",
                 "price": 133.68,
-                "priceLviv": 0,
+                "priceLviv": 133.68,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.65,
@@ -5803,7 +5874,7 @@
                 },
                 "key": "prof_knauf_cw50_0.6_3",
                 "price": 178.38,
-                "priceLviv": 195.8,
+                "priceLviv": 178.38,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.65,
@@ -5818,7 +5889,7 @@
                 },
                 "key": "prof_knauf_cw50_0.6_4",
                 "price": 237.84,
-                "priceLviv": 259.6,
+                "priceLviv": 237.84,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 2.2,
@@ -5833,7 +5904,7 @@
                 },
                 "key": "prof_cw75_0.55_3",
                 "price": 126.36,
-                "priceLviv": 128.7,
+                "priceLviv": 126.36,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.9,
@@ -5848,7 +5919,7 @@
                 },
                 "key": "prof_cw75_0.55_4",
                 "price": 168.48,
-                "priceLviv": 173.1,
+                "priceLviv": 168.48,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 2.53,
@@ -5863,7 +5934,7 @@
                 },
                 "key": "prof_cw75_0.6_3",
                 "price": 159.06,
-                "priceLviv": 0,
+                "priceLviv": 159.06,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.9,
@@ -5878,7 +5949,7 @@
                 },
                 "key": "prof_cw75_0.6_4",
                 "price": 212.08,
-                "priceLviv": 0,
+                "priceLviv": 212.08,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 2.53,
@@ -5893,7 +5964,7 @@
                 },
                 "key": "prof_knauf_cw75_0.6_3",
                 "price": 199.17,
-                "priceLviv": 217.8,
+                "priceLviv": 199.17,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.9,
@@ -5908,7 +5979,7 @@
                 },
                 "key": "prof_knauf_cw75_0.6_4",
                 "price": 265.56,
-                "priceLviv": 288.2,
+                "priceLviv": 265.56,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 2.53,
@@ -5923,7 +5994,7 @@
                 },
                 "key": "prof_cw100_0.55_3",
                 "price": 143.22,
-                "priceLviv": 154,
+                "priceLviv": 143.22,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 2.3,
@@ -5938,7 +6009,7 @@
                 },
                 "key": "prof_cw100_0.55_4",
                 "price": 188.32,
-                "priceLviv": 195.8,
+                "priceLviv": 188.32,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 3,
@@ -5953,7 +6024,7 @@
                 },
                 "key": "prof_cw100_0.6_3",
                 "price": 181.95,
-                "priceLviv": 0,
+                "priceLviv": 181.95,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 2.3,
@@ -5968,7 +6039,7 @@
                 },
                 "key": "prof_cw100_0.6_4",
                 "price": 242.6,
-                "priceLviv": 0,
+                "priceLviv": 242.6,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 3,
@@ -5983,7 +6054,7 @@
                 },
                 "key": "prof_knauf_cw100_0.6_3",
                 "price": 239.97,
-                "priceLviv": 258.5,
+                "priceLviv": 239.97,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 2.3,
@@ -5998,7 +6069,7 @@
                 },
                 "key": "prof_knauf_cw100_0.6_4",
                 "price": 319.96,
-                "priceLviv": 345.4,
+                "priceLviv": 319.96,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 3,
@@ -6029,9 +6100,20 @@
               "length": "3"
             },
             "options": {
-              "width": ["50", "75", "100"],
-              "thickness": ["0.55", "0.6 ГОСТ", "Кнауф 0.6"],
-              "length": ["3", "4"]
+              "width": [
+                "50",
+                "75",
+                "100"
+              ],
+              "thickness": [
+                "0.55",
+                "0.6 ГОСТ",
+                "Кнауф 0.6"
+              ],
+              "length": [
+                "3",
+                "4"
+              ]
             },
             "configurableList": [],
             "settingList": [
@@ -6043,7 +6125,7 @@
                 },
                 "key": "prof_uw50_0.55_3",
                 "price": 85.14,
-                "priceLviv": 86.9,
+                "priceLviv": 85.14,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.65,
@@ -6057,7 +6139,7 @@
                   "width": "50"
                 },
                 "key": "prof_uw50_0.55_4",
-                "price": 118.8,
+                "price": 113.52,
                 "priceLviv": 113.52,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -6073,7 +6155,7 @@
                 },
                 "key": "prof_uw50_0.6_3",
                 "price": 109.08,
-                "priceLviv": 0,
+                "priceLviv": 109.08,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.65,
@@ -6088,7 +6170,7 @@
                 },
                 "key": "prof_knauf_uw50_0.6_3",
                 "price": 152.97,
-                "priceLviv": 167.2,
+                "priceLviv": 152.97,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.65,
@@ -6103,7 +6185,7 @@
                 },
                 "key": "prof_knauf_uw50_0.6_4",
                 "price": 203.96,
-                "priceLviv": 212.3,
+                "priceLviv": 203.96,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 2.2,
@@ -6118,7 +6200,7 @@
                 },
                 "key": "prof_uw75_0.55_3",
                 "price": 101.04,
-                "priceLviv": 107.8,
+                "priceLviv": 101.04,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.9,
@@ -6133,7 +6215,7 @@
                 },
                 "key": "prof_uw75_0.55_4",
                 "price": 134.72,
-                "priceLviv": 141.9,
+                "priceLviv": 134.72,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 2.53,
@@ -6148,7 +6230,7 @@
                 },
                 "key": "prof_uw75_0.6_3",
                 "price": 141.36,
-                "priceLviv": 0,
+                "priceLviv": 141.36,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.9,
@@ -6163,7 +6245,7 @@
                 },
                 "key": "prof_uw75_0.6_4",
                 "price": 188.48,
-                "priceLviv": 0,
+                "priceLviv": 188.48,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 2.53,
@@ -6178,7 +6260,7 @@
                 },
                 "key": "prof_knauf_uw75_0.6_3",
                 "price": 177.93,
-                "priceLviv": 193.6,
+                "priceLviv": 177.93,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.9,
@@ -6193,7 +6275,7 @@
                 },
                 "key": "prof_knauf_uw75_0.6_4",
                 "price": 237.24,
-                "priceLviv": 243.1,
+                "priceLviv": 237.24,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 2.53,
@@ -6208,7 +6290,7 @@
                 },
                 "key": "prof_uw100_0.55_3",
                 "price": 117.72,
-                "priceLviv": 129.8,
+                "priceLviv": 117.72,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 2.3,
@@ -6223,7 +6305,7 @@
                 },
                 "key": "prof_uw100_0.55_4",
                 "price": 156.96,
-                "priceLviv": 178.2,
+                "priceLviv": 156.96,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 3,
@@ -6238,7 +6320,7 @@
                 },
                 "key": "prof_uw100_0.6_3",
                 "price": 157.96,
-                "priceLviv": 0,
+                "priceLviv": 157.96,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 2.3,
@@ -6253,7 +6335,7 @@
                 },
                 "key": "prof_uw100_0.6_4",
                 "price": 210.24,
-                "priceLviv": 0,
+                "priceLviv": 210.24,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 3,
@@ -6268,7 +6350,7 @@
                 },
                 "key": "prof_knauf_uw100_0.6_3",
                 "price": 209.1,
-                "priceLviv": 227.7,
+                "priceLviv": 209.1,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 2.3,
@@ -6283,7 +6365,7 @@
                 },
                 "key": "prof_knauf_uw100_0.6_4",
                 "price": 278.8,
-                "priceLviv": 301.4,
+                "priceLviv": 278.8,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 3,
@@ -6313,8 +6395,15 @@
               "length": "3"
             },
             "options": {
-              "width": ["50", "75", "100"],
-              "length": ["3", "4"]
+              "width": [
+                "50",
+                "75",
+                "100"
+              ],
+              "length": [
+                "3",
+                "4"
+              ]
             },
             "configurableList": [],
             "settingList": [
@@ -6325,7 +6414,7 @@
                 },
                 "key": "prof_ua_50_3",
                 "price": 325.44,
-                "priceLviv": 363,
+                "priceLviv": 325.44,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1,
@@ -6339,7 +6428,7 @@
                 },
                 "key": "prof_ua_50_4",
                 "price": 433.92,
-                "priceLviv": 0,
+                "priceLviv": 433.92,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1,
@@ -6353,7 +6442,7 @@
                 },
                 "key": "prof_ua_75_3",
                 "price": 391.56,
-                "priceLviv": 412.5,
+                "priceLviv": 391.56,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1,
@@ -6367,7 +6456,7 @@
                 },
                 "key": "prof_ua_75_4",
                 "price": 522.08,
-                "priceLviv": 542.3,
+                "priceLviv": 522.08,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1,
@@ -6381,7 +6470,7 @@
                 },
                 "key": "prof_ua_100_3",
                 "price": 457.65,
-                "priceLviv": 498.3,
+                "priceLviv": 457.65,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.2,
@@ -6395,7 +6484,7 @@
                 },
                 "key": "prof_ua_100_4",
                 "price": 610.2,
-                "priceLviv": 632.5,
+                "priceLviv": 610.2,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.2,
@@ -6452,7 +6541,11 @@
               "thickness": "0.55"
             },
             "options": {
-              "thickness": ["0.55", "0.65", "0.8"]
+              "thickness": [
+                "0.55",
+                "0.65",
+                "0.8"
+              ]
             },
             "configurableList": [],
             "settingList": [
@@ -6462,7 +6555,7 @@
                 },
                 "key": "krab_0.55",
                 "price": 7.87,
-                "priceLviv": 0,
+                "priceLviv": 7.87,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6475,7 +6568,7 @@
                 },
                 "key": "krab_0.65",
                 "price": 9.06,
-                "priceLviv": 0,
+                "priceLviv": 9.06,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6488,7 +6581,7 @@
                 },
                 "key": "krab_0.8",
                 "price": 10.72,
-                "priceLviv": 13.2,
+                "priceLviv": 10.72,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6505,7 +6598,7 @@
             "weight": 1,
             "volume": 0,
             "price": 5.7,
-            "priceLviv": 22.5,
+            "priceLviv": 5.7,
             "salePriceLviv": 0,
             "salePrice": 0,
             "measure": "",
@@ -6539,7 +6632,10 @@
               "thickness": "0.65"
             },
             "options": {
-              "thickness": ["0.65", "0.9"]
+              "thickness": [
+                "0.65",
+                "0.9"
+              ]
             },
             "settingList": [
               {
@@ -6548,7 +6644,7 @@
                 },
                 "key": "kutove_cd_0.55",
                 "price": 4.56,
-                "priceLviv": 6.05,
+                "priceLviv": 4.56,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6561,7 +6657,7 @@
                 },
                 "key": "kutove_cd_0.9",
                 "price": 7.88,
-                "priceLviv": 0,
+                "priceLviv": 7.88,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6599,8 +6695,16 @@
               "thickness": "0.65"
             },
             "options": {
-              "length": ["125", "250"],
-              "thickness": ["0.65", "0.8", "0.9", "1"]
+              "length": [
+                "125",
+                "250"
+              ],
+              "thickness": [
+                "0.65",
+                "0.8",
+                "0.9",
+                "1"
+              ]
             },
             "settingList": [
               {
@@ -6610,7 +6714,7 @@
                 },
                 "key": "pidvic_0.65",
                 "price": 3.99,
-                "priceLviv": 4.4,
+                "priceLviv": 3.99,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6624,7 +6728,7 @@
                 },
                 "key": "pidvic_0.8",
                 "price": 4.56,
-                "priceLviv": 5.17,
+                "priceLviv": 4.56,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6638,7 +6742,7 @@
                 },
                 "key": "pidvic_0.9",
                 "price": 5.13,
-                "priceLviv": 5.5,
+                "priceLviv": 5.13,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6652,7 +6756,7 @@
                 },
                 "key": "pidvic_1",
                 "price": 5.76,
-                "priceLviv": 7.15,
+                "priceLviv": 5.76,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6666,7 +6770,7 @@
                 },
                 "key": "pidvic_250_0.65",
                 "price": 7.64,
-                "priceLviv": 9.9,
+                "priceLviv": 7.64,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6680,7 +6784,7 @@
                 },
                 "key": "pidvic_250_0.8",
                 "price": 9.69,
-                "priceLviv": 0,
+                "priceLviv": 9.69,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6694,7 +6798,7 @@
                 },
                 "key": "pidvic_250_1",
                 "price": 11.97,
-                "priceLviv": 14.85,
+                "priceLviv": 11.97,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6731,8 +6835,17 @@
               "lengthMM": "125"
             },
             "options": {
-              "type": ["гачок", "кільце"],
-              "lengthMM": ["125", "250", "500", "1000", "1500"]
+              "type": [
+                "гачок",
+                "кільце"
+              ],
+              "lengthMM": [
+                "125",
+                "250",
+                "500",
+                "1000",
+                "1500"
+              ]
             },
             "settingList": [
               {
@@ -6742,7 +6855,7 @@
                 },
                 "key": "gachok_125",
                 "price": 1.2,
-                "priceLviv": 1.65,
+                "priceLviv": 1.2,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6756,7 +6869,7 @@
                 },
                 "key": "gachok_250",
                 "price": 2.11,
-                "priceLviv": 2.42,
+                "priceLviv": 2.11,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6770,7 +6883,7 @@
                 },
                 "key": "gachok_500",
                 "price": 4.16,
-                "priceLviv": 4.62,
+                "priceLviv": 4.16,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6784,7 +6897,7 @@
                 },
                 "key": "gachok_1000",
                 "price": 8.04,
-                "priceLviv": 8.25,
+                "priceLviv": 8.04,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6798,7 +6911,7 @@
                 },
                 "key": "gachok_1500",
                 "price": 12.08,
-                "priceLviv": 0,
+                "priceLviv": 12.08,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6812,7 +6925,7 @@
                 },
                 "key": "kilce_125",
                 "price": 1.2,
-                "priceLviv": 1.43,
+                "priceLviv": 1.2,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6826,7 +6939,7 @@
                 },
                 "key": "kilce_250",
                 "price": 2.11,
-                "priceLviv": 2.42,
+                "priceLviv": 2.11,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6840,7 +6953,7 @@
                 },
                 "key": "kilce_500",
                 "price": 4.16,
-                "priceLviv": 4.62,
+                "priceLviv": 4.16,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6854,7 +6967,7 @@
                 },
                 "key": "kilce_1000",
                 "price": 8.04,
-                "priceLviv": 8.25,
+                "priceLviv": 8.04,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6868,7 +6981,7 @@
                 },
                 "key": "kilce_1500",
                 "price": 12.08,
-                "priceLviv": 0,
+                "priceLviv": 12.08,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6893,7 +7006,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 7.98,
-            "priceLviv": 0,
+            "priceLviv": 7.98,
             "salePriceLviv": 0,
             "salePrice": 0,
             "measure": "",
@@ -6914,7 +7027,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 5.59,
-            "priceLviv": 7.26,
+            "priceLviv": 5.59,
             "salePriceLviv": 0,
             "salePrice": 0,
             "measure": "",
@@ -6957,9 +7070,20 @@
               "length": "2.5"
             },
             "options": {
-              "width": ["18.5x18.5", "20x20", "30x30"],
-              "thickness": ["0.25", "0.3", "0.4"],
-              "length": ["2.5", "3"]
+              "width": [
+                "18.5x18.5",
+                "20x20",
+                "30x30"
+              ],
+              "thickness": [
+                "0.25",
+                "0.3",
+                "0.4"
+              ],
+              "length": [
+                "2.5",
+                "3"
+              ]
             },
             "settingList": [
               {
@@ -6970,7 +7094,7 @@
                 },
                 "key": "prof_alum_18.5_2.5",
                 "price": 18.04,
-                "priceLviv": 14.96,
+                "priceLviv": 18.04,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -6985,7 +7109,7 @@
                 },
                 "key": "prof_alum_18.5_3",
                 "price": 21.64,
-                "priceLviv": 17.93,
+                "priceLviv": 21.64,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -7000,7 +7124,7 @@
                 },
                 "key": "prof_alum_20_2.5",
                 "price": 21.64,
-                "priceLviv": 0,
+                "priceLviv": 21.64,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -7015,7 +7139,7 @@
                 },
                 "key": "prof_alum_20_3",
                 "price": 25.98,
-                "priceLviv": 32.56,
+                "priceLviv": 25.98,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -7030,7 +7154,7 @@
                 },
                 "key": "prof_alum_30_3",
                 "price": 54.21,
-                "priceLviv": 53.57,
+                "priceLviv": 54.21,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -7047,7 +7171,7 @@
             "weight": 0.1,
             "volume": 0.01,
             "price": 34.5,
-            "priceLviv": 24.2,
+            "priceLviv": 34.5,
             "salePriceLviv": 0,
             "salePrice": 0,
             "measure": "",
@@ -7068,7 +7192,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 10.47,
-            "priceLviv": 14.3,
+            "priceLviv": 10.47,
             "salePriceLviv": 0,
             "salePrice": 0,
             "measure": "",
@@ -7089,7 +7213,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 30.75,
-            "priceLviv": 29.7,
+            "priceLviv": 30.75,
             "salePriceLviv": 0,
             "salePrice": 0,
             "measure": "",
@@ -7131,8 +7255,14 @@
               "length": "90"
             },
             "options": {
-              "width": ["46"],
-              "length": ["45", "90", "150"]
+              "width": [
+                "46"
+              ],
+              "length": [
+                "45",
+                "90",
+                "150"
+              ]
             },
             "settingList": [
               {
@@ -7142,7 +7272,7 @@
                 },
                 "key": "strichka_46_45",
                 "price": 50.52,
-                "priceLviv": 38.5,
+                "priceLviv": 50.52,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -7156,7 +7286,7 @@
                 },
                 "key": "strichka_46_90",
                 "price": 94.97,
-                "priceLviv": 0,
+                "priceLviv": 94.97,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -7170,7 +7300,7 @@
                 },
                 "key": "strichka_46_150",
                 "price": 160.4,
-                "priceLviv": 206.8,
+                "priceLviv": 160.4,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -7187,7 +7317,7 @@
             "weight": 0.1,
             "volume": 0.001,
             "price": 769.53,
-            "priceLviv": 847,
+            "priceLviv": 769.53,
             "salePriceLviv": 0,
             "salePrice": 0,
             "measure": "",
@@ -7200,7 +7330,10 @@
               "length": "25"
             },
             "options": {
-              "length": ["25", "75"]
+              "length": [
+                "25",
+                "75"
+              ]
             },
             "settingList": [
               {
@@ -7209,7 +7342,7 @@
                 },
                 "key": "kurt_25",
                 "price": 769.53,
-                "priceLviv": 847,
+                "priceLviv": 769.53,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -7222,7 +7355,7 @@
                 },
                 "key": "kurt_75",
                 "price": 1539.06,
-                "priceLviv": 1670.9,
+                "priceLviv": 1539.06,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.1,
@@ -7239,7 +7372,7 @@
             "weight": 0.1,
             "volume": 0.01,
             "price": 271.4,
-            "priceLviv": 319,
+            "priceLviv": 271.4,
             "salePriceLviv": 0,
             "salePrice": 0,
             "measure": "",
@@ -7281,8 +7414,15 @@
               "length": "30"
             },
             "options": {
-              "width": ["30", "50", "70", "90"],
-              "length": ["30"]
+              "width": [
+                "30",
+                "50",
+                "70",
+                "90"
+              ],
+              "length": [
+                "30"
+              ]
             },
             "settingList": [
               {
@@ -7365,8 +7505,15 @@
               "length": "30"
             },
             "options": {
-              "width": ["30", "50", "70", "95"],
-              "length": ["30"]
+              "width": [
+                "30",
+                "50",
+                "70",
+                "95"
+              ],
+              "length": [
+                "30"
+              ]
             },
             "settingList": [
               {
@@ -8483,7 +8630,11 @@
               "length": "2.5"
             },
             "options": {
-              "length": ["2", "2.5", "3"]
+              "length": [
+                "2",
+                "2.5",
+                "3"
+              ]
             },
             "settingList": [
               {

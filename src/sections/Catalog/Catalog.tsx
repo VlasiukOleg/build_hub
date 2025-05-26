@@ -20,6 +20,8 @@ import Laminat from '@/../public/images/image_6818cb50355b7.jpg';
 
 import { Pages } from '@/@types';
 
+import { IoLocationSharp } from 'react-icons/io5';
+
 const catalog = [
   {
     id: 1,
@@ -115,6 +117,14 @@ interface ICatalogProps {}
 const Catalog: React.FC<ICatalogProps> = ({}) => {
   const router = useRouter();
 
+  const city = useAppSelector(state => state.city.city);
+
+  const isLviv = city?.includes('lviv');
+
+  const title = isLviv
+    ? 'Для замовлення будматеріалів у Львові та області оберіть потрібну Вам категорію будівельних робіт'
+    : 'Для замовлення будматеріалів в Києві та області оберіть потрібну Вам категорію будівельних робіт';
+
   const deliveryStorage = useAppSelector(
     state => state.delivery.deliveryStorage
   );
@@ -127,10 +137,26 @@ const Catalog: React.FC<ICatalogProps> = ({}) => {
   return (
     <section className="py-4 md:py-8">
       <div className="container">
-        <Breadcrumbs className="mb-2">
-          <BreadcrumbItem href="/">Головна</BreadcrumbItem>
-          <BreadcrumbItem href={`${Pages.CATALOG}`}>Каталог</BreadcrumbItem>
-        </Breadcrumbs>
+        <div className="flex items-center justify-between mb-2">
+          <Breadcrumbs className="">
+            <BreadcrumbItem href="/">Головна</BreadcrumbItem>
+            <BreadcrumbItem href={`${Pages.CATALOG}`}>Каталог</BreadcrumbItem>
+          </Breadcrumbs>
+          <Button
+            type="submit"
+            size="sm"
+            className="font-medium min-h-5 text-sm"
+            radius="sm"
+            onPress={handleStorageClick}
+            startContent={
+              <IoLocationSharp className="size-4 text-danger-500" />
+            }
+            variant="light"
+          >
+            {isLviv ? 'Львів' : 'Київ'}
+          </Button>
+        </div>
+
         {!deliveryStorage && (
           <div className="flex  mb-2">
             <Button
@@ -145,9 +171,9 @@ const Catalog: React.FC<ICatalogProps> = ({}) => {
             </Button>
           </div>
         )}
+
         <h1 className="font-unbounded xl:text-2xl font-bold text-center mb-5  md:text-lg">
-          Для замовлення будматеріалів оберіть потрібну Вам категорію
-          будівельних робіт
+          {title}
         </h1>
         <ul className="flex justify-center flex-wrap gap-5 uppercase font-medium text-xl md:text-base">
           {catalog.map(item => (
