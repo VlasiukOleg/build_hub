@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import dynamic from 'next/dynamic';
 
@@ -141,9 +141,17 @@ const CITY_CENTERS = {
 const StorageMap: React.FC<IStorageMapProps> = ({}) => {
   // const [isOpen, setIsOpen] = useState(false);
 
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   const city = useAppSelector(state => state.city.city);
 
-  const position: LatLngTuple = CITY_CENTERS[city as keyof typeof CITY_CENTERS];
+  const position = CITY_CENTERS[city as keyof typeof CITY_CENTERS];
+
+  // const position: LatLngTuple = CITY_CENTERS[city as keyof typeof CITY_CENTERS];
 
   const [selectedStore, setSelectedStore] = useState('');
   const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
@@ -272,47 +280,52 @@ const StorageMap: React.FC<IStorageMapProps> = ({}) => {
           />
         </Tabs>
       </div>
-      <MapContainer
-        center={position}
-        zoom={10}
-        style={{
-          height: '350px',
-          width: '100%',
-          marginBottom: '20px',
-          zIndex: '40',
-        }}
-      >
-        <ResetViewControl position={position} />
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        {storages.map(storage => (
-          <Marker
-            key={storage.id}
-            position={storage.coordinates}
-            icon={
-              deliveryStorage === storage.location ? redMarkerIcon : markerIcon
-            }
-          >
-            <Popup ref={popupElRef}>
-              <div className="flex flex-col justify-center items-center">
-                <div className="text-center text-[10px] md:text-[12px] xl:text-base mb-2">
-                  {storage.location}
+      {isClient && (
+        <MapContainer
+          center={position}
+          zoom={10}
+          style={{
+            height: '350px',
+            width: '100%',
+            marginBottom: '20px',
+            zIndex: '40',
+          }}
+        >
+          <ResetViewControl position={position} />
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          {storages.map(storage => (
+            <Marker
+              key={storage.id}
+              position={storage.coordinates}
+              icon={
+                deliveryStorage === storage.location
+                  ? redMarkerIcon
+                  : markerIcon
+              }
+            >
+              <Popup ref={popupElRef}>
+                <div className="flex flex-col justify-center items-center">
+                  <div className="text-center text-[10px] md:text-[12px] xl:text-base mb-2">
+                    {storage.location}
+                  </div>
+                  <Button
+                    color="primary"
+                    className="p-2 text-xs h-7 md:text-sm md:h-8"
+                    onPress={() => handleStorageClick(storage.location)}
+                    radius="sm"
+                  >
+                    Вибрати
+                  </Button>
                 </div>
-                <Button
-                  color="primary"
-                  className="p-2 text-xs h-7 md:text-sm md:h-8"
-                  onPress={() => handleStorageClick(storage.location)}
-                  radius="sm"
-                >
-                  Вибрати
-                </Button>
-              </div>
-            </Popup>
-          </Marker>
-        ))}
-      </MapContainer>
+              </Popup>
+            </Marker>
+          ))}
+        </MapContainer>
+      )}
+
       {deliveryStorage && (
         <div className="flex flex-col gap-2 text-xs mb-5 md:text-base xl:text-xl">
           <div>
