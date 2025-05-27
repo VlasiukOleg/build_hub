@@ -143,10 +143,6 @@ const StorageMap: React.FC<IStorageMapProps> = ({}) => {
 
   const [isClient, setIsClient] = useState(false);
 
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
   const city = useAppSelector(state => state.city.city);
 
   const position = CITY_CENTERS[city as keyof typeof CITY_CENTERS];
@@ -176,6 +172,14 @@ const StorageMap: React.FC<IStorageMapProps> = ({}) => {
 
   const popupElRef = useRef<any>(null);
 
+  useEffect(() => {
+    if (city === 'lviv') {
+      setSelectedStore(storages[storages.length - 1].location);
+      dispatch(setDeliveryStorage(storages[storages.length - 1].location));
+    }
+    setIsClient(true);
+  }, [city, dispatch]);
+
   const handleStorageClick = (location: string) => {
     onOpen();
     setSelectedStore(location);
@@ -186,9 +190,9 @@ const StorageMap: React.FC<IStorageMapProps> = ({}) => {
 
   const handleCityChange = (newCity: 'kiev' | 'lviv') => {
     if (newCity === 'lviv') {
-      window.location.href = `http://lviv.lum.net.ua${window.location.pathname}`;
+      window.location.href = `http://lviv.localhost:3000${window.location.pathname}`;
     } else {
-      window.location.href = `http://lum.net.ua${window.location.pathname}`;
+      window.location.href = `http://localhost:3000${window.location.pathname}`;
     }
   };
 
@@ -221,164 +225,169 @@ const StorageMap: React.FC<IStorageMapProps> = ({}) => {
 
   return (
     <section className="py-5 md:py-8 text-center">
-      <h1 className="font-unbounded xl:text-2xl font-bold text-center mb-2 md:mb-8 md:text-lg">
-        Оберіть місто та зручний для Вас склад завантаження
-      </h1>
-      <div className="mb-2 mx-auto">
-        <Tabs
-          aria-label="Options"
-          selectedKey={city}
-          onSelectionChange={key => handleCityChange(key as 'kiev' | 'lviv')}
-          classNames={{
-            tabList:
-              'gap-6 w-full relative rounded-none p-0 border-b border-divider',
-            cursor: 'w-full bg-accent',
-            tabContent: 'group-data-[selected=true]:text-accent',
-          }}
-          color="primary"
-          variant="underlined"
-        >
-          <Tab
-            key="kiev"
-            title={
-              <div className="flex items-center space-x-2">
-                <span>Київ</span>
-                <Chip
-                  size="sm"
-                  variant="bordered"
-                  classNames={{
-                    base:
-                      city === 'kiev'
-                        ? 'bg-accent text-bgWhite'
-                        : 'bg-white text-foreground',
-                  }}
-                >
-                  7
-                </Chip>
-              </div>
-            }
-          />
-          <Tab
-            key="lviv"
-            title={
-              <div className="flex items-center space-x-2">
-                <span>Львів</span>
-                <Chip
-                  size="sm"
-                  variant="bordered"
-                  classNames={{
-                    base:
-                      city === 'lviv'
-                        ? 'bg-accent text-bgWhite'
-                        : 'bg-white text-foreground',
-                  }}
-                >
-                  1
-                </Chip>
-              </div>
-            }
-          />
-        </Tabs>
-      </div>
       {isClient && (
-        <MapContainer
-          center={position}
-          zoom={10}
-          style={{
-            height: '350px',
-            width: '100%',
-            marginBottom: '20px',
-            zIndex: '40',
-          }}
-        >
-          <ResetViewControl position={position} />
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          {storages.map(storage => (
-            <Marker
-              key={storage.id}
-              position={storage.coordinates}
-              icon={
-                deliveryStorage === storage.location
-                  ? redMarkerIcon
-                  : markerIcon
+        <>
+          <h1 className="font-unbounded xl:text-2xl font-bold text-center mb-2 md:mb-8 md:text-lg">
+            Оберіть місто та зручний для Вас склад завантаження
+          </h1>
+          <div className="mb-2 mx-auto">
+            <Tabs
+              aria-label="Options"
+              selectedKey={city}
+              onSelectionChange={key =>
+                handleCityChange(key as 'kiev' | 'lviv')
               }
+              classNames={{
+                tabList:
+                  'gap-6 w-full relative rounded-none p-0 border-b border-divider',
+                cursor: 'w-full bg-accent',
+                tabContent: 'group-data-[selected=true]:text-accent',
+              }}
+              color="primary"
+              variant="underlined"
             >
-              <Popup ref={popupElRef}>
-                <div className="flex flex-col justify-center items-center">
-                  <div className="text-center text-[10px] md:text-[12px] xl:text-base mb-2">
-                    {storage.location}
+              <Tab
+                key="kiev"
+                title={
+                  <div className="flex items-center space-x-2">
+                    <span>Київ</span>
+                    <Chip
+                      size="sm"
+                      variant="bordered"
+                      classNames={{
+                        base:
+                          city === 'kiev'
+                            ? 'bg-accent text-bgWhite'
+                            : 'bg-white text-foreground',
+                      }}
+                    >
+                      7
+                    </Chip>
                   </div>
-                  <Button
-                    color="primary"
-                    className="p-2 text-xs h-7 md:text-sm md:h-8"
-                    onPress={() => handleStorageClick(storage.location)}
-                    radius="sm"
-                  >
-                    Вибрати
-                  </Button>
-                </div>
-              </Popup>
-            </Marker>
-          ))}
-        </MapContainer>
-      )}
+                }
+              />
+              <Tab
+                key="lviv"
+                title={
+                  <div className="flex items-center space-x-2">
+                    <span>Львів</span>
+                    <Chip
+                      size="sm"
+                      variant="bordered"
+                      classNames={{
+                        base:
+                          city === 'lviv'
+                            ? 'bg-accent text-bgWhite'
+                            : 'bg-white text-foreground',
+                      }}
+                    >
+                      1
+                    </Chip>
+                  </div>
+                }
+              />
+            </Tabs>
+          </div>
+          <MapContainer
+            center={position}
+            zoom={10}
+            style={{
+              height: '350px',
+              width: '100%',
+              marginBottom: '20px',
+              zIndex: '40',
+            }}
+          >
+            <ResetViewControl position={position} />
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            {storages.map(storage => (
+              <Marker
+                key={storage.id}
+                position={storage.coordinates}
+                icon={
+                  deliveryStorage === storage.location
+                    ? redMarkerIcon
+                    : markerIcon
+                }
+              >
+                <Popup ref={popupElRef}>
+                  <div className="flex flex-col justify-center items-center">
+                    <div className="text-center text-[10px] md:text-[12px] xl:text-base mb-2">
+                      {storage.location}
+                    </div>
+                    <Button
+                      color="primary"
+                      className="p-2 text-xs h-7 md:text-sm md:h-8"
+                      onPress={() => handleStorageClick(storage.location)}
+                      radius="sm"
+                    >
+                      Вибрати
+                    </Button>
+                  </div>
+                </Popup>
+              </Marker>
+            ))}
+          </MapContainer>
+          {deliveryStorage && (
+            <div className="flex flex-col gap-2 text-xs mb-5 md:text-base xl:text-xl">
+              <div>
+                <span className="font-semibold">Склад: </span> {deliveryStorage}
+              </div>
+              <div className="">
+                <span className="font-semibold">Тип доставки: </span>
+                <span>
+                  {deliveryType === 'delivery'
+                    ? 'Доставка до об’єкта'
+                    : 'Cамовивіз зі складу'}
+                </span>
+              </div>
+              <div>
+                <span className="font-semibold">Послуга розвантаження: </span>
+                <span>
+                  {isMovingPriceAddToOrderBar
+                    ? 'Вантажники'
+                    : 'Без розвантаження'}
+                </span>
+              </div>
+            </div>
+          )}
 
-      {deliveryStorage && (
-        <div className="flex flex-col gap-2 text-xs mb-5 md:text-base xl:text-xl">
-          <div>
-            <span className="font-semibold">Склад: </span> {deliveryStorage}
-          </div>
-          <div className="">
-            <span className="font-semibold">Тип доставки: </span>
-            <span>
-              {deliveryType === 'delivery'
-                ? 'Доставка до об’єкта'
-                : 'Cамовивіз зі складу'}
-            </span>
-          </div>
-          <div>
-            <span className="font-semibold">Послуга розвантаження: </span>
-            <span>
-              {isMovingPriceAddToOrderBar ? 'Вантажники' : 'Без розвантаження'}
-            </span>
-          </div>
-        </div>
+          <Button
+            onPress={handleNextClick}
+            className="bg-accent text-white  font-medium text-sm md:text-base h-10 xl:text-lg xl:h-12"
+            radius="sm"
+            isDisabled={deliveryStorage === ''}
+          >
+            Продовжити
+          </Button>
+          {!deliveryStorage && (
+            <Button
+              onPress={handleSkipClick}
+              className="bg-accent text-white ml-3 text-sm md:text-base font-medium  h-10 xl:text-lg xl:h-12"
+              radius="sm"
+            >
+              Пропустити
+            </Button>
+          )}
+          <ModalHeroUi
+            title={selectedStore}
+            isOpen={isOpen}
+            onOpenChange={onOpenChange}
+            onAction={handleDeliveryType}
+            withActions
+            submitButtonTitle="Продовжити"
+            onlySubmit
+          >
+            <DeliveryTypeChoice
+              selectedStore={selectedStore}
+              handleDeliveryType={handleDeliveryType}
+            />
+          </ModalHeroUi>
+        </>
       )}
-
-      <Button
-        onPress={handleNextClick}
-        className="bg-accent text-white  font-medium text-sm md:text-base h-10 xl:text-lg xl:h-12"
-        radius="sm"
-        isDisabled={deliveryStorage === ''}
-      >
-        Продовжити
-      </Button>
-      {!deliveryStorage && (
-        <Button
-          onPress={handleSkipClick}
-          className="bg-accent text-white ml-3 text-sm md:text-base font-medium  h-10 xl:text-lg xl:h-12"
-          radius="sm"
-        >
-          Пропустити
-        </Button>
-      )}
-      <ModalHeroUi
-        title={selectedStore}
-        isOpen={isOpen}
-        onOpenChange={onOpenChange}
-        onAction={handleDeliveryType}
-        withActions
-        submitButtonTitle="Продовжити"
-        onlySubmit
-      >
-        <DeliveryTypeChoice
-          selectedStore={selectedStore}
-          handleDeliveryType={handleDeliveryType}
-        />
-      </ModalHeroUi>
     </section>
   );
 };

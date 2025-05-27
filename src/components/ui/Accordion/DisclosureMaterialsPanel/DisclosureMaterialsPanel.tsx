@@ -111,7 +111,11 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
               </div>
             ) : (
               <div className=" text-grey font-semibold flex items-center gap-1 md:text-base xl:text-xl">
-                Ціна: {priceByCity} грн.
+                {priceByCity === 0 ? (
+                  <span className="text-red-500">Немає в наявності</span>
+                ) : (
+                  `Ціна: ${priceByCity} грн.`
+                )}
               </div>
             )}
             <div className="flex items-center justify-between md:mb-0">
@@ -147,6 +151,7 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
                   className="h-7 w-7 min-w-7 border-accent"
                   radius="sm"
                   variant="bordered"
+                  isDisabled={priceByCity === 0}
                 >
                   <FaPlus className=" text-accent" />
                 </Button>

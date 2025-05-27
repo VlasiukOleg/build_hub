@@ -37,7 +37,7 @@
             "weight": 30,
             "volume": 0.03,
             "price": 244.0,
-            "priceLviv": 244.0,
+            "priceLviv": 0,
             "salePrice": 0,
             "salePriceLviv": 0,
             "measure": "",

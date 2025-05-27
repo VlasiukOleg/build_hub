@@ -68,8 +68,6 @@ const DisclosureSettingsMaterial: React.FC<
     );
   }, [selected, material.settingList]);
 
-  console.log(selectedVariant);
-
   const selectedVariantPriceByCity =
     city === 'kiev' ? selectedVariant?.price : selectedVariant?.priceLviv;
 
@@ -292,6 +290,7 @@ const DisclosureSettingsMaterial: React.FC<
                     </ul>
                   )}
                   isInvalid={errors.length > 0}
+                  isDisabled={selectedVariantPriceByCity === 0}
                   name="quantity"
                   variant="bordered"
                   value={gazoblokQuantity}
@@ -312,7 +311,9 @@ const DisclosureSettingsMaterial: React.FC<
                   radius="sm"
                   variant="bordered"
                   onPress={() => handleQuantityChange(1)}
-                  isDisabled={!selectedVariant}
+                  isDisabled={
+                    selectedVariantPriceByCity === 0 || !selectedVariant
+                  }
                 >
                   <FaPlus className=" text-accent" />
                 </Button>
