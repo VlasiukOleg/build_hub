@@ -188,11 +188,19 @@ const StorageMap: React.FC<IStorageMapProps> = ({}) => {
     }
   };
 
+  // const handleCityChange = (newCity: 'kiev' | 'lviv') => {
+  //   if (newCity === 'lviv') {
+  //     window.location.href = `http://lviv.lum.net.ua${window.location.pathname}`;
+  //   } else {
+  //     window.location.href = `http://lum.net.ua${window.location.pathname}`;
+  //   }
+  // };
+
   const handleCityChange = (newCity: 'kiev' | 'lviv') => {
     if (newCity === 'lviv') {
-      window.location.href = `http://lviv.lum.net.ua${window.location.pathname}`;
+      window.location.href = `http://lviv.localhost:3000${window.location.pathname}`;
     } else {
-      window.location.href = `http://lum.net.ua${window.location.pathname}`;
+      window.location.href = `http://localhost:3000${window.location.pathname}`;
     }
   };
 

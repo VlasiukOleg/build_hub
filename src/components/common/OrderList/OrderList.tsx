@@ -147,6 +147,10 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     state => state.additionalMaterial.additionalMaterial
   );
 
+  const city = useAppSelector(state => state.city.city);
+
+  const cityMovingPrice = isMovingAddToOrder && city === 'kiev' ? movingPrice : 0;
+
   const filteredMaterialsByQuantity = materials.filter(
     material => material.quantity > 0
   );
@@ -738,7 +742,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                       </div>
                     </li>
                   ))}
-                  {isMovingAddToOrder && (
+                  {cityMovingPrice > 0 && (
                     <li className="p-2 font-semibold flex items-center text-grey md:p-4">
                       <div className="mr-2 p-1 text-center inline-block md:size-[60px] md:mr-4">
                         <MovingIcon
@@ -760,7 +764,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                           {movingPrice > 500 ? movingPrice : 500} грн.
                         </p>
                         <p className="text-sm text-accent md:text-lg">
-                          {movingPrice > 500 ? movingPrice : 500} грн.
+                          {movingPrice > 600 ? movingPrice : 600} грн.
                         </p>
                       </div>
                       <div className="w-[15%] text-right flex flex-col items-center justify-end">
@@ -868,10 +872,10 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                 Всього до оплати:{' '}
                 <span className="text-accent">
                   {(
-                    (isMovingAddToOrder
-                      ? movingPrice > 500
-                        ? movingPrice
-                        : 500
+                    (cityMovingPrice > 0
+                      ? cityMovingPrice > 600
+                        ? cityMovingPrice
+                        : 600
                       : 0) +
                     (deliveryType === 'pickup' || deliveryType === ''
                       ? 0

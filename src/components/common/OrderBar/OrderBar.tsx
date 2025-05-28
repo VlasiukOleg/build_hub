@@ -73,11 +73,18 @@ const OrderBar: React.FC<IOrderBarProps> = ({
     router.push(url);
   };
 
-  const computedMovingPrice = isMovingAddToOrder
-    ? movingPrice > 600
-      ? movingPrice
+  const city = useAppSelector(state => state.city.city);
+
+  const cityMovingPrice = isMovingAddToOrder && city === 'kiev' ? movingPrice : 0;
+
+  console.log(cityMovingPrice);
+
+  const computedMovingPrice = cityMovingPrice > 0
+    ? cityMovingPrice > 600
+      ? cityMovingPrice
       : 600
     : 0;
+  
 
   const computedDeliveryPrice = deliveryType === 'delivery' ? deliveryPrice : 0;
 
@@ -141,8 +148,8 @@ const OrderBar: React.FC<IOrderBarProps> = ({
           </div>
           <div className="p-1 rounded-lg  bg-white border-2 border-gray-400 text-black flex items-center gap-1 text-xs md:text-sm  xl:text-lg xl:p-2 xl:gap-2">
             <FaPeopleCarry className="size-5  xl:size-7 text-grey" />
-            {isMovingAddToOrder
-              ? `${movingPrice > 600 ? movingPrice : 600} грн.`
+            {cityMovingPrice > 0
+              ? `${cityMovingPrice > 600 ? cityMovingPrice : 600} грн.`
               : '----'}
           </div>
         </div>
