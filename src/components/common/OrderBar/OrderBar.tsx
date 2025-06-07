@@ -75,16 +75,11 @@ const OrderBar: React.FC<IOrderBarProps> = ({
 
   const city = useAppSelector(state => state.city.city);
 
-  const cityMovingPrice = isMovingAddToOrder && city === 'kiev' ? movingPrice : 0;
+  const cityMovingPrice =
+    isMovingAddToOrder && city === 'kiev' ? movingPrice : 0;
 
-  console.log(cityMovingPrice);
-
-  const computedMovingPrice = cityMovingPrice > 0
-    ? cityMovingPrice > 600
-      ? cityMovingPrice
-      : 600
-    : 0;
-  
+  const computedMovingPrice =
+    cityMovingPrice > 0 ? (cityMovingPrice > 600 ? cityMovingPrice : 600) : 0;
 
   const computedDeliveryPrice = deliveryType === 'delivery' ? deliveryPrice : 0;
 

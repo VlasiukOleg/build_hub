@@ -149,7 +149,8 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
 
   const city = useAppSelector(state => state.city.city);
 
-  const cityMovingPrice = isMovingAddToOrder && city === 'kiev' ? movingPrice : 0;
+  const cityMovingPrice =
+    isMovingAddToOrder && city === 'kiev' ? movingPrice : 0;
 
   const filteredMaterialsByQuantity = materials.filter(
     material => material.quantity > 0
@@ -761,7 +762,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                       </p>
                       <div className="w-[25%] text-right">
                         <p className="text-xs font-normal md:text-base">
-                          {movingPrice > 500 ? movingPrice : 500} грн.
+                          {movingPrice > 600 ? movingPrice : 600} грн.
                         </p>
                         <p className="text-sm text-accent md:text-lg">
                           {movingPrice > 600 ? movingPrice : 600} грн.

@@ -1163,7 +1163,7 @@
     "categories": [
       {
         "id": 2.1,
-        "categoryTitle": "Шпаклівка фінішна",
+        "categoryTitle": "Шпаклівка фінішна в мішках",
         "isCategoryOpen": true,
         "materials": [
           {
@@ -1270,12 +1270,33 @@
             "defaultOptions": {},
             "options": {},
             "settingList": []
+          },
+          {
+            "id": 2.16,
+            "image": "https://i.imgur.com/EmB1Q3r.jpeg",
+            "title": "SNIEZKA ACRYL-PUTZ ST10 Шпаклівка старт+фініш, 20 кг.",
+            "description": "SNIEZKA ACRYL-PUTZ ST10 Старт+Фініш — це високоякісна гіпсова шпаклівка, призначена для внутрішніх робіт, яка поєднує в собі властивості стартової та фінішної шпаклівки. Завдяки своїй універсальності, вона підходить для вирівнювання стін і стель, заповнення тріщин та нерівностей на поверхнях із штукатурки, бетону, цегли, гіпсокартону, деревини, а також ДСП та ДВП.",
+            "weight": 20,
+            "volume": 0.02,
+            "price": 426.69,
+            "priceLviv": 426.69,
+            "salePrice": 0,
+            "salePriceLviv": 0,
+            "measure": "",
+            "quantity": 0,
+            "totalPrice": 0,
+            "movingTypeCalculation": "weight",
+            "officialLink": "",
+            "configurableList": [],
+            "defaultOptions": {},
+            "options": {},
+            "settingList": []
           }
         ]
       },
       {
         "id": 2.2,
-        "categoryTitle": "Шпаклівка фінішна готова",
+        "categoryTitle": "Шпаклівка фінішна акрилова (готова)",
         "isCategoryOpen": false,
         "materials": [
           {
@@ -2754,7 +2775,7 @@
               {
                 "label": "50X610X1250мм, 16 шт. 12,2м2",
                 "key": "akustik_board_50",
-                "price": 966.20,
+                "price": 966.2,
                 "salePrice": 0,
                 "priceLviv": 1045,
                 "salePriceLviv": 0,
@@ -8062,7 +8083,7 @@
               {
                 "label": "50X610X1250мм, 16 шт. 12,2м2",
                 "key": "akustik_board_50",
-                "price": 966.20,
+                "price": 966.2,
                 "priceLviv": 1045,
                 "salePriceLviv": 0,
                 "salePrice": 0,
