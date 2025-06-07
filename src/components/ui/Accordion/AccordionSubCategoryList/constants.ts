@@ -4,6 +4,7 @@ export const SUBCATEGORY_TITLE_LIST_MAP = {
   CEMENTNA: 'Штукатурка цементна',
   GIPSOKARTON: 'Гіпсокартон',
   GIPSOKARTON_PROFILE: 'Профіль для гіпсокартону',
+  SHPAKLIVKA: 'Шпаклівка фінішна в мішках',
 };
 
 export const SUBCATEGORY_SUBTITLE_LIST_MAP = {
@@ -14,4 +15,6 @@ export const SUBCATEGORY_SUBTITLE_LIST_MAP = {
     'стіновий, стельовий, вологостійкий, вогнестійкий',
   [SUBCATEGORY_TITLE_LIST_MAP.GIPSOKARTON_PROFILE]:
     'cd, ud, cw, uw, ua - посилений',
+  [SUBCATEGORY_TITLE_LIST_MAP.SHPAKLIVKA]:
+    'фініш, полімерна, мультіфініш, старт+фініш, сатен',
 };
