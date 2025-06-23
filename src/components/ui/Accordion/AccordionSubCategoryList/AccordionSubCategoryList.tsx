@@ -94,7 +94,7 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
     <>
       <Accordion
         variant="splitted"
-        className="mb-4 px-1 max-w-full w-full h-full md:w-[760px] xl:w-[1200px]"
+        className="mb-4 px-1 max-w-full w-full h-full md:w-[760px]  xl:w-[1200px]"
         itemClasses={{ content: 'pb-4' }}
         selectionMode="multiple"
         defaultExpandedKeys={['4.1', '1.1']}

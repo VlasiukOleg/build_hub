@@ -49,7 +49,7 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
   return (
     <Card>
       <CardHeader className="justify-between gap-2">
-        <div className="text-sm text-grey md:hidden md:text-base  xl:text-lg">
+        <div className="font-medium text-sm text-grey md:hidden md:text-base  xl:text-lg">
           {material.title}
         </div>
         <div className="md:hidden">

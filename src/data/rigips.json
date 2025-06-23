@@ -1,0 +1,210 @@
+[
+  {
+    "id": 4.11444,
+    "image": "https://i.imgur.com/qFCxJEB.jpeg",
+    "title": "RIGIPS стіновий (вологостійкий)",
+    "description": "Вологостійкий стіновий гіпсокартон — це будівельний матеріал, призначений для використання у приміщеннях з підвищеною вологістю, таких як ванні кімнати, кухні та пральні. Він складається з гіпсового сердечника, обкладеного спеціальним картоном, стійким до вологи, що запобігає деформації та пошкодженню матеріалу під впливом вологи.",
+    "weight": 20,
+    "volume": 0,
+    "price": 287.66,
+    "priceLviv": 297,
+    "salePriceLviv": 0,
+    "salePrice": 0,
+    "measure": "",
+    "quantity": 0,
+    "totalPrice": 0,
+    "movingTypeCalculation": "gipsSM",
+    "officialLink": "",
+    "defaultOptions": {
+      "size": "2500x1200x12.5"
+    },
+    "options": {
+      "size": ["2000x1200x12.5", "2500x1200x12.5"]
+    },
+    "configurableList": [],
+    "settingList": [
+      {
+        "attributes": {
+          "size": "2000x1200x12.5"
+        },
+        "key": "rigips_vlg_2000x1200x12.5",
+        "price": 289.33,
+        "priceLviv": 0,
+        "salePriceLviv": 0,
+        "salePrice": 0,
+        "weight": 21,
+        "volume": 0.03,
+        "movingTypeCalculation": "gipsSM"
+      },
+      {
+        "attributes": {
+          "size": "2500x1200x12.5"
+        },
+        "key": "rigips_vlg_2500x1200x12.5",
+        "price": 361.77,
+        "priceLviv": 407,
+        "salePriceLviv": 0,
+        "salePrice": 0,
+        "weight": 24,
+        "volume": 0.0375,
+        "movingTypeCalculation": "gipsMD"
+      }
+    ]
+  },
+  {
+    "id": 4.12111,
+    "image": "https://i.imgur.com/EoCn52n.jpeg",
+    "title": "RIGIPS стіновий (звичайний)",
+    "description": "Гіпсокартонні плити RIGIPS — це сучасний будівельний матеріал, що складається з двох шарів будівельного картону з гіпсовою серцевиною між ними. Ці плити широко застосовуються для внутрішніх оздоблювальних робіт, зокрема для зведення міжкімнатних перегородок, облицювання стін та стель у приміщеннях із нормальною вологістю.",
+    "weight": 20,
+    "volume": 0,
+    "price": 287.66,
+    "priceLviv": 287.66,
+    "salePriceLviv": 0,
+    "salePrice": 0,
+    "measure": "",
+    "quantity": 0,
+    "totalPrice": 0,
+    "movingTypeCalculation": "gipsSM",
+    "officialLink": "",
+    "defaultOptions": {
+      "size": "2500x1200x12.5"
+    },
+    "options": {
+      "size": ["2000x1200x12.5", "2500x1200x12.5"]
+    },
+    "configurableList": [],
+    "settingList": [
+      {
+        "attributes": {
+          "size": "2000x1200x12.5"
+        },
+        "key": "rigips_2000x1200x12.5",
+        "price": 278.2,
+        "priceLviv": 0,
+        "salePriceLviv": 0,
+        "salePrice": 0,
+        "weight": 17.8,
+        "volume": 0.03,
+        "movingTypeCalculation": "gipsSM"
+      },
+      {
+        "attributes": {
+          "size": "2500x1200x12.5"
+        },
+        "key": "gips_2500x1200x12.5",
+        "price": 346.68,
+        "priceLviv": 344.3,
+        "salePriceLviv": 0,
+        "salePrice": 0,
+        "weight": 22.2,
+        "volume": 0.0375,
+        "movingTypeCalculation": "gipsMD"
+      },
+      {
+        "attributes": {
+          "size": "3000x1200x12.5"
+        },
+        "key": "gips_3000x1200x12.5",
+        "price": 329.47,
+        "priceLviv": 401.5,
+        "salePriceLviv": 0,
+        "salePrice": 0,
+        "weight": 26.6,
+        "volume": 0.045,
+        "movingTypeCalculation": "gipsLG"
+      }
+    ]
+  },
+  {
+    "id": 4.1311,
+    "image": "https://i.imgur.com/EoCn52n.jpeg",
+    "title": "RIGIPS стельовий (звичайний)",
+    "description": "Гіпсокартонні плити Rigips — це сучасний будівельний матеріал, що складається з двох шарів будівельного картону з гіпсовою серцевиною між ними. Ці плити широко застосовуються для внутрішніх оздоблювальних робіт, зокрема для зведення міжкімнатних перегородок, облицювання стін та стель у приміщеннях із нормальною вологістю.",
+    "weight": 20,
+    "volume": 0,
+    "price": 335.5,
+    "priceLviv": 335.5,
+    "salePriceLviv": 0,
+    "salePrice": 0,
+    "measure": "",
+    "quantity": 0,
+    "totalPrice": 0,
+    "movingTypeCalculation": "gipsSM",
+    "officialLink": "",
+    "defaultOptions": {
+      "size": "2500x1200x9.5"
+    },
+    "options": {
+      "size": ["2000x1200x9.5", "2500x1200x9.5"]
+    },
+    "configurableList": [],
+    "settingList": [
+      {
+        "attributes": {
+          "size": "2000x1200x9.5"
+        },
+        "key": "rigips_2000x1200x9.5",
+        "price": 0,
+        "priceLviv": 0,
+        "salePriceLviv": 0,
+        "salePrice": 0,
+        "weight": 15.6,
+        "volume": 0.03,
+        "movingTypeCalculation": "gipsSM"
+      },
+      {
+        "attributes": {
+          "size": "2500x1200x9.5"
+        },
+        "key": "rigips_2500x1200x9.5",
+        "price": 0,
+        "priceLviv": 335.5,
+        "salePriceLviv": 0,
+        "salePrice": 0,
+        "weight": 19.5,
+        "volume": 0.0375,
+        "movingTypeCalculation": "gipsMD"
+      }
+    ]
+  },
+  {
+    "id": 4.131155,
+    "image": "https://i.imgur.com/EoCn52n.jpeg",
+    "title": "RIGIPS стельовий (вологостійкий)",
+    "description": "Вологостійкий стіновий гіпсокартон — це будівельний матеріал, призначений для використання у приміщеннях з підвищеною вологістю, таких як ванні кімнати, кухні та пральні. Він складається з гіпсового сердечника, обкладеного спеціальним картоном, стійким до вологи, що запобігає деформації та пошкодженню матеріалу під впливом вологи.",
+    "weight": 20,
+    "volume": 0,
+    "price": 0,
+    "priceLviv": 335.5,
+    "salePriceLviv": 0,
+    "salePrice": 0,
+    "measure": "",
+    "quantity": 0,
+    "totalPrice": 0,
+    "movingTypeCalculation": "gipsSM",
+    "officialLink": "",
+    "defaultOptions": {
+      "size": "2500x1200x9.5"
+    },
+    "options": {
+      "size": ["2500x1200x9.5"]
+    },
+    "configurableList": [],
+    "settingList": [
+      {
+        "attributes": {
+          "size": "2500x1200x9.5"
+        },
+        "key": "rigips_vlg_2500x1200x9.5",
+        "price": 376.64,
+        "priceLviv": 421.3,
+        "salePriceLviv": 0,
+        "salePrice": 0,
+        "weight": 19.5,
+        "volume": 0.0375,
+        "movingTypeCalculation": "gipsMD"
+      }
+    ]
+  }
+]

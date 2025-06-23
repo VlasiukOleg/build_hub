@@ -182,7 +182,7 @@ const DisclosureSettingsMaterial: React.FC<
     <div className="text-sm/5 text-grey md:text-lg xl:text-xl">
       <Card>
         <CardHeader className="justify-between gap-2">
-          <div className="text-sm text-grey md:hidden md:text-base  xl:text-lg">
+          <div className="font-medium text-sm text-grey md:hidden md:text-base  xl:text-lg">
             {material.title}{' '}
             {Object.entries(selected)
               .map(
