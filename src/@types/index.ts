@@ -61,6 +61,7 @@ export interface Material {
   id: number;
   image: string;
   title: string;
+  brand?: string;
   description: string;
   weight: number;
   price: number;

@@ -1,8 +1,9 @@
 'use client';
 
+import { useState } from 'react';
 import clsx from 'clsx';
 import { Accordion, AccordionItem } from '@heroui/accordion';
-import { Avatar } from '@heroui/react';
+import { Avatar, Button } from '@heroui/react';
 
 import DisclosureMaterialsPanel from '../DisclosureMaterialsPanel';
 import DisclosureConfigurableMaterialPanel from '../DisclosureConfigurableMaterialPanel';
@@ -35,10 +36,12 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
   totalWeight,
 }) => {
   const { subCategoriesBySlug } = useMaterials(slug);
-
   const dispatch = useAppDispatch();
-
   const city = useAppSelector(state => state.city.city);
+
+  const [selectedBrands, setSelectedBrands] = useState<
+    Record<number, string | null>
+  >({});
 
   const handleInputChangeQuantity = (
     e: React.ChangeEvent<HTMLInputElement>,
@@ -86,6 +89,19 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
     }
   };
 
+  const handleBrandSelect = (catInd: number, brand: string | null) => {
+    setSelectedBrands(prev => ({
+      ...prev,
+      [catInd]: prev[catInd] === brand ? null : brand,
+    }));
+  };
+
+  const filterMaterialsByBrand = (materials: any[], catInd: number) => {
+    const selectedBrand = selectedBrands[catInd];
+    if (!selectedBrand) return materials;
+    return materials.filter(material => material.brand === selectedBrand);
+  };
+
   if (!subCategoriesBySlug) {
     return null;
   }
@@ -100,6 +116,19 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
         defaultExpandedKeys={['4.1', '1.1']}
       >
         {subCategoriesBySlug.map((subCategory, catInd) => {
+          const brands = Array.from(
+            new Set(
+              subCategory.materials
+                .map(material => (material as any).brand)
+                .filter(Boolean)
+            )
+          );
+          const allBrands = ['Всі', ...brands];
+          const filteredMaterials = filterMaterialsByBrand(
+            subCategory.materials,
+            catInd
+          );
+
           return (
             <AccordionItem
               key={subCategory.id}
@@ -125,7 +154,38 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
               subtitle={<AccordionItemSubTitle subCategory={subCategory} />}
             >
               <div className="flex flex-col gap-3">
-                {subCategory.materials.map((material, matInd) => {
+                {brands.length > 0 && (
+                  <div className="flex flex-col gap-1">
+                    <div className="text-foreground text-xs">Виробник:</div>
+                    <div className="flex flex-wrap gap-2">
+                      {allBrands.map(brand => (
+                        <Button
+                          key={brand || 'all'}
+                          aria-label={`Filter by ${brand}`}
+                          radius="sm"
+                          className={clsx(
+                            'min-h-7 h-7 px-1 min-w-16 text-xs xl:text-sm xl:p-2',
+                            ((selectedBrands[catInd] === undefined ||
+                              selectedBrands[catInd] === null) &&
+                              brand === 'Всі') ||
+                              selectedBrands[catInd] === brand
+                              ? 'bg-gray-100 bg-blue-600 font-semibold border-2  text-white border-none'
+                              : 'bg-gray-100 border-1 border-gray-300 text-gray-500'
+                          )}
+                          onPress={() =>
+                            handleBrandSelect(
+                              catInd,
+                              brand === 'Всі' ? null : brand
+                            )
+                          }
+                        >
+                          {brand}
+                        </Button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                {filteredMaterials.map((material, matInd) => {
                   const { quantity, price, priceLviv } = material;
                   const priceByCity = city === 'kiev' ? price : priceLviv;
                   const totalMaterialPrice = quantity * priceByCity;
