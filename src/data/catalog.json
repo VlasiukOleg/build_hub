@@ -5339,7 +5339,7 @@
                   "size": "2000x1200x12.5"
                 },
                 "key": "gips_vlg_2000x1200x12.5",
-                "price": 266.21,
+                "price": 266.95,
                 "priceLviv": 297,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -5352,7 +5352,7 @@
                   "size": "2500x1200x12.5"
                 },
                 "key": "gips_vlg_2500x1200x12.5",
-                "price": 332.76,
+                "price": 333.69,
                 "priceLviv": 364.1,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -5365,7 +5365,7 @@
                   "size": "3000x1200x12.5"
                 },
                 "key": "gips_vlg_3000x1200x12.5",
-                "price": 399.31,
+                "price": 400.43,
                 "priceLviv": 451,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -5458,7 +5458,7 @@
                   "size": "2000x1200x12.5"
                 },
                 "key": "gips_2000x1200x12.5",
-                "price": 221.52,
+                "price": 222.38,
                 "priceLviv": 268.4,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -5471,7 +5471,7 @@
                   "size": "2500x1200x12.5"
                 },
                 "key": "gips_2500x1200x12.5",
-                "price": 276.9,
+                "price": 277.98,
                 "priceLviv": 330,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -5484,7 +5484,7 @@
                   "size": "3000x1200x12.5"
                 },
                 "key": "gips_3000x1200x12.5",
-                "price": 332.98,
+                "price": 333.58,
                 "priceLviv": 401.5,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -5590,7 +5590,7 @@
                   "size": "2000x1200x9.5"
                 },
                 "key": "gips_2000x1200x9.5",
-                "price": 219.65,
+                "price": 215.16,
                 "priceLviv": 253,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -5603,8 +5603,8 @@
                   "size": "2500x1200x9.5"
                 },
                 "key": "gips_2500x1200x9.5",
-                "price": 300.6,
-                "priceLviv": 274.56,
+                "price": 268.95,
+                "priceLviv": 308,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 19.5,
