@@ -128,10 +128,12 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
     totalAdditionalMaterialInfo,
   } = useMaterials();
 
+  const city = useAppSelector(state => state.city.city);
+
   useEffect(() => {
-    const deliveryFee = calculateDeliveryFee(totalWeight);
+    const deliveryFee = calculateDeliveryFee(totalWeight, city);
     dispatch(setDeliveryPrice(deliveryFee));
-  }, [dispatch, totalWeight]);
+  }, [city, dispatch, totalWeight]);
 
   const deliveryPrice = useAppSelector(state => state.delivery.deliveryPrice);
   const deliveryType = useAppSelector(state => state.delivery.deliveryType);
@@ -146,8 +148,6 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
   const additionalMaterial = useAppSelector(
     state => state.additionalMaterial.additionalMaterial
   );
-
-  const city = useAppSelector(state => state.city.city);
 
   const cityMovingPrice =
     isMovingAddToOrder && city === 'kiev' ? movingPrice : 0;

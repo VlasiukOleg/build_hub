@@ -27,8 +27,6 @@ const DisclosureDeliveryPanel: React.FC<IDisclosureDeliveryPanelProps> = ({
   );
   const city = useAppSelector(state => state.city.city);
 
-  console.log(city);
-
   const dispatch = useAppDispatch();
 
   useEffect(() => {
