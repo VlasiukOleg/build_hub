@@ -25,13 +25,16 @@ const DisclosureDeliveryPanel: React.FC<IDisclosureDeliveryPanelProps> = ({
   const deliveryStorage = useAppSelector(
     state => state.delivery.deliveryStorage
   );
+  const city = useAppSelector(state => state.city.city);
+
+  console.log(city);
 
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    const deliveryFee = calculateDeliveryFee(totalWeight);
+    const deliveryFee = calculateDeliveryFee(totalWeight, city);
     dispatch(setDeliveryPrice(deliveryFee));
-  }, [dispatch, totalWeight]);
+  }, [city, dispatch, totalWeight]);
 
   return (
     <div className="mt-2 text-sm/5 text-grey md:text-lg xl:text-xl xl:mt-6">
