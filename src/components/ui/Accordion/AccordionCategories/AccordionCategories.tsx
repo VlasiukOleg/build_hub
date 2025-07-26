@@ -103,7 +103,7 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
               }
               variant="light"
             >
-              {city === 'lviv' ? 'Львів' : 'Київ'}
+              {city === 'lviv' ? 'Львів та область' : 'Київ та область'}
             </Button>
           </div>
 

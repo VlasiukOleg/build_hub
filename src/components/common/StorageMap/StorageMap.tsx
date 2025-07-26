@@ -258,7 +258,7 @@ const StorageMap: React.FC<IStorageMapProps> = ({}) => {
                 key="kiev"
                 title={
                   <div className="flex items-center space-x-2">
-                    <span>Київ</span>
+                    <span>Київ та область</span>
                     <Chip
                       size="sm"
                       variant="bordered"
@@ -278,7 +278,7 @@ const StorageMap: React.FC<IStorageMapProps> = ({}) => {
                 key="lviv"
                 title={
                   <div className="flex items-center space-x-2">
-                    <span>Львів</span>
+                    <span>Львів та область</span>
                     <Chip
                       size="sm"
                       variant="bordered"
