@@ -88,6 +88,16 @@ const storages: Storage[] = [
     location: 'Склад Городоцька',
     coordinates: [49.822071, 23.925747], // Координаты для "Львов, ул. Городоцька, 367А"
   },
+  {
+    id: 9,
+    location: 'Склад Ірпінь',
+    coordinates: [50.53126, 30.24406], // Координаты для Ірпінь
+  },
+  {
+    id: 9,
+    location: 'Склад Гатне',
+    coordinates: [50.35833, 30.39889], // Координаты для Ірпінь
+  },
 ];
 
 const ResetViewControl = ({ position }: { position: LatLngTuple }) => {
@@ -269,7 +279,7 @@ const StorageMap: React.FC<IStorageMapProps> = ({}) => {
                             : 'bg-white text-foreground',
                       }}
                     >
-                      7
+                      9
                     </Chip>
                   </div>
                 }
