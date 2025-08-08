@@ -2527,7 +2527,7 @@
               {
                 "label": "НТ Лайт 30 (1000*600*50 мм) уп. 12 шт., 7,2м2",
                 "key": "nt_30_50",
-                "price": 411.26,
+                "price": 414.94,
                 "salePrice": 0,
                 "priceLviv": 411.26,
                 "salePriceLviv": 0,
@@ -2538,9 +2538,9 @@
               {
                 "label": "НТ Лайт 30 (1000*600*100 мм) уп. 6 шт., 3,6м2",
                 "key": "nt_30_100",
-                "price": 411.26,
+                "price": 414.94,
                 "salePrice": 0,
-                "priceLviv": 411.26,
+                "priceLviv": 414.94,
                 "salePriceLviv": 0,
                 "weight": 10.8,
                 "volume": 0.36,
@@ -2571,9 +2571,9 @@
               {
                 "label": "НТ Фасад 135 (1000*600*150 мм) уп. 2 шт., 1,2м2",
                 "key": "nt_135_150",
-                "price": 741.89,
+                "price": 748.51,
                 "salePrice": 0,
-                "priceLviv": 683.42,
+                "priceLviv": 748.51,
                 "salePriceLviv": 0,
                 "weight": 24.3,
                 "volume": 0.18,
@@ -3228,8 +3228,8 @@
               {
                 "label": "товщина 20мм, лист 1180*580, уп. 20 шт.(14.4м2)",
                 "key": "carbolex_eco_20",
-                "price": 36.36,
-                "priceLviv": 36.36,
+                "price": 65.07,
+                "priceLviv": 65.07,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 0.5,
