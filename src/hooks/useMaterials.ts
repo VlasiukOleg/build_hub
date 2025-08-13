@@ -73,7 +73,12 @@ export const useMaterials = (slug?: string) => {
 
   const totalPrice =
     materials?.reduce((acc, value) => {
-      return acc + (value.salePrice > 0 ? value.salePrice * value.quantity : value.price * value.quantity);
+      return (
+        acc +
+        (value.salePrice > 0
+          ? value.salePrice * value.quantity
+          : value.price * 1.03 * value.quantity)
+      );
     }, 0) +
     totalAdditionalMaterialInfo.price +
     totalConfigurableMaterialInfo.price;

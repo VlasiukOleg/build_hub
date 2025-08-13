@@ -44,7 +44,8 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
 }) => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
-  const priceByCity = city === 'kiev' ? material.price : material.priceLviv;
+  const priceByCity =
+    city === 'kiev' ? material.price * 1.03 : material.priceLviv;
 
   return (
     <Card>
@@ -96,7 +97,7 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
               <div>
                 <p className="flex no-wrap gap-1 text-xs  text-grey md:text-sm font-semibold">
                   <span className=" line-through">
-                    Ціна: {priceByCity} грн.
+                    Ціна: {priceByCity.toFixed(2)} грн.
                   </span>
                 </p>
                 <div className="flex no-wrap  text-grey gap-1  xl:text-lg font-semibold">
@@ -114,7 +115,7 @@ const DisclosureMaterialsPanel: React.FC<IDisclosureMaterialsPanelProps> = ({
                 {priceByCity === 0 ? (
                   <span className="text-red-500">Немає в наявності</span>
                 ) : (
-                  `Ціна: ${priceByCity} грн.`
+                  `Ціна: ${priceByCity.toFixed(2)} грн.`
                 )}
               </div>
             )}

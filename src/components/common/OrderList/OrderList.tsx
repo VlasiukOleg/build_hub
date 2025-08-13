@@ -428,9 +428,10 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                       )}
                       <div className="w-[25%] text-right">
                         <p className="text-xs font-normal md:text-base">
-                          {material.salePrice > 0
+                          {(material.salePrice > 0
                             ? material.salePrice
-                            : material.price}{' '}
+                            : material.price * 1.03
+                          ).toFixed(2)}{' '}
                           грн.
                         </p>
                         <p className="text-sm text-accent md:text-lg">
@@ -438,7 +439,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                             material.quantity *
                             (material.salePrice > 0
                               ? material.salePrice
-                              : material.price)
+                              : material.price * 1.03)
                           ).toFixed(2)}{' '}
                           грн.
                         </p>
@@ -554,7 +555,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                         ) : (
                           <>
                             <p className="text-xs font-normal md:text-base">
-                              {material.price} грн.
+                              {material.price.toFixed(2)} грн.
                             </p>
                             <p className="text-sm text-accent md:text-lg">
                               {(material.quantity * material.price).toFixed(2)}{' '}
@@ -683,7 +684,7 @@ const OrderList: React.FC<IOrderListProps> = ({}) => {
                         ) : (
                           <>
                             <p className="text-xs font-normal md:text-base">
-                              {material.price} грн.
+                              {material.price.toFixed(2)} грн.
                             </p>
                             <p className="text-sm text-accent md:text-lg">
                               {(material.quantity * material.price).toFixed(2)}{' '}

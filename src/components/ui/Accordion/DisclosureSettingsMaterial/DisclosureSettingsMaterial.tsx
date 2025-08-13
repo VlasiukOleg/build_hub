@@ -69,7 +69,9 @@ const DisclosureSettingsMaterial: React.FC<
   }, [selected, material.settingList]);
 
   const selectedVariantPriceByCity =
-    city === 'kiev' ? selectedVariant?.price : selectedVariant?.priceLviv;
+    city === 'kiev'
+      ? (selectedVariant?.price || 0) * 1.03
+      : selectedVariant?.priceLviv;
 
   const handleSelect = (group: string, value: string) => {
     setSelected(prev => ({ ...prev, [group]: value }));
@@ -427,7 +429,7 @@ const DisclosureSettingsMaterial: React.FC<
 
                       <div className="w-[25%] text-right">
                         <p className="text-xs font-normal md:text-sm ">
-                          {material.price} грн.
+                          {material.price.toFixed(2)} грн.
                         </p>
                         <p className="text-sm text-accent md:text-base">
                           {!isNaN(

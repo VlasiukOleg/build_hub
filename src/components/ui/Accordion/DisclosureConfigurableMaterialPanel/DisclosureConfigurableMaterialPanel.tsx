@@ -98,7 +98,9 @@ const DisclosureAddMaterialsPanel: React.FC<
 
     if (selectedGazoblok) {
       const selectedGazoblokPriceByCity =
-        city === 'kiev' ? selectedGazoblok.price : selectedGazoblok.priceLviv;
+        city === 'kiev'
+          ? selectedGazoblok.price * 1.03
+          : selectedGazoblok.priceLviv;
       setGazoblokPrice(
         selectedGazoblok.salePrice > 0
           ? selectedGazoblok.salePrice
@@ -237,7 +239,7 @@ const DisclosureAddMaterialsPanel: React.FC<
                             'line-through text-[10px]'
                         )}
                       >
-                        {configurable.price}
+                        {(configurable.price * 1.03).toFixed(2)}
                       </span>
                       <span>грн.</span>
                     </p>
@@ -341,7 +343,7 @@ const DisclosureAddMaterialsPanel: React.FC<
                 ) : (
                   <div className=" text-grey font-semibold  md:text-base xl:text-xl">
                     <div className="flex items-center gap-1">
-                      Ціна: {gazoblokPrice} грн.
+                      Ціна: {gazoblokPrice.toFixed(2)} грн.
                     </div>
                   </div>
                 )}
@@ -425,7 +427,7 @@ const DisclosureAddMaterialsPanel: React.FC<
 
                       <div className="w-[25%] text-right">
                         <p className="text-xs font-normal md:text-sm ">
-                          {material.price} грн.
+                          {material.price.toFixed(2)} грн.
                         </p>
                         <p className="text-sm text-accent md:text-base">
                           {!isNaN(
