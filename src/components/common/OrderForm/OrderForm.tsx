@@ -94,6 +94,7 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
   const inputRef = useMask({
     mask: '+38 (___) ___-__-__',
     replacement: { _: /\d/ },
+    showMask: true,
   });
 
   const allMaterialsCategories = categories.flatMap(
@@ -276,6 +277,7 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
                 setValue('phone', e.target.value, { shouldValidate: true });
               }}
               isClearable
+              autoComplete="new-phone"
               label="Телефон"
               placeholder="Введіть телефон"
               size="md"
