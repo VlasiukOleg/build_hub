@@ -67,7 +67,7 @@ export async function POST(request: Request) {
         <td style="border: 1px solid black; padding: 8px;">${index + 1}</td>
           <td style="border: 1px solid black; padding: 8px;">${material.title}</td>
           <td style="border: 1px solid black; padding: 8px;">${material.quantity}</td>
-          <td style="border: 1px solid black; padding: 8px;">${material.salePrice > 0 ? material.salePrice : material.price} грн.</td>
+          <td style="border: 1px solid black; padding: 8px;">${material.salePrice > 0 ? material.salePrice.toFixed(2) : material.price.toFixed(2)} грн.</td>
           <td style="border: 1px solid black; padding: 8px;">${(material.quantity * (material.salePrice > 0 ? material.salePrice : material.price)).toFixed(2)} грн.</td>
         </tr>
       `
@@ -78,7 +78,7 @@ export async function POST(request: Request) {
         isMovingAddToOrder
           ? `
         <tr>
-          <td style="border: 1px solid black; padding: 8px;">${materials.length + 1}</td>
+          <td style="border: 1px solid black; padding: 8px;">${[...materials, ...configurableMaterialList].length + 1}</td>
           <td style="border: 1px solid black; padding: 8px;">Розвантаження</td>
           <td style="border: 1px solid black; padding: 8px;">1</td>
           <td style="border: 1px solid black; padding: 8px;">${movingPrice} грн.</td>
@@ -91,7 +91,7 @@ export async function POST(request: Request) {
         deliveryType === 'delivery'
           ? `
         <tr>
-          <td style="border: 1px solid black; padding: 8px;">${materials.length + 2}</td>
+          <td style="border: 1px solid black; padding: 8px;">${[...materials, ...configurableMaterialList].length + 2}</td>
           <td style="border: 1px solid black; padding: 8px;">Доставка</td>
           <td style="border: 1px solid black; padding: 8px;">1</td>
           <td style="border: 1px solid black; padding: 8px;">${deliveryPrice} грн.</td>
