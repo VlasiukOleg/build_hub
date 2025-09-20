@@ -103,7 +103,7 @@ export async function POST(request: Request) {
   </table>
   <table style="width: 100%; margin-top: 16px;">
     <tr>
-      <td style="font-weight: bold;">Вага: ${totalWeight..toFixed(2)} кг.</td>
+      <td style="font-weight: bold;">Вага: ${totalWeight.toFixed(2)} кг.</td>
       <td style="text-align: right; font-weight: bold;">Всього до оплати: ${((isMovingAddToOrder ? movingPrice : 0) + (deliveryType === 'pickup' ? 0 : deliveryPrice) + totalPrice).toFixed(2)} грн.</td>
     </tr>
   </table>
