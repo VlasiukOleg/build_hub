@@ -22,6 +22,7 @@ import { inputChangeQuantity, changeQuantity } from '@/redux/materialsSlice';
 import { LiaLuggageCartSolid } from 'react-icons/lia';
 import { TbTruckDelivery } from 'react-icons/tb';
 import { FaPlus } from 'react-icons/fa6';
+import { PiLineVerticalBold } from 'react-icons/pi';
 
 import { Pages } from '@/@types';
 import { SUBCATEGORY_TITLE_LIST_MAP } from './constants';
@@ -113,7 +114,6 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
         className="mb-4 px-1 max-w-full w-full h-full md:w-[760px]  xl:w-[1200px]"
         itemClasses={{ content: 'pb-4' }}
         selectionMode="multiple"
-        defaultExpandedKeys={['4.1', '1.1']}
       >
         {subCategoriesBySlug.map((subCategory, catInd) => {
           const brands = Array.from(
@@ -132,6 +132,13 @@ const AccordionSubCategoryList: React.FC<IAccordionSubCategoryList> = ({
           return (
             <AccordionItem
               key={subCategory.id}
+              indicator={({ isOpen }) =>
+                isOpen ? (
+                  <PiLineVerticalBold className="text-accent" />
+                ) : (
+                  <FaPlus className="text-accent" />
+                )
+              }
               className="bg-slate-50 relative"
               classNames={{
                 title: 'text-sm md:text-base',

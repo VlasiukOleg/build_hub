@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import clsx from 'clsx';
 import { Breadcrumbs, BreadcrumbItem } from '@heroui/react';
-import { Button } from '@heroui/react';
+import { Alert, Button } from '@heroui/react';
 
 import OrderBar from '@/components/common/OrderBar';
 import FixedOpenBurgerMenuBtn from '@/components/common/FixedOpenBurgerMenuBtn';
@@ -125,6 +125,16 @@ const AccordionCategories: React.FC<IAccordionCategoriesProps> = ({ slug }) => {
             {title}{' '}
             {city === 'kiev' ? 'в Києві та області' : 'у Львові та області'}
           </h1>
+          <Alert
+            description="Ми ретельно згрупували всі матеріали за підкатегоріями, щоб ви могли легко знайти потрібне. Просто натисни на «плюсік». Відкривай панель потрібної категорії, обирай матеріали, не витрачаючи час на пошуки."
+            className="mt-4 mb-4"
+            title="Цікаво знати"
+            color="warning"
+            classNames={{
+              title: 'font-bold text-xs/6 md:text-sm xl:text-base',
+              description: 'text-xs md:text-sm xl:text-base',
+            }}
+          />
           <AccordionSubCategoryList slug={slug} totalWeight={totalWeight} />
           <div className="text-center">
             <Button
