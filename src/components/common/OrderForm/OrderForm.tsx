@@ -110,6 +110,9 @@ const OrderForm: React.FC<IOrderFormProps> = ({}) => {
   );
 
   const { totalPrice, totalWeight } = useMaterials();
+
+  console.log(totalPrice);
+
   const router = useRouter();
   const dispatch = useAppDispatch();
   const {
