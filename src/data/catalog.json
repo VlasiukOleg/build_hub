@@ -309,7 +309,7 @@
             "description": "Суміш WALLMIX U-3 призначена для: товстошарового мурування: укладання керамічної або силікатної цегли та блоків (бетонними, керамзито-бетонними, газобетонними, керамічними тощо), зведення огороджуючих конструкцій з бутового або природного каменю; штукатурення мінеральних поверхонь (цегла, блоки, бетон) перед подальшим опорядженням; влаштування стяжок на основах, що не деформуються.може використовуватися для загальнобудівельних робіт: ремонті та влаштуванні пандусів, відмосток, сходів і т.ін.;",
             "weight": 25,
             "volume": 0.025,
-            "price": 111.0,
+            "price": 111.84,
             "priceLviv": 111.0,
             "salePrice": 0,
             "salePriceLviv": 0,
@@ -5836,7 +5836,7 @@
                   "length": "3"
                 },
                 "key": "prof_cd60_0.6_3",
-                "price": 105.03,
+                "price": 95.61,
                 "priceLviv": 112.2,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -5850,7 +5850,7 @@
                   "length": "3"
                 },
                 "key": "prof_knauf_cd60_0.6_3",
-                "price": 156.18,
+                "price": 164.28,
                 "priceLviv": 166.1,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -5878,7 +5878,7 @@
                   "length": "4"
                 },
                 "key": "prof_cd60_0.6_4",
-                "price": 140.04,
+                "price": 127.48,
                 "priceLviv": 149.6,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -5892,7 +5892,7 @@
                   "length": "4"
                 },
                 "key": "prof_knauf_cd60_0.6_4",
-                "price": 208.24,
+                "price": 219.04,
                 "priceLviv": 231,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -5936,7 +5936,7 @@
                   "length": "3"
                 },
                 "key": "prof_ud27_0.55_3",
-                "price": 49.56,
+                "price": 46.77,
                 "priceLviv": 61.6,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -5950,7 +5950,7 @@
                   "length": "3"
                 },
                 "key": "prof_ud27_0.6_3",
-                "price": 65.82,
+                "price": 59.67,
                 "priceLviv": 68.2,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -5964,7 +5964,7 @@
                   "length": "3"
                 },
                 "key": "prof_knauf_ud27_0.6_3",
-                "price": 112.02,
+                "price": 112.96,
                 "priceLviv": 125.4,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -5992,7 +5992,7 @@
                   "length": "4"
                 },
                 "key": "prof_ud27_0.6_4",
-                "price": 87.76,
+                "price": 79.56,
                 "priceLviv": 90.2,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -6006,7 +6006,7 @@
                   "length": "4"
                 },
                 "key": "prof_knauf_ud27_0.6_4",
-                "price": 149.36,
+                "price": 157.28,
                 "priceLviv": 166.1,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -6068,7 +6068,7 @@
                   "length": "4"
                 },
                 "key": "prof_cw50_0.55_4",
-                "price": 143.88,
+                "price": 130.36,
                 "priceLviv": 145.2,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -6083,12 +6083,27 @@
                   "length": "3"
                 },
                 "key": "prof_cw50_0.6_3",
-                "price": 133.68,
+                "price": 121.35,
                 "priceLviv": 0,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.65,
                 "volume": 0.0075,
+                "movingTypeCalculation": "profLG"
+              },
+              {
+                "attributes": {
+                  "width": "50",
+                  "thickness": "0.6 ГОСТ",
+                  "length": "4"
+                },
+                "key": "prof_cw50_0.6_4",
+                "price": 161.80,
+                "priceLviv": 0,
+                "salePriceLviv": 0,
+                "salePrice": 0,
+                "weight": 2.2,
+                "volume": 0.01,
                 "movingTypeCalculation": "profLG"
               },
               {
@@ -6128,7 +6143,7 @@
                   "length": "3"
                 },
                 "key": "prof_cw75_0.55_3",
-                "price": 126.36,
+                "price": 115.26,
                 "priceLviv": 128.7,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -6143,7 +6158,7 @@
                   "length": "4"
                 },
                 "key": "prof_cw75_0.55_4",
-                "price": 168.48,
+                "price": 153.68,
                 "priceLviv": 173.1,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -6158,7 +6173,7 @@
                   "length": "3"
                 },
                 "key": "prof_cw75_0.6_3",
-                "price": 159.06,
+                "price": 144.42,
                 "priceLviv": 0,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -6173,7 +6188,7 @@
                   "length": "4"
                 },
                 "key": "prof_cw75_0.6_4",
-                "price": 212.08,
+                "price": 192.56,
                 "priceLviv": 0,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -6188,7 +6203,7 @@
                   "length": "3"
                 },
                 "key": "prof_knauf_cw75_0.6_3",
-                "price": 209.61,
+                "price": 220.68,
                 "priceLviv": 221.1,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -6248,7 +6263,7 @@
                   "length": "3"
                 },
                 "key": "prof_cw100_0.6_3",
-                "price": 181.95,
+                "price": 165.42,
                 "priceLviv": 0,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -6263,7 +6278,7 @@
                   "length": "4"
                 },
                 "key": "prof_cw100_0.6_4",
-                "price": 242.6,
+                "price": 220.56,
                 "priceLviv": 0,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -6340,7 +6355,7 @@
                   "width": "50"
                 },
                 "key": "prof_uw50_0.55_3",
-                "price": 85.14,
+                "price": 77.49,
                 "priceLviv": 86.9,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -6356,7 +6371,7 @@
                 },
                 "key": "prof_uw50_0.55_4",
                 "price": 118.8,
-                "priceLviv": 113.52,
+                "priceLviv": 103.32,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 2.2,
@@ -6370,13 +6385,28 @@
                   "width": "50"
                 },
                 "key": "prof_uw50_0.6_3",
-                "price": 109.08,
+                "price": 99.00,
                 "priceLviv": 0,
                 "salePriceLviv": 0,
                 "salePrice": 0,
                 "weight": 1.65,
                 "volume": 0.0075,
                 "movingTypeCalculation": "profLG"
+              },
+              {
+                "attributes": {
+                  "thickness": "0.6 ГОСТ",
+                  "length": "4",
+                  "width": "50"
+                },
+                "key": "prof_uw50_0.6_4",
+                "price": 132.00,
+                "priceLviv": 0,
+                "salePriceLviv": 0,
+                "salePrice": 0,
+                "weight": 2.1,
+                "volume": 0.01,
+                "movingTypeCalculation": "profXL"
               },
               {
                 "attributes": {
@@ -6415,7 +6445,7 @@
                   "width": "75"
                 },
                 "key": "prof_uw75_0.55_3",
-                "price": 101.04,
+                "price": 96.15,
                 "priceLviv": 107.8,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -6430,7 +6460,7 @@
                   "width": "75"
                 },
                 "key": "prof_uw75_0.55_4",
-                "price": 134.72,
+                "price": 128.20,
                 "priceLviv": 141.9,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -6445,7 +6475,7 @@
                   "width": "75"
                 },
                 "key": "prof_uw75_0.6_3",
-                "price": 141.36,
+                "price": 121.71,
                 "priceLviv": 0,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -6460,7 +6490,7 @@
                   "width": "75"
                 },
                 "key": "prof_uw75_0.6_4",
-                "price": 188.48,
+                "price": 162.28,
                 "priceLviv": 0,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -6520,7 +6550,7 @@
                   "width": "100"
                 },
                 "key": "prof_uw100_0.55_4",
-                "price": 156.96,
+                "price": 149.12,
                 "priceLviv": 178.2,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -6535,7 +6565,7 @@
                   "width": "100"
                 },
                 "key": "prof_uw100_0.6_3",
-                "price": 157.96,
+                "price": 143.06,
                 "priceLviv": 0,
                 "salePriceLviv": 0,
                 "salePrice": 0,
@@ -6550,7 +6580,7 @@
                   "width": "100"
                 },
                 "key": "prof_uw100_0.6_4",
-                "price": 210.24,
+                "price": 190.76,
                 "priceLviv": 0,
                 "salePriceLviv": 0,
                 "salePrice": 0,
